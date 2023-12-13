@@ -1,0 +1,48 @@
+Category: Release Management
+entities:
+  -
+    question: 'Every how long does a major version of symfony come out? (e.g. 5.0, 6.0, 7.0) ?'
+    answers:
+      - { value: 'every years', correct: false }
+      - { value: 'every 2 years', correct: true }
+      - { value: 'every 3 years', correct: false }
+      - { value: 'every 4 years', correct: false }
+    help: 'https://symfony.com/doc/current/contributing/community/releases.html'
+  -
+    question: 'Every how long does a minor version of symfony come out? (5.4, 6.0, 6.1)'
+    answers:
+      - { value: '4 months', correct: false }
+      - { value: '6 months', correct: true }
+      - { value: '8 months', correct: false }
+      - { value: '12 months', correct: false }
+    help: 'https://symfony.com/doc/current/contributing/community/releases.html'
+  -
+    question: 'Every how long does a patch version of symfony come out? ((e.g. 5.4.12, 6.1.9)'
+    answers:
+      - { value: 'every weeks', correct: false }
+      - { value: 'every 2 weeks', correct: false }
+      - { value: 'every months', correct: true }
+      - { value: 'every 2 months', correct: false }
+      - { value: 'every 3 months', correct: false }
+    help: 'https://symfony.com/doc/current/contributing/community/releases.html'
+  -
+    question: 'Which Major, Minor, Patch Version contains breaking changes, so you may need to do some changes in your applications before upgrading ?'
+    answers:
+      - { value: 'Major', correct: true }
+      - { value: 'Minor', correct: false }
+      - { value: 'Patch', correct: false }
+    help: 'https://symfony.com/doc/current/contributing/community/releases.html'
+  -
+    question: 'Which Major, Minor, Patch Version contains bug fixes and new features, can contain new deprecations but it doesn"t include any breaking change, so you can safely upgrade your applications; ?'
+    answers:
+      - { value: 'Major', correct: false }
+      - { value: 'Minor', correct: true }
+      - { value: 'Patch', correct: false }
+    help: 'https://symfony.com/doc/current/contributing/community/releases.html'
+  -
+    question: 'Which Major, Minor, Patch Version contains bug fixes and new features, can contain new deprecations but it doesn"t include any breaking change, so you can safely upgrade your applications; ?'
+    answers:
+      - { value: 'Major', correct: false }
+      - { value: 'Minor', correct: false }
+      - { value: 'Patch', correct: true }
+    help: 'https://symfony.com/doc/current/contributing/community/releases.html'
