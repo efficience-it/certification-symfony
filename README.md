@@ -26,7 +26,7 @@
 
 ## Symfony Architecture
 - Symfony Flex
-- [License](Architecture/license.yaml)
+- [License](data/Architecture/license.yaml)
 - Components
 - Bridges
 - Code organization
@@ -34,7 +34,7 @@
 - Exception handling
 - Event dispatcher and kernel events
 - Official best practices
-- [Release management](Architecture/release_management.yaml)
+- [Release management](data/Architecture/release_management.yaml)
 - Backward compatibility promise
 - Deprecations best practices
 - Framework overloading
@@ -147,7 +147,7 @@
 - Input and Output objects
 - Built-in helpers
 - Console events
-- [Verbosity levels](Console/verbosity_levels.yaml)
+- [Verbosity levels](data/Console/verbosity_levels.yaml)
 
 ## Automated Tests
 - Unit tests with PHPUnit
