@@ -1,0 +1,71 @@
+questions:
+  -
+    uuid: 1eebf878-8ba6-68b8-8930-99d84c92580c
+    question: 'What Class receive the listeners when the ConsolelEvents::Command is dispatched ?'
+    answers:
+      - { value: 'TerminalEvent', correct: false }
+      - { value: 'ConsoleEvent', correct: false }
+      - { value: 'CommandEvent', correct: false }
+      - { value: 'ConsoleCommandEvent', correct: true }
+    help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-command-event'
+  -
+    uuid: 1eebf878-8ba6-6958-bb5f-99d84c92580c
+    question: 'Is it possible to disable a command inside a listener, and enable it later ?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/components/console/events.html#disable-commands-inside-listeners'
+  -
+    uuid: 1eebf878-8ba6-69a8-8df8-99d84c92580c
+    question: 'When a ConsoleEvents::Error is dispatched, which event is sent to the listener ?'
+    answers:
+      - { value: 'ConsoleErrorEvent', correct: true }
+      - { value: 'ConsoleEvent', correct: false }
+      - { value: 'ErrorEvent', correct: false }
+      - { value: 'ErrorConsoleEvent', correct: false }
+    help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-error-event'
+  -
+    uuid: 1eebf878-8ba6-6a70-9815-99d84c92580c
+    question: 'When a ConsoleEvents::Terminate is dispatched, which event is sent to the listener ?'
+    answers:
+      - { value: 'TerminateConsoleEvent', correct: false }
+      - { value: 'ConsoleEvent', correct: false }
+      - { value: 'TerminateEvent', correct: false }
+      - { value: 'ConsoleTerminateEvent', correct: true }
+    help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-terminate-event'
+  -
+    uuid: 1eebf878-8ba6-6ba6-8d1a-99d84c92580c
+    question: 'When a ConsoleEvents::Signal is dispatched, which event is sent to the listener ?'
+    answers:
+      - { value: 'ConsoleEvent', correct: false }
+      - { value: 'ConsoleSignalEvent', correct: true }
+      - { value: 'SignalEvent', correct: false }
+      - { value: 'SignalConsoleEvent', correct: false }
+    help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-signal-event'
+  -
+    uuid: 1eebf878-8ba6-6c32-81a0-99d84c92580c
+    question: 'If i want to log that a command is going to be executed, what Event am i going to listen ?'
+    answers:
+      - { value: 'ConsoleEvents::COMMAND', correct: true }
+      - { value: 'ConsoleEvents::ERROR', correct: false }
+      - { value: 'ConsoleEvents::TERMINATE', correct: false }
+      - { value: 'ConsoleEvents::SIGNAL', correct: false }
+    help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-command-event'
+  -
+    uuid: 1eebf878-8ba6-6c82-84d9-99d84c92580c
+    question: 'Whenever an exception is thrown by a command, including those triggered from event listeners, which event is going to be dispatched ?'
+    answers:
+      - { value: 'ConsoleEvents::COMMAND', correct: false }
+      - { value: 'ConsoleEvents::ERROR', correct: true }
+      - { value: 'ConsoleEvents::TERMINATE', correct: false }
+      - { value: 'ConsoleEvents::SIGNAL', correct: false }
+    help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-error-event'
+  -
+    uuid: 1eebf878-8ba6-6d4a-8b5c-99d84c92580c
+    question: 'After the command has been executed, an event is dispatched. It can be used to do any actions that need to be executed for all commands or to cleanup what you initiated in a ConsoleEvents::COMMAND listener (like sending logs, closing a database connection, sending emails, ...). Which Event is it ?'
+    answers:
+      - { value: 'ConsoleEvents::COMMAND', correct: false }
+      - { value: 'ConsoleEvents::ERROR', correct: false }
+      - { value: 'ConsoleEvents::TERMINATE', correct: true }
+      - { value: 'ConsoleEvents::SIGNAL', correct: false }
+    help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-terminate-event'
