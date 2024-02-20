@@ -26,7 +26,7 @@
 
 ## Symfony Architecture
 - Symfony Flex
-- [License](data/Architecture/license.yaml)
+- [License](data/architecture/license.yaml)
 - Components
 - Bridges
 - Code organization
@@ -34,7 +34,7 @@
 - Exception handling
 - Event dispatcher and kernel events
 - Official best practices
-- [Release management](data/Architecture/release_management.yaml)
+- [Release management](data/architecture/release_management.yaml)
 - Backward compatibility promise
 - Deprecations best practices
 - Framework overloading
