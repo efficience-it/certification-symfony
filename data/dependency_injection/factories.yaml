@@ -1,0 +1,8 @@
+questions:
+  -
+    uuid: 1eeccb5b-c6cf-62e4-af74-e35dab4ff615
+    question: 'What is the aim of the Design Pattern  Factory  ?'
+    answers:
+      - { value: 'The principle is to have a class which will be responsible for creating the objects we need', correct: true }
+      - { value: 'The principle is to have a class which will be responsible for factoring code into an object', correct: false }
+    help: 'https://www.olympe-studio.xyz/fr/blog/php/factory-php-definition-interet/'
