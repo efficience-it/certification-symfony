@@ -1,0 +1,18 @@
+questions:
+  -
+    uuid: 1eebf878-8ba4-66d0-9c83-99d84c92580c
+    question: "php bin/console debug:router XXXXXX    What's the argument after this command in XXXXXX ?"
+    answers:
+      - { value: 'No arguments', correct: true }
+      - { value: 'a specific path', correct: false }
+      - { value: 'a route name', correct: true }
+      - { value: 'the host', correct: false }
+      - { value: 'the scheme', correct: false }
+    help: 'https://symfony.com/doc/current/routing.html#debugging-routes'
+  -
+    uuid: 1eebf878-8ba8-6352-a19d-99d84c92580c
+    question: 'Does the debug:router command order the application routes in the same matching orders as symfony will act in our application ?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/6.4/routing.html#debugging-routes'

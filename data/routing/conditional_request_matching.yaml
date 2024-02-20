@@ -1,0 +1,12 @@
+questions:
+  -
+    uuid: 1eebf878-8ba4-668a-ba5b-99d84c92580c
+    question: 'What are the available variable given by symfony to conditionnate a route matching ?'
+    answers:
+      - { value: 'request', correct: true }
+      - { value: 'context', correct: true }
+      - { value: 'session', correct: false }
+      - { value: 'params', correct: true }
+      - { value: 'all of them', correct: false }
+      - { value: 'none of them', correct: false }
+    help: 'https://symfony.com/doc/current/routing.html#matching-expressions'

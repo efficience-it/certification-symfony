@@ -1,0 +1,46 @@
+questions:
+  -
+    uuid: 1eebf878-8b9c-63d6-a50e-99d84c92580c
+    question: 'The default value of the realpath_cache_size PHP configuration option is 16K. Is this setting correct for a typical Symfony application?'
+    answers:
+      - { value: 'Yes. There is no need to change the default value.', correct: false }
+      - { value: "No, it's recommended to increase it at least to 4096K.", correct: true }
+      - { value: "No, it's recommended to decrease it to 4K to limit the I/O load in the server.", correct: false }
+      - { value: 'Yes, because the performance of Symfony applications is independent from that option.', correct: false }
+    help: 'https://symfony.com/doc/current/performance.html'
+  -
+    uuid: 1eebf878-8ba4-6522-b366-99d84c92580c
+    question: 'Following the maximum guidance performance of OPcache, what is the recommended opcache.max_accelerated_files value ?'
+    answers:
+      - { value: '4096', correct: false }
+      - { value: '8500', correct: false }
+      - { value: '20 000', correct: true }
+      - { value: '32 000', correct: false }
+      - { value: '96 000', correct: false }
+    help: 'https://symfony.com/doc/6.4/performance.html#configure-opcache-for-maximum-performance'
+  -
+    uuid: 1eebf878-8ba4-6568-837a-99d84c92580c
+    question: 'Following the maximum guidance performance of OPcache, what is the recommended opcache.memory_consuption value ?'
+    answers:
+      - { value: '32', correct: false }
+      - { value: '128', correct: false }
+      - { value: '256', correct: true }
+      - { value: '2048', correct: false }
+    help: 'https://symfony.com/doc/6.4/performance.html#configure-opcache-for-maximum-performance'
+  -
+    uuid: 1eebf878-8ba8-6c9e-a896-99d84c92580c
+    question: 'In production servers, PHP files should never change, unless a new application version is deployed. However, by default OPcache checks if cached files have changed their contents since they were cached.    How it is done to uncheck some overhead that can be avoided ?'
+    answers:
+      - { value: '; php.ini     opcache.validate_timestamps=0', correct: true }
+      - { value: '; php.ini     opcache.invalidate_timestamps=1', correct: false }
+    help: 'https://symfony.com/doc/current/performance.html#don-t-check-php-files-timestamps'
+  -
+    uuid: 1eebf878-8ba8-6ce4-b30d-99d84c92580c
+    question: 'What are the possible way to deploy a Symfony application ?'
+    answers:
+      - { value: 'Basic File Transfer like scp, ftp', correct: true }
+      - { value: 'using source control (e.g. Git or SVN)', correct: true }
+      - { value: 'using http & https protocol with a POST method', correct: false }
+      - { value: 'Using a Platform as a Service (PaaS) like platform.sh', correct: true }
+      - { value: 'built scripts like Capistrano ...', correct: true }
+    help: 'https://symfony.com/doc/current/deployment.html#how-to-deploy-a-symfony-application-1'

@@ -1,0 +1,34 @@
+questions:
+  -
+    uuid: 1eebf878-8ba7-6bfa-aded-99d84c92580c
+    question: "What will be the output of the following code ?    function foo(int $y) {     \_\_\_ return function(int $x) use ($y): string {     \_\_\_\_\_\_\_ return str_repeat((string) $y, $x);     \_\_\_ };     }     $a = foo(3);     $b = foo(2);     echo $a(2), $b(3);"
+    answers:
+      - { value: '33222', correct: true }
+      - { value: '66', correct: false }
+      - { value: 'An error', correct: false }
+      - { value: '22233', correct: false }
+    help: "  \thttps://www.php.net/manual/en/function.str-repeat  \thttp://php.net/manual/en/functions.anonymous.php  "
+  -
+    uuid: 1eebf878-8ba9-646e-93a2-99d84c92580c
+    question: "What will be the output of this ?    $message = '';    $example = function ($arg) use ($message) {  var_dump($arg . ' ' . $message);  };  $example( hello );"
+    answers:
+      - { value: 'hello', correct: true }
+      - { value: 'Fatal Error', correct: false }
+      - { value: 'Hello World', correct: false }
+    help: 'https://www.php.net/manual/en/functions.anonymous.php    https://3v4l.org/el3W8'
+  -
+    uuid: 1eebf878-8ba9-6536-8861-99d84c92580c
+    question: 'What will be the output of this ?    $result = 0;    $one = function()  { var_dump($result); };'
+    answers:
+      - { value: '0', correct: false }
+      - { value: 'Null', correct: true }
+      - { value: 'Fatal Error', correct: false }
+    help: 'https://www.php.net/manual/en/functions.anonymous.php'
+  -
+    uuid: 1eebf878-8ba9-6586-8840-99d84c92580c
+    question: 'Is it possible to type the return type declaration of a function closure ?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'depends on strict_type defined in php.ini', correct: false }
+    help: 'https://www.php.net/manual/en/functions.anonymous.php'

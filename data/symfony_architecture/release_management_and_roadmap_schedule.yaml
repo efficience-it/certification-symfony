@@ -1,0 +1,40 @@
+questions:
+  -
+    uuid: 1eebf878-8ba5-66f2-9a68-99d84c92580c
+    question: 'For how long does a LTS will be maintained for security fixes ?'
+    answers:
+      - { value: '2 years', correct: false }
+      - { value: '3 years', correct: false }
+      - { value: '4 years', correct: true }
+      - { value: '5 years', correct: false }
+    help: 'https://symfony.com/doc/current/contributing/community/releases.html'
+  -
+    uuid: 1eebf878-8ba5-6738-be2f-99d84c92580c
+    question: 'For how long does a LTS will be maintained for bugs fixes ?'
+    answers:
+      - { value: '6 months', correct: false }
+      - { value: '1 years', correct: false }
+      - { value: '2 years', correct: false }
+      - { value: '3 years', correct: true }
+      - { value: '4 years', correct: false }
+    help: 'https://symfony.com/doc/current/contributing/community/releases.html'
+  -
+    uuid: 1eebf878-8ba5-677e-b15f-99d84c92580c
+    question: 'For how long does a no-LTS version will be maintained for security fixes ?'
+    answers:
+      - { value: '4 months', correct: false }
+      - { value: '6 months', correct: false }
+      - { value: '8 months', correct: true }
+      - { value: '10 months', correct: false }
+      - { value: '12 months', correct: false }
+    help: 'https://symfony.com/doc/current/contributing/community/releases.html'
+  -
+    uuid: 1eebf878-8ba5-67c4-a767-99d84c92580c
+    question: 'For how long does a no-LTS version will be maintained for bugs fixes ?'
+    answers:
+      - { value: '4 months', correct: false }
+      - { value: '6 months', correct: false }
+      - { value: '8 months', correct: true }
+      - { value: '10 months', correct: false }
+      - { value: '12 months', correct: false }
+    help: 'https://symfony.com/doc/current/contributing/community/releases.html'

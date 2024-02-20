@@ -1,0 +1,10 @@
+questions:
+  -
+    uuid: 1eebf878-8b9d-6e98-9e2b-99d84c92580c
+    question: 'Symfony is released under which license ?'
+    answers:
+      - { value: 'GNU General Public License (GPL)', correct: false }
+      - { value: 'ISC License', correct: false }
+      - { value: 'BSD license', correct: false }
+      - { value: 'MIT license', correct: true }
+    help: 'https://symfony.com/doc/current/contributing/code/license.html'

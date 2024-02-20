@@ -1,0 +1,38 @@
+questions:
+  -
+    uuid: 1eebf878-8ba1-62f0-89d9-99d84c92580c
+    question: 'What does the default strategy `affirmative` of the access decision manager mean?'
+    answers:
+      - { value: 'Access is granted as soon as there is one voter granting access', correct: true }
+      - { value: 'Access is granted if there are more voters granting access than denying', correct: false }
+      - { value: 'Access is granted if all voters grant acces', correct: false }
+      - { value: 'Access is granted if no voters throw an exception', correct: false }
+    help: 'https://symfony.com/doc/current/security/voters.html#changing-the-access-decision-strategy'
+  -
+    uuid: 1eebf878-8ba1-6336-a134-99d84c92580c
+    question: 'What does the strategy `consensus` of the access decision manager mean?'
+    answers:
+      - { value: 'Access is granted as soon as there is one voter granting access', correct: false }
+      - { value: 'Access is granted if there are more voters granting access than denying', correct: true }
+      - { value: 'Access is granted if all voters grant acces', correct: false }
+      - { value: 'Access is granted if no voters throw an exception', correct: false }
+    help: 'https://symfony.com/doc/current/security/voters.html#changing-the-access-decision-strategy'
+  -
+    uuid: 1eebf878-8ba1-6386-9a6c-99d84c92580c
+    question: 'What does the strategy `unanimous` of the access decision manager mean?'
+    answers:
+      - { value: 'Access is granted as soon as there is one voter granting access', correct: false }
+      - { value: 'Access is granted if there are more voters granting access than denying', correct: false }
+      - { value: 'Access is granted if there is no voter denying access', correct: true }
+      - { value: 'Access is granted if no voters throw an exception', correct: false }
+    help: 'https://symfony.com/doc/current/components/security/authorization.html#access-decision-manager'
+  -
+    uuid: 1eebf878-8ba1-63cc-97aa-99d84c92580c
+    question: 'What decision strategy exist ?'
+    answers:
+      - { value: 'affirmative', correct: true }
+      - { value: 'consensus', correct: true }
+      - { value: 'unanimous', correct: true }
+      - { value: 'positive', correct: false }
+      - { value: 'negative', correct: false }
+    help: 'https://symfony.com/doc/current/components/security/authorization.html#access-decision-manager'
