@@ -1,0 +1,50 @@
+questions:
+  -
+    uuid: 1eebf878-8b96-6f94-8836-99d84c92580c
+    question: 'Could the cursor position be changed in a command?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/components/console/helpers/cursor.html'
+  -
+    uuid: 1eebf878-8b9b-61b6-82fd-99d84c92580c
+    question: 'Could you prevent a command from running multiple times on a single server?'
+    answers:
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+    help: 'https://symfony.com/doc/current/console/lockable_trait.html'
+  -
+    uuid: 1eebf878-8ba7-6010-b41f-99d84c92580c
+    question: 'In a Command, which of these Constant exist, that you could return in your execute method ?'
+    answers:
+      - { value: 'Command::SUCCESS', correct: true }
+      - { value: 'Command::ERROR', correct: false }
+      - { value: 'Command::EXCEPTION', correct: false }
+      - { value: 'Command::VALID', correct: false }
+      - { value: 'Command::FAILURE', correct: true }
+      - { value: 'Command::INVALID', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Console/Command/Command.php'
+  -
+    uuid: 1eebf878-8ba7-6060-86eb-99d84c92580c
+    question: 'Is it possible to set a default Command ? how to do it ?'
+    answers:
+      - { value: 'Impossible, no default command available', correct: false }
+      - { value: 'Yes by setting the ->setDefaultCommand() on the Application', correct: true }
+      - { value: 'Yes by setting setDefault(true) in the method configure()', correct: false }
+    help: 'https://symfony.com/doc/current/components/console/changing_default_command.html'
+  -
+    uuid: 1eebf878-8ba7-60a6-9452-99d84c92580c
+    question: 'What is the right lifecycle in a Command ?'
+    answers:
+      - { value: 'initialize() -> interact() -> execute()', correct: true }
+      - { value: 'interact() -> initialize() -> execute()', correct: false }
+      - { value: 'initialize() -> execute() -> interact()', correct: false }
+    help: 'https://symfony.com/doc/current/console.html#command-lifecycle'
+  -
+    uuid: 1eec051e-510b-6aca-a11f-d755398b2126
+    question: 'How to show the help option written in the Command Class ?'
+    answers:
+      - { value: 'php bin/console the-command-name --help', correct: true }
+      - { value: 'php bin/console the-command-name --help-me', correct: false }
+      - { value: 'php bin/console help:the-command-name', correct: false }
+    help: 'https://symfony.com/doc/current/console/input.html#command-global-options'
