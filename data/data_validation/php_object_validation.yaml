@@ -1,0 +1,17 @@
+questions:
+  -
+    uuid: 1eec0499-a76d-66d2-aadb-f1225a91311b
+    question: "Is this way of validating an email is valid ?    $errors = $validator->validate('johndoe@gmail.com', new Assert\\Email());    if ($errors->count()) {    ...    }"
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/validation/raw_values.html'
+  -
+    uuid: 1eec049e-b567-6be8-b3c9-3b80b710b68d
+    question: 'Which Assert check an array of data ?'
+    answers:
+      - { value: 'new Assert\Collection', correct: true }
+      - { value: 'new Assert\ArrayCollection', correct: false }
+      - { value: 'new Assert\Traversable', correct: false }
+      - { value: 'new Assert\Iterable', correct: false }
+    help: 'https://symfony.com/doc/current/validation/raw_values.html'

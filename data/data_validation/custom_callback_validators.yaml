@@ -1,0 +1,38 @@
+questions:
+  -
+    uuid: 1eec042a-90a0-6478-8a7c-83bfaecaab6e
+    question: 'Which class would have to extend to create a FormValidator ?'
+    answers:
+      - { value: 'src/Symfony/Component/Validator/FormConstraint.php', correct: false }
+      - { value: 'src/Symfony/Component/Validator/Validator.php', correct: false }
+      - { value: 'src/Symfony/Component/Validator/Constraint.php', correct: true }
+      - { value: 'src/Symfony/Component/Validator/FormValidator.php', correct: false }
+    help: 'https://symfony.com/doc/current/validation/custom_constraint.html'
+  -
+    uuid: 1eec0433-872c-6d02-9232-4b97d5043a34
+    question: 'In Case, You want to create a Custom Validator, you create the IpRangeConstraint what will be the name of the Validator ?'
+    answers:
+      - { value: 'IpRangeValidator', correct: false }
+      - { value: 'ValidatorIpRange', correct: false }
+      - { value: 'IpRangeValidatorConstraint', correct: false }
+      - { value: 'IpRangeConstraintValidator', correct: true }
+    help: 'https://symfony.com/doc/current/validation/custom_constraint.html#creating-the-validator-itself'
+  -
+    uuid: 1eec0460-a9d0-6b7e-8d3d-4ba78cd90662
+    question: "What's the return type of the method validate in a Validator Class ?"
+    answers:
+      - { value: 'true, false', correct: true }
+      - { value: 'ConstraintViolationBuilderInterface', correct: true }
+      - { value: 'ConstraintViolationException', correct: false }
+      - { value: 'UnexpectedValueException', correct: true }
+    help: 'https://symfony.com/doc/current/validation/custom_constraint.html#creating-the-validator-itself'
+  -
+    uuid: 1eec047f-f3ee-68f4-ab1a-5dc9bda3f71a
+    question: 'What is the class to extend to test Constraint Validator ?'
+    answers:
+      - { value: 'ConstraintValidatorTestCase', correct: true }
+      - { value: 'ConstraintValidatorTest', correct: false }
+      - { value: 'ConstraintTestCase', correct: false }
+      - { value: 'ValidatorTestCase', correct: false }
+      - { value: 'ValidatorTest', correct: false }
+    help: 'https://symfony.com/doc/current/validation/custom_constraint.html#testing-custom-constraints'

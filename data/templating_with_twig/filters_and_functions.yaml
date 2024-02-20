@@ -1,0 +1,10 @@
+questions:
+  -
+    uuid: 1eebf878-8ba7-6ac4-b297-99d84c92580c
+    question: 'How do you add the value 10 to an array called $myArray?'
+    answers:
+      - { value: 'array_shift($myArray, 10);', correct: false }
+      - { value: '$myArray = array_merge($myArray, [10]);', correct: true }
+      - { value: '$myArray = array_merge($myArray, 10);', correct: false }
+      - { value: 'array_unshift($myArray, 10);', correct: true }
+    help: 'https://www.php.net/manual/en/function.array-merge    https://www.php.net/manual/en/function.array-shift'

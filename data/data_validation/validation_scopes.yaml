@@ -1,0 +1,16 @@
+questions:
+  -
+    uuid: 1eec0485-af89-6924-89bd-af67db890733
+    question: 'Which part does a CallBack validate in a Validator ?'
+    answers:
+      - { value: 'an attribute', correct: false }
+      - { value: 'a method', correct: false }
+      - { value: 'the class', correct: true }
+    help: 'https://symfony.com/doc/current/validation.html#classes'
+  -
+    uuid: 1eec04ea-28bc-6422-9e58-31b243cffe44
+    question: 'Does the validate() method returns a ConstraintViolationList object ? That acts like an array of errors. Each error in the collection is a ConstraintViolation object, which holds the error message on its getMessage() method.'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/validation/raw_values.html'

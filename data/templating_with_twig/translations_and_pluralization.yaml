@@ -1,0 +1,11 @@
+questions:
+  -
+    uuid: 1eebf878-8b9a-650e-9293-99d84c92580c
+    question: 'It is possible to find missing or unused translation messages from templates?'
+    answers:
+      - { value: 'No, it is not possible.', correct: false }
+      - { value: 'Yes, with the debug:translator command', correct: false }
+      - { value: 'Yes, with the debug:translation command', correct: true }
+      - { value: 'Yes, with the debug:i18n command', correct: false }
+      - { value: 'Yes, with the debug:translate command', correct: false }
+    help: 'https://symfony.com/doc/current/translation.html#translation-debug'
