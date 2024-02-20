@@ -1,0 +1,28 @@
+questions:
+  -
+    uuid: 1eec03d0-54b8-69ce-b60e-59a90bbfc757
+    question: 'Which Buil-in Validators is used to check a type ?'
+    answers:
+      - { value: 'IsType', correct: false }
+      - { value: 'HasType', correct: false }
+      - { value: 'IsString, IsInteger, IsArray ...', correct: false }
+      - { value: 'Type', correct: true }
+    help: 'https://symfony.com/doc/current/reference/constraints.html'
+  -
+    uuid: 1eec0422-54c9-67b8-bda0-031fec503cfe
+    question: 'Which Buil-in Validators exist to check the DateTime ?'
+    answers:
+      - { value: 'DateTime', correct: true }
+      - { value: 'Time', correct: true }
+      - { value: 'Date', correct: true }
+      - { value: 'TimeZone', correct: true }
+      - { value: 'DateTimeZone', correct: false }
+    help: 'https://symfony.com/doc/current/validation.html'
+  -
+    uuid: 1eec045b-a03a-6704-a20d-5305a622e54a
+    question: 'What are the valid way to Assert Choices in a Validator ?'
+    answers:
+      - { value: "#[Assert\\Choice( choices: ['fiction', 'non-fiction'])]    private string $genre;", correct: true }
+      - { value: "#[Assert\\Choices(['fiction', 'non-fiction'])]    private string $genre;", correct: false }
+      - { value: "#[Assert\\Choice(['fiction', 'non-fiction'])]    private string $genre;", correct: true }
+    help: 'https://symfony.com/doc/current/validation.html#constraint-configuration'

@@ -1,0 +1,32 @@
+questions:
+  -
+    uuid: 1eebf878-8ba5-6382-a6c5-99d84c92580c
+    question: "Is this a valid way to add a DataTransformer ?    $builder    \_\_\_ ->add('issue', TextType::class)    \_\_\_ ->addModelTransformer($transformer);"
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://symfony.com/doc/current/form/data_transformers.html#using-the-transformer'
+  -
+    uuid: 1eebf878-8ba5-63c8-9923-99d84c92580c
+    question: "The first function in the CallBackTransformer is to transform, and the second to reverseTransform ?    $builder    \_\_\_ ->get('tags')     \_\_\_ ->addModelTransformer(    \_\_\_\_\_\_\_ new CallbackTransformer(     \_\_\_\_\_\_\_\_\_\_\_ function ($tagsAsArray): string {     \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ return implode(', ', $tagsAsArray);     \_\_\_\_\_\_\_\_\_\_\_ },     \_\_\_\_\_\_\_\_\_\_\_ function ($tagsAsString): array {     \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ return explode(', ', $tagsAsString);     \_\_\_\_\_\_\_\_\_\_\_ }     \_\_\_\_\_\_\_ )    \_\_\_ ) ;"
+    answers:
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Form/CallbackTransformer.php'
+  -
+    uuid: 1eebf878-8ba5-6418-8750-99d84c92580c
+    question: 'What Exception is thrown when to data is not valid in a DataTransformer ?'
+    answers:
+      - { value: 'FailedTransformationException', correct: false }
+      - { value: 'DataTransformationException', correct: false }
+      - { value: 'ValidTransformationException', correct: false }
+      - { value: 'TransformationFailedException', correct: true }
+    help: 'https://symfony.com/doc/current/form/data_transformers.html#creating-the-transformer'
+  -
+    uuid: 1eebf878-8ba5-645e-bb9b-99d84c92580c
+    question: 'In Data Transformer, in the reverseTransform, how to customize the error message ?'
+    answers:
+      - { value: 'By setting the setInvalidMessage on the TransformationFailedException', correct: true }
+      - { value: 'By setting the invalid_message in the options of the form type', correct: true }
+      - { value: "It's not possible", correct: false }
+    help: 'https://symfony.com/doc/current/form/data_transformers.html#using-the-transformer'

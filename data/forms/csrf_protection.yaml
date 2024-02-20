@@ -1,0 +1,17 @@
+questions:
+  -
+    uuid: 1eebf878-8ba5-680a-a545-99d84c92580c
+    question: 'how to override the field name of the the csrf token in a form ?'
+    answers:
+      - { value: 'by renaming the  name  value in the html input, before using crsf_token() in twig to generate it', correct: true }
+      - { value: "by adding a CsrfTokenType and setting a  name  value in it's option", correct: false }
+      - { value: "by overriding the 'csrf_field_name' in the function set default in configureOptions of the targeted form.", correct: true }
+      - { value: 'by setting it in the config.yaml file framework.csrf_token.default_field', correct: false }
+    help: 'https://symfony.com/doc/current/security/csrf.html'
+  -
+    uuid: 1eebf878-8ba5-6878-8ebd-99d84c92580c
+    question: "Is this way is a correct way to disable csrf in a form ?    public function configureOptions(OptionsResolver $resolver): void {    \_\_\_\_ $resolver->setDefaults([     \_\_\_\_\_\_\_\_\_ 'csrf_protection' => false,    \_\_\_\_ ]    }"
+    answers:
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+    help: 'https://symfony.com/doc/current/security/csrf.html#csrf-protection-in-symfony-forms'

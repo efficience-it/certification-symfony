@@ -1,0 +1,21 @@
+questions:
+  -
+    uuid: 1eebf878-8ba6-65c0-a662-99d84c92580c
+    question: 'Could a check be performed against the status code to verify that the response is a redirected one?'
+    answers:
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/2.3/src/Symfony/Component/HttpFoundation/Response.php#L1073'
+  -
+    uuid: 1eebf878-8ba9-65cc-9f30-99d84c92580c
+    question: "Which methods' Response check status code or specific reasons ?"
+    answers:
+      - { value: 'isRedirect()', correct: true }
+      - { value: 'isTemporaryRedirect', correct: false }
+      - { value: 'isPermanentRedirect', correct: false }
+      - { value: 'isCreated', correct: false }
+      - { value: 'isForbidden', correct: true }
+      - { value: 'isSuccessful', correct: true }
+      - { value: 'isOk', correct: true }
+      - { value: 'isRedirection', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Response.php#L1262C21-L1262C28'
