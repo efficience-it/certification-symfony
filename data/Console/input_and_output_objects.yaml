@@ -1,0 +1,11 @@
+questions:
+  -
+    uuid: 1eebf878-8b9e-6dc0-a62a-99d84c92580c
+    question: 'Which Question class are available ?'
+    answers:
+      - { value: 'Symfony\Component\Console\Question\Question', correct: true }
+      - { value: 'Symfony\Component\Console\Question\ChoiceQuestion', correct: true }
+      - { value: 'Symfony\Component\Console\Question\ConfirmationQuestion', correct: true }
+      - { value: 'Symfony\Component\Console\Question\SelectQuestion', correct: false }
+      - { value: 'Symfony\Component\Console\Question\ValidQuestion', correct: false }
+    help: 'https://symfony.com/doc/current/components/console/helpers/questionhelper.html'
