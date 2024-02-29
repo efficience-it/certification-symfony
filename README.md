@@ -1,14 +1,14 @@
 # Questions to prepare for the Symfony Certification V6
 
-## PHP
+## PHP and Web Security
 - PHP API up to PHP 8.1 version 
 - Object Oriented Programming 
-- Namespaces 
+- [Namespaces](data/php_and_web_security/namespaces.yaml)
 - Interfaces
-- Anonymous functions and closures 
+- [Anonymous functions and closures](data/php_and_web_security/anonymous_functions_and_closures.yaml)
 - Abstract classes 
 - Exception and error handling 
-- Traits 
+- [Traits](data/php_and_web_security/traits.yaml)
 - PHP extensions 
 - SPL
 
@@ -16,7 +16,7 @@
 - Client / Server interaction
 - Status codes
 - HTTP request
-- HTTP response
+- [HTTP response](data/http/http_response.yaml)
 - HTTP methods
 - Cookies
 - Caching
@@ -26,7 +26,7 @@
 
 ## Symfony Architecture
 - Symfony Flex
-- [License](data/architecture/license.yaml)
+- [License](data/symfony_architecture/license.yaml)
 - Components
 - Bridges
 - Code organization
@@ -34,22 +34,22 @@
 - Exception handling
 - Event dispatcher and kernel events
 - Official best practices
-- [Release management](data/architecture/release_management.yaml)
+- [Release management](data/symfony_architecture/release_management.yaml)
 - Backward compatibility promise
-- Deprecations best practices
+- [Deprecations best practices](data/symfony_architecture/deprecations_best_practices.yaml)
 - Framework overloading
-- Release management and roadmap schedule
+- [Release management and roadmap schedule](data/symfony_architecture/release_management_and_roadmap_schedule.yaml)
 - Framework interoperability and PSRs
 - Naming conventions
 
 ## Controllers
 - Naming conventions
 - The base AbstractController class
-- The request
+- [The request](data/controllers/the_request.yaml)
 - The response
 - The cookies
 - The session
-- The flash messages
+- [The flash messages](data/controllers/the_flash_messages.yaml)
 - HTTP redirects
 - Internal redirects
 - Generate 404 pages
@@ -64,23 +64,23 @@
 - Trigger redirects
 - Special internal routing attributes
 - Domain name matching
-- Conditional request matching
+- [Conditional request matching](data/routing/conditional_request_matching.yaml)
 - HTTP methods matching
 - User's locale guessing
-- Router debugging
+- [Router debugging](data/routing/router_debugging.yaml)
 
 ## Templating with Twig
 - Twig syntax up to 3.3 version
-- Auto escaping
+- [Auto escaping](data/templating_with_twig/auto_escaping.yaml)
 - Template inheritance
-- Global variables
-- Filters and functions
+- [Global variables](data/templating_with_twig/global_variables.yaml)
+- [Filters and functions](data/templating_with_twig/filters_and_functions.yaml)
 - Template includes
 - Loops and conditions
 - URLs generation
-- Controller rendering
-- Translations and pluralization
-- String interpolation
+- [Controller rendering](data/templating_with_twig/controller_rendering.yaml)
+- [Translations and pluralization](data/templating_with_twig/translations_and_pluralization.yaml)
+- [String interpolation](data/templating_with_twig/string_interpolation.yaml)
 - Assets management
 - Debugging variables
 
@@ -90,20 +90,20 @@
 - Form types
 - Forms rendering with Twig
 - Forms theming
-- CSRF protection
+- [CSRF protection](data/forms/csrf_protection.yaml)
 - Handling file upload
-- Built-in form types
-- Data transformers
-- Form events
+- [Built-in form types](data/forms/built_in_form_types.yaml)
+- [Data transformers](data/forms/data_transformers.yaml)
+- [Form events](data/forms/form_events.yaml)
 - Form type extensions
 
 ## Data Validation
-- PHP object validation
-- Built-in validation constraints
-- Validation scopes
-- Validation groups
-- Group sequence
-- Custom callback validators
+- [PHP object validation](data/data_validation/php_object_validation.yaml)
+- [Built-in validation constraints](data/data_validation/built_in_validation_constraints.yaml)
+- [Validation scopes](data/data_validation/validation_scopes.yaml)
+- [Validation groups](data/data_validation/validation_groups.yaml)
+- [Group sequence](data/data_validation/group_sequence.yaml)
+- [Custom callback validators](data/data_validation/custom_callback_validators.yaml)
 - Violations builder
 
 ## Dependency Injection
@@ -114,7 +114,7 @@
 - Service decoration
 - Tags
 - Semantic configuration
-- Factories
+- [Factories](data/dependency_injection/factories.yaml)
 - Compiler passes
 - Services autowiring
 
@@ -125,15 +125,15 @@
 - Providers
 - Firewalls
 - Users
-- Password hashers
+- [Password hashers](data/security/password_hashers.yaml)
 - Roles
-- Access Control Rules
+- [Access Control Rules](data/security/access_control_rules.yaml)
 - Authenticators
-- Voters and voting strategies
+- [Voters and voting strategies](data/security/voters_and_voting_strategies.yaml)
 
 ## HTTP Caching
 - Cache types (browser, proxies and reverse-proxies)
-- Expiration (Expires, Cache-Control)
+- [Expiration (Expires, Cache-Control)](data/http_caching/expiration_expires_cache_control.yaml)
 - Validation (ETag, Last-Modified)
 - Client side caching
 - Server side caching
@@ -141,13 +141,13 @@
 
 ## Console
 - Built-in commands
-- Custom commands
+- [Custom commands](data/console/custom_commands.yaml)
 - Configuration
-- Options and arguments
-- Input and Output objects
+- [Options and arguments](data/console/options_and_arguments.yaml)
+- [Input and Output objects](data/console/input_and_output_objects.yaml)
 - Built-in helpers
-- Console events
-- [Verbosity levels](data/Console/verbosity_levels.yaml)
+- [Console events](data/console/console_events.yaml)
+- [Verbosity levels](data/console/verbosity_levels.yaml)
 
 ## Automated Tests
 - Unit tests with PHPUnit
@@ -165,12 +165,12 @@
 - Configuration (including DotEnv and ExpressionLanguage components)
 - Error handling
 - Code debugging
-- Deployment best practices
+- [Deployment best practices](data/miscellaneous/deployment_best_practices.yaml)
 - Cache, Process and Serializer components
 - Messenger component
-- Mime and Mailer components
+- [Mime and Mailer components](data/miscellaneous/mime_and_mailer_components.yaml)
 - Filesystem and Finder components
-- Lock component
+- [Lock component](data/miscellaneous/lock_component.yaml)
 - Web Profiler, Web Debug Toolbar and Data collectors
 - Internationalization and localization (and Intl component)
 - Runtime component
