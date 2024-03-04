@@ -1,0 +1,11 @@
+questions:
+  -
+    uuid: 1eebf878-8ba3-6ae6-9530-99d84c92580c
+    question: 'What is the default directory of Doctrine entities in a bundle?'
+    answers:
+      - { value: Entities, correct: false }
+      - { value: Doctrine/Entities, correct: false }
+      - { value: Entity, correct: true }
+      - { value: Doctrine, correct: false }
+      - { value: Doctrine/Entity, correct: false }
+    help: 'http://symfony.com/doc/current/book/doctrine.html'

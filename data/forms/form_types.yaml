@@ -1,0 +1,9 @@
+questions:
+  -
+    uuid: 1eed57c2-219d-684a-b181-8b98c4e373e6
+    question: 'What value is the default_protocol option of the UrlType form type ?'
+    answers:
+      - { value: https, correct: false }
+      - { value: http, correct: true }
+      - { value: 'To prepend the submitted value with an URI scheme (eg. http://) if it does not begin with one.', correct: true }
+    help: 'https://symfony.com/doc/current/reference/forms/types/url.html'

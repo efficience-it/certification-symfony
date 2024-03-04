@@ -1,0 +1,10 @@
+questions:
+  -
+    uuid: 1eebf878-8b98-6a1a-b2f8-99d84c92580c
+    question: 'What is the format of the bin/console file?'
+    answers:
+      - { value: 'Binary file', correct: false }
+      - { value: 'PHAR file', correct: false }
+      - { value: 'Plain PHP script', correct: true }
+      - { value: 'Self-executable compressed file', correct: false }
+    help: 'https://github.com/symfony/recipes/blob/main/symfony/console/5.3/bin/console#L1-L2'

@@ -18,7 +18,7 @@ questions:
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#113047'
   -
     uuid: 1eebf878-8ba9-641e-8f50-99d84c92580c
-    question: "Where is the Test Class ?    namespace Foo\\Bar;  class SomeClass {  \_\_\_ use Foo\\Test;  }"
+    question: 'Where is the Test Class ?    namespace Foo\\Bar;  class SomeClass {  \_\_\_ use Foo\\Test;  }'
     answers:
       - { value: 'Foo\Bar', correct: false }
       - { value: 'Foo\Bar\Foo\Test', correct: true }

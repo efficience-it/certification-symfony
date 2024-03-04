@@ -1,0 +1,10 @@
+questions:
+  -
+    uuid: 1eebf878-8ba4-60e0-b407-99d84c92580c
+    question: 'What is the tag to use to create a custom form field type?'
+    answers:
+      - { value: form.type_extension, correct: false }
+      - { value: form_type, correct: false }
+      - { value: form.type, correct: true }
+      - { value: form, correct: false }
+    help: 'https://symfony.com/doc/current/reference/dic_tags.html#form-type'

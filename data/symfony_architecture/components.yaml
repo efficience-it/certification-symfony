@@ -1,0 +1,17 @@
+questions:
+  -
+    uuid: 1eebf878-8ba6-6610-a019-99d84c92580c
+    question: 'Could an Expression be configured using ContainerConfigurator?'
+    answers:
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+    help: 'https://github.com/symfony/dependency-injection/blob/3.4/Loader/Configurator/ContainerConfigurator.php#L125'
+  -
+    uuid: 1eebf878-8baa-609e-9284-99d84c92580c
+    question: 'If no methods are specified for a route, what methods will be matched?'
+    answers:
+      - { value: 'Any methods', correct: true }
+      - { value: GET, correct: false }
+      - { value: 'Safe methods: GET or HEAD', correct: false }
+      - { value: 'GET or POST', correct: false }
+    help: 'https://symfony.com/doc/4.3/routing.html#matching-http-methods'

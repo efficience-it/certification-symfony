@@ -1,0 +1,10 @@
+questions:
+  -
+    uuid: 1eebf878-8ba0-699a-b7c4-99d84c92580c
+    question: 'Which of the following function declarations must be used to return a reference?'
+    answers:
+      - { value: 'function &foo() {...}', correct: true }
+      - { value: 'function $foo() {...}', correct: false }
+      - { value: 'function %foo() {...}', correct: false }
+      - { value: 'function $$foo() {...}', correct: false }
+    help: 'https://www.php.net/manual/en/language.references.return.php'

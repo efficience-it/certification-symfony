@@ -1,0 +1,25 @@
+questions:
+  -
+    uuid: 1eebf878-8ba1-6534-a02b-99d84c92580c
+    question: 'Until Symfony 5.3, to implement UserInterface which method you have to define ?'
+    answers:
+      - { value: getRoles(), correct: true }
+      - { value: getSalt(), correct: true }
+      - { value: getUsername(), correct: true }
+      - { value: eraseCredentials(), correct: true }
+      - { value: getCredentials(), correct: false }
+      - { value: getHash(), correct: false }
+      - { value: getId(), correct: false }
+    help: 'https://github.com/symfony/symfony/blob/master/src/Symfony/Component/Security/Core/User/UserInterface.php\_'
+  -
+    uuid: 1eed6647-6f02-6908-b85e-f514f4793299
+    question: 'Since Symfony 5.4, to implement UserInterface which method you have to define ?'
+    answers:
+      - { value: getSalt, correct: false }
+      - { value: getUsername, correct: false }
+      - { value: getUserIdentifier, correct: true }
+      - { value: getCredentials, correct: false }
+      - { value: eraseCredentials, correct: true }
+      - { value: getRoles, correct: true }
+      - { value: addRole, correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Core/User/UserInterface.php'

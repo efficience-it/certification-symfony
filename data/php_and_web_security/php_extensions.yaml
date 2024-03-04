@@ -1,0 +1,8 @@
+questions:
+  -
+    uuid: 1eebf878-8baa-6346-ac4f-99d84c92580c
+    question: 'Is it possible to type hint variable in function definition?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'http://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration'

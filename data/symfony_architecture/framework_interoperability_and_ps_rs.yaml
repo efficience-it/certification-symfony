@@ -1,0 +1,10 @@
+questions:
+  -
+    uuid: 1eebf878-8b9f-61b2-955c-99d84c92580c
+    question: 'Which class will you use to convert an action parameter?'
+    answers:
+      - { value: 'Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter', correct: true }
+      - { value: 'Sensio\Bundle\FrameworkExtraBundle\Controller\ParamConverter', correct: false }
+      - { value: 'Symfony\Bundle\FrameworkBundle\Configuration\ParamConverter', correct: false }
+      - { value: 'Symfony\Bundle\FrameworkBundle\Controller\ParamConverter', correct: false }
+    help: 'https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/annotations/converters.html'

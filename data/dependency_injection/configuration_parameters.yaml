@@ -1,0 +1,8 @@
+questions:
+  -
+    uuid: 1eebf878-8ba2-6b14-854d-99d84c92580c
+    question: 'Given a deprecated service, does using the %service_id% placeholder required in the deprecation message?'
+    answers:
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+    help: 'https://symfony.com/doc/current/service_container/alias_private.html#deprecating-services'

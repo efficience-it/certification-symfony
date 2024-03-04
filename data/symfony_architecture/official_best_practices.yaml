@@ -1,0 +1,11 @@
+questions:
+  -
+    uuid: 1eebf878-8b9a-68ce-b5e5-99d84c92580c
+    question: 'According to the official Symfony Best Practices Guide, where should the application specific configuration parameters be stored?'
+    answers:
+      - { value: 'In the src/Kernel.php file.', correct: false }
+      - { value: 'In the .app.yml file at the root of the project directory.', correct: false }
+      - { value: 'In the config/parameters.yaml file.', correct: false }
+      - { value: 'In the config/services.yaml file.', correct: true }
+      - { value: 'In global environment variables.', correct: false }
+    help: 'https://symfony.com/doc/current/best_practices.html#application-related-configuration'

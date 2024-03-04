@@ -1,0 +1,8 @@
+questions:
+  -
+    uuid: 1eebf878-8ba0-63f0-be89-99d84c92580c
+    question: 'Server returns a specific status code when you are not allowed to access a resource'
+    answers:
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
+    help: 'https://github.com/for-GET/know-your-http-well/blob/master/status-codes.md'

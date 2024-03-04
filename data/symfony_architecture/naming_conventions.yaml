@@ -1,0 +1,21 @@
+questions:
+  -
+    uuid: 1eebf878-8ba8-669a-a5e6-99d84c92580c
+    question: 'We use camelCase for ?'
+    answers:
+      - { value: function, correct: true }
+      - { value: 'php variables', correct: true }
+      - { value: 'Twig template name', correct: false }
+      - { value: 'methods name', correct: true }
+      - { value: arguments, correct: true }
+      - { value: constants, correct: false }
+    help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
+  -
+    uuid: 1eebf878-8ba8-6730-8eea-99d84c92580c
+    question: 'We use screaming snake case for ?'
+    answers:
+      - { value: 'php variables', correct: false }
+      - { value: constants, correct: true }
+      - { value: methods, correct: false }
+      - { value: 'php classes', correct: false }
+    help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'

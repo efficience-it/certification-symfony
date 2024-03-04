@@ -1,0 +1,18 @@
+questions:
+  -
+    uuid: 1eebf878-8b9b-68f0-8c19-99d84c92580c
+    question: 'What will be returned by the following code when the query string is ?foo=bar?\_$request->query->get('bar');'
+    answers:
+      - { value: null, correct: true }
+      - { value: false, correct: false }
+      - { value: QueryException will be thrown, correct: false }
+      - { value: NotFoundException will be thrown, correct: false }
+    help: 'https://symfony.com/doc/current/components/http_foundation.html'
+  -
+    uuid: 1eebf878-8ba8-65b4-9642-99d84c92580c
+    question: 'What are the available option to the method file in AbstractController ?'
+    answers:
+      - { value: ResponseHeaderBag::DISPOSITION_DOWNLOAD, correct: false }
+      - { value: ResponseHeaderBag::DISPOSITION_ATTACHMENT, correct: true }
+      - { value: ResponseHeaderBag::DISPOSITION_INLINE, correct: true }
+    help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/ResponseHeaderBag.php#L24C18-L24C41'

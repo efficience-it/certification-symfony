@@ -1,0 +1,18 @@
+questions:
+  -
+    uuid: 1eebf878-8ba4-6126-8f50-99d84c92580c
+    question: 'With twig, what is the correct way to display the value of a PHP constant?'
+    answers:
+      - { value: '{{ Namespace\\Classname::CONSTANT_NAME }}', correct: false }
+      - { value: "{{ constant('Namespace\\Classname::CONSTANT_NAME') }}", correct: false }
+      - { value: '{{ Namespace\Classname::CONSTANT_NAME }}', correct: false }
+      - { value: '{{ constant(''Namespace\\Classname::CONSTANT_NAME'') }}', correct: true }
+    help: 'http://twig.symfony.com/doc/functions/constant.html'
+  -
+    uuid: 1eebf878-8ba5-6292-99ae-99d84c92580c
+    question: "Does this syntax perform any check? {{ foo['bar'] }}"
+    answers:
+      - { value: "Yes, if foo is an object then if it's an array", correct: false }
+      - { value: 'No', correct: false }
+      - { value: 'Yes if foo is an array', correct: true }
+    help: 'https://twig.symfony.com/doc/3.x/templates.html#variables'

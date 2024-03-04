@@ -60,17 +60,17 @@ questions:
     help: 'https://tools.ietf.org/html/rfc2616#page-79'
   -
     uuid: 1eebf878-8ba6-6ac0-b4bc-99d84c92580c
-    question: "Which headers/directives will be ignored by a proxy if\_Expires,\_s-maxage\_and\_max-age\_are all present in a response ?"
+    question: 'Which headers/directives will be ignored by a proxy if\_Expires,\_s-maxage\_and\_max-age\_are all present in a response ?'
     answers:
       - { value: 'Expires', correct: true }
       - { value: 'max-age', correct: true }
-      - { value: "s-maxage    \_      ", correct: false }
-    help: "  \thttps://tools.ietf.org/html/rfc7234#section-5.2.2.8  \thttps://tools.ietf.org/html/rfc7234#section-5.2.2.9  \thttps://tools.ietf.org/html/rfc7234#section-5.3  "
+      - { value: 's-maxage    \_      ', correct: false }
+    help: '  \thttps://tools.ietf.org/html/rfc7234#section-5.2.2.8  \thttps://tools.ietf.org/html/rfc7234#section-5.2.2.9  \thttps://tools.ietf.org/html/rfc7234#section-5.3  '
   -
     uuid: 1eebf878-8ba7-6268-bc81-99d84c92580c
     question: 'What happens for an HTTP response if it has both the Expires and Cache-Control headers set?'
     answers:
-      - { value: "The response won't be cachable and caching systems will simply ignore it.", correct: false }
+      - { value: 'The response won't be cachable and caching systems will simply ignore it.', correct: false }
       - { value: 'Caching systems will use the Expires header field if the response is generated if the current day number is odd, otherwise they will use the Cache-Control header field.', correct: false }
       - { value: 'Caching systems will favor the Cache-Control header field over the Expires field to cache the response.', correct: true }
       - { value: 'Caching systems will favor the Expires header field over the Cache-Control field to cache the response.', correct: false }

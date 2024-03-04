@@ -1,0 +1,9 @@
+questions:
+  -
+    uuid: 1eebf878-8ba5-6116-88ba-99d84c92580c
+    question: "Is it possible make $tags directly indexed with a specified field ?/** @Entity */\_class Content\_{\_/** @OneToMany(targetEntity= Tag ) */\_private Tag $tags;\_}\_"
+    answers:
+      - { value: 'Yes, by adding the attribute indexBy to the OneToMany annotation', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'Yes, by implementing the IndexableInterface', correct: false }
+    help: 'http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/tutorials/working-with-indexed-associations.html#mapping-indexed-associations'
