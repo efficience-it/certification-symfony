@@ -1,20 +1,20 @@
 # Questions to prepare for the Symfony Certification V6
 
 ## PHP and Web Security
-- PHP API up to PHP 8.1 version 
-- Object Oriented Programming 
+- [PHP API up to PHP 8.1 version](data/php_and_web_security/phpapi_up_to_php81_version.yaml)
+- [Object Oriented Programming](data/php_and_web_security/object_oriented_programming.yaml)
 - [Namespaces](data/php_and_web_security/namespaces.yaml)
 - Interfaces
 - [Anonymous functions and closures](data/php_and_web_security/anonymous_functions_and_closures.yaml)
 - Abstract classes 
 - Exception and error handling 
 - [Traits](data/php_and_web_security/traits.yaml)
-- PHP extensions 
+- [PHP extensions](data/php_and_web_security/php_extensions.yaml)
 - SPL
 
 ## HTTP
 - Client / Server interaction
-- Status codes
+- [Status codes](data/http/status_codes.yaml)
 - HTTP request
 - [HTTP response](data/http/http_response.yaml)
 - HTTP methods
@@ -27,24 +27,24 @@
 ## Symfony Architecture
 - Symfony Flex
 - [License](data/symfony_architecture/license.yaml)
-- Components
+- [Components](data/symfony_architecture/components.yaml)
 - Bridges
-- Code organization
+- [Code organization](data/symfony_architecture/code_organization.yaml)
 - Request handling
 - Exception handling
 - Event dispatcher and kernel events
-- Official best practices
+- [Official best practices](data/symfony_architecture/official_best_practices.yaml)
 - [Release management](data/symfony_architecture/release_management.yaml)
 - Backward compatibility promise
 - [Deprecations best practices](data/symfony_architecture/deprecations_best_practices.yaml)
 - Framework overloading
 - [Release management and roadmap schedule](data/symfony_architecture/release_management_and_roadmap_schedule.yaml)
-- Framework interoperability and PSRs
-- Naming conventions
+- [Framework interoperability and PSRs](data/symfony_architecture/framework_interoperability_and_ps_rs.yaml)
+- [Naming conventions](data/symfony_architecture/naming_conventions.yaml)
 
 ## Controllers
 - Naming conventions
-- The base AbstractController class
+- [The base AbstractController class](data/controllers/the_base_abstract_controller_class.yaml)
 - [The request](data/controllers/the_request.yaml)
 - The response
 - The cookies
@@ -70,7 +70,7 @@
 - [Router debugging](data/routing/router_debugging.yaml)
 
 ## Templating with Twig
-- Twig syntax up to 3.3 version
+- [Twig syntax up to 3.3 version](data/templating_with_twig/twig_syntax_up_to33_version.yaml)
 - [Auto escaping](data/templating_with_twig/auto_escaping.yaml)
 - Template inheritance
 - [Global variables](data/templating_with_twig/global_variables.yaml)
@@ -85,9 +85,9 @@
 - Debugging variables
 
 ## Forms
-- Forms creation
+- [Forms creation](data/forms/forms_creation.yaml)
 - Forms handling
-- Form types
+- [Form types](data/forms/form_types.yaml)
 - Forms rendering with Twig
 - Forms theming
 - [CSRF protection](data/forms/csrf_protection.yaml)
@@ -95,7 +95,7 @@
 - [Built-in form types](data/forms/built_in_form_types.yaml)
 - [Data transformers](data/forms/data_transformers.yaml)
 - [Form events](data/forms/form_events.yaml)
-- Form type extensions
+- [Form type extensions](data/forms/form_type_extensions.yaml)
 
 ## Data Validation
 - [PHP object validation](data/data_validation/php_object_validation.yaml)
@@ -109,7 +109,7 @@
 ## Dependency Injection
 - Service container
 - Built-in services
-- Configuration parameters
+- [Configuration parameters](data/dependency_injection/configuration_parameters.yaml)
 - Services registration
 - Service decoration
 - Tags
@@ -124,7 +124,7 @@
 - Configuration
 - Providers
 - Firewalls
-- Users
+- [Users](data/security/users.yaml)
 - [Password hashers](data/security/password_hashers.yaml)
 - Roles
 - [Access Control Rules](data/security/access_control_rules.yaml)
@@ -140,9 +140,9 @@
 - Edge Side Includes
 
 ## Console
-- Built-in commands
+- [Built-in commands](data/console/built_in_commands.yaml)
 - [Custom commands](data/console/custom_commands.yaml)
-- Configuration
+- [Configuration](data/console/configuration.yaml)
 - [Options and arguments](data/console/options_and_arguments.yaml)
 - [Input and Output objects](data/console/input_and_output_objects.yaml)
 - Built-in helpers
