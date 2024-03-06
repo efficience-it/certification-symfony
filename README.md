@@ -1,4 +1,6 @@
-# Questions to prepare for the Symfony Certification V6
+# Certification Symfony
+
+Linked to this documentation, this repository is a way for developper to train to be certificated for Twig.
 
 ## PHP and Web Security
 - [PHP API up to PHP 8.1 version](data/php_and_web_security/phpapi_up_to_php81_version.yaml)
@@ -177,6 +179,6 @@
 
 And to register, buy a voucher.
 
-https://certification.symfony.com/exams/twig.html
+https://certification.symfony.com/exams/symfony.html
 
 To train with our team, contact us on https://www.itefficience.com
