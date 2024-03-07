@@ -12,13 +12,13 @@ questions:
     uuid: 1eebf878-8b98-6592-b2c2-99d84c92580c
     question: 'What is the translation domain for validation error messages?'
     answers:
-      - { value: 'validation', correct: false }
-      - { value: 'constraint', correct: false }
-      - { value: 'validators', correct: true }
-      - { value: 'messages', correct: false }
-      - { value: 'contraints', correct: false }
-      - { value: 'validator', correct: false }
-      - { value: 'validations', correct: false }
+      - { value: validation, correct: false }
+      - { value: constraint, correct: false }
+      - { value: validators, correct: true }
+      - { value: messages, correct: false }
+      - { value: contraints, correct: false }
+      - { value: validator, correct: false }
+      - { value: validations, correct: false }
     help: 'https://symfony.com/doc/current/reference/configuration/framework.html#translation-domain'
   -
     uuid: 1eebf878-8b9b-6b98-970c-99d84c92580c
@@ -33,9 +33,9 @@ questions:
     uuid: 1eebf878-8b9d-65a6-a7ee-99d84c92580c
     question: 'What is the return type of the ValidatorInterface::validate method?'
     answers:
-      - { value: 'Doctrine\Common\Collections\Collection', correct: false }
-      - { value: 'Symfony\Component\Validator\ConstraintViolationListInterface', correct: true }
-      - { value: 'array', correct: false }
+      - { value: Doctrine\Common\Collections\Collection, correct: false }
+      - { value: Symfony\Component\Validator\ConstraintViolationListInterface, correct: true }
+      - { value: array, correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Validator/Validator/ValidatorInterface.php#L40'
   -
     uuid: 1eebf878-8b9f-6d24-94f5-99d84c92580c
@@ -59,10 +59,10 @@ questions:
     uuid: 1eebf878-8ba1-68d6-b09a-99d84c92580c
     question: 'Which constraints exist?'
     answers:
-      - { value: 'Blank', correct: true }
-      - { value: 'IdenticalTo', correct: true }
-      - { value: 'EqualTo', correct: true }
-      - { value: 'SameAs', correct: false }
+      - { value: Blank, correct: true }
+      - { value: IdenticalTo, correct: true }
+      - { value: EqualTo, correct: true }
+      - { value: SameAs, correct: false }
     help: 'https://symfony.com/doc/current/reference/constraints.html'
   -
     uuid: 1eebf878-8ba1-6db8-8235-99d84c92580c
@@ -88,10 +88,10 @@ questions:
     uuid: 1eebf878-8ba3-6618-974f-99d84c92580c
     question: 'Which of the followings are not validation constraints?'
     answers:
-      - { value: 'Password', correct: true }
-      - { value: 'File', correct: false }
-      - { value: 'Search', correct: true }
-      - { value: 'All', correct: false }
+      - { value: Password, correct: true }
+      - { value: File, correct: false }
+      - { value: Search, correct: true }
+      - { value: All, correct: false }
     help: 'https://symfony.com/doc/current/reference/constraints.html'
   -
     uuid: 1eebf878-8ba3-665e-8fe7-99d84c92580c

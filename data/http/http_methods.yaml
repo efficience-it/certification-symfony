@@ -1,0 +1,8 @@
+questions:
+  -
+    uuid: 1eebf878-8ba4-65ae-b565-99d84c92580c
+    question: 'Can browsers cache POST requests?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://learning.mlytics.com/the-internet/http-request-methods/'

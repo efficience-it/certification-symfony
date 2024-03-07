@@ -1,0 +1,15 @@
+questions:
+  -
+    uuid: 1eebf878-8b98-6344-9f43-99d84c92580c
+    question: "Let's assume, we have a private service my_private_service. Will this work ?$container->get('my_private_service');"
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://symfony.com/doc/current/service_container/alias_private.html'
+  -
+    uuid: 1eebf878-8b9c-6516-83f6-99d84c92580c
+    question: 'Does service ids considered as case-sensitive?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/2.0/src/Symfony/Component/DependencyInjection/Container.php#L221'

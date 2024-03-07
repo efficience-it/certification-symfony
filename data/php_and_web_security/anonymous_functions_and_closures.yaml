@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8ba7-6bfa-aded-99d84c92580c
-    question: "What will be the output of the following code ?    function foo(int $y) {     \_\_\_ return function(int $x) use ($y): string {     \_\_\_\_\_\_\_ return str_repeat((string) $y, $x);     \_\_\_ };     }     $a = foo(3);     $b = foo(2);     echo $a(2), $b(3);"
+    question: "What will be the output of the following code ?    function foo(int $y) {      return function(int $x) use ($y): string {      return str_repeat((string) $y, $x);      };     }     $a = foo(3);     $b = foo(2);     echo $a(2), $b(3);"
     answers:
       - { value: '33222', correct: true }
       - { value: '66', correct: false }
@@ -12,7 +12,7 @@ questions:
     uuid: 1eebf878-8ba9-646e-93a2-99d84c92580c
     question: "What will be the output of this ?    $message = '';    $example = function ($arg) use ($message) {  var_dump($arg . ' ' . $message);  };  $example( hello );"
     answers:
-      - { value: 'hello', correct: true }
+      - { value: hello, correct: true }
       - { value: 'Fatal Error', correct: false }
       - { value: 'Hello World', correct: false }
     help: 'https://www.php.net/manual/en/functions.anonymous.php    https://3v4l.org/el3W8'

@@ -7,6 +7,32 @@ questions:
       - { value: 'No', correct: true }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php'
   -
+    uuid: 1eebf878-8ba9-602c-ba18-99d84c92580c
+    question: "What will the output of this function ?    class Base {   public function sayHello() {   echo 'Hello ';   }  }    trait SayWorld {   public function sayHello() {   echo 'World';   }  }    class MyHelloWorld extends Base {  \_\_\_ use SayWorld;  }    $o = new MyHelloWorld();  $o->sayHello();"
+    answers:
+      - { value: Hello, correct: false }
+      - { value: World, correct: true }
+      - { value: 'Hello World', correct: false }
+      - { value: 'Fatal Error', correct: false }
+    help: 'https://www.php.net/manual/en/language.oop5.traits.php'
+  -
+    uuid: 1eebf878-8ba9-6072-929e-99d84c92580c
+    question: "What will the output of this function ?    trait HelloWorld {  \_\_\_ public function sayHello() {  \_\_\_ \_\_\_ echo 'Hello World!';  \_\_\_ }  }    class TheWorldIsNotEnough {  \_\_\_ use HelloWorld;  \_\_\_ public function sayHello() {  \_\_\_ \_\_\_ echo 'Hello Universe!';  \_\_\_ }  }    $o = new TheWorldIsNotEnough();  $o->sayHello();"
+    answers:
+      - { value: 'Hello World!', correct: false }
+      - { value: 'Hello Universe!', correct: true }
+      - { value: 'Fatal Error', correct: false }
+    help: 'https://www.php.net/manual/en/language.oop5.traits.php'
+  -
+    uuid: 1eebf878-8ba9-60b8-b5a4-99d84c92580c
+    question: "What will be the output of this function ?    trait Hello {  \_\_\_ public function saySomething() {  \_\_\_ \_\_\_ echo 'Hello ';  \_\_\_ }  }    trait World {  \_\_\_ public function saySomething() {  \_\_\_ \_\_\_ echo 'World';  \_\_\_ }  }    class MyHelloWorld {  \_\_\_ use Hello, World;  \_\_\_ public function sayExclamationMark() {  \_\_\_ \_\_\_ echo '!';  \_\_\_ }  }    $o = new MyHelloWorld();  $o->sayHello();  $o->sayWorld();  $o->sayExclamationMark();  ?>"
+    answers:
+      - { value: Hello, correct: false }
+      - { value: World, correct: false }
+      - { value: 'Hello World', correct: false }
+      - { value: 'Fatal Error', correct: true }
+    help: 'https://www.php.net/manual/en/language.oop5.traits.php'
+  -
     uuid: 1eebf878-8ba9-6108-8a3b-99d84c92580c
     question: "To resolve naming conflicts between Traits used in the same class, what's the operator needed to be used to choose exactly one of the conflicting methods ?"
     answers:

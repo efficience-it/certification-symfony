@@ -23,19 +23,19 @@ questions:
     question: 'What is the recommended option of loader to use in translation ?'
     answers:
       - { value: '.yaml: YAML', correct: true }
-      - { value: ".xlf: XLIFF file\_", correct: true }
-      - { value: ".php: PHP file\_", correct: false }
-      - { value: ".csv: CSV file\_", correct: false }
-      - { value: ".json: JSON file\_", correct: false }
-      - { value: ".ini: INI file\_", correct: false }
+      - { value: ".xlf: XLIFF file", correct: true }
+      - { value: ".php: PHP file", correct: false }
+      - { value: ".csv: CSV file", correct: false }
+      - { value: ".json: JSON file", correct: false }
+      - { value: ".ini: INI file", correct: false }
       - { value: '.dat, .res: ICU resource bundle', correct: false }
       - { value: '.mo: Machine object format;', correct: false }
       - { value: '.po: Portable object format', correct: false }
-      - { value: "\_.qt: QT Translations TS XML file", correct: false }
+      - { value: ".qt: QT Translations TS XML file", correct: false }
     help: 'https://symfony.com/doc/current/translation.html#translation-resource-file-names-and-locations'
   -
     uuid: 1eedb9b3-b85c-644a-9b4b-11bcc7d3fb25
-    question: "In order to use pluralization, the file must contains +intl-icu in it's filename.EX: messages.en.yaml\_ to messages+intl-icu.en.yaml"
+    question: "In order to use pluralization, the file must contains +intl-icu in it's filename.EX: messages.en.yaml to messages+intl-icu.en.yaml"
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
@@ -43,7 +43,7 @@ questions:
     help: 'https://symfony.com/doc/current/reference/formats/message_format.html#pluralization'
   -
     uuid: 1eedb9c5-d301-613a-927c-c7e29d4ef77c
-    question: "Which format is used in translation to add arguments, in the ICU MessageFormat syntax\_ ?"
+    question: "Which format is used in translation to add arguments, in the ICU MessageFormat syntax ?"
     answers:
       - { value: 'Hello [name]', correct: false }
       - { value: 'Hello {name}', correct: true }

@@ -17,10 +17,10 @@ questions:
     uuid: 1eebf878-8ba5-6418-8750-99d84c92580c
     question: 'What Exception is thrown when to data is not valid in a DataTransformer ?'
     answers:
-      - { value: 'FailedTransformationException', correct: false }
-      - { value: 'DataTransformationException', correct: false }
-      - { value: 'ValidTransformationException', correct: false }
-      - { value: 'TransformationFailedException', correct: true }
+      - { value: FailedTransformationException, correct: false }
+      - { value: DataTransformationException, correct: false }
+      - { value: ValidTransformationException, correct: false }
+      - { value: TransformationFailedException, correct: true }
     help: 'https://symfony.com/doc/current/form/data_transformers.html#creating-the-transformer'
   -
     uuid: 1eebf878-8ba5-645e-bb9b-99d84c92580c

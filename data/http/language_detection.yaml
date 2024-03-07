@@ -1,0 +1,44 @@
+questions:
+  -
+    uuid: 1eeda38b-8a16-6a56-8ca8-af6368c5a4d2
+    question: 'Developers should use the Accept-Language value to infer the locale at first, then allow the user to change languages if necessary and further specify their cultural settings if necessary. The results must then be stored in a database or in a cookie for subsequent visits. Is it true ?'
+    answers:
+      - { value: 'True', correct: true }
+      - { value: 'Never, for security reasons', correct: false }
+      - { value: 'False', correct: false }
+    help: 'https://www.w3.org/International/questions/qa-accept-lang-locales'
+  -
+    uuid: 1eeda399-81f7-63da-882e-c7a97213cca5
+    question: "Quelle est la valeur q de  da \_ dans Accept-Language: da, en-gb;q=0.8, en;q=0.7 ?"
+    answers:
+      - { value: '1', correct: true }
+      - { value: '0.8', correct: false }
+      - { value: '0.7', correct: false }
+      - { value: '0', correct: false }
+    help: 'https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.4'
+  -
+    uuid: 1eeda3b0-75d6-6efe-8f89-f105bb5b9b6c
+    question: 'Which  Accept-Language  value is wrong ?'
+    answers:
+      - { value: "Accept-Language: *\_", correct: true }
+      - { value: "\_Accept-Language: es;q=0", correct: false }
+      - { value: "\_Accept-Language: es-MX, es;q=0.9, en;q=0.8, *;q=0.5\_", correct: true }
+      - { value: "\_Accept-Language: es;q=0.5, en;q=0.8, *;q=0.9\_", correct: false }
+    help: 'https://symfony.com/blog/new-in-symfony-5-4-language-negotiation'
+  -
+    uuid: 1eeda3ba-e1e1-6608-9264-93d7601131fc
+    question: 'When you set framework.set_locale_from_accept_language to true, and you still have a locale route attribute, which one has priority?'
+    answers:
+      - { value: 'Accept-Language has priority', correct: false }
+      - { value: 'Locale route attribute has priority', correct: true }
+      - { value: 'None of them, it depends on the website', correct: false }
+    help: 'https://symfony.com/blog/new-in-symfony-5-4-language-negotiation'
+  -
+    uuid: 1eeda3c1-7360-62e0-abbb-7bb6b48b4780
+    question: 'Which configuration restrict available locale in the request ?'
+    answers:
+      - { value: "    framework.enabled_locales: ['fr', 'en', 'da']", correct: true }
+      - { value: "framework.translator.enabled_locales: ['fr', 'en', 'da']\_", correct: false }
+      - { value: "framework.translation.enabled_locales: ['fr', 'en', 'da']\_", correct: false }
+      - { value: "framework.locale.enabled: ['fr', 'en', 'da']\_", correct: false }
+    help: 'https://symfony.com/blog/new-in-symfony-5-4-language-negotiation'

@@ -3,10 +3,10 @@ questions:
     uuid: 1eebf878-8ba6-68b8-8930-99d84c92580c
     question: 'What Class receive the listeners when the ConsolelEvents::Command is dispatched ?'
     answers:
-      - { value: 'TerminalEvent', correct: false }
-      - { value: 'ConsoleEvent', correct: false }
-      - { value: 'CommandEvent', correct: false }
-      - { value: 'ConsoleCommandEvent', correct: true }
+      - { value: TerminalEvent, correct: false }
+      - { value: ConsoleEvent, correct: false }
+      - { value: CommandEvent, correct: false }
+      - { value: ConsoleCommandEvent, correct: true }
     help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-command-event'
   -
     uuid: 1eebf878-8ba6-6958-bb5f-99d84c92580c
@@ -19,28 +19,28 @@ questions:
     uuid: 1eebf878-8ba6-69a8-8df8-99d84c92580c
     question: 'When a ConsoleEvents::Error is dispatched, which event is sent to the listener ?'
     answers:
-      - { value: 'ConsoleErrorEvent', correct: true }
-      - { value: 'ConsoleEvent', correct: false }
-      - { value: 'ErrorEvent', correct: false }
-      - { value: 'ErrorConsoleEvent', correct: false }
+      - { value: ConsoleErrorEvent, correct: true }
+      - { value: ConsoleEvent, correct: false }
+      - { value: ErrorEvent, correct: false }
+      - { value: ErrorConsoleEvent, correct: false }
     help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-error-event'
   -
     uuid: 1eebf878-8ba6-6a70-9815-99d84c92580c
     question: 'When a ConsoleEvents::Terminate is dispatched, which event is sent to the listener ?'
     answers:
-      - { value: 'TerminateConsoleEvent', correct: false }
-      - { value: 'ConsoleEvent', correct: false }
-      - { value: 'TerminateEvent', correct: false }
-      - { value: 'ConsoleTerminateEvent', correct: true }
+      - { value: TerminateConsoleEvent, correct: false }
+      - { value: ConsoleEvent, correct: false }
+      - { value: TerminateEvent, correct: false }
+      - { value: ConsoleTerminateEvent, correct: true }
     help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-terminate-event'
   -
     uuid: 1eebf878-8ba6-6ba6-8d1a-99d84c92580c
     question: 'When a ConsoleEvents::Signal is dispatched, which event is sent to the listener ?'
     answers:
-      - { value: 'ConsoleEvent', correct: false }
-      - { value: 'ConsoleSignalEvent', correct: true }
-      - { value: 'SignalEvent', correct: false }
-      - { value: 'SignalConsoleEvent', correct: false }
+      - { value: ConsoleEvent, correct: false }
+      - { value: ConsoleSignalEvent, correct: true }
+      - { value: SignalEvent, correct: false }
+      - { value: SignalConsoleEvent, correct: false }
     help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-signal-event'
   -
     uuid: 1eebf878-8ba6-6c32-81a0-99d84c92580c
@@ -69,3 +69,10 @@ questions:
       - { value: 'ConsoleEvents::TERMINATE', correct: true }
       - { value: 'ConsoleEvents::SIGNAL', correct: false }
     help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-terminate-event'
+  -
+    uuid: 1eebf878-8b97-6124-8ec2-99d84c92580c
+    question: 'Is it possible to listen signals and stop command according to them?'
+    answers:
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+    help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-signal-event'

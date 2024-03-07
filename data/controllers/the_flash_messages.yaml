@@ -3,11 +3,11 @@ questions:
     uuid: 1eebf878-8ba7-677c-933e-99d84c92580c
     question: 'How could you store a flash message in an AbstractController ?'
     answers:
-      - { value: '$request->getSession()->getFlashBag()->add()', correct: true }
-      - { value: '$this->addFlashBag()', correct: false }
-      - { value: '$this->addFlash()', correct: true }
-      - { value: '$request->getSession()->addFlash()', correct: false }
-      - { value: '$request->getSession()->addFlashBag()', correct: false }
+      - { value: $request->getSession()->getFlashBag()->add(), correct: true }
+      - { value: $this->addFlashBag(), correct: false }
+      - { value: $this->addFlash(), correct: true }
+      - { value: $request->getSession()->addFlash(), correct: false }
+      - { value: $request->getSession()->addFlashBag(), correct: false }
     help: 'https://symfony.com/doc/current/controller.html#managing-the-session'
   -
     uuid: 1eebf878-8ba7-67cc-b50b-99d84c92580c
@@ -28,7 +28,14 @@ questions:
     uuid: 1eebf878-8ba7-686c-be22-99d84c92580c
     question: 'What is the key used to store flashes in the session ?'
     answers:
-      - { value: '_flashes_info, _flashes_danger, _flashes_success, _flashes_debug', correct: false }
-      - { value: '_flashes_session', correct: false }
-      - { value: '_symfony_flashes', correct: true }
+      - { value: "_flashes_info, _flashes_danger, _flashes_success, _flashes_debug    ", correct: false }
+      - { value: _flashes_session, correct: false }
+      - { value: _symfony_flashes, correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php#L28'
+  -
+    uuid: 1eebf878-8ba7-6bb4-b709-99d84c92580c
+    question: 'Could the existence of a FlashBag message be checked?'
+    answers:
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php'

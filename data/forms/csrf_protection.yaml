@@ -15,3 +15,12 @@ questions:
       - { value: 'No', correct: false }
       - { value: 'Yes', correct: true }
     help: 'https://symfony.com/doc/current/security/csrf.html#csrf-protection-in-symfony-forms'
+  -
+    uuid: 1eedad53-9a0c-6cc2-8bbd-43a19afa5a59
+    question: 'What is the csrf key to set when you add one in a login form ?'
+    answers:
+      - { value: login, correct: false }
+      - { value: authenticate, correct: true }
+      - { value: security, correct: false }
+      - { value: csrf_login, correct: false }
+    help: 'https://symfony.com/doc/current/security.html#csrf-protection-in-login-forms'

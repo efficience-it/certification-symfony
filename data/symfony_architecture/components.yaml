@@ -15,3 +15,26 @@ questions:
       - { value: 'Safe methods: GET or HEAD', correct: false }
       - { value: 'GET or POST', correct: false }
     help: 'https://symfony.com/doc/4.3/routing.html#matching-http-methods'
+  -
+    uuid: 1eebf878-8ba9-6b80-8916-99d84c92580c
+    question: 'Given the context where a single request is stored in the RequestStack, could the current request be removed from the request stack?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/RequestStack.php'
+  -
+    uuid: 1eebf878-8ba9-6bd0-b7bf-99d84c92580c
+    question: 'It is possible to change the class of a service using the ContainerBuilder?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/components/dependency_injection/definitions.html'
+  -
+    uuid: 1eed5768-e3b6-667a-8f78-21c4c4321b85
+    question: 'What is the main purpose of the eraseCredentials() method from the UserInterface?'
+    answers:
+      - { value: "Reset user's credentials from database", correct: false }
+      - { value: "Disable user's account", correct: false }
+      - { value: 'Remove sensitive data from the user', correct: true }
+      - { value: 'Reload user from database', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.0/src/Symfony/Component/Security/Core/User/UserInterface.php#L49-L55'

@@ -1,0 +1,24 @@
+questions:
+  -
+    uuid: 1eeda458-0d6c-635c-b4b2-75c742f4f6a8
+    question: 'Which method do you have to implement in your custom Authenticator which extends the AbstractAuthenticator ?'
+    answers:
+      - { value: supports(), correct: true }
+      - { value: supportsClass(), correct: false }
+      - { value: authenticate(), correct: true }
+      - { value: __invoke(), correct: false }
+      - { value: execute(), correct: false }
+      - { value: onAuthenticationSuccess, correct: true }
+      - { value: onSuccess, correct: false }
+      - { value: onAuthenticationFailure, correct: true }
+      - { value: onFailure, correct: false }
+    help: 'https://symfony.com/doc/current/security/custom_authenticator.html'
+  -
+    uuid: 1eeda476-0ab8-61c4-b6b3-afb7a9ee0358
+    question: 'In a Custom Authenticator, which object is available for return in the function authenticate ?'
+    answers:
+      - { value: Passport(), correct: true }
+      - { value: "CustomCredentials(['username'=>$username, 'password'=> $plainPassword])", correct: false }
+      - { value: UserBadge(), correct: false }
+      - { value: SelfValidatingPassport(), correct: true }
+    help: 'https://symfony.com/doc/current/security/custom_authenticator.html'

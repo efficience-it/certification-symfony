@@ -30,9 +30,9 @@ questions:
     uuid: 1eebf878-8ba1-63cc-97aa-99d84c92580c
     question: 'What decision strategy exist ?'
     answers:
-      - { value: 'affirmative', correct: true }
-      - { value: 'consensus', correct: true }
-      - { value: 'unanimous', correct: true }
-      - { value: 'positive', correct: false }
-      - { value: 'negative', correct: false }
+      - { value: affirmative, correct: true }
+      - { value: consensus, correct: true }
+      - { value: unanimous, correct: true }
+      - { value: positive, correct: false }
+      - { value: negative, correct: false }
     help: 'https://symfony.com/doc/current/components/security/authorization.html#access-decision-manager'

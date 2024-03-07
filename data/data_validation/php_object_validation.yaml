@@ -15,3 +15,10 @@ questions:
       - { value: 'new Assert\Traversable', correct: false }
       - { value: 'new Assert\Iterable', correct: false }
     help: 'https://symfony.com/doc/current/validation/raw_values.html'
+  -
+    uuid: 1eebf878-8ba4-609a-b99c-99d84c92580c
+    question: 'Is it possible to define default values that depend on another option?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'http://symfony.com/doc/current/components/options_resolver.html#default-values-that-depend-on-another-option'

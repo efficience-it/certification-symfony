@@ -1,5 +1,12 @@
 questions:
   -
+    uuid: 1eebf878-8ba2-6b64-8fcd-99d84c92580c
+    question: "Is the following code valid?    use Symfony\\Component\\Validator\\Constraints as Assert;    class Place {     #[Assert\\Sequentially([     new Assert\\NotNull,        new Assert\\Type('string'),        new Assert\\Length(min: 10),       \_ new Assert\\Regex(Place::ADDRESS_REGEX),    \_\_\_\_\_\_\_ new AcmeAssert\\Geolocalizable,    ])]    public $address;    }"
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/validation/sequence_provider.html#how-to-sequentially-apply-constraints-on-a-single-property    https://symfony.com/doc/current/reference/constraints/Sequentially.html'
+  -
     uuid: 1eec03a4-5509-66f2-84f8-53d0de950cee
     question: "What's the aim of a GroupSequence ?"
     answers:

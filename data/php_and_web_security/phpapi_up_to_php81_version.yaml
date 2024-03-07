@@ -8,3 +8,36 @@ questions:
       - { value: 'function %foo() {...}', correct: false }
       - { value: 'function $$foo() {...}', correct: false }
     help: 'https://www.php.net/manual/en/language.references.return.php'
+  -
+    uuid: 1eebf878-8ba0-6bd4-9a5b-99d84c92580c
+    question: 'in a class, public $var4 = self::myStaticMethod(); is a valid property declaration ?'
+    answers:
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
+    help: 'https://www.php.net/manual/en/language.oop5.properties.php#example-1'
+  -
+    uuid: 1eebf878-8ba3-6e56-af20-99d84c92580c
+    question: 'Which of the following variables is not serializable to JSON with the json_encode() native function?'
+    answers:
+      - { value: "$data ={ 'full_name' =>'Pierre Dupont' ,'location'=>[ 'city' =>'Paris' , 'country' =>'France' ]];", correct: false }
+      - { value: "$data = new SomeClass('some string' );", correct: false }
+      - { value: "$data = 'foo bar ';", correct: false }
+      - { value: '$data = function ($content){ return (strtoupper(strip_tags(content)));};', correct: true }
+    help: 'http://php.net/manual/en/book.json.php'
+  -
+    uuid: 1eeda3fc-6f1f-6b00-ba24-216aef5bea70
+    question: 'What is the purpose of the Chain User Provider ?'
+    answers:
+      - { value: 'It combines two or more providers to create a new user provider. sorted they are looked one after the other until user is found', correct: true }
+      - { value: "This user provider stores all user information in a configuration file, including their passwords.\_", correct: false }
+      - { value: "\_User Access are stored in a Chain software like Stackifor.", correct: false }
+    help: 'https://symfony.com/doc/current/security/user_providers.html#chain-user-provider'
+  -
+    uuid: 1eedb041-7713-6f86-9b4d-9d3b2d641bb6
+    question: 'What is the reason, we could add false in $security->logout(false) in Security ?'
+    answers:
+      - { value: 'disable CSRF', correct: true }
+      - { value: 'disable default redirection', correct: false }
+      - { value: 'disable firewall', correct: false }
+      - { value: 'to limit login attempts, the user will not be able to login for 5 minutes', correct: false }
+    help: 'https://symfony.com/doc/current/security.html#logout-programmatically'

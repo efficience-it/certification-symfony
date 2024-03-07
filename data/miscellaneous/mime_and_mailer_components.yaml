@@ -1,53 +1,53 @@
 questions:
   -
     uuid: 1eeccc01-4f41-68ac-9258-d9e4cab25c1e
-    question: 'Is it required to URL-encode your DSN's credentials in the case, they contain special characteres ?'
+    question: "Is it required to URL-encode your DSN's credentials in the case, they contain special characteres ?"
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'Depends on the mailer provider', correct: false }
-      - { value: 'Non', correct: false }
+      - { value: Non, correct: false }
     help: 'https://symfony.com/doc/current/mailer.html'
   -
     uuid: 1eeccc26-b8fa-6b2a-aaad-5fecff7b6b7e
     question: 'What are the available options you can set in the mailer DSN ?'
     answers:
-      - { value: 'command', correct: true }
-      - { value: 'tls', correct: false }
-      - { value: 'certificate', correct: false }
-      - { value: 'local_domain', correct: true }
-      - { value: 'restart_threshold', correct: true }
-      - { value: 'restart_threshold_sleep', correct: true }
-      - { value: 'ping_threshold', correct: true }
-      - { value: 'max_per_second', correct: true }
+      - { value: command, correct: true }
+      - { value: tls, correct: false }
+      - { value: certificate, correct: false }
+      - { value: local_domain, correct: true }
+      - { value: restart_threshold, correct: true }
+      - { value: restart_threshold_sleep, correct: true }
+      - { value: ping_threshold, correct: true }
+      - { value: max_per_second, correct: true }
     help: 'https://symfony.com/doc/current/mailer.html#other-options'
   -
     uuid: 1eeccc31-ee26-61e0-95d8-f3d79a72bbf6
     question: 'What are the available way to sent an email ?'
     answers:
-      - { value: '$email = (new Email())              ->to('you@example.com')', correct: true }
-      - { value: '$email = (new Email())              ->to(['you@example.com'])', correct: true }
-      - { value: '$email = (new Email())              ->to(['email' =>'you@example.com'])', correct: false }
-      - { value: '$email = (new Email())              ->to(new Adresse('you@example.com'))', correct: true }
-      - { value: '$email = (new Email())              ->to(new Adresse('you@example.com', 'you'))', correct: true }
+      - { value: "$email = (new Email())              ->to('you@example.com')", correct: true }
+      - { value: "$email = (new Email())              ->to(['you@example.com'])", correct: true }
+      - { value: "$email = (new Email())              ->to(['email' =>'you@example.com'])", correct: false }
+      - { value: "$email = (new Email())              ->to(new Adresse('you@example.com'))", correct: true }
+      - { value: "$email = (new Email())              ->to(new Adresse('you@example.com', 'you'))", correct: true }
     help: 'https://symfony.com/doc/current/mailer.html#creating-sending-messages'
   -
     uuid: 1eeccd5e-21a9-647c-9d17-558e78e1360b
     question: 'What are the available Mailer Events ?'
     answers:
-      - { value: 'PreSentMessageEvent', correct: false }
-      - { value: 'MessageEvent', correct: true }
-      - { value: 'SentMessageEvent', correct: true }
-      - { value: 'MessageSentEvent', correct: false }
-      - { value: 'FailedMessage', correct: true }
-      - { value: 'MessageFailedEvent', correct: false }
-      - { value: 'ReceivedMessageEvent', correct: false }
+      - { value: PreSentMessageEvent, correct: false }
+      - { value: MessageEvent, correct: true }
+      - { value: SentMessageEvent, correct: true }
+      - { value: MessageSentEvent, correct: false }
+      - { value: FailedMessage, correct: true }
+      - { value: MessageFailedEvent, correct: false }
+      - { value: ReceivedMessageEvent, correct: false }
     help: 'https://symfony.com/doc/current/mailer.html#mailer-events'
   -
     uuid: 1eeccd99-999f-6734-bd4d-d9d09f91572c
     question: 'What are the function which permit to transforms between MIME Types and file name extensions ? and reversly !'
     answers:
-      - { value: 'getExtensions', correct: true }
-      - { value: 'getFileExtensions', correct: false }
-      - { value: 'getMimeTypes', correct: true }
-      - { value: 'getMimeType', correct: false }
+      - { value: getExtensions, correct: true }
+      - { value: getFileExtensions, correct: false }
+      - { value: getMimeTypes, correct: true }
+      - { value: getMimeType, correct: false }
     help: 'https://symfony.com/doc/current/components/mime.html#mime-types-utilities'

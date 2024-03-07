@@ -3,8 +3,8 @@ questions:
     uuid: 1eebf878-8ba8-6a5a-8490-99d84c92580c
     question: 'What methods are available in the Request $request object ?'
     answers:
-      - { value: "$request->isXmlHttpRequest();", correct: true }
-      - { value: "$request->getClientIps();", correct: true }
+      - { value: $request->isXmlHttpRequest();, correct: true }
+      - { value: $request->getClientIps();, correct: true }
       - { value: "$request->getPreferredLanguage(['en', 'fr']);", correct: true }
       - { value: "$request->server->get('HTTP_HOST');", correct: true }
       - { value: "$request->files->get('foo'); ", correct: true }
@@ -12,3 +12,12 @@ questions:
       - { value: "$request->query->get('page'); ", correct: true }
       - { value: "$request->headers->get('content-type');", correct: true }
     help: 'https://symfony.com/doc/current/controller.html#the-request-and-response-object'
+  -
+    uuid: 1eebf878-8ba0-6238-b1a8-99d84c92580c
+    question: 'How to access the `foo` GET parameter from Request object $request ?'
+    answers:
+      - { value: "$request->query->get('foo');", correct: true }
+      - { value: "$request->request->get('foo');", correct: false }
+      - { value: "$request->query->all()['foo'];", correct: true }
+      - { value: "$request->get('foo');", correct: true }
+    help: 'https://symfony.com/doc/current/components/http_foundation.html#accessing-request-data'

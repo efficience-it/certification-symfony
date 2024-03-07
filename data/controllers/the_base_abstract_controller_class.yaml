@@ -1,18 +1,27 @@
 questions:
   -
     uuid: 1eebf878-8b9b-68f0-8c19-99d84c92580c
-    question: 'What will be returned by the following code when the query string is ?foo=bar?\_$request->query->get('bar');'
+    question: "\_What will be returned by the following code when the query string is ?foo=bar?\_$request->query->get('bar');"
     answers:
-      - { value: null, correct: true }
-      - { value: false, correct: false }
-      - { value: QueryException will be thrown, correct: false }
-      - { value: NotFoundException will be thrown, correct: false }
+      - { value: 'null', correct: true }
+      - { value: 'false', correct: false }
+      - { value: 'QueryException will be thrown', correct: false }
+      - { value: "NotFoundException\_ will be thrown\_", correct: false }
     help: 'https://symfony.com/doc/current/components/http_foundation.html'
   -
     uuid: 1eebf878-8ba8-65b4-9642-99d84c92580c
     question: 'What are the available option to the method file in AbstractController ?'
     answers:
-      - { value: ResponseHeaderBag::DISPOSITION_DOWNLOAD, correct: false }
-      - { value: ResponseHeaderBag::DISPOSITION_ATTACHMENT, correct: true }
-      - { value: ResponseHeaderBag::DISPOSITION_INLINE, correct: true }
+      - { value: 'ResponseHeaderBag::DISPOSITION_DOWNLOAD', correct: false }
+      - { value: 'ResponseHeaderBag::DISPOSITION_ATTACHMENT', correct: true }
+      - { value: 'ResponseHeaderBag::DISPOSITION_INLINE', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/ResponseHeaderBag.php#L24C18-L24C41'
+  -
+    uuid: 1eebf878-8b9b-63fa-b82c-99d84c92580c
+    question: 'For a request to http://example.com/blog/index.php/post/hello-world, what will be the value of $pathInfo in the following code?$pathInfo = $request->getPathInfo();'
+    answers:
+      - { value: /index.php/post/hello-world, correct: false }
+      - { value: /post/hello-world, correct: true }
+      - { value: example.com/blog/index.php/post/hello-world, correct: false }
+      - { value: /blog/index.php/post/hello-world, correct: false }
+    help: 'http://symfony.com/doc/current/components/http_foundation.html#identifying-a-request'

@@ -31,23 +31,23 @@ questions:
     uuid: 1eebf878-8ba5-6616-af00-99d84c92580c
     question: 'Which Major, Minor, Patch Version contains breaking changes, so you may need to do some changes in your applications before upgrading ?'
     answers:
-      - { value: 'Major', correct: true }
-      - { value: 'Minor', correct: false }
-      - { value: 'Patch', correct: false }
+      - { value: Major, correct: true }
+      - { value: Minor, correct: false }
+      - { value: Patch, correct: false }
     help: 'https://symfony.com/doc/current/contributing/community/releases.html'
   -
     uuid: 1eebf878-8ba5-665c-8c21-99d84c92580c
     question: "Which Major, Minor, Patch Version contains bug fixes and new features, can contain new deprecations but it doesn't include any breaking change, so you can safely upgrade your applications; ?"
     answers:
-      - { value: 'Major', correct: false }
-      - { value: 'Minor', correct: true }
-      - { value: 'Patch', correct: false }
+      - { value: Major, correct: false }
+      - { value: Minor, correct: true }
+      - { value: Patch, correct: false }
     help: 'https://symfony.com/doc/current/contributing/community/releases.html'
   -
     uuid: 1eebf878-8ba5-66a2-af75-99d84c92580c
     question: 'Which Major, Minor, Patch Version contains bug fixes, so you can safely upgrade your applications; ?'
     answers:
-      - { value: 'Major', correct: false }
-      - { value: 'Minor', correct: false }
-      - { value: 'Patch', correct: true }
+      - { value: Major, correct: false }
+      - { value: Minor, correct: false }
+      - { value: Patch, correct: true }
     help: 'https://symfony.com/doc/current/contributing/community/releases.html'

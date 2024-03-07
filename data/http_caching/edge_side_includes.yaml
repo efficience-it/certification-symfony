@@ -1,0 +1,10 @@
+questions:
+  -
+    uuid: 1eebf878-8b9e-6578-8aaa-99d84c92580c
+    question: 'What is the Twig function to render an ESI?'
+    answers:
+      - { value: cache_esi(), correct: false }
+      - { value: esi_cache(), correct: false }
+      - { value: esi_render(), correct: false }
+      - { value: render_esi(), correct: true }
+    help: 'https://symfony.com/doc/current/http_cache/esi.html'

@@ -1,0 +1,153 @@
+questions:
+  -
+    uuid: 1eebf878-8b9c-6dea-96a0-99d84c92580c
+    question: 'Could a Passport be self-validated?'
+    answers:
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+    help: 'https://symfony.com/doc/current/security/custom_authenticator.html#self-validating-passport'
+  -
+    uuid: 1eebf878-8ba1-62a0-8999-99d84c92580c
+    question: 'Which authentication events exist in the Security component?'
+    answers:
+      - { value: security.authentication.success, correct: true }
+      - { value: security.authentication.failure, correct: true }
+      - { value: security.interactive_login, correct: true }
+      - { value: security.login, correct: false }
+      - { value: security.switch_user, correct: true }
+      - { value: security.logout_on_change, correct: true }
+      - { value: security.authentication.start, correct: false }
+      - { value: security.remember_me_login, correct: false }
+    help: 'https://symfony.com/doc/current/components/security/authentication.html#authentication-events'
+  -
+    uuid: 1eebf878-8ba2-6f24-a114-99d84c92580c
+    question: 'What is the listener that handles security exceptions and when appropriate, helps the user to authenticate?'
+    answers:
+      - { value: Symfony\Component\Security\Http\Firewall\ExceptionListener, correct: true }
+      - { value: Symfony\Component\Security\Http\Firewall\AuthenticationListener, correct: false }
+      - { value: Symfony\Component\Security\Http\Firewall\AuthListener, correct: false }
+      - { value: Symfony\Component\Security\Http\Firewall\SecurityListener, correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Http/Firewall/ExceptionListener.php'
+  -
+    uuid: 1eedad50-f369-6fa2-80d1-435a058dcb9c
+    question: 'Csrf protection is enable by default in a new login form ?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'Depends on basic auth of api auth', correct: false }
+    help: 'https://symfony.com/doc/current/security.html#csrf-protection-in-login-forms'
+  -
+    uuid: 1eedad5d-2a0d-675a-a4c2-9be2318750e4
+    question: 'What are the name filed used in the form to login ?'
+    answers:
+      - { value: '_username, _password', correct: true }
+      - { value: 'username, password', correct: false }
+      - { value: 'email, password', correct: false }
+      - { value: 'email, plain_password', correct: false }
+    help: 'https://symfony.com/doc/current/security.html#form-login'
+  -
+    uuid: 1eedada4-c20a-61c4-af55-83fd0e365dbd
+    question: 'Whats is the default lifetime value for the passwordless login link authentication ?'
+    answers:
+      - { value: '10 min', correct: true }
+      - { value: '5 min', correct: false }
+      - { value: '15 min', correct: false }
+      - { value: '1 h', correct: false }
+    help: 'https://symfony.com/doc/current/security/login_link.html#limit-login-link-lifetime'
+  -
+    uuid: 1eedadab-6c48-6ff4-b606-cb518f6a9394
+    question: 'What parameters does a magic login link contains ?'
+    answers:
+      - { value: expires, correct: true }
+      - { value: time, correct: false }
+      - { value: identifier, correct: false }
+      - { value: user, correct: true }
+      - { value: hash, correct: true }
+    help: 'https://symfony.com/doc/current/security/login_link.html#invalidate-login-links'
+  -
+    uuid: 1eedadaf-9aa2-6b94-84ae-db47ef71e302
+    question: 'Does the magic login link is stored in database ?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'Depends on the parameters.login_link.store parameters', correct: false }
+    help: 'https://symfony.com/doc/current/security/login_link.html#invalidate-login-links'
+  -
+    uuid: 1eedadbf-3130-62fa-9ad6-73c005d2a996
+    question: "\_By default, generated links use the lifetime configured globally but you can change the lifetime per link. How ?"
+    answers:
+      - { value: " setting the third argument of the createLoginLink() method \_", correct: true }
+      - { value: " setting the second argument of the createLoginLink() method \_", correct: false }
+      - { value: "\_giving an array to the second argument of the createLoginLink() method, whith the life_time value", correct: false }
+    help: 'https://symfony.com/doc/current/security/login_link.html#customizing-the-login-link'
+  -
+    uuid: 1eedadda-5e3c-6404-b06c-cfa953ff7afa
+    question: 'Where should be set the access_token in an access token authentication ?'
+    answers:
+      - { value: 'in the header, usually Authorization: Bearer XXXX', correct: true }
+      - { value: "\_in the request query string,\_ usually access_token", correct: false }
+      - { value: ' in the request body during a POST request, usually access_token', correct: false }
+    help: 'https://symfony.com/doc/current/security/access_token.html#2-configure-the-token-extractor-optional'
+  -
+    uuid: 1eedb044-61db-662a-94e0-d7b850fa955d
+    question: 'Does the LogoutEvent exist ? we could listen it in a Listerner ?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'No, but we can build it', correct: false }
+    help: 'https://symfony.com/doc/current/security.html#customizing-logout'
+  -
+    uuid: 1eedb04a-5212-6436-8352-2bea20822490
+    question: 'How can you get the $user in a Service ?'
+    answers:
+      - { value: $this->getUser(), correct: false }
+      - { value: $this->getSession()->getToken()->getUser(), correct: false }
+      - { value: $this->security->getUser(), correct: true }
+    help: 'https://symfony.com/doc/current/security.html#fetching-the-user-from-a-service'
+  -
+    uuid: 1eedb058-80cb-6d3c-89e3-459ecdc1da5a
+    question: 'How could you know if a User can switch to another account ?'
+    answers:
+      - { value: $this->getUser()->canSwitchUser(), correct: false }
+      - { value: "$this->getUser()->hasRole(' ROLE_ALLOWED_TO_SWITCH ')", correct: false }
+      - { value: "$this->isGranted(' ROLE_ALLOWED_TO_SWITCH ')", correct: true }
+      - { value: "twig: is_granted('IS_IMPERSONATOR')", correct: true }
+    help: 'https://symfony.com/doc/current/security/impersonating_user.html#knowing-when-impersonation-is-active'
+  -
+    uuid: 1eedb06d-7550-61b4-850f-3f83484a8d31
+    question: 'Which events could be listened when a user switch to another user ?'
+    answers:
+      - { value: 'SwitchUserEvent ', correct: true }
+      - { value: 'UserSwitchEvent ', correct: false }
+      - { value: SwitchProgressEvent, correct: false }
+      - { value: ImpersonateUserEvent, correct: false }
+    help: 'https://symfony.com/doc/current/security/impersonating_user.html#events'
+  -
+    uuid: 1eedb093-ede8-63d0-903c-43f3b3e05c45
+    question: 'Which events exist in the authentication process ?'
+    answers:
+      - { value: CheckPassportEvent, correct: true }
+      - { value: AuthenticationTokenCreatedEvent, correct: true }
+      - { value: AuthenticationSuccessEvent, correct: true }
+      - { value: LoginSuccessEvent, correct: true }
+      - { value: LoginFailureEvent, correct: true }
+      - { value: LoginErrorEvent, correct: false }
+      - { value: ForgetPasswordEvent, correct: false }
+      - { value: AuthenticationFailureEvent, correct: false }
+    help: 'https://symfony.com/doc/current/security.html#authentication-events'
+  -
+    uuid: 1eedb106-f4c3-6628-906e-df03d1ec3db8
+    question: 'What is the difference between IS_AUTHENTICATED_REMEMBERED and IS_AUTHENTICATED_FULLY ?'
+    answers:
+      - { value: 'login based on the cookie remember me, or forced to login again', correct: true }
+      - { value: "login based on the Symfony\_ session remember me, or forced to login again", correct: false }
+      - { value: 'login based on the Http session remember me, or forced to login again', correct: false }
+    help: 'https://symfony.com/doc/current/security/remember_me.html#forcing-the-user-to-re-authenticate-before-accessing-certain-resources'
+  -
+    uuid: 1eedb11a-5c7c-6360-b9fc-594690969204
+    question: 'What are the defaut attribute set in the remember me token ?'
+    answers:
+      - { value: 'user, timestamp', correct: true }
+      - { value: 'user, valid_until', correct: false }
+      - { value: 'id, username, datetime', correct: false }
+    help: 'https://symfony.com/doc/current/security/remember_me.html#using-signed-remember-me-tokens'

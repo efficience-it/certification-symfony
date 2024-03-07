@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8ba8-6eec-ba66-99d84c92580c
-    question: "Is this code is correct ?    public function index(): Response {    \_\_\_ return $this->renderView('product/index.html.twig', [     \_\_\_\_\_\_\_ 'category' => '...',     \_\_\_ ]);     }"
+    question: "Is this code is correct ?    public function index(): Response {     return $this->renderView('product/index.html.twig', [      'category' => '...',      ]);     }"
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
@@ -13,8 +13,8 @@ questions:
       - { value: "return $this->render('product/index.html.twig');", correct: true }
       - { value: "$contents = $this->renderView('product/index.html.twig');     return new Response($contents);", correct: true }
       - { value: "$contents = $this->render('product/index.html.twig');     return new Response($contents);", correct: false }
-      - { value: "#[Template('product/index.html.twig')]     public function index(): array {    \_\_\_ return [ ];     }", correct: true }
-      - { value: "\_return $this->renderBlock('product/index.html.twig', 'price_block');", correct: true }
+      - { value: "#[Template('product/index.html.twig')]     public function index(): array {     return [ ];     }", correct: true }
+      - { value: "return $this->renderBlock('product/index.html.twig', 'price_block');", correct: true }
       - { value: "$contents = $this->renderBlockView('product/index.html.twig', 'price_block');    return new Response($contents);", correct: true }
     help: 'https://symfony.com/doc/current/templates.html#rendering-a-template-in-controllers'
   -
@@ -28,7 +28,7 @@ questions:
     help: 'https://symfony.com/doc/current/templates.html#embedding-controllers'
   -
     uuid: 1eebf878-8b9d-6470-bb5f-99d84c92580c
-    question: "What is the value of $render with the following code?\_$data = [ 'first' => 0, 'first-page' => 1 ];$render = $twig->render('XXXX', ['page' => 5,\_ 'data' => $data]);\_{# XXXX twig file #}\_{{ data.first-page }}"
+    question: "What is the value of $render with the following code?$data = [ 'first' => 0, 'first-page' => 1 ];$render = $twig->render('XXXX', ['page' => 5, 'data' => $data]);{# XXXX twig file #}{{ data.first-page }}"
     answers:
       - { value: 'null', correct: false }
       - { value: '-5', correct: false }

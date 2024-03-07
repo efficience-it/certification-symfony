@@ -12,7 +12,7 @@ questions:
     question: 'How can you specify the escaping strategy for a template block in Twig?'
     answers:
       - { value: 'Using the {% escape %} tag', correct: false }
-      - { value: "Using the {% autoescape 'html'\_%} tag.", correct: true }
+      - { value: "Using the {% autoescape 'html'%} tag.", correct: true }
       - { value: 'Using the {% autoescape %} tag with a specified strategy.', correct: true }
     help: 'https://twig.symfony.com/doc/3.x/tags/autoescape.html'
   -

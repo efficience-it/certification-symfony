@@ -1,0 +1,8 @@
+questions:
+  -
+    uuid: 1eebf878-8b9d-6786-a741-99d84c92580c
+    question: 'Could a Route defined with /page/{foo}/{foo} path be compiled?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/3.2/src/Symfony/Component/Routing/RouteCompiler.php#L137'

@@ -6,3 +6,30 @@ questions:
       - { value: 'No', correct: false }
       - { value: 'Yes', correct: true }
     help: 'https://symfony.com/doc/current/service_container/alias_private.html#deprecating-services'
+  -
+    uuid: 1eebf878-8b9e-6f00-8f11-99d84c92580c
+    question: 'Which class is used to define hierarchy of configuration values?'
+    answers:
+      - { value: Symfony\Component\Config\Definition\Builder\TreeBuilder, correct: true }
+      - { value: Symfony\Component\Config\Definition\Builder\HierarchyBuilder, correct: false }
+      - { value: Symfony\Component\Config\Definition\Builder\NodeBuilder, correct: false }
+      - { value: Symfony\Component\Config\Definition\Builder\Builder, correct: false }
+    help: 'https://symfony.com/doc/current/components/config/definition.html#defining-a-hierarchy-of-configuration-values-using-the-treebuilder'
+  -
+    uuid: 1eebf878-8ba1-6a98-afae-99d84c92580c
+    question: 'Which of the following values are available to define a null element in YAML ?'
+    answers:
+      - { value: '-', correct: false }
+      - { value: 'null', correct: true }
+      - { value: '~', correct: true }
+      - { value: 'false', correct: false }
+    help: 'http://symfony.com/doc/current/components/yaml/yaml_format.html#nulls'
+  -
+    uuid: 1eebf878-8ba3-610e-89e4-99d84c92580c
+    question: 'What is the purpose of the logging: true option in the translator config?'
+    answers:
+      - { value: 'Log a message when the given local is not configured.', correct: false }
+      - { value: 'Log a message when Symfony translate a string in the given locale.', correct: false }
+      - { value: 'Translate all log messages in the default locale.', correct: false }
+      - { value: "Log a message when Symfony doesn't find a translation for the given locale.", correct: true }
+    help: 'https://symfony.com/doc/current/reference/configuration/framework.html#logging'

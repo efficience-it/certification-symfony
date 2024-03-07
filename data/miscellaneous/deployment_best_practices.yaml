@@ -4,8 +4,8 @@ questions:
     question: 'The default value of the realpath_cache_size PHP configuration option is 16K. Is this setting correct for a typical Symfony application?'
     answers:
       - { value: 'Yes. There is no need to change the default value.', correct: false }
-      - { value: 'No, it's recommended to increase it at least to 4096K.', correct: true }
-      - { value: 'No, it's recommended to decrease it to 4K to limit the I/O load in the server.', correct: false }
+      - { value: "No, it's recommended to increase it at least to 4096K.", correct: true }
+      - { value: "No, it's recommended to decrease it to 4K to limit the I/O load in the server.", correct: false }
       - { value: 'Yes, because the performance of Symfony applications is independent from that option.', correct: false }
     help: 'https://symfony.com/doc/current/performance.html'
   -

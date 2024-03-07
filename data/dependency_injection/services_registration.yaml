@@ -1,0 +1,12 @@
+questions:
+  -
+    uuid: 1eebf878-8ba2-60f6-9047-99d84c92580c
+    question: 'What is the tag to register a custom service that loads routes?'
+    answers:
+      - { value: router.route_loader, correct: false }
+      - { value: routing_loader, correct: false }
+      - { value: router_loader, correct: false }
+      - { value: router.loader, correct: false }
+      - { value: routing.loader, correct: true }
+      - { value: routing.route_loader, correct: false }
+    help: 'http://symfony.com/doc/current/reference/dic_tags.html#routing-loader'

@@ -6,3 +6,31 @@ questions:
       - { value: 'True', correct: true }
       - { value: 'False', correct: false }
     help: 'https://github.com/for-GET/know-your-http-well/blob/master/status-codes.md'
+  -
+    uuid: 1eebf878-8b9c-60c0-962a-99d84c92580c
+    question: 'Which headers can trigger a 406 response status code if the server cannot produce a valid response?'
+    answers:
+      - { value: If-Range, correct: false }
+      - { value: If-None-Match, correct: false }
+      - { value: Accept-Language, correct: true }
+      - { value: Accept, correct: true }
+      - { value: Accept-Encoding, correct: true }
+      - { value: If-Match, correct: false }
+    help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406'
+  -
+    uuid: 1eebf878-8b9c-6c0a-8a9f-99d84c92580c
+    question: 'Can a response with 308 status code be cached?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://tools.ietf.org/html/rfc7538#section-3'
+  -
+    uuid: 1eebf878-8ba3-6582-ae49-99d84c92580c
+    question: 'What are the HTTP status codes for client errors?'
+    answers:
+      - { value: 4xx, correct: true }
+      - { value: 1xx, correct: false }
+      - { value: 3xx, correct: false }
+      - { value: 2xx, correct: false }
+      - { value: 5xx, correct: false }
+    help: 'https://datatracker.ietf.org/doc/html/rfc2616#section-6.1.1'

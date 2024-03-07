@@ -1,0 +1,11 @@
+questions:
+  -
+    uuid: 1eedbac6-720f-6b90-9551-f15fd36e0d10
+    question: 'Which http response codes are used as fallback mecanisms in Http Content Negociation ?'
+    answers:
+      - { value: '300', correct: true }
+      - { value: '406', correct: true }
+      - { value: '415', correct: true }
+      - { value: '311', correct: false }
+      - { value: '434', correct: false }
+    help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation#principles_of_content_negotiation'

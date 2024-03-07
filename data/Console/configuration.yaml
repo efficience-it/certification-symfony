@@ -7,4 +7,4 @@ questions:
       - { value: innerJoin, correct: true }
       - { value: leftJoin, correct: true }
       - { value: rightJoin, correct: false }
-    help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/query-builder.html#working-with-querybuilder'
+    help: 'http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/query-builder.html#working-with-querybuilder'
