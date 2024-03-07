@@ -1,0 +1,12 @@
+questions:
+  -
+    uuid: 1eebf878-8b9e-64d8-8952-99d84c92580c
+    question: 'Using Mailer, which of these configuration allows to disable email delivery?'
+    answers:
+      - { value: 'swiftmailer.disable_delivery: true', correct: false }
+      - { value: 'swiftmailer.delivery: false', correct: false }
+      - { value: 'swiftmailer.delivery_disable: false', correct: false }
+      - { value: "framework.mailer.dsn: 'null://null'", correct: true }
+      - { value: 'framework.mailer.dsn: null', correct: false }
+      - { value: 'framework.mailer.dsn: false', correct: false }
+    help: 'https://symfony.com/doc/current/mailer.html#disabling-delivery'
