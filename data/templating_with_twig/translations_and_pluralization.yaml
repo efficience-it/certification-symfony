@@ -9,3 +9,51 @@ questions:
       - { value: 'Yes, with the debug:i18n command', correct: false }
       - { value: 'Yes, with the debug:translate command', correct: false }
     help: 'https://symfony.com/doc/current/translation.html#translation-debug'
+  -
+    uuid: 1eedb927-6a41-6a8a-a187-cbd99fd31204
+    question: 'What is the default directory where the translation files are located ?'
+    answers:
+      - { value: translations, correct: true }
+      - { value: src/translations, correct: false }
+      - { value: src/messages, correct: false }
+      - { value: config/translations, correct: false }
+    help: 'https://symfony.com/doc/current/translation.html#configuration'
+  -
+    uuid: 1eedb933-c34f-6a4e-91a8-09b433b1ae25
+    question: 'What is the recommended option of loader to use in translation ?'
+    answers:
+      - { value: '.yaml: YAML', correct: true }
+      - { value: ".xlf: XLIFF file\_", correct: true }
+      - { value: ".php: PHP file\_", correct: false }
+      - { value: ".csv: CSV file\_", correct: false }
+      - { value: ".json: JSON file\_", correct: false }
+      - { value: ".ini: INI file\_", correct: false }
+      - { value: '.dat, .res: ICU resource bundle', correct: false }
+      - { value: '.mo: Machine object format;', correct: false }
+      - { value: '.po: Portable object format', correct: false }
+      - { value: "\_.qt: QT Translations TS XML file", correct: false }
+    help: 'https://symfony.com/doc/current/translation.html#translation-resource-file-names-and-locations'
+  -
+    uuid: 1eedb9b3-b85c-644a-9b4b-11bcc7d3fb25
+    question: "In order to use pluralization, the file must contains +intl-icu in it's filename.EX: messages.en.yaml\_ to messages+intl-icu.en.yaml"
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'Depends on the loader', correct: false }
+    help: 'https://symfony.com/doc/current/reference/formats/message_format.html#pluralization'
+  -
+    uuid: 1eedb9c5-d301-613a-927c-c7e29d4ef77c
+    question: "Which format is used in translation to add arguments, in the ICU MessageFormat syntax\_ ?"
+    answers:
+      - { value: 'Hello [name]', correct: false }
+      - { value: 'Hello {name}', correct: true }
+      - { value: 'Hello %name%', correct: false }
+      - { value: 'Hello $name', correct: false }
+    help: 'https://symfony.com/doc/current/reference/formats/message_format.html#message-placeholders'
+  -
+    uuid: 1eedba3b-7225-6566-816b-edd52650fa57
+    question: "Is this form of pluralization is valid :  ]-Inf,0]Oops! I'm down|]0,1000]I still have money|]1000,Inf]I have lots of money  ?"
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://symfony.com/doc/current/reference/formats/message_format.html#message-placeholders'

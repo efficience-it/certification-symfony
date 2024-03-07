@@ -16,3 +16,23 @@ questions:
       - { value: 'No', correct: false }
       - { value: 'Yes if foo is an array', correct: true }
     help: 'https://twig.symfony.com/doc/3.x/templates.html#variables'
+  -
+    uuid: 1eebf878-8ba3-64a6-a2d8-99d84c92580c
+    question: 'Which of the following statements will display bar ?'
+    answers:
+      - { value: "{{ '' ? 'foo' : 'bar' }}", correct: true }
+      - { value: "{{ '' is not empty ? 'foo' : 'bar' }}", correct: true }
+      - { value: "{{ [] is not empty ? 'foo' : 'bar' }}", correct: true }
+      - { value: "{{ 0 ? 'foo' : 'bar' }}", correct: true }
+      - { value: "{{ '0' is not empty ? 'foo' : 'bar' }}", correct: false }
+      - { value: "{{ '0' ? 'foo' : 'bar' }}", correct: true }
+      - { value: "{{ [] ? 'foo' : 'bar' }}", correct: true }
+      - { value: "{{ 0 is not empty ? 'foo' : 'bar' }}", correct: false }
+    help: 'https://twig.symfony.com/doc/3.x/tags/if.htmlhttps://twigfiddle.com/rkamam'
+  -
+    uuid: 1eebf878-8ba4-63ba-92c3-99d84c92580c
+    question: 'Does the following code follow the Twig coding standard? {{foo}}'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://twig.symfony.com/doc/3.x/coding_standards.html'
