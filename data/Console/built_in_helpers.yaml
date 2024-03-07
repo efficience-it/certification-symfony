@@ -1,0 +1,174 @@
+questions:
+  -
+    uuid: 1eebf878-8ba5-6b52-8c17-99d84c92580c
+    question: "What's the correct way to get to position of the cursor in a command ?"
+    answers:
+      - { value: $cursor->getCurrentPosition();, correct: true }
+      - { value: $cursor->getPosition();, correct: false }
+      - { value: $cursor->whereAmI();, correct: false }
+      - { value: $cursor->getMyPosition();, correct: false }
+    help: 'https://symfony.com/doc/current/components/console/helpers/cursor.html#moving-the-cursor'
+  -
+    uuid: 1eebf878-8ba5-6b98-85e7-99d84c92580c
+    question: 'What are correct ways to move the cursor 3 colums to the right from where i am in a console ?'
+    answers:
+      - { value: $cursor->moveRight(3);, correct: true }
+      - { value: $cursor->moveRight()->moveRight()->moveRight();, correct: true }
+      - { value: "$cursor->moveToPosition(    \_\_\_ $cursor->getCurrentPosition()[0],    \_\_\_ $cursor->getCurrentPosition()[1] + 3    );", correct: true }
+    help: 'https://symfony.com/doc/current/components/console/helpers/cursor.html#moving-the-cursor'
+  -
+    uuid: 1eebf878-8ba5-6be8-a74b-99d84c92580c
+    question: 'What functions could you use to clear some part of the screen in a console ?'
+    answers:
+      - { value: $cursor->clearLine();, correct: true }
+      - { value: $cursor->clearAllScreen();, correct: false }
+      - { value: $cursor->cleanScreen();, correct: false }
+      - { value: $cursor->clearLineAfter();, correct: true }
+      - { value: $cursor->clearScreen();, correct: true }
+      - { value: $cursor->clearOutput();, correct: true }
+    help: 'https://symfony.com/doc/current/components/console/helpers/cursor.html#clearing-output'
+  -
+    uuid: 1eebf878-8ba5-6c2e-bfca-99d84c92580c
+    question: "What's the correct way to call formater helper in the console ?"
+    answers:
+      - { value: "Calling with $this->getHelper('formater');", correct: true }
+      - { value: 'Instantiate for example FormatterHelperInterface in the construct', correct: false }
+      - { value: 'Instantiate for exampe FormaterHelper in the construct', correct: false }
+    help: 'https://symfony.com/doc/current/components/console/helpers/formatterhelper.html'
+  -
+    uuid: 1eebf878-8ba5-6c74-a208-99d84c92580c
+    question: 'What is the correct way to truncate a message in a console with the formater helper ?    $message =  This is a very long message, which should be truncated ;    to     $message =  This is a very long message, which should be!! ;'
+    answers:
+      - { value: "echo $formatter->truncate($message, 44, '!!');", correct: true }
+      - { value: "echo $formatter->truncateMessage($message, -10, '!!');", correct: false }
+      - { value: "echo $formatter->truncate($message, -10, '!!');", correct: true }
+      - { value: "echo $formatter->truncateMessage($message, 44, '!!');", correct: false }
+    help: 'https://symfony.com/doc/current/components/console/helpers/formatterhelper.html'
+  -
+    uuid: 1eebf878-8ba5-6cba-8c29-99d84c92580c
+    question: "In a console, how to disable the custom suffix '...' in the function truncate of the formater helper ?"
+    answers:
+      - { value: '$formatter->truncate($message, 7)->disableSuffix();', correct: false }
+      - { value: "$formatter->truncate($message, 7, '');", correct: true }
+    help: 'https://symfony.com/doc/current/components/console/helpers/formatterhelper.html#custom-suffix'
+  -
+    uuid: 1eebf878-8ba5-6d00-8fa6-99d84c92580c
+    question: 'In the formatter helper in a console, what are the available format you could use ?'
+    answers:
+      - { value: $formatter->formatSection(...);, correct: true }
+      - { value: $formatter->formatBlock(...);, correct: true }
+      - { value: $formatter->formatTable(...);, correct: false }
+      - { value: $formatter->formatFlashes(...);, correct: false }
+      - { value: 'Helper::formatTime(42);', correct: true }
+      - { value: 'Helper::formatMemory(1024)', correct: true }
+    help: 'https://symfony.com/doc/current/components/console/helpers/formatterhelper.html#custom-suffix'
+  -
+    uuid: 1eebf878-8ba5-6d46-ad98-99d84c92580c
+    question: "What's the correct way to modify a rendered tables in a console ?"
+    answers:
+      - { value: "use  $table->addRow(['Symfony']);", correct: false }
+      - { value: "use  $table->appendRow(['Symfony']);", correct: true }
+    help: 'https://symfony.com/doc/current/components/console/helpers/table.html#modifying-rendered-tables'
+  -
+    uuid: 1eebf878-8ba5-6e2c-93d3-99d84c92580c
+    question: 'What is the parameter option to give to  $table = new Table(XXX); in a console ?'
+    answers:
+      - { value: 'int $length, the number of lines for the table', correct: false }
+      - { value: OutputInterface, correct: true }
+      - { value: InputInterface, correct: false }
+      - { value: 'no argument', correct: false }
+    help: 'https://symfony.com/doc/current/components/console/helpers/table.html'
+  -
+    uuid: 1eebf878-8ba5-6e7c-b3dd-99d84c92580c
+    question: 'In a console, what kind of Question could you have as a third argument in this question ?    $helper->ask($input, $output, $question);'
+    answers:
+      - { value: Symfony\Component\Console\Question\ChoiceQuestion, correct: true }
+      - { value: 'Symfony\Component\Console\Question\ConfirmationQuestion ', correct: true }
+      - { value: Symfony\Component\Console\Question\NumberQuestion, correct: false }
+      - { value: Symfony\Component\Console\Question\PasswordQuestion, correct: false }
+      - { value: Symfony\Component\Console\Question\Question, correct: true }
+    help: 'https://symfony.com/doc/current/components/console/helpers/questionhelper.html'
+  -
+    uuid: 1eebf878-8ba5-6ecc-b989-99d84c92580c
+    question: 'What is the default value for ConfirmationQuestion in the QuestionHelper ?'
+    answers:
+      - { value: 'false', correct: false }
+      - { value: 'true', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Console/Question/ConfirmationQuestion.php#L28'
+  -
+    uuid: 1eebf878-8ba5-6f12-bdd6-99d84c92580c
+    question: "What will be the Exception if you build a validator on a Question in command line, and the user don't respect your asking ?"
+    answers:
+      - { value: RuntimeException, correct: true }
+      - { value: InvalidValueException, correct: false }
+      - { value: BadValueException, correct: false }
+    help: 'https://symfony.com/doc/current/components/console/helpers/questionhelper.html#validating-the-answer'
+  -
+    uuid: 1eebf878-8ba5-6f62-b189-99d84c92580c
+    question: 'What is the method to set the given value in the QuestionHelper for a test in the given tester:    $commandTester = new CommandTester($command);'
+    answers:
+      - { value: "$commandTester->setAnswer(['Test']);", correct: false }
+      - { value: "$commandTester->setGivenValue(['Test']);", correct: false }
+      - { value: "$commandTester->setInputs(['Test']);", correct: true }
+    help: 'https://symfony.com/doc/current/components/console/helpers/questionhelper.html#testing-a-command-that-expects-input'
+  -
+    uuid: 1eebf878-8ba5-6fb2-b4ad-99d84c92580c
+    question: "In the console, will this is valid to check value from a question ?    $question = new Question('Please enter the name of the bundle', 'AcmeDemoBundle');     $validation = Validation::createCallable(    \_\_\_ new Regex([     \_\_\_\_\_\_\_ 'pattern' => '/^[a-zA-Z]+Bundle$/',     \_\_\_\_\_\_\_ 'message' => 'The name of the bundle should be suffixed with \\'Bundle\\'',     \_\_\_ ])    );     $question->setValidator($validation);"
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/components/console/helpers/questionhelper.html#validating-the-answer'
+  -
+    uuid: 1eebf878-8ba5-6ff8-80bd-99d84c92580c
+    question: "In a question in your command, what is the way to set a list of valid values autocompletable that the user can answer to this question ?    $question = new Question('Please enter the name of a bundle', 'FooBundle');    $bundles = ['AcmeDemoBundle', 'AcmeBlogBundle', 'AcmeStoreBundle'];"
+    answers:
+      - { value: $question->setPossibleAnswers($bundles);, correct: false }
+      - { value: $question->setAutocomplete($bundles);, correct: false }
+      - { value: $question->setAutocompleterValues($bundles);, correct: true }
+      - { value: $question->setPossibleValues($bundles);, correct: false }
+    help: 'https://symfony.com/doc/current/components/console/helpers/questionhelper.html#autocompletion'
+  -
+    uuid: 1eebf878-8ba6-6048-bcaf-99d84c92580c
+    question: 'What is the first argument required in the new ProgressBar(XXXX) ?'
+    answers:
+      - { value: OutputInterface, correct: true }
+      - { value: InputInterface, correct: false }
+      - { value: 'int $count, the number of iterable object to run', correct: false }
+      - { value: 'no argument', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Console/Helper/ProgressBar.php#L70'
+  -
+    uuid: 1eebf878-8ba6-608e-b8bd-99d84c92580c
+    question: 'What are correct ways to give VERY VERBOSE detail on a ProgressBar in the console ?'
+    answers:
+      - { value: "$progressBar->setFormat('very_verbose');", correct: true }
+      - { value: '$progressBar->setFormat(OutputInterface::VERBOSITY_VERY_VERBOSE);', correct: false }
+      - { value: 'add a  -vv  the end of the command launched', correct: true }
+      - { value: $progressBar->setVeryVerbose();, correct: false }
+    help: 'https://symfony.com/doc/current/components/console/helpers/progressbar.html#customizing-the-progress-bar'
+  -
+    uuid: 1eebf878-8ba6-60de-91d5-99d84c92580c
+    question: 'For performance reasons, symfony redraws the screen once every XXXXms. If this is too fast or too slow for your application, use the methods minSecondsBetweenRedraws() and maxSecondsBetweenRedraws():    How much is XXX ?'
+    answers:
+      - { value: '50 ms', correct: false }
+      - { value: '80 ms', correct: false }
+      - { value: '100 ms', correct: true }
+      - { value: '150 ms', correct: false }
+      - { value: '300 ms', correct: false }
+      - { value: '800 ms', correct: false }
+    help: 'https://symfony.com/doc/current/components/console/helpers/progressbar.html#bar-settings'
+  -
+    uuid: 1eebf878-8ba6-6124-b461-99d84c92580c
+    question: 'What are the valid way to use the process helper ?'
+    answers:
+      - { value: "$helper->run($output, 'figlet Symfony');", correct: true }
+      - { value: "$helper->run($output, ['figlet', 'Symfony']);", correct: true }
+      - { value: "$process = new Process(['figlet', 'Symfony']);     $helper->run($output, $process);", correct: true }
+    help: 'https://symfony.com/doc/current/components/console/helpers/processhelper.html'
+  -
+    uuid: 1eebf878-8ba6-6174-a67f-99d84c92580c
+    question: "How to customize the error message in process helper run($output, 'ls') ?"
+    answers:
+      - { value: "by adding ->setInvalidMesage($errorMessage) on run method like    $helper->run($output, $process')->setInvalidMessage('Failed);", correct: false }
+      - { value: "by adding a third argument    $helper->run($output, $process, 'Failed');", correct: true }
+      - { value: 'By overring the message of the ProcessHelperException', correct: false }
+    help: 'https://symfony.com/doc/current/components/console/helpers/processhelper.html#customized-display'

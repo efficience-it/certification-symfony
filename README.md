@@ -19,11 +19,11 @@ Linked to this documentation, this repository is a way for developper to train t
 - [Status codes](data/http/status_codes.yaml)
 - HTTP request
 - [HTTP response](data/http/http_response.yaml)
-- HTTP methods
+- [HTTP methods](data/http/http_methods.yaml)
 - Cookies
 - Caching
-- Content negotiation
-- Language detection
+- [Content negotiation](data/http/content_negotiation.yaml)
+- [Language detection](data/http/language_detection.yaml)
 - Symfony HttpClient component
 
 ## Symfony Architecture
@@ -34,7 +34,7 @@ Linked to this documentation, this repository is a way for developper to train t
 - [Code organization](data/symfony_architecture/code_organization.yaml)
 - Request handling
 - Exception handling
-- Event dispatcher and kernel events
+- [Event dispatcher and kernel events](data/symfony_architecture/event_dispatcher_and_kernel_events.yaml)
 - [Official best practices](data/symfony_architecture/official_best_practices.yaml)
 - [Release management](data/symfony_architecture/release_management.yaml)
 - Backward compatibility promise
@@ -59,7 +59,7 @@ Linked to this documentation, this repository is a way for developper to train t
 - Built-in internal controllers
 
 ## Routing
-- Configuration (YAML, XML, PHP & attributes/annotations)
+- [Configuration (YAML, XML, PHP & attributes/annotations)](data/routing/configuration_yamlxmlphp_and_attributes_annotations.yaml)
 - Restrict URL parameters
 - Set default values to URL parameters
 - Generate URL parameters
@@ -79,7 +79,7 @@ Linked to this documentation, this repository is a way for developper to train t
 - [Filters and functions](data/templating_with_twig/filters_and_functions.yaml)
 - Template includes
 - Loops and conditions
-- URLs generation
+- [URLs generation](data/templating_with_twig/ur_ls_generation.yaml)
 - [Controller rendering](data/templating_with_twig/controller_rendering.yaml)
 - [Translations and pluralization](data/templating_with_twig/translations_and_pluralization.yaml)
 - [String interpolation](data/templating_with_twig/string_interpolation.yaml)
@@ -88,10 +88,10 @@ Linked to this documentation, this repository is a way for developper to train t
 
 ## Forms
 - [Forms creation](data/forms/forms_creation.yaml)
-- Forms handling
+- [Forms handling](data/forms/forms_handling.yaml)
 - [Form types](data/forms/form_types.yaml)
 - Forms rendering with Twig
-- Forms theming
+- [Forms theming](data/forms/forms_theming.yaml)
 - [CSRF protection](data/forms/csrf_protection.yaml)
 - Handling file upload
 - [Built-in form types](data/forms/built_in_form_types.yaml)
@@ -109,28 +109,28 @@ Linked to this documentation, this repository is a way for developper to train t
 - Violations builder
 
 ## Dependency Injection
-- Service container
+- [Service container](data/dependency_injection/service_container.yaml)
 - Built-in services
 - [Configuration parameters](data/dependency_injection/configuration_parameters.yaml)
-- Services registration
+- [Services registration](data/dependency_injection/services_registration.yaml)
 - Service decoration
 - Tags
 - Semantic configuration
 - [Factories](data/dependency_injection/factories.yaml)
-- Compiler passes
+- [Compiler passes](data/dependency_injection/compiler_passes.yaml)
 - Services autowiring
 
 ## Security
-- Authentication
-- Authorization
+- [Authentication](data/security/authentication.yaml)
+- [Authorization](data/security/authorization.yaml)
 - Configuration
-- Providers
-- Firewalls
+- [Providers](data/security/providers.yaml)
+- [Firewalls](data/security/firewalls.yaml)
 - [Users](data/security/users.yaml)
 - [Password hashers](data/security/password_hashers.yaml)
-- Roles
+- [Roles](data/security/roles.yaml)
 - [Access Control Rules](data/security/access_control_rules.yaml)
-- Authenticators
+- [Authenticators](data/security/authenticators.yaml)
 - [Voters and voting strategies](data/security/voters_and_voting_strategies.yaml)
 
 ## HTTP Caching
@@ -139,7 +139,7 @@ Linked to this documentation, this repository is a way for developper to train t
 - Validation (ETag, Last-Modified)
 - Client side caching
 - Server side caching
-- Edge Side Includes
+- [Edge Side Includes](data/http_caching/edge_side_includes.yaml)
 
 ## Console
 - [Built-in commands](data/console/built_in_commands.yaml)
@@ -147,7 +147,7 @@ Linked to this documentation, this repository is a way for developper to train t
 - [Configuration](data/console/configuration.yaml)
 - [Options and arguments](data/console/options_and_arguments.yaml)
 - [Input and Output objects](data/console/input_and_output_objects.yaml)
-- Built-in helpers
+- [Built-in helpers](data/console/built_in_helpers.yaml)
 - [Console events](data/console/console_events.yaml)
 - [Verbosity levels](data/console/verbosity_levels.yaml)
 
@@ -157,10 +157,10 @@ Linked to this documentation, this repository is a way for developper to train t
 - Client object
 - Crawler object
 - Profiler object
-- Framework objects access
+- [Framework objects access](data/automated_tests/framework_objects_access.yaml)
 - Client configuration
 - Request and response objects introspection
-- PHPUnit bridge
+- [PHPUnit bridge](data/automated_tests/php_unit_bridge.yaml)
 - Handling legacy deprecated code
 
 ## Miscellaneous
@@ -168,7 +168,7 @@ Linked to this documentation, this repository is a way for developper to train t
 - Error handling
 - Code debugging
 - [Deployment best practices](data/miscellaneous/deployment_best_practices.yaml)
-- Cache, Process and Serializer components
+- [Cache, Process and Serializer components](data/miscellaneous/cache_process_and_serializer_components.yaml)
 - Messenger component
 - [Mime and Mailer components](data/miscellaneous/mime_and_mailer_components.yaml)
 - Filesystem and Finder components
