@@ -1,6 +1,6 @@
 # Certification Symfony
 
-Linked to this documentation, this repository is a way for developper to train to be certificated for Twig.
+Linked to this documentation, this repository is a way for developper to train to be certificated for Symfony.
 
 ## PHP and Web Security
 - [PHP API up to PHP 8.1 version](data/php_and_web_security/phpapi_up_to_php81_version.yaml)
