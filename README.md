@@ -1,6 +1,9 @@
 # Certification Symfony
 
-Linked to this documentation, this repository is a way for developper to train to be certificated for Twig.
+In order to get the `Symfony certification`, and to be prepared to it, you have few options: train by yourself, get a training on sensiolabs or train by doing tests.
+Thats what we prupose here, linked to the elements shown by the certification page, we grouped questions to be sure to master every single page on the symfony documentation.
+
+Each Category and Sub Category have questions, with one or more valid answers. If you would, you can use this [repo](https://github.com/certificationy/certificationy-cli) to train by cli.
 
 ## PHP and Web Security
 - [PHP API up to PHP 8.1 version](data/php_and_web_security/phpapi_up_to_php81_version.yaml)
