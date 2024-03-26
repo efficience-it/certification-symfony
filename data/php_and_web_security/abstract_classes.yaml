@@ -1,0 +1,38 @@
+questions:
+  -
+    uuid: 1eebf878-8ba0-6904-8a4d-99d84c92580c
+    question: 'Does PHP support function overloading?'
+    answers:
+      - { value: 'Yes, in all cases', correct: false }
+      - { value: 'No, in all cases', correct: true }
+      - { value: 'Yes, but it depends on the function scope', correct: false }
+      - { value: 'Yes, except when it is an anonymous function', correct: false }
+    help: 'https://www.php.net/manual/en/language.oop5.overloading.php'
+  -
+    uuid: 1eee6cbf-3cf4-6b44-9026-0bb3c5a5b229
+    question: "Does abstract class can be instantiate ?"
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://www.php.net/manual/en/language.oop5.abstract.php'
+  -
+    uuid: 1eee6cc4-63e8-6f3e-9026-0363a493ab2f
+    question: 'Does a class that contains at least one abstract method must also be abstract ?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://www.php.net/manual/en/language.oop5.abstract.php'
+  -
+    uuid: 1eee6cd6-f85e-6ac6-9026-d7a38b0e1aa0
+    question: "When you extends an abstract class which define a function. Does the child class can add optionnal aruguments in the same function definition ? prefixName($name, $separator =  . ) instead of prefixName($name)"
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://www.php.net/manual/en/language.oop5.abstract.php'
+  -
+    uuid: 1eee6ced-b43a-66f8-9026-ffcdecd0bbbe
+    question: 'Is it possible to have private and protected method in an interface ?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://www.php.net/manual/en/language.oop5.interfaces.php'

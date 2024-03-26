@@ -1,14 +1,14 @@
 questions:
   -
     uuid: 1eebf878-8ba5-6382-a6c5-99d84c92580c
-    question: "Is this a valid way to add a DataTransformer ?    $builder    \_\_\_ ->add('issue', TextType::class)    \_\_\_ ->addModelTransformer($transformer);"
+    question: "Is this a valid way to add a DataTransformer ?    $builder     ->add('issue', TextType::class)     ->addModelTransformer($transformer);"
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/current/form/data_transformers.html#using-the-transformer'
   -
     uuid: 1eebf878-8ba5-63c8-9923-99d84c92580c
-    question: "The first function in the CallBackTransformer is to transform, and the second to reverseTransform ?    $builder    \_\_\_ ->get('tags')     \_\_\_ ->addModelTransformer(    \_\_\_\_\_\_\_ new CallbackTransformer(     \_\_\_\_\_\_\_\_\_\_\_ function ($tagsAsArray): string {     \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ return implode(', ', $tagsAsArray);     \_\_\_\_\_\_\_\_\_\_\_ },     \_\_\_\_\_\_\_\_\_\_\_ function ($tagsAsString): array {     \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ return explode(', ', $tagsAsString);     \_\_\_\_\_\_\_\_\_\_\_ }     \_\_\_\_\_\_\_ )    \_\_\_ ) ;"
+    question: "The first function in the CallBackTransformer is to transform, and the second to reverseTransform ?    $builder     ->get('tags')      ->addModelTransformer(     new CallbackTransformer(      function ($tagsAsArray): string {      return implode(', ', $tagsAsArray);      },      function ($tagsAsString): array {      return explode(', ', $tagsAsString);      }      )     ) ;"
     answers:
       - { value: 'No', correct: false }
       - { value: 'Yes', correct: true }

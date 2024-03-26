@@ -1,0 +1,37 @@
+questions:
+  -
+    uuid: 1eee699e-f4fd-67dc-9026-49976aff15a1
+    question: 'Profiler can be added in the code. Programmatically, could it be enabled and disabled ?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/profiler.html#enabling-the-profiler-programmatically-or-conditionally'
+  -
+    uuid: 1eee6aa1-cc83-6938-9026-417eabba3e0e
+    question: 'What are the correct way to find profiler tokens ?'
+    answers:
+      - { value: "$tokens = $profiler->find('', '', 10, '', '', '');", correct: true }
+      - { value: "$tokens = $profiler->find('', '/admin/', 10, '', '', '');", correct: true }
+      - { value: "$tokens = $profiler->find('', '!/api/', 10, '', '', '');", correct: true }
+      - { value: "$tokens = $profiler->find('127.0.0.1', '', 10, 'POST', '', '');", correct: true }
+      - { value: "$tokens = $profiler->find('', '', 10, '', '4 days ago', '2 days ago');", correct: true }
+      - { value: "$tokens = $profiler->find('', '', '', '', '', '', 'only_https');", correct: false }
+    help: 'https://symfony.com/doc/current/profiler.html#accessing-profiling-data-programmatically'
+  -
+    uuid: 1eee6aa5-1364-6b9c-9026-b79d7a399da1
+    question: 'What is the method to get the profile from a Response with the profiler service ?'
+    answers:
+      - { value: loadProfileFromResponse, correct: true }
+      - { value: loadProfile, correct: false }
+      - { value: loadProfileWithProfiler, correct: false }
+      - { value: loadProfilerFromResponse, correct: false }
+    help: 'https://symfony.com/doc/current/profiler.html#accessing-profiling-data-programmatically'
+  -
+    uuid: 1eee6ab6-3371-63de-9026-7bcd97a96947
+    question: 'Which method do you call to clean the storage which contains the last tokens of the profiler ?'
+    answers:
+      - { value: purge, correct: true }
+      - { value: reset, correct: false }
+      - { value: clean, correct: false }
+      - { value: deleteAll, correct: false }
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpKernel/Profiler/Profiler.php#L110'

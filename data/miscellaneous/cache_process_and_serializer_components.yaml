@@ -11,7 +11,7 @@ questions:
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Process/Process.php#L264'
   -
     uuid: 1eebf878-8b9a-696e-886e-99d84c92580c
-    question: "What is the method to access the pid of the running process of the following code :$process = new Process('/usr/bin/php worker.php');\_$process->start();"
+    question: "What is the method to access the pid of the running process of the following code :$process = new Process('/usr/bin/php worker.php');$process->start();"
     answers:
       - { value: '$pid = $process->getData()->getProcessId();', correct: false }
       - { value: '$pid = $process->getPid();', correct: true }

@@ -10,7 +10,7 @@ questions:
       - { value: getCredentials(), correct: false }
       - { value: getHash(), correct: false }
       - { value: getId(), correct: false }
-    help: "https://github.com/symfony/symfony/blob/master/src/Symfony/Component/Security/Core/User/UserInterface.php\_"
+    help: "https://github.com/symfony/symfony/blob/master/src/Symfony/Component/Security/Core/User/UserInterface.php"
   -
     uuid: 1eed6647-6f02-6908-b85e-f514f4793299
     question: 'Since Symfony 5.4, to implement UserInterface which method you have to define ?'

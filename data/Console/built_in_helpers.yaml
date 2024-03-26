@@ -14,7 +14,7 @@ questions:
     answers:
       - { value: $cursor->moveRight(3);, correct: true }
       - { value: $cursor->moveRight()->moveRight()->moveRight();, correct: true }
-      - { value: "$cursor->moveToPosition(    \_\_\_ $cursor->getCurrentPosition()[0],    \_\_\_ $cursor->getCurrentPosition()[1] + 3    );", correct: true }
+      - { value: "$cursor->moveToPosition(     $cursor->getCurrentPosition()[0],     $cursor->getCurrentPosition()[1] + 3    );", correct: true }
     help: 'https://symfony.com/doc/current/components/console/helpers/cursor.html#moving-the-cursor'
   -
     uuid: 1eebf878-8ba5-6be8-a74b-99d84c92580c
@@ -113,7 +113,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/console/helpers/questionhelper.html#testing-a-command-that-expects-input'
   -
     uuid: 1eebf878-8ba5-6fb2-b4ad-99d84c92580c
-    question: "In the console, will this is valid to check value from a question ?    $question = new Question('Please enter the name of the bundle', 'AcmeDemoBundle');     $validation = Validation::createCallable(    \_\_\_ new Regex([     \_\_\_\_\_\_\_ 'pattern' => '/^[a-zA-Z]+Bundle$/',     \_\_\_\_\_\_\_ 'message' => 'The name of the bundle should be suffixed with \\'Bundle\\'',     \_\_\_ ])    );     $question->setValidator($validation);"
+    question: "In the console, will this is valid to check value from a question ?    $question = new Question('Please enter the name of the bundle', 'AcmeDemoBundle');     $validation = Validation::createCallable(     new Regex([      'pattern' => '/^[a-zA-Z]+Bundle$/',      'message' => 'The name of the bundle should be suffixed with \\'Bundle\\'',      ])    );     $question->setValidator($validation);"
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }

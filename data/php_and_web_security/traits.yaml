@@ -8,7 +8,7 @@ questions:
     help: 'https://www.php.net/manual/en/language.oop5.traits.php'
   -
     uuid: 1eebf878-8ba9-602c-ba18-99d84c92580c
-    question: "What will the output of this function ?    class Base {   public function sayHello() {   echo 'Hello ';   }  }    trait SayWorld {   public function sayHello() {   echo 'World';   }  }    class MyHelloWorld extends Base {  \_\_\_ use SayWorld;  }    $o = new MyHelloWorld();  $o->sayHello();"
+    question: "What will the output of this function ?    class Base {   public function sayHello() {   echo 'Hello ';   }  }    trait SayWorld {   public function sayHello() {   echo 'World';   }  }    class MyHelloWorld extends Base {   use SayWorld;  }    $o = new MyHelloWorld();  $o->sayHello();"
     answers:
       - { value: Hello, correct: false }
       - { value: World, correct: true }
@@ -17,7 +17,7 @@ questions:
     help: 'https://www.php.net/manual/en/language.oop5.traits.php'
   -
     uuid: 1eebf878-8ba9-6072-929e-99d84c92580c
-    question: "What will the output of this function ?    trait HelloWorld {  \_\_\_ public function sayHello() {  \_\_\_ \_\_\_ echo 'Hello World!';  \_\_\_ }  }    class TheWorldIsNotEnough {  \_\_\_ use HelloWorld;  \_\_\_ public function sayHello() {  \_\_\_ \_\_\_ echo 'Hello Universe!';  \_\_\_ }  }    $o = new TheWorldIsNotEnough();  $o->sayHello();"
+    question: "What will the output of this function ?    trait HelloWorld {   public function sayHello() {    echo 'Hello World!';   }  }    class TheWorldIsNotEnough {   use HelloWorld;   public function sayHello() {    echo 'Hello Universe!';   }  }    $o = new TheWorldIsNotEnough();  $o->sayHello();"
     answers:
       - { value: 'Hello World!', correct: false }
       - { value: 'Hello Universe!', correct: true }
@@ -25,7 +25,7 @@ questions:
     help: 'https://www.php.net/manual/en/language.oop5.traits.php'
   -
     uuid: 1eebf878-8ba9-60b8-b5a4-99d84c92580c
-    question: "What will be the output of this function ?    trait Hello {  \_\_\_ public function saySomething() {  \_\_\_ \_\_\_ echo 'Hello ';  \_\_\_ }  }    trait World {  \_\_\_ public function saySomething() {  \_\_\_ \_\_\_ echo 'World';  \_\_\_ }  }    class MyHelloWorld {  \_\_\_ use Hello, World;  \_\_\_ public function sayExclamationMark() {  \_\_\_ \_\_\_ echo '!';  \_\_\_ }  }    $o = new MyHelloWorld();  $o->sayHello();  $o->sayWorld();  $o->sayExclamationMark();  ?>"
+    question: "What will be the output of this function ?    trait Hello {   public function saySomething() {    echo 'Hello ';   }  }    trait World {   public function saySomething() {    echo 'World';   }  }    class MyHelloWorld {   use Hello, World;   public function sayExclamationMark() {    echo '!';   }  }    $o = new MyHelloWorld();  $o->sayHello();  $o->sayWorld();  $o->sayExclamationMark();  ?>"
     answers:
       - { value: Hello, correct: false }
       - { value: World, correct: false }
@@ -43,7 +43,7 @@ questions:
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.conflict'
   -
     uuid: 1eebf878-8ba9-614e-adf2-99d84c92580c
-    question: "What will be the output of this function ?    trait Hello {  \_\_\_ public function sayHello() {  \_\_\_ \_\_\_ echo 'Hello ';  \_\_\_ }  }    trait World {  \_\_\_ public function sayWorld() {  \_\_\_ \_\_\_ echo 'World';  \_\_\_ }  }    trait HelloWorld {  \_\_\_ use Hello, World;  }    class MyHelloWorld {  \_\_\_ use HelloWorld;  }    $o = new MyHelloWorld();  $o->sayHello();  $o->sayWorld();"
+    question: "What will be the output of this function ?    trait Hello {   public function sayHello() {    echo 'Hello ';   }  }    trait World {   public function sayWorld() {    echo 'World';   }  }    trait HelloWorld {   use Hello, World;  }    class MyHelloWorld {   use HelloWorld;  }    $o = new MyHelloWorld();  $o->sayHello();  $o->sayWorld();"
     answers:
       - { value: Hello, correct: false }
       - { value: World, correct: false }
@@ -84,14 +84,14 @@ questions:
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.static'
   -
     uuid: 1eebf878-8ba9-62b6-bbb9-99d84c92580c
-    question: "Does traits can define properties like this ?    trait PropertiesTrait {  \_\_\_ public $x = 1;  }    class PropertiesExample {  \_\_\_ use PropertiesTrait;  }    $example = new PropertiesExample;  $example->x;"
+    question: "Does traits can define properties like this ?    trait PropertiesTrait {   public $x = 1;  }    class PropertiesExample {   use PropertiesTrait;  }    $example = new PropertiesExample;  $example->x;"
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.properties'
   -
     uuid: 1eebf878-8ba9-62fc-b8fd-99d84c92580c
-    question: "Could a property defined in a Trait be overrided by an exhibiting class ?    trait PropertiesTrait {  \_\_\_ public $notSame = false;  }    class PropertiesExample {  \_\_\_ use PropertiesTrait;  \_\_\_ public $notSame = true;  }"
+    question: "Could a property defined in a Trait be overrided by an exhibiting class ?    trait PropertiesTrait {   public $notSame = false;  }    class PropertiesExample {   use PropertiesTrait;   public $notSame = true;  }"
     answers:
       - { value: 'Yes PropertiesExample->notSame will output true ', correct: false }
       - { value: 'No PropertiesExample->notSame will output false ', correct: false }
@@ -110,7 +110,7 @@ questions:
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.constants'
   -
     uuid: 1eebf878-8ba9-6392-a88a-99d84c92580c
-    question: "Could a Constant defined in a Trait be overrided by an exhibiting class ?    trait PropertiesTrait {  \_\_\_ public const FLAG = 2;  }    class PropertiesExample {  \_\_\_ use PropertiesTrait;  \_\_\_ public const FLAG = 3;  }"
+    question: "Could a Constant defined in a Trait be overrided by an exhibiting class ?    trait PropertiesTrait {   public const FLAG = 2;  }    class PropertiesExample {   use PropertiesTrait;   public const FLAG = 3;  }"
     answers:
       - { value: 'Yes PropertiesExample::FLAG will output 3', correct: false }
       - { value: 'No PropertiesExample::FLAG will output 2', correct: false }

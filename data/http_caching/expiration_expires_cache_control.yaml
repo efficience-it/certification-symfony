@@ -60,11 +60,11 @@ questions:
     help: 'https://tools.ietf.org/html/rfc2616#page-79'
   -
     uuid: 1eebf878-8ba6-6ac0-b4bc-99d84c92580c
-    question: "Which headers/directives will be ignored by a proxy ifExpires,s-maxageandmax-age\_are all present in a response ?"
+    question: "Which headers/directives will be ignored by a proxy if Expires,s-maxage and max-age are all present in a response ?"
     answers:
       - { value: Expires, correct: true }
       - { value: max-age, correct: true }
-      - { value: "s-maxage    \_      ", correct: false }
+      - { value: "s-maxage          ", correct: false }
     help: "  \thttps://tools.ietf.org/html/rfc7234#section-5.2.2.8  \thttps://tools.ietf.org/html/rfc7234#section-5.2.2.9  \thttps://tools.ietf.org/html/rfc7234#section-5.3  "
   -
     uuid: 1eebf878-8ba7-6268-bc81-99d84c92580c

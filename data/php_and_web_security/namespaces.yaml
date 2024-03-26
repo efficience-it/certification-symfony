@@ -24,3 +24,10 @@ questions:
       - { value: Foo\Bar\Foo\Test, correct: true }
       - { value: Foo\Test, correct: false }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#113047'
+  -
+    uuid: 1eee6d5b-3b48-6e70-9026-a773fb6edbda
+    question: 'Is it possible to set multiple namespace in the same file ?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://www.php.net/manual/en/language.namespaces.definitionmultiple.php'

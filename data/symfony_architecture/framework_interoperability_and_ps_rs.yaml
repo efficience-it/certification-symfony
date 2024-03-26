@@ -32,4 +32,4 @@ questions:
       - { value: 'Extending the Symfony\Component\Form\AbstractTypeExtension', correct: true }
       - { value: 'Putting the new MyFormExtension class in the Form\Extension namespace', correct: false }
       - { value: 'Creating a service with the form.type_extension tag (if auto-configuration is not enabled)', correct: true }
-    help: 'https://symfony.com/doc/current/form/create_form_type_extension.html#defining-the-form-type-extension'
+    help: 'http://symfony.com/doc/current/form/create_form_type_extension.html#defining-the-form-type-extension'

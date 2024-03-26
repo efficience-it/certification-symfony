@@ -1,9 +1,63 @@
 questions:
   -
     uuid: 1eebf878-8ba5-6116-88ba-99d84c92580c
-    question: "Is it possible make $tags directly indexed with a specified field ?/** @Entity */\_class Content\_{\_/** @OneToMany(targetEntity= Tag ) */\_private Tag $tags;\_}\_"
+    question: "Is it possible make $tags directly indexed with a specified field ?/** @Entity */class Content{/** @OneToMany(targetEntity= Tag ) */private Tag $tags;}"
     answers:
       - { value: 'Yes, by adding the attribute indexBy to the OneToMany annotation', correct: true }
       - { value: 'No', correct: false }
       - { value: 'Yes, by implementing the IndexableInterface', correct: false }
-    help: 'http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/tutorials/working-with-indexed-associations.html#mapping-indexed-associations'
+    help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/tutorials/working-with-indexed-associations.html#mapping-indexed-associations'
+  -
+    uuid: 1eee6ccd-5f53-6baa-9026-817ee026fe64
+    question: 'Which property of abstract class are true ?'
+    answers:
+      - { value: "Methods defined as abstract simply declare the method's signature", correct: true }
+      - { value: "they cannot define the implementation ", correct: true }
+      - { value: 'can be instantiated', correct: false }
+      - { value: 'can be final', correct: false }
+    help: 'https://www.php.net/manual/en/language.oop5.abstract.php'
+  -
+    uuid: 1eee6d66-eb3b-6dd6-9026-f9887cc7a9d8
+    question: 'Can a private class attribute be accessible from outside this class?'
+    answers:
+      - { value: 'No', correct: true }
+      - { value: 'Yes', correct: false }
+    help: 'https://www.php.net/manual/en/language.oop5.basic.php'
+  -
+    uuid: 1eee6d6c-3eb9-656c-9026-6739c1a3af6c
+    question: "Since php 8, is it possible to use this ? $repository?->getUser(5)?->name;"
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://www.php.net/manual/en/language.oop5.basic.php'
+  -
+    uuid: 1eee6d77-5a1d-6c58-9026-39b6af1f6282
+    question: 'Which declaration will create a stdClass'
+    answers:
+      - { value: '$x = new stdClass;', correct: true }
+      - { value: "(object) array('property1' => 1, 'property2' => 'b');", correct: true }
+      - { value: "(object) null; // same as above", correct: true }
+      - { value: "(object) 'a';", correct: true }
+    help: 'https://www.php.net/manual/en/language.oop5.basic.php'
+  -
+    uuid: 1eee6d8c-bb3e-6298-9026-3709308913cb
+    question: 'Which assertion is true if Child extends Test, and the Test class contains static public function getNew() { return new static;}.'
+    answers:
+      - { value: "Test::getNew() instanceof Test", correct: true }
+      - { value: "Child::getNew() instanceof Child", correct: true }
+      - { value: "new Test() !== new (new Test())", correct: true }
+    help: 'https://www.php.net/manual/en/language.oop5.basic.php'
+  -
+    uuid: 1eee6d9e-e2fa-6b08-9026-f34ae7ce27f7
+    question: 'a final class can be extended ?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://www.php.net/manual/en/language.oop5.final.php'
+  -
+    uuid: 1eee6da9-9955-68e4-9026-91647ee9ff79
+    question: 'final keyword can be added to an attribute, a class and a method ?'
+    answers:
+      - { value: 'No', correct: true }
+      - { value: 'Yes', correct: false }
+    help: 'https://www.php.net/manual/en/language.oop5.final.php'

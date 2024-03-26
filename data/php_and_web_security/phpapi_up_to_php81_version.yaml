@@ -29,8 +29,8 @@ questions:
     question: 'What is the purpose of the Chain User Provider ?'
     answers:
       - { value: 'It combines two or more providers to create a new user provider. sorted they are looked one after the other until user is found', correct: true }
-      - { value: "This user provider stores all user information in a configuration file, including their passwords.\_", correct: false }
-      - { value: "\_User Access are stored in a Chain software like Stackifor.", correct: false }
+      - { value: "This user provider stores all user information in a configuration file, including their passwords.", correct: false }
+      - { value: "User Access are stored in a Chain software like Stackifor.", correct: false }
     help: 'https://symfony.com/doc/current/security/user_providers.html#chain-user-provider'
   -
     uuid: 1eedb041-7713-6f86-9b4d-9d3b2d641bb6
@@ -41,3 +41,11 @@ questions:
       - { value: 'disable firewall', correct: false }
       - { value: 'to limit login attempts, the user will not be able to login for 5 minutes', correct: false }
     help: 'https://symfony.com/doc/current/security.html#logout-programmatically'
+  -
+    uuid: 1eee6d98-7a23-6338-9026-cd57d9ba16db
+    question: 'Where can be set an attribute whith readonly property ? in php8.1'
+    answers:
+      - { value: 'in the _construct method', correct: true }
+      - { value: 'in a setter method', correct: false }
+      - { value: 'at the attribute declaration', correct: false }
+    help: 'https://www.php.net/manual/en/language.oop5.properties.php'

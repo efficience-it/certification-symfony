@@ -10,7 +10,7 @@ questions:
     help: 'https://symfony.com/doc/current/security/csrf.html'
   -
     uuid: 1eebf878-8ba5-6878-8ebd-99d84c92580c
-    question: "Is this way is a correct way to disable csrf in a form ?    public function configureOptions(OptionsResolver $resolver): void {    \_\_\_\_ $resolver->setDefaults([     \_\_\_\_\_\_\_\_\_ 'csrf_protection' => false,    \_\_\_\_ ]    }"
+    question: "Is this way is a correct way to disable csrf in a form ?    public function configureOptions(OptionsResolver $resolver): void {     $resolver->setDefaults([      'csrf_protection' => false,     ]    }"
     answers:
       - { value: 'No', correct: false }
       - { value: 'Yes', correct: true }

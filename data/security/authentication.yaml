@@ -74,18 +74,18 @@ questions:
     help: 'https://symfony.com/doc/current/security/login_link.html#invalidate-login-links'
   -
     uuid: 1eedadbf-3130-62fa-9ad6-73c005d2a996
-    question: "\_By default, generated links use the lifetime configured globally but you can change the lifetime per link. How ?"
+    question: "By default, generated links use the lifetime configured globally but you can change the lifetime per link. How ?"
     answers:
-      - { value: " setting the third argument of the createLoginLink() method \_", correct: true }
-      - { value: " setting the second argument of the createLoginLink() method \_", correct: false }
-      - { value: "\_giving an array to the second argument of the createLoginLink() method, whith the life_time value", correct: false }
+      - { value: " setting the third argument of the createLoginLink() method ", correct: true }
+      - { value: " setting the second argument of the createLoginLink() method ", correct: false }
+      - { value: "giving an array to the second argument of the createLoginLink() method, whith the life_time value", correct: false }
     help: 'https://symfony.com/doc/current/security/login_link.html#customizing-the-login-link'
   -
     uuid: 1eedadda-5e3c-6404-b06c-cfa953ff7afa
     question: 'Where should be set the access_token in an access token authentication ?'
     answers:
       - { value: 'in the header, usually Authorization: Bearer XXXX', correct: true }
-      - { value: "\_in the request query string,\_ usually access_token", correct: false }
+      - { value: "in the request query string, usually access_token", correct: false }
       - { value: ' in the request body during a POST request, usually access_token', correct: false }
     help: 'https://symfony.com/doc/current/security/access_token.html#2-configure-the-token-extractor-optional'
   -
@@ -140,7 +140,7 @@ questions:
     question: 'What is the difference between IS_AUTHENTICATED_REMEMBERED and IS_AUTHENTICATED_FULLY ?'
     answers:
       - { value: 'login based on the cookie remember me, or forced to login again', correct: true }
-      - { value: "login based on the Symfony\_ session remember me, or forced to login again", correct: false }
+      - { value: "login based on the Symfony session remember me, or forced to login again", correct: false }
       - { value: 'login based on the Http session remember me, or forced to login again', correct: false }
     help: 'https://symfony.com/doc/current/security/remember_me.html#forcing-the-user-to-re-authenticate-before-accessing-certain-resources'
   -

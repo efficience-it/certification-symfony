@@ -28,7 +28,7 @@ questions:
     help: 'https://symfony.com/doc/current/templates.html#embedding-controllers'
   -
     uuid: 1eebf878-8b9d-6470-bb5f-99d84c92580c
-    question: "What is the value of $render with the following code?$data = [ 'first' => 0, 'first-page' => 1 ];$render = $twig->render('XXXX', ['page' => 5, 'data' => $data]);{# XXXX twig file #}{{ data.first-page }}"
+    question: "What is the value of $render with the following code? $data = [ 'first' => 0, 'first-page' => 1 ];$render = $twig->render('XXXX', ['page' => 5, 'data' => $data]);{# XXXX twig file #}{{ data.first-page }}"
     answers:
       - { value: 'null', correct: false }
       - { value: '-5', correct: false }

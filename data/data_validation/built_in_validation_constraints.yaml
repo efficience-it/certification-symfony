@@ -66,7 +66,7 @@ questions:
     help: 'https://symfony.com/doc/current/reference/constraints.html'
   -
     uuid: 1eebf878-8ba1-6db8-8235-99d84c92580c
-    question: "Which of the following values doesn't trigger a violation when the\_Date\_constraint is applied to it?"
+    question: "Which of the following values doesn't trigger a violation when the Date constraint is applied to it?"
     answers:
       - { value: 'null', correct: true }
       - { value: "'2020-01-15'", correct: true }

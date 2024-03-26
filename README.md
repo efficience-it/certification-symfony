@@ -6,9 +6,9 @@ Linked to this documentation, this repository is a way for developper to train t
 - [PHP API up to PHP 8.1 version](data/php_and_web_security/phpapi_up_to_php81_version.yaml)
 - [Object Oriented Programming](data/php_and_web_security/object_oriented_programming.yaml)
 - [Namespaces](data/php_and_web_security/namespaces.yaml)
-- Interfaces
+- [Interfaces](data/php_and_web_security/interfaces.yaml)
 - [Anonymous functions and closures](data/php_and_web_security/anonymous_functions_and_closures.yaml)
-- Abstract classes 
+- [Abstract classes](data/php_and_web_security/abstract_classes.yaml)
 - Exception and error handling 
 - [Traits](data/php_and_web_security/traits.yaml)
 - [PHP extensions](data/php_and_web_security/php_extensions.yaml)
@@ -114,7 +114,7 @@ Linked to this documentation, this repository is a way for developper to train t
 - [Configuration parameters](data/dependency_injection/configuration_parameters.yaml)
 - [Services registration](data/dependency_injection/services_registration.yaml)
 - Service decoration
-- Tags
+- [Tags](data/dependency_injection/tags.yaml)
 - Semantic configuration
 - [Factories](data/dependency_injection/factories.yaml)
 - [Compiler passes](data/dependency_injection/compiler_passes.yaml)
@@ -156,7 +156,7 @@ Linked to this documentation, this repository is a way for developper to train t
 - Functional tests with PHPUnit
 - Client object
 - Crawler object
-- Profiler object
+- [Profiler object](data/automated_tests/profiler_object.yaml)
 - [Framework objects access](data/automated_tests/framework_objects_access.yaml)
 - Client configuration
 - Request and response objects introspection
@@ -173,7 +173,7 @@ Linked to this documentation, this repository is a way for developper to train t
 - [Mime and Mailer components](data/miscellaneous/mime_and_mailer_components.yaml)
 - Filesystem and Finder components
 - [Lock component](data/miscellaneous/lock_component.yaml)
-- Web Profiler, Web Debug Toolbar and Data collectors
+- [Web Profiler, Web Debug Toolbar and Data collectors](data/miscellaneous/web_profiler_web_debug_toolbar_and_data_collectors.yaml)
 - Internationalization and localization (and Intl component)
 - Runtime component
 

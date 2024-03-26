@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8ba4-6644-9118-99d84c92580c
-    question: "contact:  \_\_\_ path:\_\_\_\_\_\_ /contact  \_\_\_ controller: 'App\\Controller\\DefaultController::contact'  \_\_\_ # condition:  request.headers.get('User-Agent') XXXXXX '%app.allowed_browsers%'     What does replace XXXXX ?"
+    question: "contact:   path: /contact   controller: 'App\\Controller\\DefaultController::contact'   # condition:  request.headers.get('User-Agent') XXXXXX '%app.allowed_browsers%'     What does replace XXXXX ?"
     answers:
       - { value: sameas, correct: false }
       - { value: matches, correct: true }

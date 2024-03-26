@@ -64,9 +64,9 @@ questions:
     answers:
       - { value: class, correct: false }
       - { value: constants, correct: false }
-      - { value: "enumeration cases\_", correct: true }
+      - { value: "enumeration cases", correct: true }
       - { value: functions, correct: false }
-      - { value: "\_naming PHP files", correct: true }
+      - { value: "naming PHP files", correct: true }
     help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eeda2ce-a388-6de4-b6c8-c31c98f6b9ec
