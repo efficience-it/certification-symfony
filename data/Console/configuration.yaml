@@ -8,3 +8,13 @@ questions:
       - { value: leftJoin, correct: true }
       - { value: rightJoin, correct: false }
     help: 'http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/query-builder.html#working-with-querybuilder'
+  -
+    uuid: 1eebf878-8b98-6e48-8456-99d84c92580c
+    question: 'Given a new process created in front of a Symfony command that return a 1 code, what will be returned by Process::mustRun()?'
+    answers:
+      - { value: '1', correct: false }
+      - { value: 'An instance of Process', correct: false }
+      - { value: 'true', correct: false }
+      - { value: 'false', correct: false }
+      - { value: 'Nothing, a ProcessFailedException will be thrown', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Process/Process.php#L252'

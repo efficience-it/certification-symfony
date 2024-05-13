@@ -36,3 +36,24 @@ questions:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
     help: 'https://twig.symfony.com/doc/3.x/coding_standards.html'
+  -
+    uuid: 1eebf878-8b9a-64be-8674-99d84c92580c
+    question: 'Which of the following Twig internal objects is responsible for transforming an AST (Abstract Syntax Tree) into PHP code?'
+    answers:
+      - { value: 'The Environment', correct: false }
+      - { value: 'The Parser', correct: false }
+      - { value: 'The Compiler', correct: true }
+      - { value: 'The Lexer', correct: false }
+    help: 'http://twig.symfony.com/doc/internals.html'
+  -
+    uuid: 1eebf878-8ba4-62de-8eca-99d84c92580c
+    question: 'Which of the following are valid block names ?'
+    answers:
+      - { value: foo123, correct: true }
+      - { value: 123foo, correct: false }
+      - { value: foo.bar, correct: false }
+      - { value: _foo, correct: true }
+      - { value: .foo, correct: false }
+      - { value: '-foo', correct: false }
+      - { value: foo_bar, correct: true }
+    help: 'https://twig.symfony.com/doc/3.x/tags/block.html'

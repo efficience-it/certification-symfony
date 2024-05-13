@@ -36,3 +36,16 @@ questions:
       - { value: positive, correct: false }
       - { value: negative, correct: false }
     help: 'https://symfony.com/doc/current/components/security/authorization.html#access-decision-manager'
+  -
+    uuid: 1eebf878-8b9c-673c-aa4e-99d84c92580c
+    question: 'Which of the following are built-in voting strategies that can be configured in the AccessDecisionManager object?'
+    answers:
+      - { value: consensus, correct: true }
+      - { value: 'null', correct: false }
+      - { value: positive, correct: false }
+      - { value: unanimous, correct: true }
+      - { value: veto, correct: false }
+      - { value: priority, correct: true }
+      - { value: affirmative, correct: true }
+      - { value: neutral, correct: false }
+    help: 'https://symfony.com/doc/current/security/voters.html#changing-the-access-decision-strategy'

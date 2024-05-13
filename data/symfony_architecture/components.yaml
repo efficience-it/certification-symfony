@@ -38,3 +38,22 @@ questions:
       - { value: 'Remove sensitive data from the user', correct: true }
       - { value: 'Reload user from database', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.0/src/Symfony/Component/Security/Core/User/UserInterface.php#L49-L55'
+  -
+    uuid: 1eebf878-8ba4-69dc-90ca-99d84c92580c
+    question: 'How to make a route matching only a specific host ?'
+    answers:
+      - { value: 'By adding domain key in the requirements section of a route definition', correct: false }
+      - { value: "it's not possible", correct: false }
+      - { value: 'By adding domain key in the route definition', correct: false }
+      - { value: 'By adding a host key in the requirements section of a route definition', correct: false }
+      - { value: 'By adding a host key in the route definition', correct: true }
+    help: 'http://symfony.com/doc/current/routing/hostname_pattern.html'
+  -
+    uuid: 1eebf878-8ba9-6c16-ab08-99d84c92580c
+    question: 'What is a Dumper?'
+    answers:
+      - { value: 'A dumper is responsible for outputting a string representation of a PHP variable.', correct: true }
+      - { value: 'A dumper is responsible for getting each property values of PHP object.', correct: false }
+      - { value: 'A dumper is responsible for creating a var_export of any PHP variable.', correct: false }
+      - { value: 'A dumper is responsible for creating a var_dump of any PHP variable.', correct: false }
+    help: 'https://symfony.com/doc/current/components/var_dumper.html#advanced-usage'

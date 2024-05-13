@@ -27,3 +27,12 @@ questions:
       - { value: 'The exit status code', correct: true }
       - { value: Nothing, correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.2/src/Symfony/Component/Process/Process.php#L222'
+  -
+    uuid: 1eebf878-8ba2-670e-a56a-99d84c92580c
+    question: 'What is the tag to register a new normalizer in the serializer service?'
+    answers:
+      - { value: serializer.object_normalizer, correct: false }
+      - { value: serializer_normalizer, correct: false }
+      - { value: serializer.normalizer, correct: true }
+      - { value: serializer.normalize, correct: false }
+    help: 'http://symfony.com/doc/current/reference/dic_tags.html#serializer-normalizer'

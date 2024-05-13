@@ -1,0 +1,26 @@
+questions:
+  -
+    uuid: 1eebf878-8b9b-6116-88a3-99d84c92580c
+    question: 'How to check if the Response validators (ETag, Last-Modified) match a conditional value specified in the client Request?'
+    answers:
+      - { value: $response->isModified($request);, correct: false }
+      - { value: $response->isOk();, correct: false }
+      - { value: $response->isNotModified($request);, correct: true }
+      - { value: $response->isCacheable();, correct: false }
+    help: 'http://symfony.com/doc/current/components/http_foundation.html#managing-the-http-cache'
+  -
+    uuid: 1eebf878-8b9e-6758-adce-99d84c92580c
+    question: 'Using ETag saves CPU cycles.'
+    answers:
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
+    help: 'https://symfony.com/doc/current/http_cache/validation.html#validation-with-the-etag-header'
+  -
+    uuid: 1eebf878-8ba0-61ac-b32e-99d84c92580c
+    question: 'Which one of these Response methods check if cache must be revalidated?'
+    answers:
+      - { value: $response->mustRevalidate(), correct: true }
+      - { value: $response->isRevalidated(), correct: false }
+      - { value: $response->getRevalidated(), correct: false }
+      - { value: $response->mustBeRevalidated(), correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/Response.php'

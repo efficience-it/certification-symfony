@@ -1,0 +1,9 @@
+questions:
+  -
+    uuid: 1eebf878-8ba0-64cc-8d7c-99d84c92580c
+    question: 'To override the 404 error template for HTML page, how should you name the template ?'
+    answers:
+      - { value: error404.html.twig, correct: true }
+      - { value: 404.html.twig, correct: false }
+      - { value: twig.404.html.twig, correct: false }
+    help: 'https://symfony.com/doc/current/controller/error_pages.html#overriding-the-default-error-templates'

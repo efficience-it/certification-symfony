@@ -1,0 +1,8 @@
+questions:
+  -
+    uuid: 1eebf878-8ba2-65ce-b04c-99d84c92580c
+    question: 'Should a resource marked as immutable be validated again when considered stale?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://datatracker.ietf.org/doc/html/rfc8246'

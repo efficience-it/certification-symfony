@@ -8,3 +8,10 @@ questions:
       - { value: $form->handle($request), correct: false }
       - { value: $form->request($request), correct: false }
     help: 'https://symfony.com/doc/current/forms.html#processing-forms'
+  -
+    uuid: 1eebf878-8b97-6214-a197-99d84c92580c
+    question: 'Does the required option perform a server-side validation of the submitted data?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://symfony.com/doc/current/forms#the-required-option'

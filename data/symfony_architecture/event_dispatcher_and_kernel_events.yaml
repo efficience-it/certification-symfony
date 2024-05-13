@@ -8,3 +8,36 @@ questions:
       - { value: 'Handle as content all image, css, javascript that require security.', correct: false }
       - { value: 'Handle as content fragments by this listener all URL paths starting with /_fragment.', correct: true }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/HttpKernel/EventListener/FragmentListener.php'
+  -
+    uuid: 1eebf878-8b98-66fa-a25e-99d84c92580c
+    question: 'Could an event be dispatched without creating a custom event class?'
+    answers:
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+    help: 'https://symfony.com/doc/current/components/event_dispatcher/generic_event.html'
+  -
+    uuid: 1eebf878-8b9c-67dc-894b-99d84c92580c
+    question: 'Could new listeners be added to an ImmutableEventDispatcher?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
+  -
+    uuid: 1eebf878-8b9d-6a9c-aea4-99d84c92580c
+    question: 'Which design pattern implements the EventDispatcher component?'
+    answers:
+      - { value: Adapter, correct: false }
+      - { value: Decorator, correct: false }
+      - { value: Observer, correct: true }
+      - { value: Mediator, correct: true }
+    help: 'https://symfony.com/doc/current/components/event_dispatcher.html#introduction'
+  -
+    uuid: 1eebf878-8ba3-6032-bdaf-99d84c92580c
+    question: 'Which exception is throw when trying to remove a listener from an ImmutableEventDispatcher?'
+    answers:
+      - { value: RuntimeException, correct: false }
+      - { value: LogicException, correct: false }
+      - { value: InvalidArgumentException, correct: false }
+      - { value: BadMethodCallException, correct: true }
+      - { value: FrozenEventDispatcherException, correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'

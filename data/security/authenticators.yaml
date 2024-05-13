@@ -22,3 +22,12 @@ questions:
       - { value: UserBadge(), correct: false }
       - { value: SelfValidatingPassport(), correct: true }
     help: 'https://symfony.com/doc/current/security/custom_authenticator.html'
+  -
+    uuid: 1eebf878-8ba1-61c4-9205-99d84c92580c
+    question: 'Is user authenticated in all of security firewalls after a successful login:'
+    answers:
+      - { value: 'Yes, it happens automatically', correct: false }
+      - { value: 'Yes, if firewalls have the same value of the `context` option', correct: true }
+      - { value: 'Yes, if option `shared` is set to true', correct: false }
+      - { value: 'No, it is not possible, firewalls are independent from each other', correct: false }
+    help: 'https://symfony.com/doc/current/reference/configuration/security.html#reference-security-firewall-context'

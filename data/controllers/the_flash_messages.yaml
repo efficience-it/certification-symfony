@@ -39,3 +39,10 @@ questions:
       - { value: 'No', correct: false }
       - { value: 'Yes', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php'
+  -
+    uuid: 1eebf878-8b98-6222-8b50-99d84c92580c
+    question: 'Could a FlashBag be cleared?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php#L109'

@@ -21,3 +21,13 @@ questions:
       - { value: "$request->query->all()['foo'];", correct: true }
       - { value: "$request->get('foo');", correct: true }
     help: 'https://symfony.com/doc/current/components/http_foundation.html#accessing-request-data'
+  -
+    uuid: 1eebf878-8b9a-678e-b85e-99d84c92580c
+    question: 'What is the default status code of a Symfony\Component\HttpFoundation\Response object?'
+    answers:
+      - { value: '200', correct: true }
+      - { value: '204', correct: false }
+      - { value: '202', correct: false }
+      - { value: '400', correct: false }
+      - { value: '201', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/HttpFoundation/Response.php#L220'

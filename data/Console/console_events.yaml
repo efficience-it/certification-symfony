@@ -76,3 +76,11 @@ questions:
       - { value: 'No', correct: false }
       - { value: 'Yes', correct: true }
     help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-signal-event'
+  -
+    uuid: 1eebf878-8ba4-6d2e-bc67-99d84c92580c
+    question: 'If an exception occurs while executing a console command, will you see the details of the exception in your log files?'
+    answers:
+      - { value: 'Yes. The log file will depend on the environment where you execute the commands (prod.log, dev.log, etc.)', correct: true }
+      - { value: 'Yes, but only if your command extends from the abstract ExceptionAwareCommandclass.', correct: false }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/console.html#logging-command-errors'

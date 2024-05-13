@@ -29,3 +29,14 @@ questions:
       - { value: loadByIdentifier(), correct: false }
       - { value: providerCredentials, correct: false }
     help: 'https://symfony.com/doc/current/security/user_providers.html#creating-a-custom-user-provider'
+  -
+    uuid: 1eebf878-8ba1-657a-a6cf-99d84c92580c
+    question: 'For implements Symfony\Component\Security\Core\User\UserProviderInterface which method you have to define ?'
+    answers:
+      - { value: loadUserByIdentifier($username), correct: true }
+      - { value: loadUser($username), correct: false }
+      - { value: 'refreshUser(UserInterface $user)', correct: true }
+      - { value: getUser($username), correct: false }
+      - { value: supports($class), correct: false }
+      - { value: supportsClass($class), correct: true }
+    help: 'https://symfony.com/doc/current/security/user_provider.html#creating-a-custom-user-provider'

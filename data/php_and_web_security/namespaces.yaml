@@ -31,3 +31,13 @@ questions:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
     help: 'https://www.php.net/manual/en/language.namespaces.definitionmultiple.php'
+  -
+    uuid: 1eebf878-8ba7-6e0c-acb8-99d84c92580c
+    question: 'Which of the following are valid Symfony top level namespaces?'
+    answers:
+      - { value: Symfony\Bridge, correct: true }
+      - { value: Symfony\Bundle, correct: true }
+      - { value: Symfony\Module, correct: false }
+      - { value: Symfony\Component, correct: true }
+      - { value: Symfony\Plugin, correct: false }
+    help: 'https://github.com/symfony/symfony/tree/master/src/Symfony'

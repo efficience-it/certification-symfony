@@ -8,3 +8,10 @@ questions:
       - { value: '$myArray = array_merge($myArray, 10);', correct: false }
       - { value: 'array_unshift($myArray, 10);', correct: true }
     help: 'https://www.php.net/manual/en/function.array-merge    https://www.php.net/manual/en/function.array-shift'
+  -
+    uuid: 1eebf878-8b98-6d6c-bbfe-99d84c92580c
+    question: 'Is it possible to display the value of a constant of a PHP class in a Twig template ?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'http://twig.symfony.com/doc/functions/constant.html'

@@ -48,3 +48,34 @@ questions:
       - { value: 'php bin/console the-command-name --help-me', correct: false }
       - { value: 'php bin/console help:the-command-name', correct: false }
     help: 'https://symfony.com/doc/current/console/input.html#command-global-options'
+  -
+    uuid: 1eebf878-8b99-6bea-907b-99d84c92580c
+    question: 'Which of the following constants do not exist?'
+    answers:
+      - { value: 'Symfony\Component\Console\Input\InputArgument::REQUIRED', correct: false }
+      - { value: 'Symfony\Component\Console\Input\InputArgument::NEGATABLE', correct: true }
+      - { value: 'Symfony\Component\Console\Input\InputArgument::IS_ARRAY', correct: false }
+      - { value: 'Symfony\Component\Console\Input\InputArgument::OPTIONAL', correct: false }
+      - { value: 'Symfony\Component\Console\Input\InputArgument::NONE', correct: true }
+    help: 'https://github.com/symfony/console/blob/7.0/Input/InputArgument.php'
+  -
+    uuid: 1eeeb907-fe60-61b8-9026-0550b48f06f6
+    question: "How to run this command : #[AsCommand(name: 'app:create-user')]"
+    answers:
+      - { value: 'php bin/console app:create-user', correct: true }
+      - { value: 'php bin/console app:add-user', correct: false }
+      - { value: 'php bin/console app:new-user', correct: false }
+      - { value: 'php bin/console new-user', correct: false }
+      - { value: 'php bin/console create-user', correct: false }
+      - { value: 'php bin/console add-user', correct: false }
+    help: 'https://symfony.com/doc/current/console.html#running-the-command'
+  -
+    uuid: 1eeeb90d-06a8-605a-9026-7fe8bec3d660
+    question: "How to run this command : #[AsCommand(name: 'app:create-user', aliases: ['app:add-user'])]"
+    answers:
+      - { value: 'php bin/console app:create-user', correct: true }
+      - { value: 'php bin/console app:add-user', correct: true }
+      - { value: 'all answers are correct', correct: false }
+      - { value: 'php bin/console create-user', correct: false }
+      - { value: 'php bin/console add-user', correct: false }
+    help: 'https://symfony.com/doc/7.0/console.html#registering-the-command'

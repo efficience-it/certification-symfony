@@ -22,3 +22,12 @@ questions:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
     help: 'http://symfony.com/doc/current/components/options_resolver.html#default-values-that-depend-on-another-option'
+  -
+    uuid: 1eebf878-8ba1-6890-90cf-99d84c92580c
+    question: 'Which of these sentences is true ?'
+    answers:
+      - { value: 'Annotations mapping are enabled by default', correct: false }
+      - { value: 'UniqueEntity is provided by Doctrine Bundle', correct: false }
+      - { value: 'We can validate partial object with @Assert\GroupSequence', correct: true }
+      - { value: 'All assertions above are valid', correct: false }
+    help: 'https://symfony.com/doc/current/reference/constraints/UniqueEntity.html'

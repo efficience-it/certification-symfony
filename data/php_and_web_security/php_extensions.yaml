@@ -6,3 +6,13 @@ questions:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
     help: 'http://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration'
+  -
+    uuid: 1eebf878-8ba5-624c-866b-99d84c92580c
+    question: "What is the output ?$a =  0 ;\_echo strlen($a);\_echo empty($a) ? $a : 5;\_echo $a ?: 5;"
+    answers:
+      - { value: '100', correct: false }
+      - { value: '005', correct: false }
+      - { value: '150', correct: false }
+      - { value: '050', correct: false }
+      - { value: '105', correct: true }
+    help: 'http://php.net/operatorshttp://php.net/manual/en/function.empty.phphttp://php.net/manual/en/function.strlen.php'

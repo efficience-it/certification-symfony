@@ -1,0 +1,10 @@
+questions:
+  -
+    uuid: 1eebf878-8b97-6bf6-8252-99d84c92580c
+    question: 'How to get the value of title set in a form?'
+    answers:
+      - { value: '{{ form.title }}', correct: false }
+      - { value: '{{ form.vars.title }}', correct: false }
+      - { value: '{{ form.title.vars.value }}', correct: true }
+      - { value: '{{ form.vars.title.value }}', correct: false }
+    help: 'https://symfony.com/doc/current/form/form_customization.html#form-variables-reference'

@@ -33,3 +33,19 @@ questions:
       - { value: 'Putting the new MyFormExtension class in the Form\Extension namespace', correct: false }
       - { value: 'Creating a service with the form.type_extension tag (if auto-configuration is not enabled)', correct: true }
     help: 'http://symfony.com/doc/current/form/create_form_type_extension.html#defining-the-form-type-extension'
+  -
+    uuid: 1eebf878-8b97-630e-9861-99d84c92580c
+    question: 'What is PSR-1?'
+    answers:
+      - { value: 'A standard way to convert fully qualified names into file paths.', correct: false }
+      - { value: 'A common logger interface.', correct: false }
+      - { value: 'A basic coding standard', correct: true }
+      - { value: 'A coding style guide.', correct: false }
+    help: 'https://www.php-fig.org/psr/psr-1/'
+  -
+    uuid: 1eebf878-8b98-6984-a4c4-99d84c92580c
+    question: 'Can you use the Symfony\Bundle\FrameworkBundle\Controller\Controller::render() method with an existing Response?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php#L251'

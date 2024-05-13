@@ -1,0 +1,17 @@
+questions:
+  -
+    uuid: 1eebf878-8b9a-6180-90b7-99d84c92580c
+    question: 'Assuming there is locale: en in translation.yaml and given the following route path: /%%locale%%, what URLs will be matched?'
+    answers:
+      - { value: /%en%, correct: true }
+      - { value: /locale, correct: false }
+      - { value: /en, correct: false }
+      - { value: /%locale%, correct: false }
+    help: 'http://symfony.com/doc/current/routing/service_container_parameters.html'
+  -
+    uuid: 1eebf878-8ba8-6604-918b-99d84c92580c
+    question: 'When using the special _locale parameter in a route, the matched locale is automatically set on the Request and can be retrieved via the getLocale() method. Is it true ?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/translation.html#the-locale-and-the-url'

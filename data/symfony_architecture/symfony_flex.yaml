@@ -1,0 +1,9 @@
+questions:
+  -
+    uuid: 1eebf878-8b9e-612c-9b8f-99d84c92580c
+    question: 'Which file should be edited in order to customize the default server error page ?'
+    answers:
+      - { value: templates/bundles/TwigBundle/Exception/error.html.twig, correct: true }
+      - { value: templates/bundles/TwigBundle/Exception/error500.html.twig, correct: false }
+      - { value: src/Controller/ExceptionController, correct: false }
+    help: 'https://symfony.com/doc/current/controller/error_pages.html#overriding-the-default-error-templates'

@@ -13,3 +13,12 @@ questions:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
     help: 'https://github.com/symfony/symfony/blob/2.0/src/Symfony/Component/DependencyInjection/Container.php#L221'
+  -
+    uuid: 1eebf878-8b98-6786-a236-99d84c92580c
+    question: 'What is true about ContainerConfigurator?'
+    answers:
+      - { value: "it's an internal class that you should not use in your application", correct: false }
+      - { value: 'it allows to work with service definitions', correct: true }
+      - { value: "it doesn't exist", correct: false }
+      - { value: 'it allows to configure a service after its instanciation', correct: false }
+    help: "https://symfony.com/doc/current/service_container.html"

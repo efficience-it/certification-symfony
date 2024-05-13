@@ -18,3 +18,29 @@ questions:
       - { value: forms, correct: false }
       - { value: default, correct: false }
     help: 'http://symfony.com/doc/current/reference/forms/types/form.html#translation-domain'
+  -
+    uuid: 1eebf878-8b9f-6db0-82a3-99d84c92580c
+    question: 'How do you set default value?'
+    answers:
+      - { value: $this->createFormBuilder($defaultEntityOrArray), correct: true }
+      - { value: '$this->createFormBuilder(null, $defaultEntityOrArray)', correct: false }
+      - { value: $this->createFormBuilder()->setDefaults($defaultEntityOrArray), correct: false }
+      - { value: $this->createFormBuilder()->addDefaults($defaultEntityOrArray), correct: false }
+    help: 'https://symfony.com/doc/current/components/form.html#setting-default-values'
+  -
+    uuid: 1eebf878-8b9f-6e46-9327-99d84c92580c
+    question: 'How to add an extra field `extra` with the form ?'
+    answers:
+      - { value: "$builder->add('extra', null, ['mapped' => false])", correct: true }
+      - { value: "$builder->add('extra', 'hidden', ['mapped' => false])", correct: true }
+      - { value: "$builder->add('extra', null, ['validation' => false]", correct: false }
+    help: 'https://symfony.com/doc/current/forms.html#unmapped-fields'
+  -
+    uuid: 1eebf878-8ba9-6a4a-8062-99d84c92580c
+    question: "Consider the following HTML generated from a Symfony form:<form method= POST  action= / >  <input type= hidden  name= _method  value= PUT  /></form>Which HTTP method will be present in the Symfony Request object assuming HTTP methods overriding setting is turned on?"
+    answers:
+      - { value: PATCH, correct: false }
+      - { value: PUT, correct: true }
+      - { value: GET, correct: false }
+      - { value: POST, correct: false }
+    help: 'https://symfony.com/doc/current/forms.html'

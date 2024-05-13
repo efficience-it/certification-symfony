@@ -14,3 +14,40 @@ questions:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/current/reference/forms/types/language.html#choices'
+  -
+    uuid: 1eebf878-8b98-69ca-a626-99d84c92580c
+    question: 'What is the default value of the empty_data option when data_class is set?'
+    answers:
+      - { value: 'An empty string', correct: false }
+      - { value: 'An empty array', correct: false }
+      - { value: 'A new instance of the class set in data_class', correct: true }
+      - { value: 'null', correct: false }
+    help: 'https://symfony.com/doc/current/form/use_empty_data.html'
+  -
+    uuid: 1eebf878-8b9a-6cf2-b2df-99d84c92580c
+    question: "Given the following configuration:$form = $this ->createFormBuilder(['myfield' => 'foo'])       ->add('myfield', TextType::class, ['data' => 'bar', 'empty_data' => 'none'])       ->getForm();What will be displayed in the myfield field ?"
+    answers:
+      - { value: none, correct: false }
+      - { value: foo, correct: false }
+      - { value: bar, correct: true }
+      - { value: 'Nothing, an exception will be thrown', correct: false }
+    help: 'https://symfony.com/doc/current/reference/forms/types/form.html#data'
+  -
+    uuid: 1eebf878-8b9c-678c-9d91-99d84c92580c
+    question: 'Could empty CollectionType entries be removed?'
+    answers:
+      - { value: "It's not possible", correct: false }
+      - { value: 'The CollectionType automatically resize itself', correct: false }
+      - { value: 'Yes, using resize_when_empty option', correct: false }
+      - { value: 'Yes, using delete_empty option', correct: true }
+      - { value: 'Yes, using remove_empty option', correct: false }
+    help: 'https://symfony.com/doc/6.4/reference/forms/types/collection.html#delete-empty'
+  -
+    uuid: 1eed57b7-0955-6612-b73b-9d916356f596
+    question: 'What option should you use with the Symfony\Component\Form\Extension\Core\Type\DateTimeType form type in order to have the form rendered without an input capturing minutes ?'
+    answers:
+      - { value: 'The hide_minutes option set to true.', correct: false }
+      - { value: 'The minutes option set to false.', correct: false }
+      - { value: 'The without_minutes option set to true.', correct: false }
+      - { value: 'The with_minutes option set to false.', correct: true }
+    help: 'http://symfony.com/doc/current/reference/forms/types/datetime.html'

@@ -36,3 +36,10 @@ questions:
       - { value: ValidatorTestCase, correct: false }
       - { value: ValidatorTest, correct: false }
     help: 'https://symfony.com/doc/current/validation/custom_constraint.html#testing-custom-constraints'
+  -
+    uuid: 1eebf878-8b9d-6600-b63e-99d84c92580c
+    question: 'Could values be mapped to fields using callbacks?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/form/data_mappers.html#mapping-form-fields-using-callbacks'

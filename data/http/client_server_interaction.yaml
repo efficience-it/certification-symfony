@@ -1,0 +1,17 @@
+questions:
+  -
+    uuid: 1eebf878-8b9c-682c-b6aa-99d84c92580c
+    question: 'Is there any required header in a request to an origin server or gateway for almost every request ?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://datatracker.ietf.org/doc/html/rfc7230#section-5.4'
+  -
+    uuid: 1eebf878-8b9d-695c-81e1-99d84c92580c
+    question: "When the server can't return an acceptable response according to an If-Match header, it should return:"
+    answers:
+      - { value: 'a 418 response code', correct: false }
+      - { value: 'a 412 response code', correct: true }
+      - { value: 'a 406 response code', correct: false }
+      - { value: 'a 422 response code', correct: false }
+    help: 'https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.24'

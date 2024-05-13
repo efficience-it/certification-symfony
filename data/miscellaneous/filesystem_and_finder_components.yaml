@@ -1,0 +1,9 @@
+questions:
+  -
+    uuid: 1eebf878-8b9c-6336-848b-99d84c92580c
+    question: 'When using mirror(...), could files that are not present in the source directory be deleted?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'May be', correct: false }
+    help: 'https://symfony.com/doc/current/components/filesystem.html#mirror'

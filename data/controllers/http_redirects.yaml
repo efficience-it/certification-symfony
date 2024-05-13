@@ -1,0 +1,10 @@
+questions:
+  -
+    uuid: 1eebf878-8b9c-6bba-8b13-99d84c92580c
+    question: 'What should do an intermediary if the Max-Forwards header is equal to 0?'
+    answers:
+      - { value: 'It should not forward the request', correct: true }
+      - { value: 'It should forward the request no matter the header value', correct: false }
+      - { value: "This header doesn't exist", correct: false }
+      - { value: Nothing, correct: false }
+    help: 'https://tools.ietf.org/html/rfc7231#section-5.1.2'

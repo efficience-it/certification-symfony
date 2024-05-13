@@ -25,3 +25,12 @@ questions:
       - { value: example.com/blog/index.php/post/hello-world, correct: false }
       - { value: /blog/index.php/post/hello-world, correct: false }
     help: 'http://symfony.com/doc/current/components/http_foundation.html#identifying-a-request'
+  -
+    uuid: 1eebf878-8b99-62d0-bab2-99d84c92580c
+    question: 'When using AbstractController, what is the purpose of the second argument of the file method ?'
+    answers:
+      - { value: 'to set the name of the file', correct: true }
+      - { value: 'to set the mime type of the file', correct: false }
+      - { value: 'to set the disposition of the file (inline or attachement)', correct: false }
+      - { value: 'to set the size of the file', correct: false }
+    help: 'https://symfony.com/doc/current/controller.html'

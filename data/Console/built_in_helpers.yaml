@@ -113,7 +113,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/console/helpers/questionhelper.html#testing-a-command-that-expects-input'
   -
     uuid: 1eebf878-8ba5-6fb2-b4ad-99d84c92580c
-    question: "In the console, will this is valid to check value from a question ?    $question = new Question('Please enter the name of the bundle', 'AcmeDemoBundle');     $validation = Validation::createCallable(     new Regex([      'pattern' => '/^[a-zA-Z]+Bundle$/',      'message' => 'The name of the bundle should be suffixed with \\'Bundle\\'',      ])    );     $question->setValidator($validation);"
+    question: "In the console, will this is valid to check value from a question ?    $question = new Question('Please enter the name of the bundle', 'AcmeDemoBundle');     $validation = Validation::createCallable(     new Regex([      'pattern' => '/^[a-zA-Z]+Bundle$/',     \_\_\_\_\_\_\_ 'message' => 'The name of the bundle should be suffixed with \\'Bundle\\'',     \_\_\_ ])    );     $question->setValidator($validation);"
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }

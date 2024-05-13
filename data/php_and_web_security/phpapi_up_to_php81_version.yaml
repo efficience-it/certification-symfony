@@ -49,3 +49,24 @@ questions:
       - { value: 'in a setter method', correct: false }
       - { value: 'at the attribute declaration', correct: false }
     help: 'https://www.php.net/manual/en/language.oop5.properties.php'
+  -
+    uuid: 1eebf878-8b9b-6e90-875a-99d84c92580c
+    question: 'Which of the following APIs are designed to be SAFE from SQL injections?'
+    answers:
+      - { value: 'Query methods on the Connection.', correct: false }
+      - { value: 'Doctrine\DBAL\Connection#update($table, $values, $where, $types)', correct: true }
+      - { value: 'Doctrine\DBAL\Connection#delete($table, $where, $types)', correct: true }
+      - { value: 'Doctrine\DBAL\Query\QueryBuilder#setFirstResult($offset)', correct: true }
+      - { value: 'The QueryBuilder API.', correct: false }
+      - { value: 'Doctrine\DBAL\Platforms\AbstractPlatform#modifyLimitQuery($sql, $limit, $offset)', correct: true }
+      - { value: 'Doctrine\DBAL\Connection#insert($table, $values, $types)', correct: true }
+      - { value: 'Doctrine\DBAL\Query\QueryBuilder#setMaxResults($limit)', correct: true }
+    help: 'https://www.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/security.html#sql-injection-safe-and-unsafe-apis-for-user-input'
+  -
+    uuid: 1eebf878-8ba3-673a-a520-99d84c92580c
+    question: "Given the following code, what will be displayed?$a = (object) ['a' => 'a'];$b = (object) ['a' => 'a'];echo $b <=> $a;"
+    answers:
+      - { value: '0', correct: true }
+      - { value: '1', correct: false }
+      - { value: '-1', correct: false }
+    help: 'https://www.php.net/manual/en/language.operators.comparison.php'

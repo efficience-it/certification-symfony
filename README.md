@@ -18,7 +18,7 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 - SPL
 
 ## HTTP
-- Client / Server interaction
+- [Client / Server interaction](data/http/client_server_interaction.yaml)
 - [Status codes](data/http/status_codes.yaml)
 - HTTP request
 - [HTTP response](data/http/http_response.yaml)
@@ -30,7 +30,7 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 - Symfony HttpClient component
 
 ## Symfony Architecture
-- Symfony Flex
+- [Symfony Flex](data/symfony_architecture/symfony_flex.yaml)
 - [License](data/symfony_architecture/license.yaml)
 - [Components](data/symfony_architecture/components.yaml)
 - Bridges
@@ -51,13 +51,13 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 - Naming conventions
 - [The base AbstractController class](data/controllers/the_base_abstract_controller_class.yaml)
 - [The request](data/controllers/the_request.yaml)
-- The response
+- [The response](data/controllers/the_response.yaml)
 - The cookies
 - The session
 - [The flash messages](data/controllers/the_flash_messages.yaml)
-- HTTP redirects
+- [HTTP redirects](data/controllers/http_redirects.yaml)
 - Internal redirects
-- Generate 404 pages
+- [Generate 404 pages](data/controllers/generate404_pages.yaml)
 - File upload
 - Built-in internal controllers
 
@@ -65,13 +65,13 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 - [Configuration (YAML, XML, PHP & attributes/annotations)](data/routing/configuration_yamlxmlphp_and_attributes_annotations.yaml)
 - Restrict URL parameters
 - Set default values to URL parameters
-- Generate URL parameters
+- [Generate URL parameters](data/routing/generate_url_parameters.yaml)
 - Trigger redirects
 - Special internal routing attributes
 - Domain name matching
 - [Conditional request matching](data/routing/conditional_request_matching.yaml)
-- HTTP methods matching
-- User's locale guessing
+- [HTTP methods matching](data/routing/http_methods_matching.yaml)
+- [User's locale guessing](data/routing/user_s_locale_guessing.yaml)
 - [Router debugging](data/routing/router_debugging.yaml)
 
 ## Templating with Twig
@@ -93,7 +93,7 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 - [Forms creation](data/forms/forms_creation.yaml)
 - [Forms handling](data/forms/forms_handling.yaml)
 - [Form types](data/forms/form_types.yaml)
-- Forms rendering with Twig
+- [Forms rendering with Twig](data/forms/forms_rendering_with_twig.yaml)
 - [Forms theming](data/forms/forms_theming.yaml)
 - [CSRF protection](data/forms/csrf_protection.yaml)
 - Handling file upload
@@ -139,9 +139,9 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 ## HTTP Caching
 - Cache types (browser, proxies and reverse-proxies)
 - [Expiration (Expires, Cache-Control)](data/http_caching/expiration_expires_cache_control.yaml)
-- Validation (ETag, Last-Modified)
+- [Validation (ETag, Last-Modified)](data/http_caching/validation_e_tag_last_modified.yaml)
 - Client side caching
-- Server side caching
+- [Server side caching](data/http_caching/server_side_caching.yaml)
 - [Edge Side Includes](data/http_caching/edge_side_includes.yaml)
 
 ## Console
@@ -169,19 +169,17 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 ## Miscellaneous
 - Configuration (including DotEnv and ExpressionLanguage components)
 - Error handling
-- Code debugging
+- [Code debugging](data/miscellaneous/code_debugging.yaml)
 - [Deployment best practices](data/miscellaneous/deployment_best_practices.yaml)
 - [Cache, Process and Serializer components](data/miscellaneous/cache_process_and_serializer_components.yaml)
 - Messenger component
 - [Mime and Mailer components](data/miscellaneous/mime_and_mailer_components.yaml)
-- Filesystem and Finder components
+- [Filesystem and Finder components](data/miscellaneous/filesystem_and_finder_components.yaml)
 - [Lock component](data/miscellaneous/lock_component.yaml)
 - [Web Profiler, Web Debug Toolbar and Data collectors](data/miscellaneous/web_profiler_web_debug_toolbar_and_data_collectors.yaml)
 - Internationalization and localization (and Intl component)
 - Runtime component
 
-And to register, buy a voucher.
+And to register, buy a voucher on https://certification.symfony.com/exams/symfony.html
 
-https://certification.symfony.com/exams/symfony.html
-
-To train with our team, contact us on https://www.itefficience.com
+To train with our team, contact us on https://www.itefficience.com/contact
