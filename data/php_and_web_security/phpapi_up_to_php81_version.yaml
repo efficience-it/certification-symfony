@@ -106,7 +106,7 @@ questions:
       - { value: '0', correct: false }
       - { value: '1', correct: false }
       - { value: '-1', correct: true }
-    help: 'http://php.net/manual/en/language.operators.comparison.php'
+    help: 'https://php.net/manual/en/language.operators.comparison.php'
   -
     uuid: 1eebf878-8b9a-6428-aa7e-99d84c92580c
     question: 'Regarding this URI : /example?tags.id=2 What will be the content of $request->query->all() ?'
@@ -114,7 +114,7 @@ questions:
       - { value: "[ 'tags.id' => 2 ]", correct: false }
       - { value: "[ 'tags_id' => 2 ]", correct: true }
       - { value: "[ 'tags' => ['id' => 2] ]", correct: false }
-    help: 'http://www.php.net/manual/en/language.variables.external.php'
+    help: 'https://www.php.net/manual/en/language.variables.external.php'
   -
     uuid: 1eebf878-8b9a-6d88-9a1d-99d84c92580c
     question: 'Which major PHP version introduced the « traits » feature?'
@@ -125,7 +125,7 @@ questions:
       - { value: 'PHP 5.4', correct: true }
       - { value: 'PHP 5.6', correct: false }
       - { value: 'PHP 5.5', correct: false }
-    help: 'http://php.net/manual/en/language.oop5.traits.php'
+    help: 'https://php.net/manual/en/language.oop5.traits.php'
   -
     uuid: 1eebf878-8b9b-6f80-bc80-99d84c92580c
     question: "Which of the following statements best describes the purpose of PHP's extract() function? This function accepts an array as its first argument."
@@ -233,14 +233,14 @@ questions:
     answers:
       - { value: 'True', correct: true }
       - { value: 'False', correct: false }
-    help: "http://fabien.potencier.org/on-php-5-3-lambda-functions-and-closures.htmlhttps://www.php.net/manual/en/functions.anonymous.php"
+    help: "https://www.php.net/manual/en/functions.anonymous.php"
   -
     uuid: 1eebf878-8ba0-6c6a-b940-99d84c92580c
     question: 'Declaring class properties or methods as static makes them accessible without needing an instantiation of the class ?'
     answers:
       - { value: 'True', correct: true }
       - { value: 'False', correct: false }
-    help: 'http://php.net/manual/en/language.oop5.static.php'
+    help: 'https://php.net/manual/en/language.oop5.static.php'
   -
     uuid: 1eebf878-8ba0-6cb0-91ef-99d84c92580c
     question: 'Which keyword permit to use the late static binding ?'
@@ -248,7 +248,7 @@ questions:
       - { value: self, correct: false }
       - { value: static, correct: true }
       - { value: parent, correct: false }
-    help: 'http://php.net/manual/en/language.oop5.late-static-bindings.php'
+    help: 'https://php.net/manual/en/language.oop5.late-static-bindings.php'
   -
     uuid: 1eebf878-8ba1-6b74-9168-99d84c92580c
     question: 'Which of the following are supported visibilities for class attributes and methods in PHP ?'
@@ -258,7 +258,7 @@ questions:
       - { value: Private, correct: true }
       - { value: Public, correct: true }
       - { value: Global, correct: false }
-    help: 'http://php.net/manual/en/language.oop5.visibility.php'
+    help: 'https://php.net/manual/en/language.oop5.visibility.php'
   -
     uuid: 1eebf878-8ba2-622c-b66a-99d84c92580c
     question: 'What PHP function is used to return an array containing values present in two or more passed arrays?'
@@ -283,7 +283,7 @@ questions:
     answers:
       - { value: 'No', correct: true }
       - { value: 'Yes', correct: false }
-    help: 'http://symfony.com/doc/current/components/property_access/introduction.html#magic-call-method'
+    help: 'https://symfony.com/doc/current/components/property_access/introduction.html#magic-call-method'
   -
     uuid: 1eebf878-8ba3-6dc0-bb50-99d84c92580c
     question: "What is the most recommended way to count the number of occurences of each unique value in the following array?$a=[1,1,2,3,4,4,5,6,6,6,3,2,2,2];"
@@ -319,7 +319,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'http://php.net/interfaces'
+    help: 'https://php.net/interfaces'
   -
     uuid: 1eebf878-8ba4-6f04-8c84-99d84c92580c
     question: 'How do you remove an element with the key 0 from the array $numbers?'
@@ -338,4 +338,4 @@ questions:
       - { value: 'PHP 5.6', correct: false }
       - { value: 'PHP 5.4', correct: false }
       - { value: 'PHP 5.5', correct: true }
-    help: 'http://www.php.net/ChangeLog-5.php'
+    help: 'https://www.php.net/ChangeLog-5.php'

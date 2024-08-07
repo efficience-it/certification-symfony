@@ -15,7 +15,7 @@ questions:
       - { value: '150', correct: false }
       - { value: '050', correct: false }
       - { value: '105', correct: true }
-    help: 'http://php.net/operatorshttp://php.net/manual/en/function.empty.phphttp://php.net/manual/en/function.strlen.php'
+    help: 'https://php.net/operators'
   -
     uuid: 1eebf878-8ba4-6a2c-81ae-99d84c92580c
     question: 'Which of the following operations must occur prior to any output being sent to the client (assuming output buffering is disabled) ?'
@@ -35,17 +35,17 @@ questions:
       - { value: "The include and include_once language constructs cause a fatal error if the file doesn't exist.", correct: false }
       - { value: "The require and require_once language constructs cause a fatal error when the file can't be read.", correct: true }
       - { value: 'There is no differences other than their names.', correct: false }
-    help: 'http://php.net/manual/en/function.include.php http://php.net/manual/en/function.require.php'
+    help: 'https://php.net/manual/en/function.include.php'
   -
     uuid: 1eebf878-8ba7-63c6-8206-99d84c92580c
     question: "What values in $user or $pass will modify the SQL semantics and lead to SQL injection in the code below ?$query =  UPDATE users SET password='$pass' WHERE user='$user' ;"
     answers:
-      - { value: '$pass =  \ foobar\  WHERE ;$user =  \ admin\  ;', correct: false }
-      - { value: "$user =  foobar\\' WHERE user='admin' ;", correct: false }
+      - { value: '$pass =  foobar WHERE ;$user =  \ admin\  ;', correct: false }
+      - { value: "$user =  foobar' WHERE user='admin' ;", correct: false }
       - { value: "$pass =  foobar' WHERE user='admin' -- ;", correct: true }
-      - { value: "$user =  foobar\\' WHERE user='admin' ;", correct: false }
+      - { value: "$user =  foobar' WHERE user='admin' ;", correct: false }
       - { value: None, correct: false }
-    help: 'http://php.net/manual/fr/security.database.sql-injection.php'
+    help: 'https://php.net/manual/fr/security.database.sql-injection.php'
   -
     uuid: 1eebf878-8ba7-65f6-a5b1-99d84c92580c
     question: 'Which syntax is not a valid callable syntax ?'
@@ -55,7 +55,7 @@ questions:
       - { value: "['foo', 'bar']", correct: false }
       - { value: 'function () { }', correct: false }
       - { value: ' Foo::bar ', correct: false }
-    help: 'http://php.net/manual/en/language.types.callable.php'
+    help: 'https://php.net/manual/en/language.types.callable.php'
   -
     uuid: 1eebf878-8ba9-6d4c-a1b5-99d84c92580c
     question: 'What is the best measure one can take to prevent a cross-site request forgery ?'
@@ -76,7 +76,7 @@ questions:
       - { value: resource, correct: false }
       - { value: boolean, correct: true }
       - { value: array, correct: true }
-    help: 'http://php.net/manual/en/language.constants.syntax.php'
+    help: 'https://php.net/manual/en/language.constants.syntax.php'
   -
     uuid: 1eebf878-8baa-651c-af2c-99d84c92580c
     question: 'All array sorting functions take the array to sort as reference and modify it instead of returning the sorted array'
@@ -97,7 +97,7 @@ questions:
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
-    help: 'http://php.net/manual/fr/language.oop5.interfaces.php'
+    help: 'https://php.net/manual/fr/language.oop5.interfaces.php'
   -
     uuid: 1eee76b4-2113-617e-9026-a5599c87345e
     question: 'How to show privates services with CLI with a default Symfony Standard Edition installation?'
@@ -107,7 +107,7 @@ questions:
       - { value: 'bin/console debug:container --show-private', correct: true }
       - { value: 'bin/console debug:container', correct: false }
       - { value: 'app/console debug:container', correct: false }
-    help: 'http://symfony.com/doc/current/service_container/debug.html'
+    help: 'https://symfony.com/doc/current/service_container/debug.html'
   -
     uuid: 1eee76ce-b5a5-6e44-9026-0f27ac991b1e
     question: 'Which of the following functions can you use to secure the input of a script?'
@@ -117,4 +117,4 @@ questions:
       - { value: quotemeta, correct: false }
       - { value: html_entity_decode, correct: false }
       - { value: strip_tags, correct: true }
-    help: 'http://php.net/manual/en/function.strip-tags.php'
+    help: 'https://php.net/manual/en/function.strip-tags.php'

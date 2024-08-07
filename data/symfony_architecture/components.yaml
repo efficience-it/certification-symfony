@@ -47,7 +47,7 @@ questions:
       - { value: 'By adding domain key in the route definition', correct: false }
       - { value: 'By adding a host key in the requirements section of a route definition', correct: false }
       - { value: 'By adding a host key in the route definition', correct: true }
-    help: 'http://symfony.com/doc/current/routing/hostname_pattern.html'
+    help: 'https://symfony.com/doc/current/routing/hostname_pattern.html'
   -
     uuid: 1eebf878-8ba9-6c16-ab08-99d84c92580c
     question: 'What is a Dumper?'
@@ -138,7 +138,7 @@ questions:
       - { value: defer(), correct: false }
       - { value: saveDeferred(), correct: true }
       - { value: persistDeferred(), correct: false }
-    help: 'http://symfony.com/doc/current/components/cache/cache_pools.html#saving-cache-items'
+    help: 'https://symfony.com/doc/current/components/cache/cache_pools.html#saving-cache-items'
   -
     uuid: 1eebf878-8ba7-6d3a-90f4-99d84c92580c
     question: 'What are the correct arguments of the Symfony\Component\Routing\Route constructor ?'
@@ -170,7 +170,7 @@ questions:
       - { value: 'It ensures that single XML elements are turned into an array', correct: true }
       - { value: "It normalizes XML element name (e.g. pluralizing the key used in XML)", correct: false }
       - { value: "It applies a custom function to an XML element if an error occurs", correct: false }
-    help: 'http://symfony.com/doc/current/components/config/definition.html#normalization'
+    help: 'https://symfony.com/doc/current/components/config/definition.html#normalization'
   -
     uuid: 1eebf878-8ba9-6748-82fb-99d84c92580c
     question: 'Which exception is thrown when a service is not defined while using ContainerInterface::get()?'
@@ -190,7 +190,7 @@ questions:
       - { value: 'Defaults to 100', correct: false }
       - { value: 'The higher this value, the earlier an event listener will be triggered in the chain', correct: true }
       - { value: 'Defaults to 1', correct: false }
-    help: 'http://symfony.com/doc/current/components/event_dispatcher.html#connecting-listeners'
+    help: 'https://symfony.com/doc/current/components/event_dispatcher.html#connecting-listeners'
   -
     uuid: 1eebf878-8ba9-69b4-97bd-99d84c92580c
     question: 'What are the arguments of the Symfony\Component\HttpKernel\Kernel constructor?'
@@ -234,7 +234,7 @@ questions:
       - { value: 'It is safe to store data in it.', correct: false }
       - { value: 'It should not be used to persist data.', correct: true }
       - { value: 'It can be deleted without making the application crash.', correct: true }
-    help: 'http://www.aerospike.com/what-is-a-key-value-store/'
+    help: 'https://www.aerospike.com/what-is-a-key-value-store/'
   -
     uuid: 1eebf878-8baa-65b2-a9be-99d84c92580c
     question: 'Could the parent request be retrieved from the request stack?'
@@ -271,7 +271,7 @@ questions:
       - { value: 'A parameter InputParameter.', correct: false }
       - { value: 'A choice InputChoice.', correct: false }
       - { value: 'An argument InputArgument.', correct: false }
-    help: 'http://symfony.com/doc/current/components/console/introduction.html#creating-a-basic-commandhttp://symfony.com/doc/current/components/console/console_arguments.htmlhttp://symfony.com/doc/current/console/input.html#using-command-options'
+    help: 'https://symfony.com/doc/current/components/console/introduction.html#creating-a-basic-command'
   -
     uuid: 1eed57c6-96bb-6e02-9dd6-0f984cdae948
     question: 'What is the way to always get a new instance of a service?'

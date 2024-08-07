@@ -43,4 +43,4 @@ questions:
       - { value: 'InputOption::VALUE_NONE', correct: false }
       - { value: 'InputOption::VALUE_NOT_REQUIRED', correct: true }
       - { value: 'InputOption::VALUE_IS_ARRAY', correct: false }
-    help: 'http://symfony.com/doc/current/console/input.html#using-command-options'
+    help: 'https://symfony.com/doc/current/console/input.html#using-command-options'
