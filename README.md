@@ -5,6 +5,8 @@ Thats what we prupose here, linked to the elements shown by the certification pa
 
 Each Category and Sub Category have questions, with one or more valid answers. If you would, you can use this [repo](https://github.com/certificationy/certificationy-cli) to train by cli.
 
+To train with our team, contact us on https://www.itefficience.com/contact
+
 ## PHP and Web Security
 - [PHP API up to PHP 8.1 version](data/php_and_web_security/phpapi_up_to_php81_version.yaml)
 - [Object Oriented Programming](data/php_and_web_security/object_oriented_programming.yaml)
@@ -181,8 +183,6 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 - Runtime component
 
 And to register, buy a voucher on https://certification.symfony.com/exams/symfony.html
-
-For more information, read this article : https://www.itefficience.com/
 
 To train with our team, contact us on https://www.itefficience.com/contact
 
