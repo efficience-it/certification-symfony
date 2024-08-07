@@ -95,7 +95,7 @@ questions:
       - { value: 'Factory Method', correct: false }
       - { value: Mediator, correct: true }
       - { value: Adapter, correct: false }
-    help: 'http://symfony.com/doc/current/components/event_dispatcher/introduction.html#introduction https://en.wikipedia.org/wiki/Mediator_pattern'
+    help: 'https://symfony.com/doc/current/components/event_dispatcher/introduction.html#introduction'
   -
     uuid: 1eebf878-8b99-6f6e-af0a-99d84c92580c
     question: 'What is returned by $dispatcher->dispatch($event, OrderPlacedEvent::NAME) in the following code? $event = new OrderPlacedEvent($order); $dispatcher->dispatch($event, OrderPlacedEvent::NAME);'
@@ -122,7 +122,7 @@ questions:
       - { value: event_listener, correct: false }
       - { value: dispatcher.listener, correct: false }
       - { value: kernel.event_listener, correct: true }
-    help: 'http://symfony.com/doc/current/reference/dic_tags.html#kernel-event-listener'
+    help: 'https://symfony.com/doc/current/reference/dic_tags.html#kernel-event-listener'
   -
     uuid: 1eebf878-8b9b-6ab2-ba48-99d84c92580c
     question: 'Could the event listeners related to an event be retrieved from the ImmutableEventDispatcher?'
@@ -259,7 +259,7 @@ questions:
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
-    help: 'http://symfony.com/doc/current/components/event_dispatcher.html#event-name-introspection'
+    help: 'https://symfony.com/doc/current/components/event_dispatcher.html#event-name-introspection'
   -
     uuid: 1eebf878-8ba3-69c4-a0e8-99d84c92580c
     question: "Could new subscribers be added to an ImmutableEventDispatcher?"
@@ -277,7 +277,7 @@ questions:
       - { value: event_dispatcher.event_subscriber, correct: false }
       - { value: dispatcher.event_subscriber, correct: false }
       - { value: kernel.event_subscriber, correct: true }
-    help: 'http://symfony.com/doc/current/reference/dic_tags.html#kernel-event-subscriber'
+    help: 'https://symfony.com/doc/current/reference/dic_tags.html#kernel-event-subscriber'
   -
     uuid: 1eebf878-8ba4-6b12-9f65-99d84c92580c
     question: 'Could the non-called listeners be retrieved per event when using the TraceableEventDispatcher?'
@@ -298,7 +298,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'http://symfony.com/doc/current/components/event_dispatcher/introduction.html#connecting-listeners'
+    help: 'https://symfony.com/doc/current/components/event_dispatcher/introduction.html#connecting-listeners'
   -
     uuid: 1eed573c-948f-6bd6-816f-b14ed863ed41
     question: 'Could the event dispatcher be transformed into a read-only proxy?'

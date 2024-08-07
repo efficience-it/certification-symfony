@@ -21,7 +21,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'http://symfony.com/doc/current/components/options_resolver.html#default-values-that-depend-on-another-option'
+    help: 'https://symfony.com/doc/current/components/options_resolver.html#default-values-that-depend-on-another-option'
   -
     uuid: 1eebf878-8ba1-6890-90cf-99d84c92580c
     question: 'Which of these sentences is true ?'

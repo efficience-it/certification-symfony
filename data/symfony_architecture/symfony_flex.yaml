@@ -80,14 +80,14 @@ questions:
       - { value: '0', correct: false }
       - { value: '1', correct: false }
       - { value: 'false', correct: true }
-    help: 'http://symfony.com/doc/current/components/yaml/yaml_format.html#booleans'
+    help: 'https://symfony.com/doc/current/components/yaml/yaml_format.html#booleans'
   -
     uuid: 1eebf878-8ba6-6570-8a58-99d84c92580c
     question: 'Does the order of the controller arguments matter when mapping route parameters to controller arguments?'
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
-    help: 'http://symfony.com/doc/current/book/controller.html#route-parameters-as-controller-arguments'
+    help: 'https://symfony.com/doc/current/book/controller.html#route-parameters-as-controller-arguments'
   -
     uuid: 1eebf878-8ba6-6fc0-91b4-99d84c92580c
     question: 'If an exception occurs while executing a console command, will you see the details of the exception in your log files?'

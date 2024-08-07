@@ -23,7 +23,7 @@ questions:
       - { value: 'null', correct: true }
       - { value: '~', correct: true }
       - { value: 'false', correct: false }
-    help: 'http://symfony.com/doc/current/components/yaml/yaml_format.html#nulls'
+    help: 'https://symfony.com/doc/current/components/yaml/yaml_format.html#nulls'
   -
     uuid: 1eebf878-8ba3-610e-89e4-99d84c92580c
     question: 'What is the purpose of the logging: true option in the translator config?'
@@ -96,7 +96,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'http://symfony.com/doc/current/components/yaml/introduction.html#reading-yaml-files'
+    help: 'https://symfony.com/doc/current/components/yaml/introduction.html#reading-yaml-files'
   -
     uuid: 1eebf878-8ba3-6406-a1e6-99d84c92580c
     question: 'What is the 2nd argument of Symfony\Component\Config\ConfigCacheFactory::cache method ?'

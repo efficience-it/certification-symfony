@@ -131,7 +131,7 @@ questions:
       - { value: $request->getFilesData(), correct: false }
       - { value: $request->file, correct: false }
       - { value: $request->files, correct: true }
-    help: 'http://symfony.com/doc/current/components/http_foundation.html#accessing-request-data'
+    help: 'https://symfony.com/doc/current/components/http_foundation.html#accessing-request-data'
   -
     uuid: 1eebf878-8ba1-6f20-a406-99d84c92580c
     question: 'What is the request structure ?'
@@ -149,7 +149,7 @@ questions:
       - { value: getBody(), correct: false }
       - { value: getRequestContent(), correct: false }
       - { value: getContent(), correct: true }
-    help: 'http://symfony.com/doc/current/components/http_foundation.html#accessing-request-data'
+    help: 'https://symfony.com/doc/current/components/http_foundation.html#accessing-request-data'
   -
     uuid: 1eebf878-8ba2-6894-8044-99d84c92580c
     question: 'How could you simulate a GET request to /hello-world ?'
@@ -158,7 +158,7 @@ questions:
       - { value: "$request = Request::create('GET','/hello-world');", correct: false }
       - { value: "$request = Request::create('/hello-world','GET');", correct: true }
       - { value: "$request = Request::create('/hello-world');", correct: true }
-    help: "http://symfony.com/doc/current/components/http_foundation.html#simulating-a-request"
+    help: "https://symfony.com/doc/current/components/http_foundation.html#simulating-a-request"
   -
     uuid: 1eebf878-8ba2-6c7c-b75b-99d84c92580c
     question: 'If you need to change request data before binding them to the form, which event should your code hook into?'
@@ -168,7 +168,7 @@ questions:
       - { value: 'FormEvents::SUBMIT', correct: false }
       - { value: 'FormEvents::POST_SET_DATA', correct: false }
       - { value: 'FormEvents::PRE_SET_DATA', correct: false }
-    help: 'http://symfony.com/doc/current/components/form/form_events.html#a-the-formevents-pre-submit-event'
+    help: 'https://symfony.com/doc/current/components/form/form_events.html#a-the-formevents-pre-submit-event'
   -
     uuid: 1eebf878-8ba2-6ccc-a0c9-99d84c92580c
     question: 'Could arguments be resolved in a controller not tagged with the controller.service_arguments tag?'

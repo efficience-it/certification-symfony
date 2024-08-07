@@ -32,7 +32,7 @@ questions:
       - { value: 'To let some user be able to switch from one to another.', correct: true }
       - { value: 'To be able to have several accounts and switch easily.', correct: false }
       - { value: 'To change the roles of the user easily.', correct: false }
-    help: 'http://symfony.com/doc/current/cookbook/security/impersonating_user.html'
+    help: 'https://symfony.com/doc/current/cookbook/security/impersonating_user.html'
   -
     uuid: 1eebf878-8b9b-6940-83e9-99d84c92580c
     question: 'I am correctly logged in, but I am not fully authenticated, what is the main cause?'

@@ -15,4 +15,4 @@ questions:
       - { value: "{% if defined(block('sidebar')) %} ... {% endif %}", correct: false }
       - { value: "{% if block('sidebar') is defined %} ... {% endif %}", correct: true }
       - { value: "{% if block('sidebar')|defined %} ... {% endif %}", correct: false }
-    help: 'The is defined support for the block() function was added in Twig 1.28 (November 2016). See http://twig.symfony.com/doc/functions/block.html'
+    help: 'https://twig.symfony.com/doc/functions/block.html'

@@ -17,7 +17,7 @@ questions:
       - { value: '$pid = $process->getPid();', correct: true }
       - { value: '$pid = $process->getProcessId();', correct: false }
       - { value: '$pid = $process->getData()->getPid();', correct: false }
-    help: 'http://symfony.com/doc/current/components/process.html#process-pid'
+    help: 'https://symfony.com/doc/current/components/process.html#process-pid'
   -
     uuid: 1eebf878-8b9c-6606-abc0-99d84c92580c
     question: 'What is returned by the run() method of Symfony\Component\Process\Process?'
@@ -35,7 +35,7 @@ questions:
       - { value: serializer_normalizer, correct: false }
       - { value: serializer.normalizer, correct: true }
       - { value: serializer.normalize, correct: false }
-    help: 'http://symfony.com/doc/current/reference/dic_tags.html#serializer-normalizer'
+    help: 'https://symfony.com/doc/current/reference/dic_tags.html#serializer-normalizer'
   -
     uuid: 1eebf878-8b97-69bc-b57f-99d84c92580c
     question: 'What is the correct way to ignore attributes?'
@@ -72,7 +72,7 @@ questions:
       - { value: "$serializer->serialize('json', $person);", correct: false }
       - { value: $serializer->toJson($person);, correct: false }
       - { value: "$serializer->serialize($person, 'json');", correct: true }
-    help: 'http://symfony.com/doc/current/components/serializer.html#serializing-an-object'
+    help: 'https://symfony.com/doc/current/components/serializer.html#serializing-an-object'
   -
     uuid: 1eebf878-8b9d-601a-8dff-99d84c92580c
     question: 'What are valid output types defined in Process ?'
@@ -160,7 +160,7 @@ questions:
       - { value: isProcessing(), correct: false }
       - { value: isAsync(), correct: false }
       - { value: isRunning(), correct: true }
-    help: 'http://symfony.com/doc/2.7/components/process.html#running-processes-asynchronously'
+    help: 'https://symfony.com/doc/2.7/components/process.html#running-processes-asynchronously'
   -
     uuid: 1eebf878-8ba4-6298-950b-99d84c92580c
     question: 'Could the parsed and/or serialized expressions be evaluated?'
@@ -179,7 +179,7 @@ questions:
       - { value: LogsCacheWarmer, correct: false }
       - { value: TemplateCacheWarmer, correct: true }
       - { value: RouterCacheWarmer, correct: true }
-    help: 'http://symfony.com/doc/current/reference/dic_tags.html#core-cache-warmers'
+    help: 'https://symfony.com/doc/current/reference/dic_tags.html#core-cache-warmers'
   -
     uuid: 1eebf878-8ba6-64d0-a4e1-99d84c92580c
     question: 'What is the meaning of ESI ?'
@@ -198,7 +198,7 @@ questions:
       - { value: Arrays, correct: false }
       - { value: 'Traversable objects', correct: true }
       - { value: Scalars, correct: true }
-    help: 'http://symfony.com/doc/current/components/process.html#streaming-to-the-standard-input-of-a-process'
+    help: 'https://symfony.com/doc/current/components/process.html#streaming-to-the-standard-input-of-a-process'
   -
     uuid: 1eebf878-8ba9-68ce-9102-99d84c92580c
     question: "Given $process is a Process object that runs a command asynchronously; calling $process->stop(3) will immediately send a SIGKILL signal to the running command."

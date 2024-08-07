@@ -8,7 +8,7 @@ questions:
       - { value: Entity, correct: true }
       - { value: Doctrine, correct: false }
       - { value: Doctrine/Entity, correct: false }
-    help: 'http://symfony.com/doc/current/book/doctrine.html'
+    help: 'https://symfony.com/doc/current/book/doctrine.html'
   -
     uuid: 1eebf878-8ba3-6e9c-9225-99d84c92580c
     question: 'Which of these are correct ways to create a redirection response in a controller that extends Symfony\Bundle\FrameworkBundle\Controller\AbstractController?'

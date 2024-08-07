@@ -149,7 +149,7 @@ questions:
       - { value: "There's no such a thing in Symfony's Dependency Injection component.", correct: false }
       - { value: "It's a feature of the Dependency Injection component that allows to apply some configuration logic to all the services that define a specific tag.", correct: false }
       - { value: "It's a PHP callable that you can optionally execute to configure a Symfony service after its instantiation.", correct: true }
-    help: 'http://symfony.com/doc/current/service_container/configurators.html'
+    help: 'https://symfony.com/doc/current/service_container/configurators.html'
   -
     uuid: 1eebf878-8b9a-6c5c-ac18-99d84c92580c
     question: 'Could a ParameterBag be frozen?'

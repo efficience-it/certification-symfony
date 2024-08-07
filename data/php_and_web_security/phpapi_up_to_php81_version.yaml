@@ -23,7 +23,7 @@ questions:
       - { value: "$data = new SomeClass('some string' );", correct: false }
       - { value: "$data = 'foo bar ';", correct: false }
       - { value: '$data = function ($content){ return (strtoupper(strip_tags(content)));};', correct: true }
-    help: 'http://php.net/manual/en/book.json.php'
+    help: 'https://php.net/manual/en/book.json.php'
   -
     uuid: 1eeda3fc-6f1f-6b00-ba24-216aef5bea70
     question: 'What is the purpose of the Chain User Provider ?'
@@ -89,7 +89,7 @@ questions:
       - { value: $_POST, correct: false }
       - { value: $_GLOBALS, correct: true }
       - { value: $argc, correct: false }
-    help: 'http://php.net/manual/en/reserved.variables.php'
+    help: 'https://php.net/manual/en/reserved.variables.php'
   -
     uuid: 1eebf878-8b99-6316-bfed-99d84c92580c
     question: 'Which of the following are valid PHP class names ?'

@@ -17,7 +17,7 @@ questions:
       - { value: messages, correct: false }
       - { value: forms, correct: false }
       - { value: default, correct: false }
-    help: 'http://symfony.com/doc/current/reference/forms/types/form.html#translation-domain'
+    help: 'https://symfony.com/doc/current/reference/forms/types/form.html#translation-domain'
   -
     uuid: 1eebf878-8b9f-6db0-82a3-99d84c92580c
     question: 'How do you set default value?'

@@ -12,4 +12,4 @@ questions:
     answers:
       - { value: 'Doctrine will create a proxy of this association object', correct: false }
       - { value: 'Doctrine will eager load this association object.', correct: true }
-    help: 'http://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/advanced-configuration.html#association-proxies'
+    help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/advanced-configuration.html#association-proxies'

@@ -5,7 +5,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'http://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration'
+    help: 'https://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration'
   -
     uuid: 1eebf878-8ba5-624c-866b-99d84c92580c
     question: "What is the output ?$a =  0 ;echo strlen($a);echo empty($a) ? $a : 5;echo $a ?: 5;"

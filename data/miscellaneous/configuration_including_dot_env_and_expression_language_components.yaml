@@ -33,4 +33,4 @@ questions:
       - { value: '1 + 2', correct: false }
       - { value: 'true', correct: false }
       - { value: 'false', correct: false }
-    help: 'http://symfony.com/doc/current/components/expression_language.html#usage'
+    help: 'https://symfony.com/doc/current/components/expression_language.html#usage'

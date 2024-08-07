@@ -32,7 +32,7 @@ questions:
       - { value: 'Extending the Symfony\Component\Form\AbstractTypeExtension', correct: true }
       - { value: 'Putting the new MyFormExtension class in the Form\Extension namespace', correct: false }
       - { value: 'Creating a service with the form.type_extension tag (if auto-configuration is not enabled)', correct: true }
-    help: 'http://symfony.com/doc/current/form/create_form_type_extension.html#defining-the-form-type-extension'
+    help: 'https://symfony.com/doc/current/form/create_form_type_extension.html#defining-the-form-type-extension'
   -
     uuid: 1eebf878-8b97-630e-9861-99d84c92580c
     question: 'What is PSR-1?'
@@ -111,7 +111,7 @@ questions:
       - { value: "it's not possible", correct: false }
       - { value: 'by using the following command : php bin/console debug:router:match /blog/my-latest-post', correct: false }
       - { value: 'by using the following command : php bin/console router:match /blog/my-latest-post', correct: true }
-    help: 'http://symfony.com/doc/current/routing/debug.html'
+    help: 'https://symfony.com/doc/current/routing/debug.html'
   -
     uuid: 1eebf878-8b99-683e-a1ef-99d84c92580c
     question: 'What is PSR-7?'
@@ -120,7 +120,7 @@ questions:
       - { value: 'Huggable Interface.', correct: false }
       - { value: 'HTTP message interface.', correct: true }
       - { value: 'A logger interface.', correct: false }
-    help: 'http://www.php-fig.org/psr/psr-7/'
+    help: 'https://www.php-fig.org/psr/psr-7/'
   -
     uuid: 1eebf878-8b99-69a6-9f63-99d84c92580c
     question: 'What is the main purpose of the built-in Symfony\Bundle\FrameworkBundle\Controller:TemplateController controller?'
@@ -145,7 +145,7 @@ questions:
     answers:
       - { value: 'Displays information for the service router', correct: true }
       - { value: 'Displays the configured routes', correct: false }
-    help: 'http://symfony.com/doc/current/book/service_container.html#debugging-services'
+    help: 'https://symfony.com/doc/current/book/service_container.html#debugging-services'
   -
     uuid: 1eebf878-8b9a-664e-aa65-99d84c92580c
     question: 'How to register a service in a specific env in php ?'
@@ -179,7 +179,7 @@ questions:
       - { value: 'A common logger interface.', correct: false }
       - { value: 'A caching interface.', correct: true }
       - { value: 'A PHP Doc interface.', correct: false }
-    help: 'http://www.php-fig.org/psr/psr-6/'
+    help: 'https://www.php-fig.org/psr/psr-6/'
   -
     uuid: 1eebf878-8b9b-6cba-b8dd-99d84c92580c
     question: 'What is the tag to register a custom service that extracts messages from a file?'
@@ -188,7 +188,7 @@ questions:
       - { value: translator.extractor, correct: false }
       - { value: translation_extractor, correct: false }
       - { value: translation.extractor, correct: true }
-    help: 'http://symfony.com/doc/current/reference/dic_tags.html#translation-extractor'
+    help: 'https://symfony.com/doc/current/reference/dic_tags.html#translation-extractor'
   -
     uuid: 1eebf878-8b9b-6d0a-abf0-99d84c92580c
     question: 'Which PSR draft is meant to be a joke?'
@@ -254,7 +254,7 @@ questions:
       - { value: kernel.cache_clearer, correct: true }
       - { value: cache.clearer, correct: false }
       - { value: cache_clearer, correct: false }
-    help: 'http://symfony.com/doc/current/reference/dic_tags.html#kernel-cache-clearer'
+    help: 'https://symfony.com/doc/current/reference/dic_tags.html#kernel-cache-clearer'
   -
     uuid: 1eebf878-8ba0-65a8-85df-99d84c92580c
     question: 'What is the LoggerInterface correct namespace?'

@@ -31,7 +31,7 @@ questions:
       - { value: "$fs->absolutePath('/tmp');", correct: false }
       - { value: "$fs->checkAbsolutePath('/tmp');", correct: false }
       - { value: "$fs->isAbsolute('/tmp');", correct: false }
-    help: 'http://symfony.com/doc/current/components/filesystem.html#isabsolutepath'
+    help: 'https://symfony.com/doc/current/components/filesystem.html#isabsolutepath'
   -
     uuid: 1eebf878-8b99-628a-b149-99d84c92580c
     question: 'When using mirror(...), could files instead of links be mirrored on Windows?'
@@ -47,7 +47,7 @@ questions:
       - { value: "$fs->file('file.txt', 'Hello World');", correct: false }
       - { value: "$fs->dump('file.txt', 'Hello World');", correct: false }
       - { value: "$fs->dumpFile('file.txt', 'Hello World');", correct: true }
-    help: 'http://symfony.com/doc/current/components/filesystem.html#dumpfile'
+    help: 'https://symfony.com/doc/current/components/filesystem.html#dumpfile'
   -
     uuid: 1eebf878-8b9a-67de-9c30-99d84c92580c
     question: "Is the following code valid?     $fs = (new Filesystem())->mirror('/srv/app', '/srv/bar', null, ['delete' => true]);"
@@ -64,7 +64,7 @@ questions:
       - { value: FileErrorException, correct: false }
       - { value: FileNotFoundException, correct: true }
       - { value: FilesystemException, correct: false }
-    help: 'http://symfony.com/doc/current/components/filesystem.html#copy'
+    help: 'https://symfony.com/doc/current/components/filesystem.html#copy'
   -
     uuid: 1eebf878-8b9c-6426-87bc-99d84c92580c
     question: 'Which of the following are Filesystem methods?'

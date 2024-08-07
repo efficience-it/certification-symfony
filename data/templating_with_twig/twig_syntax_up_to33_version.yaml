@@ -7,7 +7,7 @@ questions:
       - { value: "{{ constant('Namespace\\Classname::CONSTANT_NAME') }}", correct: false }
       - { value: '{{ Namespace\Classname::CONSTANT_NAME }}', correct: false }
       - { value: '{{ constant(''Namespace\\Classname::CONSTANT_NAME'') }}', correct: true }
-    help: 'http://twig.symfony.com/doc/functions/constant.html'
+    help: 'https://twig.symfony.com/doc/functions/constant.html'
   -
     uuid: 1eebf878-8ba5-6292-99ae-99d84c92580c
     question: "Does this syntax perform any check? {{ foo['bar'] }}"
@@ -44,7 +44,7 @@ questions:
       - { value: 'The Parser', correct: false }
       - { value: 'The Compiler', correct: true }
       - { value: 'The Lexer', correct: false }
-    help: 'http://twig.symfony.com/doc/internals.html'
+    help: 'https://twig.symfony.com/doc/internals.html'
   -
     uuid: 1eebf878-8ba4-62de-8eca-99d84c92580c
     question: 'Which of the following are valid block names ?'
@@ -83,7 +83,7 @@ questions:
       - { value: 'The Compiler', correct: true }
       - { value: 'The Parser', correct: false }
       - { value: 'The Lexer', correct: false }
-    help: 'http://twig.symfony.com/doc/internals.html'
+    help: 'https://twig.symfony.com/doc/internals.html'
   -
     uuid: 1eebf878-8b9a-6a5e-ae78-99d84c92580c
     question: 'What are Twig loaders responsible for?'
@@ -102,7 +102,7 @@ questions:
       - { value: 'This template will display an error when rendering it.', correct: false }
       - { value: Hi!, correct: false }
       - { value: 'Hi null!', correct: false }
-    help: 'http://twig.symfony.com/doc/templates.html#other-operators'
+    help: 'https://twig.symfony.com/doc/templates.html#other-operators'
   -
     uuid: 1eebf878-8b9b-68a0-ae2f-99d84c92580c
     question: 'When using format_datetime(), could the calendar be changed?'
@@ -190,7 +190,7 @@ questions:
       - { value: '{% if constant(''Symfony\\Component\\HttpKernel\\Kernel::VERSION'') is defined %} ... {% endif %}', correct: true }
       - { value: '{% if constant(''VERSION'', ''Symfony\\Component\\HttpKernel\\Kernel'') %}...{% endif %}', correct: false }
       - { value: "{% if defined('Symfony\\\\Component\\\\HttpKernel\\\\Kernel::VERSION') %}...{% endif %}", correct: false }
-    help: 'http://twig.symfony.com/doc/functions/constant.html'
+    help: 'https://twig.symfony.com/doc/functions/constant.html'
   -
     uuid: 1eebf878-8ba9-6e82-aa99-99d84c92580c
     question: 'What will be the result of evaluating this template when setting blue for the color variable value and when the strict_variables global setting is on? The {{ color }} car!'

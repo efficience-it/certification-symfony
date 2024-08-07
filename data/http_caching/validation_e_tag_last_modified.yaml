@@ -7,7 +7,7 @@ questions:
       - { value: $response->isOk();, correct: false }
       - { value: $response->isNotModified($request);, correct: true }
       - { value: $response->isCacheable();, correct: false }
-    help: 'http://symfony.com/doc/current/components/http_foundation.html#managing-the-http-cache'
+    help: 'https://symfony.com/doc/current/components/http_foundation.html#managing-the-http-cache'
   -
     uuid: 1eebf878-8b9e-6758-adce-99d84c92580c
     question: 'Using ETag saves CPU cycles.'

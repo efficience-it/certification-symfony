@@ -40,7 +40,7 @@ questions:
       - { value: StreamedResponse, correct: true }
       - { value: ImageResponse, correct: false }
       - { value: BinaryFileResponse, correct: true }
-    help: 'http://symfony.com/doc/current/components/http_foundation/introduction.html#redirecting-the-user http://symfony.com/doc/current/components/http_foundation/introduction.html#streaming-a-response http://symfony.com/doc/current/components/http_foundation/introduction.html#serving-files http://symfony.com/doc/current/components/http_foundation/introduction.html#creating-a-json-response'
+    help: 'https://symfony.com/doc/current/components/http_foundation/introduction.html#redirecting-the-user'
   -
     uuid: 1eebf878-8b9a-6fe0-8ade-99d84c92580c
     question: 'Could a response be marked as safe?'

@@ -1,14 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8ba7-6bfa-aded-99d84c92580c
-    question: "What will be the output of the following code ?    function foo(int $y) {      return function(int $x) use ($y): string {      return str_repeat((string) $y, $x);      };     }     $a = foo(3);     $b = foo(2);     echo $a(2), $b(3);"
-    answers:
-      - { value: '33222', correct: true }
-      - { value: '66', correct: false }
-      - { value: 'An error', correct: false }
-      - { value: '22233', correct: false }
-    help: "  \thttps://www.php.net/manual/en/function.str-repeat  \thttp://php.net/manual/en/functions.anonymous.php  "
-  -
     uuid: 1eebf878-8ba9-646e-93a2-99d84c92580c
     question: "What will be the output of this ?    $message = '';    $example = function ($arg) use ($message) {  var_dump($arg . ' ' . $message);  };  $example( hello );"
     answers:

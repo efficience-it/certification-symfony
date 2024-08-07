@@ -9,7 +9,7 @@ questions:
       - { value: router.loader, correct: false }
       - { value: routing.loader, correct: true }
       - { value: routing.route_loader, correct: false }
-    help: 'http://symfony.com/doc/current/reference/dic_tags.html#routing-loader'
+    help: 'https://symfony.com/doc/current/reference/dic_tags.html#routing-loader'
   -
     uuid: 1eebf878-8b96-6dc8-a0f5-99d84c92580c
     question: 'What is the tag to register a custom service that loads translations?'

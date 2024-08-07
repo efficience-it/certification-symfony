@@ -57,7 +57,7 @@ questions:
       - { value: security.voter, correct: true }
       - { value: security_voter, correct: false }
       - { value: security.authorization_voter, correct: false }
-    help: 'http://symfony.com/doc/current/reference/dic_tags.html#security-voter'
+    help: 'https://symfony.com/doc/current/reference/dic_tags.html#security-voter'
   -
     uuid: 1eebf878-8b9b-6710-8ebe-99d84c92580c
     question: 'How does the AccessDecisionManager behave when configured with a consensus voting strategy?'

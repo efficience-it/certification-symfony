@@ -29,4 +29,4 @@ questions:
       - { value: monolog_processor, correct: false }
       - { value: kernel_processor, correct: false }
       - { value: processor, correct: false }
-    help: 'http://symfony.com/doc/current/reference/dic_tags.html#monolog-processor'
+    help: 'https://symfony.com/doc/current/reference/dic_tags.html#monolog-processor'

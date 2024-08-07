@@ -6,7 +6,7 @@ questions:
       - { value: https, correct: false }
       - { value: http, correct: true }
       - { value: 'To prepend the submitted value with an URI scheme (eg. http://) if it does not begin with one.', correct: true }
-    help: 'http://symfony.com/doc/current/reference/forms/types/url.html'
+    help: 'https://symfony.com/doc/current/reference/forms/types/url.html'
   -
     uuid: 1eebf878-8b9a-609a-94e5-99d84c92580c
     question: 'In a form, could the choices of LanguageType be overridden?'

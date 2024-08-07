@@ -102,7 +102,7 @@ questions:
       - { value: 'On any public, private or protected properties.', correct: true }
       - { value: 'On any public static methods of the class only.', correct: false }
       - { value: 'On any public properties only.', correct: false }
-    help: 'http://symfony.com/doc/current/validation.html#validator-constraint-targets'
+    help: 'https://symfony.com/doc/current/validation.html#validator-constraint-targets'
   -
     uuid: 1eed57f8-fb54-62a6-91f8-d952ea3a2c23
     question: 'When using the Symfony\Component\Validator\Constraints\Url validation constraint, what protocols are allowed by default ?'

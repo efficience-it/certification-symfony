@@ -51,7 +51,7 @@ questions:
     answers:
       - { value: 'Nothing, the Symfony\Component\VarDumper\VarDumper::dump has just one parameter.', correct: true }
       - { value: 'An optional $return boolean variable to return the information rather than print it.', correct: false }
-    help: "http://symfony.com/doc/current/components/var_dumper.html#the-dump-function"
+    help: "https://symfony.com/doc/current/components/var_dumper.html#the-dump-function"
   -
     uuid: 1eebf878-8b9b-6530-9f87-99d84c92580c
     question: 'What kind of help provides the config:dump-reference command?'

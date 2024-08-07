@@ -18,13 +18,13 @@ questions:
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/ResponseHeaderBag.php#L24C18-L24C41'
   -
     uuid: 1eebf878-8b9b-63fa-b82c-99d84c92580c
-    question: 'For a request to http://example.com/blog/index.php/post/hello-world, what will be the value of $pathInfo in the following code?$pathInfo = $request->getPathInfo();'
+    question: 'For a request to https://example.com/blog/index.php/post/hello-world, what will be the value of $pathInfo in the following code?$pathInfo = $request->getPathInfo();'
     answers:
       - { value: /index.php/post/hello-world, correct: false }
       - { value: /post/hello-world, correct: true }
       - { value: example.com/blog/index.php/post/hello-world, correct: false }
       - { value: /blog/index.php/post/hello-world, correct: false }
-    help: 'http://symfony.com/doc/current/components/http_foundation.html#identifying-a-request'
+    help: 'https://symfony.com/doc/current/components/http_foundation.html#identifying-a-request'
   -
     uuid: 1eebf878-8b99-62d0-bab2-99d84c92580c
     question: 'When using AbstractController, what is the purpose of the second argument of the file method ?'

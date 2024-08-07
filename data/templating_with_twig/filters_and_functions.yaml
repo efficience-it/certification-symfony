@@ -14,7 +14,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'http://twig.symfony.com/doc/functions/constant.html'
+    help: 'https://twig.symfony.com/doc/functions/constant.html'
   -
     uuid: 1eebf878-8b98-62ae-b9f7-99d84c92580c
     question: "What's the aim of the apply tag?"
