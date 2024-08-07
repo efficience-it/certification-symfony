@@ -67,3 +67,40 @@ questions:
       - { value: 'an array', correct: true }
       - { value: 'the view data of the form', correct: false }
     help: 'https://symfony.com/doc/current/form/events.html'
+  -
+    uuid: 1eebf878-8b9c-6566-9d0b-99d84c92580c
+    question: 'If you need to modify the data given during pre-population or modify a form depending on the pre-populated data (adding or removing fields dynamically), to which event your code should be hooked?'
+    answers:
+      - { value: 'FormEvents::PRE_SUBMIT', correct: false }
+      - { value: 'FormEvents::PRE_SET_DATA', correct: true }
+      - { value: 'FormEvents::POST_SUBMIT', correct: false }
+      - { value: 'FormEvents::SUBMIT', correct: false }
+      - { value: 'FormEvents::POST_SET_DATA', correct: false }
+    help: 'https://symfony.com/doc/current/form/events.html'
+  -
+    uuid: 1eebf878-8b9d-610a-8c96-99d84c92580c
+    question: 'What is returned by the getData() method of PreSubmitEvent ?'
+    answers:
+      - { value: 'the norm data of the form', correct: false }
+      - { value: 'the view data of the form', correct: false }
+      - { value: 'The model data of the form', correct: false }
+      - { value: 'an array', correct: true }
+    help: 'https://symfony.com/doc/current/form/events.html'
+  -
+    uuid: 1eebf878-8b9d-66a0-b95b-99d84c92580c
+    question: 'Which method should you use to register a new event listener on a FormBuilder instance?'
+    answers:
+      - { value: addEventListener, correct: true }
+      - { value: registerListener, correct: false }
+      - { value: createListener, correct: false }
+      - { value: addListener, correct: false }
+    help: 'https://symfony.com/doc/current/components/form/form_events.html'
+  -
+    uuid: 1eebf878-8ba0-608a-be0c-99d84c92580c
+    question: 'Which form event does not exist?'
+    answers:
+      - { value: 'FormEvents::PRE_SET_DATA', correct: false }
+      - { value: 'FormEvents::SUBMIT', correct: false }
+      - { value: 'FormEvents::POST_SUBMIT', correct: false }
+      - { value: 'FormEvents::SET_DATA', correct: true }
+    help: 'https://symfony.com/doc/current/form/events.html'

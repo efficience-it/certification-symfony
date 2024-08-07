@@ -1,0 +1,10 @@
+questions:
+  -
+    uuid: 1eebf878-8ba0-60d0-9bc4-99d84c92580c
+    question: 'How do you upload a UploadedFile ?'
+    answers:
+      - { value: '$file->move(string $directory, string $name = null)', correct: true }
+      - { value: '$file->upload(string $directory, string $name = null)', correct: false }
+      - { value: '$file->uploadFile(string $directory, string $name = null)', correct: false }
+      - { value: '$file->save(string $directory, string $name = null)', correct: false }
+    help: 'https://symfony.com/doc/current/controller/upload_file.html#creating-an-uploader-service'

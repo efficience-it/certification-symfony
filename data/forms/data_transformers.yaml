@@ -30,3 +30,33 @@ questions:
       - { value: 'By setting the invalid_message in the options of the form type', correct: true }
       - { value: "It's not possible", correct: false }
     help: 'https://symfony.com/doc/current/form/data_transformers.html#using-the-transformer'
+  -
+    uuid: 1eebf878-8b9a-6838-a655-99d84c92580c
+    question: 'Does a Symfony\Component\Form\Exception\TransformationFailedException thrown in a DataTransformer cause a validation error ?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/form/data_transformers.html'
+  -
+    uuid: 1eebf878-8b9c-6aa2-a4b0-99d84c92580c
+    question: 'How to add a DataTransformer to the tags field?'
+    answers:
+      - { value: "$builder->add('tags', TextType::class) ->addModelTransformer(...);", correct: false }
+      - { value: "$builder->add( $builder ->create('tags', TextType::class) ->addModelTransformer(...) );", correct: true }
+      - { value: "$builder->add('tags', TextType::class);$builder->get('tags') ->addModelTransformer(...);", correct: true }
+    help: 'https://symfony.com/doc/current/form/data_transformers.html#simple-example-transforming-string-tags-from-user-input-to-an-array'
+  -
+    uuid: 1eebf878-8ba0-6116-964a-99d84c92580c
+    question: 'How to Use Data Transformers ?'
+    answers:
+      - { value: "$builder->get('tags')->addModelTransformer(...);", correct: true }
+      - { value: "$builder->add($builder->create('tags', TextType::class)->addModelTransformer(...));", correct: true }
+      - { value: "$builder->add('tags', TextType::class)->addModelTransformer(...);", correct: false }
+    help: 'https://symfony.com/doc/current/form/data_transformers.html'
+  -
+    uuid: 1eebf878-8ba4-6946-9ff1-99d84c92580c
+    question: 'Are Data Transformers applied on a form field which has the inherit_data option set ?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://symfony.com/doc/current/form/data_transformers.html'

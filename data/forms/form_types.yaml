@@ -50,4 +50,219 @@ questions:
       - { value: 'The minutes option set to false.', correct: false }
       - { value: 'The without_minutes option set to true.', correct: false }
       - { value: 'The with_minutes option set to false.', correct: true }
-    help: 'http://symfony.com/doc/current/reference/forms/types/datetime.html'
+    help: 'https://symfony.com/doc/current/reference/forms/types/datetime.html'
+  -
+    uuid: 1eebf878-8b97-63a4-84ee-99d84c92580c
+    question: 'Which of the following are Symfony built-in field types?'
+    answers:
+      - { value: PercentType, correct: true }
+      - { value: RangeType, correct: true }
+      - { value: DecimalType, correct: false }
+      - { value: IntervalType, correct: false }
+      - { value: IntegerType, correct: true }
+      - { value: MoneyType, correct: true }
+      - { value: NumberType, correct: true }
+    help: 'https://symfony.com/doc/current/reference/forms/types.html#supported-field-types'
+  -
+    uuid: 1eebf878-8b97-63f4-8efe-99d84c92580c
+    question: 'If the expanded and multiple options are set to true on a ChoiceType form type, what is displayed when rendering the form ?'
+    answers:
+      - { value: 'Radio buttons.', correct: false }
+      - { value: Checkboxes., correct: true }
+      - { value: 'Select tag (with multiple attribute).', correct: false }
+      - { value: 'Select tag.', correct: false }
+    help: 'https://symfony.com/doc/current/reference/forms/types/choice.html'
+  -
+    uuid: 1eebf878-8b97-68c2-9a88-99d84c92580c
+    question: 'What solution can you use to ask the user to type his password twice in a form ?'
+    answers:
+      - { value: 'Use the ask_confirmation option on the PasswordType form type.', correct: false }
+      - { value: 'Call the render_widget twig function twice on the password form type.', correct: false }
+      - { value: 'Use the Validation plugin of jQuery.', correct: false }
+      - { value: 'Use the RepeatedType form type.', correct: true }
+    help: 'https://symfony.com/doc/current/reference/forms/types/repeated.html'
+  -
+    uuid: 1eebf878-8b98-6664-a79b-99d84c92580c
+    question: 'What is the main difference between the Symfony\Component\Form\Extension\Core\Type\BirthdayType form type and its parent Symfony\Component\Form\Extension\Core\Type\DateType ?'
+    answers:
+      - { value: 'Those form types does not inherit from each other.', correct: false }
+      - { value: 'It adds a little  bithday cake  icon right before the widget.', correct: false }
+      - { value: 'It defaults the years option to 120 years ago to the current year.', correct: true }
+      - { value: 'This is only semantical, there is no real difference between them.', correct: false }
+    help: 'https://symfony.com/doc/current/reference/forms/types/birthday.html'
+  -
+    uuid: 1eebf878-8b98-6aa6-87b2-99d84c92580c
+    question: 'What component is used by the Symfony\Component\Form\FormBuilder when calling addEventListener method?'
+    answers:
+      - { value: Config, correct: false }
+      - { value: DependencyInjection, correct: false }
+      - { value: OptionsResolver, correct: false }
+      - { value: EventDispatcher, correct: true }
+    help: 'https://symfony.com/doc/current/components/form/form_events.html'
+  -
+    uuid: 1eebf878-8b99-6000-9467-99d84c92580c
+    question: 'How one can detect that a given Symfony\Component\Form\Extension\Core\Type\SubmitType form type has been clicked ?'
+    answers:
+      - { value: 'Using the isClicked method of the parent form.', correct: false }
+      - { value: 'Using the clicked method of the given parent form.', correct: false }
+      - { value: 'Using the isClicked method of the given submit button.', correct: true }
+      - { value: 'Using the clicked method of the given submit button.', correct: false }
+    help: 'https://symfony.com/doc/current/reference/forms/types/submit.html'
+  -
+    uuid: 1eebf878-8b99-6046-8fb8-99d84c92580c
+    question: 'Could fields be sorted using a priority?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/blog/new-in-symfony-5-3-form-field-sorting'
+  -
+    uuid: 1eebf878-8b99-63ac-9567-99d84c92580c
+    question: 'Assuming an application that stores money amounts multiplied by 100 (eg. 1.23 is stored 123).What option should you set on the Symfony\Component\Form\Extension\Core\Type\MoneyType form type in order to display the correct value to the user ?'
+    answers:
+      - { value: by_reference, correct: false }
+      - { value: scale, correct: false }
+      - { value: divisor, correct: true }
+      - { value: multiply, correct: false }
+    help: 'https://symfony.com/doc/current/reference/forms/types/money.html'
+  -
+    uuid: 1eebf878-8b99-6c30-8ce8-99d84c92580c
+    question: 'What option should you use in order to have a DateType form type rendered as an HTML5 input type= date  ?'
+    answers:
+      - { value: no_javascript, correct: false }
+      - { value: type_date, correct: false }
+      - { value: datepicker, correct: false }
+      - { value: html5, correct: true }
+    help: 'https://symfony.com/doc/current/reference/forms/types/date.html'
+  -
+    uuid: 1eebf878-8b99-6fb4-8755-99d84c92580c
+    question: 'Which interface should be implemented when you want to set the choice_loader option of the Symfony\Component\Form\Extension\Core\Type\ChoiceType form type ?'
+    answers:
+      - { value: Symfony\Component\Form\Extension\Core\ChoiceLoaderInterface, correct: false }
+      - { value: Symfony\Component\Form\ChoiceList\Loader\ChoiceLoaderInterface, correct: true }
+      - { value: Symfony\Component\Form\ChoiceLoaderInterface, correct: false }
+    help: 'https://symfony.com/doc/current/reference/forms/types/choice.html#choice-loader'
+  -
+    uuid: 1eebf878-8b9a-6220-b605-99d84c92580c
+    question: 'Could a Button have a child?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: "https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Form/Button.php#L110"
+  -
+    uuid: 1eebf878-8b9b-676a-9c72-99d84c92580c
+    question: 'How is rendered a DateIntervalType form field when the widget option is set to single_text ?'
+    answers:
+      - { value: 'a single html5 date field', correct: false }
+      - { value: 'two text fields', correct: false }
+      - { value: 'two html5 date fields', correct: false }
+      - { value: 'a single text field', correct: true }
+    help: 'https://symfony.com/doc/current/reference/forms/types/dateinterval.html#widget'
+  -
+    uuid: 1eebf878-8b9b-6df0-9a40-99d84c92580c
+    question: 'Which sentences are true about the inherit_data option ?'
+    answers:
+      - { value: 'it may allow to reduce duplicated fields in different forms', correct: true }
+      - { value: "data mappers don't apply on a field with inherit_data set to true", correct: true }
+      - { value: 'it determines if the form will inherit data from its parent form', correct: true }
+      - { value: "data transformers don't apply on a field with inherit_data set to true", correct: true }
+    help: 'https://symfony.com/doc/current/reference/forms/types/form.html#inherit-data'
+  -
+    uuid: 1eebf878-8b9b-6f30-8a92-99d84c92580c
+    question: "What is the option you can pass to a Symfony\\Component\\Form\\Extension\\Core\\Type\\NumberType form type to change the number of decimals allowed until the field rounds."
+    answers:
+      - { value: scale, correct: true }
+      - { value: decimals, correct: false }
+      - { value: precision, correct: false }
+    help: 'https://symfony.com/doc/current/reference/forms/types/number.html'
+  -
+    uuid: 1eebf878-8b9c-6912-8c4e-99d84c92580c
+    question: 'Which of the following sentences are true ?'
+    answers:
+      - { value: 'TelType form field only allows to use HTML5 input type tel', correct: true }
+      - { value: 'PhoneType form field allows to use HTML5 input type tel and trigger some basic validation on the entered phone number', correct: false }
+      - { value: 'TelType form field allows to use HTML5 input type tel and trigger some basic validation on the entered phone number', correct: false }
+      - { value: 'PhoneType form field only allows to use HTML5 input type tel', correct: false }
+    help: 'https://symfony.com/doc/current/reference/forms/types/tel.html'
+  -
+    uuid: 1eebf878-8b9d-64b6-84b4-99d84c92580c
+    question: 'Which of these form types does not inherit from the Symfony\Component\Form\Extension\Core\Type\TextType type ?'
+    answers:
+      - { value: Symfony\Component\Form\Extension\Core\Type\RangeType, correct: false }
+      - { value: Symfony\Component\Form\Extension\Core\Type\SearchType, correct: false }
+      - { value: Symfony\Component\Form\Extension\Core\Type\HiddenType, correct: true }
+      - { value: Symfony\Component\Form\Extension\Core\Type\LocaleType, correct: true }
+      - { value: Symfony\Component\Form\Extension\Core\Type\PasswordType, correct: false }
+    help: 'https://symfony.com/doc/current/reference/forms/types.html'
+  -
+    uuid: 1eebf878-8b9f-6874-968c-99d84c92580c
+    question: 'Inside a form type, how to render a DateType field in an text input field?'
+    answers:
+      - { value: 'Add an option  render  =>  input ', correct: false }
+      - { value: 'Add an option  widget  =>  text ', correct: false }
+      - { value: 'Add an option  widget  =>  single_text ', correct: true }
+      - { value: 'Add an option  widget  =>  input ', correct: false }
+    help: 'https://symfony.com/doc/current/reference/forms/types/date.html#widget'
+  -
+    uuid: 1eebf878-8b9f-6ff4-9937-99d84c92580c
+    question: 'Which Field type exist?'
+    answers:
+      - { value: HiddenType, correct: true }
+      - { value: SearchType, correct: true }
+      - { value: BirthdayType, correct: true }
+      - { value: PasswordType, correct: true }
+      - { value: SelectType, correct: false }
+      - { value: FloatType, correct: false }
+      - { value: BooleanType, correct: false }
+    help: 'https://github.com/symfony/symfony/tree/master/src/Symfony/Component/Form/Extension/Core/Type'
+  -
+    uuid: 1eebf878-8ba3-6a0a-9738-99d84c92580c
+    question: 'What will be rendered when using a DateTimeType form type with all default options ?'
+    answers:
+      - { value: 'Three select inputs and one text input.', correct: false }
+      - { value: 'Five select inputs', correct: false }
+      - { value: 'One HTML5 datetime input.', correct: true }
+    help: 'https://symfony.com/doc/current/reference/forms/types/datetime.html#widget'
+  -
+    uuid: 1eebf878-8ba3-6b7c-a185-99d84c92580c
+    question: 'Is setting the choice_loader to null required when overriding the choices of LanguageType?'
+    answers:
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+    help: 'https://symfony.com/doc/current/reference/forms/types/language.html#choices'
+  -
+    uuid: 1eebf878-8ba3-6cee-ac9a-99d84c92580c
+    question: 'By default, what parameter can you use inside the login form to specify the target of the redirection?'
+    answers:
+      - { value: _target, correct: false }
+      - { value: _default_target, correct: false }
+      - { value: _path_target, correct: false }
+      - { value: _target_path, correct: true }
+      - { value: _path, correct: false }
+    help: 'https://symfony.com/doc/current/security/form_login.html#control-the-redirect-url-from-inside-the-form'
+  -
+    uuid: 1eebf878-8ba4-6e64-a14b-99d84c92580c
+    question: 'What type of value can be set to the query_builder option of the EntityType form type ?'
+    answers:
+      - { value: "A callable", correct: true }
+      - { value: 'A string containing a where clause.', correct: false }
+      - { value: 'An instance of Doctrine\ORM\QueryBuilder.', correct: true }
+      - { value: 'A string containing a valid query.', correct: false }
+      - { value: 'An array of sql statement.', correct: false }
+    help: 'https://symfony.com/doc/current/reference/forms/types/entity.html'
+  -
+    uuid: 1eebf878-8ba6-6520-bd74-99d84c92580c
+    question: "Which of the following form types is the parent of the Symfony\\Component\\Form\\Extension\\Core\\Type\\BirthdayType form type ?"
+    answers:
+      - { value: Symfony\Component\Form\Extension\Core\Type\DateTimeType, correct: false }
+      - { value: Symfony\Component\Form\Extension\Core\Type\DateType, correct: true }
+      - { value: "Symfony\\Component\\Form\\Extension\\Core\\Type\\TimeType", correct: false }
+    help: 'https://symfony.com/doc/current/reference/forms/types/birthday.html'
+  -
+    uuid: 1eee7665-19e6-68be-9026-175f14ab53cd
+    question: 'By default, which function provides the choices of the Symfony\Component\Form\Extension\Core\Type\LanguageType form type ?'
+    answers:
+      - { value: 'Symfony\Component\Form\Extension\Core\Type\LanguageType::getChoices()', correct: false }
+      - { value: 'Intl::getLanguages()', correct: false }
+      - { value: Symfony\Component\Locale\getDisplayLanguages(), correct: false }
+      - { value: 'Symfony\Component\Intl\Intl::getLanguageBundle()->getLanguageNames()', correct: true }
+    help: 'https://symfony.com/doc/7.2/reference/forms/types/language.html'

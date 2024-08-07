@@ -44,3 +44,31 @@ questions:
       - { value: GET, correct: false }
       - { value: POST, correct: false }
     help: 'https://symfony.com/doc/current/forms.html'
+  -
+    uuid: 1eebf878-8b9b-6af8-a1b1-99d84c92580c
+    question: 'What are the methods of Symfony\Component\Form\FormTypeInterface?'
+    answers:
+      - { value: 'public function buildView(FormInterface $form, array $options);', correct: true }
+      - { value: 'public function getDefaultOptions(OptionsResolverInterface $resolver);', correct: false }
+      - { value: 'public function finishView(FormView $view, FormInterface $form, array $options);', correct: true }
+      - { value: 'public function configureOptions(OptionsResolverInterface $resolver);', correct: false }
+      - { value: 'public function getDefaultOptions(OptionsResolver $resolver);', correct: false }
+      - { value: 'public function finishView(FormView $view, array $options);', correct: false }
+      - { value: 'public function getName();', correct: false }
+      - { value: 'public function buildView(FormView $view, FormInterface $form, array $options);', correct: true }
+      - { value: 'public function getBlockPrefix();', correct: true }
+      - { value: 'public function buildForm(FormBuilderInterface $builder, array $options);', correct: true }
+      - { value: 'public function getParent();', correct: true }
+      - { value: 'public function buildForm(FormBuilder $builder, array $options);', correct: false }
+      - { value: 'public function getType();', correct: false }
+      - { value: 'public function getParentType();', correct: false }
+      - { value: 'public function configureOptions(OptionsResolver $resolver);', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Form/FormTypeInterface.php'
+  -
+    uuid: 1eebf878-8b9f-6df6-80c3-99d84c92580c
+    question: 'Your Form class must extends ____'
+    answers:
+      - { value: Symfony\Component\Form\FormType, correct: false }
+      - { value: Symfony\Component\Form\AbstractType, correct: true }
+      - { value: Symfony\Component\Form\AbstractFormType, correct: false }
+    help: 'https://symfony.com/doc/current/forms.html#creating-form-classes'
