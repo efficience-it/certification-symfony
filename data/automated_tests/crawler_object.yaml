@@ -1,0 +1,19 @@
+questions:
+  -
+    uuid: 1eebf878-8b9e-6528-8747-99d84c92580c
+    question: 'Using the Crawler client, how to follow a redirection ?'
+    answers:
+      - { value: $client->redirect(), correct: false }
+      - { value: $client->followRedirect(), correct: true }
+      - { value: $client->followRedirects(), correct: true }
+      - { value: $client->redirectAll(), correct: false }
+    help: 'https://symfony.com/doc/current/testing.html#redirecting'
+  -
+    uuid: 1eebf878-8ba0-66ca-8a74-99d84c92580c
+    question: 'What is the correct CssSelector class namespace?'
+    answers:
+      - { value: Symfony\Component\CssSelector\CssSelector, correct: true }
+      - { value: Symfony\Component\BrowserKit\CssSelector, correct: false }
+      - { value: Symfony\Component\DomCrawler\CssSelector, correct: false }
+      - { value: Symfony\Bundle\FrameworkBundle\CssSelector, correct: false }
+    help: 'https://symfony.com/doc/current/components/css_selector.html#id1'
