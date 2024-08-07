@@ -33,3 +33,14 @@ questions:
       - { value: "It's not possible", correct: false }
       - { value: "['first_input', 'second_input']", correct: true }
     help: 'https://symfony.com/doc/6.3/components/console/helpers/questionhelper.html#testing-a-command-that-expects-input'
+  -
+    uuid: 1eebf878-8b9d-66e6-8c20-99d84c92580c
+    question: 'Which of the following are not built-in option variants ?'
+    answers:
+      - { value: 'InputOption::VALUE_IS_MULTIPLE', correct: true }
+      - { value: 'InputOption::VALUE_REQUIRED', correct: false }
+      - { value: 'InputOption::VALUE_OPTIONAL', correct: false }
+      - { value: 'InputOption::VALUE_NONE', correct: false }
+      - { value: 'InputOption::VALUE_NOT_REQUIRED', correct: true }
+      - { value: 'InputOption::VALUE_IS_ARRAY', correct: false }
+    help: 'http://symfony.com/doc/current/console/input.html#using-command-options'

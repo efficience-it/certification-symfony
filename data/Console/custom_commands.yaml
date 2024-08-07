@@ -79,3 +79,31 @@ questions:
       - { value: 'php bin/console create-user', correct: false }
       - { value: 'php bin/console add-user', correct: false }
     help: 'https://symfony.com/doc/7.0/console.html#registering-the-command'
+  -
+    uuid: 1eebf878-8b9e-69ce-95d7-99d84c92580c
+    question: 'Which tag name you should use when you register command as service?'
+    answers:
+      - { value: command.console, correct: false }
+      - { value: console.command, correct: true }
+      - { value: console.console_command, correct: false }
+      - { value: command, correct: false }
+      - { value: console, correct: false }
+    help: 'https://symfony.com/doc/current/console/commands_as_services.html'
+  -
+    uuid: 1eebf878-8b9e-6d70-97f3-99d84c92580c
+    question: 'Which function are mandatory to your command class ?'
+    answers:
+      - { value: configure(), correct: true }
+      - { value: 'execute(InputInterface $input, OutputInterface $output)', correct: true }
+      - { value: interact(), correct: false }
+      - { value: initialize(), correct: false }
+    help: 'https://symfony.com/doc/current/console.html#creating-a-command'
+  -
+    uuid: 1eebf878-8ba3-6b36-baf6-99d84c92580c
+    question: "What needs to be done to register a custom command so it can be executed and listed when you execute php bin/console list ?"
+    answers:
+      - { value: 'Add it to the registerCommands() method in the AppKernel class', correct: false }
+      - { value: 'Define the command as a service and tag it with kernel.command.', correct: false }
+      - { value: 'Place it in the Command directory of the bundle, suffix the PHP class with Command and make it extend \Symfony\Component\Console\Command\Command', correct: true }
+      - { value: 'Add it to the application registered in the bin/console file', correct: false }
+    help: 'https://symfony.com/doc/current/console.html'

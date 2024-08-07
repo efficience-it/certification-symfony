@@ -18,3 +18,28 @@ questions:
       - { value: Symfony\Component\Console\OutputStyle, correct: false }
       - { value: Symfony\Component\Console\OutputFormatter, correct: false }
     help: 'https://symfony.com/doc/current/console/coloring.html#using-color-styles'
+  -
+    uuid: 1eebf878-8b9e-6b0e-a57c-99d84c92580c
+    question: 'Descriptors are objects to render documentation on Symfony Console Apps?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/console.html#configuring-the-command'
+  -
+    uuid: 1eebf878-8b9e-6d20-8ba2-99d84c92580c
+    question: 'In Symfony Console, you can have InputArgument::REQUIRED, InputArgument::OPTIONAL and ... ?'
+    answers:
+      - { value: 'InputArgument::DEFAULT', correct: false }
+      - { value: 'InputArgument::IS_ARRAY', correct: true }
+      - { value: 'InputArgument::LIST', correct: false }
+      - { value: 'InputArgument::ENUM', correct: false }
+    help: 'https://symfony.com/doc/current/console/input.html#using-command-arguments'
+  -
+    uuid: 1eebf878-8ba3-6398-b072-99d84c92580c
+    question: 'What type of argument would you use to accept more than one input parameter? For example, php bin/console hello Fabien Martin Jessica?'
+    answers:
+      - { value: 'InputArgument::MULTIPLE', correct: false }
+      - { value: 'InputArgument::IS_ARRAY', correct: true }
+      - { value: 'InputArgument::NONE', correct: false }
+      - { value: 'InputArgument::OPTIONAL', correct: false }
+    help: 'https://symfony.com/doc/current/console/input.html'
