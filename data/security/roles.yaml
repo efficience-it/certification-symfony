@@ -25,3 +25,38 @@ questions:
       - { value: "in_array('ROLE_ADMIN', $user->getRoles());", correct: false }
       - { value: "$user->hasRole('ROLE_ADMIN');", correct: false }
     help: 'https://symfony.com/doc/current/security.html#hierarchical-roles'
+  -
+    uuid: 1eebf878-8b98-6f24-b420-99d84c92580c
+    question: 'What is the aim of the security switch_user option?'
+    answers:
+      - { value: 'To let some user be able to switch from one to another.', correct: true }
+      - { value: 'To be able to have several accounts and switch easily.', correct: false }
+      - { value: 'To change the roles of the user easily.', correct: false }
+    help: 'http://symfony.com/doc/current/cookbook/security/impersonating_user.html'
+  -
+    uuid: 1eebf878-8b9b-6940-83e9-99d84c92580c
+    question: 'I am correctly logged in, but I am not fully authenticated, what is the main cause?'
+    answers:
+      - { value: "I'm connected with an API Token", correct: false }
+      - { value: "We're always fully autenticated", correct: false }
+      - { value: 'My User have no roles', correct: true }
+      - { value: "I didn't tick the  Remember me  checkbox", correct: false }
+    help: 'https://symfony.com/doc/current/security.html#roles'
+  -
+    uuid: 1eebf878-8ba1-6458-b8ae-99d84c92580c
+    question: 'Which annotation is valid to check role ?'
+    answers:
+      - { value: '@Security( is_granted( ROLE_ADMIN ) )', correct: true }
+      - { value: '@IsGranted( ROLE_ADMIN )', correct: true }
+      - { value: '@Security( restrict_for( ROLE_ADMIN ) )', correct: false }
+      - { value: '@Security( role( ROLE_ADMIN ) )', correct: false }
+    help: 'https://symfony.com/bundles/SensioFrameworkExtraBundle/current/annotations/security.html'
+  -
+    uuid: 1eebf878-8ba1-64a8-a6c8-99d84c92580c
+    question: 'Which default role exist ?'
+    answers:
+      - { value: IS_AUTHENTICATED_REMEMBERED, correct: true }
+      - { value: IS_AUTHENTICATED_FULLY, correct: true }
+      - { value: IS_AUTHENTICATED_ANONYMOUSLY, correct: true }
+      - { value: IS_NOT_AUTHENTICATED, correct: false }
+    help: 'https://symfony.com/doc/current/components/security/authorization.html#authenticatedvoter'

@@ -6,3 +6,54 @@ questions:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
     help: 'https://learning.mlytics.com/the-internet/http-request-methods/'
+  -
+    uuid: 1eebf878-8b97-64e4-be7c-99d84c92580c
+    question: 'Which HTTP verbs are idempotent ?'
+    answers:
+      - { value: POST, correct: false }
+      - { value: OPTIONS, correct: true }
+      - { value: CONNECT, correct: false }
+      - { value: PATCH, correct: false }
+      - { value: PUT, correct: true }
+      - { value: HEAD, correct: true }
+      - { value: GET, correct: true }
+      - { value: DELETE, correct: true }
+    help: 'https://www.rfc-editor.org/rfc/rfc7231#section-4.2.2 https://en.wikipedia.org/wiki/HTTP#Idempotent_methods_and_web_applications'
+  -
+    uuid: 1eebf878-8b9a-62b6-862c-99d84c92580c
+    question: 'Which HTTP verbs are safe ?'
+    answers:
+      - { value: HEAD, correct: true }
+      - { value: PATCH, correct: false }
+      - { value: DELETE, correct: false }
+      - { value: OPTIONS, correct: true }
+      - { value: LINK, correct: false }
+      - { value: COPY, correct: false }
+      - { value: GET, correct: true }
+      - { value: POST, correct: false }
+      - { value: TRACE, correct: true }
+      - { value: PUT, correct: false }
+    help: "https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Safe_methods"
+  -
+    uuid: 1eebf878-8ba7-6178-b041-99d84c92580c
+    question: 'Which methods are cacheable ?'
+    answers:
+      - { value: GET, correct: true }
+      - { value: HEAD, correct: true }
+      - { value: PUT, correct: false }
+      - { value: PATCH, correct: false }
+      - { value: DELETE, correct: false }
+      - { value: POST, correct: false }
+      - { value: OPTIONS, correct: false }
+      - { value: TRACE, correct: false }
+    help: 'https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html'
+  -
+    uuid: 1eee7739-e2ae-6ad8-9026-4d9d94225af6
+    question: 'What are the methods of DataCollectorInterface ?'
+    answers:
+      - { value: getPosition, correct: false }
+      - { value: getTemplate, correct: false }
+      - { value: collect, correct: true }
+      - { value: getName, correct: true }
+      - { value: getData, correct: false }
+    help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpKernel/DataCollector/DataCollectorInterface.php'

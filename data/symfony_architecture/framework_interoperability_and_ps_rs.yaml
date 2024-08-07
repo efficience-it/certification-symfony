@@ -49,3 +49,364 @@ questions:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php#L251'
+  -
+    uuid: 1eebf878-8b96-6c60-9c85-99d84c92580c
+    question: 'What is true about the PSR-4: Autoloader?'
+    answers:
+      - { value: 'The terminating class name corresponds to a file name ending in .php', correct: true }
+      - { value: 'The autoloader can throw exceptions.', correct: false }
+      - { value: 'Underscores have no special meaning in any portion of the fully qualified class name.', correct: true }
+      - { value: 'The autoloader can raise errors of any level.', correct: false }
+    help: 'https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md'
+  -
+    uuid: 1eebf878-8b97-67d2-89bf-99d84c92580c
+    question: 'What tracking policy has the best performance with large units of work?'
+    answers:
+      - { value: DEFERRED_EXPLICIT, correct: false }
+      - { value: LAZY, correct: false }
+      - { value: DEFERRED_IMPLICIT, correct: false }
+      - { value: NOTIFY, correct: true }
+    help: 'NOTIFY has the best performance characteristics of the 3 policies with larger units of work and a flush() operation is very cheap when nothing has changed.https://www.doctrine-project.org/projects/doctrine-orm/en/2.5/reference/change-tracking-policies.html'
+  -
+    uuid: 1eebf878-8b98-6268-b843-99d84c92580c
+    question: 'What is the default value of the cookie_samesite configuration key'
+    answers:
+      - { value: 'null', correct: true }
+      - { value: strict, correct: false }
+      - { value: none, correct: false }
+      - { value: same_origin, correct: false }
+      - { value: lax, correct: false }
+    help: 'https://symfony.com/doc/current/reference/configuration/framework.html#cookie-samesite'
+  -
+    uuid: 1eebf878-8b98-6e02-89a2-99d84c92580c
+    question: 'When was the Symfony BC promise introduced ?'
+    answers:
+      - { value: '2.6', correct: false }
+      - { value: '3.0', correct: false }
+      - { value: '3.2', correct: false }
+      - { value: '3.1', correct: false }
+      - { value: '2.5', correct: false }
+      - { value: '2.3', correct: true }
+      - { value: '2.9', correct: false }
+      - { value: '3.3', correct: false }
+      - { value: '2.4', correct: false }
+      - { value: '2.1', correct: false }
+      - { value: '2.2', correct: false }
+      - { value: '2.0', correct: false }
+      - { value: '2.7', correct: false }
+      - { value: '2.8', correct: false }
+    help: 'https://symfony.com/doc/current/contributing/code/bc.html'
+  -
+    uuid: 1eebf878-8b99-6636-88fd-99d84c92580c
+    question: 'What is the default value of the router.request_context.scheme parameter?'
+    answers:
+      - { value: http, correct: true }
+      - { value: https, correct: false }
+    help: 'https://symfony.com/doc/current/routing.html#forcing-https-on-generated-urls'
+  -
+    uuid: 1eebf878-8b99-667c-bb41-99d84c92580c
+    question: 'How to find a path associated route ?'
+    answers:
+      - { value: 'by using the following command : php bin/console debug:router-match /blog/my-latest-post', correct: false }
+      - { value: "it's not possible", correct: false }
+      - { value: 'by using the following command : php bin/console debug:router:match /blog/my-latest-post', correct: false }
+      - { value: 'by using the following command : php bin/console router:match /blog/my-latest-post', correct: true }
+    help: 'http://symfony.com/doc/current/routing/debug.html'
+  -
+    uuid: 1eebf878-8b99-683e-a1ef-99d84c92580c
+    question: 'What is PSR-7?'
+    answers:
+      - { value: 'A container interface.', correct: false }
+      - { value: 'Huggable Interface.', correct: false }
+      - { value: 'HTTP message interface.', correct: true }
+      - { value: 'A logger interface.', correct: false }
+    help: 'http://www.php-fig.org/psr/psr-7/'
+  -
+    uuid: 1eebf878-8b99-69a6-9f63-99d84c92580c
+    question: 'What is the main purpose of the built-in Symfony\Bundle\FrameworkBundle\Controller:TemplateController controller?'
+    answers:
+      - { value: 'Provide information about the template being rendered for the profiler.', correct: false }
+      - { value: 'Render templates that do not require a controller, such as static pages.', correct: true }
+      - { value: 'Render custom error templates.', correct: false }
+      - { value: 'Extract translation keys/strings from templates.', correct: false }
+    help: 'https://symfony.com/doc/current/cookbook/templating/render_without_controller.html'
+  -
+    uuid: 1eebf878-8b99-6c80-a373-99d84c92580c
+    question: 'Which PSR described a common interface for reading the system clock, implemented by the Clock component since Symfony 6.2?'
+    answers:
+      - { value: PSR-8, correct: false }
+      - { value: PSR-4, correct: false }
+      - { value: PSR-17, correct: false }
+      - { value: PSR-20, correct: true }
+    help: 'https://www.php-fig.org/psr/psr-20/'
+  -
+    uuid: 1eebf878-8b99-6e38-b500-99d84c92580c
+    question: 'What does the command debug:container router?'
+    answers:
+      - { value: 'Displays information for the service router', correct: true }
+      - { value: 'Displays the configured routes', correct: false }
+    help: 'http://symfony.com/doc/current/book/service_container.html#debugging-services'
+  -
+    uuid: 1eebf878-8b9a-664e-aa65-99d84c92580c
+    question: 'How to register a service in a specific env in php ?'
+    answers:
+      - { value: "use Symfony\\Component\\DependencyInjection\\Attribute\\On; #[on(env: 'dev')] class SomeClass { // ... } // you can apply more than one attribute to the same class: #[on(env: 'dev')] #[on(env: 'test')] class AnotherClass { // ... }`", correct: false }
+      - { value: "use Symfony\\Component\\DependencyInjection\\Attribute\\In; #[in(env: 'dev')] class SomeClass { // ... } // you can apply more than one attribute to the same class: #[in(env: 'dev')] #[in(env: 'test')] class AnotherClass { // ... }<", correct: false }
+      - { value: "use Symfony\\Component\\DependencyInjection\\Attribute\\When; #[When(env: 'dev')] class SomeClass { // ... } // you can apply more than one attribute to the same class: #[When(env: 'dev')] #[When(env: 'test')] class AnotherClass { /", correct: true }
+      - { value: "it's not possible", correct: false }
+    help: 'https://symfony.com/blog/new-in-symfony-5-3-configure-multiple-environments-in-a-single-file'
+  -
+    uuid: 1eebf878-8b9b-63a0-bf34-99d84c92580c
+    question: 'Given the context where the user is redirected to another page, could the original query parameters be maintained?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/controller.html#redirectinghttps://github.com/symfony/symfony/blob/6.3/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php#L141'
+  -
+    uuid: 1eebf878-8b9b-6440-82a7-99d84c92580c
+    question: 'When creating custom loader, which dependency injection tag has to be used?'
+    answers:
+      - { value: router.loader, correct: false }
+      - { value: router.load, correct: false }
+      - { value: routing.load, correct: false }
+      - { value: routing.loader, correct: true }
+    help: 'https://symfony.com/doc/current/reference/dic_tags.html#routing-loader'
+  -
+    uuid: 1eebf878-8b9b-6b48-8681-99d84c92580c
+    question: 'What is PSR-6?'
+    answers:
+      - { value: 'A basic coding standard.', correct: false }
+      - { value: 'A common logger interface.', correct: false }
+      - { value: 'A caching interface.', correct: true }
+      - { value: 'A PHP Doc interface.', correct: false }
+    help: 'http://www.php-fig.org/psr/psr-6/'
+  -
+    uuid: 1eebf878-8b9b-6cba-b8dd-99d84c92580c
+    question: 'What is the tag to register a custom service that extracts messages from a file?'
+    answers:
+      - { value: translator_extractor, correct: false }
+      - { value: translator.extractor, correct: false }
+      - { value: translation_extractor, correct: false }
+      - { value: translation.extractor, correct: true }
+    help: 'http://symfony.com/doc/current/reference/dic_tags.html#translation-extractor'
+  -
+    uuid: 1eebf878-8b9b-6d0a-abf0-99d84c92580c
+    question: 'Which PSR draft is meant to be a joke?'
+    answers:
+      - { value: PSR-8, correct: true }
+      - { value: PSR-0, correct: false }
+      - { value: PSR-12, correct: false }
+      - { value: PSR-9, correct: false }
+    help: 'https://github.com/php-fig/fig-standards/blob/master/proposed/psr-8-hug/psr-8-hug.md'
+  -
+    uuid: 1eebf878-8b9b-6ee0-b5de-99d84c92580c
+    question: 'It is possible to add the support of new databases?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://www.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/supporting-other'
+  -
+    uuid: 1eebf878-8b9c-6296-946c-99d84c92580c
+    question: 'Is it possible to configure multiple environments in a single file?'
+    answers:
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+    help: 'https://symfony.com/blog/new-in-symfony-5-3-configure-multiple-environments-in-a-single-file'
+  -
+    uuid: 1eebf878-8b9c-6476-816f-99d84c92580c
+    question: 'Could the scheme used by the RequestContext be overridden via a parameter?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://github.com/symfony/routing/blob/6.3/RequestContext.php#L292'
+  -
+    uuid: 1eebf878-8b9c-669c-9b9d-99d84c92580c
+    question: "Considering the following code, which assertions are true? $object = $this->entityManager->getReference('AppBundle\\Entity\\User', 1);"
+    answers:
+      - { value: '$object is an instance of Doctrine\ORM\Proxy\Proxy.', correct: true }
+      - { value: '$object is an instance of AppBundle\Entity\User.', correct: true }
+      - { value: '$object is an instance of Doctrine\ORM\Reference.', correct: false }
+      - { value: '$object is an instance of Proxies_CG__\AppBundle\Entity\User', correct: true }
+    help: 'https://www.doctrine-project.org/projects/orm.html'
+  -
+    uuid: 1eebf878-8b9c-6d4a-b7ce-99d84c92580c
+    question: 'What value type is returned by the Symfony\Bundle\FrameworkBundle\Controller\AbstractController::renderView() method?'
+    answers:
+      - { value: 'An instance of Symfony\Component\View\View.', correct: false }
+      - { value: 'An instance of Symfony\Component\HttpFoundation\Response.', correct: false }
+      - { value: 'An instance of Symfony\Component\View\View.', correct: false }
+      - { value: 'An instance of Symfony\Component\BrowserKit\Response.', correct: false }
+      - { value: 'A string.', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/master/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php'
+  -
+    uuid: 1eebf878-8b9c-6eda-8854-99d84c92580c
+    question: 'Could the session.attribute_bag service be used?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/5.4/UPGRADE-6.0.md#frameworkbundle'
+  -
+    uuid: 1eebf878-8b9c-6f2a-b51a-99d84c92580c
+    question: 'What is the tag to use to register your service to be called during the cache clearing process?'
+    answers:
+      - { value: kernel.cache, correct: false }
+      - { value: command.cache_clearer, correct: false }
+      - { value: kernel.cache_clearer, correct: true }
+      - { value: cache.clearer, correct: false }
+      - { value: cache_clearer, correct: false }
+    help: 'http://symfony.com/doc/current/reference/dic_tags.html#kernel-cache-clearer'
+  -
+    uuid: 1eebf878-8ba0-65a8-85df-99d84c92580c
+    question: 'What is the LoggerInterface correct namespace?'
+    answers:
+      - { value: Psr\LoggerInterface, correct: false }
+      - { value: Psr\Log\LoggerInterface, correct: true }
+      - { value: Symfony\Bridge\Monolog\LoggerInterface, correct: false }
+      - { value: Symfony\Bridge\Monolog\Log\LoggerInterface, correct: false }
+    help: 'https://symfony.com/doc/current/logging.html#logging-a-message'
+  -
+    uuid: 1eebf878-8ba0-65ee-8114-99d84c92580c
+    question: 'Using Symfony\Component\ErrorHandler\Debug static class, what is the only method available?'
+    answers:
+      - { value: 'public static function enable()', correct: true }
+      - { value: 'public static function create()', correct: false }
+      - { value: 'public static function load()', correct: false }
+      - { value: 'public static function start()', correct: false }
+      - { value: 'public static function register()', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/master/src/Symfony/Component/ErrorHandler/Debug.php'
+  -
+    uuid: 1eebf878-8ba0-6634-a1f8-99d84c92580c
+    question: 'Using Symfony\Component\ErrorHandler\ErrorHandler static class, what is the only method available?'
+    answers:
+      - { value: 'public static function enable(self $handler = null, bool $replace = true)', correct: false }
+      - { value: 'public static function create(self $handler = null, bool $replace = true)', correct: false }
+      - { value: 'public static function load(self $handler = null, bool $replace = true)', correct: false }
+      - { value: 'public static function start(self $handler = null, bool $replace = true)', correct: false }
+      - { value: 'public static function register(self $handler = null, bool $replace = true)', correct: true }
+    help: 'https://github.com/symfony/error-handler'
+  -
+    uuid: 1eebf878-8ba0-6684-8ff1-99d84c92580c
+    question: 'In order to be able to use render_hinclude(url(...)), we need to add this configuration in ``framework` section:'
+    answers:
+      - { value: 'hinclude: enabled', correct: false }
+      - { value: 'fragments: {path:/_fragment}', correct: false }
+      - { value: 'none of the above', correct: true }
+    help: 'https://symfony.com/doc/current/templating/hinclude.html'
+  -
+    uuid: 1eebf878-8ba0-6a26-88e1-99d84c92580c
+    question: 'According to the PHP Framework Interoperability Group, which PSRs concern best coding practices ?'
+    answers:
+      - { value: PSR-0, correct: false }
+      - { value: PSR-1, correct: true }
+      - { value: PSR-2, correct: true }
+      - { value: PSR-3, correct: false }
+      - { value: PSR-4, correct: false }
+    help: 'https://www.php-fig.org/psr/'
+  -
+    uuid: 1eebf878-8ba0-6d3c-8f31-99d84c92580c
+    question: 'Psr-3 LoggerInterface exposes eight methods to write logs to the eight RFC 5424 levels, which level does not exist ?'
+    answers:
+      - { value: debug, correct: false }
+      - { value: alert, correct: false }
+      - { value: severe, correct: true }
+      - { value: warning, correct: false }
+    help: 'https://www.php-fig.org/psr/psr-3/#5-psrlogloglevel'
+  -
+    uuid: 1eebf878-8ba0-6d82-a2a8-99d84c92580c
+    question: 'Which methods is not in Psr-3'
+    answers:
+      - { value: log, correct: false }
+      - { value: set, correct: true }
+      - { value: dump, correct: true }
+      - { value: print, correct: true }
+    help: 'https://www.php-fig.org/psr/psr-3/#3-psrlogloggerinterface'
+  -
+    uuid: 1eebf878-8ba0-6dd2-be0d-99d84c92580c
+    question: 'In Psr-3 what delimiter is used for placeholder names ?'
+    answers:
+      - { value: '( name )', correct: false }
+      - { value: '[ name ]', correct: false }
+      - { value: '{{ name }}', correct: false }
+      - { value: '{ name }', correct: true }
+    help: 'https://www.php-fig.org/psr/psr-3/#12-message'
+  -
+    uuid: 1eebf878-8ba0-6e18-b0ae-99d84c92580c
+    question: 'Which Psr is about autoloading ?'
+    answers:
+      - { value: Psr-0, correct: true }
+      - { value: Psr-11, correct: false }
+      - { value: Psr-4, correct: true }
+      - { value: Psr-6, correct: false }
+    help: 'https://www.php-fig.org/psr/'
+  -
+    uuid: 1eebf878-8ba0-6e5e-b65e-99d84c92580c
+    question: 'According to Psr-2, Which code is correct ?'
+    answers:
+      - { value: $foo->bar($arg1);, correct: true }
+      - { value: $Foo->bar($arg1);, correct: false }
+      - { value: 'class Foo extends Bar implements FooInterface', correct: true }
+      - { value: 'class foo extends Bar implements FooInterface', correct: false }
+    help: 'https://www.php-fig.org/psr/psr-1/#1-overview'
+  -
+    uuid: 1eebf878-8ba0-6ea4-ae9e-99d84c92580c
+    question: "According to PSR-1, how should methods be declared?"
+    answers:
+      - { value: myMethod();, correct: true }
+      - { value: MyMethod();, correct: false }
+      - { value: my_method();, correct: false }
+      - { value: My_Method();, correct: false }
+    help: 'https://www.php-fig.org/psr/psr-1/'
+  -
+    uuid: 1eebf878-8ba0-6ef4-858f-99d84c92580c
+    question: 'Which Psr is about caching ?'
+    answers:
+      - { value: Psr-0, correct: false }
+      - { value: Psr-6, correct: true }
+      - { value: Psr-16, correct: true }
+      - { value: Psr-1, correct: false }
+      - { value: Psr-2, correct: false }
+    help: 'https://www.php-fig.org/psr/'
+  -
+    uuid: 1eebf878-8ba0-6f3a-861c-99d84c92580c
+    question: 'Which Psr is deprecated now ?'
+    answers:
+      - { value: 'Psr-1 (Basic Coding Standard)', correct: false }
+      - { value: 'Psr-6 (Caching Interface)', correct: false }
+      - { value: 'Psr-0 (Autoloading Standard)', correct: true }
+      - { value: 'Psr-11 (Container Interface)', correct: false }
+    help: 'https://www.php-fig.org/psr/#deprecated'
+  -
+    uuid: 1eebf878-8ba3-685c-af19-99d84c92580c
+    question: "What is the method to create a MicroKernel?"
+    answers:
+      - { value: 'Create an AppKernel and use the Symfony\Component\HttpKernel\MicroKernelTrait trait.', correct: false }
+      - { value: 'Create an AppKernel and use the Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait trait.', correct: false }
+      - { value: 'Create an AppKernel and extends the Symfony\Bundle\FrameworkBundle\Kernel\MicroKernel class.', correct: true }
+      - { value: 'Create an AppKernel and extends the Symfony\Component\HttpKernel\MicroKernel class.', correct: false }
+    help: 'https://symfony.com/doc/current/configuration/micro_kernel_trait.html'
+  -
+    uuid: 1eebf878-8ba3-6a5a-a783-99d84c92580c
+    question: 'Which of the following is not a built-in Symfony standalone component?'
+    answers:
+      - { value: PropertyAccess, correct: false }
+      - { value: EventDispatcher, correct: false }
+      - { value: Mail, correct: true }
+      - { value: ExpressionLanguage, correct: false }
+      - { value: DependencyInjection, correct: false }
+    help: 'https://github.com/symfony/symfony/tree/master/src/Symfony/Component'
+  -
+    uuid: 1eebf878-8ba4-6c98-9944-99d84c92580c
+    question: 'Can I use Twig without using Symfony?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://github.com/twigphp/Twig'
+  -
+    uuid: 1eee7824-fbcf-6738-9026-25c2cfac1525
+    question: 'Which current accepted PHP-FIG PSRs are about coding standard/style?'
+    answers:
+      - { value: PSR-12, correct: true }
+      - { value: PSR-8, correct: false }
+      - { value: PSR-2, correct: false }
+      - { value: PSR-1, correct: true }
+    help: 'https://www.php-fig.org/psr/'

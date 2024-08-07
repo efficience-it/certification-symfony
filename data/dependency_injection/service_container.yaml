@@ -22,3 +22,303 @@ questions:
       - { value: "it doesn't exist", correct: false }
       - { value: 'it allows to configure a service after its instanciation', correct: false }
     help: "https://symfony.com/doc/current/service_container.html"
+  -
+    uuid: 1eebf878-8b96-6fe4-bbf2-99d84c92580c
+    question: 'Could a parameter be removed from a Symfony\Component\DependencyInjection\ParameterBag\ContainerBag?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/DependencyInjection/ParameterBag/ContainerBag.php'
+  -
+    uuid: 1eebf878-8b98-60e2-8300-99d84c92580c
+    question: 'What is the default priority used when adding a new compiler pass?'
+    answers:
+      - { value: '0', correct: true }
+      - { value: '10', correct: false }
+      - { value: '1000', correct: false }
+      - { value: '-255', correct: false }
+      - { value: '100', correct: false }
+    help: 'https://symfony.com/doc/current/components/dependency_injection/compilation.html#controlling-the-pass-ordering https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/DependencyInjection/Compiler/PassConfig.php#L128'
+  -
+    uuid: 1eebf878-8b98-654c-b75e-99d84c92580c
+    question: 'Could the priority of a decorating service be defined?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/service_container/service_decoration.html#decoration-priority'
+  -
+    uuid: 1eebf878-8b98-65d8-89f3-99d84c92580c
+    question: 'Which of the following sentences are true about synthetic services?'
+    answers:
+      - { value: 'Third-party services cannot be registered as synthetic.', correct: false }
+      - { value: 'The kernel service is synthetic.', correct: true }
+      - { value: 'They are injected into the container instead of being created by the container.', correct: true }
+      - { value: 'They cannot be injected into another services.', correct: false }
+    help: 'https://symfony.com/doc/current/service_container/synthetic_services.html'
+  -
+    uuid: 1eebf878-8b98-661e-af6f-99d84c92580c
+    question: 'Could the number of time each environment variables has been resolved be obtained when using ContainerBuilder?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/DependencyInjection/ContainerBuilder.php#L1485'
+  -
+    uuid: 1eebf878-8b98-68b2-8f41-99d84c92580c
+    question: 'Could an EnvPlaceholderParameterBag be merged into another one?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/DependencyInjection/ParameterBag/EnvPlaceholderParameterBag.php#L103'
+  -
+    uuid: 1eebf878-8b98-6ce0-93de-99d84c92580c
+    question: 'Will Autowiring automatically inject dependencies of an autowired service?'
+    answers:
+      - { value: 'Yes, autowiring will find and register all dependencies', correct: false }
+      - { value: 'Yes, if dependencies are explicitly declared as autowired or manually configured.', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/service_container/autowiring.html'
+  -
+    uuid: 1eebf878-8b99-65e6-9c14-99d84c92580c
+    question: 'Could parameters be cleared from a ContainerParameterBag?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/DependencyInjection/ParameterBag/ContainerBag.php'
+  -
+    uuid: 1eebf878-8b99-6884-ba5f-99d84c92580c
+    question: 'Which sentences are true about compiler pass registration ?'
+    answers:
+      - { value: 'When a compiler pass is registered, you can chose the step where it will be executed. 6 steps are available', correct: false }
+      - { value: 'When a compiler pass is registered, you can chose the step where it will be executed. 5 steps are available', correct: false }
+      - { value: 'Compiler pass are automatically registered if they implement CompilerPassInterface and autoconfigure is set to true', correct: true }
+      - { value: 'Compiler pass can be registered in the build method of the Kernel', correct: true }
+      - { value: 'When a compiler pass is registered, you can chose the step where it will be executed. 4 steps are available', correct: false }
+    help: 'https://symfony.com/doc/current/service_container/compiler_passes.html https://symfony.com/doc/current/components/dependency_injection/compilation.html'
+  -
+    uuid: 1eebf878-8b99-68ca-8cdb-99d84c92580c
+    question: 'Which of the following statements are true about the so-called compiler passes?'
+    answers:
+      - { value: 'They check that all registered services definitions are valid and some required global parameters are not missing.', correct: true }
+      - { value: 'They prevent the ContainerBuilder object from being compiled if they detect any circular references in services definitions.', correct: true }
+      - { value: 'They are always triggered on every HTTP requests made to the Symfony application.', correct: false }
+      - { value: 'They perform some optimization operations on a ContainerBuilder instance in order to generate the most efficient PHP code possible.', correct: true }
+      - { value: 'They allow to add, alter or remove any services definitions of a ContainerBuilder object.', correct: true }
+    help: 'https://symfony.com/doc/current/service_container/compiler_passes.html#mainhttps://github.com/symfony/symfony/blob/master/src/Symfony/Component/DependencyInjection/Compiler/PassConfig.php'
+  -
+    uuid: 1eebf878-8b99-691a-a06d-99d84c92580c
+    question: 'Which of the followings are not part of the built-in loaders?'
+    answers:
+      - { value: JsonLoader, correct: true }
+      - { value: CsvLoader, correct: true }
+      - { value: PoFileLoader, correct: false }
+      - { value: MoFileLoader, correct: false }
+      - { value: JsonFileLoader, correct: false }
+      - { value: ArrayLoader, correct: false }
+      - { value: PhpFileLoader, correct: false }
+      - { value: CsvFileLoader, correct: false }
+      - { value: QtFileLoader, correct: false }
+    help: 'https://github.com/symfony/translation/tree/2.8/Loader'
+  -
+    uuid: 1eebf878-8b9a-6266-96a4-99d84c92580c
+    question: 'Is it possible to create a service that is not publicly accessible?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/service_container/alias_private.html#marking-services-as-public-private'
+  -
+    uuid: 1eebf878-8b9a-69be-97e2-99d84c92580c
+    question: 'Is it possible to use a constant in a parameter?'
+    answers:
+      - { value: 'Yes in XML format', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'Yes, in PHP', correct: true }
+      - { value: 'Yes, in the YAML format (thanks to the expression language component)', correct: true }
+    help: 'https://symfony.com/doc/current/configuration.html#constants-as-parameters'
+  -
+    uuid: 1eebf878-8b9a-6a0e-9c3a-99d84c92580c
+    question: 'Can you inject a dependency to a service without passing it to the constructor?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/service_container/injection_types.html'
+  -
+    uuid: 1eebf878-8b9a-6c0c-89ff-99d84c92580c
+    question: 'What is a  Service Configurator  in Symfony?'
+    answers:
+      - { value: "It's a Symfony built-in service that can be obtained as $container->get('configurator')", correct: false }
+      - { value: "There's no such a thing in Symfony's Dependency Injection component.", correct: false }
+      - { value: "It's a feature of the Dependency Injection component that allows to apply some configuration logic to all the services that define a specific tag.", correct: false }
+      - { value: "It's a PHP callable that you can optionally execute to configure a Symfony service after its instantiation.", correct: true }
+    help: 'http://symfony.com/doc/current/service_container/configurators.html'
+  -
+    uuid: 1eebf878-8b9a-6c5c-ac18-99d84c92580c
+    question: 'Could a ParameterBag be frozen?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/DependencyInjection/ParameterBag/FrozenParameterBag.php'
+  -
+    uuid: 1eebf878-8b9b-6030-b99f-99d84c92580c
+    question: 'What is the way to add a loader to the translator?'
+    answers:
+      - { value: '$translator->addArrayLoader(new ArrayLoader());', correct: false }
+      - { value: "$translator->addLoader('array', new ArrayLoader());", correct: true }
+      - { value: '$translator->addLoader(new ArrayLoader());', correct: false }
+      - { value: "$translator->addLoader(new ArrayLoader(), 'array');", correct: false }
+    help: 'https://symfony.com/doc/current/components/translation.html#loading-message-catalogs https://github.com/symfony/translation/blob/master/Translator.php#L103'
+  -
+    uuid: 1eebf878-8b9b-6288-afdc-99d84c92580c
+    question: 'What is the purpose of the autowire configuration flag in a service definition?'
+    answers:
+      - { value: 'It allows to get ride of the a circular reference error for the service.', correct: false }
+      - { value: "It allows implicit dependencies registration based on the service constructor's typehint.", correct: true }
+      - { value: 'It allows the service to be automatically called on some kernel events.', correct: false }
+    help: 'https://symfony.com/doc/current/components/dependency_injection/autowiring.html'
+  -
+    uuid: 1eebf878-8b9c-61b0-ab03-99d84c92580c
+    question: 'Could new parameters be added into a Symfony\Component\DependencyInjection\ParameterBag\ContainerBag?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/DependencyInjection/ParameterBag/ContainerBag.php'
+  -
+    uuid: 1eebf878-8b9d-6330-b506-99d84c92580c
+    question: 'Could service configurators use __invoke() to configure a service?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/service_container/configurators.html#using-the-configurator'
+  -
+    uuid: 1eebf878-8b9d-6826-a51d-99d84c92580c
+    question: 'Could a parameter be removed from a FrozenParameterBag?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/2.3/src/Symfony/Component/DependencyInjection/ParameterBag/FrozenParameterBag.php'
+  -
+    uuid: 1eebf878-8b9d-68bc-8b85-99d84c92580c
+    question: 'Could imports be configured using ContainerConfigurator?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: "https://github.com/symfony/dependency-injection/blob/8126f0be4ff984e4db0140e60917900a53facb49/Loader/Configurator/ContainerConfigurator.php#L68"
+  -
+    uuid: 1eebf878-8b9f-628e-b95e-99d84c92580c
+    question: 'When setting up the container with configuratio XML files and Config component, how to inject my.custome.service ?'
+    answers:
+      - { value: '<argument id= my.custom.service  />', correct: false }
+      - { value: '<argument type= argument  id= my.custom.service  />', correct: false }
+      - { value: '<argument type= service  id= my.custom.service  />', correct: true }
+      - { value: '<service id= my.custom.service  />', correct: false }
+    help: 'https://symfony.com/doc/current/service_container.html#choose-a-specific-service'
+  -
+    uuid: 1eebf878-8b9f-62de-9af3-99d84c92580c
+    question: 'Which types of injection are available in the component?'
+    answers:
+      - { value: constructor, correct: true }
+      - { value: property, correct: true }
+      - { value: setter, correct: true }
+      - { value: immutable-property, correct: false }
+      - { value: immutable-setter, correct: true }
+      - { value: constant, correct: false }
+      - { value: getter, correct: false }
+    help: 'https://symfony.com/doc/current/service_container/injection_types.html'
+  -
+    uuid: 1eebf878-8b9f-636a-8ea3-99d84c92580c
+    question: 'When implementing Command pattern, the use of Service Subscriber is another lazy loading implementation. Which of the following statement is true ?'
+    answers:
+      - { value: 'Your implementation must implement ServiceSubscriberInterface', correct: true }
+      - { value: 'Static method getSubscribedServices shall be implemented and listed services can be indexed with your own keys', correct: true }
+      - { value: 'Static method getSubscribedServices shall be implemented and listed services canot be indexed with your own keys', correct: false }
+      - { value: 'ContainerInterface must be injected in your implementation', correct: true }
+      - { value: 'Service locator is a subset of service container', correct: true }
+    help: 'https://symfony.com/doc/current/service_container/service_subscribers_locators.html#defining-a-service-subscriber'
+  -
+    uuid: 1eebf878-8b9f-63ba-b1d8-99d84c92580c
+    question: 'Which of the following statements are true about autowiring ?'
+    answers:
+      - { value: 'Symfony basic configuration comes with autowire set to true', correct: true }
+      - { value: 'Type-hinting is used to map the correct services from the service container, using type-hinting as service id', correct: true }
+      - { value: 'Autowiring can be used in the __construct() method as well as in all other methods of the service', correct: true }
+      - { value: 'Autowiring can only be used in the __construct() method of the service', correct: false }
+    help: 'https://symfony.com/doc/current/service_container/autowiring.html'
+  -
+    uuid: 1eebf878-8b9f-6400-9572-99d84c92580c
+    question: 'Which of the following factory design pattern are available for service container defintion ?'
+    answers:
+      - { value: 'Static factories', correct: true }
+      - { value: 'Non-Static factories', correct: true }
+      - { value: 'Dynamic factories', correct: false }
+      - { value: 'Invokable factories', correct: true }
+      - { value: 'Clonable factories', correct: false }
+    help: 'https://symfony.com/doc/current/service_container/factories.html'
+  -
+    uuid: 1eebf878-8b9f-648c-b082-99d84c92580c
+    question: 'Using Dependency Injection, what is the correct way to override a service class using ContainerBuilder class?'
+    answers:
+      - { value: "$container->getDefinition('my.service')->setClass('My\\Service\\Class')", correct: true }
+      - { value: "$container->getService('my.service')->setDefinition('My\\Service\\Class')", correct: false }
+      - { value: "$container->getDefinition('my.service')->setService('My\\Service\\Class')", correct: false }
+      - { value: "$container->getService('my.service')->setClass('My\\Service\\Class')", correct: false }
+    help: 'https://symfony.com/doc/current/service_container/definitions.html'
+  -
+    uuid: 1eebf878-8b9f-65f4-aca1-99d84c92580c
+    question: 'Parameters can also contain array values ?'
+    answers:
+      - { value: 'true', correct: true }
+      - { value: 'false', correct: false }
+    help: ''
+  -
+    uuid: 1eebf878-8b9f-670c-beb7-99d84c92580c
+    question: "With default configuration each time you retrieve the service, you'll get the same instance ?"
+    answers:
+      - { value: 'true', correct: true }
+      - { value: 'false', correct: false }
+    help: 'https://symfony.com/doc/current/service_container.html#creating-configuring-services-in-the-container'
+  -
+    uuid: 1eebf878-8b9f-6752-a151-99d84c92580c
+    question: 'What is the correct load() method definition in Symfony\Component\DependencyInjection\Extension\ExtensionInterface?'
+    answers:
+      - { value: 'public function load(array $configs, ContainerBuilder $container)', correct: true }
+      - { value: 'public function load(ContainerBuilder $container, array $configs)', correct: false }
+    help: 'https://symfony.com/doc/current/components/dependency_injection/compilation.html#managing-configuration-with-extensions'
+  -
+    uuid: 1eebf878-8b9f-67a2-ab9f-99d84c92580c
+    question: 'Service parameters can be set at runtime'
+    answers:
+      - { value: 'true', correct: false }
+      - { value: 'false', correct: true }
+    help: 'https://symfony.com/doc/current/service_container.html#service-parameters'
+  -
+    uuid: 1eebf878-8b9f-682e-a048-99d84c92580c
+    question: 'Decorating services can be done in YAML using the decorates key. This prevent original service override and autowire decorated class name with decorator instance'
+    answers:
+      - { value: 'true', correct: true }
+      - { value: 'false', correct: false }
+    help: 'https://symfony.com/doc/current/service_container/service_decoration.html'
+  -
+    uuid: 1eebf878-8ba1-6d72-b87d-99d84c92580c
+    question: "Which injection types are supported by the Symfony's DIC?"
+    answers:
+      - { value: setter, correct: true }
+      - { value: constructor, correct: true }
+      - { value: property, correct: true }
+      - { value: getter, correct: false }
+    help: "https://symfony.com/doc/current/service_container.html"
+  -
+    uuid: 1eebf878-8ba1-6fb6-af5f-99d84c92580c
+    question: 'What is the correct option to add other directories in the translator configuration?'
+    answers:
+      - { value: "framework:translator:paths:- %kernel.project_dir%/translations'", correct: true }
+      - { value: "framework:translator:add_paths:- %kernel.project_dir%/translations'", correct: false }
+      - { value: "framework:translator:custom_directories:- %kernel.project_dir%/translations'", correct: false }
+      - { value: "framework:translator:directories:- %kernel.project_dir%/translations'", correct: false }
+      - { value: "framework:translator:custom_paths:- %kernel.project_dir%/translations'", correct: false }
+    help: 'https://symfony.com/doc/current/reference/configuration/framework.html#reference-translator-paths'
+  -
+    uuid: 1eebf878-8ba2-6056-a6e9-99d84c92580c
+    question: 'When creating a service definition using PHP, could the visibility of the service be changed using Symfony\Component\DependencyInjection\Definition::setPublic($boolean) ?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/c8418254edd0851181da5384bc2f94434ca0570d/src/Symfony/Component/DependencyInjection/Definition.php#L541'

@@ -70,3 +70,272 @@ questions:
       - { value: '1', correct: false }
       - { value: '-1', correct: false }
     help: 'https://www.php.net/manual/en/language.operators.comparison.php'
+  -
+    uuid: 1eebf878-8b97-6494-ae5f-99d84c92580c
+    question: 'Which configuration file format can be used to define PHP constants as parameters?'
+    answers:
+      - { value: php, correct: true }
+      - { value: XML, correct: true }
+      - { value: Annotation, correct: false }
+      - { value: INI, correct: false }
+      - { value: YAML, correct: false }
+    help: 'https://symfony.com/doc/current/configuration.html#constants-as-parameters'
+  -
+    uuid: 1eebf878-8b98-6740-a71f-99d84c92580c
+    question: 'Which of the following is not a predefined PHP variable?'
+    answers:
+      - { value: $http_response_header, correct: false }
+      - { value: $php_errormsg, correct: false }
+      - { value: $_POST, correct: false }
+      - { value: $_GLOBALS, correct: true }
+      - { value: $argc, correct: false }
+    help: 'http://php.net/manual/en/reserved.variables.php'
+  -
+    uuid: 1eebf878-8b99-6316-bfed-99d84c92580c
+    question: 'Which of the following are valid PHP class names ?'
+    answers:
+      - { value: '-MyClass', correct: false }
+      - { value: 123MyClass, correct: false }
+      - { value: myClass, correct: true }
+      - { value: _MyClass, correct: true }
+    help: 'https://www.php.net/manual/en/language.oop5.basic.php'
+  -
+    uuid: 1eebf878-8b9a-6054-a6cb-99d84c92580c
+    question: '$a = (object) [ a  =>  b ]; $b = (object) [ a  =>  c ]; echo $a <=> $b;'
+    answers:
+      - { value: '0', correct: false }
+      - { value: '1', correct: false }
+      - { value: '-1', correct: true }
+    help: 'http://php.net/manual/en/language.operators.comparison.php'
+  -
+    uuid: 1eebf878-8b9a-6428-aa7e-99d84c92580c
+    question: 'Regarding this URI : /example?tags.id=2 What will be the content of $request->query->all() ?'
+    answers:
+      - { value: "[ 'tags.id' => 2 ]", correct: false }
+      - { value: "[ 'tags_id' => 2 ]", correct: true }
+      - { value: "[ 'tags' => ['id' => 2] ]", correct: false }
+    help: 'http://www.php.net/manual/en/language.variables.external.php'
+  -
+    uuid: 1eebf878-8b9a-6d88-9a1d-99d84c92580c
+    question: 'Which major PHP version introduced the « traits » feature?'
+    answers:
+      - { value: 'PHP 5.3', correct: false }
+      - { value: 'PHP 6.0', correct: false }
+      - { value: 'PHP 7.0', correct: false }
+      - { value: 'PHP 5.4', correct: true }
+      - { value: 'PHP 5.6', correct: false }
+      - { value: 'PHP 5.5', correct: false }
+    help: 'http://php.net/manual/en/language.oop5.traits.php'
+  -
+    uuid: 1eebf878-8b9b-6f80-bc80-99d84c92580c
+    question: "Which of the following statements best describes the purpose of PHP's extract() function? This function accepts an array as its first argument."
+    answers:
+      - { value: 'The passed array is populated by any variables in the current scope.', correct: false }
+      - { value: 'A variable is created in the current scope for each element in the given associative array.', correct: true }
+      - { value: "The second argument is used to specify a data type (such as 'string'). All values in the passed array of that type are returned in a new array.", correct: false }
+      - { value: 'Any ZIP files referenced in the passed array are extracted to the current working directory.', correct: false }
+    help: 'https://www.php.net/manual/en/function.extract.php'
+  -
+    uuid: 1eebf878-8b9c-6656-8085-99d84c92580c
+    question: "Which function would best parse the following string by the tab (\\t) and newline (\\n) characters ?$string =  John\\tMark\\nTed\\tLarry ;"
+    answers:
+      - { value: 'explode($string,  \t\n );', correct: false }
+      - { value: 'strtok($string,  \t\n );', correct: true }
+      - { value: 'str_split($string,  \t\n );', correct: false }
+      - { value: 'strstr($string,  \t\n );', correct: false }
+    help: 'https://www.php.net/manual/en/function.strtok.php'
+  -
+    uuid: 1eebf878-8b9c-6a02-9efa-99d84c92580c
+    question: "By default, which of the following request parameters can be used with built-in providers for a login form?"
+    answers:
+      - { value: _remember_me, correct: false }
+      - { value: _token, correct: true }
+      - { value: _user, correct: false }
+      - { value: _password, correct: true }
+      - { value: _passwd, correct: false }
+      - { value: _username, correct: true }
+    help: 'https://symfony.com/doc/current/reference/configuration/security.html#form-login-configuration'
+  -
+    uuid: 1eebf878-8b9d-606a-916d-99d84c92580c
+    question: 'Could the current token be retrieved from Symfony\Component\Security\Core\Security ?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/security.html#securing-other-services'
+  -
+    uuid: 1eebf878-8b9d-61f0-8520-99d84c92580c
+    question: 'What is the signature of the vote() method from VoterInterface?'
+    answers:
+      - { value: 'public function vote(TokenInterface $token, $subject, array $attributes)', correct: true }
+      - { value: 'public function vote(TokenInterface $token, array $attributes, $object)', correct: false }
+      - { value: 'public function vote(TokenInterface $token, $object, array $attributes)', correct: false }
+      - { value: 'public function vote(TokenInterface $token, array $attributes, $subject)', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Security/Core/Authorization/Voter/VoterInterface.php'
+  -
+    uuid: 1eebf878-8b9d-6506-af8c-99d84c92580c
+    question: 'Which class can be used to extracts security errors from a Request?'
+    answers:
+      - { value: AuthenticationUtils, correct: true }
+      - { value: FrameworkUtils, correct: false }
+      - { value: HttpUtils, correct: false }
+      - { value: SecurityUtils, correct: false }
+      - { value: RequestUtils, correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Http/Authentication/AuthenticationUtils.php'
+  -
+    uuid: 1eebf878-8ba0-6756-8594-99d84c92580c
+    question: 'What is the short open tag for PHP?'
+    answers:
+      - { value: '<!', correct: false }
+      - { value: '<%', correct: false }
+      - { value: '<?', correct: true }
+      - { value: '<?=', correct: false }
+    help: 'https://www.php.net/manual/en/language.basic-syntax.phptags.php'
+  -
+    uuid: 1eebf878-8ba0-67a6-ad3b-99d84c92580c
+    question: 'Which of these operators is non-associative?'
+    answers:
+      - { value: '!', correct: false }
+      - { value: '**', correct: false }
+      - { value: '<', correct: true }
+      - { value: and, correct: false }
+    help: 'https://www.php.net/manual/en/language.operators.precedence.php'
+  -
+    uuid: 1eebf878-8ba0-67ec-9eef-99d84c92580c
+    question: 'Since PHP 5.6+, if function foo() is defined in the namespace Myapp\Utils\Bar and your code is in namespace Myapp, what is the correct way to import the foo() function?'
+    answers:
+      - { value: 'use function foo;', correct: false }
+      - { value: 'use Myapp\Utils\Bar\foo;', correct: false }
+      - { value: 'use function Myapp\Utils\Bar\foo;', correct: true }
+      - { value: 'use Utils\Bar\Foo;', correct: false }
+    help: 'https://www.php.net/manual/en/language.namespaces.importing.php'
+  -
+    uuid: 1eebf878-8ba0-6878-9688-99d84c92580c
+    question: 'Which web services are supported natively in PHP?'
+    answers:
+      - { value: 'SOAP and XML-RPC', correct: true }
+      - { value: 'REST and SOAP', correct: false }
+      - { value: 'Corba and XML-RPC', correct: false }
+      - { value: 'XML-RPC and REST', correct: false }
+    help: 'https://www.php.net/manual/en/refs.webservice.php'
+  -
+    uuid: 1eebf878-8ba0-69e0-80a7-99d84c92580c
+    question: 'The ______ keyword is used to indicate an incomplete class or method, which must be further extended and/or implemented in order to be used.'
+    answers:
+      - { value: abstract, correct: true }
+      - { value: final, correct: false }
+      - { value: protected, correct: false }
+      - { value: incomplete, correct: false }
+      - { value: implements, correct: false }
+    help: 'https://www.php.net/manual/en/language.oop5.abstract.php'
+  -
+    uuid: 1eebf878-8ba0-6ab2-b754-99d84c92580c
+    question: 'A closure is a lambda function that is aware of its surrounding context.'
+    answers:
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
+    help: "http://fabien.potencier.org/on-php-5-3-lambda-functions-and-closures.htmlhttps://www.php.net/manual/en/functions.anonymous.php"
+  -
+    uuid: 1eebf878-8ba0-6c6a-b940-99d84c92580c
+    question: 'Declaring class properties or methods as static makes them accessible without needing an instantiation of the class ?'
+    answers:
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
+    help: 'http://php.net/manual/en/language.oop5.static.php'
+  -
+    uuid: 1eebf878-8ba0-6cb0-91ef-99d84c92580c
+    question: 'Which keyword permit to use the late static binding ?'
+    answers:
+      - { value: self, correct: false }
+      - { value: static, correct: true }
+      - { value: parent, correct: false }
+    help: 'http://php.net/manual/en/language.oop5.late-static-bindings.php'
+  -
+    uuid: 1eebf878-8ba1-6b74-9168-99d84c92580c
+    question: 'Which of the following are supported visibilities for class attributes and methods in PHP ?'
+    answers:
+      - { value: Protected, correct: true }
+      - { value: Friend, correct: false }
+      - { value: Private, correct: true }
+      - { value: Public, correct: true }
+      - { value: Global, correct: false }
+    help: 'http://php.net/manual/en/language.oop5.visibility.php'
+  -
+    uuid: 1eebf878-8ba2-622c-b66a-99d84c92580c
+    question: 'What PHP function is used to return an array containing values present in two or more passed arrays?'
+    answers:
+      - { value: array_common, correct: false }
+      - { value: array_union, correct: false }
+      - { value: array_intersect, correct: true }
+      - { value: array_walk, correct: false }
+    help: 'https://php.net/array'
+  -
+    uuid: 1eebf878-8ba2-648e-9eb7-99d84c92580c
+    question: 'What is the SPL?'
+    answers:
+      - { value: 'The Standard PHP Library, a collection of classes and interfaces which provides common data structures, iterators, exceptions and classes to manipulate files. It also provides functions to handle and configure autoload.', correct: true }
+      - { value: 'The Session Provider Library, a collection of functions and internals to provide more advanced ways of dealing with sessions in PHP. It provides means to get more user-agent information, store sessions on various persistence platforms, and tracing options', correct: false }
+      - { value: 'The Sandbox Process Library, an environment designed to run PHP in a completely isolated way to test dangerous or potentially problematic code without risking compromising the rest of the server. I/O operations are completely disabled among other features', correct: false }
+      - { value: 'The Service Priority List, a set of functions to register classes and objects as services and define their loading priority, for performance optimization purposes.', correct: false }
+    help: 'https://www.php.net/manual/en/book.spl.php'
+  -
+    uuid: 1eebf878-8ba3-6154-81ff-99d84c92580c
+    question: 'Is the __call feature enabled by default?'
+    answers:
+      - { value: 'No', correct: true }
+      - { value: 'Yes', correct: false }
+    help: 'http://symfony.com/doc/current/components/property_access/introduction.html#magic-call-method'
+  -
+    uuid: 1eebf878-8ba3-6dc0-bb50-99d84c92580c
+    question: "What is the most recommended way to count the number of occurences of each unique value in the following array?$a=[1,1,2,3,4,4,5,6,6,6,3,2,2,2];"
+    answers:
+      - { value: '$ = array_unique($a);$k = array_fill(0,count($k), 0);$n = array_combine($k, $v);reset($a);for($i =0; $i < count($a); $i++){++$n[current($a)];', correct: false }
+      - { value: '$n = array_count_values($a);', correct: true }
+      - { value: '$n = count($a);', correct: false }
+      - { value: '$n = array_total_values($a);', correct: false }
+      - { value: "$ = array_unique($a);$k = array_fill(0,count($k), 0);$n = array_combine($k, $v);foreach( $a as $i){++$n[$i];}", correct: false }
+    help: 'https://php.net/arrays https://php.net/manual/en/function.array-count-values.php https://php.net/manual/en/function.count.php'
+  -
+    uuid: 1eebf878-8ba3-6f78-8a74-99d84c92580c
+    question: 'Which interface should be implemented when putting together all the required parts (token, provider, listener) for a custom authentication system ?'
+    answers:
+      - { value: Symfony\Component\Security\Guard\GuardAuthenticatorInterface, correct: false }
+      - { value: Symfony\Component\Security\Core\Authentication\AuthenticationManagerInterface, correct: false }
+      - { value: Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListenerInterface, correct: false }
+      - { value: Symfony\Bundle\SecurityBundle\DependencyInjection\Security\Factory\SecurityFactoryInterface, correct: true }
+    help: 'https://symfony.com/doc/2.7/security/custom_authentication_provider.html#the-factoryhttps://github.com/symfony/symfony/blob/2.7/src/Symfony/Bundle/SecurityBundle/DependencyInjection/Security/Factory/SecurityFactoryInterface.php'
+  -
+    uuid: 1eebf878-8ba4-6dc4-8bee-99d84c92580c
+    question: 'Which encryption means is used to secure credentials when authenticating an HTTP request with the HTTP Basic mechanism?'
+    answers:
+      - { value: 'Asymmetric-key encryption', correct: false }
+      - { value: 'Hashing (md5, sha1, etc.)', correct: false }
+      - { value: 'Credentials are not encrypted and transmitted in plain text in the HTTP request.', correct: false }
+      - { value: 'Symmetric-key encryption', correct: false }
+      - { value: 'Credentials are not encrypted but only Base64 encoded.', correct: true }
+    help: 'https://tools.ietf.org/html/rfc7235https://en.wikipedia.org/wiki/Basic_access_authentication'
+  -
+    uuid: 1eebf878-8ba4-6e14-8119-99d84c92580c
+    question: 'Can interfaces inherit from other interfaces in PHP?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'http://php.net/interfaces'
+  -
+    uuid: 1eebf878-8ba4-6f04-8c84-99d84c92580c
+    question: 'How do you remove an element with the key 0 from the array $numbers?'
+    answers:
+      - { value: '$numbers[0] = null;', correct: false }
+      - { value: 'unset($numbers[0]);', correct: true }
+      - { value: array_pop($numbers);, correct: false }
+      - { value: array_shift($numbers);, correct: false }
+    help: 'https://php.net/manual/en/function.unset.php'
+  -
+    uuid: 1eebf878-8ba6-6868-a41d-99d84c92580c
+    question: 'Since which PHP version can you use generators ?'
+    answers:
+      - { value: 'PHP 5.3', correct: false }
+      - { value: 'PHP 7.0', correct: false }
+      - { value: 'PHP 5.6', correct: false }
+      - { value: 'PHP 5.4', correct: false }
+      - { value: 'PHP 5.5', correct: true }
+    help: 'http://www.php.net/ChangeLog-5.php'

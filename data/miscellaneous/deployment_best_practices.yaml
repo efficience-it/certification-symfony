@@ -44,3 +44,13 @@ questions:
       - { value: 'Using a Platform as a Service (PaaS) like platform.sh', correct: true }
       - { value: 'built scripts like Capistrano ...', correct: true }
     help: 'https://symfony.com/doc/current/deployment.html#how-to-deploy-a-symfony-application-1'
+  -
+    uuid: 1eebf878-8baa-604e-b924-99d84c92580c
+    question: 'Which of the following files of a typical Symfony Standard Edition package must not be deployed on a production server?'
+    answers:
+      - { value: composer.lock, correct: false }
+      - { value: bin/console, correct: false }
+      - { value: vendor/autoload.php, correct: false }
+      - { value: web/app_dev.php, correct: true }
+      - { value: web/config.php, correct: true }
+    help: 'https://symfony.com/doc/current/deployment.html'

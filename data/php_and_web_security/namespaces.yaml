@@ -41,3 +41,10 @@ questions:
       - { value: Symfony\Component, correct: true }
       - { value: Symfony\Plugin, correct: false }
     help: 'https://github.com/symfony/symfony/tree/master/src/Symfony'
+  -
+    uuid: 1eebf878-8ba0-6832-a790-99d84c92580c
+    question: 'It is possible to import all classes from a namespace in PHP.'
+    answers:
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
+    help: 'https://www.php.net/manual/en/language.namespaces.importing.php'

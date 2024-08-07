@@ -7,3 +7,157 @@ questions:
       - { value: 'No', correct: false }
       - { value: 'May be', correct: false }
     help: 'https://symfony.com/doc/current/components/filesystem.html#mirror'
+  -
+    uuid: 1eebf878-8b97-6dcc-8979-99d84c92580c
+    question: 'What is returned by the Symfony\Component\Filesystem\Filesystem::mkdir method if the directory has been successfully created ?'
+    answers:
+      - { value: 'The FileSystem object', correct: false }
+      - { value: 'A string with the directory path', correct: false }
+      - { value: Nothing, correct: true }
+      - { value: 'true or false', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Filesystem/Filesystem.php#L91'
+  -
+    uuid: 1eebf878-8b98-6d26-9152-99d84c92580c
+    question: "Is the following code valid? $mirror('/srv/app', '/srv/bar', null, ['copy_on_windows' => true]);"
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: "https://symfony.com/doc/current/components/filesystem.html#mirror"
+  -
+    uuid: 1eebf878-8b99-60d2-94e5-99d84c92580c
+    question: 'What is the Symfony\Component\Filesystem\Filesystem method to check if the given path is absolute ?'
+    answers:
+      - { value: "$fs->isAbsolutePath('/tmp');", correct: true }
+      - { value: "$fs->absolutePath('/tmp');", correct: false }
+      - { value: "$fs->checkAbsolutePath('/tmp');", correct: false }
+      - { value: "$fs->isAbsolute('/tmp');", correct: false }
+    help: 'http://symfony.com/doc/current/components/filesystem.html#isabsolutepath'
+  -
+    uuid: 1eebf878-8b99-628a-b149-99d84c92580c
+    question: 'When using mirror(...), could files instead of links be mirrored on Windows?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/components/filesystem.html#mirror'
+  -
+    uuid: 1eebf878-8b9a-613a-bac4-99d84c92580c
+    question: 'What is the Symfony\Component\Filesystem\Filesystem method to dump contents to a file?'
+    answers:
+      - { value: "$fs->dumpToFile('file.txt', 'Hello World');", correct: false }
+      - { value: "$fs->file('file.txt', 'Hello World');", correct: false }
+      - { value: "$fs->dump('file.txt', 'Hello World');", correct: false }
+      - { value: "$fs->dumpFile('file.txt', 'Hello World');", correct: true }
+    help: 'http://symfony.com/doc/current/components/filesystem.html#dumpfile'
+  -
+    uuid: 1eebf878-8b9a-67de-9c30-99d84c92580c
+    question: "Is the following code valid?     $fs = (new Filesystem())->mirror('/srv/app', '/srv/bar', null, ['delete' => true]);"
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Filesystem/Filesystem.php#L527'
+  -
+    uuid: 1eebf878-8b9c-6386-8337-99d84c92580c
+    question: "Which exception is thrown when the origin file does not exist when you use theSymfony\\Component\\Filesystem\\Filesystem::copy method ?"
+    answers:
+      - { value: FileException, correct: false }
+      - { value: FileNotExistException, correct: false }
+      - { value: FileErrorException, correct: false }
+      - { value: FileNotFoundException, correct: true }
+      - { value: FilesystemException, correct: false }
+    help: 'http://symfony.com/doc/current/components/filesystem.html#copy'
+  -
+    uuid: 1eebf878-8b9c-6426-87bc-99d84c92580c
+    question: 'Which of the following are Filesystem methods?'
+    answers:
+      - { value: copy, correct: true }
+      - { value: delete, correct: false }
+      - { value: move, correct: false }
+      - { value: chown, correct: true }
+      - { value: makePathRelative, correct: true }
+      - { value: symlink, correct: true }
+      - { value: mirror, correct: true }
+    help: 'https://symfony.com/doc/current/components/filesystem.html#usage'
+  -
+    uuid: 1eebf878-8b9d-615a-828d-99d84c92580c
+    question: 'Which methods belong to Symfony\Component\Finder\Finder class ?'
+    answers:
+      - { value: size, correct: true }
+      - { value: notPath, correct: true }
+      - { value: type, correct: true }
+      - { value: notName, correct: true }
+      - { value: notSize, correct: true }
+      - { value: owner, correct: false }
+      - { value: name, correct: true }
+      - { value: path, correct: true }
+    help: 'https://symfony.com/doc/current/components/finder.html'
+  -
+    uuid: 1eebf878-8ba1-6c96-bc52-99d84c92580c
+    question: 'What is the first argument of the Symfony\Component\Config\FileLocator::locate method?'
+    answers:
+      - { value: 'The name of the directory to look for.', correct: false }
+      - { value: 'The name of the configuration value to look for.', correct: false }
+      - { value: 'The type of file to look for.', correct: false }
+      - { value: 'The name of the file to look for.', correct: true }
+    help: 'https://symfony.com/doc/current/components/config/resources.html#locating-resources'
+  -
+    uuid: 1eebf878-8ba1-6d2c-819c-99d84c92580c
+    question: 'Is the following code valid?use Symfony\Component\Filesystem\Path;$path = new Path(''/srv/app/var/cache'');'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://github.com/symfony/filesystem/blob/7.0/Path.php#L813'
+  -
+    uuid: 1eebf878-8ba2-6a24-adfc-99d84c92580c
+    question: 'Could FileLocator::locate() returns only the first occurrence?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/components/config/resources.html'
+  -
+    uuid: 1eebf878-8ba3-6302-9bf6-99d84c92580c
+    question: 'What is the correct signature of the Symfony\Component\Filesystem\Filesystem::copy method?'
+    answers:
+      - { value: 'public function copy($originFile, $targetFile, $overwriteNewerFiles)', correct: false }
+      - { value: 'public function copy($targetFile, $originFile, $overwriteNewerFiles)', correct: false }
+      - { value: 'public function copy($originFile, $targetFile, $overwriteNewerFiles = false)', correct: true }
+      - { value: 'public function copy($targetFile, $originFile, $overwriteNewerFiles = false)', correct: false }
+    help: 'https://symfony.com/doc/current/components/filesystem.html#copyhttps://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Filesystem/Filesystem.php#L39'
+  -
+    uuid: 1eebf878-8ba3-64ec-8a4c-99d84c92580c
+    question: 'What is the definition of an Adapter?'
+    answers:
+      - { value: 'It implements the actual caching mechanism to store the information.', correct: true }
+      - { value: 'It is a single unit of information stored as a key/value pair.', correct: false }
+      - { value: 'It is a logical repository of cache items.', correct: false }
+    help: 'https://symfony.com/doc/current/components/cache.html#generic-caching-psr-6'
+  -
+    uuid: 1eebf878-8ba3-66a4-9a98-99d84c92580c
+    question: 'Which exception is thrown when the origin file does not exist when you use the Symfony\Component\Filesystem\Filesystem::copy method ?'
+    answers:
+      - { value: FileException, correct: false }
+      - { value: FilesystemException, correct: false }
+      - { value: FileNotExistException, correct: false }
+      - { value: FileErrorException, correct: false }
+      - { value: FileNotFoundException, correct: true }
+    help: 'https://symfony.com/doc/current/components/filesystem.html#copyhttps://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Filesystem/Filesystem.php'
+  -
+    uuid: 1eebf878-8ba4-6374-985a-99d84c92580c
+    question: 'With the Finder, which method is correct to exclude a logs directory from matching ?'
+    answers:
+      - { value: "$finder->in(__DIR__)->ignoreDirectory('logs');", correct: false }
+      - { value: "$finder->in(__DIR__)->ignoreFiles('logs');", correct: false }
+      - { value: "$finder->in(__DIR__)->notMatch('logs');", correct: false }
+      - { value: "$finder->in(__DIR__)->exclude('logs');", correct: true }
+      - { value: "$finder->in(__DIR__)->ignoreDir('logs');", correct: false }
+      - { value: "$finder->in(__DIR__)->excludeDir('logs');", correct: false }
+      - { value: "$finder->in(__DIR__)->ignore('logs');", correct: false }
+    help: 'https://symfony.com/doc/current/components/finder.html#location'
+  -
+    uuid: 1eebf878-8ba6-6e62-8ca9-99d84c92580c
+    question: 'By default, the Finder ignores popular VCS files, what is the method to use them ?'
+    answers:
+      - { value: $finder->enableVCSFiles();, correct: false }
+      - { value: $finder->ignoreVCS(false);, correct: true }
+      - { value: "$finder->useTypes(array('vcs' => true);", correct: false }
+      - { value: "$finder->ignoreFiles(array('vcs' => false));", correct: false }
+    help: 'https://symfony.com/doc/current/components/finder.html#files-or-directories'

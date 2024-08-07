@@ -18,3 +18,28 @@ questions:
       - { value: security.checker, correct: false }
       - { value: security.decision_checker, correct: false }
     help: "https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Core/Authorization/AuthorizationChecker.php"
+  -
+    uuid: 1eebf878-8b9a-60ea-b72d-99d84c92580c
+    question: 'When using the new Authenticator-based Security, does isGranted() will work on anonymous users ?'
+    answers:
+      - { value: 'Yes, It will always return true', correct: false }
+      - { value: 'No, It will throw an exception', correct: false }
+      - { value: 'Yes, It will always return false', correct: true }
+    help: 'https://symfony.com/doc/current/security.html#adding-support-for-unsecured-access-i-e-anonymous-users'
+  -
+    uuid: 1eebf878-8b9a-6cac-9a99-99d84c92580c
+    question: 'Could the authorization to access a resource be checked from within Symfony\Component\Security\Core\Security?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: "https://symfony.com/doc/current/security.html#securing-other-services"
+  -
+    uuid: 1eebf878-8ba2-64de-a54b-99d84c92580c
+    question: 'What is the type of the top-level service that checks authorization?'
+    answers:
+      - { value: Symfony\Component\Security\Core\Authorization\CheckerInterface, correct: false }
+      - { value: Symfony\Component\Security\Core\Authorization\VoterInterface, correct: false }
+      - { value: Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface, correct: false }
+      - { value: Symfony\Component\Security\Core\Authorization\Voter\VoterInterface, correct: false }
+      - { value: Symfony\Component\Security\Core\Security, correct: true }
+    help: 'https://symfony.com/doc/current/security.html#securing-other-services https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Core/Security.php'

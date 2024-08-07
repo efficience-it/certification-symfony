@@ -34,3 +34,27 @@ questions:
       - { value: 'to set the disposition of the file (inline or attachement)', correct: false }
       - { value: 'to set the size of the file', correct: false }
     help: 'https://symfony.com/doc/current/controller.html'
+  -
+    uuid: 1eebf878-8b9a-65ae-978b-99d84c92580c
+    question: 'Which are the valid ways of caching a Response based not only on the URI but also the value of the Accept-Encoding and User-Agent request headers?'
+    answers:
+      - { value: "$response->setVary(['Accept-Encoding', 'User-Agent']);", correct: true }
+      - { value: "$response->headers->set('Vary', ['Accept-Encoding', 'User-Agent']);", correct: true }
+      - { value: 'This is the default behavior', correct: false }
+      - { value: "$response->headers->set('Vary', 'Accept-Encoding');$response->headers->set('Vary', 'User-Agent', false);", correct: false }
+      - { value: "$response->setVary('Accept-Encoding, User-Agent');", correct: false }
+      - { value: "$response->headers->set('Vary', 'Accept-Encoding');$response->headers->set('Vary', 'User-Agent');", correct: false }
+      - { value: "$response->setVary('Accept-Encoding');$response->setVary('User-Agent', false);", correct: false }
+      - { value: "$response->headers->set('Vary', 'Accept-Encoding, User-Agent');", correct: false }
+      - { value: 'This is not possible without calling a reverse proxy', correct: false }
+      - { value: "$response->setVary('Accept-Encoding');$response->setVary('User-Agent');", correct: true }
+    help: "https://symfony.com/doc/current/http_cache/cache_vary.html"
+  -
+    uuid: 1eebf878-8b9f-60e0-becf-99d84c92580c
+    question: 'Which class may be extended by your controllers?'
+    answers:
+      - { value: Symfony\Bundle\FrameworkBundle\Controller\AbstractController, correct: true }
+      - { value: Symfony\Component\FrameworkBundle\Controller\AbstractController, correct: false }
+      - { value: Symfony\Bundle\HttpBundle\Controller\AbstractController, correct: false }
+      - { value: Symfony\Component\MvcBundle\Controller\AbstractController, correct: false }
+    help: 'https://symfony.com/doc/current/controller.html#the-base-controller-classes-services'

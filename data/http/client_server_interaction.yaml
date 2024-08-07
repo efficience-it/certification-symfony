@@ -15,3 +15,49 @@ questions:
       - { value: 'a 406 response code', correct: false }
       - { value: 'a 422 response code', correct: false }
     help: 'https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.24'
+  -
+    uuid: 1eebf878-8b98-64b6-97b1-99d84c92580c
+    question: 'What is the format of the Media-Type value inside Content-Type and Accept headers?'
+    answers:
+      - { value: 'type  /  subtype *( OWS  ;  OWS parameter )', correct: true }
+      - { value: 'type ** subtype *( OWS  ;  OWS parameter )', correct: false }
+      - { value: 'type + subtype *( OWS  ;  OWS parameter )', correct: false }
+    help: 'https://tools.ietf.org/html/rfc7231#section-3.1.1.1'
+  -
+    uuid: 1eebf878-8b98-6812-9467-99d84c92580c
+    question: 'Could a response that use the must-understand directive be stored if the cache does not understand the directive?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#directives'
+  -
+    uuid: 1eebf878-8b98-6ede-ba3e-99d84c92580c
+    question: 'Which status code will be returned if a proxy detect that a client must be authenticated to gain network access?'
+    answers:
+      - { value: '508', correct: false }
+      - { value: '510', correct: false }
+      - { value: '404', correct: false }
+      - { value: '511', correct: true }
+      - { value: '506', correct: false }
+    help: 'https://datatracker.ietf.org/doc/html/rfc6585#section-6 https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/511'
+  -
+    uuid: 1eebf878-8b99-6a78-a694-99d84c92580c
+    question: 'Is the following header value valid? Expires: - 7 hours'
+    answers:
+      - { value: 'No', correct: true }
+      - { value: 'Yes', correct: false }
+    help: "https://datatracker.ietf.org/doc/html/rfc7234#section-5.3https://datatracker.ietf.org/doc/html/rfc7231#section-7.1.1.1https://developer.mozilla.org/en/docs/Web/HTTP/Headers/Expires"
+  -
+    uuid: 1eebf878-8b9b-64e0-aa3d-99d84c92580c
+    question: 'Is the Safe header considered as a secure mechanism?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://datatracker.ietf.org/doc/html/rfc8674#section-3s'
+  -
+    uuid: 1eebf878-8b9d-6650-8082-99d84c92580c
+    question: 'Could a stale response be marked as reusable when an origin server responds with and error (500, 502, 503 or 504)?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://datatracker.ietf.org/doc/html/rfc5861#section-4'

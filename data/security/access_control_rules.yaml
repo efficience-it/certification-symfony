@@ -51,3 +51,27 @@ questions:
       - { value: 'every case', correct: true }
       - { value: none, correct: false }
     help: 'https://symfony.com/doc/current/security/access_control.html#securing-by-an-expression'
+  -
+    uuid: 1eebf878-8ba8-6ac8-83cc-99d84c92580c
+    question: 'Symfony creates an instance of RequestMatcher for each access_control entry, which determines whether or not a given access control should be used on this request. Wich options are use for matching ?'
+    answers:
+      - { value: path, correct: true }
+      - { value: 'ip or ips', correct: true }
+      - { value: port, correct: true }
+      - { value: host, correct: true }
+      - { value: methods, correct: true }
+      - { value: request_matcher, correct: true }
+      - { value: attributes, correct: true }
+      - { value: route, correct: true }
+      - { value: domain, correct: false }
+      - { value: url, correct: false }
+      - { value: user_id, correct: false }
+    help: 'https://symfony.com/doc/current/security/access_control.html#1-matching-options'
+  -
+    uuid: 1eee7804-148f-612c-9026-b35e86785063
+    question: 'What does the affirmative strategy of AccessDecisionManager do?'
+    answers:
+      - { value: 'Grant access as soon as there is one voter granting access.', correct: true }
+      - { value: 'Only grant access if none of the voters has denied access.', correct: false }
+      - { value: 'Grant access if there are more voters granting access than there are denying.', correct: false }
+    help: 'https://symfony.com/doc/current/security/voters.html#changing-the-access-decision-strategy'

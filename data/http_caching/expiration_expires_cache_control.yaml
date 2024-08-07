@@ -60,7 +60,7 @@ questions:
     help: 'https://tools.ietf.org/html/rfc2616#page-79'
   -
     uuid: 1eebf878-8ba6-6ac0-b4bc-99d84c92580c
-    question: "Which headers/directives will be ignored by a proxy if Expires,s-maxage and max-age are all present in a response ?"
+    question: "Which headers/directives will be ignored by a proxy ifExpires,s-maxageandmax-ageare all present in a response ?"
     answers:
       - { value: Expires, correct: true }
       - { value: max-age, correct: true }
@@ -75,3 +75,19 @@ questions:
       - { value: 'Caching systems will favor the Cache-Control header field over the Expires field to cache the response.', correct: true }
       - { value: 'Caching systems will favor the Expires header field over the Cache-Control field to cache the response.', correct: false }
     help: 'https://tools.ietf.org/html/rfc2616#page-79'
+  -
+    uuid: 1eebf878-8b9e-66ae-9202-99d84c92580c
+    question: 'According to HTTP/1.1 what is the max value for Expires ?'
+    answers:
+      - { value: 'one year', correct: true }
+      - { value: 'one month', correct: false }
+      - { value: 'one week', correct: false }
+      - { value: 'There is not limit', correct: false }
+    help: 'https://symfony.com/doc/current/http_cache/expiration.html#expiration-with-the-expires-header'
+  -
+    uuid: 1eebf878-8ba9-6cb6-b7db-99d84c92580c
+    question: "The Expires header's value must contain the number of seconds the response should be cached."
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://symfony.com/doc/6.0/http_cache/expiration.html#expiration-with-the-expires-header'

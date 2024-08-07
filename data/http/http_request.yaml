@@ -1,0 +1,54 @@
+questions:
+  -
+    uuid: 1eebf878-8b9c-6962-878c-99d84c92580c
+    question: 'What is a sub request?'
+    answers:
+      - { value: 'A sub request serves to render just one small portion of a page instead of a full page.', correct: true }
+      - { value: 'A sub request serves to create HTTP cache headers.', correct: false }
+      - { value: 'A sub request is a request from a HTTP reverse proxy.', correct: false }
+      - { value: 'A sub request is a request used in tests.', correct: false }
+    help: 'http://symfony.com/doc/current/components/http_kernel.html#sub-requests'
+  -
+    uuid: 1eebf878-8ba0-6166-9951-99d84c92580c
+    question: 'Which of these HTTP headers does not exist?'
+    answers:
+      - { value: Control-Cache, correct: true }
+      - { value: Cache-Modifier, correct: true }
+      - { value: Expires, correct: false }
+      - { value: Last-Modified, correct: false }
+      - { value: Cache-Control, correct: false }
+    help: 'https://github.com/for-GET/know-your-http-well/blob/master/headers.md'
+  -
+    uuid: 1eebf878-8ba0-6562-a6f1-99d84c92580c
+    question: 'Which of the following HTTP headers can be used by the server to the client to exchange informations about content negotiation ?'
+    answers:
+      - { value: Accept-Charset, correct: true }
+      - { value: Content-Encoding, correct: false }
+      - { value: Content-Language, correct: false }
+      - { value: 'Accept-*', correct: true }
+      - { value: Content-Type, correct: false }
+    help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation'
+  -
+    uuid: 1eebf878-8ba5-62e2-b66a-99d84c92580c
+    question: 'Should the must-understand directive be coupled with no-store for fallback behavior?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#directives'
+  -
+    uuid: 1eebf878-8ba6-6bec-a463-99d84c92580c
+    question: 'Could a cache performance optimization (such as pre-fetching) be used with a safe method?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://tools.ietf.org/html/rfc7231#section-4.2.1'
+  -
+    uuid: 1eed57e5-423c-6ace-89a0-d7541cb78d02
+    question: 'How to access $_FILES data when using a Symfony\Component\HttpFoundation\Request $request object?'
+    answers:
+      - { value: $request->file, correct: false }
+      - { value: request->getFileData(), correct: false }
+      - { value: $request->getFilesData(), correct: false }
+      - { value: $request->getFiles(), correct: false }
+      - { value: $request->files, correct: true }
+    help: 'http://symfony.com/doc/current/components/http_foundation.html#accessing-request-data'

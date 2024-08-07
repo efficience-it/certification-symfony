@@ -1,0 +1,8 @@
+questions:
+  -
+    uuid: 1eebf878-8b9c-6246-a3c3-99d84c92580c
+    question: 'The Expires header\'s value must contain the number of seconds the response should be cached.'
+    answers:
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
+    help: 'https://symfony.com/doc/current/http_cache/expiration.html#expiration-with-the-expires-header'

@@ -7,3 +7,21 @@ questions:
       - { value: 404.html.twig, correct: false }
       - { value: twig.404.html.twig, correct: false }
     help: 'https://symfony.com/doc/current/controller/error_pages.html#overriding-the-default-error-templates'
+  -
+    uuid: 1eebf878-8ba4-65f4-a1e9-99d84c92580c
+    question: 'Which file would you create to customize Error Page 404 ?'
+    answers:
+      - { value: templates/TwigBundle/Exception/error404.html.twig, correct: false }
+      - { value: templates/bundles/TwigBundle/Exception/error404.html.twig, correct: true }
+      - { value: templates/bundles/TwigBundle/Exception/404error.html.twig, correct: false }
+      - { value: templates/TwigBundle/Exception/404error.html.twig, correct: false }
+      - { value: templates/bundles/TwigBundle/Exception/error.html.twig, correct: false }
+      - { value: templates/TwigBundle/Exception/error.html.twig, correct: false }
+    help: 'https://symfony.com/doc/current/controller/error_pages.html#overriding-the-default-error-templates'
+  -
+    uuid: 1eebf878-8ba7-6902-9ed6-99d84c92580c
+    question: 'While overriding twig error page, which of error.html.twig and error500.html.twig will be rendered if there is a 403 status code in the response ?'
+    answers:
+      - { value: error500.html.twig, correct: false }
+      - { value: error.html.twig, correct: true }
+    help: 'https://symfony.com/doc/current/controller/error_pages.html#overriding-the-default-error-templates'

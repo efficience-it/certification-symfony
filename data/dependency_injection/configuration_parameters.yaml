@@ -33,3 +33,76 @@ questions:
       - { value: 'Translate all log messages in the default locale.', correct: false }
       - { value: "Log a message when Symfony doesn't find a translation for the given locale.", correct: true }
     help: 'https://symfony.com/doc/current/reference/configuration/framework.html#logging'
+  -
+    uuid: 1eebf878-8b97-61c4-b7c2-99d84c92580c
+    question: 'What are the correct ways to parse the 1983-07-01 date into an DateTime object?'
+    answers:
+      - { value: "Yaml::parse('1983-07-01', 32)", correct: false }
+      - { value: "Yaml::parse('1983-07-01', Yaml::PARSE_DATETIME)", correct: true }
+      - { value: "Yaml::parse('1983-07-01', true)", correct: false }
+      - { value: "Yaml::parse('1983-07-01', false)", correct: false }
+      - { value: "Yaml::parse('1983-07-01')", correct: true }
+      - { value: "Yaml::parse('1983-07-01', Yaml::DATETIME)", correct: false }
+    help: 'https://symfony.com/doc/current/components/yaml.html#date-handling https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Yaml/Yaml.php'
+  -
+    uuid: 1eebf878-8b98-6c4a-af97-99d84c92580c
+    question: 'Which methods don''t belong to Symfony\Component\Config\Definition\Builder\ExprBuilder?'
+    answers:
+      - { value: else, correct: true }
+      - { value: ifInteger, correct: true }
+      - { value: thenSet, correct: true }
+      - { value: thenValid, correct: true }
+      - { value: ifEmpty, correct: true }
+      - { value: ifArray, correct: false }
+      - { value: then, correct: false }
+      - { value: ifString, correct: false }
+    help: 'https://symfony.com/doc/current/components/config/definition.html#validation-rules'
+  -
+    uuid: 1eebf878-8b9d-6556-bb01-99d84c92580c
+    question: 'Which of the following are validation rules provided by Symfony\Component\Config\Definition\Builder\ExprBuilder?'
+    answers:
+      - { value: ifInArray(), correct: true }
+      - { value: ifString(), correct: true }
+      - { value: ifNull(), correct: true }
+      - { value: ifArray(), correct: true }
+      - { value: always(), correct: true }
+      - { value: ifTrue(), correct: true }
+      - { value: never(), correct: false }
+      - { value: ifNotNull(), correct: false }
+      - { value: ifNotInArray(), correct: true }
+    help: 'https://symfony.com/doc/current/components/config/definition.html#validation-rules'
+  -
+    uuid: 1eebf878-8b9e-6e60-b63b-99d84c92580c
+    question: 'Which of these configuration node types are available?'
+    answers:
+      - { value: scalar, correct: true }
+      - { value: array, correct: true }
+      - { value: enum, correct: true }
+      - { value: string, correct: false }
+    help: 'https://symfony.com/doc/current/components/config/definition.html#node-type'
+  -
+    uuid: 1eebf878-8b9e-6eb0-9f6e-99d84c92580c
+    question: 'Which of these methods are existing?'
+    answers:
+      - { value: useAttributeAsKey(), correct: true }
+      - { value: isRequired(), correct: true }
+      - { value: cannotBeEmpty(), correct: true }
+      - { value: setDefaultValue(), correct: false }
+      - { value: setValidation(), correct: false }
+    help: 'https://symfony.com/doc/current/components/config/definition.html'
+  -
+    uuid: 1eebf878-8ba2-634e-8082-99d84c92580c
+    question: "Is the following code valid?$value = Yaml::parse(file_get_contents('/path/to/file.yml'));"
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'http://symfony.com/doc/current/components/yaml/introduction.html#reading-yaml-files'
+  -
+    uuid: 1eebf878-8ba3-6406-a1e6-99d84c92580c
+    question: 'What is the 2nd argument of Symfony\Component\Config\ConfigCacheFactory::cache method ?'
+    answers:
+      - { value: 'A boolean to set the debug mode', correct: false }
+      - { value: 'An array of options', correct: false }
+      - { value: 'A callback executed if the cache has to be refreshed', correct: true }
+      - { value: 'The resource filename', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/2.7/src/Symfony/Component/Config/ConfigCacheFactory.php'

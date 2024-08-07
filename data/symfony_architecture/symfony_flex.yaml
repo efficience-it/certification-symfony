@@ -7,3 +7,105 @@ questions:
       - { value: templates/bundles/TwigBundle/Exception/error500.html.twig, correct: false }
       - { value: src/Controller/ExceptionController, correct: false }
     help: 'https://symfony.com/doc/current/controller/error_pages.html#overriding-the-default-error-templates'
+  -
+    uuid: 1eebf878-8b9d-6cc2-b85f-99d84c92580c
+    question: 'Using FrameworkBundle configuration, what is the correct path to fill proxies IP?'
+    answers:
+      - { value: trusted_proxies, correct: true }
+      - { value: proxies_trusted, correct: false }
+      - { value: proxies, correct: false }
+      - { value: proxies_list, correct: false }
+    help: 'https://symfony.com/doc/current/reference/configuration/framework.html#trusted-proxies'
+  -
+    uuid: 1eebf878-8b9d-6db2-92c7-99d84c92580c
+    question: 'What is the prefix of environment variables used by Symfony?'
+    answers:
+      - { value: APP__, correct: true }
+      - { value: APP--, correct: false }
+      - { value: SYMFONY__, correct: false }
+      - { value: SF__, correct: false }
+      - { value: SYMFONY-, correct: false }
+      - { value: SF-, correct: false }
+    help: 'https://symfony.com/doc/current/configuration.html#configuration-based-on-environment-variables'
+  -
+    uuid: 1eebf878-8b9d-6e02-bf48-99d84c92580c
+    question: 'According to Symfony best practices, ____ is/are located in _____ file/folder.'
+    answers:
+      - { value: 'templates, /', correct: true }
+      - { value: 'Controller, src/', correct: true }
+      - { value: 'services, config/services.yaml', correct: true }
+      - { value: 'routes, config/routes.yaml', correct: true }
+      - { value: 'templates, src/', correct: false }
+      - { value: 'assets, public/', correct: false }
+      - { value: 'services, src/Resources/services.yaml', correct: false }
+      - { value: 'translations, Resources/translations/', correct: false }
+    help: 'https://symfony.com/doc/current/best_practices.html#use-the-default-directory-structure'
+  -
+    uuid: 1eebf878-8b9d-6e52-9ff9-99d84c92580c
+    question: 'Where can you find the file `form_table_layout.html.twig` ?'
+    answers:
+      - { value: 'In Twig Bundle', correct: false }
+      - { value: 'In Twig Bridge', correct: true }
+      - { value: 'In FrameworkExtraBundle', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Bridge/Twig/Resources/views/Form/form_table_layout.html.twig'
+  -
+    uuid: 1eebf878-8b9d-6fba-847c-99d84c92580c
+    question: 'Arguments are resolved before calling the Controller ?'
+    answers:
+      - { value: 'yes', correct: true }
+      - { value: 'no', correct: false }
+    help: 'https://symfony.com/doc/current/components/http_kernel.html#the-workflow-of-a-request'
+  -
+    uuid: 1eebf878-8b9e-600a-90cc-99d84c92580c
+    question: 'What is/are the recommended way to create a new Symfony web application'
+    answers:
+      - { value: 'Symfony installer', correct: false }
+      - { value: 'composer create-project symfony/skeleton my_project_name', correct: true }
+      - { value: 'composer new-project symfony/skeleton my_project_name', correct: false }
+      - { value: 'php bin/console new-project my_project_name', correct: false }
+      - { value: 'symfony new my_project_name --full', correct: true }
+    help: 'https://symfony.com/doc/7.1/setup.html#creating-symfony-applications'
+  -
+    uuid: 1eebf878-8b9e-6050-bd8d-99d84c92580c
+    question: 'Using Flex is mandatory since Symfony 4.0'
+    answers:
+      - { value: 'False', correct: true }
+      - { value: 'True', correct: false }
+    help: 'https://symfony.com/doc/4.0/setup/flex.html#upgrading-existing-applications-to-flex'
+  -
+    uuid: 1eebf878-8ba4-64dc-9656-99d84c92580c
+    question: 'Which of the following values are available to define a boolean element in YAML ?'
+    answers:
+      - { value: 'true', correct: true }
+      - { value: '0', correct: false }
+      - { value: '1', correct: false }
+      - { value: 'false', correct: true }
+    help: 'http://symfony.com/doc/current/components/yaml/yaml_format.html#booleans'
+  -
+    uuid: 1eebf878-8ba6-6570-8a58-99d84c92580c
+    question: 'Does the order of the controller arguments matter when mapping route parameters to controller arguments?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'http://symfony.com/doc/current/book/controller.html#route-parameters-as-controller-arguments'
+  -
+    uuid: 1eebf878-8ba6-6fc0-91b4-99d84c92580c
+    question: 'If an exception occurs while executing a console command, will you see the details of the exception in your log files?'
+    answers:
+      - { value: 'Yes. The log file will depend on the environment where you execute the commands (prod.log, dev.log, etc.', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'Yes, but only if your command extends from the abstract ExceptionAwareCommand class.', correct: false }
+    help: "https://symfony.com/doc/3.4/console.html#logging-command-errors"
+  -
+    uuid: 1eebf878-8ba7-668c-b033-99d84c92580c
+    question: 'What are the requirements your system needs to run Symfony?'
+    answers:
+      - { value: 'You need to have at least version 2.6.21 of libxml', correct: false }
+      - { value: 'PHP tokenizer needs to be enabled', correct: true }
+      - { value: 'mbstring functions need to be enabled', correct: false }
+      - { value: 'JSON needs to be enabled', correct: false }
+      - { value: 'ctype needs to be enabled', correct: true }
+      - { value: 'php.ini needs to have the date.timezone setting', correct: false }
+      - { value: 'You need to have the PHP-XML module installed', correct: false }
+      - { value: 'PHP needs to be a minimum version of PHP 5.5.9', correct: true }
+    help: 'https://symfony.com/doc/current/reference/requirements.html'

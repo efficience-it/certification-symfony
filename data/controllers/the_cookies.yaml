@@ -1,0 +1,36 @@
+questions:
+  -
+    uuid: 1eebf878-8b98-6f6a-bfd0-99d84c92580c
+    question: 'Could a Cookie be created from a string?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/components/http_foundation.html#setting-cookies'
+  -
+    uuid: 1eebf878-8b9a-687e-a7e3-99d84c92580c
+    question: 'How can one add a cookie named foo with value bar in a Response?'
+    answers:
+      - { value: "$request->headers->set('foo', 'bar');", correct: false }
+      - { value: "$response->headers->setCookie(new Cookie('foo', 'bar'));", correct: true }
+      - { value: "$request->get('cookie')->set('foo', 'bar');", correct: false }
+      - { value: "$request->getCookies()->set('foo', 'bar');", correct: false }
+    help: 'http://symfony.com/doc/current/components/http_foundation/introduction.html#setting-cookies'
+  -
+    uuid: 1eebf878-8b9a-6f90-9ab9-99d84c92580c
+    question: 'How to get a cookie from a $request object?'
+    answers:
+      - { value: "$request->headers->get('key', 'default value');", correct: false }
+      - { value: "$request->getCookies->get('key', 'default value');", correct: false }
+      - { value: "$request->cookies->get('key', 'default value');", correct: true }
+      - { value: "$request->get('cookie')->get('key', 'default value');", correct: false }
+    help: 'http://symfony.com/doc/current/components/http_foundation/introduction.html#setting-cookies'
+  -
+    uuid: 1eebf878-8ba3-62bc-bb29-99d84c92580c
+    question: 'How to access $_COOKIE data when using a Symfony\Component\HttpFoundation\Request $request object?'
+    answers:
+      - { value: $request->cookies, correct: true }
+      - { value: $request->getCookie(), correct: false }
+      - { value: $request->getCookies(), correct: false }
+      - { value: $request->cookie, correct: false }
+      - { value: $request->getCookieData(), correct: false }
+    help: 'http://symfony.com/doc/current/components/http_foundation.html#accessing-request-data'
