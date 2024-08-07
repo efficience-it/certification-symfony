@@ -64,11 +64,11 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 ## Routing
 - [Configuration (YAML, XML, PHP & attributes/annotations)](data/routing/configuration_yamlxmlphp_and_attributes_annotations.yaml)
 - Restrict URL parameters
-- Set default values to URL parameters
+- [Set default values to URL parameters](data/routing/set_default_values_to_url_parameters.yaml)
 - [Generate URL parameters](data/routing/generate_url_parameters.yaml)
-- Trigger redirects
+- [Trigger redirects](data/routing/trigger_redirects.yaml)
 - Special internal routing attributes
-- Domain name matching
+- [Domain name matching](data/routing/domain_name_matching.yaml)
 - [Conditional request matching](data/routing/conditional_request_matching.yaml)
 - [HTTP methods matching](data/routing/http_methods_matching.yaml)
 - [User's locale guessing](data/routing/user_s_locale_guessing.yaml)
@@ -157,11 +157,11 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 ## Automated Tests
 - Unit tests with PHPUnit
 - Functional tests with PHPUnit
-- Client object
-- Crawler object
+- [Client object](data/automated_tests/client_object.yaml)
+- [Crawler object](data/automated_tests/crawler_object.yaml)
 - [Profiler object](data/automated_tests/profiler_object.yaml)
 - [Framework objects access](data/automated_tests/framework_objects_access.yaml)
-- Client configuration
+- [Client configuration](data/automated_tests/client_configuration.yaml)
 - Request and response objects introspection
 - [PHPUnit bridge](data/automated_tests/php_unit_bridge.yaml)
 - Handling legacy deprecated code

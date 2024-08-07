@@ -19,3 +19,48 @@ questions:
       - { value: _locale, correct: true }
       - { value: _route, correct: false }
     help: 'https://symfony.com/doc/current/routing.html#special-parameters'
+  -
+    uuid: 1eebf878-8b99-61f4-bf74-99d84c92580c
+    question: 'How is it possible to generate absolute URLs from the Console?'
+    answers:
+      - { value: 'The host is automatically known by Symfony, there is no need to specify it in CLI.', correct: false }
+      - { value: 'By specifying the host parameter in the Twig function url().', correct: false }
+      - { value: "By running $this->getContainer()->get('router')->getContext()->setHost('example.org');", correct: true }
+      - { value: 'By overloading the parameter router.request_context.host in the configuration.', correct: true }
+    help: 'https://symfony.com/doc/current/routing.html#generating-urls-in-commands'
+  -
+    uuid: 1eebf878-8b9a-691e-8fde-99d84c92580c
+    question: 'Which exception is thrown when a Route defined with /page/{foo}/{foo} cannot be compiled?'
+    answers:
+      - { value: LogicException, correct: true }
+      - { value: RouteCompilationException, correct: false }
+      - { value: InvalidRouteCompilationContextException, correct: false }
+      - { value: InvalidArgumentException, correct: false }
+      - { value: RuntimeException, correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Routing/RouteCompiler.php#L43'
+  -
+    uuid: 1eebf878-8ba0-6fc6-8cb0-99d84c92580c
+    question: 'What variable can be used as controller argument to get the name of the route name?'
+    answers:
+      - { value: $_route, correct: true }
+      - { value: $_controller, correct: false }
+      - { value: $_method, correct: false }
+      - { value: $_action, correct: false }
+    help: 'https://symfony.com/doc/current/routing.html#getting-the-route-name-and-parameters'
+  -
+    uuid: 1eebf878-8ba1-60a2-996e-99d84c92580c
+    question: 'How to generate absolute URL for a given route in controller ?'
+    answers:
+      - { value: 'By using UrlGeneratorInterface::ABSOLUTE_URL as third parameter for generateUrl', correct: true }
+      - { value: 'generateUrl generate absolute URL by default', correct: false }
+      - { value: $this->generateAbsoluteUrl(), correct: false }
+    help: 'https://symfony.com/doc/current/routing.html#generating-urls-in-controllers'
+  -
+    uuid: 1eebf878-8ba8-651e-beaf-99d84c92580c
+    question: 'Which class permit to generate Url in command, service and to check that a route exist ?'
+    answers:
+      - { value: PathGeneratorInterface, correct: false }
+      - { value: UrlGenerator, correct: false }
+      - { value: UrlGeneratorInterface, correct: true }
+      - { value: PathGenerator, correct: false }
+    help: 'https://symfony.com/doc/6.4/routing.html#generating-urls-in-services'

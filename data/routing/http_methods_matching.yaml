@@ -9,3 +9,30 @@ questions:
       - { value: "framework.http_method_override option is true and{{ form_start(form, {'method': 'PUT'}) }}", correct: true }
       - { value: "framework.http_method_override option is true and$form = $this->createForm(TotoType::class, $toto, ['method' => 'PUT', ]);", correct: true }
     help: 'https://symfony.com/doc/6.4/routing.html#matching-http-methods'
+  -
+    uuid: 1eebf878-8b9a-6004-ac79-99d84c92580c
+    question: 'Which information is used to store a response that uses the must-understand directive, so it can be stored if the cache understand the directive?'
+    answers:
+      - { value: 'The value of the Etag directive', correct: false }
+      - { value: 'The value of the Expires directive', correct: false }
+      - { value: 'The value of the Last-Modified directive', correct: false }
+      - { value: 'The status code', correct: true }
+    help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control#directives'
+  -
+    uuid: 1eebf878-8ba1-6016-beaf-99d84c92580c
+    question: 'Using XML, how to ensure that a route is accessed via HTTPS?'
+    answers:
+      - { value: 'schemes= https ', correct: true }
+      - { value: 'https= true ', correct: false }
+      - { value: 'protocol= https ', correct: false }
+      - { value: 'ensure= https ', correct: false }
+    help: 'https://symfony.com/doc/current/routing.html#forcing-https-on-generated-urls'
+  -
+    uuid: 1eebf878-8ba1-6214-83d0-99d84c92580c
+    question: 'How to force a secure area to use the HTTPS protocol in the security config?'
+    answers:
+      - { value: 'access_control: { path: ^/secure, requires_channel: https }', correct: true }
+      - { value: 'access_control: { path: ^/secure, use_https: true }', correct: false }
+      - { value: 'access_control: { path: ^/secure, always_use_https: true }', correct: false }
+      - { value: 'access_control: { path: ^/secure, schemes: [https] }', correct: false }
+    help: 'https://symfony.com/doc/current/security/force_https.html'
