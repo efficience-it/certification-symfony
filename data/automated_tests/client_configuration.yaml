@@ -1,0 +1,10 @@
+questions:
+  -
+    uuid: 1eebf878-8b99-6a32-bedc-99d84c92580c
+    question: 'What is the goal of calling disallowMockingUnknownTypes() when creating a stub or mock?'
+    answers:
+      - { value: 'To throw an Exception if the class does not exist.', correct: false }
+      - { value: 'To throw an Exception if the class is not a native PHP class.', correct: false }
+      - { value: 'To throw an Exception if the class or the interface does not exist.', correct: true }
+      - { value: 'To throw an Exception if the interface does not exist.', correct: false }
+    help: 'https://github.com/sebastianbergmann/phpunit-mock-objects/blob/6.1.2/src/Generator.php#L114-L139'

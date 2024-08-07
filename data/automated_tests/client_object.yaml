@@ -1,0 +1,22 @@
+questions:
+  -
+    uuid: 1eebf878-8b9e-6258-a139-99d84c92580c
+    question: 'Using PHPUnit, which method allows to specify a mock response on second call?'
+    answers:
+      - { value: $mock->expects($this->at(1)), correct: true }
+      - { value: $mock->expects($this->at(2)), correct: false }
+      - { value: $mock->expects($this->exactly(2)), correct: false }
+      - { value: $mock->expects($this->on(2)), correct: false }
+    help: 'https://phpunit.de/manual/6.5/en/test-doubles.html'
+  -
+    uuid: 1eebf878-8b9e-6488-884a-99d84c92580c
+    question: 'Using Symfony\Component\BrowserKit\Client which of these methods can be called?'
+    answers:
+      - { value: back(), correct: true }
+      - { value: forward(), correct: true }
+      - { value: insulate(), correct: true }
+      - { value: restart(), correct: true }
+      - { value: followRedirect(), correct: true }
+      - { value: reload(), correct: true }
+      - { value: next(), correct: false }
+    help: 'https://github.com/symfony/browser-kit/blob/master/AbstractBrowser.php'
