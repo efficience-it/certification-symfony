@@ -20,10 +20,10 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 ## HTTP
 - [Client / Server interaction](data/http/client_server_interaction.yaml)
 - [Status codes](data/http/status_codes.yaml)
-- HTTP request
+- [HTTP request](data/http/http_request.yaml)
 - [HTTP response](data/http/http_response.yaml)
 - [HTTP methods](data/http/http_methods.yaml)
-- Cookies
+- [Cookies](data/http/cookies.yaml)
 - Caching
 - [Content negotiation](data/http/content_negotiation.yaml)
 - [Language detection](data/http/language_detection.yaml)
@@ -35,14 +35,14 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 - [Components](data/symfony_architecture/components.yaml)
 - Bridges
 - [Code organization](data/symfony_architecture/code_organization.yaml)
-- Request handling
+- [Request handling](data/symfony_architecture/request_handling.yaml)
 - Exception handling
 - [Event dispatcher and kernel events](data/symfony_architecture/event_dispatcher_and_kernel_events.yaml)
 - [Official best practices](data/symfony_architecture/official_best_practices.yaml)
 - [Release management](data/symfony_architecture/release_management.yaml)
 - Backward compatibility promise
 - [Deprecations best practices](data/symfony_architecture/deprecations_best_practices.yaml)
-- Framework overloading
+- [Framework overloading](data/symfony_architecture/framework_overloading.yaml)
 - [Release management and roadmap schedule](data/symfony_architecture/release_management_and_roadmap_schedule.yaml)
 - [Framework interoperability and PSRs](data/symfony_architecture/framework_interoperability_and_ps_rs.yaml)
 - [Naming conventions](data/symfony_architecture/naming_conventions.yaml)
@@ -52,14 +52,14 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 - [The base AbstractController class](data/controllers/the_base_abstract_controller_class.yaml)
 - [The request](data/controllers/the_request.yaml)
 - [The response](data/controllers/the_response.yaml)
-- The cookies
-- The session
+- [The cookies](data/controllers/the_cookies.yaml)
+- [The session](data/controllers/the_session.yaml)
 - [The flash messages](data/controllers/the_flash_messages.yaml)
 - [HTTP redirects](data/controllers/http_redirects.yaml)
-- Internal redirects
+- [Internal redirects](data/controllers/internal_redirects.yaml)
 - [Generate 404 pages](data/controllers/generate404_pages.yaml)
 - File upload
-- Built-in internal controllers
+- [Built-in internal controllers](data/controllers/built_in_internal_controllers.yaml)
 
 ## Routing
 - [Configuration (YAML, XML, PHP & attributes/annotations)](data/routing/configuration_yamlxmlphp_and_attributes_annotations.yaml)
@@ -77,17 +77,17 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 ## Templating with Twig
 - [Twig syntax up to 3.3 version](data/templating_with_twig/twig_syntax_up_to33_version.yaml)
 - [Auto escaping](data/templating_with_twig/auto_escaping.yaml)
-- Template inheritance
+- [Template inheritance](data/templating_with_twig/template_inheritance.yaml)
 - [Global variables](data/templating_with_twig/global_variables.yaml)
 - [Filters and functions](data/templating_with_twig/filters_and_functions.yaml)
-- Template includes
-- Loops and conditions
+- [Template includes](data/templating_with_twig/template_includes.yaml)
+- [Loops and conditions](data/templating_with_twig/loops_and_conditions.yaml)
 - [URLs generation](data/templating_with_twig/ur_ls_generation.yaml)
 - [Controller rendering](data/templating_with_twig/controller_rendering.yaml)
 - [Translations and pluralization](data/templating_with_twig/translations_and_pluralization.yaml)
 - [String interpolation](data/templating_with_twig/string_interpolation.yaml)
-- Assets management
-- Debugging variables
+- [Assets management](data/templating_with_twig/assets_management.yaml)
+- [Debugging variables](data/templating_with_twig/debugging_variables.yaml)
 
 ## Forms
 - [Forms creation](data/forms/forms_creation.yaml)
@@ -96,7 +96,7 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 - [Forms rendering with Twig](data/forms/forms_rendering_with_twig.yaml)
 - [Forms theming](data/forms/forms_theming.yaml)
 - [CSRF protection](data/forms/csrf_protection.yaml)
-- Handling file upload
+- [Handling file upload](data/forms/handling_file_upload.yaml)
 - [Built-in form types](data/forms/built_in_form_types.yaml)
 - [Data transformers](data/forms/data_transformers.yaml)
 - [Form events](data/forms/form_events.yaml)
@@ -109,7 +109,7 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 - [Validation groups](data/data_validation/validation_groups.yaml)
 - [Group sequence](data/data_validation/group_sequence.yaml)
 - [Custom callback validators](data/data_validation/custom_callback_validators.yaml)
-- Violations builder
+- [Violations builder](data/data_validation/violations_builder.yaml)
 
 ## Dependency Injection
 - [Service container](data/dependency_injection/service_container.yaml)
@@ -126,7 +126,7 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 ## Security
 - [Authentication](data/security/authentication.yaml)
 - [Authorization](data/security/authorization.yaml)
-- Configuration
+- [Configuration](data/security/configuration.yaml)
 - [Providers](data/security/providers.yaml)
 - [Firewalls](data/security/firewalls.yaml)
 - [Users](data/security/users.yaml)
@@ -137,7 +137,7 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 - [Voters and voting strategies](data/security/voters_and_voting_strategies.yaml)
 
 ## HTTP Caching
-- Cache types (browser, proxies and reverse-proxies)
+- [Cache types (browser, proxies and reverse-proxies)](data/http_caching/cache_types_browser_proxies_and_reverse_proxies.yaml)
 - [Expiration (Expires, Cache-Control)](data/http_caching/expiration_expires_cache_control.yaml)
 - [Validation (ETag, Last-Modified)](data/http_caching/validation_e_tag_last_modified.yaml)
 - Client side caching
@@ -155,7 +155,7 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 - [Verbosity levels](data/console/verbosity_levels.yaml)
 
 ## Automated Tests
-- Unit tests with PHPUnit
+- [Unit tests with PHPUnit](data/automated_tests/unit_tests_with_php_unit.yaml)
 - Functional tests with PHPUnit
 - [Client object](data/automated_tests/client_object.yaml)
 - [Crawler object](data/automated_tests/crawler_object.yaml)
@@ -167,12 +167,12 @@ Each Category and Sub Category have questions, with one or more valid answers. I
 - Handling legacy deprecated code
 
 ## Miscellaneous
-- Configuration (including DotEnv and ExpressionLanguage components)
+- [Configuration (including DotEnv and ExpressionLanguage components)](data/miscellaneous/configuration_including_dot_env_and_expression_language_components.yaml)
 - Error handling
 - [Code debugging](data/miscellaneous/code_debugging.yaml)
 - [Deployment best practices](data/miscellaneous/deployment_best_practices.yaml)
 - [Cache, Process and Serializer components](data/miscellaneous/cache_process_and_serializer_components.yaml)
-- Messenger component
+- [Messenger component](data/miscellaneous/messenger_component.yaml)
 - [Mime and Mailer components](data/miscellaneous/mime_and_mailer_components.yaml)
 - [Filesystem and Finder components](data/miscellaneous/filesystem_and_finder_components.yaml)
 - [Lock component](data/miscellaneous/lock_component.yaml)
