@@ -36,16 +36,16 @@ questions:
     answers:
       - { value: '$x = new stdClass;', correct: true }
       - { value: "(object) array('property1' => 1, 'property2' => 'b');", correct: true }
-      - { value: "(object) null; // same as above", correct: true }
+      - { value: '(object) null; // same as above', correct: true }
       - { value: "(object) 'a';", correct: true }
     help: 'https://www.php.net/manual/en/language.oop5.basic.php'
   -
     uuid: 1eee6d8c-bb3e-6298-9026-3709308913cb
     question: 'Which assertion is true if Child extends Test, and the Test class contains static public function getNew() { return new static;}.'
     answers:
-      - { value: "Test::getNew() instanceof Test", correct: true }
-      - { value: "Child::getNew() instanceof Child", correct: true }
-      - { value: "new Test() !== new (new Test())", correct: true }
+      - { value: 'Test::getNew() instanceof Test', correct: true }
+      - { value: 'Child::getNew() instanceof Child', correct: true }
+      - { value: 'new Test() !== new (new Test())', correct: true }
     help: 'https://www.php.net/manual/en/language.oop5.basic.php'
   -
     uuid: 1eee6d9e-e2fa-6b08-9026-f34ae7ce27f7
@@ -143,7 +143,7 @@ questions:
     help: 'https://php.net/manual/fr/book.reflection.php'
   -
     uuid: 1eebf878-8ba6-6f7a-b2b7-99d84c92580c
-    question: "What is true about composite primary keys?"
+    question: 'What is true about composite primary keys?'
     answers:
       - { value: 'The @Id annotation must be used on more than one column.', correct: true }
       - { value: 'An auto increment strategy can be used for one of the key using the @GeneratedValue annotation.', correct: true }
@@ -152,7 +152,7 @@ questions:
     help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/basic-mapping.html#composite-keys'
   -
     uuid: 1eebf878-8baa-6300-a5f4-99d84c92580c
-    question: "Does the orphanRemoval attribute work with a Many-to-One association ?"
+    question: 'Does the orphanRemoval attribute work with a Many-to-One association ?'
     answers:
       - { value: 'No', correct: true }
       - { value: 'Yes', correct: false }

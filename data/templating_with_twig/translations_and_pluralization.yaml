@@ -23,15 +23,15 @@ questions:
     question: 'What is the recommended option of loader to use in translation ?'
     answers:
       - { value: '.yaml: YAML', correct: true }
-      - { value: ".xlf: XLIFF file", correct: true }
-      - { value: ".php: PHP file", correct: false }
-      - { value: ".csv: CSV file", correct: false }
-      - { value: ".json: JSON file", correct: false }
-      - { value: ".ini: INI file", correct: false }
+      - { value: '.xlf: XLIFF file', correct: true }
+      - { value: '.php: PHP file', correct: false }
+      - { value: '.csv: CSV file', correct: false }
+      - { value: '.json: JSON file', correct: false }
+      - { value: '.ini: INI file', correct: false }
       - { value: '.dat, .res: ICU resource bundle', correct: false }
       - { value: '.mo: Machine object format;', correct: false }
       - { value: '.po: Portable object format', correct: false }
-      - { value: ".qt: QT Translations TS XML file", correct: false }
+      - { value: '.qt: QT Translations TS XML file', correct: false }
     help: 'https://symfony.com/doc/current/translation.html#translation-resource-file-names-and-locations'
   -
     uuid: 1eedb9b3-b85c-644a-9b4b-11bcc7d3fb25

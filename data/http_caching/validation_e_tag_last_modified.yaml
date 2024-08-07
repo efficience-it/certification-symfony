@@ -59,7 +59,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: "https://httpwg.org/specs/rfc7234.html#cache-response-directive.proxy-revalidate"
+    help: 'https://httpwg.org/specs/rfc7234.html#cache-response-directive.proxy-revalidate'
   -
     uuid: 1eebf878-8ba4-6ba8-a1b1-99d84c92580c
     question: 'Could the If-Match etag be transformed to a weak one?'

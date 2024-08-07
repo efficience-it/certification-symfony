@@ -24,7 +24,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: "https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/RedirectResponse.php#L42"
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/RedirectResponse.php#L42'
   -
     uuid: 1eebf878-8b98-618c-b12d-99d84c92580c
     question: 'Which of the following are valid Symfony response classes extending the base Symfony\Component\HttpFoundation\Response class?'
@@ -53,11 +53,11 @@ questions:
     question: 'Given a response that should be sent with a 304 status code, which methods can be used to set the status code?'
     answers:
       - { value: "$response->setStatusCode(304, 'Not Modified')", correct: true }
-      - { value: $response->setStatusCode(304), correct: true }
-      - { value: $response->setIsNotModified(), correct: false }
-      - { value: $response->setStatus(304), correct: false }
+      - { value: '$response->setStatusCode(304)', correct: true }
+      - { value: '$response->setIsNotModified()', correct: false }
+      - { value: '$response->setStatus(304)', correct: false }
       - { value: "$response->set(['status_code' => 304])", correct: false }
-      - { value: $response->setNotModified(), correct: true }
+      - { value: '$response->setNotModified()', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Response.php'
   -
     uuid: 1eebf878-8b9f-616c-87fe-99d84c92580c

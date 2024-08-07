@@ -95,7 +95,7 @@ questions:
       - { value: 'Yes. The log file will depend on the environment where you execute the commands (prod.log, dev.log, etc.', correct: true }
       - { value: 'No', correct: false }
       - { value: 'Yes, but only if your command extends from the abstract ExceptionAwareCommand class.', correct: false }
-    help: "https://symfony.com/doc/3.4/console.html#logging-command-errors"
+    help: 'https://symfony.com/doc/current/console.html#logging-command-errors'
   -
     uuid: 1eebf878-8ba7-668c-b033-99d84c92580c
     question: 'What are the requirements your system needs to run Symfony?'
