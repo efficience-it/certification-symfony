@@ -38,3 +38,12 @@ questions:
       - { value: 'true if in debug mode', correct: true }
       - { value: 'false', correct: false }
     help: 'https://symfony.com/doc/current/templates.html#the-app-global-variable'
+  -
+    uuid: 1eebf878-8b98-6862-a729-99d84c92580c
+    question: 'When twig is used as a standalone library, which global variables are always available in templates?'
+    answers:
+      - { value: _context, correct: true }
+      - { value: app, correct: false }
+      - { value: _self, correct: true }
+      - { value: _charset, correct: true }
+    help: 'https://twig.symfony.com/doc/3.x/templates.html#global-variables'
