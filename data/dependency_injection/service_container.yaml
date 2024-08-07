@@ -21,7 +21,7 @@ questions:
       - { value: 'it allows to work with service definitions', correct: true }
       - { value: "it doesn't exist", correct: false }
       - { value: 'it allows to configure a service after its instanciation', correct: false }
-    help: "https://symfony.com/doc/current/service_container.html"
+    help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1eebf878-8b96-6fe4-bbf2-99d84c92580c
     question: 'Could a parameter be removed from a Symfony\Component\DependencyInjection\ParameterBag\ContainerBag?'
@@ -201,7 +201,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: "https://github.com/symfony/dependency-injection/blob/8126f0be4ff984e4db0140e60917900a53facb49/Loader/Configurator/ContainerConfigurator.php#L68"
+    help: 'https://github.com/symfony/dependency-injection/blob/8126f0be4ff984e4db0140e60917900a53facb49/Loader/Configurator/ContainerConfigurator.php#L68'
   -
     uuid: 1eebf878-8b9f-628e-b95e-99d84c92580c
     question: 'When setting up the container with configuratio XML files and Config component, how to inject my.custome.service ?'
@@ -304,7 +304,7 @@ questions:
       - { value: constructor, correct: true }
       - { value: property, correct: true }
       - { value: getter, correct: false }
-    help: "https://symfony.com/doc/current/service_container.html"
+    help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1eebf878-8ba1-6fb6-af5f-99d84c92580c
     question: 'What is the correct option to add other directories in the translator configuration?'

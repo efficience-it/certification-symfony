@@ -301,8 +301,8 @@ questions:
       - { value: Symfony\Component\Security\Guard\GuardAuthenticatorInterface, correct: false }
       - { value: Symfony\Component\Security\Core\Authentication\AuthenticationManagerInterface, correct: false }
       - { value: Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListenerInterface, correct: false }
-      - { value: Symfony\Bundle\SecurityBundle\DependencyInjection\Security\Factory\SecurityFactoryInterface, correct: true }
-    help: 'https://symfony.com/doc/2.7/security/custom_authentication_provider.html#the-factoryhttps://github.com/symfony/symfony/blob/2.7/src/Symfony/Bundle/SecurityBundle/DependencyInjection/Security/Factory/SecurityFactoryInterface.php'
+      - { value: Symfony\Component\Security\Http\Authenticator\AbstractAuthenticator, correct: true }
+    help: 'https://symfony.com/doc/current/security/custom_authenticator.html'
   -
     uuid: 1eebf878-8ba4-6dc4-8bee-99d84c92580c
     question: 'Which encryption means is used to secure credentials when authenticating an HTTP request with the HTTP Basic mechanism?'

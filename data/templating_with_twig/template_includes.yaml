@@ -33,4 +33,4 @@ questions:
       - { value: '{% block content %} content {% endblock %}', correct: true }
       - { value: '{% startblock content %} content {% endblock content %}', correct: false }
       - { value: '{% startblock content %} content {% finishblock content %}', correct: false }
-    help: "https://twig.symfony.com/doc/2.x/functions/block.html https://twig.symfony.com/doc/2.x/templates.html https://twigfiddle.com/ah119e"
+    help: 'https://twig.symfony.com/doc/2.x/functions/block.html https://twig.symfony.com/doc/2.x/templates.html https://twigfiddle.com/ah119e'
