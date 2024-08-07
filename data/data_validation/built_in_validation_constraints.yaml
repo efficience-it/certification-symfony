@@ -66,7 +66,7 @@ questions:
     help: 'https://symfony.com/doc/current/reference/constraints.html'
   -
     uuid: 1eebf878-8ba1-6db8-8235-99d84c92580c
-    question: "Which of the following values doesn't trigger a violation when the Date constraint is applied to it?"
+    question: "Which of the following values doesn't trigger a violation when theDateconstraint is applied to it?"
     answers:
       - { value: 'null', correct: true }
       - { value: "'2020-01-15'", correct: true }
@@ -103,3 +103,12 @@ questions:
       - { value: 'On any public static methods of the class only.', correct: false }
       - { value: 'On any public properties only.', correct: false }
     help: 'http://symfony.com/doc/current/validation.html#validator-constraint-targets'
+  -
+    uuid: 1eed57f8-fb54-62a6-91f8-d952ea3a2c23
+    question: 'When using the Symfony\Component\Validator\Constraints\Url validation constraint, what protocols are allowed by default ?'
+    answers:
+      - { value: 'Only HTTP.', correct: false }
+      - { value: 'Any protocol.', correct: true }
+      - { value: 'HTTP and HTTPS.', correct: false }
+      - { value: 'HTTP, HTTPS, FTP and SMTP.', correct: false }
+    help: 'https://symfony.com/doc/current/reference/constraints/Url.html'
