@@ -100,7 +100,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: "No", correct: false }
-    help: 'https://symfony.com/doc/3.4/components/yaml.html#parsing-and-dumping-custom-tags'
+    help: 'https://symfony.com/doc/current/components/yaml.html#parsing-and-dumping-custom-tags'
   -
     uuid: 1eebf878-8ba6-6d90-8dec-99d84c92580c
     question: 'What class of exception can be thrown by Symfony\Component\Security\Core\Authentication\Provider\UserAuthenticationProvider''s authenticate() method?'
@@ -161,7 +161,7 @@ questions:
       - { value: decimal, correct: true }
       - { value: int, correct: true }
       - { value: enum, correct: false }
-    help: 'https://symfony.com/doc/2.3/components/config/definition.html#node-type'
+    help: 'https://symfony.com/doc/current/components/config/definition.html#node-type'
   -
     uuid: 1eebf878-8ba9-66b2-95e5-99d84c92580c
     question: 'What is the purpose of Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition::fixXmlConfig ?'
@@ -207,7 +207,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/2.7/controller.html#a-simple-controller'
+    help: 'https://symfony.com/doc/current/controller.html'
   -
     uuid: 1eebf878-8ba9-6aea-8517-99d84c92580c
     question: 'Which of the following value resolvers are shipped with the HttpKernel component?'

@@ -38,7 +38,7 @@ questions:
       - { value: MessageEvent, correct: true }
       - { value: SentMessageEvent, correct: true }
       - { value: MessageSentEvent, correct: false }
-      - { value: FailedMessage, correct: true }
+      - { value: FailedMessageEvent, correct: true }
       - { value: MessageFailedEvent, correct: false }
       - { value: ReceivedMessageEvent, correct: false }
     help: 'https://symfony.com/doc/current/mailer.html#mailer-events'

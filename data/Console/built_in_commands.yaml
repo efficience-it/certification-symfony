@@ -28,7 +28,7 @@ questions:
       - { value: 'php bin/console doctrine:schema:update --force', correct: false }
       - { value: 'php bin/console doctrine:mapping:convert', correct: false }
       - { value: 'php bin/console doctrine:mapping:import', correct: false }
-    help: 'https://symfony.com/doc/3.3/doctrine.html#add-mapping-information'
+    help: 'https://symfony.com/doc/current/doctrine.html#add-mapping-information'
   -
     uuid: 1eebf878-8b9e-6abe-979d-99d84c92580c
     question: 'How do you display complete configuration of a bundle ?'

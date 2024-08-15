@@ -52,4 +52,4 @@ questions:
       - { value: yml, correct: false }
       - { value: php, correct: false }
       - { value: ini, correct: false }
-    help: 'https://symfony.com/doc/3.3/translation.html#translation-resource-file-names-and-locations'
+    help: 'https://symfony.com/doc/current/translation.html#translation-resource-file-names-and-locations'

@@ -130,7 +130,7 @@ questions:
       - { value: "'in'", correct: false }
       - { value: "'error'", correct: false }
       - { value: "'input'", correct: false }
-    help: "https://symfony.com/doc/2.3/components/process.html#getting-real-time-process-outputhttps://github.com/symfony/symfony/blob/2.3/src/Symfony/Component/Process/Process.php"
+    help: 'https://symfony.com/doc/7.2/components/process.html#getting-real-time-process-output'
   -
     uuid: 1eebf878-8ba3-61e0-9460-99d84c92580c
     question: 'How to specify the date format for a date attribute in a serialization context ?'
@@ -160,7 +160,7 @@ questions:
       - { value: isProcessing(), correct: false }
       - { value: isAsync(), correct: false }
       - { value: isRunning(), correct: true }
-    help: 'https://symfony.com/doc/2.7/components/process.html#running-processes-asynchronously'
+    help: 'https://symfony.com/doc/7.2/components/process.html#running-processes-asynchronously'
   -
     uuid: 1eebf878-8ba4-6298-950b-99d84c92580c
     question: 'Could the parsed and/or serialized expressions be evaluated?'
@@ -223,4 +223,4 @@ questions:
       - { value: 'public function denormalize($propertyName);', correct: true }
       - { value: 'public function reverse($propertyName);', correct: false }
       - { value: 'public function getName();', correct: false }
-    help: 'https://symfony.com/doc/2.7/components/serializer.html#converting-property-names-when-serializing-and-deserializinghttps://github.com/symfony/symfony/blob/2.7/src/Symfony/Component/Serializer/NameConverter/NameConverterInterface.php'
+    help: 'https://symfony.com/doc/current/components/serializer.html#converting-property-names-when-serializing-and-deserializing'
