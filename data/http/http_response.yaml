@@ -5,7 +5,7 @@ questions:
     answers:
       - { value: 'No', correct: false }
       - { value: 'Yes', correct: true }
-    help: 'https://github.com/symfony/symfony/blob/2.3/src/Symfony/Component/HttpFoundation/Response.php#L1073'
+    help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Response.php#L1246'
   -
     uuid: 1eebf878-8ba9-65cc-9f30-99d84c92580c
     question: "Which methods' Response check status code or specific reasons ?"

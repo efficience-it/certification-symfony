@@ -26,7 +26,7 @@ questions:
     help: 'https://symfony.com/doc/current/service_container/definitions.html#getting-and-setting-service-definitions'
   -
     uuid: 1eebf878-8b9f-6568-8325-99d84c92580c
-    question: 'What constants are used to determine if your compiler pass is executed'
+    question: 'What constants are used to determine if your compiler pass is executed ?'
     answers:
       - { value: 'PassConfig::TYPE_BEFORE_OPTIMIZATION', correct: true }
       - { value: 'PassConfig::TYPE_OPTIMIZE', correct: true }

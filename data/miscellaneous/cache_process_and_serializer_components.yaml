@@ -124,13 +124,13 @@ questions:
     uuid: 1eebf878-8ba2-6db2-9993-99d84c92580c
     question: 'What are valid output types defined in Process?'
     answers:
-      - { value: ''out'', correct: true }
-      - { value: ''err'', correct: true }
-      - { value: ''output'', correct: false }
-      - { value: ''in'', correct: false }
-      - { value: ''error'', correct: false }
-      - { value: ''input'', correct: false }
-    help: 'https://symfony.com/doc/current/components/process.html#getting-real-time-process-output'
+      - { value: "'out'", correct: true }
+      - { value: "'err'", correct: true }
+      - { value: "'output'", correct: false }
+      - { value: "'in'", correct: false }
+      - { value: "'error'", correct: false }
+      - { value: "'input'", correct: false }
+    help: 'https://symfony.com/doc/7.2/components/process.html#getting-real-time-process-output'
   -
     uuid: 1eebf878-8ba3-61e0-9460-99d84c92580c
     question: 'How to specify the date format for a date attribute in a serialization context ?'
