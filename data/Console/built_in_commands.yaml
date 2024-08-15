@@ -38,7 +38,7 @@ questions:
       - { value: 'php bin/console config:dump AcmeBundle', correct: true }
       - { value: 'php bin/console config:dump-reference AcmeBundle', correct: true }
       - { value: 'php bin/console debug:config', correct: false }
-    help: "https://symfony.com/doc/current/bundles/configuration.html#dump-the-configuration"
+    help: 'https://symfony.com/doc/current/bundles/configuration.html#dump-the-configuration'
   -
     uuid: 1eebf878-8b9f-67e8-a161-99d84c92580c
     question: 'The lint:container command checks that the arguments injected into services match their type declarations'

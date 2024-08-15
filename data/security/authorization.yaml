@@ -32,7 +32,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: "https://symfony.com/doc/current/security.html#securing-other-services"
+    help: 'https://symfony.com/doc/current/security.html#securing-other-services'
   -
     uuid: 1eebf878-8ba2-64de-a54b-99d84c92580c
     question: 'What is the type of the top-level service that checks authorization?'
