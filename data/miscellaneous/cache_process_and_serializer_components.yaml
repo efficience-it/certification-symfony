@@ -77,12 +77,12 @@ questions:
     uuid: 1eebf878-8b9d-601a-8dff-99d84c92580c
     question: 'What are valid output types defined in Process ?'
     answers:
-      - { value: ''input'', correct: false }
-      - { value: ''error'', correct: false }
-      - { value: ''in'', correct: false }
-      - { value: ''out'', correct: true }
-      - { value: ''output'', correct: false }
-      - { value: ''err'', correct: true }
+      - { value: 'input', correct: false }
+      - { value: 'error', correct: false }
+      - { value: 'in', correct: false }
+      - { value: 'out', correct: true }
+      - { value: 'output'', correct: false }
+      - { value: 'err', correct: true }
     help: 'https://symfony.com/doc/current/components/process.html#getting-real-time-process-output'
   -
     uuid: 1eebf878-8b9d-60ba-9a06-99d84c92580c
