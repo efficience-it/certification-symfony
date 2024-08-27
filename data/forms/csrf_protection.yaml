@@ -32,7 +32,7 @@ questions:
       - { value: _csrf, correct: false }
       - { value: ThisTokenIsNotSoSecretChangeIt, correct: false }
       - { value: _secret, correct: false }
-    help: "https://symfony.com/doc/current/security/csrf.html#csrf-protection-in-symfony-forms"
+    help: 'https://symfony.com/doc/current/security/csrf.html#csrf-protection-in-symfony-forms'
   -
     uuid: 1eebf878-8b98-6fba-ac9a-99d84c92580c
     question: 'Is the Form component required to generate a csrf token in templates?'

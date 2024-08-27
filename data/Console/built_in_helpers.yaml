@@ -37,12 +37,12 @@ questions:
     help: 'https://symfony.com/doc/current/components/console/helpers/formatterhelper.html'
   -
     uuid: 1eebf878-8ba5-6c74-a208-99d84c92580c
-    question: 'What is the correct way to truncate a message in a console with the formater helper ?    $message =  This is a very long message, which should be truncated ;    to     $message =  This is a very long message, which should be!! ;'
+    question: 'What is the correct way to truncate a message in a console with the formater helper ?    $message =  This is a very long message, which should be truncated ;    to $message =  This is a very long message, which should be!! ;'
     answers:
-      - { value: "echo $formatter->truncate($message, 44, '!!');", correct: true }
-      - { value: "echo $formatter->truncateMessage($message, -10, '!!');", correct: false }
-      - { value: "echo $formatter->truncate($message, -10, '!!');", correct: true }
-      - { value: "echo $formatter->truncateMessage($message, 44, '!!');", correct: false }
+      - { value: "$formatter->truncate($message, 44, '!!');", correct: true }
+      - { value: "$formatter->truncateMessage($message, -10, '!!');", correct: false }
+      - { value: "$formatter->truncate($message, -10, '!!');", correct: true }
+      - { value: "$formatter->truncateMessage($message, 44, '!!');", correct: false }
     help: 'https://symfony.com/doc/current/components/console/helpers/formatterhelper.html'
   -
     uuid: 1eebf878-8ba5-6cba-8c29-99d84c92580c

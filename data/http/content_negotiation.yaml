@@ -32,7 +32,7 @@ questions:
     question: 'What is the default value for q in a header ?'
     answers:
       - { value: '0', correct: false }
-      - { value: '1', correct: false }
+      - { value: '1', correct: true }
       - { value: '0,5', correct: false }
     help: 'https://restfulapi.net/content-negotiation/'
   -

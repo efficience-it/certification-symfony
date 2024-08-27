@@ -28,7 +28,7 @@ questions:
     uuid: 1eebf878-8ba7-686c-be22-99d84c92580c
     question: 'What is the key used to store flashes in the session ?'
     answers:
-      - { value: "_flashes_info, _flashes_danger, _flashes_success, _flashes_debug    ", correct: false }
+      - { value: '_flashes_info, _flashes_danger, _flashes_success, _flashes_debug', correct: false }
       - { value: _flashes_session, correct: false }
       - { value: _symfony_flashes, correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php#L28'

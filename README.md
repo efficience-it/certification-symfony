@@ -120,7 +120,7 @@ To train with our team, contact us on https://www.itefficience.com/contact
 - [Services registration](data/dependency_injection/services_registration.yaml)
 - Service decoration
 - [Tags](data/dependency_injection/tags.yaml)
-- Semantic configuration
+- [Semantic configuration](data/dependency_injection/semantic_configuration.yaml)
 - [Factories](data/dependency_injection/factories.yaml)
 - [Compiler passes](data/dependency_injection/compiler_passes.yaml)
 - Services autowiring
