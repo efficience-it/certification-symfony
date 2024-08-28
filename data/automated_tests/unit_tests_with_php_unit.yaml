@@ -91,7 +91,7 @@ questions:
     help: 'https://symfony.com/doc/current/testing.html#integration-tests'
   -
     uuid: 1eebf878-8ba3-6c12-a0f5-99d84c92580c
-    question: "Which of the following assertions is correct?"
+    question: 'Which of the following assertions is correct?'
     answers:
       - { value: 'PHP is a loosely-typed imperative language.', correct: true }
       - { value: 'PHP is a loosely-typed declarative language.', correct: false }

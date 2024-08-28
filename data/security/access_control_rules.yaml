@@ -55,14 +55,14 @@ questions:
       - { value: route, correct: false }
       - { value: methods, correct: false }
       - { value: path, correct: false }
-      - { value: "attributes", correct: false }
+      - { value: 'attributes', correct: false }
     help: 'https://symfony.com/doc/current/security/access_control.html#2-access-enforcement'
   -
     uuid: 1eeda4c7-518c-6fa4-80fb-09b72beaa117
     question: "If i have this access_control configured (roles: 'ROLE_ADMIN' and allow_if:  '127.0.0.1' == request.getClientIp() or request.headers.has('X-Secure-Access'). In Which configuration can i go on this page ?"
     answers:
       - { value: 'if i have ROLE_ADMIN', correct: false }
-      - { value: "If i have a header caledd X-Secure-Access", correct: false }
+      - { value: 'If i have a header caledd X-Secure-Access', correct: false }
       - { value: 'if my ip is 127.0.0.1', correct: false }
       - { value: 'every case', correct: true }
       - { value: none, correct: false }

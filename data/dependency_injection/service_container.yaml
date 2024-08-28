@@ -290,7 +290,7 @@ questions:
       - { value: constructor, correct: true }
       - { value: property, correct: true }
       - { value: getter, correct: false }
-    help: 'https://symfony.com/doc/current/service_container.html<br>'
+    help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1eebf878-8ba1-6fb6-af5f-99d84c92580c
     question: 'What is the correct option to add other directories in the translator configuration?'

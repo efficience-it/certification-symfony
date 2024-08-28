@@ -58,7 +58,7 @@ questions:
     question: 'Is the following code valid? $parsed = Yaml::parse( !custom_tag { foo: bar } , Yaml::PARSE_CUSTOM_TAGS);'
     answers:
       - { value: 'Yes', correct: true }
-      - { value: "No", correct: false }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/current/components/yaml.html#parsing-and-dumping-custom-tags'
   -
     uuid: 1eebf878-8ba6-6d90-8dec-99d84c92580c

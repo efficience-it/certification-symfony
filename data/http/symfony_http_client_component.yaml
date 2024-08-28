@@ -7,7 +7,7 @@ questions:
       - { value: '$request = new Request(/* ... */);', correct: false }
       - { value: '$request = Request::createFromGlobals(/* ... */);', correct: false }
       - { value: '$request = Request::create(/* ... */);', correct: false }
-    help: 'https://symfony.com/doc/current/components/http_foundation.html#request<br>'
+    help: 'https://symfony.com/doc/current/components/http_foundation.html#request'
   -
     uuid: 1eebf878-8ba5-61fc-a856-99d84c92580c
     question: "Which statement is true about FlashBag::add() and FlashBag::set()?"

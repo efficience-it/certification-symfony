@@ -89,7 +89,7 @@ questions:
     help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/tutorials/working-with-indexed-associations.html#mapping-indexed-associations'
   -
     uuid: 1eebf878-8ba6-6f7a-b2b7-99d84c92580c
-    question: "What is true about composite primary keys?"
+    question: 'What is true about composite primary keys?'
     answers:
       - { value: 'The @Id annotation must be used on more than one column.', correct: true }
       - { value: 'An auto increment strategy can be used for one of the key using the @GeneratedValue annotation.', correct: true }
@@ -98,7 +98,7 @@ questions:
     help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/basic-mapping.html#composite-keys'
   -
     uuid: 1eebf878-8baa-6300-a5f4-99d84c92580c
-    question: "Does the orphanRemoval attribute work with a Many-to-One association ?"
+    question: 'Does the orphanRemoval attribute work with a Many-to-One association ?'
     answers:
       - { value: 'No', correct: true }
       - { value: 'Yes', correct: false }
