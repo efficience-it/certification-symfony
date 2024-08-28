@@ -14,4 +14,4 @@ jobs:
         with:
           linters: yaml
           lint_path: 'data/**/*.yaml'
-          config_file: '.github/workflows/.yamllint'
+          config_file: '.yamllint'

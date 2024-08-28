@@ -2,6 +2,7 @@ extends: default
 
 rules:
   line-length:
+   document-start: disable
     max: 120
     level: warning
   indentation:
