@@ -1,6 +1,7 @@
-import yaml
-import sys
 import os
+import sys
+
+import yaml
 
 def validate_yaml(file_path):
     with open(file_path, 'r') as stream:

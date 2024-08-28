@@ -72,7 +72,7 @@ questions:
       - {value: 'error', correct: false}
       - {value: 'in', correct: false}
       - {value: 'out', correct: true}
-      - {value: 'output'', correct: false}
+      - {value: 'output', correct: false}
       - {value: 'err', correct: true}
     help: 'https://symfony.com/doc/current/components/process.html#getting-real-time-process-output'
   -

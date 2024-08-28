@@ -37,15 +37,6 @@ questions:
       - {value: 'An optional $return boolean variable to return the information rather than print it.', correct: false}
     help: 'https://symfony.com/doc/current/components/var_dumper.html#the-dump-function'
   -
-    uuid: 1eebf878-8b99-6514-a3e7-99d84c92580c
-    question: 'Which method should you call to customize the behavior of the global dump() function?'
-    answers:
-      - {value: trigger_error($callable);, correct: false}
-      - {value: set_error_handler($callable);, correct: false}
-      - {value: 'VarDumper::setHandler($callable);', correct: true}
-      - {value: 'VarDumper::setDumper($callable);', correct: false}
-    help: 'https://symfony.com/doc/current/components/var_dumper.html#advanced-usage'
-  -
     uuid: 1eebf878-8b99-6ba4-a663-99d84c92580c
     question: 'Could the dump server be configured using environment variables?'
     answers:

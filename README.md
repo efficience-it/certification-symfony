@@ -3,7 +3,7 @@
 In order to get the `Symfony certification`, and to be prepared to it, you have few options: train by yourself, get a training on sensiolabs or train by doing tests.
 Thats what we prupose here, linked to the elements shown by the certification page, we grouped questions to be sure to master every single page on the symfony documentation.
 
-Each Category and Sub Category have questions, with one or more valid answers. If you would, you can use this [repo](https://github.com/certificationy/certificationy-cli) to train by cli.
+Each Category and Sub Category have questions, with one or more valid answers. If you would, you can use this [repository](https://github.com/certificationy/certificationy-cli) to train by cli.
 
 To train with our team, contact us on https://www.itefficience.com/contact
 
@@ -142,8 +142,8 @@ To train with our team, contact us on https://www.itefficience.com/contact
 - [Cache types (browser, proxies and reverse-proxies)](data/http_caching/cache_types_browser_proxies_and_reverse_proxies.yaml)
 - [Expiration (Expires, Cache-Control)](data/http_caching/expiration_expires_cache_control.yaml)
 - [Validation (ETag, Last-Modified)](data/http_caching/validation_e_tag_last_modified.yaml)
-- Client side caching
-- [Server side caching](data/http_caching/server_side_caching.yaml)
+- Client-side caching
+- [Server-side caching](data/http_caching/server_side_caching.yaml)
 - [Edge Side Includes](data/http_caching/edge_side_includes.yaml)
 
 ## Console
@@ -175,7 +175,7 @@ To train with our team, contact us on https://www.itefficience.com/contact
 - [Deployment best practices](data/miscellaneous/deployment_best_practices.yaml)
 - [Cache, Process and Serializer components](data/miscellaneous/cache_process_and_serializer_components.yaml)
 - [Messenger component](data/miscellaneous/messenger_component.yaml)
-- [Mime and Mailer components](data/miscellaneous/mime_and_mailer_components.yaml)
+- [MIME and Mailer components](data/miscellaneous/mime_and_mailer_components.yaml)
 - [Filesystem and Finder components](data/miscellaneous/filesystem_and_finder_components.yaml)
 - [Lock component](data/miscellaneous/lock_component.yaml)
 - [Web Profiler, Web Debug Toolbar and Data collectors](data/miscellaneous/web_profiler_web_debug_toolbar_and_data_collectors.yaml)
