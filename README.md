@@ -1,3 +1,7 @@
+![Workflow Status](https://github.com/efficience-it/certification-symfony/actions/workflows/yaml-lint.yaml/badge.svg)
+![Workflow Status](https://github.com/efficience-it/certification-symfony/actions/workflows/validate-content.yaml/badge.svg)
+
+
 # Certification Symfony
 
 In order to get the `Symfony certification`, and to be prepared to it, you have few options: train by yourself, get a training on sensiolabs or train by doing tests.
