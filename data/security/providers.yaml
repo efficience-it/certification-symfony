@@ -3,40 +3,40 @@ questions:
     uuid: 1eebf878-8b99-6f1e-b4c2-99d84c92580c
     question: 'Which of these are Symfony built-in security providers configuration name?'
     answers:
-      - { value: "OAuth2 User Provider (Loads users from third party server)", correct: false }
-      - { value: 'Entity User Provider (Loads users from a database using Doctrine)', correct: true }
-      - { value: 'Chain User Provider ( Merges two or more user providers into a new user provider)', correct: true }
-      - { value: 'Memory User Provider (Loads users from a configuration file)', correct: true }
-      - { value: 'LDAP User Provider (Loads users from a LDAP server)', correct: true }
+      - {value: "OAuth2 User Provider (Loads users from third party server)", correct: false}
+      - {value: 'Entity User Provider (Loads users from a database using Doctrine)', correct: true}
+      - {value: 'Chain User Provider ( Merges two or more user providers into a new user provider)', correct: true}
+      - {value: 'Memory User Provider (Loads users from a configuration file)', correct: true}
+      - {value: 'LDAP User Provider (Loads users from a LDAP server)', correct: true}
     help: 'https://symfony.com/doc/current/security/user_providers.html#security-chain-user-provider'
   -
     uuid: 1eebf878-8ba1-657a-a6cf-99d84c92580c
     question: 'For implements Symfony\Component\Security\Core\User\UserProviderInterface which method you have to define ?'
     answers:
-      - { value: loadUserByIdentifier($username), correct: true }
-      - { value: loadUser($username), correct: false }
-      - { value: 'refreshUser(UserInterface $user)', correct: true }
-      - { value: getUser($username), correct: false }
-      - { value: supports($class), correct: false }
-      - { value: supportsClass($class), correct: true }
+      - {value: loadUserByIdentifier($username), correct: true}
+      - {value: loadUser($username), correct: false}
+      - {value: 'refreshUser(UserInterface $user)', correct: true}
+      - {value: getUser($username), correct: false}
+      - {value: supports($class), correct: false}
+      - {value: supportsClass($class), correct: true}
     help: 'https://symfony.com/doc/current/security/user_provider.html#creating-a-custom-user-provider'
   -
     uuid: 1eeda3ef-c5f2-64a8-b728-8f983a90a960
     question: 'How do you retrieve a User in an Entity User Provider ?'
     answers:
-      - { value: "by setting the key security.providers.users.entity.property: 'email'", correct: true }
-      - { value: 'By overriding the loadUserByIdentifier in the UserRepository', correct: true }
-      - { value: 'getting the user in the controller doing $this->getUser($email)', correct: false }
-      - { value: 'By overriding the findByIdentifier in the UserRepository', correct: false }
+      - {value: "by setting the key security.providers.users.entity.property: 'email'", correct: true}
+      - {value: 'By overriding the loadUserByIdentifier in the UserRepository', correct: true}
+      - {value: 'getting the user in the controller doing $this->getUser($email)', correct: false}
+      - {value: 'By overriding the findByIdentifier in the UserRepository', correct: false}
     help: 'https://symfony.com/doc/current/security/user_providers.html#entity-user-provider'
   -
     uuid: 1eeda405-7029-6b28-ad18-9d606ff24427
     question: 'Which method are written in the UserProviderInterface in order to create a Custom User Provider ?'
     answers:
-      - { value: getUser(), correct: false }
-      - { value: loadUserByIdentifier(), correct: true }
-      - { value: refreshUser(), correct: true }
-      - { value: supportClass(), correct: true }
-      - { value: loadByIdentifier(), correct: false }
-      - { value: providerCredentials, correct: false }
+      - {value: getUser(), correct: false}
+      - {value: loadUserByIdentifier(), correct: true}
+      - {value: refreshUser(), correct: true}
+      - {value: supportClass(), correct: true}
+      - {value: loadByIdentifier(), correct: false}
+      - {value: providerCredentials, correct: false}
     help: 'https://symfony.com/doc/current/security/user_providers.html#creating-a-custom-user-provider'

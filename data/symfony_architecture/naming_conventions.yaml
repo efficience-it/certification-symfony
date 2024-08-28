@@ -3,100 +3,100 @@ questions:
     uuid: 1eebf878-8ba8-664a-9334-99d84c92580c
     question: 'Is suffix  Trait  mandatory for traits ?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eebf878-8ba8-669a-a5e6-99d84c92580c
     question: 'We use camelCase for ?'
     answers:
-      - { value: function, correct: true }
-      - { value: 'php variables', correct: true }
-      - { value: 'Twig template name', correct: false }
-      - { value: 'methods name', correct: true }
-      - { value: arguments, correct: true }
-      - { value: constants, correct: false }
+      - {value: function, correct: true}
+      - {value: 'php variables', correct: true}
+      - {value: 'Twig template name', correct: false}
+      - {value: 'methods name', correct: true}
+      - {value: arguments, correct: true}
+      - {value: constants, correct: false}
     help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eebf878-8ba8-66ea-b870-99d84c92580c
     question: 'We use snake_case for ?'
     answers:
-      - { value: 'php variables', correct: false }
-      - { value: 'yaml configuration', correct: true }
-      - { value: 'class names', correct: false }
-      - { value: 'twig template name', correct: true }
-      - { value: 'enumeration cases', correct: false }
-      - { value: 'method names', correct: false }
-      - { value: 'web assets', correct: true }
+      - {value: 'php variables', correct: false}
+      - {value: 'yaml configuration', correct: true}
+      - {value: 'class names', correct: false}
+      - {value: 'twig template name', correct: true}
+      - {value: 'enumeration cases', correct: false}
+      - {value: 'method names', correct: false}
+      - {value: 'web assets', correct: true}
     help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eebf878-8ba8-6730-8eea-99d84c92580c
     question: 'We use screaming snake case for ?'
     answers:
-      - { value: 'php variables', correct: false }
-      - { value: constants, correct: true }
-      - { value: methods, correct: false }
-      - { value: 'php classes', correct: false }
+      - {value: 'php variables', correct: false}
+      - {value: constants, correct: true}
+      - {value: methods, correct: false}
+      - {value: 'php classes', correct: false}
     help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eebf878-8ba8-6780-b5d7-99d84c92580c
     question: 'For type-hinting in PHPDocs and casting, what do we use ?'
     answers:
-      - { value: bool, correct: true }
-      - { value: boolean, correct: false }
-      - { value: Boolean, correct: false }
-      - { value: int, correct: true }
-      - { value: integer, correct: false }
-      - { value: float, correct: true }
-      - { value: double, correct: false }
-      - { value: real, correct: false }
+      - {value: bool, correct: true}
+      - {value: boolean, correct: false}
+      - {value: Boolean, correct: false}
+      - {value: int, correct: true}
+      - {value: integer, correct: false}
+      - {value: float, correct: true}
+      - {value: double, correct: false}
+      - {value: real, correct: false}
     help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eebf878-8ba8-67d0-8bfb-99d84c92580c
     question: 'Can a service file name be different from the class name inside ?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - {value: 'Yes', correct: false}
+      - {value: 'No', correct: true}
     help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eeda2ca-d3e4-6b68-a248-eb5bab40e010
     question: 'We use upper camel case for ?'
     answers:
-      - { value: class, correct: false }
-      - { value: constants, correct: false }
-      - { value: 'enumeration cases', correct: true }
-      - { value: functions, correct: false }
-      - { value: 'naming PHP files', correct: true }
+      - {value: class, correct: false}
+      - {value: constants, correct: false}
+      - {value: 'enumeration cases', correct: true}
+      - {value: functions, correct: false}
+      - {value: 'naming PHP files', correct: true}
     help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eeda2ce-a388-6de4-b6c8-c31c98f6b9ec
     question: 'Is suffix  Interface  mandatory for interfaces ?'
     answers:
-      - { value: 'No', correct: false }
-      - { value: 'No due to BC Break', correct: false }
-      - { value: 'Yes', correct: false }
+      - {value: 'No', correct: false}
+      - {value: 'No due to BC Break', correct: false}
+      - {value: 'Yes', correct: false}
     help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eeda2d4-2696-6a56-a432-913a625d7cea
     question: "Isn't suffix  Exception  mandatory for exceptions ?"
     answers:
-      - { value: 'No', correct: true }
-      - { value: 'Yes', correct: false }
-      - { value: 'No depends on debug value', correct: false }
+      - {value: 'No', correct: true}
+      - {value: 'Yes', correct: false}
+      - {value: 'No depends on debug value', correct: false}
     help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eeda2dc-2c2c-6e36-8add-ff6c9fd5db36
     question: 'What should we prefix an attribute for service configuration ?'
     answers:
-      - { value: 'With As (AsService, AsCommand, AsEventListener ...)', correct: true }
-      - { value: 'With Map (MapService, MapCommand, MapEventListener ...)', correct: false }
-      - { value: 'With Set (SetService, SetCommand, SetEventListener ...)', correct: false }
+      - {value: 'With As (AsService, AsCommand, AsEventListener ...)', correct: true}
+      - {value: 'With Map (MapService, MapCommand, MapEventListener ...)', correct: false}
+      - {value: 'With Set (SetService, SetCommand, SetEventListener ...)', correct: false}
     help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eeda2e2-dae6-614c-8682-41ba318ecd4a
     question: 'What should we prefix an attribute for controller configuration ?'
     answers:
-      - { value: 'With As (AsEntity, AsCurrentUser ...)', correct: false }
-      - { value: 'With Map (MapEntity, MapCurrentUser...)', correct: true }
-      - { value: 'With Set (SetEntity, SetCurrentUser ...)', correct: false }
+      - {value: 'With As (AsEntity, AsCurrentUser ...)', correct: false}
+      - {value: 'With Map (MapEntity, MapCurrentUser...)', correct: true}
+      - {value: 'With Set (SetEntity, SetCurrentUser ...)', correct: false}
     help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'

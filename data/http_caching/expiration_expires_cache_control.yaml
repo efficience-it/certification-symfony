@@ -3,91 +3,91 @@ questions:
     uuid: 1eebf878-8b99-65a0-956f-99d84c92580c
     question: 'Given the following header, will the resource be considered as fresh?    Expires: 0'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - {value: 'Yes', correct: false}
+      - {value: 'No', correct: true}
     help: 'https://developer.mozilla.org/en/docs/Web/HTTP/Headers/Expires'
   -
     uuid: 1eebf878-8b99-6960-98a3-99d84c92580c
     question: 'Which HTTP headers can be used with the expiration model?'
     answers:
-      - { value: ETag, correct: false }
-      - { value: Last-Modified, correct: false }
-      - { value: Cache-Control, correct: true }
-      - { value: Expires, correct: true }
+      - {value: ETag, correct: false}
+      - {value: Last-Modified, correct: false}
+      - {value: Cache-Control, correct: true}
+      - {value: Expires, correct: true}
     help: 'https://symfony.com/doc/current/http_cache/expiration.html'
   -
     uuid: 1eebf878-8b9b-635a-8e43-99d84c92580c
     question: 'Is the following header value valid? Expires: Sun, 06 Nov 1994 08:49:37 GMT'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://developer.mozilla.org/en/docs/Web/HTTP/Headers/Expires'
   -
     uuid: 1eebf878-8b9b-6670-95e7-99d84c92580c
     question: 'Which of theses are the way to add the Cache-Control: public,s-maxage=900 HTTP response header on a Symfony\Component\HttpFoundation\Response object?'
     answers:
-      - { value: $response->setSharedMaxAge(900);, correct: true }
-      - { value: $response->setShareMaxAge(900);, correct: false }
-      - { value: $response->setSMaxAge(900);, correct: false }
-      - { value: '$response->setMaxAge(900, true);', correct: false }
+      - {value: $response->setSharedMaxAge(900);, correct: true}
+      - {value: $response->setShareMaxAge(900);, correct: false}
+      - {value: $response->setSMaxAge(900);, correct: false}
+      - {value: '$response->setMaxAge(900, true);', correct: false}
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/Response.php#L873'
   -
     uuid: 1eebf878-8b9e-65c8-9f64-99d84c92580c
     question: 'Which HTTP headers belongs to expiration cache model?'
     answers:
-      - { value: Expires, correct: true }
-      - { value: Last-Modified, correct: false }
-      - { value: ETag, correct: false }
-      - { value: Cache-Control, correct: true }
-      - { value: Cookie, correct: false }
+      - {value: Expires, correct: true}
+      - {value: Last-Modified, correct: false}
+      - {value: ETag, correct: false}
+      - {value: Cache-Control, correct: true}
+      - {value: Cookie, correct: false}
     help: 'https://symfony.com/doc/current/http_cache/expiration.html'
   -
     uuid: 1eebf878-8b9e-66ae-9202-99d84c92580c
     question: 'According to HTTP/1.1 what is the max value for Expires ?'
     answers:
-      - { value: 'one year', correct: true }
-      - { value: 'one month', correct: false }
-      - { value: 'one week', correct: false }
-      - { value: 'There is not limit', correct: false }
+      - {value: 'one year', correct: true}
+      - {value: 'one month', correct: false}
+      - {value: 'one week', correct: false}
+      - {value: 'There is not limit', correct: false}
     help: 'https://symfony.com/doc/current/http_cache/expiration.html#expiration-with-the-expires-header'
   -
     uuid: 1eebf878-8b9e-66fe-a3f4-99d84c92580c
     question: 'You can use both validation and expiration within the same Response.'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - {value: 'True', correct: true}
+      - {value: 'False', correct: false}
     help: 'https://symfony.com/doc/current/http_cache/expiration.html'
   -
     uuid: 1eebf878-8ba4-6cde-8a81-99d84c92580c
     question: 'Which of the following HTTP response headers belong to the expiration caching model?'
     answers:
-      - { value: Expires, correct: true }
-      - { value: Cache-Control, correct: true }
-      - { value: Etag, correct: false }
-      - { value: Pragma, correct: false }
-      - { value: Last-Modified, correct: false }
+      - {value: Expires, correct: true}
+      - {value: Cache-Control, correct: true}
+      - {value: Etag, correct: false}
+      - {value: Pragma, correct: false}
+      - {value: Last-Modified, correct: false}
     help: 'https://tools.ietf.org/html/rfc2616#page-79'
   -
     uuid: 1eebf878-8ba6-6ac0-b4bc-99d84c92580c
     question: 'Which headers/directives will be ignored by a proxy if Expires, s-maxage and max-age are all present in a response ?'
     answers:
-      - { value: Expires, correct: true }
-      - { value: max-age, correct: true }
-      - { value: "s-maxage", correct: false }
+      - {value: Expires, correct: true}
+      - {value: max-age, correct: true}
+      - {value: "s-maxage", correct: false}
     help: 'https://tools.ietf.org/html/rfc7234#section-5.2.2.8'
   -
     uuid: 1eebf878-8ba7-6268-bc81-99d84c92580c
     question: 'What happens for an HTTP response if it has both the Expires and Cache-Control headers set?'
     answers:
-      - { value: "The response won't be cachable and caching systems will simply ignore it.", correct: false }
-      - { value: 'Caching systems will use the Expires header field if the response is generated if the current day number is odd, otherwise they will use the Cache-Control header field.', correct: false }
-      - { value: 'Caching systems will favor the Cache-Control header field over the Expires field to cache the response.', correct: true }
-      - { value: 'Caching systems will favor the Expires header field over the Cache-Control field to cache the response.', correct: false }
+      - {value: "The response won't be cachable and caching systems will simply ignore it.", correct: false}
+      - {value: 'Caching systems will use the Expires header field if the response is generated if the current day number is odd, otherwise they will use the Cache-Control header field.', correct: false}
+      - {value: 'Caching systems will favor the Cache-Control header field over the Expires field to cache the response.', correct: true}
+      - {value: 'Caching systems will favor the Expires header field over the Cache-Control field to cache the response.', correct: false}
     help: 'https://tools.ietf.org/html/rfc2616#page-79'
   -
     uuid: 1eebf878-8ba9-6cb6-b7db-99d84c92580c
     question: "The Expires header's value must contain the number of seconds the response should be cached."
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - {value: 'Yes', correct: false}
+      - {value: 'No', correct: true}
     help: 'https://symfony.com/doc/6.0/http_cache/expiration.html#expiration-with-the-expires-header'

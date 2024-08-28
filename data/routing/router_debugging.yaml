@@ -3,34 +3,34 @@ questions:
     uuid: 1eebf878-8ba4-66d0-9c83-99d84c92580c
     question: "php bin/console debug:router XXXXXX    What's the argument after this command in XXXXXX ?"
     answers:
-      - { value: 'No arguments', correct: true }
-      - { value: 'a specific path', correct: false }
-      - { value: 'a route name', correct: true }
-      - { value: 'the host', correct: false }
-      - { value: 'the scheme', correct: false }
+      - {value: 'No arguments', correct: true}
+      - {value: 'a specific path', correct: false}
+      - {value: 'a route name', correct: true}
+      - {value: 'the host', correct: false}
+      - {value: 'the scheme', correct: false}
     help: 'https://symfony.com/doc/current/routing.html#debugging-routes'
   -
     uuid: 1eebf878-8ba4-6716-8271-99d84c92580c
     question: "What's the argument after this   php bin/console router:match  ?"
     answers:
-      - { value: "the route's name", correct: false }
-      - { value: 'the path', correct: true }
-      - { value: 'the host', correct: false }
-      - { value: 'the scheme', correct: false }
-      - { value: 'the method', correct: false }
-      - { value: 'no argument', correct: false }
+      - {value: "the route's name", correct: false}
+      - {value: 'the path', correct: true}
+      - {value: 'the host', correct: false}
+      - {value: 'the scheme', correct: false}
+      - {value: 'the method', correct: false}
+      - {value: 'no argument', correct: false}
     help: 'https://symfony.com/doc/current/routing.html#debugging-routes'
   -
     uuid: 1eebf878-8ba8-6352-a19d-99d84c92580c
     question: 'Does the debug:router command order the application routes in the same matching orders as symfony will act in our application ?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://symfony.com/doc/current/routing.html#debugging-routes'
   -
     uuid: 1eebf878-8ba8-63a2-b6e6-99d84c92580c
     question: "Does the option --show-aliases on the debug:router show you available aliases for a given route ?"
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://symfony.com/doc/6.4/routing.html#debugging-routes'

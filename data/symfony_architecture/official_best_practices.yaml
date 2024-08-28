@@ -3,169 +3,169 @@ questions:
     uuid: 1eebf878-8b99-6244-b5bc-99d84c92580c
     question: 'Is it a best practice to use the @Template annotation?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - {value: 'Yes', correct: false}
+      - {value: 'No', correct: true}
     help: 'https://symfony.com/doc/current/best_practices.html#don-t-use-annotations-to-configure-the-controller-template'
   -
     uuid: 1eebf878-8b9a-68ce-b5e5-99d84c92580c
     question: 'According to the official Symfony Best Practices Guide, where should the application specific configuration parameters be stored?'
     answers:
-      - { value: 'In the src/Kernel.php file.', correct: false }
-      - { value: 'In the .app.yml file at the root of the project directory.', correct: false }
-      - { value: 'In the config/parameters.yaml file.', correct: false }
-      - { value: 'In the config/services.yaml file.', correct: true }
-      - { value: 'In global environment variables.', correct: false }
+      - {value: 'In the src/Kernel.php file.', correct: false}
+      - {value: 'In the .app.yml file at the root of the project directory.', correct: false}
+      - {value: 'In the config/parameters.yaml file.', correct: false}
+      - {value: 'In the config/services.yaml file.', correct: true}
+      - {value: 'In global environment variables.', correct: false}
     help: 'https://symfony.com/doc/current/best_practices.html#application-related-configuration'
   -
     uuid: 1eebf878-8b9a-6ea0-acb2-99d84c92580c
     question: 'According to the official Symfony Best Practices Guide, which letter case do you need to use for template names as well as their folder?'
     answers:
-      - { value: PascalCase, correct: false }
-      - { value: snake_case, correct: true }
-      - { value: camelCase, correct: false }
+      - {value: PascalCase, correct: false}
+      - {value: snake_case, correct: true}
+      - {value: camelCase, correct: false}
     help: 'https://symfony.com/doc/current/best_practices.html#templates'
   -
     uuid: 1eebf878-8b9b-6620-b2c7-99d84c92580c
     question: 'Which standard is defining how to allow developers to create cache-aware libraries?'
     answers:
-      - { value: PSR-4, correct: false }
-      - { value: PSR-7, correct: false }
-      - { value: PSR-16, correct: false }
-      - { value: PSR-6, correct: true }
+      - {value: PSR-4, correct: false}
+      - {value: PSR-7, correct: false}
+      - {value: PSR-16, correct: false}
+      - {value: PSR-6, correct: true}
     help: 'https://symfony.com/doc/current/components/cache.html'
   -
     uuid: 1eebf878-8b9b-66c0-a3c3-99d84c92580c
     question: 'Where is defined the render() method available for any controller following Symfony best practises?'
     answers:
-      - { value: Controller, correct: false }
-      - { value: ControllerTrait, correct: false }
-      - { value: AbstractController, correct: true }
-      - { value: ServiceContainerAware, correct: false }
+      - {value: Controller, correct: false}
+      - {value: ControllerTrait, correct: false}
+      - {value: AbstractController, correct: true}
+      - {value: ServiceContainerAware, correct: false}
     help: 'https://symfony.com/doc/current/controller.html#the-base-controller-class-services'
   -
     uuid: 1eebf878-8b9b-699a-9a63-99d84c92580c
     question: 'According to the official Symfony Best Practices Guide, is it useful to spend time and effort writing tests that check if your application pages are successfully loading?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://symfony.com/doc/current/best_practices.html#tests'
   -
     uuid: 1eebf878-8b9d-63d0-8ac5-99d84c92580c
     question: 'According to the official Symfony Best Practices Guide, which format do you need to use for your translation files?'
     answers:
-      - { value: CSV, correct: false }
-      - { value: XLIFF, correct: true }
-      - { value: YAML, correct: false }
-      - { value: JSON, correct: false }
+      - {value: CSV, correct: false}
+      - {value: XLIFF, correct: true}
+      - {value: YAML, correct: false}
+      - {value: JSON, correct: false}
     help: 'https://symfony.com/doc/current/best_practices.html#use-the-xliff-format-for-your-translation-files'
   -
     uuid: 1eebf878-8b9d-6420-8aa9-99d84c92580c
     question: 'According to the official Symfony Best Practices Guide, where do you need to add a form submit button?'
     answers:
-      - { value: 'in the form classes', correct: false }
-      - { value: 'in the controllers', correct: false }
-      - { value: 'in the templates', correct: true }
+      - {value: 'in the form classes', correct: false}
+      - {value: 'in the controllers', correct: false}
+      - {value: 'in the templates', correct: true}
     help: 'https://symfony.com/doc/current/best_practices.html#form-button-configuration'
   -
     uuid: 1eebf878-8ba1-65ca-a174-99d84c92580c
     question: 'Using Console, what is the correct filename for a command?'
     answers:
-      - { value: MyTestCommand.php, correct: true }
-      - { value: CommandMyTest.php, correct: false }
-      - { value: MyTestConsoleCommand.php, correct: true }
-      - { value: MyTestCommandConsole.php, correct: false }
+      - {value: MyTestCommand.php, correct: true}
+      - {value: CommandMyTest.php, correct: false}
+      - {value: MyTestConsoleCommand.php, correct: true}
+      - {value: MyTestCommandConsole.php, correct: false}
     help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eebf878-8ba3-66f4-93a6-99d84c92580c
     question: "According to the Symfony Best Practices Guide, what does the 5-10-20 rule mean when it's applied to controllers?"
     answers:
-      - { value: 'Each controller should only define 5 variables or less.', correct: true }
-      - { value: 'Each action method name must not exceed more than 20 characters long.', correct: false }
-      - { value: 'Each action method must not exceed 20 lines of code.', correct: true }
-      - { value: 'Each controller class must not define more than 5 methods that are not regular actions.', correct: false }
-      - { value: 'Each controller class must contain up to 10 actions.', correct: true }
+      - {value: 'Each controller should only define 5 variables or less.', correct: true}
+      - {value: 'Each action method name must not exceed more than 20 characters long.', correct: false}
+      - {value: 'Each action method must not exceed 20 lines of code.', correct: true}
+      - {value: 'Each controller class must not define more than 5 methods that are not regular actions.', correct: false}
+      - {value: 'Each controller class must contain up to 10 actions.', correct: true}
     help: 'https://symfony.com/doc/current/best_practices.html'
   -
     uuid: 1eebf878-8ba3-6816-8ab7-99d84c92580c
     question: 'To follow the best practices for reusable bundles, the file that contains the basic description of the bundle must be named README.md:'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - {value: 'True', correct: true}
+      - {value: 'False', correct: false}
     help: 'https://symfony.com/doc/current/bundles/best_practices.html'
   -
     uuid: 1eebf878-8ba3-6fbe-9c7f-99d84c92580c
     question: 'According to the official Symfony Best Practices Guide, where should the infrastructure global configuration parameters be stored?'
     answers:
-      - { value: 'In the src/AppBundle/Resources/config/settings.yml file.', correct: false }
-      - { value: 'In the .environment.yml file at the root of the project structure.', correct: false }
-      - { value: 'In the app/config/config.yml file.', correct: false }
-      - { value: 'In the app/config/parameters.yml file.', correct: true }
-      - { value: 'In the app/AppKernel.php file.', correct: false }
+      - {value: 'In the src/AppBundle/Resources/config/settings.yml file.', correct: false}
+      - {value: 'In the .environment.yml file at the root of the project structure.', correct: false}
+      - {value: 'In the app/config/config.yml file.', correct: false}
+      - {value: 'In the app/config/parameters.yml file.', correct: true}
+      - {value: 'In the app/AppKernel.php file.', correct: false}
     help: 'https://symfony.com/doc/current/best_practices.html#infrastructure-related-configuration'
   -
     uuid: 1eee7676-c5ec-6a8a-9026-1776563d9f7e
     question: 'According to the official Symfony Best Practices Guide, where do you need to store the translation files?'
     answers:
-      - { value: 'in the  Resources/translations/<language>  directory of each bundle', correct: false }
-      - { value: 'in the  app/Resources/translations/<language>  directory', correct: false }
-      - { value: 'in the  app/Resources/translations/  directory', correct: false }
-      - { value: 'in the  Resources/translations/  directory of each bundle', correct: false }
-      - { value: 'in the  translations/  directory', correct: true }
+      - {value: 'in the  Resources/translations/<language>  directory of each bundle', correct: false}
+      - {value: 'in the  app/Resources/translations/<language>  directory', correct: false}
+      - {value: 'in the  app/Resources/translations/  directory', correct: false}
+      - {value: 'in the  Resources/translations/  directory of each bundle', correct: false}
+      - {value: 'in the  translations/  directory', correct: true}
     help: 'https://symfony.com/doc/current/best_practices.html#use-the-default-directory-structure'
   -
     uuid: 1eee768b-076d-6ab8-9026-f7fba49cfdf8
     question: 'According to the official Symfony Best Practices Guide, is it a good pratice to define parameters for the classes of your services?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - {value: 'Yes', correct: false}
+      - {value: 'No', correct: true}
     help: 'https://symfony.com/doc/current/best_practices.html#service-no-class-parameter'
   -
     uuid: 1ef5bb47-4340-610a-accc-f5fc6195c240
     question: "Which format is recommended for defining services in a Symfony application?"
     answers:
-      - { value: "XML", correct: false }
-      - { value: "JSON", correct: false }
-      - { value: "YAML", correct: true }
-      - { value: "PHP", correct: false }
+      - {value: "XML", correct: false}
+      - {value: "JSON", correct: false}
+      - {value: "YAML", correct: true}
+      - {value: "PHP", correct: false}
     help: 'https://symfony.com/doc/current/best_practices.html#use-the-yaml-format-to-configure-your-own-services'
   -
     uuid: 1ef5bb4b-5936-6eba-9746-5946503a32b1
     question: "What is the recommended way to handle sensitive information in Symfony?"
     answers:
-      - { value: "Store them in .env files", correct: false }
-      - { value: "Hard-code them in the application", correct: false }
-      - { value: "Use Symfony's secrets management system", correct: true }
-      - { value: "Define them as constants in the code", correct: false }
+      - {value: "Store them in .env files", correct: false}
+      - {value: "Hard-code them in the application", correct: false}
+      - {value: "Use Symfony's secrets management system", correct: true}
+      - {value: "Define them as constants in the code", correct: false}
     help: 'https://symfony.com/doc/current/best_practices.html#use-secrets-for-sensitive-information'
   -
     uuid: 1ef5bb4d-3ad0-6410-8e3f-1f036f6a18e2
     question: "Symfony recommends creating a bundle for every major feature in your application."
     answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: false }
+      - {value: 'True', correct: false}
+      - {value: 'False', correct: false}
     help: 'https://symfony.com/doc/current/best_practices.html#don-t-create-any-bundle-to-organize-your-application-logic'
   -
     uuid: 1ef5bb50-2f15-6c4e-b579-e734fa63c9a6
     question: "It's recommended to use short and prefixed parameter names to avoid collisions with Symfony and third-party libraries."
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - {value: 'True', correct: true}
+      - {value: 'False', correct: false}
     help: 'https://symfony.com/doc/current/best_practices.html#use-short-and-prefixed-parameter-names'
   -
     uuid: 1ef5bb54-bb8a-6c84-a335-ab9323a5c145
     question: "Which of the following is recommended for organizing your application logic in Symfony?"
     answers:
-      - { value: "Creating multiple bundles for different features", correct: false }
-      - { value: "Organizing code using PHP namespaces", correct: true }
-      - { value: "Using only one bundle for the entire application", correct: false }
-      - { value: "Placing all logic in the public/ directory", correct: false }
+      - {value: "Creating multiple bundles for different features", correct: false}
+      - {value: "Organizing code using PHP namespaces", correct: true}
+      - {value: "Using only one bundle for the entire application", correct: false}
+      - {value: "Placing all logic in the public/ directory", correct: false}
     help: 'https://symfony.com/doc/current/best_practices.html#don-t-create-any-bundle-to-organize-your-application-logic'
   -
     uuid: 1ef5bb57-2a4b-65d6-9c68-ad0ee29d5778
     question: "What is the recommended way to define configuration options that rarely change, like the number of items displayed in a list?"
     answers:
-      - { value: "Define them as parameters in services.yaml", correct: false }
-      - { value: "Store them in the .env file", correct: false }
-      - { value: "Define them as PHP constants in the related classes", correct: true }
-      - { value: "Hard-code them directly in the templates", correct: false }
+      - {value: "Define them as parameters in services.yaml", correct: false}
+      - {value: "Store them in the .env file", correct: false}
+      - {value: "Define them as PHP constants in the related classes", correct: true}
+      - {value: "Hard-code them directly in the templates", correct: false}
     help: 'https://symfony.com/doc/current/best_practices.html#use-constants-to-define-options-that-rarely-change'

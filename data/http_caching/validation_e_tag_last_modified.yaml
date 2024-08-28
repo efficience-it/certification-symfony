@@ -3,67 +3,67 @@ questions:
     uuid: 1eebf878-8b96-6f44-a1a2-99d84c92580c
     question: 'Which HTTP response header instructs a cache to send a request to the origin server for validation before releasing a cached copy ?'
     answers:
-      - { value: 'Cache-control: no-cache', correct: true }
-      - { value: 'Cache-control: must-revalidate', correct: true }
-      - { value: 'Cache-control: no-store', correct: false }
-      - { value: 'Cache-control: private', correct: false }
+      - {value: 'Cache-control: no-cache', correct: true}
+      - {value: 'Cache-control: must-revalidate', correct: true}
+      - {value: 'Cache-control: no-store', correct: false}
+      - {value: 'Cache-control: private', correct: false}
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching#Controlling_caching'
   -
     uuid: 1eebf878-8b9b-6116-88a3-99d84c92580c
     question: 'How to check if the Response validators (ETag, Last-Modified) match a conditional value specified in the client Request?'
     answers:
-      - { value: $response->isModified($request);, correct: false }
-      - { value: $response->isOk();, correct: false }
-      - { value: $response->isNotModified($request);, correct: true }
-      - { value: $response->isCacheable();, correct: false }
+      - {value: $response->isModified($request);, correct: false}
+      - {value: $response->isOk();, correct: false}
+      - {value: $response->isNotModified($request);, correct: true}
+      - {value: $response->isCacheable();, correct: false}
     help: 'https://symfony.com/doc/current/components/http_foundation.html#managing-the-http-cache'
   -
     uuid: 1eebf878-8b9b-67ba-ac35-99d84c92580c
     question: 'Which of the following are valid HTTP request headers used in the validation caching model?'
     answers:
-      - { value: Etag, correct: true }
-      - { value: If-None-Match, correct: true }
-      - { value: Last-Modified, correct: true }
-      - { value: Age, correct: true }
-      - { value: If-Modified-Since, correct: true }
+      - {value: Etag, correct: true}
+      - {value: If-None-Match, correct: true}
+      - {value: Last-Modified, correct: true}
+      - {value: Age, correct: true}
+      - {value: If-Modified-Since, correct: true}
     help: 'https://www.rfc-editor.org/rfc/rfc2616#page-85'
   -
     uuid: 1eebf878-8b9e-6618-b1a5-99d84c92580c
     question: 'Which HTTP headers belongs to validation cache model?'
     answers:
-      - { value: Expires, correct: false }
-      - { value: Last-Modified, correct: true }
-      - { value: ETag, correct: true }
-      - { value: Cache-Control, correct: false }
-      - { value: Cookie, correct: false }
+      - {value: Expires, correct: false}
+      - {value: Last-Modified, correct: true}
+      - {value: ETag, correct: true}
+      - {value: Cache-Control, correct: false}
+      - {value: Cookie, correct: false}
     help: 'https://symfony.com/doc/current/http_cache/validation.html'
   -
     uuid: 1eebf878-8b9e-6758-adce-99d84c92580c
     question: 'Using ETag saves CPU cycles.'
     answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
+      - {value: 'True', correct: true}
+      - {value: 'False', correct: false}
     help: 'https://symfony.com/doc/current/http_cache/validation.html#validation-with-the-etag-header'
   -
     uuid: 1eebf878-8ba0-61ac-b32e-99d84c92580c
     question: 'Which one of these Response methods check if cache must be revalidated?'
     answers:
-      - { value: $response->mustRevalidate(), correct: true }
-      - { value: $response->isRevalidated(), correct: false }
-      - { value: $response->getRevalidated(), correct: false }
-      - { value: $response->mustBeRevalidated(), correct: false }
+      - {value: $response->mustRevalidate(), correct: true}
+      - {value: $response->isRevalidated(), correct: false}
+      - {value: $response->getRevalidated(), correct: false}
+      - {value: $response->mustBeRevalidated(), correct: false}
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/Response.php'
   -
     uuid: 1eebf878-8ba3-6078-9c7e-99d84c92580c
     question: 'Could a resource be revalidated only by proxies?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://httpwg.org/specs/rfc7234.html#cache-response-directive.proxy-revalidate'
   -
     uuid: 1eebf878-8ba4-6ba8-a1b1-99d84c92580c
     question: 'Could the If-Match etag be transformed to a weak one?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.24'
