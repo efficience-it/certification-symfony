@@ -1,47 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8b99-69ec-a934-99d84c92580c
-    question: 'What is the aim of the FragmentListener::onKernelRequest() listener on kernel.request event?'
-    answers:
-      - { value: 'Handle as content all files to let user download them.', correct: false }
-      - { value: 'Handle as content all image, css, javascript that not require security.', correct: false }
-      - { value: 'Handle as content all image, css, javascript that require security.', correct: false }
-      - { value: 'Handle as content fragments by this listener all URL paths starting with /_fragment.', correct: true }
-    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/HttpKernel/EventListener/FragmentListener.php'
-  -
-    uuid: 1eebf878-8b98-66fa-a25e-99d84c92580c
-    question: 'Could an event be dispatched without creating a custom event class?'
-    answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
-    help: 'https://symfony.com/doc/current/components/event_dispatcher/generic_event.html'
-  -
-    uuid: 1eebf878-8b9c-67dc-894b-99d84c92580c
-    question: 'Could new listeners be added to an ImmutableEventDispatcher?'
-    answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
-  -
-    uuid: 1eebf878-8b9d-6a9c-aea4-99d84c92580c
-    question: 'Which design pattern implements the EventDispatcher component?'
-    answers:
-      - { value: Adapter, correct: false }
-      - { value: Decorator, correct: false }
-      - { value: Observer, correct: true }
-      - { value: Mediator, correct: true }
-    help: 'https://symfony.com/doc/current/components/event_dispatcher.html#introduction'
-  -
-    uuid: 1eebf878-8ba3-6032-bdaf-99d84c92580c
-    question: 'Which exception is throw when trying to remove a listener from an ImmutableEventDispatcher?'
-    answers:
-      - { value: RuntimeException, correct: false }
-      - { value: LogicException, correct: false }
-      - { value: InvalidArgumentException, correct: false }
-      - { value: BadMethodCallException, correct: true }
-      - { value: FrozenEventDispatcherException, correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
-  -
     uuid: 1eebf878-8b96-6eea-8d09-99d84c92580c
     question: 'In which order does Symfony trigger the following events?'
     answers:
@@ -61,6 +19,13 @@ questions:
       - { value: PostResponseEvent, correct: false }
     help: 'https://symfony.com/doc/current/components/http_kernel.html#creating-an-event-listener'
   -
+    uuid: 1eebf878-8b98-66fa-a25e-99d84c92580c
+    question: 'Could an event be dispatched without creating a custom event class?'
+    answers:
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+    help: 'https://symfony.com/doc/current/components/event_dispatcher/generic_event.html'
+  -
     uuid: 1eebf878-8b98-67cc-b162-99d84c92580c
     question: 'Which method is to be implemented from a ServiceSubscriberInterface?'
     answers:
@@ -78,7 +43,7 @@ questions:
       - { value: BadMethodCallException, correct: true }
       - { value: RuntimeException, correct: false }
       - { value: FrozenEventDispatcherException, correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
   -
     uuid: 1eebf878-8b99-66cc-8a0a-99d84c92580c
     question: 'What is the aim of the Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse() listener on kernel.response event?'
@@ -86,7 +51,7 @@ questions:
       - { value: 'Checks if the Response has a body.', correct: false }
       - { value: 'Checks if the Response headers match the HTTP RFC requirements.', correct: false }
       - { value: 'Sets the Response headers based on the Request.', correct: true }
-    help: "https://github.com/symfony/symfony/blob/2.3/src/Symfony/Component/HttpKernel/EventListener/ResponseListener.phphttps://github.com/symfony/symfony/blob/2.3/src/Symfony/Component/HttpFoundation/Response.php#L193"
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpKernel/EventListener/ResponseListener.php'
   -
     uuid: 1eebf878-8b99-6762-af2d-99d84c92580c
     question: 'Which design pattern does the EventDispatcher component implement?'
@@ -97,14 +62,14 @@ questions:
       - { value: Adapter, correct: false }
     help: 'https://symfony.com/doc/current/components/event_dispatcher/introduction.html#introduction'
   -
-    uuid: 1eebf878-8b99-6f6e-af0a-99d84c92580c
-    question: 'What is returned by $dispatcher->dispatch($event, OrderPlacedEvent::NAME) in the following code? $event = new OrderPlacedEvent($order); $dispatcher->dispatch($event, OrderPlacedEvent::NAME);'
+    uuid: 1eebf878-8b99-69ec-a934-99d84c92580c
+    question: 'What is the aim of the FragmentListener::onKernelRequest() listener on kernel.request event?'
     answers:
-      - { value: Nothing, correct: false }
-      - { value: 'true', correct: false }
-      - { value: $event, correct: true }
-      - { value: $dispatcher, correct: false }
-    help: 'https://github.com/symfony/event-dispatcher/blob/7.0/EventDispatcher.php#L45C72-L45C78'
+      - { value: 'Handle as content all files to let user download them.', correct: false }
+      - { value: 'Handle as content all image, css, javascript that not require security.', correct: false }
+      - { value: 'Handle as content all image, css, javascript that require security.', correct: false }
+      - { value: 'Handle as content fragments by this listener all URL paths starting with /_fragment.', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpKernel/EventListener/FragmentListener.php'
   -
     uuid: 1eebf878-8b9a-6388-aaa8-99d84c92580c
     question: 'Could subscribers be removed from an ImmutableEventDispatcher?'
@@ -138,6 +103,13 @@ questions:
       - { value: 'No', correct: true }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
   -
+    uuid: 1eebf878-8b9c-67dc-894b-99d84c92580c
+    question: 'Could new listeners be added to an ImmutableEventDispatcher?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
+  -
     uuid: 1eebf878-8b9d-6380-81e4-99d84c92580c
     question: 'Is the following code valid?php bin/console debug:event-dispatcher kernel'
     answers:
@@ -154,7 +126,16 @@ questions:
       - { value: PostResponseEvent, correct: false }
       - { value: GetResponseExceptionEvent, correct: false }
       - { value: FilterExceptionEvent, correct: false }
-    help: 'https://symfony.com/doc/4.4/components/http_kernel.html#creating-an-event-listener'
+    help: 'https://symfony.com/doc/current/components/http_kernel.html#creating-an-event-listener'
+  -
+    uuid: 1eebf878-8b9d-6a9c-aea4-99d84c92580c
+    question: 'Which design pattern implements the EventDispatcher component?'
+    answers:
+      - { value: Adapter, correct: false }
+      - { value: Decorator, correct: false }
+      - { value: Observer, correct: true }
+      - { value: Mediator, correct: true }
+    help: 'https://symfony.com/doc/current/components/event_dispatcher.html#introduction'
   -
     uuid: 1eebf878-8b9d-6b32-ad5b-99d84c92580c
     question: 'Which method from EventSubscriberInterface return array of events that subscriber wants to listen to?'
@@ -252,7 +233,7 @@ questions:
       - { value: ExceptionEvent, correct: true }
       - { value: ResponseEvent, correct: false }
       - { value: PostResponseEvent, correct: false }
-    help: 'https://symfony.com/doc/6.4/components/http_kernel.html#creating-an-event-listener'
+    help: 'https://symfony.com/doc/current/components/http_kernel.html#creating-an-event-listener'
   -
     uuid: 1eebf878-8ba2-67ae-9387-99d84c92580c
     question: 'From an Event instance, is it possible to get the EventDispatcher instance that dispatched this event?'
@@ -260,6 +241,16 @@ questions:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/current/components/event_dispatcher.html#event-name-introspection'
+  -
+    uuid: 1eebf878-8ba3-6032-bdaf-99d84c92580c
+    question: 'Which exception is throw when trying to remove a listener from an ImmutableEventDispatcher?'
+    answers:
+      - { value: RuntimeException, correct: false }
+      - { value: LogicException, correct: false }
+      - { value: InvalidArgumentException, correct: false }
+      - { value: BadMethodCallException, correct: true }
+      - { value: FrozenEventDispatcherException, correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
   -
     uuid: 1eebf878-8ba3-69c4-a0e8-99d84c92580c
     question: "Could new subscribers be added to an ImmutableEventDispatcher?"

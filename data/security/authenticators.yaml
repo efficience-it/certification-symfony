@@ -1,5 +1,22 @@
 questions:
   -
+    uuid: 1eebf878-8ba1-61c4-9205-99d84c92580c
+    question: 'Is user authenticated in all of security firewalls after a successful login:'
+    answers:
+      - { value: 'Yes, it happens automatically', correct: false }
+      - { value: 'Yes, if firewalls have the same value of the `context` option', correct: true }
+      - { value: 'Yes, if option `shared` is set to true', correct: false }
+      - { value: 'No, it is not possible, firewalls are independent from each other', correct: false }
+    help: 'https://symfony.com/doc/current/reference/configuration/security.html#reference-security-firewall-context'
+  -
+    uuid: 1eebf878-8ba4-632e-95ed-99d84c92580c
+    question: 'Which of the following is the AccessDecisionManager default strategy?'
+    answers:
+      - { value: affirmative, correct: true }
+      - { value: unanimous, correct: false }
+      - { value: consensus, correct: false }
+    help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/Security/Core/Authorization/AccessDecisionManager.php#L43'
+  -
     uuid: 1eeda458-0d6c-635c-b4b2-75c742f4f6a8
     question: 'Which method do you have to implement in your custom Authenticator which extends the AbstractAuthenticator ?'
     answers:
@@ -22,20 +39,3 @@ questions:
       - { value: UserBadge(), correct: false }
       - { value: SelfValidatingPassport(), correct: true }
     help: 'https://symfony.com/doc/current/security/custom_authenticator.html'
-  -
-    uuid: 1eebf878-8ba1-61c4-9205-99d84c92580c
-    question: 'Is user authenticated in all of security firewalls after a successful login:'
-    answers:
-      - { value: 'Yes, it happens automatically', correct: false }
-      - { value: 'Yes, if firewalls have the same value of the `context` option', correct: true }
-      - { value: 'Yes, if option `shared` is set to true', correct: false }
-      - { value: 'No, it is not possible, firewalls are independent from each other', correct: false }
-    help: 'https://symfony.com/doc/current/reference/configuration/security.html#reference-security-firewall-context'
-  -
-    uuid: 1eebf878-8ba4-632e-95ed-99d84c92580c
-    question: 'Which of the following is the AccessDecisionManager default strategy?'
-    answers:
-      - { value: affirmative, correct: true }
-      - { value: unanimous, correct: false }
-      - { value: consensus, correct: false }
-    help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/Security/Core/Authorization/AccessDecisionManager.php#L43'

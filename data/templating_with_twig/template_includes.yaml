@@ -7,7 +7,7 @@ questions:
       - { value: 'The template will be succesfully evaluated and the string The car! will be displayed in the web browser.', correct: true }
       - { value: 'The template will be partially evaluated and the string The will be displayed in the web browser.', correct: false }
       - { value: 'The template will be succesfully evaluated and the string The empty car! will be displayed in the web browser.', correct: false }
-    help: "https://twig.symfony.com/doc/2.x/templates.html#variables"
+    help: 'https://twig.symfony.com/doc/2.x/templates.html#variables'
   -
     uuid: 1eebf878-8b98-6bbe-a34e-99d84c92580c
     question: "Is the following code valid? {% cache '_foo_template' ttl(45) %} Cached {% endcache %}"
@@ -33,4 +33,4 @@ questions:
       - { value: '{% block content %} content {% endblock %}', correct: true }
       - { value: '{% startblock content %} content {% endblock content %}', correct: false }
       - { value: '{% startblock content %} content {% finishblock content %}', correct: false }
-    help: "https://twig.symfony.com/doc/2.x/functions/block.html https://twig.symfony.com/doc/2.x/templates.html https://twigfiddle.com/ah119e"
+    help: 'https://twig.symfony.com/doc/3.x/functions/block.html'

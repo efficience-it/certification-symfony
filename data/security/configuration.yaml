@@ -17,4 +17,4 @@ questions:
       - { value: logs, correct: false }
       - { value: app/logs, correct: false }
       - { value: app/log, correct: false }
-    help: 'https://symfony.com/doc/4.x/logging.html#where-logs-are-stored'
+    help: 'https://symfony.com/doc/current/logging.html#where-logs-are-stored'

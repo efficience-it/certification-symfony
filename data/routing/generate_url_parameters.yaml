@@ -1,5 +1,14 @@
 questions:
   -
+    uuid: 1eebf878-8b99-61f4-bf74-99d84c92580c
+    question: 'How is it possible to generate absolute URLs from the Console?'
+    answers:
+      - { value: 'The host is automatically known by Symfony, there is no need to specify it in CLI.', correct: false }
+      - { value: 'By specifying the host parameter in the Twig function url().', correct: false }
+      - { value: "By running $this->getContainer()->get('router')->getContext()->setHost('example.org');", correct: true }
+      - { value: 'By overloading the parameter router.request_context.host in the configuration.', correct: true }
+    help: 'https://symfony.com/doc/current/routing.html#generating-urls-in-commands'
+  -
     uuid: 1eebf878-8b99-635c-8475-99d84c92580c
     question: 'What is returned by Route::compile()?'
     answers:
@@ -9,25 +18,6 @@ questions:
       - { value: 'A RouteToCompile instance', correct: false }
       - { value: 'A RouteCompiled instance', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Routing/Route.php#L402'
-  -
-    uuid: 1eebf878-8ba1-605c-9981-99d84c92580c
-    question: 'Which special routing parameters are available in Symfony:'
-    answers:
-      - { value: _controller, correct: true }
-      - { value: _format, correct: true }
-      - { value: _fragment, correct: true }
-      - { value: _locale, correct: true }
-      - { value: _route, correct: false }
-    help: 'https://symfony.com/doc/current/routing.html#special-parameters'
-  -
-    uuid: 1eebf878-8b99-61f4-bf74-99d84c92580c
-    question: 'How is it possible to generate absolute URLs from the Console?'
-    answers:
-      - { value: 'The host is automatically known by Symfony, there is no need to specify it in CLI.', correct: false }
-      - { value: 'By specifying the host parameter in the Twig function url().', correct: false }
-      - { value: "By running $this->getContainer()->get('router')->getContext()->setHost('example.org');", correct: true }
-      - { value: 'By overloading the parameter router.request_context.host in the configuration.', correct: true }
-    help: 'https://symfony.com/doc/current/routing.html#generating-urls-in-commands'
   -
     uuid: 1eebf878-8b9a-691e-8fde-99d84c92580c
     question: 'Which exception is thrown when a Route defined with /page/{foo}/{foo} cannot be compiled?'
@@ -47,6 +37,16 @@ questions:
       - { value: $_method, correct: false }
       - { value: $_action, correct: false }
     help: 'https://symfony.com/doc/current/routing.html#getting-the-route-name-and-parameters'
+  -
+    uuid: 1eebf878-8ba1-605c-9981-99d84c92580c
+    question: 'Which special routing parameters are available in Symfony:'
+    answers:
+      - { value: _controller, correct: true }
+      - { value: _format, correct: true }
+      - { value: _fragment, correct: true }
+      - { value: _locale, correct: true }
+      - { value: _route, correct: false }
+    help: 'https://symfony.com/doc/current/routing.html#special-parameters'
   -
     uuid: 1eebf878-8ba1-60a2-996e-99d84c92580c
     question: 'How to generate absolute URL for a given route in controller ?'

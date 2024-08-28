@@ -1,19 +1,19 @@
 questions:
   -
-    uuid: 1eebf878-8ba7-6fba-97d9-99d84c92580c
-    question: 'How is the url Twig function different from the path Twig function?'
-    answers:
-      - { value: 'url returns an absolute URL, while path returns a relative URL.', correct: true }
-      - { value: 'path returns an absolute URL, while url returns a relative URL.', correct: false }
-      - { value: 'They are used interchangeably and have the same functionality.', correct: false }
-    help: 'https://symfony.com/doc/current/reference/twig_reference.html'
-  -
     uuid: 1eebf878-8ba7-6f2e-b02a-99d84c92580c
     question: 'Which Twig function is used to embed controllers in templates?'
     answers:
       - { value: render_esi, correct: false }
       - { value: controller, correct: false }
       - { value: render, correct: true }
+    help: 'https://symfony.com/doc/current/reference/twig_reference.html'
+  -
+    uuid: 1eebf878-8ba7-6fba-97d9-99d84c92580c
+    question: 'How is the url Twig function different from the path Twig function?'
+    answers:
+      - { value: 'url returns an absolute URL, while path returns a relative URL.', correct: true }
+      - { value: 'path returns an absolute URL, while url returns a relative URL.', correct: false }
+      - { value: 'They are used interchangeably and have the same functionality.', correct: false }
     help: 'https://symfony.com/doc/current/reference/twig_reference.html'
   -
     uuid: 1eebf878-8ba8-6046-a749-99d84c92580c
@@ -31,4 +31,4 @@ questions:
       - { value: "{{ path('route_name') }}", correct: true }
       - { value: "{{ url('route_name') }}", correct: true }
       - { value: "{{ link('route_name') }}", correct: false }
-    help: 'https://symfony.com/doc/current/reference/twig_reference.html#pathhttps://symfony.com/doc/current/reference/twig_reference.html#url'
+    help: 'https://symfony.com/doc/current/reference/twig_reference.html#path'

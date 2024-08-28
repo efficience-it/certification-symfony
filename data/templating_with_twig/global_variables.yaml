@@ -1,5 +1,14 @@
 questions:
   -
+    uuid: 1eebf878-8b98-6862-a729-99d84c92580c
+    question: 'When twig is used as a standalone library, which global variables are always available in templates?'
+    answers:
+      - { value: _context, correct: true }
+      - { value: app, correct: false }
+      - { value: _self, correct: true }
+      - { value: _charset, correct: true }
+    help: 'https://twig.symfony.com/doc/3.x/templates.html#global-variables'
+  -
     uuid: 1eebf878-8ba5-6a30-ac9b-99d84c92580c
     question: "Will this code permit to get the {{ ga_tracking }} in every twig files ?    # config/packages/twig.yaml     twig:     globals:      ga_tracking: 'UA-xxxxx-x'"
     answers:
@@ -30,7 +39,7 @@ questions:
       - { value: app.session, correct: true }
       - { value: app.request, correct: true }
       - { value: app.user, correct: true }
-    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Bridge/Twig/AppVariable.php    https://symfony.com/doc/current/templates.html#the-app-global-variable'
+    help: 'https://symfony.com/doc/current/templates.html#the-app-global-variable'
   -
     uuid: 1eebf878-8ba5-6b0c-88ef-99d84c92580c
     question: 'What is default value of app.debug in a twig file ?'
@@ -38,12 +47,3 @@ questions:
       - { value: 'true if in debug mode', correct: true }
       - { value: 'false', correct: false }
     help: 'https://symfony.com/doc/current/templates.html#the-app-global-variable'
-  -
-    uuid: 1eebf878-8b98-6862-a729-99d84c92580c
-    question: 'When twig is used as a standalone library, which global variables are always available in templates?'
-    answers:
-      - { value: _context, correct: true }
-      - { value: app, correct: false }
-      - { value: _self, correct: true }
-      - { value: _charset, correct: true }
-    help: 'https://twig.symfony.com/doc/3.x/templates.html#global-variables'

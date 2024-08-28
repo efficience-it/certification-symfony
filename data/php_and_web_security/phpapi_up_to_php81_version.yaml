@@ -1,76 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8ba0-699a-b7c4-99d84c92580c
-    question: 'Which of the following function declarations must be used to return a reference?'
-    answers:
-      - { value: 'function &foo() {...}', correct: true }
-      - { value: 'function $foo() {...}', correct: false }
-      - { value: 'function %foo() {...}', correct: false }
-      - { value: 'function $$foo() {...}', correct: false }
-    help: 'https://www.php.net/manual/en/language.references.return.php'
-  -
-    uuid: 1eebf878-8ba0-6bd4-9a5b-99d84c92580c
-    question: 'in a class, public $var4 = self::myStaticMethod(); is a valid property declaration ?'
-    answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
-    help: 'https://www.php.net/manual/en/language.oop5.properties.php#example-1'
-  -
-    uuid: 1eebf878-8ba3-6e56-af20-99d84c92580c
-    question: 'Which of the following variables is not serializable to JSON with the json_encode() native function?'
-    answers:
-      - { value: "$data ={ 'full_name' =>'Pierre Dupont' ,'location'=>[ 'city' =>'Paris' , 'country' =>'France' ]];", correct: false }
-      - { value: "$data = new SomeClass('some string' );", correct: false }
-      - { value: "$data = 'foo bar ';", correct: false }
-      - { value: '$data = function ($content){ return (strtoupper(strip_tags(content)));};', correct: true }
-    help: 'https://php.net/manual/en/book.json.php'
-  -
-    uuid: 1eeda3fc-6f1f-6b00-ba24-216aef5bea70
-    question: 'What is the purpose of the Chain User Provider ?'
-    answers:
-      - { value: 'It combines two or more providers to create a new user provider. sorted they are looked one after the other until user is found', correct: true }
-      - { value: "This user provider stores all user information in a configuration file, including their passwords.", correct: false }
-      - { value: "User Access are stored in a Chain software like Stackifor.", correct: false }
-    help: 'https://symfony.com/doc/current/security/user_providers.html#chain-user-provider'
-  -
-    uuid: 1eedb041-7713-6f86-9b4d-9d3b2d641bb6
-    question: 'What is the reason, we could add false in $security->logout(false) in Security ?'
-    answers:
-      - { value: 'disable CSRF', correct: true }
-      - { value: 'disable default redirection', correct: false }
-      - { value: 'disable firewall', correct: false }
-      - { value: 'to limit login attempts, the user will not be able to login for 5 minutes', correct: false }
-    help: 'https://symfony.com/doc/current/security.html#logout-programmatically'
-  -
-    uuid: 1eee6d98-7a23-6338-9026-cd57d9ba16db
-    question: 'Where can be set an attribute whith readonly property ? in php8.1'
-    answers:
-      - { value: 'in the _construct method', correct: true }
-      - { value: 'in a setter method', correct: false }
-      - { value: 'at the attribute declaration', correct: false }
-    help: 'https://www.php.net/manual/en/language.oop5.properties.php'
-  -
-    uuid: 1eebf878-8b9b-6e90-875a-99d84c92580c
-    question: 'Which of the following APIs are designed to be SAFE from SQL injections?'
-    answers:
-      - { value: 'Query methods on the Connection.', correct: false }
-      - { value: 'Doctrine\DBAL\Connection#update($table, $values, $where, $types)', correct: true }
-      - { value: 'Doctrine\DBAL\Connection#delete($table, $where, $types)', correct: true }
-      - { value: 'Doctrine\DBAL\Query\QueryBuilder#setFirstResult($offset)', correct: true }
-      - { value: 'The QueryBuilder API.', correct: false }
-      - { value: 'Doctrine\DBAL\Platforms\AbstractPlatform#modifyLimitQuery($sql, $limit, $offset)', correct: true }
-      - { value: 'Doctrine\DBAL\Connection#insert($table, $values, $types)', correct: true }
-      - { value: 'Doctrine\DBAL\Query\QueryBuilder#setMaxResults($limit)', correct: true }
-    help: 'https://www.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/security.html#sql-injection-safe-and-unsafe-apis-for-user-input'
-  -
-    uuid: 1eebf878-8ba3-673a-a520-99d84c92580c
-    question: "Given the following code, what will be displayed?$a = (object) ['a' => 'a'];$b = (object) ['a' => 'a'];echo $b <=> $a;"
-    answers:
-      - { value: '0', correct: true }
-      - { value: '1', correct: false }
-      - { value: '-1', correct: false }
-    help: 'https://www.php.net/manual/en/language.operators.comparison.php'
-  -
     uuid: 1eebf878-8b97-6494-ae5f-99d84c92580c
     question: 'Which configuration file format can be used to define PHP constants as parameters?'
     answers:
@@ -114,7 +43,7 @@ questions:
       - { value: "[ 'tags.id' => 2 ]", correct: false }
       - { value: "[ 'tags_id' => 2 ]", correct: true }
       - { value: "[ 'tags' => ['id' => 2] ]", correct: false }
-    help: 'https://www.php.net/manual/en/language.variables.external.php'
+    help: 'https://github.com/symfony/symfony/issues/29664'
   -
     uuid: 1eebf878-8b9a-6d88-9a1d-99d84c92580c
     question: 'Which major PHP version introduced the « traits » feature?'
@@ -126,6 +55,19 @@ questions:
       - { value: 'PHP 5.6', correct: false }
       - { value: 'PHP 5.5', correct: false }
     help: 'https://php.net/manual/en/language.oop5.traits.php'
+  -
+    uuid: 1eebf878-8b9b-6e90-875a-99d84c92580c
+    question: 'Which of the following APIs are designed to be SAFE from SQL injections?'
+    answers:
+      - { value: 'Query methods on the Connection.', correct: false }
+      - { value: 'Doctrine\DBAL\Connection#update($table, $values, $where, $types)', correct: true }
+      - { value: 'Doctrine\DBAL\Connection#delete($table, $where, $types)', correct: true }
+      - { value: 'Doctrine\DBAL\Query\QueryBuilder#setFirstResult($offset)', correct: true }
+      - { value: 'The QueryBuilder API.', correct: false }
+      - { value: 'Doctrine\DBAL\Platforms\AbstractPlatform#modifyLimitQuery($sql, $limit, $offset)', correct: true }
+      - { value: 'Doctrine\DBAL\Connection#insert($table, $values, $types)', correct: true }
+      - { value: 'Doctrine\DBAL\Query\QueryBuilder#setMaxResults($limit)', correct: true }
+    help: 'https://www.doctrine-project.org/projects/doctrine-dbal/en/latest/reference/security.html#sql-injection-safe-and-unsafe-apis-for-user-input'
   -
     uuid: 1eebf878-8b9b-6f80-bc80-99d84c92580c
     question: "Which of the following statements best describes the purpose of PHP's extract() function? This function accepts an array as its first argument."
@@ -170,7 +112,7 @@ questions:
       - { value: 'public function vote(TokenInterface $token, array $attributes, $object)', correct: false }
       - { value: 'public function vote(TokenInterface $token, $object, array $attributes)', correct: false }
       - { value: 'public function vote(TokenInterface $token, array $attributes, $subject)', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Security/Core/Authorization/Voter/VoterInterface.php'
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Core/Authorization/Voter/VoterInterface.php'
   -
     uuid: 1eebf878-8b9d-6506-af8c-99d84c92580c
     question: 'Which class can be used to extracts security errors from a Request?'
@@ -218,6 +160,15 @@ questions:
       - { value: 'XML-RPC and REST', correct: false }
     help: 'https://www.php.net/manual/en/refs.webservice.php'
   -
+    uuid: 1eebf878-8ba0-699a-b7c4-99d84c92580c
+    question: 'Which of the following function declarations must be used to return a reference?'
+    answers:
+      - { value: 'function &foo() {...}', correct: true }
+      - { value: 'function $foo() {...}', correct: false }
+      - { value: 'function %foo() {...}', correct: false }
+      - { value: 'function $$foo() {...}', correct: false }
+    help: 'https://www.php.net/manual/en/language.references.return.php'
+  -
     uuid: 1eebf878-8ba0-69e0-80a7-99d84c92580c
     question: 'The ______ keyword is used to indicate an incomplete class or method, which must be further extended and/or implemented in order to be used.'
     answers:
@@ -233,7 +184,14 @@ questions:
     answers:
       - { value: 'True', correct: true }
       - { value: 'False', correct: false }
-    help: "https://www.php.net/manual/en/functions.anonymous.php"
+    help: 'https://www.php.net/manual/en/functions.anonymous.php'
+  -
+    uuid: 1eebf878-8ba0-6bd4-9a5b-99d84c92580c
+    question: 'in a class, public $var4 = self::myStaticMethod(); is a valid property declaration ?'
+    answers:
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
+    help: 'https://www.php.net/manual/en/language.oop5.properties.php#example-1'
   -
     uuid: 1eebf878-8ba0-6c6a-b940-99d84c92580c
     question: 'Declaring class properties or methods as static makes them accessible without needing an instantiation of the class ?'
@@ -285,6 +243,14 @@ questions:
       - { value: 'Yes', correct: false }
     help: 'https://symfony.com/doc/current/components/property_access/introduction.html#magic-call-method'
   -
+    uuid: 1eebf878-8ba3-673a-a520-99d84c92580c
+    question: "Given the following code, what will be displayed?$a = (object) ['a' => 'a'];$b = (object) ['a' => 'a'];echo $b <=> $a;"
+    answers:
+      - { value: '0', correct: true }
+      - { value: '1', correct: false }
+      - { value: '-1', correct: false }
+    help: 'https://www.php.net/manual/en/language.operators.comparison.php'
+  -
     uuid: 1eebf878-8ba3-6dc0-bb50-99d84c92580c
     question: "What is the most recommended way to count the number of occurences of each unique value in the following array?$a=[1,1,2,3,4,4,5,6,6,6,3,2,2,2];"
     answers:
@@ -293,7 +259,16 @@ questions:
       - { value: '$n = count($a);', correct: false }
       - { value: '$n = array_total_values($a);', correct: false }
       - { value: "$ = array_unique($a);$k = array_fill(0,count($k), 0);$n = array_combine($k, $v);foreach( $a as $i){++$n[$i];}", correct: false }
-    help: 'https://php.net/arrays https://php.net/manual/en/function.array-count-values.php https://php.net/manual/en/function.count.php'
+    help: 'https://php.net/manual/en/function.array-count-values.php'
+  -
+    uuid: 1eebf878-8ba3-6e56-af20-99d84c92580c
+    question: 'Which of the following variables is not serializable to JSON with the json_encode() native function?'
+    answers:
+      - { value: "$data ={ 'full_name' =>'Pierre Dupont' ,'location'=>[ 'city' =>'Paris' , 'country' =>'France' ]];", correct: false }
+      - { value: "$data = new SomeClass('some string' );", correct: false }
+      - { value: "$data = 'foo bar ';", correct: false }
+      - { value: '$data = function ($content){ return (strtoupper(strip_tags(content)));};', correct: true }
+    help: 'https://php.net/manual/en/book.json.php'
   -
     uuid: 1eebf878-8ba3-6f78-8a74-99d84c92580c
     question: 'Which interface should be implemented when putting together all the required parts (token, provider, listener) for a custom authentication system ?'
@@ -301,8 +276,8 @@ questions:
       - { value: Symfony\Component\Security\Guard\GuardAuthenticatorInterface, correct: false }
       - { value: Symfony\Component\Security\Core\Authentication\AuthenticationManagerInterface, correct: false }
       - { value: Sensio\Bundle\FrameworkExtraBundle\EventListener\SecurityListenerInterface, correct: false }
-      - { value: Symfony\Bundle\SecurityBundle\DependencyInjection\Security\Factory\SecurityFactoryInterface, correct: true }
-    help: 'https://symfony.com/doc/2.7/security/custom_authentication_provider.html#the-factoryhttps://github.com/symfony/symfony/blob/2.7/src/Symfony/Bundle/SecurityBundle/DependencyInjection/Security/Factory/SecurityFactoryInterface.php'
+      - { value: Symfony\Component\Security\Http\Authenticator\AbstractAuthenticator, correct: true }
+    help: 'https://symfony.com/doc/current/security/custom_authenticator.html'
   -
     uuid: 1eebf878-8ba4-6dc4-8bee-99d84c92580c
     question: 'Which encryption means is used to secure credentials when authenticating an HTTP request with the HTTP Basic mechanism?'
@@ -312,7 +287,7 @@ questions:
       - { value: 'Credentials are not encrypted and transmitted in plain text in the HTTP request.', correct: false }
       - { value: 'Symmetric-key encryption', correct: false }
       - { value: 'Credentials are not encrypted but only Base64 encoded.', correct: true }
-    help: 'https://tools.ietf.org/html/rfc7235https://en.wikipedia.org/wiki/Basic_access_authentication'
+    help: 'https://en.wikipedia.org/wiki/Basic_access_authentication'
   -
     uuid: 1eebf878-8ba4-6e14-8119-99d84c92580c
     question: 'Can interfaces inherit from other interfaces in PHP?'
@@ -339,3 +314,28 @@ questions:
       - { value: 'PHP 5.4', correct: false }
       - { value: 'PHP 5.5', correct: true }
     help: 'https://www.php.net/ChangeLog-5.php'
+  -
+    uuid: 1eeda3fc-6f1f-6b00-ba24-216aef5bea70
+    question: 'What is the purpose of the Chain User Provider ?'
+    answers:
+      - { value: 'It combines two or more providers to create a new user provider. sorted they are looked one after the other until user is found', correct: true }
+      - { value: "This user provider stores all user information in a configuration file, including their passwords.", correct: false }
+      - { value: "User Access are stored in a Chain software like Stackifor.", correct: false }
+    help: 'https://symfony.com/doc/current/security/user_providers.html#chain-user-provider'
+  -
+    uuid: 1eedb041-7713-6f86-9b4d-9d3b2d641bb6
+    question: 'What is the reason, we could add false in $security->logout(false) in Security ?'
+    answers:
+      - { value: 'disable CSRF', correct: true }
+      - { value: 'disable default redirection', correct: false }
+      - { value: 'disable firewall', correct: false }
+      - { value: 'to limit login attempts, the user will not be able to login for 5 minutes', correct: false }
+    help: 'https://symfony.com/doc/current/security.html#logout-programmatically'
+  -
+    uuid: 1eee6d98-7a23-6338-9026-cd57d9ba16db
+    question: 'Where can be set an attribute whith readonly property ? in php8.1'
+    answers:
+      - { value: 'in the _construct method', correct: true }
+      - { value: 'in a setter method', correct: false }
+      - { value: 'at the attribute declaration', correct: false }
+    help: 'https://www.php.net/manual/en/language.oop5.properties.php'

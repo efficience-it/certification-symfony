@@ -1,63 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8ba6-6610-a019-99d84c92580c
-    question: 'Could an Expression be configured using ContainerConfigurator?'
-    answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
-    help: 'https://github.com/symfony/dependency-injection/blob/3.4/Loader/Configurator/ContainerConfigurator.php#L125'
-  -
-    uuid: 1eebf878-8baa-609e-9284-99d84c92580c
-    question: 'If no methods are specified for a route, what methods will be matched?'
-    answers:
-      - { value: 'Any methods', correct: true }
-      - { value: GET, correct: false }
-      - { value: 'Safe methods: GET or HEAD', correct: false }
-      - { value: 'GET or POST', correct: false }
-    help: 'https://symfony.com/doc/4.3/routing.html#matching-http-methods'
-  -
-    uuid: 1eebf878-8ba9-6b80-8916-99d84c92580c
-    question: 'Given the context where a single request is stored in the RequestStack, could the current request be removed from the request stack?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/RequestStack.php'
-  -
-    uuid: 1eebf878-8ba9-6bd0-b7bf-99d84c92580c
-    question: 'It is possible to change the class of a service using the ContainerBuilder?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/components/dependency_injection/definitions.html'
-  -
-    uuid: 1eed5768-e3b6-667a-8f78-21c4c4321b85
-    question: 'What is the main purpose of the eraseCredentials() method from the UserInterface?'
-    answers:
-      - { value: "Reset user's credentials from database", correct: false }
-      - { value: "Disable user's account", correct: false }
-      - { value: 'Remove sensitive data from the user', correct: true }
-      - { value: 'Reload user from database', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.0/src/Symfony/Component/Security/Core/User/UserInterface.php#L49-L55'
-  -
-    uuid: 1eebf878-8ba4-69dc-90ca-99d84c92580c
-    question: 'How to make a route matching only a specific host ?'
-    answers:
-      - { value: 'By adding domain key in the requirements section of a route definition', correct: false }
-      - { value: "it's not possible", correct: false }
-      - { value: 'By adding domain key in the route definition', correct: false }
-      - { value: 'By adding a host key in the requirements section of a route definition', correct: false }
-      - { value: 'By adding a host key in the route definition', correct: true }
-    help: 'https://symfony.com/doc/current/routing/hostname_pattern.html'
-  -
-    uuid: 1eebf878-8ba9-6c16-ab08-99d84c92580c
-    question: 'What is a Dumper?'
-    answers:
-      - { value: 'A dumper is responsible for outputting a string representation of a PHP variable.', correct: true }
-      - { value: 'A dumper is responsible for getting each property values of PHP object.', correct: false }
-      - { value: 'A dumper is responsible for creating a var_export of any PHP variable.', correct: false }
-      - { value: 'A dumper is responsible for creating a var_dump of any PHP variable.', correct: false }
-    help: 'https://symfony.com/doc/current/components/var_dumper.html#advanced-usage'
-  -
     uuid: 1eebf878-8ba3-6c58-917f-99d84c92580c
     question: 'Which of the following are Symfony Core bundles?'
     answers:
@@ -74,6 +16,16 @@ questions:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/RequestStack.php#L57'
+  -
+    uuid: 1eebf878-8ba4-69dc-90ca-99d84c92580c
+    question: 'How to make a route matching only a specific host ?'
+    answers:
+      - { value: 'By adding domain key in the requirements section of a route definition', correct: false }
+      - { value: "it's not possible", correct: false }
+      - { value: 'By adding domain key in the route definition', correct: false }
+      - { value: 'By adding a host key in the requirements section of a route definition', correct: false }
+      - { value: 'By adding a host key in the route definition', correct: true }
+    help: 'https://symfony.com/doc/current/routing/hostname_pattern.html'
   -
     uuid: 1eebf878-8ba4-6d74-85f7-99d84c92580c
     question: 'Which variables types this $validator object can validate ?$validator = Validation::createValidator();'
@@ -95,6 +47,13 @@ questions:
       - { value: 'A Symfony\Component\HttpFoundation\Request instance.', correct: false }
     help: 'https://symfony.com/doc/current/components/http_kernel/introduction.html'
   -
+    uuid: 1eebf878-8ba6-6610-a019-99d84c92580c
+    question: 'Could an Expression be configured using ContainerConfigurator?'
+    answers:
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+    help: 'https://github.com/symfony/dependency-injection/blob/3.4/Loader/Configurator/ContainerConfigurator.php#L125'
+  -
     uuid: 1eebf878-8ba6-6908-890e-99d84c92580c
     question: 'Is the following code valid? $parsed = Yaml::parse( !custom_tag { foo: bar } , Yaml::PARSE_CUSTOM_TAGS);'
     answers:
@@ -111,7 +70,7 @@ questions:
       - { value: UserNotFoundException, correct: false }
       - { value: BadCredentialsException, correct: true }
       - { value: UsernameNotFoundException, correct: true }
-    help: 'https://github.com/symfony/symfony/blob/2.3/src/Symfony/Component/Security/Core/Authentication/Provider/UserAuthenticationProvider.php#L55'
+    help: 'https//github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Core/Authentication/Provider/UserAuthenticationProvider.php#L55'
   -
     uuid: 1eebf878-8ba7-68bc-874c-99d84c92580c
     question: 'When you want to use a translation in another domain than the default domain, you must specify the domain as:'
@@ -180,7 +139,7 @@ questions:
       - { value: UndefinedServiceException, correct: false }
       - { value: ServiceGetException, correct: false }
       - { value: ServiceUnavailableException, correct: false }
-    help: 'https://github.com/symfony/symfony/blob/2.0/src/Symfony/Component/DependencyInjection/Container.php#L221'
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/DependencyInjection/Container.php#L221'
   -
     uuid: 1eebf878-8ba9-682e-9a05-99d84c92580c
     question: 'What''s true about the addListener()''s $priority value from Symfony\Component\EventDispatcher\EventDIspatcherInterface?'
@@ -200,7 +159,7 @@ questions:
       - { value: 'Whether to enable caching or not.', correct: false }
       - { value: 'Whether to enable logging or not.', correct: false }
       - { value: 'Whether to enable debugging or not.', correct: true }
-    help: 'https://github.com/symfony/symfony/blob/2.3/src/Symfony/Component/HttpKernel/Kernel.php'
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpKernel/Kernel.php'
   -
     uuid: 1eebf878-8ba9-69fa-9583-99d84c92580c
     question: 'Could a controller be defined using \Closure?'
@@ -228,6 +187,38 @@ questions:
       - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/3.4/src/Symfony/Component/DependencyInjection/Definition.php#L614'
   -
+    uuid: 1eebf878-8ba9-6b80-8916-99d84c92580c
+    question: 'Given the context where a single request is stored in the RequestStack, could the current request be removed from the request stack?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/RequestStack.php'
+  -
+    uuid: 1eebf878-8ba9-6bd0-b7bf-99d84c92580c
+    question: 'It is possible to change the class of a service using the ContainerBuilder?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/components/dependency_injection/definitions.html'
+  -
+    uuid: 1eebf878-8ba9-6c16-ab08-99d84c92580c
+    question: 'What is a Dumper?'
+    answers:
+      - { value: 'A dumper is responsible for outputting a string representation of a PHP variable.', correct: true }
+      - { value: 'A dumper is responsible for getting each property values of PHP object.', correct: false }
+      - { value: 'A dumper is responsible for creating a var_export of any PHP variable.', correct: false }
+      - { value: 'A dumper is responsible for creating a var_dump of any PHP variable.', correct: false }
+    help: 'https://symfony.com/doc/current/components/var_dumper.html#advanced-usage'
+  -
+    uuid: 1eebf878-8baa-609e-9284-99d84c92580c
+    question: 'If no methods are specified for a route, what methods will be matched?'
+    answers:
+      - { value: 'Any methods', correct: true }
+      - { value: GET, correct: false }
+      - { value: 'Safe methods: GET or HEAD', correct: false }
+      - { value: 'GET or POST', correct: false }
+    help: 'https://symfony.com/doc/current/routing.html#matching-http-methods'
+  -
     uuid: 1eebf878-8baa-60e4-b36f-99d84c92580c
     question: 'How does a cache differ from a key / value store?'
     answers:
@@ -241,7 +232,7 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/2.4/src/Symfony/Component/HttpFoundation/RequestStack.php'
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/RequestStack.php'
   -
     uuid: 1eebf878-8baa-6602-b7f4-99d84c92580c
     question: 'What class should be used to make a caching backend taggable?'
@@ -263,6 +254,15 @@ questions:
       - { value: user, correct: false }
       - { value: request, correct: true }
     help: 'https://symfony.com/doc/7.2/routing.html'
+  -
+    uuid: 1eed5768-e3b6-667a-8f78-21c4c4321b85
+    question: 'What is the main purpose of the eraseCredentials() method from the UserInterface?'
+    answers:
+      - { value: "Reset user's credentials from database", correct: false }
+      - { value: "Disable user's account", correct: false }
+      - { value: 'Remove sensitive data from the user', correct: true }
+      - { value: 'Reload user from database', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Core/User/UserInterface.php#L49-L55'
   -
     uuid: 1eed5770-8031-6462-93b0-97021e8fc25e
     question: 'If I want to allow the client to specify CLI option --force, what am I going to add to the definition?'
