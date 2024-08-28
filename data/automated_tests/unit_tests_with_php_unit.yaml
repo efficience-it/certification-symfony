@@ -3,98 +3,98 @@ questions:
     uuid: 1eebf878-8b97-6ca0-a2a3-99d84c92580c
     question: "When creating stub is it possible to disable the call to the original class' constructor?"
     answers:
-      - { value: 'Yes with the disableConstruct() method.', correct: false }
-      - { value: 'Yes with the disableConstructor() method.', correct: false }
-      - { value: 'Yes with the disableOriginalConstructor() method.', correct: true }
-      - { value: 'No', correct: false }
-      - { value: 'Yes with the disableOriginalConstruct() method.', correct: false }
+      - {value: 'Yes with the disableConstruct() method.', correct: false}
+      - {value: 'Yes with the disableConstructor() method.', correct: false}
+      - {value: 'Yes with the disableOriginalConstructor() method.', correct: true}
+      - {value: 'No', correct: false}
+      - {value: 'Yes with the disableOriginalConstruct() method.', correct: false}
     help: 'https://phpunit.de/manual/current/en/test-doubles.html#test-doubles.stubs'
   -
     uuid: 1eebf878-8b98-6a60-9a71-99d84c92580c
     question: "What will be the result of that assertion? $this->assertContainsOnly('string', ['1', '2', 3]);"
     answers:
-      - { value: Failure, correct: true }
-      - { value: Success, correct: false }
+      - {value: Failure, correct: true}
+      - {value: Success, correct: false}
     help: 'https://phpunit.de/manual/current/en/appendixes.assertions.html#appendixes.assertions.assertContainsOnly'
   -
     uuid: 1eebf878-8b98-6c04-a1e2-99d84c92580c
     question: 'Which is the method that allows to execute some code before each test defined by a class?'
     answers:
-      - { value: 'protected function setUp()', correct: true }
-      - { value: 'protected static function setUpBeforeClass()', correct: false }
-      - { value: 'protected function setUpBeforeClass()', correct: false }
-      - { value: 'protected static function setUp()', correct: false }
-      - { value: https, correct: false }
+      - {value: 'protected function setUp()', correct: true}
+      - {value: 'protected static function setUpBeforeClass()', correct: false}
+      - {value: 'protected function setUpBeforeClass()', correct: false}
+      - {value: 'protected static function setUp()', correct: false}
+      - {value: https, correct: false}
     help: 'https://phpunit.de/manual/current/en/fixtures.html#fixtures.more-setup-than-teardown'
   -
     uuid: 1eebf878-8b9a-6b26-87f0-99d84c92580c
     question: 'Which of the following are valid ways in PHPUnit to test the exceptions that occur when executing some PHP code?'
     answers:
-      - { value: 'Add the following PHP call inside the test method: $this->expectException(''Fully\\Qualified\\ExceptionClassName'');', correct: true }
-      - { value: "You can't test PHP exceptions with PHPUnit.", correct: false }
-      - { value: 'Wrap the entire test method in a try...catch but without processing the exception in any special way: public function testSomething() { try { // ... } catch(\Exception $e) {} }', correct: false }
+      - {value: 'Add the following PHP call inside the test method: $this->expectException(''Fully\\Qualified\\ExceptionClassName'');', correct: true}
+      - {value: "You can't test PHP exceptions with PHPUnit.", correct: false}
+      - {value: 'Wrap the entire test method in a try...catch but without processing the exception in any special way: public function testSomething() { try { // ... } catch(\Exception $e) {} }', correct: false}
     help: 'https://phpunit.de/manual/current/en/writing-tests-for-phpunit.html#writing-tests-for-phpunit.exceptions'
   -
     uuid: 1eebf878-8b9c-6160-8a96-99d84c92580c
     question: "What will be the result of that assertion in a PHPUnit test? self::assertSame('2204', 2204);"
     answers:
-      - { value: Failure, correct: true }
-      - { value: Success, correct: false }
+      - {value: Failure, correct: true}
+      - {value: Success, correct: false}
     help: 'https://phpunit.de/manual/current/en/appendixes.assertions.html#appendixes.assertions.assertSame'
   -
     uuid: 1eebf878-8b9e-617c-8f02-99d84c92580c
     question: 'Using PHPUnit, which method names are used to share test setup code?'
     answers:
-      - { value: setUp(), correct: true }
-      - { value: __construct(), correct: false }
-      - { value: shutdown(), correct: false }
-      - { value: tearDown(), correct: true }
+      - {value: setUp(), correct: true}
+      - {value: __construct(), correct: false}
+      - {value: shutdown(), correct: false}
+      - {value: tearDown(), correct: true}
     help: 'https://www.w3resource.com/php/PHPUnit/fixtures.php'
   -
     uuid: 1eebf878-8b9e-61c2-bcfc-99d84c92580c
     question: 'How to disable constructor when mocking an object?'
     answers:
-      - { value: '$this->getMock( My\Class )->disableOriginalConstructor()->getMock()', correct: false }
-      - { value: '$this->disableOriginalConstructor( My\Class'')', correct: false }
-      - { value: '$this->getMockBuilder( My\Class )->disableOriginalConstructor()->getMock()', correct: true }
-      - { value: '$this->getMockBuilder( My\Class )->getMock()->disableConstructor()', correct: false }
+      - {value: '$this->getMock( My\Class )->disableOriginalConstructor()->getMock()', correct: false}
+      - {value: '$this->disableOriginalConstructor( My\Class'')', correct: false}
+      - {value: '$this->getMockBuilder( My\Class )->disableOriginalConstructor()->getMock()', correct: true}
+      - {value: '$this->getMockBuilder( My\Class )->getMock()->disableConstructor()', correct: false}
     help: 'https://phpunit.de/manual/6.5/en/test-doubles.html#test-doubles.stubs.examples.StubTest2.php'
   -
     uuid: 1eebf878-8b9e-6320-adc3-99d84c92580c
     question: 'Using PHPUnit, which method allows you to expect an exception to be thrown?'
     answers:
-      - { value: "$this->setExpectedException('MyException')", correct: false }
-      - { value: "$this->setExceptionExpected('MyException')", correct: false }
-      - { value: "$this->expectException('MyException')", correct: true }
-      - { value: "$this->setExpected('MyException')", correct: false }
+      - {value: "$this->setExpectedException('MyException')", correct: false}
+      - {value: "$this->setExceptionExpected('MyException')", correct: false}
+      - {value: "$this->expectException('MyException')", correct: true}
+      - {value: "$this->setExpected('MyException')", correct: false}
     help: 'https://phpunit.de/manual/6.5/en/writing-tests-for-phpunit.html#writing-tests-for-phpunit.exceptions'
   -
     uuid: 1eebf878-8b9e-6366-b03b-99d84c92580c
     question: 'What command used for run all of your application tests by default?'
     answers:
-      - { value: 'phpunit -c app/', correct: false }
-      - { value: 'phpunit app/', correct: false }
-      - { value: 'phpunit -c', correct: false }
-      - { value: phpunit, correct: true }
+      - {value: 'phpunit -c app/', correct: false}
+      - {value: 'phpunit app/', correct: false}
+      - {value: 'phpunit -c', correct: false}
+      - {value: phpunit, correct: true}
     help: 'https://symfony.com/doc/current/testing.html#unit-tests'
   -
     uuid: 1eebf878-8b9e-6438-933b-99d84c92580c
     question: 'Where live functional tests in Symfony (inside a project structure)?'
     answers:
-      - { value: Tests/, correct: false }
-      - { value: Tests/Controller/, correct: true }
-      - { value: Tests/Functional/, correct: false }
-      - { value: Tests/Functional/Controller, correct: false }
-      - { value: Tests/Functional/Controllers, correct: false }
-      - { value: Tests/Controllers/, correct: false }
-      - { value: Controller/, correct: false }
+      - {value: Tests/, correct: false}
+      - {value: Tests/Controller/, correct: true}
+      - {value: Tests/Functional/, correct: false}
+      - {value: Tests/Functional/Controller, correct: false}
+      - {value: Tests/Functional/Controllers, correct: false}
+      - {value: Tests/Controllers/, correct: false}
+      - {value: Controller/, correct: false}
     help: 'https://symfony.com/doc/current/testing.html#integration-tests'
   -
     uuid: 1eebf878-8ba3-6c12-a0f5-99d84c92580c
     question: 'Which of the following assertions is correct?'
     answers:
-      - { value: 'PHP is a loosely-typed imperative language.', correct: true }
-      - { value: 'PHP is a loosely-typed declarative language.', correct: false }
-      - { value: 'PHP is a strongly-typed, functionnal language.', correct: false }
-      - { value: 'PHP is a loosely-typed functionnal language.', correct: false }
+      - {value: 'PHP is a loosely-typed imperative language.', correct: true}
+      - {value: 'PHP is a loosely-typed declarative language.', correct: false}
+      - {value: 'PHP is a strongly-typed, functionnal language.', correct: false}
+      - {value: 'PHP is a loosely-typed functionnal language.', correct: false}
     help: 'https://en.wikipedia.org/wiki/Programming_paradigm'

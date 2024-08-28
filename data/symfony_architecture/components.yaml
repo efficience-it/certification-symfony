@@ -3,289 +3,289 @@ questions:
     uuid: 1eebf878-8ba3-6c58-917f-99d84c92580c
     question: 'Which of the following are Symfony Core bundles?'
     answers:
-      - { value: CoreBundle, correct: false }
-      - { value: DebugBundle, correct: true }
-      - { value: TwigBundle, correct: true }
-      - { value: WebProfilerBundle, correct: true }
-      - { value: AuthenticationBundle, correct: false }
+      - {value: CoreBundle, correct: false}
+      - {value: DebugBundle, correct: true}
+      - {value: TwigBundle, correct: true}
+      - {value: WebProfilerBundle, correct: true}
+      - {value: AuthenticationBundle, correct: false}
     help: 'https://github.com/symfony/symfony/tree/master/src/Symfony/Bundle'
   -
     uuid: 1eebf878-8ba4-68c4-890d-99d84c92580c
     question: 'Could the master request be retrieved from the request stack?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/RequestStack.php#L57'
   -
     uuid: 1eebf878-8ba4-69dc-90ca-99d84c92580c
     question: 'How to make a route matching only a specific host ?'
     answers:
-      - { value: 'By adding domain key in the requirements section of a route definition', correct: false }
-      - { value: "it's not possible", correct: false }
-      - { value: 'By adding domain key in the route definition', correct: false }
-      - { value: 'By adding a host key in the requirements section of a route definition', correct: false }
-      - { value: 'By adding a host key in the route definition', correct: true }
+      - {value: 'By adding domain key in the requirements section of a route definition', correct: false}
+      - {value: "it's not possible", correct: false}
+      - {value: 'By adding domain key in the route definition', correct: false}
+      - {value: 'By adding a host key in the requirements section of a route definition', correct: false}
+      - {value: 'By adding a host key in the route definition', correct: true}
     help: 'https://symfony.com/doc/current/routing/hostname_pattern.html'
   -
     uuid: 1eebf878-8ba4-6d74-85f7-99d84c92580c
     question: 'Which variables types this $validator object can validate ?$validator = Validation::createValidator();'
     answers:
-      - { value: objects, correct: false }
-      - { value: arrays, correct: true }
-      - { value: numbers, correct: true }
-      - { value: strings, correct: true }
+      - {value: objects, correct: false}
+      - {value: arrays, correct: true}
+      - {value: numbers, correct: true}
+      - {value: strings, correct: true}
     help: 'https://symfony.com/doc/current/components/validator.html#retrieving-a-validator-instance'
   -
     uuid: 1eebf878-8ba5-61b6-8363-99d84c92580c
     question: "What is the type of the $result ? $result = $kernel->handle($request);"
     answers:
-      - { value: 'A Symfony\Component\HttpFoundation\Response instance.', correct: true }
-      - { value: 'A string.', correct: false }
-      - { value: 'A Symfony\Component\BrowserKit\Request instance.', correct: false }
-      - { value: 'A Symfony\Component\BrowserKit\Response instance.', correct: false }
-      - { value: 'An array.', correct: false }
-      - { value: 'A Symfony\Component\HttpFoundation\Request instance.', correct: false }
+      - {value: 'A Symfony\Component\HttpFoundation\Response instance.', correct: true}
+      - {value: 'A string.', correct: false}
+      - {value: 'A Symfony\Component\BrowserKit\Request instance.', correct: false}
+      - {value: 'A Symfony\Component\BrowserKit\Response instance.', correct: false}
+      - {value: 'An array.', correct: false}
+      - {value: 'A Symfony\Component\HttpFoundation\Request instance.', correct: false}
     help: 'https://symfony.com/doc/current/components/http_kernel/introduction.html'
   -
     uuid: 1eebf878-8ba6-6610-a019-99d84c92580c
     question: 'Could an Expression be configured using ContainerConfigurator?'
     answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
+      - {value: 'No', correct: false}
+      - {value: 'Yes', correct: true}
     help: 'https://github.com/symfony/dependency-injection/blob/3.4/Loader/Configurator/ContainerConfigurator.php#L125'
   -
     uuid: 1eebf878-8ba6-6908-890e-99d84c92580c
     question: 'Is the following code valid? $parsed = Yaml::parse( !custom_tag { foo: bar } , Yaml::PARSE_CUSTOM_TAGS);'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://symfony.com/doc/current/components/yaml.html#parsing-and-dumping-custom-tags'
   -
     uuid: 1eebf878-8ba6-6d90-8dec-99d84c92580c
     question: 'What class of exception can be thrown by Symfony\Component\Security\Core\Authentication\Provider\UserAuthenticationProvider''s authenticate() method?'
     answers:
-      - { value: WrongPasswordException, correct: false }
-      - { value: AuthenticationServiceException, correct: false }
-      - { value: AuthenticationFailureException, correct: false }
-      - { value: UserNotFoundException, correct: false }
-      - { value: BadCredentialsException, correct: true }
-      - { value: UsernameNotFoundException, correct: true }
+      - {value: WrongPasswordException, correct: false}
+      - {value: AuthenticationServiceException, correct: false}
+      - {value: AuthenticationFailureException, correct: false}
+      - {value: UserNotFoundException, correct: false}
+      - {value: BadCredentialsException, correct: true}
+      - {value: UsernameNotFoundException, correct: true}
     help: 'https//github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Core/Authentication/Provider/UserAuthenticationProvider.php#L55'
   -
     uuid: 1eebf878-8ba7-68bc-874c-99d84c92580c
     question: 'When you want to use a translation in another domain than the default domain, you must specify the domain as:'
     answers:
-      - { value: 'second argument of trans()', correct: false }
-      - { value: 'fourth argument of trans()', correct: false }
-      - { value: 'first argument of trans()', correct: false }
-      - { value: 'third argument of trans()', correct: true }
+      - {value: 'second argument of trans()', correct: false}
+      - {value: 'fourth argument of trans()', correct: false}
+      - {value: 'first argument of trans()', correct: false}
+      - {value: 'third argument of trans()', correct: true}
     help: 'https://github.com/symfony/symfony/blob/0baa58d4e4bb006c4ae68f75833b586bd3cb6e6f/src/Symfony/Component/Translation/Translator.php#L169'
   -
     uuid: 1eebf878-8ba7-6952-8382-99d84c92580c
     question: 'What component must be installed in order to use the ObjectNormalizer?'
     answers:
-      - { value: Config, correct: false }
-      - { value: DependencyInjection, correct: false }
-      - { value: PropertyAccess, correct: true }
-      - { value: EventDispatcher, correct: false }
+      - {value: Config, correct: false}
+      - {value: DependencyInjection, correct: false}
+      - {value: PropertyAccess, correct: true}
+      - {value: EventDispatcher, correct: false}
     help: 'https://symfony.com/doc/current/components/serializer.html#installation'
   -
     uuid: 1eebf878-8ba7-6b64-abc4-99d84c92580c
     question: 'Sometimes you may prefer to not save the objects immediately in order to increase the application performance. Which method would you call to mark cache items as  ready to be persisted  and then call to commit() method when you are ready to persist them all?'
     answers:
-      - { value: save(), correct: false }
-      - { value: defer(), correct: false }
-      - { value: saveDeferred(), correct: true }
-      - { value: persistDeferred(), correct: false }
+      - {value: save(), correct: false}
+      - {value: defer(), correct: false}
+      - {value: saveDeferred(), correct: true}
+      - {value: persistDeferred(), correct: false}
     help: 'https://symfony.com/doc/current/components/cache/cache_pools.html#saving-cache-items'
   -
     uuid: 1eebf878-8ba7-6d3a-90f4-99d84c92580c
     question: 'What are the correct arguments of the Symfony\Component\Routing\Route constructor ?'
     answers:
-      - { value: 'string $path The path pattern to matcharray $defaults An array of default parameter valuesarray<string|\Stringable> $requirements An array of requirements for parameters (regexes)array $options An array of options', correct: true }
-      - { value: 'array<string|\Stringable> $requirements An array of requirements for parameters (regexes)string $path The path pattern to matcharray $defaults An array of default parameter valuesarray $options An array of options', correct: false }
-      - { value: 'string $path The path pattern to matcharray<string|\Stringable> $requirements An array of requirements for parameters (regexes)array $options An array of optionsarray $defaults An array of default parameter values', correct: false }
-      - { value: 'array $defaults An array of default parameter valuesstring $path The path pattern to matcharray<string|\Stringable> $requirements An array of requirements for parameters (regexes)array $options An array of options', correct: false }
-      - { value: 'array $options An array of optionsstring $path The path pattern to matcharray $defaults An array of default parameter valuesarray<string|\Stringable> $requirements An array of requirements for parameters (regexes)', correct: false }
+      - {value: 'string $path The path pattern to matcharray $defaults An array of default parameter valuesarray<string|\Stringable> $requirements An array of requirements for parameters (regexes)array $options An array of options', correct: true}
+      - {value: 'array<string|\Stringable> $requirements An array of requirements for parameters (regexes)string $path The path pattern to matcharray $defaults An array of default parameter valuesarray $options An array of options', correct: false}
+      - {value: 'string $path The path pattern to matcharray<string|\Stringable> $requirements An array of requirements for parameters (regexes)array $options An array of optionsarray $defaults An array of default parameter values', correct: false}
+      - {value: 'array $defaults An array of default parameter valuesstring $path The path pattern to matcharray<string|\Stringable> $requirements An array of requirements for parameters (regexes)array $options An array of options', correct: false}
+      - {value: 'array $options An array of optionsstring $path The path pattern to matcharray $defaults An array of default parameter valuesarray<string|\Stringable> $requirements An array of requirements for parameters (regexes)', correct: false}
     help: 'https://github.com/symfony/symfony/blob/master/src/Symfony/Component/Routing/Route.php#L36'
   -
     uuid: 1eebf878-8ba9-6662-bd4b-99d84c92580c
     question: 'Which types are not valid Node Types ?'
     answers:
-      - { value: variable, correct: false }
-      - { value: date, correct: true }
-      - { value: scalar, correct: false }
-      - { value: integer, correct: false }
-      - { value: float, correct: false }
-      - { value: decimal, correct: true }
-      - { value: int, correct: true }
-      - { value: enum, correct: false }
+      - {value: variable, correct: false}
+      - {value: date, correct: true}
+      - {value: scalar, correct: false}
+      - {value: integer, correct: false}
+      - {value: float, correct: false}
+      - {value: decimal, correct: true}
+      - {value: int, correct: true}
+      - {value: enum, correct: false}
     help: 'https://symfony.com/doc/current/components/config/definition.html#node-type'
   -
     uuid: 1eebf878-8ba9-66b2-95e5-99d84c92580c
     question: 'What is the purpose of Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition::fixXmlConfig ?'
     answers:
-      - { value: 'It always applies a custom function to an XML element', correct: false }
-      - { value: 'It ensures that single XML elements are turned into an array', correct: true }
-      - { value: "It normalizes XML element name (e.g. pluralizing the key used in XML)", correct: false }
-      - { value: "It applies a custom function to an XML element if an error occurs", correct: false }
+      - {value: 'It always applies a custom function to an XML element', correct: false}
+      - {value: 'It ensures that single XML elements are turned into an array', correct: true}
+      - {value: "It normalizes XML element name (e.g. pluralizing the key used in XML)", correct: false}
+      - {value: "It applies a custom function to an XML element if an error occurs", correct: false}
     help: 'https://symfony.com/doc/current/components/config/definition.html#normalization'
   -
     uuid: 1eebf878-8ba9-6748-82fb-99d84c92580c
     question: 'Which exception is thrown when a service is not defined while using ContainerInterface::get()?'
     answers:
-      - { value: ServiceNotFoundException, correct: true }
-      - { value: ServiceUndefinedException, correct: false }
-      - { value: UndefinedServiceException, correct: false }
-      - { value: ServiceGetException, correct: false }
-      - { value: ServiceUnavailableException, correct: false }
+      - {value: ServiceNotFoundException, correct: true}
+      - {value: ServiceUndefinedException, correct: false}
+      - {value: UndefinedServiceException, correct: false}
+      - {value: ServiceGetException, correct: false}
+      - {value: ServiceUnavailableException, correct: false}
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/DependencyInjection/Container.php#L221'
   -
     uuid: 1eebf878-8ba9-682e-9a05-99d84c92580c
     question: 'What''s true about the addListener()''s $priority value from Symfony\Component\EventDispatcher\EventDIspatcherInterface?'
     answers:
-      - { value: 'Defaults to 0', correct: true }
-      - { value: 'The higher this value, the later an event listener will be triggered in the chain', correct: false }
-      - { value: 'Defaults to 100', correct: false }
-      - { value: 'The higher this value, the earlier an event listener will be triggered in the chain', correct: true }
-      - { value: 'Defaults to 1', correct: false }
+      - {value: 'Defaults to 0', correct: true}
+      - {value: 'The higher this value, the later an event listener will be triggered in the chain', correct: false}
+      - {value: 'Defaults to 100', correct: false}
+      - {value: 'The higher this value, the earlier an event listener will be triggered in the chain', correct: true}
+      - {value: 'Defaults to 1', correct: false}
     help: 'https://symfony.com/doc/current/components/event_dispatcher.html#connecting-listeners'
   -
     uuid: 1eebf878-8ba9-69b4-97bd-99d84c92580c
     question: 'What are the arguments of the Symfony\Component\HttpKernel\Kernel constructor?'
     answers:
-      - { value: 'The environment name of the application.', correct: true }
-      - { value: 'The name of the application.', correct: false }
-      - { value: 'Whether to enable caching or not.', correct: false }
-      - { value: 'Whether to enable logging or not.', correct: false }
-      - { value: 'Whether to enable debugging or not.', correct: true }
+      - {value: 'The environment name of the application.', correct: true}
+      - {value: 'The name of the application.', correct: false}
+      - {value: 'Whether to enable caching or not.', correct: false}
+      - {value: 'Whether to enable logging or not.', correct: false}
+      - {value: 'Whether to enable debugging or not.', correct: true}
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpKernel/Kernel.php'
   -
     uuid: 1eebf878-8ba9-69fa-9583-99d84c92580c
     question: 'Could a controller be defined using \Closure?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://symfony.com/doc/current/controller.html'
   -
     uuid: 1eebf878-8ba9-6aea-8517-99d84c92580c
     question: 'Which of the following value resolvers are shipped with the HttpKernel component?'
     answers:
-      - { value: RequestAttributeValueResolver, correct: true }
-      - { value: VariadicValueResolver, correct: true }
-      - { value: RequestValueResolver, correct: true }
-      - { value: UserValueResolver, correct: false }
-      - { value: ServiceValueResolver, correct: true }
-      - { value: DefaultValueResolver, correct: true }
-      - { value: SessionValueResolver, correct: true }
+      - {value: RequestAttributeValueResolver, correct: true}
+      - {value: VariadicValueResolver, correct: true}
+      - {value: RequestValueResolver, correct: true}
+      - {value: UserValueResolver, correct: false}
+      - {value: ServiceValueResolver, correct: true}
+      - {value: DefaultValueResolver, correct: true}
+      - {value: SessionValueResolver, correct: true}
     help: 'https://symfony.com/doc/current/controller/argument_value_resolver.html#built-in-value-resolvers'
   -
     uuid: 1eebf878-8ba9-6b30-8746-99d84c92580c
     question: 'Could a service definition be hidden using setPrivate()?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://github.com/symfony/symfony/blob/3.4/src/Symfony/Component/DependencyInjection/Definition.php#L614'
   -
     uuid: 1eebf878-8ba9-6b80-8916-99d84c92580c
     question: 'Given the context where a single request is stored in the RequestStack, could the current request be removed from the request stack?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/HttpFoundation/RequestStack.php'
   -
     uuid: 1eebf878-8ba9-6bd0-b7bf-99d84c92580c
     question: 'It is possible to change the class of a service using the ContainerBuilder?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://symfony.com/doc/current/components/dependency_injection/definitions.html'
   -
     uuid: 1eebf878-8ba9-6c16-ab08-99d84c92580c
     question: 'What is a Dumper?'
     answers:
-      - { value: 'A dumper is responsible for outputting a string representation of a PHP variable.', correct: true }
-      - { value: 'A dumper is responsible for getting each property values of PHP object.', correct: false }
-      - { value: 'A dumper is responsible for creating a var_export of any PHP variable.', correct: false }
-      - { value: 'A dumper is responsible for creating a var_dump of any PHP variable.', correct: false }
+      - {value: 'A dumper is responsible for outputting a string representation of a PHP variable.', correct: true}
+      - {value: 'A dumper is responsible for getting each property values of PHP object.', correct: false}
+      - {value: 'A dumper is responsible for creating a var_export of any PHP variable.', correct: false}
+      - {value: 'A dumper is responsible for creating a var_dump of any PHP variable.', correct: false}
     help: 'https://symfony.com/doc/current/components/var_dumper.html#advanced-usage'
   -
     uuid: 1eebf878-8baa-609e-9284-99d84c92580c
     question: 'If no methods are specified for a route, what methods will be matched?'
     answers:
-      - { value: 'Any methods', correct: true }
-      - { value: GET, correct: false }
-      - { value: 'Safe methods: GET or HEAD', correct: false }
-      - { value: 'GET or POST', correct: false }
+      - {value: 'Any methods', correct: true}
+      - {value: GET, correct: false}
+      - {value: 'Safe methods: GET or HEAD', correct: false}
+      - {value: 'GET or POST', correct: false}
     help: 'https://symfony.com/doc/current/routing.html#matching-http-methods'
   -
     uuid: 1eebf878-8baa-60e4-b36f-99d84c92580c
     question: 'How does a cache differ from a key / value store?'
     answers:
-      - { value: 'It is safe to store data in it.', correct: false }
-      - { value: 'It should not be used to persist data.', correct: true }
-      - { value: 'It can be deleted without making the application crash.', correct: true }
+      - {value: 'It is safe to store data in it.', correct: false}
+      - {value: 'It should not be used to persist data.', correct: true}
+      - {value: 'It can be deleted without making the application crash.', correct: true}
     help: 'https://www.aerospike.com/what-is-a-key-value-store/'
   -
     uuid: 1eebf878-8baa-65b2-a9be-99d84c92580c
     question: 'Could the parent request be retrieved from the request stack?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/RequestStack.php'
   -
     uuid: 1eebf878-8baa-6602-b7f4-99d84c92580c
     question: 'What class should be used to make a caching backend taggable?'
     answers:
-      - { value: Symfony\Component\Cache\Adapter\TagAwareAdapter, correct: true }
-      - { value: Symfony\Component\Cache\Adapter\TaggerAdapter, correct: false }
-      - { value: Symfony\Component\Cache\Adapter\TagAdapter, correct: false }
-      - { value: Symfony\Component\Cache\Adapter\TaggingAdapter, correct: false }
+      - {value: Symfony\Component\Cache\Adapter\TagAwareAdapter, correct: true}
+      - {value: Symfony\Component\Cache\Adapter\TaggerAdapter, correct: false}
+      - {value: Symfony\Component\Cache\Adapter\TagAdapter, correct: false}
+      - {value: Symfony\Component\Cache\Adapter\TaggingAdapter, correct: false}
     help: 'https://github.com/symfony/symfony/blob/master/src/Symfony/Component/Cache/Adapter/TagAwareAdapter.php'
   -
     uuid: 1eebf878-8baa-6698-bb00-99d84c92580c
     question: 'Which variables can be used in the ExpressionLanguage expression when using the condition option on a Route?'
     answers:
-      - { value: this, correct: false }
-      - { value: object, correct: true }
-      - { value: container, correct: false }
-      - { value: context, correct: true }
-      - { value: service, correct: false }
-      - { value: user, correct: false }
-      - { value: request, correct: true }
+      - {value: this, correct: false}
+      - {value: object, correct: true}
+      - {value: container, correct: false}
+      - {value: context, correct: true}
+      - {value: service, correct: false}
+      - {value: user, correct: false}
+      - {value: request, correct: true}
     help: 'https://symfony.com/doc/7.2/routing.html'
   -
     uuid: 1eed5768-e3b6-667a-8f78-21c4c4321b85
     question: 'What is the main purpose of the eraseCredentials() method from the UserInterface?'
     answers:
-      - { value: "Reset user's credentials from database", correct: false }
-      - { value: "Disable user's account", correct: false }
-      - { value: 'Remove sensitive data from the user', correct: true }
-      - { value: 'Reload user from database', correct: false }
+      - {value: "Reset user's credentials from database", correct: false}
+      - {value: "Disable user's account", correct: false}
+      - {value: 'Remove sensitive data from the user', correct: true}
+      - {value: 'Reload user from database', correct: false}
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Core/User/UserInterface.php#L49-L55'
   -
     uuid: 1eed5770-8031-6462-93b0-97021e8fc25e
     question: 'If I want to allow the client to specify CLI option --force, what am I going to add to the definition?'
     answers:
-      - { value: 'An option InputOption.', correct: true }
-      - { value: 'A parameter InputParameter.', correct: false }
-      - { value: 'A choice InputChoice.', correct: false }
-      - { value: 'An argument InputArgument.', correct: false }
+      - {value: 'An option InputOption.', correct: true}
+      - {value: 'A parameter InputParameter.', correct: false}
+      - {value: 'A choice InputChoice.', correct: false}
+      - {value: 'An argument InputArgument.', correct: false}
     help: 'https://symfony.com/doc/current/components/console/introduction.html#creating-a-basic-command'
   -
     uuid: 1eed57c6-96bb-6e02-9dd6-0f984cdae948
     question: 'What is the way to always get a new instance of a service?'
     answers:
-      - { value: 'By passing an instance of the CompilerPass to the pushCompilerPass of a ContainerBuilder.', correct: false }
-      - { value: 'Setting the option shared to false.', correct: true }
-      - { value: 'Setting the option scope to request.', correct: false }
-      - { value: 'Setting the option singleton to false.', correct: false }
-      - { value: 'Setting the option scope to prototype.', correct: false }
+      - {value: 'By passing an instance of the CompilerPass to the pushCompilerPass of a ContainerBuilder.', correct: false}
+      - {value: 'Setting the option shared to false.', correct: true}
+      - {value: 'Setting the option scope to request.', correct: false}
+      - {value: 'Setting the option singleton to false.', correct: false}
+      - {value: 'Setting the option scope to prototype.', correct: false}
     help: 'https://symfony.com/doc/current/cookbook/service_container/shared.html'
   -
     uuid: 1eee76d6-b14d-69de-9026-09e122b17670
     question: 'Given the context where the ProxyManager bridge is not installed, could lazy services be used?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - {value: 'Yes', correct: false}
+      - {value: 'No', correct: true}
     help: 'https://symfony.com/doc/current/service_container/lazy_services.html#configuration'

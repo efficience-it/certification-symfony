@@ -3,9 +3,9 @@ questions:
     uuid: 1eebf878-8ba3-6348-a4d6-99d84c92580c
     question: 'Which types are returned by FormTypeGuesserInterface::guessMaxLength()?'
     answers:
-      - { value: GuessedValue, correct: false }
-      - { value: 'null', correct: true }
-      - { value: ValueGuess, correct: true }
-      - { value: ValueGuessed, correct: false }
-      - { value: ResolvedValue, correct: false }
+      - {value: GuessedValue, correct: false}
+      - {value: 'null', correct: true}
+      - {value: ValueGuess, correct: true}
+      - {value: ValueGuessed, correct: false}
+      - {value: ResolvedValue, correct: false}
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Form/FormTypeGuesserInterface.php'

@@ -3,47 +3,47 @@ questions:
     uuid: 1eebf878-8ba7-69a2-9a19-99d84c92580c
     question: 'What does the autoescape tag in Twig do?'
     answers:
-      - { value: 'It disables automatic escaping for the entire template.', correct: false }
-      - { value: 'It enables automatic escaping for the entire template.', correct: false }
-      - { value: 'It selectively enables or disables automatic escaping for specific template blocks.', correct: true }
+      - {value: 'It disables automatic escaping for the entire template.', correct: false}
+      - {value: 'It enables automatic escaping for the entire template.', correct: false}
+      - {value: 'It selectively enables or disables automatic escaping for specific template blocks.', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/tags/autoescape.html'
   -
     uuid: 1eebf878-8ba7-6a24-9ca3-99d84c92580c
     question: 'How can you specify the escaping strategy for a template block in Twig?'
     answers:
-      - { value: 'Using the {% escape %} tag', correct: false }
-      - { value: "Using the {% autoescape 'html'%} tag.", correct: true }
-      - { value: 'Using the {% autoescape %} tag with a specified strategy.', correct: true }
+      - {value: 'Using the {% escape %} tag', correct: false}
+      - {value: "Using the {% autoescape 'html'%} tag.", correct: true}
+      - {value: 'Using the {% autoescape %} tag with a specified strategy.', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/tags/autoescape.html'
   -
     uuid: 1eebf878-8ba7-6a74-9215-99d84c92580c
     question: 'What does the raw filter do in Twig?    {% autoescape %} {{ safe_value|raw }} {% endautoescape %}'
     answers:
-      - { value: 'It escapes the content of a variable.', correct: false }
-      - { value: 'It marks a value as safe, preventing it from being escaped.', correct: true }
-      - { value: 'It converts content to a raw HTML string.', correct: false }
+      - {value: 'It escapes the content of a variable.', correct: false}
+      - {value: 'It marks a value as safe, preventing it from being escaped.', correct: true}
+      - {value: 'It converts content to a raw HTML string.', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/tags/autoescape.html'
   -
     uuid: 1eebf878-8ba7-6b14-809c-99d84c92580c
     question: 'When is automatic escaping not applied in Twig?'
     answers:
-      - { value: 'When using the {% escape %} tag.', correct: false }
-      - { value: 'When using the raw filter', correct: false }
-      - { value: 'When dealing with static expressions.', correct: true }
+      - {value: 'When using the {% escape %} tag.', correct: false}
+      - {value: 'When using the raw filter', correct: false}
+      - {value: 'When dealing with static expressions.', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/tags/autoescape.html'
   -
     uuid: 1eebf878-8ba7-6c4a-a7c6-99d84c92580c
     question: 'How does Twig handle already escaped values?'
     answers:
-      - { value: 'Twig always re-escapes values, regardless of their previous escaping status.', correct: false }
-      - { value: 'Twig does not escape values that have already been escaped.', correct: true }
-      - { value: 'Twig issues an error if it encounters an already escaped value.', correct: false }
+      - {value: 'Twig always re-escapes values, regardless of their previous escaping status.', correct: false}
+      - {value: 'Twig does not escape values that have already been escaped.', correct: true}
+      - {value: 'Twig issues an error if it encounters an already escaped value.', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/tags/autoescape.html'
   -
     uuid: 1eebf878-8ba8-6000-9bc1-99d84c92580c
     question: 'What does the serialize Twig filter do?'
     answers:
-      - { value: 'Generates an excerpt of a code file around a given line number.', correct: false }
-      - { value: 'Transforms input into YAML syntax.', correct: false }
-      - { value: 'Accepts data that can be serialized by the Serializer component and returns a serialized string in the specified format.', correct: true }
+      - {value: 'Generates an excerpt of a code file around a given line number.', correct: false}
+      - {value: 'Transforms input into YAML syntax.', correct: false}
+      - {value: 'Accepts data that can be serialized by the Serializer component and returns a serialized string in the specified format.', correct: true}
     help: 'https://symfony.com/doc/current/reference/twig_reference.html'

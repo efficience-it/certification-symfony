@@ -3,15 +3,15 @@ questions:
     uuid: 1eebf878-8b9c-6af2-ba72-99d84c92580c
     question: 'It is possible to specify a default value for an attribute in a route?'
     answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
+      - {value: 'No', correct: false}
+      - {value: 'Yes', correct: true}
     help: 'https://symfony.com/doc/current/create_framework/routing.html'
   -
     uuid: 1eebf878-8ba8-63f2-9b56-99d84c92580c
     question: "What will be the path if there is an extra option in the route#[Route('/{page}', name: 'index', defaults: ['page' => 1, 'title' => 'Toto'])]"
     answers:
-      - { value: 'The generated route will be /1?title=Toto', correct: true }
-      - { value: 'Symfony will throw TooManyArgumentException', correct: false }
-      - { value: 'No effect, the route will be /1', correct: false }
-      - { value: 'the variable will be accessible in the controller:public function index(int $page, string $title)', correct: true }
+      - {value: 'The generated route will be /1?title=Toto', correct: true}
+      - {value: 'Symfony will throw TooManyArgumentException', correct: false}
+      - {value: 'No effect, the route will be /1', correct: false}
+      - {value: 'the variable will be accessible in the controller:public function index(int $page, string $title)', correct: true}
     help: 'https://symfony.com/doc/6.4/routing.html#extra-parameters'

@@ -3,33 +3,33 @@ questions:
     uuid: 1eebf878-8b9c-6c5a-9312-99d84c92580c
     question: "Retrieving a cookie named 'mycookie' is done using which of the following PHP constructs ?"
     answers:
-      - { value: "cookies::get('mycookie')", correct: false }
-      - { value: "get_cookie('mycookie')", correct: false }
-      - { value: "$_SERVER['cookies']['mycookie']", correct: false }
-      - { value: 'None of the above', correct: false }
-      - { value: "$_COOKIE['mycookie']", correct: true }
+      - {value: "cookies::get('mycookie')", correct: false}
+      - {value: "get_cookie('mycookie')", correct: false}
+      - {value: "$_SERVER['cookies']['mycookie']", correct: false}
+      - {value: 'None of the above', correct: false}
+      - {value: "$_COOKIE['mycookie']", correct: true}
     help: 'https://www.php.net/manual/en/reserved.variables.cookies.php'
   -
     uuid: 1eebf878-8b9d-6a4c-aa5c-99d84c92580c
     question: 'What is the path to set session cookie_lifetime parameter in a project configuration?'
     answers:
-      - { value: framework.session.cookie_lifetime, correct: true }
-      - { value: framework.session.cookie.lifetime, correct: false }
-      - { value: framework.parameters.cookie_lifetime, correct: false }
-      - { value: framework.cookie_lifetime, correct: false }
+      - {value: framework.session.cookie_lifetime, correct: true}
+      - {value: framework.session.cookie.lifetime, correct: false}
+      - {value: framework.parameters.cookie_lifetime, correct: false}
+      - {value: framework.cookie_lifetime, correct: false}
     help: 'https://symfony.com/doc/current/reference/configuration/framework.html'
   -
     uuid: 1eebf878-8ba0-6512-85ad-99d84c92580c
     question: 'Which of the following HTTP headers can be used by the server to the client to exchange informations about cookies ?'
     answers:
-      - { value: Cookie, correct: false }
-      - { value: Set-Cookie, correct: true }
-      - { value: Delete-Cookie, correct: false }
+      - {value: Cookie, correct: false}
+      - {value: Set-Cookie, correct: true}
+      - {value: Delete-Cookie, correct: false}
     help: 'https://developer.mozilla.org/fr/docs/Web/HTTP/Cookies'
   -
     uuid: 1eebf878-8ba2-6d1c-88ef-99d84c92580c
     question: 'A cookie is set from foo.com. The domain attribute is set to foo.com. In most browsers, will this cookie be sent with a request to bar.foo.com ?'
     answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
+      - {value: 'No', correct: false}
+      - {value: 'Yes', correct: true}
     help: 'https://en.wikipedia.org/wiki/HTTP_cookie#Cookie_attributes'

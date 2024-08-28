@@ -3,40 +3,40 @@ questions:
     uuid: 1eebf878-8b97-6a0c-bd8b-99d84c92580c
     question: 'Could the safe directive be considered as a reliable indicator that the end user is a child?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - {value: 'Yes', correct: false}
+      - {value: 'No', correct: true}
     help: 'https://datatracker.ietf.org/doc/html/rfc8674#section-1'
   -
     uuid: 1eebf878-8b9b-6da0-906a-99d84c92580c
     question: 'Could a response that use the 301 status code be cached without taking in consideration its header directives?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - {value: 'Yes', correct: false}
+      - {value: 'No', correct: true}
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301'
   -
     uuid: 1eebf878-8b9e-665e-9ce6-99d84c92580c
     question: 'Which HTTP status code must be returned if the cache is still valid ?'
     answers:
-      - { value: '304', correct: true }
-      - { value: '200', correct: false }
-      - { value: '202', correct: false }
-      - { value: '300', correct: false }
-      - { value: '305', correct: false }
+      - {value: '304', correct: true}
+      - {value: '200', correct: false}
+      - {value: '202', correct: false}
+      - {value: '300', correct: false}
+      - {value: '305', correct: false}
     help: 'https://symfony.com/doc/current/http_cache/validation.html'
   -
     uuid: 1eebf878-8ba2-657e-9588-99d84c92580c
     question: 'Which of the followings are valid usage of the Vary header?'
     answers:
-      - { value: 'Vary: Referer', correct: true }
-      - { value: 'Vary: Cookie', correct: true }
-      - { value: 'Vary: *', correct: true }
-      - { value: 'Vary: Accept-Encoding', correct: true }
-      - { value: 'Vary: User-Agent', correct: true }
+      - {value: 'Vary: Referer', correct: true}
+      - {value: 'Vary: Cookie', correct: true}
+      - {value: 'Vary: *', correct: true}
+      - {value: 'Vary: Accept-Encoding', correct: true}
+      - {value: 'Vary: User-Agent', correct: true}
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Vary'
   -
     uuid: 1eebf878-8ba2-65ce-b04c-99d84c92580c
     question: 'Should a resource marked as immutable be validated again when considered stale?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://datatracker.ietf.org/doc/html/rfc8246'

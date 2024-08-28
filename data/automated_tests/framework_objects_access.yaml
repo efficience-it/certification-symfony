@@ -3,45 +3,45 @@ questions:
     uuid: 1eebf878-8b9e-64d8-8952-99d84c92580c
     question: 'Using Mailer, which of these configuration allows to disable email delivery?'
     answers:
-      - { value: 'swiftmailer.disable_delivery: true', correct: false }
-      - { value: 'swiftmailer.delivery: false', correct: false }
-      - { value: 'swiftmailer.delivery_disable: false', correct: false }
-      - { value: "framework.mailer.dsn: 'null://null'", correct: true }
-      - { value: 'framework.mailer.dsn: null', correct: false }
-      - { value: 'framework.mailer.dsn: false', correct: false }
+      - {value: 'swiftmailer.disable_delivery: true', correct: false}
+      - {value: 'swiftmailer.delivery: false', correct: false}
+      - {value: 'swiftmailer.delivery_disable: false', correct: false}
+      - {value: "framework.mailer.dsn: 'null://null'", correct: true}
+      - {value: 'framework.mailer.dsn: null', correct: false}
+      - {value: 'framework.mailer.dsn: false', correct: false}
     help: 'https://symfony.com/doc/current/mailer.html#disabling-delivery'
   -
     uuid: 1eebf878-8ba5-60d0-b804-99d84c92580c
     question: "What are the valid ways to get the Session object if the controller class inherits from the base FrameworkBundle's Controller class?"
     answers:
-      - { value: '$session = $this->getSession();', correct: false }
-      - { value: '$session = $request->getSession();', correct: true }
-      - { value: "$session = $this->get('session');", correct: true }
-      - { value: '$session = $this->container->getSession();', correct: false }
+      - {value: '$session = $this->getSession();', correct: false}
+      - {value: '$session = $request->getSession();', correct: true}
+      - {value: "$session = $this->get('session');", correct: true}
+      - {value: '$session = $this->container->getSession();', correct: false}
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php#L84'
   -
     uuid: 1eebf878-8ba6-67e6-ac01-99d84c92580c
     question: 'Which of the following statements is true about the AbstractController class located in the FrameworkBundle bundle?'
     answers:
-      - { value: 'It must always be the parent class for every single controller of the application.', correct: false }
-      - { value: 'It declares a controller as a service.', correct: false }
-      - { value: 'It can provide by default any services of the application.', correct: false }
-      - { value: 'It provides helper methods.', correct: true }
+      - {value: 'It must always be the parent class for every single controller of the application.', correct: false}
+      - {value: 'It declares a controller as a service.', correct: false}
+      - {value: 'It can provide by default any services of the application.', correct: false}
+      - {value: 'It provides helper methods.', correct: true}
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php'
   -
     uuid: 1eed57ff-6525-62ba-9d10-15125f5105d0
     question: 'Is this mapping correct ?/** @Column(name= number , type= integer ) */ private $number;'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - {value: 'Yes', correct: false}
+      - {value: 'No', correct: true}
     help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/basic-mapping.html#quoting-reserved-words'
   -
     uuid: 1eee7838-81c1-6e82-9026-bb1b70c39103
     question: 'What is the tag to use to register your service to be called during the cache warming process?'
     answers:
-      - { value: cache_warmer, correct: false }
-      - { value: kernel.warmer, correct: false }
-      - { value: command.cache_warmer, correct: false }
-      - { value: kernel.cache_warmer, correct: true }
-      - { value: cache.warmer, correct: false }
+      - {value: cache_warmer, correct: false}
+      - {value: kernel.warmer, correct: false}
+      - {value: command.cache_warmer, correct: false}
+      - {value: kernel.cache_warmer, correct: true}
+      - {value: cache.warmer, correct: false}
     help: 'https://symfony.com/doc/current/reference/dic_tags.html#kernel-cache-warmer'

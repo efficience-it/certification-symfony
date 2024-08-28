@@ -1,0 +1,17 @@
+name: YAML Lint
+
+on: [pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository content
+        uses: actions/checkout@v2
+
+      - name: Run YAML Lint
+        uses: github/super-linter@v4
+        env:
+          VALIDATE_ALL_CODEBASE: false
+          VALIDATE_YAML: true
+          YAML_LINTER_RULES_PATH: .github/workflows/.yamllint

@@ -3,67 +3,67 @@ questions:
     uuid: 1eebf878-8b98-6222-8b50-99d84c92580c
     question: 'Could a FlashBag be cleared?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php#L109'
   -
     uuid: 1eebf878-8b9c-6110-8d0d-99d84c92580c
     question: 'Could the FlashBag messages be retrieved without being removed from the bag?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php'
   -
     uuid: 1eebf878-8b9c-66ec-b7fb-99d84c92580c
     question: 'Could all FlashBag messages be overridden?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php#L89'
   -
     uuid: 1eebf878-8ba7-677c-933e-99d84c92580c
     question: 'How could you store a flash message in an AbstractController ?'
     answers:
-      - { value: $request->getSession()->getFlashBag()->add(), correct: true }
-      - { value: $this->addFlashBag(), correct: false }
-      - { value: $this->addFlash(), correct: true }
-      - { value: $request->getSession()->addFlash(), correct: false }
-      - { value: $request->getSession()->addFlashBag(), correct: false }
+      - {value: $request->getSession()->getFlashBag()->add(), correct: true}
+      - {value: $this->addFlashBag(), correct: false}
+      - {value: $this->addFlash(), correct: true}
+      - {value: $request->getSession()->addFlash(), correct: false}
+      - {value: $request->getSession()->addFlashBag(), correct: false}
     help: 'https://symfony.com/doc/current/controller.html#managing-the-session'
   -
     uuid: 1eebf878-8ba7-67cc-b50b-99d84c92580c
     question: 'Can you use the flash message if sessions are disabled ?'
     answers:
-      - { value: 'Yes by using RequestStack', correct: false }
-      - { value: 'Yes flashes are not stored in the session', correct: false }
-      - { value: 'No', correct: true }
+      - {value: 'Yes by using RequestStack', correct: false}
+      - {value: 'Yes flashes are not stored in the session', correct: false}
+      - {value: 'No', correct: true}
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php'
   -
     uuid: 1eebf878-8ba7-681c-a7af-99d84c92580c
     question: 'Could you get multiple times the content of a flash message ?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - {value: 'Yes', correct: false}
+      - {value: 'No', correct: true}
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php#L71'
   -
     uuid: 1eebf878-8ba7-686c-be22-99d84c92580c
     question: 'What is the key used to store flashes in the session ?'
     answers:
-      - { value: '_flashes_info, _flashes_danger, _flashes_success, _flashes_debug', correct: false }
-      - { value: _flashes_session, correct: false }
-      - { value: _symfony_flashes, correct: true }
+      - {value: '_flashes_info, _flashes_danger, _flashes_success, _flashes_debug', correct: false}
+      - {value: _flashes_session, correct: false}
+      - {value: _symfony_flashes, correct: true}
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php#L28'
   -
     uuid: 1eebf878-8ba7-6bb4-b709-99d84c92580c
     question: 'Could the existence of a FlashBag message be checked?'
     answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
+      - {value: 'No', correct: false}
+      - {value: 'Yes', correct: true}
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php'
   -
     uuid: 1eebf878-8ba9-6fb8-a04c-99d84c92580c
     question: 'Could the name of a FlashBag be retrieved?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php'

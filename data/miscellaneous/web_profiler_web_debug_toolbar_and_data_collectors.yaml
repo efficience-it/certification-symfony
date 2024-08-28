@@ -3,56 +3,56 @@ questions:
     uuid: 1eebf878-8ba1-6cdc-a172-99d84c92580c
     question: 'What is the tag to use to create a class that collects custom data for the profiler?'
     answers:
-      - { value: data_collector, correct: true }
-      - { value: debug.data_collector, correct: false }
-      - { value: kernel.data_collector, correct: false }
-      - { value: profiler.data_collector, correct: false }
+      - {value: data_collector, correct: true}
+      - {value: debug.data_collector, correct: false}
+      - {value: kernel.data_collector, correct: false}
+      - {value: profiler.data_collector, correct: false}
     help: 'https://symfony.com/doc/current/reference/dic_tags.html#data-collector'
   -
     uuid: 1eee61bc-65cd-6916-9026-6be3353c49b3
     question: 'Is it recommended to enable the Profiler in a Production environnement ?'
     answers:
-      - { value: 'No', correct: true }
-      - { value: 'Yes', correct: false }
+      - {value: 'No', correct: true}
+      - {value: 'Yes', correct: false}
     help: 'https://symfony.com/doc/current/profiler.html'
   -
     uuid: 1eee61c4-a214-6728-9026-59a2b58e6593
     question: 'How long does it take for profiles stored on disk to be deleted, in a Profiler ?'
     answers:
-      - { value: '1 day', correct: false }
-      - { value: '2 days', correct: true }
-      - { value: '1 week', correct: false }
-      - { value: '1 month', correct: false }
-      - { value: '6 hours', correct: false }
-      - { value: '12 hours', correct: false }
+      - {value: '1 day', correct: false}
+      - {value: '2 days', correct: true}
+      - {value: '1 week', correct: false}
+      - {value: '1 month', correct: false}
+      - {value: '6 hours', correct: false}
+      - {value: '12 hours', correct: false}
     help: 'https://symfony.com/doc/current/profiler.html'
   -
     uuid: 1eee6957-d4b4-60f8-9026-99c7b70e4adb
     question: 'Is it possible to have a debug toolbar for Api requests ?'
     answers:
-      - { value: 'Yes with a profiler link given in the response header', correct: true }
-      - { value: 'No profiler is only available for html response', correct: false }
-      - { value: 'Yes the json response give a key  _profiler  with the debug informations', correct: false }
+      - {value: 'Yes with a profiler link given in the response header', correct: true}
+      - {value: 'No profiler is only available for html response', correct: false}
+      - {value: 'Yes the json response give a key  _profiler  with the debug informations', correct: false}
     help: 'https://symfony.com/doc/current/profiler.html#installation'
   -
     uuid: 1eee69ac-3275-6b5c-9026-4566c29ff6d6
     question: 'What is the key in the framework.profiler configuration to activate the profiler on a query parameter like `profile` ?'
     answers:
-      - { value: collect, correct: false }
-      - { value: collect_parameter, correct: true }
-      - { value: collect_on_query, correct: false }
+      - {value: collect, correct: false}
+      - {value: collect_parameter, correct: true}
+      - {value: collect_on_query, correct: false}
     help: 'https://symfony.com/doc/current/profiler.html#enabling-the-profiler-conditionally'
   -
     uuid: 1eee6a31-4e58-62b8-9026-07b65ca188fc
     question: 'Is it possible to refresh the profiler during an ajax Request ?'
     answers:
-      - { value: 'Yes by setting Symfony-Debug-Toolbar-Replace to 1 in the headers', correct: true }
-      - { value: 'No the profiler works only with synchrone request', correct: false }
+      - {value: 'Yes by setting Symfony-Debug-Toolbar-Replace to 1 in the headers', correct: true}
+      - {value: 'No the profiler works only with synchrone request', correct: false}
     help: 'https://symfony.com/doc/current/profiler.html#updating-the-web-debug-toolbar-after-ajax-requests'
   -
     uuid: 1eee6a88-9b5a-67f8-9026-27ae20b40920
     question: 'The Data Collector collect information on kernel.response only ?'
     answers:
-      - { value: 'Yes only', correct: false }
-      - { value: 'No kernel.terminate also', correct: true }
+      - {value: 'Yes only', correct: false}
+      - {value: 'No kernel.terminate also', correct: true}
     help: 'https://symfony.com/doc/current/profiler.html#creating-a-data-collector'

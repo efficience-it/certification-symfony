@@ -3,21 +3,21 @@ questions:
     uuid: 1eebf878-8ba2-6b64-8fcd-99d84c92580c
     question: "Is the following code valid?    use Symfony\\Component\\Validator\\Constraints as Assert;    class Place {     #[Assert\\Sequentially([     new Assert\\NotNull,        new Assert\\Type('string'),        new Assert\\Length(min: 10),        new Assert\\Regex(Place::ADDRESS_REGEX),     new AcmeAssert\\Geolocalizable,    ])]    public $address;    }"
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://symfony.com/doc/current/validation/sequence_provider.html#how-to-sequentially-apply-constraints-on-a-single-property'
   -
     uuid: 1eec03a4-5509-66f2-84f8-53d0de950cee
     question: "What's the aim of a GroupSequence ?"
     answers:
-      - { value: 'To validate Object, Entity with a Group of Validators', correct: false }
-      - { value: 'To validate groups by steps, it determines the order groups should be validated', correct: true }
+      - {value: 'To validate Object, Entity with a Group of Validators', correct: false}
+      - {value: 'To validate groups by steps, it determines the order groups should be validated', correct: true}
     help: 'https://symfony.com/doc/current/validation/sequence_provider.html'
   -
     uuid: 1eec03b4-9e6d-6856-9534-cd3903165108
     question: "In which function, if there's a violation in any group, the rest of the groups are not validated. E.g. if 'User' fails, 'Premium' and 'Api' are not validated."
     answers:
-      - { value: "public function getGroupSequence(): array|GroupSequence {     return ['User', 'Premium', 'Api'];    }", correct: true }
-      - { value: "public function getGroupSequence(): array|GroupSequence {     return [[['User'], 'Premium'], 'Api'];    }", correct: false }
-      - { value: "public function getGroupSequence(): array|GroupSequence {     return [['User'], ['Premium'], ['Api']];    }", correct: false }
+      - {value: "public function getGroupSequence(): array|GroupSequence {     return ['User', 'Premium', 'Api'];    }", correct: true}
+      - {value: "public function getGroupSequence(): array|GroupSequence {     return [[['User'], 'Premium'], 'Api'];    }", correct: false}
+      - {value: "public function getGroupSequence(): array|GroupSequence {     return [['User'], ['Premium'], ['Api']];    }", correct: false}
     help: 'https://symfony.com/doc/current/validation/sequence_provider.html#group-sequence-providers'

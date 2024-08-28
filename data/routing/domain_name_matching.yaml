@@ -3,22 +3,22 @@ questions:
     uuid: 1eebf878-8b99-647e-8512-99d84c92580c
     question: 'Is it possible to use placeholders in host section of a route definition?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://symfony.com/doc/current/routing.html#sub-domain-routing'
   -
     uuid: 1eebf878-8ba0-6f80-ba98-99d84c92580c
     question: 'Using XML or YAML, how to declare a route for a specific domain/host?'
     answers:
-      - { value: 'Add a  domain  attribute', correct: false }
-      - { value: 'Add a  host  attribute', correct: true }
-      - { value: 'Add a  path  attribute', correct: false }
-      - { value: 'Add a  subdomain  attribute', correct: false }
+      - {value: 'Add a  domain  attribute', correct: false}
+      - {value: 'Add a  host  attribute', correct: true}
+      - {value: 'Add a  path  attribute', correct: false}
+      - {value: 'Add a  subdomain  attribute', correct: false}
     help: 'https://symfony.com/doc/current/routing.html#sub-domain-routing'
   -
     uuid: 1eebf878-8ba8-6244-a390-99d84c92580c
     question: "Is it required to add a HTTP Headers Host in your functionnal tests to set a sub-domain ?$crawler = $client->request('GET', '/',  [], [], ['HTTP_HOST' => 'm.example.com']);"
     answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
+      - {value: 'No', correct: false}
+      - {value: 'Yes', correct: true}
     help: 'https://symfony.com/doc/6.4/routing.html#sub-domain-routing'

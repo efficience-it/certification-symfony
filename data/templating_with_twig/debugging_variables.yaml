@@ -3,8 +3,8 @@ questions:
     uuid: 1eebf878-8ba1-6ed0-8089-99d84c92580c
     question: 'When writing a Twig_Test, what is a node_class for?'
     answers:
-      - { value: 'The given test will be compiled into PHP primitives.', correct: true }
-      - { value: 'The given test will rely on a custom Twig_NodeVisitorInterface.', correct: false }
-      - { value: 'The node_class is a mandatory option to get defined in a Twig_Environment.', correct: false }
-      - { value: 'The given test will use a semantic validation in addition to the basic evaluation.', correct: false }
+      - {value: 'The given test will be compiled into PHP primitives.', correct: true}
+      - {value: 'The given test will rely on a custom Twig_NodeVisitorInterface.', correct: false}
+      - {value: 'The node_class is a mandatory option to get defined in a Twig_Environment.', correct: false}
+      - {value: 'The given test will use a semantic validation in addition to the basic evaluation.', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/advanced.html#tests'

@@ -3,90 +3,90 @@ questions:
     uuid: 1eebf878-8b96-6d6e-8c48-99d84c92580c
     question: 'Which of the following are not true about streams ?'
     answers:
-      - { value: 'They can be applied to any data source.', correct: false }
-      - { value: 'They are always bi-directional.', correct: false }
-      - { value: 'They can be filtered.', correct: true }
-      - { value: 'When used properly, they significantly reduce memory consumption.', correct: false }
-      - { value: 'They are always seekable.', correct: false }
+      - {value: 'They can be applied to any data source.', correct: false}
+      - {value: 'They are always bi-directional.', correct: false}
+      - {value: 'They can be filtered.', correct: true}
+      - {value: 'When used properly, they significantly reduce memory consumption.', correct: false}
+      - {value: 'They are always seekable.', correct: false}
     help: 'https://www.php.net/manual/en/book.stream.php'
   -
     uuid: 1eebf878-8b97-6e62-982f-99d84c92580c
     question: 'Is it possible to create a Symfony\Component\HttpFoundation\RedirectResponse with the 201 status code?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/RedirectResponse.php#L42'
   -
     uuid: 1eebf878-8b98-618c-b12d-99d84c92580c
     question: 'Which of the following are valid Symfony response classes extending the base Symfony\Component\HttpFoundation\Response class?'
     answers:
-      - { value: RedirectResponse, correct: true }
-      - { value: FileResponse, correct: false }
-      - { value: BinaryResponse, correct: false }
-      - { value: StreamResponse, correct: false }
-      - { value: ImageFileResponse, correct: false }
-      - { value: JsonResponse, correct: true }
-      - { value: NotFoundResponse, correct: false }
-      - { value: RedirectedResponse, correct: false }
-      - { value: StreamedResponse, correct: true }
-      - { value: ImageResponse, correct: false }
-      - { value: BinaryFileResponse, correct: true }
+      - {value: RedirectResponse, correct: true}
+      - {value: FileResponse, correct: false}
+      - {value: BinaryResponse, correct: false}
+      - {value: StreamResponse, correct: false}
+      - {value: ImageFileResponse, correct: false}
+      - {value: JsonResponse, correct: true}
+      - {value: NotFoundResponse, correct: false}
+      - {value: RedirectedResponse, correct: false}
+      - {value: StreamedResponse, correct: true}
+      - {value: ImageResponse, correct: false}
+      - {value: BinaryFileResponse, correct: true}
     help: 'https://symfony.com/doc/current/components/http_foundation/introduction.html#redirecting-the-user'
   -
     uuid: 1eebf878-8b98-64fc-92a5-99d84c92580c
     question: 'What is returned by the isEmpty method of Symfony\Component\HttpFoundation\Response?'
     answers:
-      - { value: 'true if there is a server error', correct: false }
-      - { value: 'true if the response content is null', correct: false }
-      - { value: 'true if the response status code are 204 or 304', correct: true }
-      - { value: 'true if the response has no headers', correct: false }
+      - {value: 'true if there is a server error', correct: false}
+      - {value: 'true if the response content is null', correct: false}
+      - {value: 'true if the response status code are 204 or 304', correct: true}
+      - {value: 'true if the response has no headers', correct: false}
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/HttpFoundation/Response.php#L1305'
   -
     uuid: 1eebf878-8b9a-6fe0-8ade-99d84c92580c
     question: 'Could a response be marked as safe?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/HttpFoundation/Response.php#L1337'
   -
     uuid: 1eebf878-8b9b-6fd0-9826-99d84c92580c
     question: 'Given a response that should be sent with a 304 status code, which methods can be used to set the status code?'
     answers:
-      - { value: "$response->setStatusCode(304, 'Not Modified')", correct: true }
-      - { value: '$response->setStatusCode(304)', correct: true }
-      - { value: '$response->setIsNotModified()', correct: false }
-      - { value: '$response->setStatus(304)', correct: false }
-      - { value: "$response->set(['status_code' => 304])", correct: false }
-      - { value: '$response->setNotModified()', correct: true }
+      - {value: "$response->setStatusCode(304, 'Not Modified')", correct: true}
+      - {value: '$response->setStatusCode(304)', correct: true}
+      - {value: '$response->setIsNotModified()', correct: false}
+      - {value: '$response->setStatus(304)', correct: false}
+      - {value: "$response->set(['status_code' => 304])", correct: false}
+      - {value: '$response->setNotModified()', correct: true}
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Response.php'
   -
     uuid: 1eebf878-8b9f-616c-87fe-99d84c92580c
     question: 'Which of these response objects does not exists?'
     answers:
-      - { value: XmlResponse, correct: true }
-      - { value: FileResponse, correct: true }
-      - { value: TwigResponse, correct: true }
-      - { value: JsonResponse, correct: false }
-      - { value: BinaryFileResponse, correct: false }
-      - { value: RedirectResponse, correct: false }
-      - { value: StreamedResponse, correct: false }
+      - {value: XmlResponse, correct: true}
+      - {value: FileResponse, correct: true}
+      - {value: TwigResponse, correct: true}
+      - {value: JsonResponse, correct: false}
+      - {value: BinaryFileResponse, correct: false}
+      - {value: RedirectResponse, correct: false}
+      - {value: StreamedResponse, correct: false}
     help: 'https://symfony.com/doc/current/components/http_foundation.html#response'
   -
     uuid: 1eebf878-8ba0-61f2-a932-99d84c92580c
     question: 'Using a Response instance, which of these methods are available to check status code?'
     answers:
-      - { value: $response->isInformational(), correct: true }
-      - { value: $response->isSuccessful(), correct: true }
-      - { value: $response->isRedirection(), correct: true }
-      - { value: $response->isInvalid(), correct: true }
-      - { value: $response->isError(), correct: false }
+      - {value: $response->isInformational(), correct: true}
+      - {value: $response->isSuccessful(), correct: true}
+      - {value: $response->isRedirection(), correct: true}
+      - {value: $response->isInvalid(), correct: true}
+      - {value: $response->isError(), correct: false}
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/Response.php'
   -
     uuid: 1eebf878-8ba0-6486-992a-99d84c92580c
     question: 'How can you set status code of Symfony\Component\HttpFoundation\Response'
     answers:
-      - { value: 'By you pass the value as second parameter of new Response()', correct: true }
-      - { value: 'By using setStatusCode()', correct: true }
-      - { value: 'By using setCodeStatus()', correct: false }
-      - { value: 'By using setHttpCode()', correct: false }
+      - {value: 'By you pass the value as second parameter of new Response()', correct: true}
+      - {value: 'By using setStatusCode()', correct: true}
+      - {value: 'By using setCodeStatus()', correct: false}
+      - {value: 'By using setHttpCode()', correct: false}
     help: 'https://symfony.com/doc/current/components/http_foundation.html#response'

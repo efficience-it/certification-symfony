@@ -3,58 +3,58 @@ questions:
     uuid: 1eebf878-8b9b-68f0-8c19-99d84c92580c
     question: "What will be returned by the following code when the query string is ?foo=bar?$request->query->get('bar');"
     answers:
-      - { value: 'null', correct: true }
-      - { value: 'false', correct: false }
-      - { value: 'QueryException will be thrown', correct: false }
-      - { value: 'NotFoundException will be thrown', correct: false }
+      - {value: 'null', correct: true}
+      - {value: 'false', correct: false}
+      - {value: 'QueryException will be thrown', correct: false}
+      - {value: 'NotFoundException will be thrown', correct: false}
     help: 'https://symfony.com/doc/current/components/http_foundation.html'
   -
     uuid: 1eebf878-8ba8-65b4-9642-99d84c92580c
     question: 'What are the available option to the method file in AbstractController ?'
     answers:
-      - { value: 'ResponseHeaderBag::DISPOSITION_DOWNLOAD', correct: false }
-      - { value: 'ResponseHeaderBag::DISPOSITION_ATTACHMENT', correct: true }
-      - { value: 'ResponseHeaderBag::DISPOSITION_INLINE', correct: true }
+      - {value: 'ResponseHeaderBag::DISPOSITION_DOWNLOAD', correct: false}
+      - {value: 'ResponseHeaderBag::DISPOSITION_ATTACHMENT', correct: true}
+      - {value: 'ResponseHeaderBag::DISPOSITION_INLINE', correct: true}
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/ResponseHeaderBag.php#L24C18-L24C41'
   -
     uuid: 1eebf878-8b9b-63fa-b82c-99d84c92580c
     question: 'For a request to https://example.com/blog/index.php/post/hello-world, what will be the value of $pathInfo in the following code?$pathInfo = $request->getPathInfo();'
     answers:
-      - { value: /index.php/post/hello-world, correct: false }
-      - { value: /post/hello-world, correct: true }
-      - { value: example.com/blog/index.php/post/hello-world, correct: false }
-      - { value: /blog/index.php/post/hello-world, correct: false }
+      - {value: /index.php/post/hello-world, correct: false}
+      - {value: /post/hello-world, correct: true}
+      - {value: example.com/blog/index.php/post/hello-world, correct: false}
+      - {value: /blog/index.php/post/hello-world, correct: false}
     help: 'https://symfony.com/doc/current/components/http_foundation.html#identifying-a-request'
   -
     uuid: 1eebf878-8b99-62d0-bab2-99d84c92580c
     question: 'When using AbstractController, what is the purpose of the second argument of the file method ?'
     answers:
-      - { value: 'to set the name of the file', correct: true }
-      - { value: 'to set the mime type of the file', correct: false }
-      - { value: 'to set the disposition of the file (inline or attachement)', correct: false }
-      - { value: 'to set the size of the file', correct: false }
+      - {value: 'to set the name of the file', correct: true}
+      - {value: 'to set the mime type of the file', correct: false}
+      - {value: 'to set the disposition of the file (inline or attachement)', correct: false}
+      - {value: 'to set the size of the file', correct: false}
     help: 'https://symfony.com/doc/current/controller.html'
   -
     uuid: 1eebf878-8b9a-65ae-978b-99d84c92580c
     question: 'Which are the valid ways of caching a Response based not only on the URI but also the value of the Accept-Encoding and User-Agent request headers?'
     answers:
-      - { value: "$response->setVary(['Accept-Encoding', 'User-Agent']);", correct: true }
-      - { value: "$response->headers->set('Vary', ['Accept-Encoding', 'User-Agent']);", correct: true }
-      - { value: 'This is the default behavior', correct: false }
-      - { value: "$response->headers->set('Vary', 'Accept-Encoding');$response->headers->set('Vary', 'User-Agent', false);", correct: false }
-      - { value: "$response->setVary('Accept-Encoding, User-Agent');", correct: false }
-      - { value: "$response->headers->set('Vary', 'Accept-Encoding');$response->headers->set('Vary', 'User-Agent');", correct: false }
-      - { value: "$response->setVary('Accept-Encoding');$response->setVary('User-Agent', false);", correct: false }
-      - { value: "$response->headers->set('Vary', 'Accept-Encoding, User-Agent');", correct: false }
-      - { value: 'This is not possible without calling a reverse proxy', correct: false }
-      - { value: "$response->setVary('Accept-Encoding');$response->setVary('User-Agent');", correct: true }
+      - {value: "$response->setVary(['Accept-Encoding', 'User-Agent']);", correct: true}
+      - {value: "$response->headers->set('Vary', ['Accept-Encoding', 'User-Agent']);", correct: true}
+      - {value: 'This is the default behavior', correct: false}
+      - {value: "$response->headers->set('Vary', 'Accept-Encoding');$response->headers->set('Vary', 'User-Agent', false);", correct: false}
+      - {value: "$response->setVary('Accept-Encoding, User-Agent');", correct: false}
+      - {value: "$response->headers->set('Vary', 'Accept-Encoding');$response->headers->set('Vary', 'User-Agent');", correct: false}
+      - {value: "$response->setVary('Accept-Encoding');$response->setVary('User-Agent', false);", correct: false}
+      - {value: "$response->headers->set('Vary', 'Accept-Encoding, User-Agent');", correct: false}
+      - {value: 'This is not possible without calling a reverse proxy', correct: false}
+      - {value: "$response->setVary('Accept-Encoding');$response->setVary('User-Agent');", correct: true}
     help: "https://symfony.com/doc/current/http_cache/cache_vary.html"
   -
     uuid: 1eebf878-8b9f-60e0-becf-99d84c92580c
     question: 'Which class may be extended by your controllers?'
     answers:
-      - { value: Symfony\Bundle\FrameworkBundle\Controller\AbstractController, correct: true }
-      - { value: Symfony\Component\FrameworkBundle\Controller\AbstractController, correct: false }
-      - { value: Symfony\Bundle\HttpBundle\Controller\AbstractController, correct: false }
-      - { value: Symfony\Component\MvcBundle\Controller\AbstractController, correct: false }
+      - {value: Symfony\Bundle\FrameworkBundle\Controller\AbstractController, correct: true}
+      - {value: Symfony\Component\FrameworkBundle\Controller\AbstractController, correct: false}
+      - {value: Symfony\Bundle\HttpBundle\Controller\AbstractController, correct: false}
+      - {value: Symfony\Component\MvcBundle\Controller\AbstractController, correct: false}
     help: 'https://symfony.com/doc/current/controller.html#the-base-controller-classes-services'

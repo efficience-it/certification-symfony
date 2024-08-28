@@ -3,27 +3,27 @@ questions:
     uuid: 1eebf878-8b9e-6208-b697-99d84c92580c
     question: 'Which Symfony class offers method to test commands?'
     answers:
-      - { value: Symfony\Component\Console\Tester\Command, correct: false }
-      - { value: Symfony\Component\Console\Tester\CommandTester, correct: true }
-      - { value: Symfony\Component\Console\Tester\CommandUnitTester, correct: false }
-      - { value: Symfony\Component\Console\Tester\CommandUnit, correct: false }
+      - {value: Symfony\Component\Console\Tester\Command, correct: false}
+      - {value: Symfony\Component\Console\Tester\CommandTester, correct: true}
+      - {value: Symfony\Component\Console\Tester\CommandUnitTester, correct: false}
+      - {value: Symfony\Component\Console\Tester\CommandUnit, correct: false}
     help: 'https://symfony.com/doc/current/console.html#testing-commands'
   -
     uuid: 1eebf878-8ba4-6c48-a631-99d84c92580c
     question: 'Does the PHPUnit Bridge parallelize test suites execution ?'
     answers:
-      - { value: 'Yes, only when giving a directory', correct: true }
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: false }
+      - {value: 'Yes, only when giving a directory', correct: true}
+      - {value: 'No', correct: false}
+      - {value: 'Yes', correct: false}
     help: 'https://symfony.com/doc/current/components/phpunit_bridge.html#modified-phpunit-script'
   -
     uuid: 1eebf878-8ba7-663c-8205-99d84c92580c
     question: 'What does The ClockMock class allow to mock ?'
     answers:
-      - { value: sleep(), correct: true }
-      - { value: usleep(), correct: true }
-      - { value: time(), correct: true }
-      - { value: "it doesn't exists", correct: false }
-      - { value: date(), correct: true }
-      - { value: microtime(), correct: true }
+      - {value: sleep(), correct: true}
+      - {value: usleep(), correct: true}
+      - {value: time(), correct: true}
+      - {value: "it doesn't exists", correct: false}
+      - {value: date(), correct: true}
+      - {value: microtime(), correct: true}
     help: 'https://symfony.com/doc/current/components/phpunit_bridge.html#clock-mocking'

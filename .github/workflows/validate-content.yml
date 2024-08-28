@@ -1,0 +1,22 @@
+name: Validate Quiz Content
+
+on: [pull_request]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository content
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install PyYAML
+        run: |
+          python -m pip install pyyaml
+
+      - name: Validate Quiz Content
+        run: python .github/workflows/validate_quiz.py data

@@ -3,224 +3,224 @@ questions:
     uuid: 1eebf878-8b97-6872-9321-99d84c92580c
     question: 'Which of the following Twig internal objects is responsible for tokenizing the template source code into smaller pieces for easier processing?'
     answers:
-      - { value: 'The Compiler', correct: false }
-      - { value: 'The Environment', correct: false }
-      - { value: 'The Lexer', correct: true }
-      - { value: 'The Parser', correct: false }
+      - {value: 'The Compiler', correct: false}
+      - {value: 'The Environment', correct: false}
+      - {value: 'The Lexer', correct: true}
+      - {value: 'The Parser', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/internals.html'
   -
     uuid: 1eebf878-8b97-6c46-9fa1-99d84c92580c
     question: 'Which method need to be called when adding a new Twig escaper ?'
     answers:
-      - { value: newEscaper(), correct: false }
-      - { value: register(), correct: false }
-      - { value: setEscaper(), correct: true }
-      - { value: createEscaper(), correct: false }
+      - {value: newEscaper(), correct: false}
+      - {value: register(), correct: false}
+      - {value: setEscaper(), correct: true}
+      - {value: createEscaper(), correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/escape.html'
   -
     uuid: 1eebf878-8b98-66aa-9cc5-99d84c92580c
     question: 'Which of the following Twig internal objects is responsible for transforming an AST (Abstract Syntax Tree) into PHP code?'
     answers:
-      - { value: 'The Environment', correct: false }
-      - { value: 'The Compiler', correct: true }
-      - { value: 'The Parser', correct: false }
-      - { value: 'The Lexer', correct: false }
+      - {value: 'The Environment', correct: false}
+      - {value: 'The Compiler', correct: true}
+      - {value: 'The Parser', correct: false}
+      - {value: 'The Lexer', correct: false}
     help: 'https://twig.symfony.com/doc/internals.html'
   -
     uuid: 1eebf878-8b9a-64be-8674-99d84c92580c
     question: 'Which of the following Twig internal objects is responsible for transforming an AST (Abstract Syntax Tree) into PHP code?'
     answers:
-      - { value: 'The Environment', correct: false }
-      - { value: 'The Parser', correct: false }
-      - { value: 'The Compiler', correct: true }
-      - { value: 'The Lexer', correct: false }
+      - {value: 'The Environment', correct: false}
+      - {value: 'The Parser', correct: false}
+      - {value: 'The Compiler', correct: true}
+      - {value: 'The Lexer', correct: false}
     help: 'https://twig.symfony.com/doc/internals.html'
   -
     uuid: 1eebf878-8b9a-6a5e-ae78-99d84c92580c
     question: 'What are Twig loaders responsible for?'
     answers:
-      - { value: 'Loaders are responsible for loading token parsers.', correct: false }
-      - { value: 'Loaders are responsible for loading extensions.', correct: false }
-      - { value: 'Loaders are responsible for loading environments such as Twig_Evironment.', correct: false }
-      - { value: 'Loaders are responsible for loading templates from a resource name.', correct: true }
+      - {value: 'Loaders are responsible for loading token parsers.', correct: false}
+      - {value: 'Loaders are responsible for loading extensions.', correct: false}
+      - {value: 'Loaders are responsible for loading environments such as Twig_Evironment.', correct: false}
+      - {value: 'Loaders are responsible for loading templates from a resource name.', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/api.html#loaders'
   -
     uuid: 1eebf878-8b9b-6080-ba56-99d84c92580c
     question: "If the user variable is not defined, what will be the result of rendering this Twig template?Hi {{ user.name ?? 'anonymous' }}!"
     answers:
-      - { value: 'Hi ??!', correct: false }
-      - { value: 'Hi anonymous!', correct: true }
-      - { value: 'This template will display an error when rendering it.', correct: false }
-      - { value: Hi!, correct: false }
-      - { value: 'Hi null!', correct: false }
+      - {value: 'Hi ??!', correct: false}
+      - {value: 'Hi anonymous!', correct: true}
+      - {value: 'This template will display an error when rendering it.', correct: false}
+      - {value: Hi!, correct: false}
+      - {value: 'Hi null!', correct: false}
     help: 'https://twig.symfony.com/doc/templates.html#other-operators'
   -
     uuid: 1eebf878-8b9b-68a0-ae2f-99d84c92580c
     question: 'When using format_datetime(), could the calendar be changed?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://twig.symfony.com/doc/2.x/filters/format_datetime.html'
   -
     uuid: 1eebf878-8b9b-6d5a-b0a6-99d84c92580c
     question: 'Which of the following classes are Twig loaders available by default?'
     answers:
-      - { value: DoctrineLoader, correct: false }
-      - { value: ChainLoader, correct: true }
-      - { value: CacheLoader, correct: false }
-      - { value: FilesystemLoader, correct: true }
-      - { value: ArrayLoader, correct: true }
+      - {value: DoctrineLoader, correct: false}
+      - {value: ChainLoader, correct: true}
+      - {value: CacheLoader, correct: false}
+      - {value: FilesystemLoader, correct: true}
+      - {value: ArrayLoader, correct: true}
     help: 'https://github.com/twigphp/Twig/tree/3.x/src/Loader'
   -
     uuid: 1eebf878-8b9b-6e40-b0b9-99d84c92580c
     question: 'When using twig standalone, which class needs to be instantiated first?'
     answers:
-      - { value: 'An instance of \Twig\Template', correct: false }
-      - { value: 'An instance of \Twig\Loader\FilesystemLoader', correct: true }
-      - { value: 'An instance of \Twig\Environment', correct: false }
-      - { value: 'An instance of \Twig\Loader\LoaderInterface', correct: false }
+      - {value: 'An instance of \Twig\Template', correct: false}
+      - {value: 'An instance of \Twig\Loader\FilesystemLoader', correct: true}
+      - {value: 'An instance of \Twig\Environment', correct: false}
+      - {value: 'An instance of \Twig\Loader\LoaderInterface', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/api.html'
   -
     uuid: 1eebf878-8b9c-6200-a89a-99d84c92580c
     question: 'Which internal method is called when using the deprecated tag?'
     answers:
-      - { value: error_log(), correct: false }
-      - { value: trigger_error(), correct: true }
-      - { value: user_error(), correct: false }
-      - { value: sprintf, correct: false }
+      - {value: error_log(), correct: false}
+      - {value: trigger_error(), correct: true}
+      - {value: user_error(), correct: false}
+      - {value: sprintf, correct: false}
     help: 'https://twig.symfony.com/doc/3.x/tags/deprecated.html'
   -
     uuid: 1eebf878-8b9c-6cfa-be85-99d84c92580c
     question: "Can we create a custom escaper for Twig ?"
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/filters/escape.html#custom-escapers'
   -
     uuid: 1eebf878-8ba3-60c8-bbfa-99d84c92580c
     question: 'The compiler is used to transform a Node into a valid PHP class, but which class trigger this compilation?'
     answers:
-      - { value: 'The Lexer', correct: false }
-      - { value: 'The Environment', correct: false }
-      - { value: 'The Node', correct: false }
-      - { value: 'The Compiler', correct: true }
+      - {value: 'The Lexer', correct: false}
+      - {value: 'The Environment', correct: false}
+      - {value: 'The Node', correct: false}
+      - {value: 'The Compiler', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/internals.html#the-compiler'
   -
     uuid: 1eebf878-8ba3-64a6-a2d8-99d84c92580c
     question: 'Which of the following statements will display bar ?'
     answers:
-      - { value: "{{ '' ? 'foo' : 'bar' }}", correct: true }
-      - { value: "{{ '' is not empty ? 'foo' : 'bar' }}", correct: true }
-      - { value: "{{ [] is not empty ? 'foo' : 'bar' }}", correct: true }
-      - { value: "{{ 0 ? 'foo' : 'bar' }}", correct: true }
-      - { value: "{{ '0' is not empty ? 'foo' : 'bar' }}", correct: false }
-      - { value: "{{ '0' ? 'foo' : 'bar' }}", correct: true }
-      - { value: "{{ [] ? 'foo' : 'bar' }}", correct: true }
-      - { value: "{{ 0 is not empty ? 'foo' : 'bar' }}", correct: false }
+      - {value: "{{ '' ? 'foo' : 'bar' }}", correct: true}
+      - {value: "{{ '' is not empty ? 'foo' : 'bar' }}", correct: true}
+      - {value: "{{ [] is not empty ? 'foo' : 'bar' }}", correct: true}
+      - {value: "{{ 0 ? 'foo' : 'bar' }}", correct: true}
+      - {value: "{{ '0' is not empty ? 'foo' : 'bar' }}", correct: false}
+      - {value: "{{ '0' ? 'foo' : 'bar' }}", correct: true}
+      - {value: "{{ [] ? 'foo' : 'bar' }}", correct: true}
+      - {value: "{{ 0 is not empty ? 'foo' : 'bar' }}", correct: false}
     help: 'https://twig.symfony.com/doc/3.x/tags/if.html'
   -
     uuid: 1eebf878-8ba4-6126-8f50-99d84c92580c
     question: 'With twig, what is the correct way to display the value of a PHP constant?'
     answers:
-      - { value: '{{ Namespace\\Classname::CONSTANT_NAME }}', correct: false }
-      - { value: "{{ constant('Namespace\\Classname::CONSTANT_NAME') }}", correct: false }
-      - { value: '{{ Namespace\Classname::CONSTANT_NAME }}', correct: false }
-      - { value: '{{ constant(''Namespace\\Classname::CONSTANT_NAME'') }}', correct: true }
+      - {value: '{{ Namespace\\Classname::CONSTANT_NAME }}', correct: false}
+      - {value: "{{ constant('Namespace\\Classname::CONSTANT_NAME') }}", correct: false}
+      - {value: '{{ Namespace\Classname::CONSTANT_NAME }}', correct: false}
+      - {value: '{{ constant(''Namespace\\Classname::CONSTANT_NAME'') }}', correct: true}
     help: 'https://twig.symfony.com/doc/functions/constant.html'
   -
     uuid: 1eebf878-8ba4-62de-8eca-99d84c92580c
     question: 'Which of the following are valid block names ?'
     answers:
-      - { value: foo123, correct: true }
-      - { value: 123foo, correct: false }
-      - { value: foo.bar, correct: false }
-      - { value: _foo, correct: true }
-      - { value: .foo, correct: false }
-      - { value: '-foo', correct: false }
-      - { value: foo_bar, correct: true }
+      - {value: foo123, correct: true}
+      - {value: 123foo, correct: false}
+      - {value: foo.bar, correct: false}
+      - {value: _foo, correct: true}
+      - {value: .foo, correct: false}
+      - {value: '-foo', correct: false}
+      - {value: foo_bar, correct: true}
     help: 'https://twig.symfony.com/doc/3.x/tags/block.html'
   -
     uuid: 1eebf878-8ba4-63ba-92c3-99d84c92580c
     question: 'Does the following code follow the Twig coding standard? {{foo}}'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - {value: 'Yes', correct: false}
+      - {value: 'No', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/coding_standards.html'
   -
     uuid: 1eebf878-8ba4-6f4a-8a9a-99d84c92580c
     question: 'Which of the following are built-in Twig functions?'
     answers:
-      - { value: path(), correct: false }
-      - { value: date(), correct: true }
-      - { value: attribute(), correct: true }
-      - { value: dump(), correct: false }
-      - { value: source(), correct: true }
-      - { value: url(), correct: false }
-      - { value: render(), correct: false }
+      - {value: path(), correct: false}
+      - {value: date(), correct: true}
+      - {value: attribute(), correct: true}
+      - {value: dump(), correct: false}
+      - {value: source(), correct: true}
+      - {value: url(), correct: false}
+      - {value: render(), correct: false}
     help: 'https://twig.symfony.com/doc/3.x/'
   -
     uuid: 1eebf878-8ba5-6292-99ae-99d84c92580c
     question: "Does this syntax perform any check? {{ foo['bar'] }}"
     answers:
-      - { value: "Yes, if foo is an object then if it's an array", correct: false }
-      - { value: 'No', correct: false }
-      - { value: 'Yes if foo is an array', correct: true }
+      - {value: "Yes, if foo is an object then if it's an array", correct: false}
+      - {value: 'No', correct: false}
+      - {value: 'Yes if foo is an array', correct: true}
     help: 'https://twig.symfony.com/doc/3.x/templates.html#variables'
   -
     uuid: 1eebf878-8ba7-62d6-b87e-99d84c92580c
     question: 'In Twig, which of the following operators has the lowest precedence?'
     answers:
-      - { value: '==', correct: false }
-      - { value: and, correct: true }
-      - { value: '!=', correct: false }
-      - { value: '<=', correct: false }
+      - {value: '==', correct: false}
+      - {value: and, correct: true}
+      - {value: '!=', correct: false}
+      - {value: '<=', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/templates.html#expressions'
   -
     uuid: 1eebf878-8ba7-65a6-bc65-99d84c92580c
     question: 'Could functions and filters be defined at runtime without any overhead?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/recipes.html#defining-undefined-functions-and-filters-on-the-fly'
   -
     uuid: 1eebf878-8ba9-6964-bbd3-99d84c92580c
     question: 'In a Twig template, how can you test that a given constant is defined by PHP? (Example, how can you check if VERSION constant is defined by Symfony\Component\HttpKernel\Kernel class?)'
     answers:
-      - { value: '{% if constant(''Symfony\\Component\\HttpKernel\\Kernel::VERSION'') ?? %} ... {% endif %}', correct: false }
-      - { value: '{% if constant(''Symfony\\Component\\HttpKernel\\Kernel::VERSION'') is defined %} ... {% endif %}', correct: true }
-      - { value: '{% if constant(''VERSION'', ''Symfony\\Component\\HttpKernel\\Kernel'') %}...{% endif %}', correct: false }
-      - { value: "{% if defined('Symfony\\\\Component\\\\HttpKernel\\\\Kernel::VERSION') %}...{% endif %}", correct: false }
+      - {value: '{% if constant(''Symfony\\Component\\HttpKernel\\Kernel::VERSION'') ?? %} ... {% endif %}', correct: false}
+      - {value: '{% if constant(''Symfony\\Component\\HttpKernel\\Kernel::VERSION'') is defined %} ... {% endif %}', correct: true}
+      - {value: '{% if constant(''VERSION'', ''Symfony\\Component\\HttpKernel\\Kernel'') %}...{% endif %}', correct: false}
+      - {value: "{% if defined('Symfony\\\\Component\\\\HttpKernel\\\\Kernel::VERSION') %}...{% endif %}", correct: false}
     help: 'https://twig.symfony.com/doc/functions/constant.html'
   -
     uuid: 1eebf878-8ba9-6e82-aa99-99d84c92580c
     question: 'What will be the result of evaluating this template when setting blue for the color variable value and when the strict_variables global setting is on? The {{ color }} car!'
     answers:
-      - { value: 'Twig will raise a Twig_Error_Runtime exception preventing the template from being evaluated.', correct: false }
-      - { value: 'The template will be succesfully evaluated and the string The blue car! will be displayed in the web browser.', correct: true }
+      - {value: 'Twig will raise a Twig_Error_Runtime exception preventing the template from being evaluated.', correct: false}
+      - {value: 'The template will be succesfully evaluated and the string The blue car! will be displayed in the web browser.', correct: true}
     help: 'https://twig.symfony.com/doc/2.x/templates.html#variables'
   -
     uuid: 1eebf878-8baa-6814-b035-99d84c92580c
     question: 'Given var and bar are existing variables, among the following, which expressions are escaped?'
     answers:
-      - { value: '{{ var|raw|upper }}', correct: true }
-      - { value: '{{ var|raw~bar }}', correct: true }
-      - { value: '{{ var|upper|raw }}', correct: false }
+      - {value: '{{ var|raw|upper }}', correct: true}
+      - {value: '{{ var|raw~bar }}', correct: true}
+      - {value: '{{ var|upper|raw }}', correct: false}
     help: 'https://twig.symfony.com/doc/filters/raw.html'
   -
     uuid: 1eed5785-acf1-6348-acd0-8f7c95d43695
     question: 'Which of the following Twig internal objects is responsible for converting a tokens stream into a meaningful tree of nodes (aka AST or Abstract Syntax Tree)?'
     answers:
-      - { value: 'The Compiler', correct: false }
-      - { value: 'The Parser', correct: true }
-      - { value: 'The Environment', correct: false }
-      - { value: 'The Lexer', correct: false }
+      - {value: 'The Compiler', correct: false}
+      - {value: 'The Parser', correct: true}
+      - {value: 'The Environment', correct: false}
+      - {value: 'The Lexer', correct: false}
     help: 'https://twig.symfony.com/doc/3.x/internals.html'
   -
     uuid: 1eee76e3-3511-6002-9026-0376da4929df
     question: "Consider the following code snippet: {% set foo, bar = 'FOO' %}  Foo is {{ foo }} and Bar is {{ bar }}. What will be the outcome of evaluating this Twig code?"
     answers:
-      - { value: 'The output will display the string  Foo is and Bar is . .', correct: false }
-      - { value: 'Twig will raise a  Twig_Error_Syntax  exception.', correct: true }
-      - { value: 'The output will display the string  Foo is FOO and Bar is . .', correct: false }
-      - { value: 'The output will display the string Foo is  FOO and Bar is FOO. .', correct: false }
+      - {value: 'The output will display the string  Foo is and Bar is . .', correct: false}
+      - {value: 'Twig will raise a  Twig_Error_Syntax  exception.', correct: true}
+      - {value: 'The output will display the string  Foo is FOO and Bar is . .', correct: false}
+      - {value: 'The output will display the string Foo is  FOO and Bar is FOO. .', correct: false}
     help: 'https://twig.symfony.com/doc/tags/set.html'
