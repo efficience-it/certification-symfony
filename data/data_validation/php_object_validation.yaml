@@ -1,37 +1,5 @@
 questions:
   -
-    uuid: 1eec0499-a76d-66d2-aadb-f1225a91311b
-    question: "Is this way of validating an email is valid ?    $errors = $validator->validate('johndoe@gmail.com', new Assert\\Email());    if ($errors->count()) {    ...    }"
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/validation/raw_values.html'
-  -
-    uuid: 1eec049e-b567-6be8-b3c9-3b80b710b68d
-    question: 'Which Assert check an array of data ?'
-    answers:
-      - { value: 'new Assert\Collection', correct: true }
-      - { value: 'new Assert\ArrayCollection', correct: false }
-      - { value: 'new Assert\Traversable', correct: false }
-      - { value: 'new Assert\Iterable', correct: false }
-    help: 'https://symfony.com/doc/current/validation/raw_values.html'
-  -
-    uuid: 1eebf878-8ba4-609a-b99c-99d84c92580c
-    question: 'Is it possible to define default values that depend on another option?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/components/options_resolver.html#default-values-that-depend-on-another-option'
-  -
-    uuid: 1eebf878-8ba1-6890-90cf-99d84c92580c
-    question: 'Which of these sentences is true ?'
-    answers:
-      - { value: 'Annotations mapping are enabled by default', correct: false }
-      - { value: 'UniqueEntity is provided by Doctrine Bundle', correct: false }
-      - { value: 'We can validate partial object with @Assert\GroupSequence', correct: true }
-      - { value: 'All assertions above are valid', correct: false }
-    help: 'https://symfony.com/doc/current/reference/constraints/UniqueEntity.html'
-  -
     uuid: 1eebf878-8b97-60d4-9e76-99d84c92580c
     question: "In which cases the following call will return true? $resolver->isDefined('username');"
     answers:
@@ -58,4 +26,36 @@ questions:
       - { value: 'OptionsResolver::DOUBLE', correct: false }
       - { value: ' float ', correct: true }
       - { value: 'OptionsResolver::FLOAT', correct: false }
-    help: 'https://symfony.com/doc/current/components/options_resolver.html#type-validation https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/OptionsResolver/OptionsResolver.php'
+    help: 'https://symfony.com/doc/current/components/options_resolver.html#type-validation'
+  -
+    uuid: 1eebf878-8ba1-6890-90cf-99d84c92580c
+    question: 'Which of these sentences is true ?'
+    answers:
+      - { value: 'Annotations mapping are enabled by default', correct: false }
+      - { value: 'UniqueEntity is provided by Doctrine Bundle', correct: false }
+      - { value: 'We can validate partial object with @Assert\GroupSequence', correct: true }
+      - { value: 'All assertions above are valid', correct: false }
+    help: 'https://symfony.com/doc/current/reference/constraints/UniqueEntity.html'
+  -
+    uuid: 1eebf878-8ba4-609a-b99c-99d84c92580c
+    question: 'Is it possible to define default values that depend on another option?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/components/options_resolver.html#default-values-that-depend-on-another-option'
+  -
+    uuid: 1eec0499-a76d-66d2-aadb-f1225a91311b
+    question: "Is this way of validating an email is valid ?$errors = $validator->validate('johndoe@gmail.com', new Assert\\Email());if ($errors->count())"
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/validation/raw_values.html'
+  -
+    uuid: 1eec049e-b567-6be8-b3c9-3b80b710b68d
+    question: 'Which Assert check an array of data ?'
+    answers:
+      - { value: 'new Assert\Collection', correct: true }
+      - { value: 'new Assert\ArrayCollection', correct: false }
+      - { value: 'new Assert\Traversable', correct: false }
+      - { value: 'new Assert\Iterable', correct: false }
+    help: 'https://symfony.com/doc/current/validation/raw_values.html'

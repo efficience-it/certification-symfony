@@ -1,14 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8b9f-68ba-b02a-99d84c92580c
-    question: 'Which method allows you to handle the request on a form instance?'
-    answers:
-      - { value: $form->bindRequest($request), correct: false }
-      - { value: $form->handleRequest($request), correct: true }
-      - { value: $form->handle($request), correct: false }
-      - { value: $form->request($request), correct: false }
-    help: 'https://symfony.com/doc/current/forms.html#processing-forms'
-  -
     uuid: 1eebf878-8b97-6214-a197-99d84c92580c
     question: 'Does the required option perform a server-side validation of the submitted data?'
     answers:
@@ -41,6 +32,15 @@ questions:
       - { value: 'By calling isValid(false)', correct: false }
       - { value: 'By not calling isValid()', correct: false }
     help: 'https://symfony.com/doc/current/form/disabling_validation.html'
+  -
+    uuid: 1eebf878-8b9f-68ba-b02a-99d84c92580c
+    question: 'Which method allows you to handle the request on a form instance?'
+    answers:
+      - { value: $form->bindRequest($request), correct: false }
+      - { value: $form->handleRequest($request), correct: true }
+      - { value: $form->handle($request), correct: false }
+      - { value: $form->request($request), correct: false }
+    help: 'https://symfony.com/doc/current/forms.html#processing-forms'
   -
     uuid: 1eebf878-8b9f-6d6a-8927-99d84c92580c
     question: 'Using form component, option  error_bubbling  will include error in current field.'

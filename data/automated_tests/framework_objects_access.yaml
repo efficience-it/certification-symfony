@@ -6,17 +6,17 @@ questions:
       - { value: 'swiftmailer.disable_delivery: true', correct: false }
       - { value: 'swiftmailer.delivery: false', correct: false }
       - { value: 'swiftmailer.delivery_disable: false', correct: false }
-      - { value: 'framework.mailer.dsn: null://null', correct: true }
+      - { value: "framework.mailer.dsn: 'null://null'", correct: true }
       - { value: 'framework.mailer.dsn: null', correct: false }
       - { value: 'framework.mailer.dsn: false', correct: false }
     help: 'https://symfony.com/doc/current/mailer.html#disabling-delivery'
   -
     uuid: 1eebf878-8ba5-60d0-b804-99d84c92580c
-    question: 'What are the valid ways to get the Session object if the controller class inherits from the base FrameworkBundle\'s Controller class?'
+    question: "What are the valid ways to get the Session object if the controller class inherits from the base FrameworkBundle's Controller class?"
     answers:
       - { value: '$session = $this->getSession();', correct: false }
       - { value: '$session = $request->getSession();', correct: true }
-      - { value: '$session = $this->get('session');', correct: true }
+      - { value: "$session = $this->get('session');", correct: true }
       - { value: '$session = $this->container->getSession();', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php#L84'
   -

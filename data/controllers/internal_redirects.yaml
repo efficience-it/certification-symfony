@@ -10,7 +10,7 @@ questions:
       - { value: '304', correct: false }
       - { value: '307', correct: true }
       - { value: '308', correct: true }
-    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/HttpFoundation/RedirectResponse.php https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/HttpFoundation/Response.php#L1295https://tools.ietf.org/html/rfc7231#section-6 http'
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/RedirectResponse.php'
   -
     uuid: 1eebf878-8ba4-6004-b91d-99d84c92580c
     question: 'What is the default status code of a Symfony\Component\HttpFoundation\RedirectResponse object?'
@@ -19,7 +19,7 @@ questions:
       - { value: '300', correct: false }
       - { value: '302', correct: true }
       - { value: '301', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/2.3/src/Symfony/Component/HttpFoundation/RedirectResponse.php#L35https://tools.ietf.org/html/rfc2616#section-10.3.3'
+    help: 'https://tools.ietf.org/html/rfc2616#section-10.3.3'
   -
     uuid: 1eebf878-8ba8-6816-a78a-99d84c92580c
     question: 'In a forward request, does the browser is redirected to another route ?'

@@ -1,5 +1,19 @@
 questions:
   -
+    uuid: 1eebf878-8b9e-67a8-b96c-99d84c92580c
+    question: 'Which helper is not available in the Console component?'
+    answers:
+      - { value: QuestionHelper, correct: false }
+      - { value: Table, correct: false }
+      - { value: FormatterHelper, correct: false }
+      - { value: ProcessHelper, correct: false }
+      - { value: 'Progress Bar', correct: false }
+      - { value: 'Debug formatter helper', correct: false }
+      - { value: FileHelper, correct: true }
+      - { value: DialogHelper, correct: true }
+      - { value: InformationHelper, correct: true }
+    help: 'https://symfony.com/doc/current/components/console/helpers/index.html'
+  -
     uuid: 1eebf878-8ba5-6b52-8c17-99d84c92580c
     question: "What's the correct way to get to position of the cursor in a command ?"
     answers:
@@ -37,12 +51,12 @@ questions:
     help: 'https://symfony.com/doc/current/components/console/helpers/formatterhelper.html'
   -
     uuid: 1eebf878-8ba5-6c74-a208-99d84c92580c
-    question: 'What is the correct way to truncate a message in a console with the formater helper ?    $message =  This is a very long message, which should be truncated ;    to     $message =  This is a very long message, which should be!! ;'
+    question: 'What is the correct way to truncate a message in a console with the formater helper ?    $message =  This is a very long message, which should be truncated ;    to $message =  This is a very long message, which should be!! ;'
     answers:
-      - { value: "echo $formatter->truncate($message, 44, '!!');", correct: true }
-      - { value: "echo $formatter->truncateMessage($message, -10, '!!');", correct: false }
-      - { value: "echo $formatter->truncate($message, -10, '!!');", correct: true }
-      - { value: "echo $formatter->truncateMessage($message, 44, '!!');", correct: false }
+      - { value: "$formatter->truncate($message, 44, '!!');", correct: true }
+      - { value: "$formatter->truncateMessage($message, -10, '!!');", correct: false }
+      - { value: "$formatter->truncate($message, -10, '!!');", correct: true }
+      - { value: "$formatter->truncateMessage($message, 44, '!!');", correct: false }
     help: 'https://symfony.com/doc/current/components/console/helpers/formatterhelper.html'
   -
     uuid: 1eebf878-8ba5-6cba-8c29-99d84c92580c
@@ -165,17 +179,3 @@ questions:
       - { value: "by adding a third argument    $helper->run($output, $process, 'Failed');", correct: true }
       - { value: 'By overring the message of the ProcessHelperException', correct: false }
     help: 'https://symfony.com/doc/current/components/console/helpers/processhelper.html#customized-display'
-  -
-    uuid: 1eebf878-8b9e-67a8-b96c-99d84c92580c
-    question: 'Which helper is not available in the Console component?'
-    answers:
-      - { value: QuestionHelper, correct: false }
-      - { value: Table, correct: false }
-      - { value: FormatterHelper, correct: false }
-      - { value: ProcessHelper, correct: false }
-      - { value: 'Progress Bar', correct: false }
-      - { value: 'Debug formatter helper', correct: false }
-      - { value: FileHelper, correct: true }
-      - { value: DialogHelper, correct: true }
-      - { value: InformationHelper, correct: true }
-    help: 'https://symfony.com/doc/current/components/console/helpers/index.html'

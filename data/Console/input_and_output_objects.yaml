@@ -1,15 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8b9e-6dc0-a62a-99d84c92580c
-    question: 'Which Question class are available ?'
-    answers:
-      - { value: Symfony\Component\Console\Question\Question, correct: true }
-      - { value: Symfony\Component\Console\Question\ChoiceQuestion, correct: true }
-      - { value: Symfony\Component\Console\Question\ConfirmationQuestion, correct: true }
-      - { value: Symfony\Component\Console\Question\SelectQuestion, correct: false }
-      - { value: Symfony\Component\Console\Question\ValidQuestion, correct: false }
-    help: 'https://symfony.com/doc/current/components/console/helpers/questionhelper.html'
-  -
     uuid: 1eebf878-8b9e-6848-ac2a-99d84c92580c
     question: 'Using Console component, which of these class allows to create custom output styles?'
     answers:
@@ -34,6 +24,16 @@ questions:
       - { value: 'InputArgument::LIST', correct: false }
       - { value: 'InputArgument::ENUM', correct: false }
     help: 'https://symfony.com/doc/current/console/input.html#using-command-arguments'
+  -
+    uuid: 1eebf878-8b9e-6dc0-a62a-99d84c92580c
+    question: 'Which Question class are available ?'
+    answers:
+      - { value: Symfony\Component\Console\Question\Question, correct: true }
+      - { value: Symfony\Component\Console\Question\ChoiceQuestion, correct: true }
+      - { value: Symfony\Component\Console\Question\ConfirmationQuestion, correct: true }
+      - { value: Symfony\Component\Console\Question\SelectQuestion, correct: false }
+      - { value: Symfony\Component\Console\Question\ValidQuestion, correct: false }
+    help: 'https://symfony.com/doc/current/components/console/helpers/questionhelper.html'
   -
     uuid: 1eebf878-8ba3-6398-b072-99d84c92580c
     question: 'What type of argument would you use to accept more than one input parameter? For example, php bin/console hello Fabien Martin Jessica?'

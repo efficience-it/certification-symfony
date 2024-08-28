@@ -40,28 +40,28 @@ questions:
     uuid: 1ef49b5a-8ebf-6472-82c5-f5810e093800
     question: "How do you configure the DSN for a transport in Symfony Messenger to send messages to a RabbitMQ queue?"
     answers:
-      - { value: "rabbitmq://localhost/%2f/messages", correct: true }
-      - { value: "rabbitmq://localhost/messages", correct: false }
-      - { value: "amqp://localhost/messages", correct: false }
-      - { value: "rabbitmq://localhost/%2f", correct: false }
+      - { value: 'rabbitmq://localhost/%2f/messages', correct: true }
+      - { value: 'rabbitmq://localhost/messages', correct: false }
+      - { value: 'amqp://localhost/messages', correct: false }
+      - { value: 'rabbitmq://localhost/%2f', correct: false }
     help: 'https://symfony.com/doc/current/messenger.html#amqp-transport'
   -
     uuid: 1ef49b6a-03e9-60ae-9839-151e1bbfbae8
     question: "Which Symfony component must be installed to use the redis transport with Messenger?"
     answers:
-      - { value: "symfony/redis-messenger", correct: true }
-      - { value: "symfony/redis", correct: false }
-      - { value: "predis/predis", correct: false }
-      - { value: "symfony/redis-transport", correct: false }
+      - { value: 'symfony/redis-messenger', correct: true }
+      - { value: 'symfony/redis', correct: false }
+      - { value: 'predis/predis', correct: false }
+      - { value: 'symfony/redis-transport', correct: false }
     help: 'https://symfony.com/doc/current/messenger.html#redis-transport'
   -
     uuid: 1ef49b71-c667-6ade-97e5-510b604738c4
     question: 'Which component should a class use to configure a custom retry strategy in messenger ?'
     answers:
       - { value: RetryStrategyInterface, correct: true }
-      - { value: "RetryStrategyTrait", correct: false }
-      - { value: "RetryStrategyController", correct: false }
-      - { value: "RetryMiddleware", correct: false }
+      - { value: 'RetryStrategyTrait', correct: false }
+      - { value: 'RetryStrategyController', correct: false }
+      - { value: 'RetryMiddleware', correct: false }
     help: 'https://github.com/symfony/messenger/blob/7.1/Retry/RetryStrategyInterface.php'
   -
     uuid: 1ef49b77-ad91-6d24-a5f3-c9434be6fb85

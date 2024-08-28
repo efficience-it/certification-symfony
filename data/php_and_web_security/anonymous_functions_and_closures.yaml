@@ -6,7 +6,7 @@ questions:
       - { value: hello, correct: true }
       - { value: 'Fatal Error', correct: false }
       - { value: 'Hello World', correct: false }
-    help: 'https://www.php.net/manual/en/functions.anonymous.php    https://3v4l.org/el3W8'
+    help: 'https://www.php.net/manual/en/functions.anonymous.php'
   -
     uuid: 1eebf878-8ba9-6536-8861-99d84c92580c
     question: 'What will be the output of this ?    $result = 0;    $one = function()  { var_dump($result); };'

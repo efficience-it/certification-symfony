@@ -38,7 +38,7 @@ questions:
       - { value: 'Twig always re-escapes values, regardless of their previous escaping status.', correct: false }
       - { value: 'Twig does not escape values that have already been escaped.', correct: true }
       - { value: 'Twig issues an error if it encounters an already escaped value.', correct: false }
-    help: "https://twig.symfony.com/doc/3.x/tags/autoescape.html"
+    help: 'https://twig.symfony.com/doc/3.x/tags/autoescape.html'
   -
     uuid: 1eebf878-8ba8-6000-9bc1-99d84c92580c
     question: 'What does the serialize Twig filter do?'

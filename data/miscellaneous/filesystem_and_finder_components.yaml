@@ -1,13 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8b9c-6336-848b-99d84c92580c
-    question: 'When using mirror(...), could files that are not present in the source directory be deleted?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-      - { value: 'May be', correct: false }
-    help: 'https://symfony.com/doc/current/components/filesystem.html#mirror'
-  -
     uuid: 1eebf878-8b97-6dcc-8979-99d84c92580c
     question: 'What is returned by the Symfony\Component\Filesystem\Filesystem::mkdir method if the directory has been successfully created ?'
     answers:
@@ -15,14 +7,14 @@ questions:
       - { value: 'A string with the directory path', correct: false }
       - { value: Nothing, correct: true }
       - { value: 'true or false', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Filesystem/Filesystem.php#L91'
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Filesystem/Filesystem.php#L91'
   -
     uuid: 1eebf878-8b98-6d26-9152-99d84c92580c
     question: "Is the following code valid? $mirror('/srv/app', '/srv/bar', null, ['copy_on_windows' => true]);"
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: "https://symfony.com/doc/current/components/filesystem.html#mirror"
+    help: 'https://symfony.com/doc/current/components/filesystem.html#mirror<br>'
   -
     uuid: 1eebf878-8b99-60d2-94e5-99d84c92580c
     question: 'What is the Symfony\Component\Filesystem\Filesystem method to check if the given path is absolute ?'
@@ -55,6 +47,14 @@ questions:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Filesystem/Filesystem.php#L527'
+  -
+    uuid: 1eebf878-8b9c-6336-848b-99d84c92580c
+    question: 'When using mirror(...), could files that are not present in the source directory be deleted?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'May be', correct: false }
+    help: 'https://symfony.com/doc/current/components/filesystem.html#mirror'
   -
     uuid: 1eebf878-8b9c-6386-8337-99d84c92580c
     question: "Which exception is thrown when the origin file does not exist when you use theSymfony\\Component\\Filesystem\\Filesystem::copy method ?"
@@ -121,7 +121,7 @@ questions:
       - { value: 'public function copy($targetFile, $originFile, $overwriteNewerFiles)', correct: false }
       - { value: 'public function copy($originFile, $targetFile, $overwriteNewerFiles = false)', correct: true }
       - { value: 'public function copy($targetFile, $originFile, $overwriteNewerFiles = false)', correct: false }
-    help: 'https://symfony.com/doc/current/components/filesystem.html#copyhttps://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Filesystem/Filesystem.php#L39'
+    help: 'https://symfony.com/doc/current/components/filesystem.html#copy'
   -
     uuid: 1eebf878-8ba3-64ec-8a4c-99d84c92580c
     question: 'What is the definition of an Adapter?'
@@ -139,7 +139,7 @@ questions:
       - { value: FileNotExistException, correct: false }
       - { value: FileErrorException, correct: false }
       - { value: FileNotFoundException, correct: true }
-    help: 'https://symfony.com/doc/current/components/filesystem.html#copyhttps://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Filesystem/Filesystem.php'
+    help: 'https://symfony.com/doc/current/components/filesystem.html#copy'
   -
     uuid: 1eebf878-8ba4-6374-985a-99d84c92580c
     question: 'With the Finder, which method is correct to exclude a logs directory from matching ?'

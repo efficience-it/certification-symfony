@@ -6,7 +6,7 @@ questions:
       - { value: 'null', correct: true }
       - { value: 'false', correct: false }
       - { value: 'QueryException will be thrown', correct: false }
-      - { value: "NotFoundException will be thrown", correct: false }
+      - { value: 'NotFoundException will be thrown', correct: false }
     help: 'https://symfony.com/doc/current/components/http_foundation.html'
   -
     uuid: 1eebf878-8ba8-65b4-9642-99d84c92580c

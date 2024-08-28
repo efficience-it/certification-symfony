@@ -1,5 +1,26 @@
 questions:
   -
+    uuid: 1eebf878-8b98-6222-8b50-99d84c92580c
+    question: 'Could a FlashBag be cleared?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php#L109'
+  -
+    uuid: 1eebf878-8b9c-6110-8d0d-99d84c92580c
+    question: 'Could the FlashBag messages be retrieved without being removed from the bag?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php'
+  -
+    uuid: 1eebf878-8b9c-66ec-b7fb-99d84c92580c
+    question: 'Could all FlashBag messages be overridden?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php#L89'
+  -
     uuid: 1eebf878-8ba7-677c-933e-99d84c92580c
     question: 'How could you store a flash message in an AbstractController ?'
     answers:
@@ -28,7 +49,7 @@ questions:
     uuid: 1eebf878-8ba7-686c-be22-99d84c92580c
     question: 'What is the key used to store flashes in the session ?'
     answers:
-      - { value: "_flashes_info, _flashes_danger, _flashes_success, _flashes_debug    ", correct: false }
+      - { value: '_flashes_info, _flashes_danger, _flashes_success, _flashes_debug', correct: false }
       - { value: _flashes_session, correct: false }
       - { value: _symfony_flashes, correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php#L28'
@@ -40,30 +61,9 @@ questions:
       - { value: 'Yes', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php'
   -
-    uuid: 1eebf878-8b98-6222-8b50-99d84c92580c
-    question: 'Could a FlashBag be cleared?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php#L109'
-  -
-    uuid: 1eebf878-8b9c-6110-8d0d-99d84c92580c
-    question: 'Could the FlashBag messages be retrieved without being removed from the bag?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php'
-  -
-    uuid: 1eebf878-8b9c-66ec-b7fb-99d84c92580c
-    question: 'Could all FlashBag messages be overridden?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php#L89'
-  -
     uuid: 1eebf878-8ba9-6fb8-a04c-99d84c92580c
     question: 'Could the name of a FlashBag be retrieved?'
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/2.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php'
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php'

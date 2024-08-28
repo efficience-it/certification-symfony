@@ -1,0 +1,14 @@
+{
+  "name": "efficience_it/certificationy-symfony",
+  "type": "library",
+  "keywords": ["symfony", "certification", "test", "exam"],
+  "description": "A series of questions to prepare for the certification Symfony5-6-7",
+  "homepage": "https://github.com/efficience-it/certification-symfony",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Louis-Arnaud Catoire",
+      "email": "la.catoire@gmail.com"
+    }
+  ]
+}

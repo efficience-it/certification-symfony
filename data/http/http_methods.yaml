@@ -1,12 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8ba4-65ae-b565-99d84c92580c
-    question: 'Can browsers cache POST requests?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://learning.mlytics.com/the-internet/http-request-methods/'
-  -
     uuid: 1eebf878-8b97-64e4-be7c-99d84c92580c
     question: 'Which HTTP verbs are idempotent ?'
     answers:
@@ -18,7 +11,7 @@ questions:
       - { value: HEAD, correct: true }
       - { value: GET, correct: true }
       - { value: DELETE, correct: true }
-    help: 'https://www.rfc-editor.org/rfc/rfc7231#section-4.2.2 https://en.wikipedia.org/wiki/HTTP#Idempotent_methods_and_web_applications'
+    help: 'https://en.wikipedia.org/wiki/HTTP#Idempotent_methods_and_web_applications'
   -
     uuid: 1eebf878-8b9a-62b6-862c-99d84c92580c
     question: 'Which HTTP verbs are safe ?'
@@ -33,7 +26,14 @@ questions:
       - { value: POST, correct: false }
       - { value: TRACE, correct: true }
       - { value: PUT, correct: false }
-    help: "https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Safe_methods"
+    help: 'https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Safe_methods'
+  -
+    uuid: 1eebf878-8ba4-65ae-b565-99d84c92580c
+    question: 'Can browsers cache POST requests?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://learning.mlytics.com/the-internet/http-request-methods/'
   -
     uuid: 1eebf878-8ba7-6178-b041-99d84c92580c
     question: 'Which methods are cacheable ?'
@@ -57,3 +57,28 @@ questions:
       - { value: getName, correct: true }
       - { value: getData, correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpKernel/DataCollector/DataCollectorInterface.php'
+  -
+    uuid: 1ef54f7c-efa3-6f32-8aa4-81d180590b50
+    question: 'What is true about the GET method?'
+    answers:
+      - { value: 'A GET request is idempotent', correct: true }
+      - { value: "A GET request's response is cachable", correct: true }
+      - { value: 'A GET request is safe', correct: true }
+      - { value: 'A GET request requires a body', correct: false }
+      - { value: 'A GET request needs an  User-Agent  header', correct: false }
+      - { value: 'This method is defined by RFC5789', correct: false }
+    help: 'https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Summary_table'
+  -
+    uuid: 1ef54f82-1543-6170-a77a-2bcbf190a7ac
+    question: 'What is true about the HEAD method?'
+    answers:
+      - { value: 'A HEAD request is idempoten', correct: true }
+      - { value: "A HEAD request's response is cachable", correct: true }
+      - { value: 'A HEAD request is safe', correct: true }
+      - { value: 'This method is defined by RFC7231', correct: true }
+      - { value: 'This method is defined by RFC2616', correct: true }
+      - { value: 'The server must support it', correct: true }
+      - { value: 'A HEAD request contains a body', correct: false }
+      - { value: "A HEAD request's response contains a body", correct: false }
+      - { value: 'A HEAD request needs an  Http-Version  header', correct: false }
+    help: 'https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Summary_table'

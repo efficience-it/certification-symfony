@@ -38,10 +38,18 @@ questions:
       - { value: MessageEvent, correct: true }
       - { value: SentMessageEvent, correct: true }
       - { value: MessageSentEvent, correct: false }
-      - { value: FailedMessage, correct: true }
+      - { value: FailedMessageEvent, correct: true }
       - { value: MessageFailedEvent, correct: false }
       - { value: ReceivedMessageEvent, correct: false }
     help: 'https://symfony.com/doc/current/mailer.html#mailer-events'
+  -
+    uuid: 1eeccd7e-c7af-6482-ac98-1d62e1e2e432
+    question: 'What does MIME mean ?'
+    answers:
+      - { value: 'Minimum Information Mail Extended', correct: false }
+      - { value: 'Message Imported Mail Environment', correct: false }
+      - { value: 'Multipurpose Internet Mail Extensions', correct: true }
+    help: 'https://symfony.com/doc/current/components/mime.html'
   -
     uuid: 1eeccd99-999f-6734-bd4d-d9d09f91572c
     question: 'What are the function which permit to transforms between MIME Types and file name extensions ? and reversly !'
@@ -51,11 +59,3 @@ questions:
       - { value: getMimeTypes, correct: true }
       - { value: getMimeType, correct: false }
     help: 'https://symfony.com/doc/current/components/mime.html#mime-types-utilities'
-  -
-    uuid: 1eeccd7e-c7af-6482-ac98-1d62e1e2e432
-    question: 'What does MIME mean ?'
-    answers:
-      - { value: 'Minimum Information Mail Extended', correct: false }
-      - { value: 'Message Imported Mail Environment', correct: false }
-      - { value: 'Multipurpose Internet Mail Extensions', correct: true }
-    help: 'https://symfony.com/doc/current/components/mime.html'

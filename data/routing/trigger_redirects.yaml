@@ -6,10 +6,10 @@ questions:
       - { value: Sensio\Bundle\FrameworkBundle\Controller\RedirectController, correct: false }
       - { value: Symfony\Bundle\FrameworkBundle\Controller\RedirectController, correct: true }
       - { value: Symfony\FrameworkBundle\Controller\RedirectController, correct: false }
-    help: 'https://symfony.com/doc/6.4/routing.html#redirecting-to-urls-and-routes-directly-from-a-route'
+    help: 'https://symfony.com/doc/current/routing.html#redirecting-to-urls-and-routes-directly-from-a-route'
   -
     uuid: 1eebf878-8ba8-61fe-9ece-99d84c92580c
-    question: 'What\'s the possible word in XXX to set a redirection in the routing.yaml ?'
+    question: "What's the possible word in XXX to set a redirection in the routing.yaml ?"
     answers:
       - { value: path, correct: true }
       - { value: custom_path, correct: false }

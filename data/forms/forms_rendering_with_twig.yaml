@@ -52,7 +52,7 @@ questions:
       - { value: Template, correct: true }
       - { value: Form, correct: false }
       - { value: Controller, correct: false }
-    help: "https://symfony.com/doc/current/best_practices.html#add-form-buttons-in-templates"
+    help: 'https://symfony.com/doc/current/best_practices.html#add-form-buttons-in-templates'
   -
     uuid: 1eebf878-8ba4-6eb4-aa3b-99d84c92580c
     question: 'How can you render a form named form in a Twig template?'

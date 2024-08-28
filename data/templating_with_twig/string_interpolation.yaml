@@ -6,7 +6,7 @@ questions:
       - { value: '2 + 3', correct: false }
       - { value: '5', correct: true }
       - { value: ' 2 + 3 ', correct: false }
-    help: 'https://twig.symfony.com/doc/2.x/templates.html#templates-string-interpolation'
+    help: 'https://twig.symfony.com/doc/3.x/templates.html#templates-string-interpolation'
   -
     uuid: 1eebf878-8ba8-6ea6-a497-99d84c92580c
     question: "What will render {{ '1 + 2 = ' ~ (1 + 2) }}"
