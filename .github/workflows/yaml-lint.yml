@@ -1,6 +1,6 @@
 name: YAML Lint
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   lint:
@@ -10,9 +10,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run YAML Lint
-        uses: ibiqlik/action-yaml-lint@v3
+        uses: github/super-linter@v4
         with:
-          # Specify the path to your YAML file(s)
-          file: 'data/**/*.yaml'
-          # Optional: You can provide a custom yamllint configuration file
-          config_file: '.github/workflows/.yamllint'
+          linters: yaml
+          lint_path: 'data/**/*.yaml'
