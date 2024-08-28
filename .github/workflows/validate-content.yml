@@ -1,4 +1,4 @@
-name: Validate Quiz Content
+name: Validate Content
 
 on: [pull_request]
 
