@@ -1,5 +1,5 @@
-![Workflow Status](https://github.com/efficience-it/certification-symfony/actions/workflows/yaml-lint.yaml/badge.svg)
-![Workflow Status](https://github.com/efficience-it/certification-symfony/actions/workflows/validate-content.yaml/badge.svg)
+![Linter Status](https://github.com/efficience-it/certification-symfony/actions/workflows/yaml-lint.yaml/badge.svg)
+![Validation Content Status](https://github.com/efficience-it/certification-symfony/actions/workflows/validate-content.yaml/badge.svg)
 
 
 # Certification Symfony
