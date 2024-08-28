@@ -1,0 +1,18 @@
+name: YAML Lint
+
+on: [push, pull_request]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository content
+        uses: actions/checkout@v2
+
+      - name: Run YAML Lint
+        uses: ibiqlik/action-yaml-lint@v3
+        with:
+          # Specify the path to your YAML file(s)
+          file: 'data/**/*.yaml'
+          # Optional: You can provide a custom yamllint configuration file
+          config_file: '.github/workflows/.yamllint'
