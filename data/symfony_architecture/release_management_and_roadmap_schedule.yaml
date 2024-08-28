@@ -32,9 +32,8 @@ questions:
     uuid: 1eebf878-8ba5-67c4-a767-99d84c92580c
     question: 'For how long does a no-LTS version will be maintained for bugs fixes ?'
     answers:
-      - {value: '4 months', correct: false}
-      - {value: '6 months', correct: false}
+      - {value: '2 months', correct: false}
+      - {value: '5 months', correct: false}
       - {value: '8 months', correct: true}
-      - {value: '10 months', correct: false}
-      - {value: '12 months', correct: false}
+      - {value: '20 months', correct: false}
     help: 'https://symfony.com/doc/current/contributing/community/releases.html'

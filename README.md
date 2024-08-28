@@ -182,7 +182,6 @@ To train with our team, contact us on https://www.itefficience.com/contact
 - Internationalization and localization (and Intl component)
 - Runtime component
 
-And to register, buy a voucher on https://certification.symfony.com/exams/symfony.html
+And to register, buy a voucher on [https://certification.symfony.com/exams/symfony.html](https://certification.symfony.com/exams/symfony.html)
 
-To train with our team, contact us on https://www.itefficience.com/contact
-
+To train with our team, contact us on  [https://www.itefficience.com/contact](https://www.itefficience.com/contact)

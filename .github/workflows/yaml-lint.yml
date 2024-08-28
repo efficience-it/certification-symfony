@@ -11,7 +11,5 @@ jobs:
 
       - name: Run YAML Lint
         uses: github/super-linter@v4
-        with:
-          linters: yaml
-          lint_path: 'data/**/*.yaml'
-          config_file: '.yamllint'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

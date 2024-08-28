@@ -57,14 +57,12 @@ questions:
       - {value: 'Model data', correct: false}
       - {value: 'Normalized data', correct: false}
       - {value: 'Request data', correct: true}
-      - {value: 'View data', correct: false}
     help: 'https://symfony.com/doc/current/form/events.html#registering-event-listeners-or-event-subscribers'
   -
     uuid: 1eebf878-8b9f-6bbc-acb8-99d84c92580c
     question: 'What data is inside FormEvent object at FormEvents::POST_SET_DATA?'
     answers:
       - {value: 'Model data', correct: true}
-      - {value: 'Normalized data', correct: false}
       - {value: 'Request data', correct: false}
       - {value: 'View data', correct: false}
     help: 'https://symfony.com/doc/current/form/events.html#registering-event-listeners-or-event-subscribers'

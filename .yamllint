@@ -3,6 +3,8 @@ extends: default
 rules:
   line-length: disable
   document-start: disable
+  newlines:
+    type: disable
   indentation:
     spaces: 2
   truthy:
