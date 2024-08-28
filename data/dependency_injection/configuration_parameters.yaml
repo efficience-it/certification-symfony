@@ -1,39 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8ba2-6b14-854d-99d84c92580c
-    question: 'Given a deprecated service, does using the %service_id% placeholder required in the deprecation message?'
-    answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
-    help: 'https://symfony.com/doc/current/service_container/alias_private.html#deprecating-services'
-  -
-    uuid: 1eebf878-8b9e-6f00-8f11-99d84c92580c
-    question: 'Which class is used to define hierarchy of configuration values?'
-    answers:
-      - { value: Symfony\Component\Config\Definition\Builder\TreeBuilder, correct: true }
-      - { value: Symfony\Component\Config\Definition\Builder\HierarchyBuilder, correct: false }
-      - { value: Symfony\Component\Config\Definition\Builder\NodeBuilder, correct: false }
-      - { value: Symfony\Component\Config\Definition\Builder\Builder, correct: false }
-    help: 'https://symfony.com/doc/current/components/config/definition.html#defining-a-hierarchy-of-configuration-values-using-the-treebuilder'
-  -
-    uuid: 1eebf878-8ba1-6a98-afae-99d84c92580c
-    question: 'Which of the following values are available to define a null element in YAML ?'
-    answers:
-      - { value: '-', correct: false }
-      - { value: 'null', correct: true }
-      - { value: '~', correct: true }
-      - { value: 'false', correct: false }
-    help: 'https://symfony.com/doc/current/components/yaml/yaml_format.html#nulls'
-  -
-    uuid: 1eebf878-8ba3-610e-89e4-99d84c92580c
-    question: 'What is the purpose of the logging: true option in the translator config?'
-    answers:
-      - { value: 'Log a message when the given local is not configured.', correct: false }
-      - { value: 'Log a message when Symfony translate a string in the given locale.', correct: false }
-      - { value: 'Translate all log messages in the default locale.', correct: false }
-      - { value: "Log a message when Symfony doesn't find a translation for the given locale.", correct: true }
-    help: 'https://symfony.com/doc/current/reference/configuration/framework.html#logging'
-  -
     uuid: 1eebf878-8b97-61c4-b7c2-99d84c92580c
     question: 'What are the correct ways to parse the 1983-07-01 date into an DateTime object?'
     answers:
@@ -43,7 +9,7 @@ questions:
       - { value: "Yaml::parse('1983-07-01', false)", correct: false }
       - { value: "Yaml::parse('1983-07-01')", correct: true }
       - { value: "Yaml::parse('1983-07-01', Yaml::DATETIME)", correct: false }
-    help: 'https://symfony.com/doc/current/components/yaml.html#date-handling https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Yaml/Yaml.php'
+    help: 'https://symfony.com/doc/current/components/yaml.html#date-handling'
   -
     uuid: 1eebf878-8b98-6c4a-af97-99d84c92580c
     question: 'Which methods don''t belong to Symfony\Component\Config\Definition\Builder\ExprBuilder?'
@@ -91,12 +57,46 @@ questions:
       - { value: setValidation(), correct: false }
     help: 'https://symfony.com/doc/current/components/config/definition.html'
   -
+    uuid: 1eebf878-8b9e-6f00-8f11-99d84c92580c
+    question: 'Which class is used to define hierarchy of configuration values?'
+    answers:
+      - { value: Symfony\Component\Config\Definition\Builder\TreeBuilder, correct: true }
+      - { value: Symfony\Component\Config\Definition\Builder\HierarchyBuilder, correct: false }
+      - { value: Symfony\Component\Config\Definition\Builder\NodeBuilder, correct: false }
+      - { value: Symfony\Component\Config\Definition\Builder\Builder, correct: false }
+    help: 'https://symfony.com/doc/current/components/config/definition.html#defining-a-hierarchy-of-configuration-values-using-the-treebuilder'
+  -
+    uuid: 1eebf878-8ba1-6a98-afae-99d84c92580c
+    question: 'Which of the following values are available to define a null element in YAML ?'
+    answers:
+      - { value: '-', correct: false }
+      - { value: 'null', correct: true }
+      - { value: '~', correct: true }
+      - { value: 'false', correct: false }
+    help: 'https://symfony.com/doc/current/components/yaml/yaml_format.html#nulls'
+  -
     uuid: 1eebf878-8ba2-634e-8082-99d84c92580c
     question: "Is the following code valid?$value = Yaml::parse(file_get_contents('/path/to/file.yml'));"
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/current/components/yaml/introduction.html#reading-yaml-files'
+  -
+    uuid: 1eebf878-8ba2-6b14-854d-99d84c92580c
+    question: 'Given a deprecated service, does using the %service_id% placeholder required in the deprecation message?'
+    answers:
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+    help: 'https://symfony.com/doc/current/service_container/alias_private.html#deprecating-services'
+  -
+    uuid: 1eebf878-8ba3-610e-89e4-99d84c92580c
+    question: 'What is the purpose of the logging: true option in the translator config?'
+    answers:
+      - { value: 'Log a message when the given local is not configured.', correct: false }
+      - { value: 'Log a message when Symfony translate a string in the given locale.', correct: false }
+      - { value: 'Translate all log messages in the default locale.', correct: false }
+      - { value: "Log a message when Symfony doesn't find a translation for the given locale.", correct: true }
+    help: 'https://symfony.com/doc/current/reference/configuration/framework.html#logging'
   -
     uuid: 1eebf878-8ba3-6406-a1e6-99d84c92580c
     question: 'What is the 2nd argument of Symfony\Component\Config\ConfigCacheFactory::cache method ?'
@@ -105,4 +105,4 @@ questions:
       - { value: 'An array of options', correct: false }
       - { value: 'A callback executed if the cache has to be refreshed', correct: true }
       - { value: 'The resource filename', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/2.7/src/Symfony/Component/Config/ConfigCacheFactory.php'
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Config/ConfigCacheFactory.php'

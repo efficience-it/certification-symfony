@@ -1,24 +1,5 @@
 questions:
   -
-    uuid: 1eedb101-2d08-6c3c-bfe5-f9db4bc17b6f
-    question: 'What is the default lifetime value for the  Remember me  Cookie ?'
-    answers:
-      - { value: '1 year', correct: true }
-      - { value: '1 week', correct: false }
-      - { value: '2 months', correct: false }
-      - { value: '6 months', correct: false }
-      - { value: '1 day', correct: false }
-    help: 'https://symfony.com/doc/current/security/remember_me.html#customizing-the-remember-me-cookie'
-  -
-    uuid: 1eebf878-8ba1-6c00-a261-99d84c92580c
-    question: 'What is the name of the service that check authorization?'
-    answers:
-      - { value: security.authorization_checker, correct: true }
-      - { value: security.authorization_manager, correct: false }
-      - { value: security.checker, correct: false }
-      - { value: security.decision_checker, correct: false }
-    help: "https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Core/Authorization/AuthorizationChecker.php"
-  -
     uuid: 1eebf878-8b9a-60ea-b72d-99d84c92580c
     question: 'When using the new Authenticator-based Security, does isGranted() will work on anonymous users ?'
     answers:
@@ -32,7 +13,16 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/security.html#securing-other-services'
+    help: 'https://symfony.com/doc/current/security.html#securing-other-services<br>'
+  -
+    uuid: 1eebf878-8ba1-6c00-a261-99d84c92580c
+    question: 'What is the name of the service that check authorization?'
+    answers:
+      - { value: security.authorization_checker, correct: true }
+      - { value: security.authorization_manager, correct: false }
+      - { value: security.checker, correct: false }
+      - { value: security.decision_checker, correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Core/Authorization/AuthorizationChecker.php'
   -
     uuid: 1eebf878-8ba2-64de-a54b-99d84c92580c
     question: 'What is the type of the top-level service that checks authorization?'
@@ -42,4 +32,14 @@ questions:
       - { value: Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface, correct: false }
       - { value: Symfony\Component\Security\Core\Authorization\Voter\VoterInterface, correct: false }
       - { value: Symfony\Component\Security\Core\Security, correct: true }
-    help: 'https://symfony.com/doc/current/security.html#securing-other-services https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Core/Security.php'
+    help: 'https://symfony.com/doc/current/security.html#securing-other-services'
+  -
+    uuid: 1eedb101-2d08-6c3c-bfe5-f9db4bc17b6f
+    question: 'What is the default lifetime value for the  Remember me  Cookie ?'
+    answers:
+      - { value: '1 year', correct: true }
+      - { value: '1 week', correct: false }
+      - { value: '2 months', correct: false }
+      - { value: '6 months', correct: false }
+      - { value: '1 day', correct: false }
+    help: 'https://symfony.com/doc/current/security/remember_me.html#customizing-the-remember-me-cookie'

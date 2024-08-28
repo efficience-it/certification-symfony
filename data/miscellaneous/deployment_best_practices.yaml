@@ -17,7 +17,7 @@ questions:
       - { value: '20 000', correct: true }
       - { value: '32 000', correct: false }
       - { value: '96 000', correct: false }
-    help: 'https://symfony.com/doc/6.4/performance.html#configure-opcache-for-maximum-performance'
+    help: 'https://symfony.com/doc/current/performance.html#configure-opcache-for-maximum-performance'
   -
     uuid: 1eebf878-8ba4-6568-837a-99d84c92580c
     question: 'Following the maximum guidance performance of OPcache, what is the recommended opcache.memory_consuption value ?'
@@ -26,7 +26,7 @@ questions:
       - { value: '128', correct: false }
       - { value: '256', correct: true }
       - { value: '2048', correct: false }
-    help: 'https://symfony.com/doc/6.4/performance.html#configure-opcache-for-maximum-performance'
+    help: 'https://symfony.com/doc/current/performance.html#configure-opcache-for-maximum-performance'
   -
     uuid: 1eebf878-8ba8-6c9e-a896-99d84c92580c
     question: 'In production servers, PHP files should never change, unless a new application version is deployed. However, by default OPcache checks if cached files have changed their contents since they were cached.    How it is done to uncheck some overhead that can be avoided ?'

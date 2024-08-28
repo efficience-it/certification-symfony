@@ -1,14 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8b98-64fc-92a5-99d84c92580c
-    question: 'What is returned by the isEmpty method of Symfony\Component\HttpFoundation\Response?'
-    answers:
-      - { value: 'true if there is a server error', correct: false }
-      - { value: 'true if the response content is null', correct: false }
-      - { value: 'true if the response status code are 204 or 304', correct: true }
-      - { value: 'true if the response has no headers', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/HttpFoundation/Response.php#L1305'
-  -
     uuid: 1eebf878-8b96-6d6e-8c48-99d84c92580c
     question: 'Which of the following are not true about streams ?'
     answers:
@@ -41,6 +32,15 @@ questions:
       - { value: ImageResponse, correct: false }
       - { value: BinaryFileResponse, correct: true }
     help: 'https://symfony.com/doc/current/components/http_foundation/introduction.html#redirecting-the-user'
+  -
+    uuid: 1eebf878-8b98-64fc-92a5-99d84c92580c
+    question: 'What is returned by the isEmpty method of Symfony\Component\HttpFoundation\Response?'
+    answers:
+      - { value: 'true if there is a server error', correct: false }
+      - { value: 'true if the response content is null', correct: false }
+      - { value: 'true if the response status code are 204 or 304', correct: true }
+      - { value: 'true if the response has no headers', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/HttpFoundation/Response.php#L1305'
   -
     uuid: 1eebf878-8b9a-6fe0-8ade-99d84c92580c
     question: 'Could a response be marked as safe?'

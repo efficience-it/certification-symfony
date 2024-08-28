@@ -1,12 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8ba2-613c-93bd-99d84c92580c
-    question: 'Could a priority be set when adding a new compiler pass?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/components/dependency_injection/compilation.html#controlling-the-pass-ordering'
-  -
     uuid: 1eebf878-8b9f-64d2-bff3-99d84c92580c
     question: 'Using a compiler pass, how do you check the existence of service ?'
     answers:
@@ -37,6 +30,13 @@ questions:
       - { value: 'PassConfig::TYPE_AFTER_COMPILING', correct: false }
       - { value: 'PassConfig::TYPE_COMPILE', correct: false }
       - { value: 'PassConfig::TYPE_BEFORE_COMPILING', correct: false }
+    help: 'https://symfony.com/doc/current/components/dependency_injection/compilation.html#controlling-the-pass-ordering'
+  -
+    uuid: 1eebf878-8ba2-613c-93bd-99d84c92580c
+    question: 'Could a priority be set when adding a new compiler pass?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/current/components/dependency_injection/compilation.html#controlling-the-pass-ordering'
   -
     uuid: 1ef4935f-f7df-6ebe-bb60-7bba21e8d9fb

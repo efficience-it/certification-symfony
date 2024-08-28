@@ -36,7 +36,7 @@ questions:
       - { value: Doctrine\Common\Collections\Collection, correct: false }
       - { value: Symfony\Component\Validator\ConstraintViolationListInterface, correct: true }
       - { value: array, correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Validator/Validator/ValidatorInterface.php#L40'
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Validator/Validator/ValidatorInterface.php#L40'
   -
     uuid: 1eebf878-8b9f-6d24-94f5-99d84c92580c
     question: 'How do you bind a constraint to a form field?'
@@ -45,7 +45,7 @@ questions:
       - { value: 'Passing constraint instance in $this->createFormBuilder()', correct: false }
       - { value: 'Invoke $formBuilder->setConstraints() method', correct: false }
       - { value: 'Add an annotation in model', correct: true }
-    help: 'https://symfony.com/doc/current/forms.html#validating-forms     https://symfony.com/doc/current/components/form.html#component-form-intro-validation'
+    help: 'https://symfony.com/doc/current/forms.html#validating-forms'
   -
     uuid: 1eebf878-8ba1-675a-a899-99d84c92580c
     question: 'Using Validator component, which method is used to validate a value against a constraint?'
@@ -72,9 +72,9 @@ questions:
       - { value: '2020-01-15', correct: true }
       - { value: "15/01/2020", correct: false }
       - { value: "new \\DateTime('2020-01-15')", correct: false }
-      - { value: '2020-13-15', correct: false }
-      - { value: '15/13/2020', correct: false }
-    help: 'https://symfony.com/doc/6.0/reference/constraints/Date.html'
+      - { value: "'2020-13-15'", correct: false }
+      - { value: "'15/13/2020'", correct: false }
+    help: 'https://symfony.com/doc/current/reference/constraints/Date.html'
   -
     uuid: 1eebf878-8ba2-68e4-9e14-99d84c92580c
     question: "Which of the following values don't trigger a violation when the Blank constraint is applied to them ?"

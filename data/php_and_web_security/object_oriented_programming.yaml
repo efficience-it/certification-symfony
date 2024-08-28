@@ -1,84 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8ba5-6116-88ba-99d84c92580c
-    question: "Is it possible make $tags directly indexed with a specified field ?/** @Entity */class Content{/** @OneToMany(targetEntity= Tag ) */private Tag $tags;}"
-    answers:
-      - { value: 'Yes, by adding the attribute indexBy to the OneToMany annotation', correct: true }
-      - { value: 'No', correct: false }
-      - { value: 'Yes, by implementing the IndexableInterface', correct: false }
-    help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/tutorials/working-with-indexed-associations.html#mapping-indexed-associations'
-  -
-    uuid: 1eee6ccd-5f53-6baa-9026-817ee026fe64
-    question: 'Which property of abstract class are true ?'
-    answers:
-      - { value: "Methods defined as abstract simply declare the method's signature", correct: true }
-      - { value: "they cannot define the implementation ", correct: true }
-      - { value: 'can be instantiated', correct: false }
-      - { value: 'can be final', correct: false }
-    help: 'https://www.php.net/manual/en/language.oop5.abstract.php'
-  -
-    uuid: 1eee6d66-eb3b-6dd6-9026-f9887cc7a9d8
-    question: 'Can a private class attribute be accessible from outside this class?'
-    answers:
-      - { value: 'No', correct: true }
-      - { value: 'Yes', correct: false }
-    help: 'https://www.php.net/manual/en/language.oop5.basic.php'
-  -
-    uuid: 1eee6d6c-3eb9-656c-9026-6739c1a3af6c
-    question: "Since php 8, is it possible to use this ? $repository?->getUser(5)?->name;"
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://www.php.net/manual/en/language.oop5.basic.php'
-  -
-    uuid: 1eee6d77-5a1d-6c58-9026-39b6af1f6282
-    question: 'Which declaration will create a stdClass'
-    answers:
-      - { value: '$x = new stdClass;', correct: true }
-      - { value: "(object) array('property1' => 1, 'property2' => 'b');", correct: true }
-      - { value: '(object) null; // same as above', correct: true }
-      - { value: "(object) 'a';", correct: true }
-    help: 'https://www.php.net/manual/en/language.oop5.basic.php'
-  -
-    uuid: 1eee6d8c-bb3e-6298-9026-3709308913cb
-    question: 'Which assertion is true if Child extends Test, and the Test class contains static public function getNew() { return new static;}.'
-    answers:
-      - { value: 'Test::getNew() instanceof Test', correct: true }
-      - { value: 'Child::getNew() instanceof Child', correct: true }
-      - { value: 'new Test() !== new (new Test())', correct: true }
-    help: 'https://www.php.net/manual/en/language.oop5.basic.php'
-  -
-    uuid: 1eee6d9e-e2fa-6b08-9026-f34ae7ce27f7
-    question: 'a final class can be extended ?'
-    answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
-    help: 'https://www.php.net/manual/en/language.oop5.final.php'
-  -
-    uuid: 1eee6da9-9955-68e4-9026-91647ee9ff79
-    question: 'final keyword can be added to an attribute, a class and a method ?'
-    answers:
-      - { value: 'No', correct: true }
-      - { value: 'Yes', correct: false }
-    help: 'https://www.php.net/manual/en/language.oop5.final.php'
-  -
-    uuid: 1eebf878-8ba3-68a2-b45e-99d84c92580c
-    question: 'What is the default change tracking policy?'
-    answers:
-      - { value: DEFERRED_EXPLICIT, correct: false }
-      - { value: DEFERRED_IMPLICIT, correct: true }
-      - { value: NOTIFY, correct: false }
-    help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/change-tracking-policies.html#deferred-implicit'
-  -
-    uuid: 1eebf878-8ba4-6496-8b71-99d84c92580c
-    question: "What is wrong with this repository method ?public function filterBooks(array $filters){return $this->createQueryBuild('b')->where('b.year = :year');->setParameters(['year' => $filters['year']]);->andWhere('b.gender = :gender');->setParameters(['gender' => $filters['gender']])->getResults();}"
-    answers:
-      - { value: "The method createQueryBuild does not exist, it's createQueryBuilder", correct: true }
-      - { value: 'The method getResults does not exists. You should use getResult().', correct: true }
-      - { value: 'The second call setParameters(...) will erase data set in the first call. So year will be deleted from the parameters list. You should use setParameter($name, $value).', correct: true }
-      - { value: 'The query builder does not have a getResults() method. You should use getQuery().', correct: true }
-    help: 'https://symfony.com/doc/current/doctrine.html#querying-for-objects-using-doctrine-s-query-builder'
-  -
     uuid: 1eebf878-8b99-608c-8846-99d84c92580c
     question: 'Could enumerations be used with !php/const?'
     answers:
@@ -123,6 +44,14 @@ questions:
       - { value: '5', correct: true }
     help: 'https://www.php.net/manual/fr/language.oop5.constants.php#116109'
   -
+    uuid: 1eebf878-8ba3-68a2-b45e-99d84c92580c
+    question: 'What is the default change tracking policy?'
+    answers:
+      - { value: DEFERRED_EXPLICIT, correct: false }
+      - { value: DEFERRED_IMPLICIT, correct: true }
+      - { value: NOTIFY, correct: false }
+    help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/change-tracking-policies.html#deferred-implicit'
+  -
     uuid: 1eebf878-8ba3-6f32-b11b-99d84c92580c
     question: 'Which of the following assertions are true about the instanceof keyword?'
     answers:
@@ -131,6 +60,15 @@ questions:
       - { value: 'It checks if a variable value is an iterable data structure.', correct: false }
       - { value: 'It checks if a variable value is an instance of a class that implements a certain interface.', correct: true }
     help: 'https://www.php.net/instanceof'
+  -
+    uuid: 1eebf878-8ba4-6496-8b71-99d84c92580c
+    question: "What is wrong with this repository method ?public function filterBooks(array $filters){return $this->createQueryBuild('b')->where('b.year = :year');->setParameters(['year' => $filters['year']]);->andWhere('b.gender = :gender');->setParameters(['gender' => $filters['gender']])->getResults();}"
+    answers:
+      - { value: "The method createQueryBuild does not exist, it's createQueryBuilder", correct: true }
+      - { value: 'The method getResults does not exists. You should use getResult().', correct: true }
+      - { value: 'The second call setParameters(...) will erase data set in the first call. So year will be deleted from the parameters list. You should use setParameter($name, $value).', correct: true }
+      - { value: 'The query builder does not have a getResults() method. You should use getQuery().', correct: true }
+    help: 'https://symfony.com/doc/current/doctrine.html#querying-for-objects-using-doctrine-s-query-builder'
   -
     uuid: 1eebf878-8ba4-6874-81e0-99d84c92580c
     question: 'Which built-in PHP extension enables to programmatically introspect a class, a method, an interface, a trait or any other object oriented related data structures?'
@@ -141,6 +79,14 @@ questions:
       - { value: Reflection, correct: true }
       - { value: PCRE, correct: false }
     help: 'https://php.net/manual/fr/book.reflection.php'
+  -
+    uuid: 1eebf878-8ba5-6116-88ba-99d84c92580c
+    question: "Is it possible make $tags directly indexed with a specified field ?/** @Entity */class Content{/** @OneToMany(targetEntity= Tag ) */private Tag $tags;}"
+    answers:
+      - { value: 'Yes, by adding the attribute indexBy to the OneToMany annotation', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'Yes, by implementing the IndexableInterface', correct: false }
+    help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/tutorials/working-with-indexed-associations.html#mapping-indexed-associations'
   -
     uuid: 1eebf878-8ba6-6f7a-b2b7-99d84c92580c
     question: 'What is true about composite primary keys?'
@@ -157,3 +103,57 @@ questions:
       - { value: 'No', correct: true }
       - { value: 'Yes', correct: false }
     help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/working-with-associations.html#orphan-removal'
+  -
+    uuid: 1eee6ccd-5f53-6baa-9026-817ee026fe64
+    question: 'Which property of abstract class are true ?'
+    answers:
+      - { value: "Methods defined as abstract simply declare the method's signature", correct: true }
+      - { value: "they cannot define the implementation ", correct: true }
+      - { value: 'can be instantiated', correct: false }
+      - { value: 'can be final', correct: false }
+    help: 'https://www.php.net/manual/en/language.oop5.abstract.php'
+  -
+    uuid: 1eee6d66-eb3b-6dd6-9026-f9887cc7a9d8
+    question: 'Can a private class attribute be accessible from outside this class?'
+    answers:
+      - { value: 'No', correct: true }
+      - { value: 'Yes', correct: false }
+    help: 'https://www.php.net/manual/en/language.oop5.basic.php'
+  -
+    uuid: 1eee6d6c-3eb9-656c-9026-6739c1a3af6c
+    question: "Since php 8, is it possible to use this ? $repository?->getUser(5)?->name;"
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://www.php.net/manual/en/language.oop5.basic.php'
+  -
+    uuid: 1eee6d77-5a1d-6c58-9026-39b6af1f6282
+    question: 'Which declaration will create a stdClass'
+    answers:
+      - { value: '$x = new stdClass;', correct: true }
+      - { value: "(object) array('property1' => 1, 'property2' => 'b');", correct: true }
+      - { value: "(object) null; // same as above", correct: true }
+      - { value: "(object) 'a';", correct: true }
+    help: 'https://www.php.net/manual/en/language.oop5.basic.php'
+  -
+    uuid: 1eee6d8c-bb3e-6298-9026-3709308913cb
+    question: 'Which assertion is true if Child extends Test, and the Test class contains static public function getNew() { return new static;}.'
+    answers:
+      - { value: "Test::getNew() instanceof Test", correct: true }
+      - { value: "Child::getNew() instanceof Child", correct: true }
+      - { value: "new Test() !== new (new Test())", correct: true }
+    help: 'https://www.php.net/manual/en/language.oop5.basic.php'
+  -
+    uuid: 1eee6d9e-e2fa-6b08-9026-f34ae7ce27f7
+    question: 'a final class can be extended ?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://www.php.net/manual/en/language.oop5.final.php'
+  -
+    uuid: 1eee6da9-9955-68e4-9026-91647ee9ff79
+    question: 'final keyword can be added to an attribute, a class and a method ?'
+    answers:
+      - { value: 'No', correct: true }
+      - { value: 'Yes', correct: false }
+    help: 'https://www.php.net/manual/en/language.oop5.final.php'

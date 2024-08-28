@@ -9,44 +9,6 @@ questions:
       - { value: 'Self-executable compressed file', correct: false }
     help: 'https://github.com/symfony/recipes/blob/main/symfony/console/5.3/bin/console#L1-L2'
   -
-    uuid: 1eebf878-8b9e-68e8-b123-99d84c92580c
-    question: 'Which argument can be passed to the router:match command?'
-    answers:
-      - { value: 'An argument can be omitted', correct: false }
-      - { value: 'A regexp search filter', correct: false }
-      - { value: 'A route limit', correct: false }
-      - { value: 'The route URL', correct: true }
-      - { value: 'A route name', correct: false }
-    help: 'https://symfony.com/doc/current/routing.html#debugging-routes'
-  -
-    uuid: 1eebf878-8b9e-6a6e-9628-99d84c92580c
-    question: 'What is the command line to validate the doctrine mapping files ?'
-    answers:
-      - { value: 'php bin/console doctrine:schema:validate', correct: true }
-      - { value: 'php bin/console doctrine:schema:validation', correct: false }
-      - { value: 'php bin/console doctrine:schema:update --dump-sql', correct: false }
-      - { value: 'php bin/console doctrine:schema:update --force', correct: false }
-      - { value: 'php bin/console doctrine:mapping:convert', correct: false }
-      - { value: 'php bin/console doctrine:mapping:import', correct: false }
-    help: 'https://symfony.com/doc/current/doctrine.html#add-mapping-information'
-  -
-    uuid: 1eebf878-8b9e-6abe-979d-99d84c92580c
-    question: 'How do you display complete configuration of a bundle ?'
-    answers:
-      - { value: 'php bin/console dump:config acme', correct: false }
-      - { value: 'php bin/console config:dump-reference acme', correct: true }
-      - { value: 'php bin/console config:dump AcmeBundle', correct: true }
-      - { value: 'php bin/console config:dump-reference AcmeBundle', correct: true }
-      - { value: 'php bin/console debug:config', correct: false }
-    help: 'https://symfony.com/doc/current/bundles/configuration.html#dump-the-configuration'
-  -
-    uuid: 1eebf878-8b9f-67e8-a161-99d84c92580c
-    question: 'The lint:container command checks that the arguments injected into services match their type declarations'
-    answers:
-      - { value: 'true', correct: true }
-      - { value: 'false', correct: false }
-    help: 'https://symfony.com/doc/current/service_container.html#linting-service-definitions'
-  -
     uuid: 1eebf878-8b9e-6898-bcaa-99d84c92580c
     question: 'Which argument can be passed to the debug:router command?'
     answers:
@@ -55,6 +17,16 @@ questions:
       - { value: 'A route limit', correct: false }
       - { value: 'The route URL', correct: false }
       - { value: 'A route name', correct: true }
+    help: 'https://symfony.com/doc/current/routing.html#debugging-routes'
+  -
+    uuid: 1eebf878-8b9e-68e8-b123-99d84c92580c
+    question: 'Which argument can be passed to the router:match command?'
+    answers:
+      - { value: 'An argument can be omitted', correct: false }
+      - { value: 'A regexp search filter', correct: false }
+      - { value: 'A route limit', correct: false }
+      - { value: 'The route URL', correct: true }
+      - { value: 'A route name', correct: false }
     help: 'https://symfony.com/doc/current/routing.html#debugging-routes'
   -
     uuid: 1eebf878-8b9e-6938-be57-99d84c92580c
@@ -74,6 +46,17 @@ questions:
       - { value: 'php bin/console cache:clean', correct: false }
       - { value: 'php bin/console cache:invalidate', correct: false }
     help: 'https://symfony.com/doc/current/cache.html#clearing-the-cache'
+  -
+    uuid: 1eebf878-8b9e-6a6e-9628-99d84c92580c
+    question: 'What is the command line to validate the doctrine mapping files ?'
+    answers:
+      - { value: 'php bin/console doctrine:schema:validate', correct: true }
+      - { value: 'php bin/console doctrine:schema:validation', correct: false }
+      - { value: 'php bin/console doctrine:schema:update --dump-sql', correct: false }
+      - { value: 'php bin/console doctrine:schema:update --force', correct: false }
+      - { value: 'php bin/console doctrine:mapping:convert', correct: false }
+      - { value: 'php bin/console doctrine:mapping:import', correct: false }
+    help: 'https://symfony.com/doc/current/doctrine.html#add-mapping-information'
   -
     uuid: 1eebf878-8b9e-6bb8-99e5-99d84c92580c
     question: 'What is the console command to create a new entity?'
@@ -113,6 +96,13 @@ questions:
       - { value: '$command->call($input, $output);', correct: false }
       - { value: '$command->forward($input, $output);', correct: false }
     help: 'https://symfony.com/doc/current/console/calling_commands.html'
+  -
+    uuid: 1eebf878-8b9f-67e8-a161-99d84c92580c
+    question: 'The lint:container command checks that the arguments injected into services match their type declarations'
+    answers:
+      - { value: 'true', correct: true }
+      - { value: 'false', correct: false }
+    help: 'https://symfony.com/doc/current/service_container.html#linting-service-definitions'
   -
     uuid: 1eebf878-8ba7-6466-8627-99d84c92580c
     question: 'Which  Tester  class should you use to test a console event?'

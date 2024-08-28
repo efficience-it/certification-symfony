@@ -1,38 +1,13 @@
 questions:
   -
-    uuid: 1eebf878-8b9f-61b2-955c-99d84c92580c
-    question: 'Which class will you use to convert an action parameter?'
+    uuid: 1eebf878-8b96-6c60-9c85-99d84c92580c
+    question: 'What is true about the PSR-4: Autoloader?'
     answers:
-      - { value: Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter, correct: true }
-      - { value: Sensio\Bundle\FrameworkExtraBundle\Controller\ParamConverter, correct: false }
-      - { value: Symfony\Bundle\FrameworkBundle\Configuration\ParamConverter, correct: false }
-      - { value: Symfony\Bundle\FrameworkBundle\Controller\ParamConverter, correct: false }
-    help: 'https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/annotations/converters.html'
-  -
-    uuid: 1eebf878-8b9a-6d42-ac99-99d84c92580c
-    question: 'What is PSR-12?'
-    answers:
-      - { value: 'A common logger interface.', correct: false }
-      - { value: 'A utility to convert non-namespaced PHP classes into namespaced ones.', correct: false }
-      - { value: 'A standard way to convert fully qualified names into file paths.', correct: false }
-      - { value: 'A coding style guide.', correct: true }
-    help: 'https://www.php-fig.org/psr/psr-12/'
-  -
-    uuid: 1eebf878-8ba0-6710-aa62-99d84c92580c
-    question: 'Event Listeners is used to regroup multiple listeners inside a single class ?'
-    answers:
-      - { value: 'False', correct: true }
-      - { value: 'True', correct: false }
-    help: 'https://symfony.com/doc/current/event_dispatcher.html#creating-an-event-listener'
-  -
-    uuid: 1eebf878-8ba3-6aa0-8e46-99d84c92580c
-    question: 'What are prerequisites to create FormExtension in a Symfony Fullstack project using FrameworkBundle?'
-    answers:
-      - { value: 'Implementing the interface Symfony\Component\Form\FormTypeExtensionInterface', correct: true }
-      - { value: 'Extending the Symfony\Component\Form\AbstractTypeExtension', correct: true }
-      - { value: 'Putting the new MyFormExtension class in the Form\Extension namespace', correct: false }
-      - { value: 'Creating a service with the form.type_extension tag (if auto-configuration is not enabled)', correct: true }
-    help: 'https://symfony.com/doc/current/form/create_form_type_extension.html#defining-the-form-type-extension'
+      - { value: 'The terminating class name corresponds to a file name ending in .php', correct: true }
+      - { value: 'The autoloader can throw exceptions.', correct: false }
+      - { value: 'Underscores have no special meaning in any portion of the fully qualified class name.', correct: true }
+      - { value: 'The autoloader can raise errors of any level.', correct: false }
+    help: 'https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md'
   -
     uuid: 1eebf878-8b97-630e-9861-99d84c92580c
     question: 'What is PSR-1?'
@@ -43,22 +18,6 @@ questions:
       - { value: 'A coding style guide.', correct: false }
     help: 'https://www.php-fig.org/psr/psr-1/'
   -
-    uuid: 1eebf878-8b98-6984-a4c4-99d84c92580c
-    question: 'Can you use the Symfony\Bundle\FrameworkBundle\Controller\Controller::render() method with an existing Response?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php#L251'
-  -
-    uuid: 1eebf878-8b96-6c60-9c85-99d84c92580c
-    question: 'What is true about the PSR-4: Autoloader?'
-    answers:
-      - { value: 'The terminating class name corresponds to a file name ending in .php', correct: true }
-      - { value: 'The autoloader can throw exceptions.', correct: false }
-      - { value: 'Underscores have no special meaning in any portion of the fully qualified class name.', correct: true }
-      - { value: 'The autoloader can raise errors of any level.', correct: false }
-    help: 'https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md'
-  -
     uuid: 1eebf878-8b97-67d2-89bf-99d84c92580c
     question: 'What tracking policy has the best performance with large units of work?'
     answers:
@@ -66,7 +25,7 @@ questions:
       - { value: LAZY, correct: false }
       - { value: DEFERRED_IMPLICIT, correct: false }
       - { value: NOTIFY, correct: true }
-    help: 'NOTIFY has the best performance characteristics of the 3 policies with larger units of work and a flush() operation is very cheap when nothing has changed.https://www.doctrine-project.org/projects/doctrine-orm/en/2.5/reference/change-tracking-policies.html'
+    help: 'https://www.doctrine-project.org/projects/doctrine-orm/en/2.5/reference/change-tracking-policies.html'
   -
     uuid: 1eebf878-8b98-6268-b843-99d84c92580c
     question: 'What is the default value of the cookie_samesite configuration key'
@@ -77,6 +36,13 @@ questions:
       - { value: same_origin, correct: false }
       - { value: lax, correct: false }
     help: 'https://symfony.com/doc/current/reference/configuration/framework.html#cookie-samesite'
+  -
+    uuid: 1eebf878-8b98-6984-a4c4-99d84c92580c
+    question: 'Can you use the Symfony\Bundle\FrameworkBundle\Controller\Controller::render() method with an existing Response?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php#L251'
   -
     uuid: 1eebf878-8b98-6e02-89a2-99d84c92580c
     question: 'When was the Symfony BC promise introduced ?'
@@ -138,7 +104,7 @@ questions:
       - { value: PSR-4, correct: false }
       - { value: PSR-17, correct: false }
       - { value: PSR-20, correct: true }
-    help: 'https://www.php-fig.org/psr/psr-20/'
+    help: 'https://www.php-fig.org/psr/psr-20'
   -
     uuid: 1eebf878-8b99-6e38-b500-99d84c92580c
     question: 'What does the command debug:container router?'
@@ -156,12 +122,21 @@ questions:
       - { value: "it's not possible", correct: false }
     help: 'https://symfony.com/blog/new-in-symfony-5-3-configure-multiple-environments-in-a-single-file'
   -
+    uuid: 1eebf878-8b9a-6d42-ac99-99d84c92580c
+    question: 'What is PSR-12?'
+    answers:
+      - { value: 'A common logger interface.', correct: false }
+      - { value: 'A utility to convert non-namespaced PHP classes into namespaced ones.', correct: false }
+      - { value: 'A standard way to convert fully qualified names into file paths.', correct: false }
+      - { value: 'A coding style guide.', correct: true }
+    help: 'https://www.php-fig.org/psr/psr-12/'
+  -
     uuid: 1eebf878-8b9b-63a0-bf34-99d84c92580c
     question: 'Given the context where the user is redirected to another page, could the original query parameters be maintained?'
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/controller.html#redirectinghttps://github.com/symfony/symfony/blob/6.3/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php#L141'
+    help: 'https://symfony.com/doc/current/controller.html#redirecting'
   -
     uuid: 1eebf878-8b9b-6440-82a7-99d84c92580c
     question: 'When creating custom loader, which dependency injection tag has to be used?'
@@ -256,6 +231,15 @@ questions:
       - { value: cache_clearer, correct: false }
     help: 'https://symfony.com/doc/current/reference/dic_tags.html#kernel-cache-clearer'
   -
+    uuid: 1eebf878-8b9f-61b2-955c-99d84c92580c
+    question: 'Which class will you use to convert an action parameter?'
+    answers:
+      - { value: Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter, correct: true }
+      - { value: Sensio\Bundle\FrameworkExtraBundle\Controller\ParamConverter, correct: false }
+      - { value: Symfony\Bundle\FrameworkBundle\Configuration\ParamConverter, correct: false }
+      - { value: Symfony\Bundle\FrameworkBundle\Controller\ParamConverter, correct: false }
+    help: 'https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/annotations/converters.html'
+  -
     uuid: 1eebf878-8ba0-65a8-85df-99d84c92580c
     question: 'What is the LoggerInterface correct namespace?'
     answers:
@@ -292,6 +276,13 @@ questions:
       - { value: 'fragments: {path:/_fragment}', correct: false }
       - { value: 'none of the above', correct: true }
     help: 'https://symfony.com/doc/current/templating/hinclude.html'
+  -
+    uuid: 1eebf878-8ba0-6710-aa62-99d84c92580c
+    question: 'Event Listeners is used to regroup multiple listeners inside a single class ?'
+    answers:
+      - { value: 'False', correct: true }
+      - { value: 'True', correct: false }
+    help: 'https://symfony.com/doc/current/event_dispatcher.html#creating-an-event-listener'
   -
     uuid: 1eebf878-8ba0-6a26-88e1-99d84c92580c
     question: 'According to the PHP Framework Interoperability Group, which PSRs concern best coding practices ?'
@@ -394,6 +385,15 @@ questions:
       - { value: ExpressionLanguage, correct: false }
       - { value: DependencyInjection, correct: false }
     help: 'https://github.com/symfony/symfony/tree/master/src/Symfony/Component'
+  -
+    uuid: 1eebf878-8ba3-6aa0-8e46-99d84c92580c
+    question: 'What are prerequisites to create FormExtension in a Symfony Fullstack project using FrameworkBundle?'
+    answers:
+      - { value: 'Implementing the interface Symfony\Component\Form\FormTypeExtensionInterface', correct: true }
+      - { value: 'Extending the Symfony\Component\Form\AbstractTypeExtension', correct: true }
+      - { value: 'Putting the new MyFormExtension class in the Form\Extension namespace', correct: false }
+      - { value: 'Creating a service with the form.type_extension tag (if auto-configuration is not enabled)', correct: true }
+    help: 'https://symfony.com/doc/current/form/create_form_type_extension.html#defining-the-form-type-extension'
   -
     uuid: 1eebf878-8ba4-6c98-9944-99d84c92580c
     question: 'Can I use Twig without using Symfony?'

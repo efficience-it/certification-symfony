@@ -16,4 +16,4 @@ questions:
       - { value: 'They behave the same way', correct: false }
       - { value: 'The FlashBag::add() method allow to add a single message while FlashBag::set() allow to add a set of messages', correct: true }
       - { value: 'The FlashBag::add() method allow to add a set of messages while FlashBag::set() allow to add a single message', correct: false }
-    help: 'https://github.com/symfony/symfony/blob/2.1/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php'
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php'

@@ -1,5 +1,12 @@
 questions:
   -
+    uuid: 1eebf878-8ba8-664a-9334-99d84c92580c
+    question: 'Is suffix  Trait  mandatory for traits ?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
+  -
     uuid: 1eebf878-8ba8-669a-a5e6-99d84c92580c
     question: 'We use camelCase for ?'
     answers:
@@ -9,22 +16,6 @@ questions:
       - { value: 'methods name', correct: true }
       - { value: arguments, correct: true }
       - { value: constants, correct: false }
-    help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
-  -
-    uuid: 1eebf878-8ba8-6730-8eea-99d84c92580c
-    question: 'We use screaming snake case for ?'
-    answers:
-      - { value: 'php variables', correct: false }
-      - { value: constants, correct: true }
-      - { value: methods, correct: false }
-      - { value: 'php classes', correct: false }
-    help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
-  -
-    uuid: 1eebf878-8ba8-664a-9334-99d84c92580c
-    question: 'Is suffix  Trait  mandatory for traits ?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eebf878-8ba8-66ea-b870-99d84c92580c
@@ -37,6 +28,15 @@ questions:
       - { value: 'enumeration cases', correct: false }
       - { value: 'method names', correct: false }
       - { value: 'web assets', correct: true }
+    help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
+  -
+    uuid: 1eebf878-8ba8-6730-8eea-99d84c92580c
+    question: 'We use screaming snake case for ?'
+    answers:
+      - { value: 'php variables', correct: false }
+      - { value: constants, correct: true }
+      - { value: methods, correct: false }
+      - { value: 'php classes', correct: false }
     help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eebf878-8ba8-6780-b5d7-99d84c92580c
@@ -60,7 +60,7 @@ questions:
     help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eeda2ca-d3e4-6b68-a248-eb5bab40e010
-    question: '<p>We use upper camel case for ?</p>'
+    question: 'We use upper camel case for ?'
     answers:
       - { value: class, correct: false }
       - { value: constants, correct: false }

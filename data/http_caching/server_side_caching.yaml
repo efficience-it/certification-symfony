@@ -1,12 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8ba2-65ce-b04c-99d84c92580c
-    question: 'Should a resource marked as immutable be validated again when considered stale?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://datatracker.ietf.org/doc/html/rfc8246'
-  -
     uuid: 1eebf878-8b97-6a0c-bd8b-99d84c92580c
     question: 'Could the safe directive be considered as a reliable indicator that the end user is a child?'
     answers:
@@ -19,7 +12,7 @@ questions:
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
-    help: 'https://datatracker.ietf.org/doc/html/rfc7231#section-6.4.2https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301'
+    help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/301'
   -
     uuid: 1eebf878-8b9e-665e-9ce6-99d84c92580c
     question: 'Which HTTP status code must be returned if the cache is still valid ?'
@@ -40,3 +33,10 @@ questions:
       - { value: 'Vary: Accept-Encoding', correct: true }
       - { value: 'Vary: User-Agent', correct: true }
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Vary'
+  -
+    uuid: 1eebf878-8ba2-65ce-b04c-99d84c92580c
+    question: 'Should a resource marked as immutable be validated again when considered stale?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://datatracker.ietf.org/doc/html/rfc8246'

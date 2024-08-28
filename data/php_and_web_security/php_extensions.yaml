@@ -1,22 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8baa-6346-ac4f-99d84c92580c
-    question: 'Is it possible to type hint variable in function definition?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration'
-  -
-    uuid: 1eebf878-8ba5-624c-866b-99d84c92580c
-    question: "What is the output ?$a =  0 ;echo strlen($a);echo empty($a) ? $a : 5;echo $a ?: 5;"
-    answers:
-      - { value: '100', correct: false }
-      - { value: '005', correct: false }
-      - { value: '150', correct: false }
-      - { value: '050', correct: false }
-      - { value: '105', correct: true }
-    help: 'https://php.net/operators'
-  -
     uuid: 1eebf878-8ba4-6a2c-81ae-99d84c92580c
     question: 'Which of the following operations must occur prior to any output being sent to the client (assuming output buffering is disabled) ?'
     answers:
@@ -35,15 +18,25 @@ questions:
       - { value: "The include and include_once language constructs cause a fatal error if the file doesn't exist.", correct: false }
       - { value: "The require and require_once language constructs cause a fatal error when the file can't be read.", correct: true }
       - { value: 'There is no differences other than their names.', correct: false }
-    help: 'https://php.net/manual/en/function.include.php'
+    help: 'https://www.php.net/manual/en/function.include.php'
+  -
+    uuid: 1eebf878-8ba5-624c-866b-99d84c92580c
+    question: "What is the output ?$a =  0 ;echo strlen($a);echo empty($a) ? $a : 5;echo $a ?: 5;"
+    answers:
+      - { value: '100', correct: false }
+      - { value: '005', correct: false }
+      - { value: '150', correct: false }
+      - { value: '050', correct: false }
+      - { value: '105', correct: true }
+    help: 'https://php.net/operators'
   -
     uuid: 1eebf878-8ba7-63c6-8206-99d84c92580c
     question: "What values in $user or $pass will modify the SQL semantics and lead to SQL injection in the code below ?$query =  UPDATE users SET password='$pass' WHERE user='$user' ;"
     answers:
-      - { value: '$pass =  foobar WHERE ;$user =  \ admin\  ;', correct: false }
-      - { value: "$user =  foobar' WHERE user='admin' ;", correct: false }
+      - { value: '$pass =  \ foobar\  WHERE ;$user =  \ admin\  ;', correct: false }
+      - { value: "$user =  foobar\\' WHERE user='admin' ;", correct: false }
       - { value: "$pass =  foobar' WHERE user='admin' -- ;", correct: true }
-      - { value: "$user =  foobar' WHERE user='admin' ;", correct: false }
+      - { value: "$user =  foobar\\' WHERE user='admin' ;", correct: false }
       - { value: None, correct: false }
     help: 'https://php.net/manual/fr/security.database.sql-injection.php'
   -
@@ -77,6 +70,13 @@ questions:
       - { value: boolean, correct: true }
       - { value: array, correct: true }
     help: 'https://php.net/manual/en/language.constants.syntax.php'
+  -
+    uuid: 1eebf878-8baa-6346-ac4f-99d84c92580c
+    question: 'Is it possible to type hint variable in function definition?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration'
   -
     uuid: 1eebf878-8baa-651c-af2c-99d84c92580c
     question: 'All array sorting functions take the array to sort as reference and modify it instead of returning the sorted array'
@@ -117,4 +117,4 @@ questions:
       - { value: quotemeta, correct: false }
       - { value: html_entity_decode, correct: false }
       - { value: strip_tags, correct: true }
-    help: 'https://php.net/manual/en/function.strip-tags.php'
+    help: 'https://php.net/manual/en/function.strip-tags.php<br>'

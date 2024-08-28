@@ -1,5 +1,31 @@
 questions:
   -
+    uuid: 1eebf878-8b9d-6470-bb5f-99d84c92580c
+    question: "What is the value of $render with the following code?$data = [ 'first' => 0, 'first-page' => 1 ];$render = $twig->render('XXXX', ['page' => 5, 'data' => $data]);{# XXXX twig file #}{{ data.first-page }}"
+    answers:
+      - { value: 'null', correct: false }
+      - { value: '-5', correct: false }
+      - { value: '0', correct: false }
+      - { value: '1', correct: true }
+    help: 'https://twig.symfony.com/doc/2.x/templates.html#math'
+  -
+    uuid: 1eebf878-8ba2-6844-8478-99d84c92580c
+    question: 'Which method is used to render the desired template?'
+    answers:
+      - { value: 'Environment::display()', correct: false }
+      - { value: 'Environment::render()', correct: true }
+      - { value: 'Environment::showTemplate()', correct: false }
+      - { value: 'Environment::resolveTemplate()', correct: false }
+    help: 'https://twig.symfony.com/doc/3.x/api.html#rendering-templates'
+  -
+    uuid: 1eebf878-8ba8-608c-b10f-99d84c92580c
+    question: 'Why might embedding controllers be a better alternative than using the include() function for template fragments?'
+    answers:
+      - { value: 'Embedding controllers is more convenient for making database queries.', correct: false }
+      - { value: 'Embedding controllers allows reusing the same content on multiple pages without repeating database queries.', correct: true }
+      - { value: 'The include() function is not suitable for displaying recent blog articles.', correct: false }
+    help: 'https://symfony.com/doc/current/templates.html#embedding-controllers'
+  -
     uuid: 1eebf878-8ba8-6eec-ba66-99d84c92580c
     question: "Is this code is correct ?    public function index(): Response {     return $this->renderView('product/index.html.twig', [      'category' => '...',      ]);     }"
     answers:
@@ -25,30 +51,4 @@ questions:
       - { value: "{{ render(url('latest_articles', {max: 3})) }}", correct: true }
       - { value: '{{ render_controller(''App\\Controller\\BlogController::recentArticles'', {max: 3}) }}', correct: false }
       - { value: '{{ render(controller(''App\\Controller\\BlogController::recentArticles'', {max: 3} )) }}', correct: true }
-    help: 'https://symfony.com/doc/current/templates.html#embedding-controllers'
-  -
-    uuid: 1eebf878-8b9d-6470-bb5f-99d84c92580c
-    question: "What is the value of $render with the following code?$data = [ 'first' => 0, 'first-page' => 1 ];$render = $twig->render('XXXX', ['page' => 5, 'data' => $data]);{# XXXX twig file #}{{ data.first-page }}"
-    answers:
-      - { value: 'null', correct: false }
-      - { value: '-5', correct: false }
-      - { value: '0', correct: false }
-      - { value: '1', correct: true }
-    help: 'https://twig.symfony.com/doc/2.x/templates.html#math'
-  -
-    uuid: 1eebf878-8ba2-6844-8478-99d84c92580c
-    question: 'Which method is used to render the desired template?'
-    answers:
-      - { value: 'Environment::display()', correct: false }
-      - { value: 'Environment::render()', correct: true }
-      - { value: 'Environment::showTemplate()', correct: false }
-      - { value: 'Environment::resolveTemplate()', correct: false }
-    help: 'https://twig.symfony.com/doc/3.x/api.html#rendering-templates'
-  -
-    uuid: 1eebf878-8ba8-608c-b10f-99d84c92580c
-    question: 'Why might embedding controllers be a better alternative than using the include() function for template fragments?'
-    answers:
-      - { value: 'Embedding controllers is more convenient for making database queries.', correct: false }
-      - { value: 'Embedding controllers allows reusing the same content on multiple pages without repeating database queries.', correct: true }
-      - { value: 'The include() function is not suitable for displaying recent blog articles.', correct: false }
     help: 'https://symfony.com/doc/current/templates.html#embedding-controllers'

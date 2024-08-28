@@ -1,42 +1,11 @@
 questions:
   -
-    uuid: 1eebf878-8ba5-6382-a6c5-99d84c92580c
-    question: "Is this a valid way to add a DataTransformer ?    $builder     ->add('issue', TextType::class)     ->addModelTransformer($transformer);"
-    answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
-    help: 'https://symfony.com/doc/current/form/data_transformers.html#using-the-transformer'
-  -
-    uuid: 1eebf878-8ba5-63c8-9923-99d84c92580c
-    question: "The first function in the CallBackTransformer is to transform, and the second to reverseTransform ?    $builder     ->get('tags')      ->addModelTransformer(     new CallbackTransformer(      function ($tagsAsArray): string {      return implode(', ', $tagsAsArray);      },      function ($tagsAsString): array {      return explode(', ', $tagsAsString);      }      )     ) ;"
-    answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
-    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Form/CallbackTransformer.php'
-  -
-    uuid: 1eebf878-8ba5-6418-8750-99d84c92580c
-    question: 'What Exception is thrown when to data is not valid in a DataTransformer ?'
-    answers:
-      - { value: FailedTransformationException, correct: false }
-      - { value: DataTransformationException, correct: false }
-      - { value: ValidTransformationException, correct: false }
-      - { value: TransformationFailedException, correct: true }
-    help: 'https://symfony.com/doc/current/form/data_transformers.html#creating-the-transformer'
-  -
-    uuid: 1eebf878-8ba5-645e-bb9b-99d84c92580c
-    question: 'In Data Transformer, in the reverseTransform, how to customize the error message ?'
-    answers:
-      - { value: 'By setting the setInvalidMessage on the TransformationFailedException', correct: true }
-      - { value: 'By setting the invalid_message in the options of the form type', correct: true }
-      - { value: "It's not possible", correct: false }
-    help: 'https://symfony.com/doc/current/form/data_transformers.html#using-the-transformer'
-  -
     uuid: 1eebf878-8b9a-6838-a655-99d84c92580c
     question: 'Does a Symfony\Component\Form\Exception\TransformationFailedException thrown in a DataTransformer cause a validation error ?'
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/form/data_transformers.html'
+    help: 'https://symfony.com/doc/current/form/data_transformers.html<br>'
   -
     uuid: 1eebf878-8b9c-6aa2-a4b0-99d84c92580c
     question: 'How to add a DataTransformer to the tags field?'
@@ -60,3 +29,34 @@ questions:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/current/form/data_transformers.html'
+  -
+    uuid: 1eebf878-8ba5-6382-a6c5-99d84c92580c
+    question: "Is this a valid way to add a DataTransformer ?    $builder     ->add('issue', TextType::class)     ->addModelTransformer($transformer);"
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://symfony.com/doc/current/form/data_transformers.html#using-the-transformer'
+  -
+    uuid: 1eebf878-8ba5-63c8-9923-99d84c92580c
+    question: "The first function in the CallBackTransformer is to transform, and the second to reverseTransform ?    $builder     ->get('tags')      ->addModelTransformer(     new CallbackTransformer(      function ($tagsAsArray): string {      return implode(', ', $tagsAsArray);      },      function ($tagsAsString): array {      return explode(', ', $tagsAsString);      }      )     ) ;"
+    answers:
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Form/CallbackTransformer.php'
+  -
+    uuid: 1eebf878-8ba5-6418-8750-99d84c92580c
+    question: 'What Exception is thrown when data is not valid in the DataTransformer ?'
+    answers:
+      - { value: FailedTransformationException, correct: false }
+      - { value: DataTransformationException, correct: false }
+      - { value: ValidTransformationException, correct: false }
+      - { value: TransformationFailedException, correct: true }
+    help: 'https://symfony.com/doc/current/form/data_transformers.html#creating-the-transformer'
+  -
+    uuid: 1eebf878-8ba5-645e-bb9b-99d84c92580c
+    question: 'In Data Transformer, in the reverseTransform, how to customize the error message ?'
+    answers:
+      - { value: 'By setting the setInvalidMessage on the TransformationFailedException', correct: true }
+      - { value: 'By setting the invalid_message in the options of the form type', correct: true }
+      - { value: "It's not possible", correct: false }
+    help: 'https://symfony.com/doc/current/form/data_transformers.html#using-the-transformer'
