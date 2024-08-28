@@ -3,44 +3,44 @@ questions:
     uuid: 1eebf878-8b9b-6bde-ba44-99d84c92580c
     question: 'What are the built-in arguments variants?'
     answers:
-      - { value: 'InputArgument::NONE', correct: false }
-      - { value: 'InputArgument::IS_ARRAY', correct: true }
-      - { value: 'InputArgument::IS_MULTIPLE', correct: false }
-      - { value: 'InputArgument::OPTIONAL', correct: true }
-      - { value: 'InputArgument::REQUIRED', correct: true }
+      - {value: 'InputArgument::NONE', correct: false}
+      - {value: 'InputArgument::IS_ARRAY', correct: true}
+      - {value: 'InputArgument::IS_MULTIPLE', correct: false}
+      - {value: 'InputArgument::OPTIONAL', correct: true}
+      - {value: 'InputArgument::REQUIRED', correct: true}
     help: 'https://symfony.com/doc/current/console/input.html#using-command-arguments'
   -
     uuid: 1eebf878-8b9d-66e6-8c20-99d84c92580c
     question: 'Which of the following are not built-in option variants ?'
     answers:
-      - { value: 'InputOption::VALUE_IS_MULTIPLE', correct: true }
-      - { value: 'InputOption::VALUE_REQUIRED', correct: false }
-      - { value: 'InputOption::VALUE_OPTIONAL', correct: false }
-      - { value: 'InputOption::VALUE_NONE', correct: false }
-      - { value: 'InputOption::VALUE_NOT_REQUIRED', correct: true }
-      - { value: 'InputOption::VALUE_IS_ARRAY', correct: false }
+      - {value: 'InputOption::VALUE_IS_MULTIPLE', correct: true}
+      - {value: 'InputOption::VALUE_REQUIRED', correct: false}
+      - {value: 'InputOption::VALUE_OPTIONAL', correct: false}
+      - {value: 'InputOption::VALUE_NONE', correct: false}
+      - {value: 'InputOption::VALUE_NOT_REQUIRED', correct: true}
+      - {value: 'InputOption::VALUE_IS_ARRAY', correct: false}
     help: 'https://symfony.com/doc/current/console/input.html#using-command-options'
   -
     uuid: 1eebf878-8b9e-6b68-a9e2-99d84c92580c
     question: 'Does the Symfony Console component needs PHP globals internals variables to work?'
     answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
+      - {value: 'Yes', correct: false}
+      - {value: 'No', correct: true}
     help: 'https://symfony.com/doc/current/components/console.html#installation'
   -
     uuid: 1eebf878-8ba2-6d62-841b-99d84c92580c
     question: 'What is the default value when calling Command::setHidden()?'
     answers:
-      - { value: 'False', correct: true }
-      - { value: 'True', correct: false }
+      - {value: 'False', correct: true}
+      - {value: 'True', correct: false}
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Console/Command/Command.php#L544'
   -
     uuid: 1eebf878-8ba4-6202-a4b0-99d84c92580c
     question: "Given a command that requires answering to a multiple choices question, how could the inputs (marked as ???) be set in a test?    final class CommandTest extends TestCase {     public function testExecute(): void {     $commandTester = new CommandTester($command);     $commandTester->setInputs(???);     $commandTester->execute([     'command' => $command->getName(),     ]);     }     }"
     answers:
-      - { value: "['first_input >> second_input']", correct: false }
-      - { value: "['first_input, second_input']", correct: false }
-      - { value: "['first_input && second_input']", correct: false }
-      - { value: "It's not possible", correct: false }
-      - { value: "['first_input', 'second_input']", correct: true }
+      - {value: "['first_input >> second_input']", correct: false}
+      - {value: "['first_input, second_input']", correct: false}
+      - {value: "['first_input && second_input']", correct: false}
+      - {value: "It's not possible", correct: false}
+      - {value: "['first_input', 'second_input']", correct: true}
     help: 'https://symfony.com/doc/current/components/console/helpers/questionhelper.html#testing-a-command-that-expects-input'

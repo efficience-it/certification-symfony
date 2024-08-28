@@ -3,107 +3,107 @@ questions:
     uuid: 1eebf878-8b96-6f94-8836-99d84c92580c
     question: 'Could the cursor position be changed in a command?'
     answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
     help: 'https://symfony.com/doc/current/components/console/helpers/cursor.html'
   -
     uuid: 1eebf878-8b99-6bea-907b-99d84c92580c
     question: 'Which of the following constants do not exist?'
     answers:
-      - { value: 'Symfony\Component\Console\Input\InputArgument::REQUIRED', correct: false }
-      - { value: 'Symfony\Component\Console\Input\InputArgument::NEGATABLE', correct: true }
-      - { value: 'Symfony\Component\Console\Input\InputArgument::IS_ARRAY', correct: false }
-      - { value: 'Symfony\Component\Console\Input\InputArgument::OPTIONAL', correct: false }
-      - { value: 'Symfony\Component\Console\Input\InputArgument::NONE', correct: true }
+      - {value: 'Symfony\Component\Console\Input\InputArgument::REQUIRED', correct: false}
+      - {value: 'Symfony\Component\Console\Input\InputArgument::NEGATABLE', correct: true}
+      - {value: 'Symfony\Component\Console\Input\InputArgument::IS_ARRAY', correct: false}
+      - {value: 'Symfony\Component\Console\Input\InputArgument::OPTIONAL', correct: false}
+      - {value: 'Symfony\Component\Console\Input\InputArgument::NONE', correct: true}
     help: 'https://github.com/symfony/console/blob/7.0/Input/InputArgument.php'
   -
     uuid: 1eebf878-8b9b-61b6-82fd-99d84c92580c
     question: 'Could you prevent a command from running multiple times on a single server?'
     answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
+      - {value: 'No', correct: false}
+      - {value: 'Yes', correct: true}
     help: 'https://symfony.com/doc/current/console/lockable_trait.html'
   -
     uuid: 1eebf878-8b9e-69ce-95d7-99d84c92580c
     question: 'Which tag name you should use when you register command as service?'
     answers:
-      - { value: command.console, correct: false }
-      - { value: console.command, correct: true }
-      - { value: console.console_command, correct: false }
-      - { value: command, correct: false }
-      - { value: console, correct: false }
+      - {value: command.console, correct: false}
+      - {value: console.command, correct: true}
+      - {value: console.console_command, correct: false}
+      - {value: command, correct: false}
+      - {value: console, correct: false}
     help: 'https://symfony.com/doc/current/console/commands_as_services.html'
   -
     uuid: 1eebf878-8b9e-6d70-97f3-99d84c92580c
     question: 'Which function are mandatory to your command class ?'
     answers:
-      - { value: configure(), correct: true }
-      - { value: 'execute(InputInterface $input, OutputInterface $output)', correct: true }
-      - { value: interact(), correct: false }
-      - { value: initialize(), correct: false }
+      - {value: configure(), correct: true}
+      - {value: 'execute(InputInterface $input, OutputInterface $output)', correct: true}
+      - {value: interact(), correct: false}
+      - {value: initialize(), correct: false}
     help: 'https://symfony.com/doc/current/console.html#creating-a-command'
   -
     uuid: 1eebf878-8ba3-6b36-baf6-99d84c92580c
     question: "What needs to be done to register a custom command so it can be executed and listed when you execute php bin/console list ?"
     answers:
-      - { value: 'Add it to the registerCommands() method in the AppKernel class', correct: false }
-      - { value: 'Define the command as a service and tag it with kernel.command.', correct: false }
-      - { value: 'Place it in the Command directory of the bundle, suffix the PHP class with Command and make it extend \Symfony\Component\Console\Command\Command', correct: true }
-      - { value: 'Add it to the application registered in the bin/console file', correct: false }
+      - {value: 'Add it to the registerCommands() method in the AppKernel class', correct: false}
+      - {value: 'Define the command as a service and tag it with kernel.command.', correct: false}
+      - {value: 'Place it in the Command directory of the bundle, suffix the PHP class with Command and make it extend \Symfony\Component\Console\Command\Command', correct: true}
+      - {value: 'Add it to the application registered in the bin/console file', correct: false}
     help: 'https://symfony.com/doc/current/console.html'
   -
     uuid: 1eebf878-8ba7-6010-b41f-99d84c92580c
     question: 'In a Command, which of these Constant exist, that you could return in your execute method ?'
     answers:
-      - { value: 'Command::SUCCESS', correct: true }
-      - { value: 'Command::ERROR', correct: false }
-      - { value: 'Command::EXCEPTION', correct: false }
-      - { value: 'Command::VALID', correct: false }
-      - { value: 'Command::FAILURE', correct: true }
-      - { value: 'Command::INVALID', correct: true }
+      - {value: 'Command::SUCCESS', correct: true}
+      - {value: 'Command::ERROR', correct: false}
+      - {value: 'Command::EXCEPTION', correct: false}
+      - {value: 'Command::VALID', correct: false}
+      - {value: 'Command::FAILURE', correct: true}
+      - {value: 'Command::INVALID', correct: true}
     help: 'https://symfony.com/doc/current/components/console/events.html'
   -
     uuid: 1eebf878-8ba7-6060-86eb-99d84c92580c
     question: 'Is it possible to set a default Command ? how to do it ?'
     answers:
-      - { value: 'Impossible, no default command available', correct: false }
-      - { value: 'Yes by setting the ->setDefaultCommand() on the Application', correct: true }
-      - { value: 'Yes by setting setDefault(true) in the method configure()', correct: false }
+      - {value: 'Impossible, no default command available', correct: false}
+      - {value: 'Yes by setting the ->setDefaultCommand() on the Application', correct: true}
+      - {value: 'Yes by setting setDefault(true) in the method configure()', correct: false}
     help: 'https://symfony.com/doc/current/components/console/changing_default_command.html'
   -
     uuid: 1eebf878-8ba7-60a6-9452-99d84c92580c
     question: 'What is the right lifecycle in a Command ?'
     answers:
-      - { value: 'initialize() -> interact() -> execute()', correct: true }
-      - { value: 'interact() -> initialize() -> execute()', correct: false }
-      - { value: 'initialize() -> execute() -> interact()', correct: false }
+      - {value: 'initialize() -> interact() -> execute()', correct: true}
+      - {value: 'interact() -> initialize() -> execute()', correct: false}
+      - {value: 'initialize() -> execute() -> interact()', correct: false}
     help: '://symfony.com/doc/current/console.html#command-lifecycle'
   -
     uuid: 1eec051e-510b-6aca-a11f-d755398b2126
     question: 'How to show the help option written in the Command Class ?'
     answers:
-      - { value: 'php bin/console the-command-name --help', correct: true }
-      - { value: 'php bin/console the-command-name --help-me', correct: false }
-      - { value: 'php bin/console help:the-command-name', correct: false }
+      - {value: 'php bin/console the-command-name --help', correct: true}
+      - {value: 'php bin/console the-command-name --help-me', correct: false}
+      - {value: 'php bin/console help:the-command-name', correct: false}
     help: 'https://symfony.com/doc/current/console/input.html#command-global-options'
   -
     uuid: 1eeeb907-fe60-61b8-9026-0550b48f06f6
     question: "How to run this command : #[AsCommand(name: 'app:create-user')]"
     answers:
-      - { value: 'php bin/console app:create-user', correct: true }
-      - { value: 'php bin/console app:add-user', correct: false }
-      - { value: 'php bin/console app:new-user', correct: false }
-      - { value: 'php bin/console new-user', correct: false }
-      - { value: 'php bin/console create-user', correct: false }
-      - { value: 'php bin/console add-user', correct: false }
+      - {value: 'php bin/console app:create-user', correct: true}
+      - {value: 'php bin/console app:add-user', correct: false}
+      - {value: 'php bin/console app:new-user', correct: false}
+      - {value: 'php bin/console new-user', correct: false}
+      - {value: 'php bin/console create-user', correct: false}
+      - {value: 'php bin/console add-user', correct: false}
     help: 'https://symfony.com/doc/current/console.html#running-the-command'
   -
     uuid: 1eeeb90d-06a8-605a-9026-7fe8bec3d660
     question: "How to run this command : #[AsCommand(name: 'app:create-user', aliases: ['app:add-user'])]"
     answers:
-      - { value: 'php bin/console app:create-user', correct: true }
-      - { value: 'php bin/console app:add-user', correct: true }
-      - { value: 'all answers are correct', correct: false }
-      - { value: 'php bin/console create-user', correct: false }
-      - { value: 'php bin/console add-user', correct: false }
+      - {value: 'php bin/console app:create-user', correct: true}
+      - {value: 'php bin/console app:add-user', correct: true}
+      - {value: 'all answers are correct', correct: false}
+      - {value: 'php bin/console create-user', correct: false}
+      - {value: 'php bin/console add-user', correct: false}
     help: 'https://symfony.com/doc/current/console.html#registering-the-command'

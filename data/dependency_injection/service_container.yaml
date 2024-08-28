@@ -351,7 +351,7 @@ questions:
       - {value: "Centralizing object construction.", correct: false}
       - {value: "Improving application performance.", correct: false}
       - {value: "Allowing services to be shared and reused.", correct: false}
-      - {value: "Making all services public by default.", correct: false}
+      - {value: "Making all services public by default.", correct: true}
     help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1ef5c0b2-fda9-6a80-9f5e-cd37e2e3aa3d
@@ -423,5 +423,5 @@ questions:
       - {value: "parameters", correct: false}
       - {value: "options", correct: false}
       - {value: "values", correct: false}
-      - {value: "arguments", correct: false}
+      - {value: "arguments", correct: true}
     help: 'https://symfony.com/doc/current/service_container.html#manually-wiring-arguments'
