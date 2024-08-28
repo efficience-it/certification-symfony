@@ -76,8 +76,8 @@ questions:
     uuid: 1eedadbf-3130-62fa-9ad6-73c005d2a996
     question: "By default, generated links use the lifetime configured globally but you can change the lifetime per link. How ?"
     answers:
-      - { value: " setting the third argument of the createLoginLink() method ", correct: true }
-      - { value: " setting the second argument of the createLoginLink() method ", correct: false }
+      - { value: "setting the third argument of the createLoginLink() method ", correct: true }
+      - { value: "setting the second argument of the createLoginLink() method ", correct: false }
       - { value: "giving an array to the second argument of the createLoginLink() method, whith the life_time value", correct: false }
     help: 'https://symfony.com/doc/current/security/login_link.html#customizing-the-login-link'
   -

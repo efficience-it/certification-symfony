@@ -1,5 +1,35 @@
 questions:
   -
+    uuid: 1eebf878-8b9d-6600-b63e-99d84c92580c
+    question: 'Could values be mapped to fields using callbacks?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/form/data_mappers.html#mapping-form-fields-using-callbacks'
+  -
+    uuid: 1eebf878-8ba1-67fa-9c70-99d84c92580c
+    question: 'We can also apply constraints on class getters with ``addPropertyConstraint()``'
+    answers:
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
+    help: 'https://symfony.com/doc/current/components/validator/metadata.html#getters'
+  -
+    uuid: 1eebf878-8ba1-6840-b9ce-99d84c92580c
+    question: 'We can also apply constraints on class getters with ``addGetterConstraint()``'
+    answers:
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
+    help: 'https://symfony.com/doc/current/components/validator/metadata.html'
+  -
+    uuid: 1eebf878-8ba1-6926-8c9e-99d84c92580c
+    question: 'Which annotation are valid ?'
+    answers:
+      - { value: "@Assert\\Choice({'male', 'female', 'other'})", correct: true }
+      - { value: "@Assert\\Choice(choices = {'male', 'female', 'other'})", correct: true }
+      - { value: "@Assert\\Choices({'male', 'female', 'other'})", correct: false }
+      - { value: "@Assert\\Choices(choices = {'male', 'female', 'other'})", correct: false }
+    help: 'https://symfony.com/doc/current/reference/constraints/Choice.html#basic-usage'
+  -
     uuid: 1eec042a-90a0-6478-8a7c-83bfaecaab6e
     question: 'Which class would have to extend to create a FormValidator ?'
     answers:
@@ -36,33 +66,3 @@ questions:
       - { value: ValidatorTestCase, correct: false }
       - { value: ValidatorTest, correct: false }
     help: 'https://symfony.com/doc/current/validation/custom_constraint.html#testing-custom-constraints'
-  -
-    uuid: 1eebf878-8b9d-6600-b63e-99d84c92580c
-    question: 'Could values be mapped to fields using callbacks?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/form/data_mappers.html#mapping-form-fields-using-callbacks'
-  -
-    uuid: 1eebf878-8ba1-67fa-9c70-99d84c92580c
-    question: 'We can also apply constraints on class getters with ``addPropertyConstraint()``'
-    answers:
-      - { value: 'True', correct: false }
-      - { value: 'False', correct: true }
-    help: 'https://symfony.com/doc/current/components/validator/metadata.html#getters'
-  -
-    uuid: 1eebf878-8ba1-6840-b9ce-99d84c92580c
-    question: 'We can also apply constraints on class getters with ``addGetterConstraint()``'
-    answers:
-      - { value: 'True', correct: true }
-      - { value: 'False', correct: false }
-    help: 'https://symfony.com/doc/current/components/validator/metadata.html'
-  -
-    uuid: 1eebf878-8ba1-6926-8c9e-99d84c92580c
-    question: 'Which annotation are valid ?'
-    answers:
-      - { value: "@Assert\\Choice({'male', 'female', 'other'})", correct: true }
-      - { value: "@Assert\\Choice(choices = {'male', 'female', 'other'})", correct: true }
-      - { value: "@Assert\\Choices({'male', 'female', 'other'})", correct: false }
-      - { value: "@Assert\\Choices(choices = {'male', 'female', 'other'})", correct: false }
-    help: 'https://symfony.com/doc/current/reference/constraints/Choice.html#basic-usage'

@@ -1,5 +1,66 @@
 questions:
   -
+    uuid: 1eebf878-8b97-6124-8ec2-99d84c92580c
+    question: 'Is it possible to listen signals and stop command according to them?'
+    answers:
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+    help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-signal-event'
+  -
+    uuid: 1eebf878-8b99-67a8-ab13-99d84c92580c
+    question: 'Could a command listen to signals?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-signal-event'
+  -
+    uuid: 1eebf878-8b9a-61d0-ba34-99d84c92580c
+    question: 'The Application class of the Console component allows you to optionally hook into the lifecycle of a console application via events. How many events are dispatched?'
+    answers:
+      - { value: '5', correct: false }
+      - { value: '4', correct: true }
+      - { value: '6', correct: false }
+      - { value: '3', correct: false }
+      - { value: '1', correct: false }
+      - { value: '2', correct: false }
+    help: 'https://symfony.com/doc/current/components/console/events.html'
+  -
+    uuid: 1eebf878-8b9c-69b2-ab22-99d84c92580c
+    question: 'Are console events dispatched when testing commands using CommandTester?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://symfony.com/doc/current/console.html#testing-commands'
+  -
+    uuid: 1eebf878-8b9e-67f8-bfd4-99d84c92580c
+    question: 'Which event is not available in the Console Component?'
+    answers:
+      - { value: 'ConsoleEvents::COMMAND', correct: false }
+      - { value: 'ConsoleEvents::TERMINATE', correct: false }
+      - { value: 'ConsoleEvents::ERROR', correct: false }
+      - { value: 'ConsoleEvents::LAUNCH', correct: true }
+      - { value: 'ConsoleEvents::START', correct: true }
+      - { value: 'ConsoleEvents::BEGIN', correct: true }
+      - { value: 'ConsoleEvents::END', correct: true }
+      - { value: 'ConsoleEvents::EXCEPTION', correct: true }
+    help: 'https://symfony.com/doc/current/components/console/events.html'
+  -
+    uuid: 1eebf878-8ba4-6d2e-bc67-99d84c92580c
+    question: 'If an exception occurs while executing a console command, will you see the details of the exception in your log files?'
+    answers:
+      - { value: 'Yes. The log file will depend on the environment where you execute the commands (prod.log, dev.log, etc.)', correct: true }
+      - { value: 'Yes, but only if your command extends from the abstract ExceptionAwareCommandclass.', correct: false }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/console.html#logging-command-errors'
+  -
+    uuid: 1eebf878-8ba6-6746-9ab0-99d84c92580c
+    question: 'How to test the events in the console ?'
+    answers:
+      - { value: 'With the CommandTester', correct: false }
+      - { value: 'With the ApplicationTester', correct: true }
+      - { value: 'With the CommandEventTester', correct: false }
+    help: 'https://symfony.com/doc/current/console.html#testing-commands'
+  -
     uuid: 1eebf878-8ba6-68b8-8930-99d84c92580c
     question: 'What Class receive the listeners when the ConsolelEvents::Command is dispatched ?'
     answers:
@@ -70,67 +131,6 @@ questions:
       - { value: 'ConsoleEvents::SIGNAL', correct: false }
     help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-terminate-event'
   -
-    uuid: 1eebf878-8b97-6124-8ec2-99d84c92580c
-    question: 'Is it possible to listen signals and stop command according to them?'
-    answers:
-      - { value: 'No', correct: false }
-      - { value: 'Yes', correct: true }
-    help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-signal-event'
-  -
-    uuid: 1eebf878-8ba4-6d2e-bc67-99d84c92580c
-    question: 'If an exception occurs while executing a console command, will you see the details of the exception in your log files?'
-    answers:
-      - { value: 'Yes. The log file will depend on the environment where you execute the commands (prod.log, dev.log, etc.)', correct: true }
-      - { value: 'Yes, but only if your command extends from the abstract ExceptionAwareCommandclass.', correct: false }
-      - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/console.html#logging-command-errors'
-  -
-    uuid: 1eebf878-8b99-67a8-ab13-99d84c92580c
-    question: 'Could a command listen to signals?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/components/console/events.html#the-consoleevents-signal-event'
-  -
-    uuid: 1eebf878-8b9a-61d0-ba34-99d84c92580c
-    question: 'The Application class of the Console component allows you to optionally hook into the lifecycle of a console application via events. How many events are dispatched?'
-    answers:
-      - { value: '5', correct: false }
-      - { value: '4', correct: true }
-      - { value: '6', correct: false }
-      - { value: '3', correct: false }
-      - { value: '1', correct: false }
-      - { value: '2', correct: false }
-    help: 'https://symfony.com/doc/current/components/console/events.html'
-  -
-    uuid: 1eebf878-8b9c-69b2-ab22-99d84c92580c
-    question: 'Are console events dispatched when testing commands using CommandTester?'
-    answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
-    help: 'https://symfony.com/doc/current/console.html#testing-commands'
-  -
-    uuid: 1eebf878-8b9e-67f8-bfd4-99d84c92580c
-    question: 'Which event is not available in the Console Component?'
-    answers:
-      - { value: 'ConsoleEvents::COMMAND', correct: false }
-      - { value: 'ConsoleEvents::TERMINATE', correct: false }
-      - { value: 'ConsoleEvents::ERROR', correct: false }
-      - { value: 'ConsoleEvents::LAUNCH', correct: true }
-      - { value: 'ConsoleEvents::START', correct: true }
-      - { value: 'ConsoleEvents::BEGIN', correct: true }
-      - { value: 'ConsoleEvents::END', correct: true }
-      - { value: 'ConsoleEvents::EXCEPTION', correct: true }
-    help: 'https://symfony.com/doc/current/components/console/events.html'
-  -
-    uuid: 1eebf878-8ba6-6746-9ab0-99d84c92580c
-    question: 'How to test the events in the console ?'
-    answers:
-      - { value: 'With the CommandTester', correct: false }
-      - { value: 'With the ApplicationTester', correct: true }
-      - { value: 'With the CommandEventTester', correct: false }
-    help: 'https://symfony.com/doc/current/console.html#testing-commands'
-  -
     uuid: 1eebf878-8ba6-6f2a-b56c-99d84c92580c
     question: 'When a command is interrupted, Symfony dispatches an avent. Listen to this event so you can perform some actions (e.g. logging some results, cleaning some temporary files, etc.) before finishing the command execution. Which Event is this ?'
     answers:
@@ -145,4 +145,4 @@ questions:
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/console.html#testing-commandshttps://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/Console/Tester/ApplicationTester.php'
+    help: 'https://symfony.com/doc/current/console.html#testing-commands'

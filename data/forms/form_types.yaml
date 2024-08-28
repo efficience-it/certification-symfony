@@ -1,57 +1,5 @@
 questions:
   -
-    uuid: 1eed57c2-219d-684a-b181-8b98c4e373e6
-    question: 'What value is the default_protocol option of the UrlType form type ?'
-    answers:
-      - { value: https, correct: false }
-      - { value: http, correct: true }
-      - { value: 'To prepend the submitted value with an URI scheme (eg. http://) if it does not begin with one.', correct: true }
-    help: 'https://symfony.com/doc/current/reference/forms/types/url.html'
-  -
-    uuid: 1eebf878-8b9a-609a-94e5-99d84c92580c
-    question: 'In a form, could the choices of LanguageType be overridden?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/reference/forms/types/language.html#choices'
-  -
-    uuid: 1eebf878-8b98-69ca-a626-99d84c92580c
-    question: 'What is the default value of the empty_data option when data_class is set?'
-    answers:
-      - { value: 'An empty string', correct: false }
-      - { value: 'An empty array', correct: false }
-      - { value: 'A new instance of the class set in data_class', correct: true }
-      - { value: 'null', correct: false }
-    help: 'https://symfony.com/doc/current/form/use_empty_data.html'
-  -
-    uuid: 1eebf878-8b9a-6cf2-b2df-99d84c92580c
-    question: "Given the following configuration:$form = $this ->createFormBuilder(['myfield' => 'foo'])       ->add('myfield', TextType::class, ['data' => 'bar', 'empty_data' => 'none'])       ->getForm();What will be displayed in the myfield field ?"
-    answers:
-      - { value: none, correct: false }
-      - { value: foo, correct: false }
-      - { value: bar, correct: true }
-      - { value: 'Nothing, an exception will be thrown', correct: false }
-    help: 'https://symfony.com/doc/current/reference/forms/types/form.html#data'
-  -
-    uuid: 1eebf878-8b9c-678c-9d91-99d84c92580c
-    question: 'Could empty CollectionType entries be removed?'
-    answers:
-      - { value: "It's not possible", correct: false }
-      - { value: 'The CollectionType automatically resize itself', correct: false }
-      - { value: 'Yes, using resize_when_empty option', correct: false }
-      - { value: 'Yes, using delete_empty option', correct: true }
-      - { value: 'Yes, using remove_empty option', correct: false }
-    help: 'https://symfony.com/doc/6.4/reference/forms/types/collection.html#delete-empty'
-  -
-    uuid: 1eed57b7-0955-6612-b73b-9d916356f596
-    question: 'What option should you use with the Symfony\Component\Form\Extension\Core\Type\DateTimeType form type in order to have the form rendered without an input capturing minutes ?'
-    answers:
-      - { value: 'The hide_minutes option set to true.', correct: false }
-      - { value: 'The minutes option set to false.', correct: false }
-      - { value: 'The without_minutes option set to true.', correct: false }
-      - { value: 'The with_minutes option set to false.', correct: true }
-    help: 'https://symfony.com/doc/current/reference/forms/types/datetime.html'
-  -
     uuid: 1eebf878-8b97-63a4-84ee-99d84c92580c
     question: 'Which of the following are Symfony built-in field types?'
     answers:
@@ -90,6 +38,15 @@ questions:
       - { value: 'It defaults the years option to 120 years ago to the current year.', correct: true }
       - { value: 'This is only semantical, there is no real difference between them.', correct: false }
     help: 'https://symfony.com/doc/current/reference/forms/types/birthday.html'
+  -
+    uuid: 1eebf878-8b98-69ca-a626-99d84c92580c
+    question: 'What is the default value of the empty_data option when data_class is set?'
+    answers:
+      - { value: 'An empty string', correct: false }
+      - { value: 'An empty array', correct: false }
+      - { value: 'A new instance of the class set in data_class', correct: true }
+      - { value: 'null', correct: false }
+    help: 'https://symfony.com/doc/current/form/use_empty_data.html'
   -
     uuid: 1eebf878-8b98-6aa6-87b2-99d84c92580c
     question: 'What component is used by the Symfony\Component\Form\FormBuilder when calling addEventListener method?'
@@ -142,12 +99,28 @@ questions:
       - { value: Symfony\Component\Form\ChoiceLoaderInterface, correct: false }
     help: 'https://symfony.com/doc/current/reference/forms/types/choice.html#choice-loader'
   -
+    uuid: 1eebf878-8b9a-609a-94e5-99d84c92580c
+    question: 'In a form, could the choices of LanguageType be overridden?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/reference/forms/types/language.html#choices'
+  -
     uuid: 1eebf878-8b9a-6220-b605-99d84c92580c
     question: 'Could a Button have a child?'
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
-    help: "https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Form/Button.php#L110"
+    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Form/Button.php#L110'
+  -
+    uuid: 1eebf878-8b9a-6cf2-b2df-99d84c92580c
+    question: "Given the following configuration:$form = $this ->createFormBuilder(['myfield' => 'foo'])       ->add('myfield', TextType::class, ['data' => 'bar', 'empty_data' => 'none'])       ->getForm();What will be displayed in the myfield field ?"
+    answers:
+      - { value: none, correct: false }
+      - { value: foo, correct: false }
+      - { value: bar, correct: true }
+      - { value: 'Nothing, an exception will be thrown', correct: false }
+    help: 'https://symfony.com/doc/current/reference/forms/types/form.html#data'
   -
     uuid: 1eebf878-8b9b-676a-9c72-99d84c92580c
     question: 'How is rendered a DateIntervalType form field when the widget option is set to single_text ?'
@@ -174,6 +147,16 @@ questions:
       - { value: decimals, correct: false }
       - { value: precision, correct: false }
     help: 'https://symfony.com/doc/current/reference/forms/types/number.html'
+  -
+    uuid: 1eebf878-8b9c-678c-9d91-99d84c92580c
+    question: 'Could empty CollectionType entries be removed?'
+    answers:
+      - { value: "It's not possible", correct: false }
+      - { value: 'The CollectionType automatically resize itself', correct: false }
+      - { value: 'Yes, using resize_when_empty option', correct: false }
+      - { value: 'Yes, using delete_empty option', correct: true }
+      - { value: 'Yes, using remove_empty option', correct: false }
+    help: 'https://symfony.com/doc/6.4/reference/forms/types/collection.html#delete-empty'
   -
     uuid: 1eebf878-8b9c-6912-8c4e-99d84c92580c
     question: 'Which of the following sentences are true ?'
@@ -257,6 +240,23 @@ questions:
       - { value: Symfony\Component\Form\Extension\Core\Type\DateType, correct: true }
       - { value: "Symfony\\Component\\Form\\Extension\\Core\\Type\\TimeType", correct: false }
     help: 'https://symfony.com/doc/current/reference/forms/types/birthday.html'
+  -
+    uuid: 1eed57b7-0955-6612-b73b-9d916356f596
+    question: 'What option should you use with the Symfony\Component\Form\Extension\Core\Type\DateTimeType form type in order to have the form rendered without an input capturing minutes ?'
+    answers:
+      - { value: 'The hide_minutes option set to true.', correct: false }
+      - { value: 'The minutes option set to false.', correct: false }
+      - { value: 'The without_minutes option set to true.', correct: false }
+      - { value: 'The with_minutes option set to false.', correct: true }
+    help: 'https://symfony.com/doc/current/reference/forms/types/datetime.html'
+  -
+    uuid: 1eed57c2-219d-684a-b181-8b98c4e373e6
+    question: 'What value is the default_protocol option of the UrlType form type ?'
+    answers:
+      - { value: https, correct: false }
+      - { value: http, correct: true }
+      - { value: 'To prepend the submitted value with an URI scheme (eg. http://) if it does not begin with one.', correct: true }
+    help: 'https://symfony.com/doc/current/reference/forms/types/url.html'
   -
     uuid: 1eee7665-19e6-68be-9026-175f14ab53cd
     question: 'By default, which function provides the choices of the Symfony\Component\Form\Extension\Core\Type\LanguageType form type ?'

@@ -18,7 +18,7 @@ questions:
       - { value: '%s?%s', correct: false }
       - { value: '?%%s', correct: false }
       - { value: '?%s', correct: false }
-    help: 'https://symfony.com/doc/current/reference/configuration/framework.html#version-format'
+    help: 'https://symfony.com/doc/current/reference/configuration/framework.html#version-forma'
   -
     uuid: 1eebf878-8ba7-6f74-a846-99d84c92580c
     question: 'What does the asset Twig function do?'

@@ -9,6 +9,22 @@ questions:
       - { value: '- { url: ^/admin, acl: ROLE_ADMIN }', correct: false }
     help: 'https://symfony.com/doc/current/security/access_control.html#matching-options'
   -
+    uuid: 1eebf878-8ba8-6ac8-83cc-99d84c92580c
+    question: 'Symfony creates an instance of RequestMatcher for each access_control entry, which determines whether or not a given access control should be used on this request. Wich options are use for matching ?'
+    answers:
+      - { value: path, correct: true }
+      - { value: 'ip or ips', correct: true }
+      - { value: port, correct: true }
+      - { value: host, correct: true }
+      - { value: methods, correct: true }
+      - { value: request_matcher, correct: true }
+      - { value: attributes, correct: true }
+      - { value: route, correct: true }
+      - { value: domain, correct: false }
+      - { value: url, correct: false }
+      - { value: user_id, correct: false }
+    help: 'https://symfony.com/doc/current/security/access_control.html#1-matching-options'
+  -
     uuid: 1eeda48d-d1bc-6f24-b3b4-a5b63ba17a88
     question: 'Which options are matching words in access_control ?'
     answers:
@@ -39,34 +55,18 @@ questions:
       - { value: route, correct: false }
       - { value: methods, correct: false }
       - { value: path, correct: false }
-      - { value: "attributes", correct: false }
+      - { value: 'attributes', correct: false }
     help: 'https://symfony.com/doc/current/security/access_control.html#2-access-enforcement'
   -
     uuid: 1eeda4c7-518c-6fa4-80fb-09b72beaa117
     question: "If i have this access_control configured (roles: 'ROLE_ADMIN' and allow_if:  '127.0.0.1' == request.getClientIp() or request.headers.has('X-Secure-Access'). In Which configuration can i go on this page ?"
     answers:
       - { value: 'if i have ROLE_ADMIN', correct: false }
-      - { value: "If i have a header caledd X-Secure-Access", correct: false }
+      - { value: 'If i have a header caledd X-Secure-Access', correct: false }
       - { value: 'if my ip is 127.0.0.1', correct: false }
       - { value: 'every case', correct: true }
       - { value: none, correct: false }
     help: 'https://symfony.com/doc/current/security/access_control.html#securing-by-an-expression'
-  -
-    uuid: 1eebf878-8ba8-6ac8-83cc-99d84c92580c
-    question: 'Symfony creates an instance of RequestMatcher for each access_control entry, which determines whether or not a given access control should be used on this request. Wich options are use for matching ?'
-    answers:
-      - { value: path, correct: true }
-      - { value: 'ip or ips', correct: true }
-      - { value: port, correct: true }
-      - { value: host, correct: true }
-      - { value: methods, correct: true }
-      - { value: request_matcher, correct: true }
-      - { value: attributes, correct: true }
-      - { value: route, correct: true }
-      - { value: domain, correct: false }
-      - { value: url, correct: false }
-      - { value: user_id, correct: false }
-    help: 'https://symfony.com/doc/current/security/access_control.html#1-matching-options'
   -
     uuid: 1eee7804-148f-612c-9026-b35e86785063
     question: 'What does the affirmative strategy of AccessDecisionManager do?'

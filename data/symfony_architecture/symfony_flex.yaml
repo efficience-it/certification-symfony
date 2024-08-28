@@ -1,13 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8b9e-612c-9b8f-99d84c92580c
-    question: 'Which file should be edited in order to customize the default server error page ?'
-    answers:
-      - { value: templates/bundles/TwigBundle/Exception/error.html.twig, correct: true }
-      - { value: templates/bundles/TwigBundle/Exception/error500.html.twig, correct: false }
-      - { value: src/Controller/ExceptionController, correct: false }
-    help: 'https://symfony.com/doc/current/controller/error_pages.html#overriding-the-default-error-templates'
-  -
     uuid: 1eebf878-8b9d-6cc2-b85f-99d84c92580c
     question: 'Using FrameworkBundle configuration, what is the correct path to fill proxies IP?'
     answers:
@@ -64,14 +56,22 @@ questions:
       - { value: 'composer new-project symfony/skeleton my_project_name', correct: false }
       - { value: 'php bin/console new-project my_project_name', correct: false }
       - { value: 'symfony new my_project_name --full', correct: true }
-    help: 'https://symfony.com/doc/7.1/setup.html#creating-symfony-applications'
+    help: 'https://symfony.com/doc/current/setup.html#creating-symfony-applications"'
   -
     uuid: 1eebf878-8b9e-6050-bd8d-99d84c92580c
     question: 'Using Flex is mandatory since Symfony 4.0'
     answers:
       - { value: 'False', correct: true }
       - { value: 'True', correct: false }
-    help: 'https://symfony.com/doc/4.0/setup/flex.html#upgrading-existing-applications-to-flex'
+    help: 'https://symfony.com/doc/current/setup/flex.html#upgrading-existing-applications-to-flex'
+  -
+    uuid: 1eebf878-8b9e-612c-9b8f-99d84c92580c
+    question: 'Which file should be edited in order to customize the default server error page ?'
+    answers:
+      - { value: templates/bundles/TwigBundle/Exception/error.html.twig, correct: true }
+      - { value: templates/bundles/TwigBundle/Exception/error500.html.twig, correct: false }
+      - { value: src/Controller/ExceptionController, correct: false }
+    help: 'https://symfony.com/doc/current/controller/error_pages.html#overriding-the-default-error-templates'
   -
     uuid: 1eebf878-8ba4-64dc-9656-99d84c92580c
     question: 'Which of the following values are available to define a boolean element in YAML ?'
@@ -95,7 +95,7 @@ questions:
       - { value: 'Yes. The log file will depend on the environment where you execute the commands (prod.log, dev.log, etc.', correct: true }
       - { value: 'No', correct: false }
       - { value: 'Yes, but only if your command extends from the abstract ExceptionAwareCommand class.', correct: false }
-    help: "https://symfony.com/doc/3.4/console.html#logging-command-errors"
+    help: 'https://symfony.com/doc/current/console.html#logging-command-errors'
   -
     uuid: 1eebf878-8ba7-668c-b033-99d84c92580c
     question: 'What are the requirements your system needs to run Symfony?'
@@ -109,3 +109,66 @@ questions:
       - { value: 'You need to have the PHP-XML module installed', correct: false }
       - { value: 'PHP needs to be a minimum version of PHP 5.5.9', correct: true }
     help: 'https://symfony.com/doc/current/reference/requirements.html'
+  -
+    uuid: 1ef55613-d3b3-6cb2-ac12-39eab7e60328
+    question: "What is the purpose of the symfony.lock file ?"
+    answers:
+      - { value: "It stores the state of installed bundles and recipes.", correct: true }
+      - { value: "It contains user credentials for Symfony applications.", correct: false }
+      - { value: "It logs Symfony application errors.", correct: false }
+      - { value: "It tracks changes in Symfony Flex recipes.", correct: false }
+    help: 'https://afsy.fr/avent/2017/08-symfony-flex-la-nouvelle-facon-de-developper-avec-symfony'
+  -
+    uuid: 1ef55619-432c-695e-8f40-efd4a728a5fe
+    question: "What is Symfony Flex primarily used for?"
+    answers:
+      - { value: "Managing Symfony bundles and their configurations.", correct: true }
+      - { value: "Enhancing the security of Symfony applications.", correct: false }
+      - { value: "Optimizing database queries in Symfony applications.", correct: false }
+      - { value: "Automatically generating documentation for Symfony applications.", correct: false }
+    help: 'https://afsy.fr/avent/2017/08-symfony-flex-la-nouvelle-facon-de-developper-avec-symfony'
+  -
+    uuid: 1ef55628-cf10-6646-b7e1-c105ca74ed02
+    question: 'Composer flex intervenes when installing some packages like api, admin, log, orm, which are not packages, but aliases, and symfony flex which is actually a composer component installs the corresponding package.'
+    answers:
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
+    help: 'https://github.com/symfony/flex'
+  -
+    uuid: 1ef5562c-f16d-6f6e-9986-ff8af72c1e95
+    question: "Which of the following is a valid way to use an alias in Symfony Flex?"
+    answers:
+      - { value: "composer require symfony/alias-name", correct: false }
+      - { value: "composer require alias-name", correct: true }
+      - { value: "composer install alias-name", correct: false }
+      - { value: "composer add symfony/alias-name", correct: false }
+    help: 'https://symfony.com/doc/7.2/setup/flex.html'
+  -
+    uuid: 1ef55634-2b2a-67fa-9285-fbd574826ff3
+    question: 'Is it possible to modify the architecture of public, src, ... folders in symfony flex?'
+    answers:
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
+    help: 'https://symfony.com/doc/current/setup/flex.html#customizing-flex-paths'
+  -
+    uuid: 1ef562a5-90da-6c8a-8a47-9f1995dbf2d9
+    question: 'Some structure folders in symfony can be moved by specifying in the composer.json an  extra  section and adding src-dir for the src for example.'
+    answers:
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
+    help: 'https://symfony.com/doc/current/setup/flex.html#customizing-flex-paths'
+  -
+    uuid: 1ef562a7-a056-6676-8e1f-11075f5e94f6
+    question: 'Some structure folders in symfony can be moved by specifying in the composer.json an  extra  section and adding dir-public for the public folder for example.'
+    answers:
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
+    help: 'https://symfony.com/doc/current/setup/flex.html#customizing-flex-paths'
+  -
+    uuid: 1ef562ae-450d-60ba-99eb-831d11237fbd
+    question: 'Which extension is officialy used for yaml files ?'
+    answers:
+      - { value: .yaml, correct: true }
+      - { value: .yml, correct: false }
+      - { value: .yl, correct: false }
+    help: 'https://symfony.com/doc/current/setup/flex.html'

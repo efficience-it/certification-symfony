@@ -20,8 +20,21 @@ questions:
       - { value: 'none of them', correct: false }
     help: 'https://symfony.com/doc/current/routing.html#matching-expressions'
   -
+    uuid: 1eebf878-8ba8-6438-9c57-99d84c92580c
+    question: "What are the accessible variables you can call to restrict a route ?"
+    answers:
+      - { value: context, correct: true }
+      - { value: request, correct: true }
+      - { value: content-type, correct: false }
+      - { value: params, correct: true }
+      - { value: 'env(string $name)', correct: true }
+      - { value: 'service(string $alias)', correct: true }
+      - { value: user-agent, correct: false }
+      - { value: device, correct: false }
+    help: 'https://symfony.com/doc/current/routing.html#matching-expressions'
+  -
     uuid: 1eebf878-8ba8-6488-b768-99d84c92580c
-    question: "Cna a route can contain '/' ?"
+    question: "Can a route can contain '/' ?"
     answers:
       - { value: "Yes by setting a permissive way #[Route('/{token}', requirements: ['token' => '.+'])]", correct: true }
       - { value: 'No', correct: false }
@@ -34,16 +47,3 @@ questions:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/6.4/routing.html'
-  -
-    uuid: 1eebf878-8ba8-6438-9c57-99d84c92580c
-    question: 'What are the accessible variables you can call to restrict a route ?'
-    answers:
-      - { value: context, correct: true }
-      - { value: request, correct: true }
-      - { value: content-type, correct: false }
-      - { value: params, correct: true }
-      - { value: 'env(string $name)', correct: true }
-      - { value: 'service(string $alias)', correct: true }
-      - { value: user-agent, correct: false }
-      - { value: device, correct: false }
-    help: 'https://symfony.com/doc/6.4/routing.html#matching-expressions'

@@ -7,7 +7,6 @@ questions:
       - { value: Symfony\Component\Console\Tester\CommandTester, correct: true }
       - { value: Symfony\Component\Console\Tester\CommandUnitTester, correct: false }
       - { value: Symfony\Component\Console\Tester\CommandUnit, correct: false }
-      - { value: Symfony\Component\Console\Tester\CommandTester, correct: true }
     help: 'https://symfony.com/doc/current/console.html#testing-commands'
   -
     uuid: 1eebf878-8ba4-6c48-a631-99d84c92580c

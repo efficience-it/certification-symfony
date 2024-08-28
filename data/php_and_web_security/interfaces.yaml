@@ -7,6 +7,13 @@ questions:
       - { value: 'False', correct: false }
     help: 'https://php.net/manual/en/language.oop5.interfaces.php#language.oop5.interfaces.constants'
   -
+    uuid: 1eebf878-8ba3-6276-8a52-99d84c92580c
+    question: 'Can interfaces define constants in PHP?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://php.net/interfaces'
+  -
     uuid: 1eee6cf7-7590-6308-9026-fd4214ed6e4c
     question: 'Which keyword is used to use an interface in class definition ?'
     answers:
@@ -22,10 +29,3 @@ questions:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
     help: 'https://www.php.net/manual/en/language.oop5.interfaces.php'
-  -
-    uuid: 1eebf878-8ba3-6276-8a52-99d84c92580c
-    question: 'Can interfaces define constants in PHP?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://php.net/interfaces'

@@ -1,5 +1,12 @@
 questions:
   -
+    uuid: 1eebf878-8b97-6174-b11e-99d84c92580c
+    question: 'Could the destination of the dump be customized?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/components/var_dumper.html#the-dump-server'
+  -
     uuid: 1eebf878-8b97-691c-8545-99d84c92580c
     question: 'Which method should you call to customize the behavior of the global dump() function?'
     answers:
@@ -8,6 +15,27 @@ questions:
       - { value: 'VarDumper::setHandler($callable);', correct: true }
       - { value: 'VarDumper::setDumper($callable);', correct: false }
     help: 'https://symfony.com/doc/current/components/var_dumper.html#advanced-usage'
+  -
+    uuid: 1eebf878-8b98-6c9a-b348-99d84c92580c
+    question: "Is it valid to personnalize the debug toolbar like this ? setTheme('light');"
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/VarDumper/Dumper/HtmlDumper.php#L97'
+  -
+    uuid: 1eebf878-8b99-61ae-89e6-99d84c92580c
+    question: 'Could the theme used by HtmlDumper be changed?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://symfony.com/doc/current/components/var_dumper.html#advanced-usage'
+  -
+    uuid: 1eebf878-8b99-64c4-aa39-99d84c92580c
+    question: 'What is the second optional parameter of the Symfony\Component\VarDumper\VarDumper::dump method ?'
+    answers:
+      - { value: 'Nothing, the Symfony\Component\VarDumper\VarDumper::dump has just one parameter.', correct: true }
+      - { value: 'An optional $return boolean variable to return the information rather than print it.', correct: false }
+    help: 'https://symfony.com/doc/current/components/var_dumper.html#the-dump-function'
   -
     uuid: 1eebf878-8b99-6514-a3e7-99d84c92580c
     question: 'Which method should you call to customize the behavior of the global dump() function?'
@@ -24,34 +52,6 @@ questions:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/current/components/var_dumper.html#configuring-the-dump-server-with-environment-variables'
-  -
-    uuid: 1eebf878-8b97-6174-b11e-99d84c92580c
-    question: 'Could the destination of the dump be customized?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/components/var_dumper.html#the-dump-server'
-  -
-    uuid: 1eebf878-8b98-6c9a-b348-99d84c92580c
-    question: "Is it valid to personnalize the debug toolbar like this ? setTheme('light');"
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: "https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/VarDumper/Dumper/HtmlDumper.php#L97"
-  -
-    uuid: 1eebf878-8b99-61ae-89e6-99d84c92580c
-    question: 'Could the theme used by HtmlDumper be changed?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://symfony.com/doc/current/components/var_dumper.html#advanced-usage'
-  -
-    uuid: 1eebf878-8b99-64c4-aa39-99d84c92580c
-    question: 'What is the second optional parameter of the Symfony\Component\VarDumper\VarDumper::dump method ?'
-    answers:
-      - { value: 'Nothing, the Symfony\Component\VarDumper\VarDumper::dump has just one parameter.', correct: true }
-      - { value: 'An optional $return boolean variable to return the information rather than print it.', correct: false }
-    help: "https://symfony.com/doc/current/components/var_dumper.html#the-dump-function"
   -
     uuid: 1eebf878-8b9b-6530-9f87-99d84c92580c
     question: 'What kind of help provides the config:dump-reference command?'

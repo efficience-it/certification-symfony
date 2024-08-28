@@ -1,5 +1,85 @@
 questions:
   -
+    uuid: 1eebf878-8b99-608c-8846-99d84c92580c
+    question: 'Could enumerations be used with !php/const?'
+    answers:
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+    help: 'https://github.com/symfony/symfony/pull/40857'
+  -
+    uuid: 1eebf878-8b9c-6a52-8c18-99d84c92580c
+    question: 'Which interface(s) should an Object implement to be usable in a foreach statement?'
+    answers:
+      - { value: ArrayAccess, correct: false }
+      - { value: IteratorAggregate, correct: true }
+      - { value: Traversable, correct: true }
+    help: 'https://www.php.net/manual/en/reserved.interfaces.php'
+  -
+    uuid: 1eebf878-8b9c-6f7a-95b7-99d84c92580c
+    question: 'Which keyword is used to block any overriding of a class/method by a subclass?'
+    answers:
+      - { value: void, correct: false }
+      - { value: private, correct: false }
+      - { value: protected, correct: false }
+      - { value: static, correct: false }
+      - { value: final, correct: true }
+    help: 'https://php.net/manual/en/language.oop5.final.php'
+  -
+    uuid: 1eebf878-8ba2-652e-923d-99d84c92580c
+    question: 'What is the primary difference between a method declared as static and a normal method ?'
+    answers:
+      - { value: 'There is no functional difference between a static and non-static method.', correct: false }
+      - { value: 'Static methods cannot be called from within class instances.', correct: false }
+      - { value: 'Static methods do not provide a reference to $this.', correct: true }
+      - { value: "Static methods don't have access to the self keyword.", correct: false }
+      - { value: 'Static methods can only be called using the :: syntax and never from an instance.', correct: true }
+    help: 'https://php.net/manual/en/language.oop5.static.php'
+  -
+    uuid: 1eebf878-8ba2-6934-ad03-99d84c92580c
+    question: "What will be the output of the following code?class Foo {  const BAR = 4+1;}echo Foo::BAR;"
+    answers:
+      - { value: 'An error', correct: false }
+      - { value: '1', correct: false }
+      - { value: '4', correct: false }
+      - { value: '5', correct: true }
+    help: 'https://www.php.net/manual/fr/language.oop5.constants.php#116109'
+  -
+    uuid: 1eebf878-8ba3-68a2-b45e-99d84c92580c
+    question: 'What is the default change tracking policy?'
+    answers:
+      - { value: DEFERRED_EXPLICIT, correct: false }
+      - { value: DEFERRED_IMPLICIT, correct: true }
+      - { value: NOTIFY, correct: false }
+    help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/change-tracking-policies.html#deferred-implicit'
+  -
+    uuid: 1eebf878-8ba3-6f32-b11b-99d84c92580c
+    question: 'Which of the following assertions are true about the instanceof keyword?'
+    answers:
+      - { value: 'It checks if a variable value is of type object.', correct: false }
+      - { value: 'It checks if a variable value is an instance of a dedicated class.', correct: true }
+      - { value: 'It checks if a variable value is an iterable data structure.', correct: false }
+      - { value: 'It checks if a variable value is an instance of a class that implements a certain interface.', correct: true }
+    help: 'https://www.php.net/instanceof'
+  -
+    uuid: 1eebf878-8ba4-6496-8b71-99d84c92580c
+    question: "What is wrong with this repository method ?public function filterBooks(array $filters){return $this->createQueryBuild('b')->where('b.year = :year');->setParameters(['year' => $filters['year']]);->andWhere('b.gender = :gender');->setParameters(['gender' => $filters['gender']])->getResults();}"
+    answers:
+      - { value: "The method createQueryBuild does not exist, it's createQueryBuilder", correct: true }
+      - { value: 'The method getResults does not exists. You should use getResult().', correct: true }
+      - { value: 'The second call setParameters(...) will erase data set in the first call. So year will be deleted from the parameters list. You should use setParameter($name, $value).', correct: true }
+      - { value: 'The query builder does not have a getResults() method. You should use getQuery().', correct: true }
+    help: 'https://symfony.com/doc/current/doctrine.html#querying-for-objects-using-doctrine-s-query-builder'
+  -
+    uuid: 1eebf878-8ba4-6874-81e0-99d84c92580c
+    question: 'Which built-in PHP extension enables to programmatically introspect a class, a method, an interface, a trait or any other object oriented related data structures?'
+    answers:
+      - { value: XDebug, correct: false }
+      - { value: Tokenizer, correct: false }
+      - { value: SPL, correct: false }
+      - { value: Reflection, correct: true }
+      - { value: PCRE, correct: false }
+    help: 'https://php.net/manual/fr/book.reflection.php'
+  -
     uuid: 1eebf878-8ba5-6116-88ba-99d84c92580c
     question: "Is it possible make $tags directly indexed with a specified field ?/** @Entity */class Content{/** @OneToMany(targetEntity= Tag ) */private Tag $tags;}"
     answers:
@@ -7,6 +87,22 @@ questions:
       - { value: 'No', correct: false }
       - { value: 'Yes, by implementing the IndexableInterface', correct: false }
     help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/tutorials/working-with-indexed-associations.html#mapping-indexed-associations'
+  -
+    uuid: 1eebf878-8ba6-6f7a-b2b7-99d84c92580c
+    question: 'What is true about composite primary keys?'
+    answers:
+      - { value: 'The @Id annotation must be used on more than one column.', correct: true }
+      - { value: 'An auto increment strategy can be used for one of the key using the @GeneratedValue annotation.', correct: true }
+      - { value: 'Composite keys must be avoided as much as possible.', correct: true }
+      - { value: 'Composite keys must only consist of the primitives types integer and string.', correct: true }
+    help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/basic-mapping.html#composite-keys'
+  -
+    uuid: 1eebf878-8baa-6300-a5f4-99d84c92580c
+    question: 'Does the orphanRemoval attribute work with a Many-to-One association ?'
+    answers:
+      - { value: 'No', correct: true }
+      - { value: 'Yes', correct: false }
+    help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/working-with-associations.html#orphan-removal'
   -
     uuid: 1eee6ccd-5f53-6baa-9026-817ee026fe64
     question: 'Which property of abstract class are true ?'
@@ -61,99 +157,3 @@ questions:
       - { value: 'No', correct: true }
       - { value: 'Yes', correct: false }
     help: 'https://www.php.net/manual/en/language.oop5.final.php'
-  -
-    uuid: 1eebf878-8ba3-68a2-b45e-99d84c92580c
-    question: 'What is the default change tracking policy?'
-    answers:
-      - { value: DEFERRED_EXPLICIT, correct: false }
-      - { value: DEFERRED_IMPLICIT, correct: true }
-      - { value: NOTIFY, correct: false }
-    help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/change-tracking-policies.html#deferred-implicit'
-  -
-    uuid: 1eebf878-8ba4-6496-8b71-99d84c92580c
-    question: "What is wrong with this repository method ?public function filterBooks(array $filters){return $this->createQueryBuild('b')->where('b.year = :year');->setParameters(['year' => $filters['year']]);->andWhere('b.gender = :gender');->setParameters(['gender' => $filters['gender']])->getResults();}"
-    answers:
-      - { value: "The method createQueryBuild does not exist, it's createQueryBuilder", correct: true }
-      - { value: 'The method getResults does not exists. You should use getResult().', correct: true }
-      - { value: 'The second call setParameters(...) will erase data set in the first call. So year will be deleted from the parameters list. You should use setParameter($name, $value).', correct: true }
-      - { value: 'The query builder does not have a getResults() method. You should use getQuery().', correct: true }
-    help: 'https://symfony.com/doc/current/doctrine.html#querying-for-objects-using-doctrine-s-query-builder'
-  -
-    uuid: 1eebf878-8b99-608c-8846-99d84c92580c
-    question: 'Could enumerations be used with !php/const?'
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://github.com/symfony/symfony/pull/40857'
-  -
-    uuid: 1eebf878-8b9c-6a52-8c18-99d84c92580c
-    question: 'Which interface(s) should an Object implement to be usable in a foreach statement?'
-    answers:
-      - { value: ArrayAccess, correct: false }
-      - { value: IteratorAggregate, correct: true }
-      - { value: Traversable, correct: true }
-    help: 'https://www.php.net/manual/en/reserved.interfaces.php'
-  -
-    uuid: 1eebf878-8b9c-6f7a-95b7-99d84c92580c
-    question: 'Which keyword is used to block any overriding of a class/method by a subclass?'
-    answers:
-      - { value: void, correct: false }
-      - { value: private, correct: false }
-      - { value: protected, correct: false }
-      - { value: static, correct: false }
-      - { value: final, correct: true }
-    help: 'https://php.net/manual/en/language.oop5.final.php'
-  -
-    uuid: 1eebf878-8ba2-652e-923d-99d84c92580c
-    question: 'What is the primary difference between a method declared as static and a normal method ?'
-    answers:
-      - { value: 'There is no functional difference between a static and non-static method.', correct: false }
-      - { value: 'Static methods cannot be called from within class instances.', correct: false }
-      - { value: 'Static methods do not provide a reference to $this.', correct: true }
-      - { value: "Static methods don't have access to the self keyword.", correct: false }
-      - { value: 'Static methods can only be called using the :: syntax and never from an instance.', correct: true }
-    help: 'https://php.net/manual/en/language.oop5.static.php'
-  -
-    uuid: 1eebf878-8ba2-6934-ad03-99d84c92580c
-    question: "What will be the output of the following code?class Foo {  const BAR = 4+1;}echo Foo::BAR;"
-    answers:
-      - { value: 'An error', correct: false }
-      - { value: '1', correct: false }
-      - { value: '4', correct: false }
-      - { value: '5', correct: true }
-    help: 'https://www.php.net/manual/fr/language.oop5.constants.php#116109'
-  -
-    uuid: 1eebf878-8ba3-6f32-b11b-99d84c92580c
-    question: 'Which of the following assertions are true about the instanceof keyword?'
-    answers:
-      - { value: 'It checks if a variable value is of type object.', correct: false }
-      - { value: 'It checks if a variable value is an instance of a dedicated class.', correct: true }
-      - { value: 'It checks if a variable value is an iterable data structure.', correct: false }
-      - { value: 'It checks if a variable value is an instance of a class that implements a certain interface.', correct: true }
-    help: 'https://www.php.net/instanceof'
-  -
-    uuid: 1eebf878-8ba4-6874-81e0-99d84c92580c
-    question: 'Which built-in PHP extension enables to programmatically introspect a class, a method, an interface, a trait or any other object oriented related data structures?'
-    answers:
-      - { value: XDebug, correct: false }
-      - { value: Tokenizer, correct: false }
-      - { value: SPL, correct: false }
-      - { value: Reflection, correct: true }
-      - { value: PCRE, correct: false }
-    help: 'https://php.net/manual/fr/book.reflection.php'
-  -
-    uuid: 1eebf878-8ba6-6f7a-b2b7-99d84c92580c
-    question: "What is true about composite primary keys?"
-    answers:
-      - { value: 'The @Id annotation must be used on more than one column.', correct: true }
-      - { value: 'An auto increment strategy can be used for one of the key using the @GeneratedValue annotation.', correct: true }
-      - { value: 'Composite keys must be avoided as much as possible.', correct: true }
-      - { value: 'Composite keys must only consist of the primitives types integer and string.', correct: true }
-    help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/basic-mapping.html#composite-keys'
-  -
-    uuid: 1eebf878-8baa-6300-a5f4-99d84c92580c
-    question: "Does the orphanRemoval attribute work with a Many-to-One association ?"
-    answers:
-      - { value: 'No', correct: true }
-      - { value: 'Yes', correct: false }
-    help: 'https://docs.doctrine-project.org/projects/doctrine-orm/en/latest/reference/working-with-associations.html#orphan-removal'

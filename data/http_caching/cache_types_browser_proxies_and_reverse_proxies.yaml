@@ -5,7 +5,7 @@ questions:
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
-    help: 'https://datatracker.ietf.org/doc/html/rfc6585#section-6https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/511'
+    help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/511'
   -
     uuid: 1eebf878-8ba5-6166-a6ab-99d84c92580c
     question: 'You query for an object joining on a single-valued association object that is configured LAZY.'

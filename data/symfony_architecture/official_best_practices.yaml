@@ -1,5 +1,12 @@
 questions:
   -
+    uuid: 1eebf878-8b99-6244-b5bc-99d84c92580c
+    question: 'Is it a best practice to use the @Template annotation?'
+    answers:
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+    help: 'https://symfony.com/doc/current/best_practices.html#don-t-use-annotations-to-configure-the-controller-template'
+  -
     uuid: 1eebf878-8b9a-68ce-b5e5-99d84c92580c
     question: 'According to the official Symfony Best Practices Guide, where should the application specific configuration parameters be stored?'
     answers:
@@ -9,13 +16,6 @@ questions:
       - { value: 'In the config/services.yaml file.', correct: true }
       - { value: 'In global environment variables.', correct: false }
     help: 'https://symfony.com/doc/current/best_practices.html#application-related-configuration'
-  -
-    uuid: 1eebf878-8b99-6244-b5bc-99d84c92580c
-    question: 'Is it a best practice to use the @Template annotation?'
-    answers:
-      - { value: 'Yes', correct: false }
-      - { value: 'No', correct: true }
-    help: 'https://symfony.com/doc/current/best_practices.html#don-t-use-annotations-to-configure-the-controller-template'
   -
     uuid: 1eebf878-8b9a-6ea0-acb2-99d84c92580c
     question: 'According to the official Symfony Best Practices Guide, which letter case do you need to use for template names as well as their folder?'
@@ -119,3 +119,53 @@ questions:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/current/best_practices.html#service-no-class-parameter'
+  -
+    uuid: 1ef5bb47-4340-610a-accc-f5fc6195c240
+    question: "Which format is recommended for defining services in a Symfony application?"
+    answers:
+      - { value: "XML", correct: false }
+      - { value: "JSON", correct: false }
+      - { value: "YAML", correct: true }
+      - { value: "PHP", correct: false }
+    help: 'https://symfony.com/doc/current/best_practices.html#use-the-yaml-format-to-configure-your-own-services'
+  -
+    uuid: 1ef5bb4b-5936-6eba-9746-5946503a32b1
+    question: "What is the recommended way to handle sensitive information in Symfony?"
+    answers:
+      - { value: "Store them in .env files", correct: false }
+      - { value: "Hard-code them in the application", correct: false }
+      - { value: "Use Symfony's secrets management system", correct: true }
+      - { value: "Define them as constants in the code", correct: false }
+    help: 'https://symfony.com/doc/current/best_practices.html#use-secrets-for-sensitive-information'
+  -
+    uuid: 1ef5bb4d-3ad0-6410-8e3f-1f036f6a18e2
+    question: "Symfony recommends creating a bundle for every major feature in your application."
+    answers:
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: false }
+    help: 'https://symfony.com/doc/current/best_practices.html#don-t-create-any-bundle-to-organize-your-application-logic'
+  -
+    uuid: 1ef5bb50-2f15-6c4e-b579-e734fa63c9a6
+    question: "It's recommended to use short and prefixed parameter names to avoid collisions with Symfony and third-party libraries."
+    answers:
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
+    help: 'https://symfony.com/doc/current/best_practices.html#use-short-and-prefixed-parameter-names'
+  -
+    uuid: 1ef5bb54-bb8a-6c84-a335-ab9323a5c145
+    question: "Which of the following is recommended for organizing your application logic in Symfony?"
+    answers:
+      - { value: "Creating multiple bundles for different features", correct: false }
+      - { value: "Organizing code using PHP namespaces", correct: true }
+      - { value: "Using only one bundle for the entire application", correct: false }
+      - { value: "Placing all logic in the public/ directory", correct: false }
+    help: 'https://symfony.com/doc/current/best_practices.html#don-t-create-any-bundle-to-organize-your-application-logic'
+  -
+    uuid: 1ef5bb57-2a4b-65d6-9c68-ad0ee29d5778
+    question: "What is the recommended way to define configuration options that rarely change, like the number of items displayed in a list?"
+    answers:
+      - { value: "Define them as parameters in services.yaml", correct: false }
+      - { value: "Store them in the .env file", correct: false }
+      - { value: "Define them as PHP constants in the related classes", correct: true }
+      - { value: "Hard-code them directly in the templates", correct: false }
+    help: 'https://symfony.com/doc/current/best_practices.html#use-constants-to-define-options-that-rarely-change'
