@@ -13,7 +13,7 @@ questions:
     answers:
       - {value: 'Yes', correct: true}
       - {value: 'No', correct: false}
-    help: 'https://symfony.com/doc/current/security.html#securing-other-services<br>'
+    help: 'https://symfony.com/doc/current/security.html#securing-other-services'
   -
     uuid: 1eebf878-8ba1-6c00-a261-99d84c92580c
     question: 'What is the name of the service that check authorization?'

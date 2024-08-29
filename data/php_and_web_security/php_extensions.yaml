@@ -117,4 +117,13 @@ questions:
       - {value: quotemeta, correct: false}
       - {value: html_entity_decode, correct: false}
       - {value: strip_tags, correct: true}
-    help: 'https://php.net/manual/en/function.strip-tags.php<br>'
+    help: 'https://php.net/manual/en/function.strip-tags.php'
+  -
+    uuid: 1ef65dae-a399-6d26-aeef-a5ef638f9c65
+    question: "What is the default expiration time for a PHP session cookie?"
+    answers:
+      - {value: "10 minutes", correct: false}
+      - {value: "Until the browser is closed", correct: true}
+      - {value: 'Depends on the web server', correct: false}
+      - {value: '20 minutes', correct: false}
+    help: 'https://www.php.net/manual/en/session.configuration.php#ini.session.cookie-lifetime'

@@ -36,3 +36,21 @@ questions:
       - {value: $_ENV, correct: false}
       - {value: $_REQUEST, correct: true}
     help: 'https://php.net/manual/en/reserved.variables.post.php'
+  -
+    uuid: 1ef65db9-50b2-6274-ab3b-834e2ca05a89
+    question: "Is the following code valid? $value = Yaml::parse(file_get_contents('/path/to/file.yml'));"
+    answers:
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
+    help: 'https://symfony.com/doc/current/components/yaml.html#reading-yaml-files'
+  -
+    uuid: 1ef65dbc-b1db-602a-b33b-05d4fde5fe6a
+    question: "Which format of configuration file can be used to set PHP constants as parameters?"
+    answers:
+      - {value: "YAML", correct: true}
+      - {value: XML, correct: true}
+      - {value: INI, correct: false}
+      - {value: PHP, correct: true}
+      - {value: Annotation, correct: false}
+      - {value: Attribute, correct: false}
+    help: 'https://symfony.com/doc/current/configuration.html#constants-as-parameters'

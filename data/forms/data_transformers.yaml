@@ -5,7 +5,7 @@ questions:
     answers:
       - {value: 'Yes', correct: true}
       - {value: 'No', correct: false}
-    help: 'https://symfony.com/doc/current/form/data_transformers.html<br>'
+    help: 'https://symfony.com/doc/current/form/data_transformers.html'
   -
     uuid: 1eebf878-8b9c-6aa2-a4b0-99d84c92580c
     question: 'How to add a DataTransformer to the tags field?'

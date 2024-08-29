@@ -154,3 +154,14 @@ questions:
       - {value: "CompilerPassInterface", correct: true}
       - {value: "LoggerInterface", correct: false}
     help: 'https://symfony.com/doc/current/service_container/tags.html#reference-tagged-services'
+  -
+    uuid: 1ef65d9b-8263-67dc-8360-55648c706b2e
+    question: "What tag is used to introduce a new HTTP content rendering strategy?"
+    answers:
+      - {value: "kernel.fragment_renderer", correct: true}
+      - {value: "kernel.renderer", correct: false}
+      - {value: fragment_renderer, correct: false}
+      - {value: kernel.content_renderer, correct: false}
+      - {value: content_renderer, correct: false}
+      - {value: renderer, correct: false}
+    help: 'https://symfony.com/doc/current/reference/dic_tags.html#kernel-fragment-renderer'

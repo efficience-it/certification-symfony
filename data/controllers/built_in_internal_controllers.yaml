@@ -16,3 +16,10 @@ questions:
       - {value: Sensio\Bundle\FrameworkBundle\Controller\TemplateController, correct: false}
       - {value: SensioExtraFramework\Bundle\Controller\TemplateController, correct: false}
     help: 'https://symfony.com/doc/current/templates.html#rendering-a-template-directly-from-a-route'
+  -
+    uuid: 1ef65da6-c3df-611a-a297-cbefde6d45ba
+    question: "Does the order of the controller arguments matter when mapping route parameters to controller arguments?"
+    answers:
+      - {value: 'Yes', correct: false}
+      - {value: 'No', correct: true}
+    help: 'https://symfony.com/doc/current/controller.html#route-parameters-as-controller-arguments'

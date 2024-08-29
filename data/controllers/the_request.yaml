@@ -1,37 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8ba8-6a5a-8490-99d84c92580c
-    question: 'What methods are available in the Request $request object ?'
-    answers:
-      - {value: $request->isXmlHttpRequest();, correct: true}
-      - {value: $request->getClientIps();, correct: true}
-      - {value: "$request->getPreferredLanguage(['en', 'fr']);", correct: true}
-      - {value: "$request->server->get('HTTP_HOST');", correct: true}
-      - {value: "$request->files->get('foo'); ", correct: true}
-      - {value: "$request->request->get('page'); ", correct: true}
-      - {value: "$request->query->get('page'); ", correct: true}
-      - {value: "$request->headers->get('content-type');", correct: true}
-    help: 'https://symfony.com/doc/current/controller.html#the-request-and-response-object'
-  -
-    uuid: 1eebf878-8ba0-6238-b1a8-99d84c92580c
-    question: 'How to access the `foo` GET parameter from Request object $request ?'
-    answers:
-      - {value: "$request->query->get('foo');", correct: true}
-      - {value: "$request->request->get('foo');", correct: false}
-      - {value: "$request->query->all()['foo'];", correct: true}
-      - {value: "$request->get('foo');", correct: true}
-    help: 'https://symfony.com/doc/current/components/http_foundation.html#accessing-request-data'
-  -
-    uuid: 1eebf878-8b9a-678e-b85e-99d84c92580c
-    question: 'What is the default status code of a Symfony\Component\HttpFoundation\Response object?'
-    answers:
-      - {value: '200', correct: true}
-      - {value: '204', correct: false}
-      - {value: '202', correct: false}
-      - {value: '400', correct: false}
-      - {value: '201', correct: false}
-    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/HttpFoundation/Response.php#L220'
-  -
     uuid: 1eebf878-8b97-6264-acf8-99d84c92580c
     question: 'Which of the following is a valid way to create an instance of Symfony\Component\HttpFoundation\Request?'
     answers:
@@ -69,12 +37,31 @@ questions:
       - {value: 'use Symfony\Component\HttpFoundation\JsonResponse;$response = new JsonResponse(array(''data'' => 123));return $response;', correct: true}
     help: 'https://symfony.com/doc/current/components/http_foundation.html#creating-a-json-response'
   -
+    uuid: 1eebf878-8b9a-678e-b85e-99d84c92580c
+    question: 'What is the default status code of a Symfony\Component\HttpFoundation\Response object?'
+    answers:
+      - {value: '200', correct: true}
+      - {value: '204', correct: false}
+      - {value: '202', correct: false}
+      - {value: '400', correct: false}
+      - {value: '201', correct: false}
+    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/HttpFoundation/Response.php#L220'
+  -
     uuid: 1eebf878-8b9d-690c-a417-99d84c92580c
     question: 'Could the controller arguments be set from within ControllerArgumentsEvent?'
     answers:
       - {value: 'No', correct: false}
       - {value: 'Yes', correct: true}
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/VarDumper/Dumper/HtmlDumper.php#L98'
+  -
+    uuid: 1eebf878-8ba0-6238-b1a8-99d84c92580c
+    question: 'How to access the `foo` GET parameter from Request object $request ?'
+    answers:
+      - {value: "$request->query->get('foo');", correct: true}
+      - {value: "$request->request->get('foo');", correct: false}
+      - {value: "$request->query->all()['foo'];", correct: true}
+      - {value: "$request->get('foo');", correct: true}
+    help: 'https://symfony.com/doc/current/components/http_foundation.html#accessing-request-data'
   -
     uuid: 1eebf878-8ba0-6288-acf3-99d84c92580c
     question: 'How to access the `bar` POST parameter from Request object $request ?'
@@ -158,7 +145,7 @@ questions:
       - {value: "$request = Request::create('GET','/hello-world');", correct: false}
       - {value: "$request = Request::create('/hello-world','GET');", correct: true}
       - {value: "$request = Request::create('/hello-world');", correct: true}
-    help: "https://symfony.com/doc/current/components/http_foundation.html#simulating-a-request"
+    help: 'https://symfony.com/doc/current/components/http_foundation.html#simulating-a-request&nbsp;'
   -
     uuid: 1eebf878-8ba2-6c7c-b75b-99d84c92580c
     question: 'If you need to change request data before binding them to the form, which event should your code hook into?'
@@ -183,3 +170,16 @@ questions:
       - {value: 'Yes', correct: true}
       - {value: 'No', correct: false}
     help: 'https://symfony.com/doc/current/validation.html#debugging-the-constraints'
+  -
+    uuid: 1eebf878-8ba8-6a5a-8490-99d84c92580c
+    question: 'What methods are available in the Request $request object ?'
+    answers:
+      - {value: $request->isXmlHttpRequest();, correct: true}
+      - {value: $request->getClientIps();, correct: true}
+      - {value: "$request->getPreferredLanguage(['en', 'fr']);", correct: true}
+      - {value: "$request->server->get('HTTP_HOST');", correct: true}
+      - {value: "$request->files->get('foo');", correct: true}
+      - {value: "$request->request->get('page');", correct: true}
+      - {value: "$request->query->get('page');", correct: true}
+      - {value: "$request->headers->get('content-type');", correct: true}
+    help: 'https://symfony.com/doc/current/controller.html#the-request-and-response-object'

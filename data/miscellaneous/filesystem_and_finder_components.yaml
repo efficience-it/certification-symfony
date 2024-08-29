@@ -14,7 +14,7 @@ questions:
     answers:
       - {value: 'Yes', correct: true}
       - {value: 'No', correct: false}
-    help: 'https://symfony.com/doc/current/components/filesystem.html#mirror<br>'
+    help: 'https://symfony.com/doc/current/components/filesystem.html#mirror'
   -
     uuid: 1eebf878-8b99-60d2-94e5-99d84c92580c
     question: 'What is the Symfony\Component\Filesystem\Filesystem method to check if the given path is absolute ?'
