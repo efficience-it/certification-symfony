@@ -2,16 +2,18 @@
 ![Validation Content Status](https://github.com/efficience-it/certification-symfony/actions/workflows/validate-content.yaml/badge.svg)
 
 
-# Certification Symfony
+# 🎓 Certification Symfony: Your Path to Mastery!
 
-In order to get the `Symfony certification`, and to be prepared to it, you have few options: train by yourself, get a training on sensiolabs or train by doing tests.
-Thats what we prupose here, linked to the elements shown by the certification page, we grouped questions to be sure to master every single page on the symfony documentation.
+Looking to earn your `Symfony certification`? Preparing for it can be an exciting journey with the right tools and resources! Whether you prefer to train on your own, attend a SensioLabs course, or practice by taking mock exams, we’ve got you covered.
+## 📚 What We Offer ?
 
-Each Category and Sub Category have questions, with one or more valid answers. If you would, you can use this [repository](https://github.com/certificationy/certificationy-cli) to train by cli.
+To help you prepare effectively, we've organized questions based on the key topics outlined on the official certification page. Each category and subcategory contains questions with one or more correct answers, ensuring you're ready to master every aspect of the Symfony documentation.
 
-To train with our team, contact us on [https://www.itefficience.com/contact](https://www.itefficience.com/contact)
+If you prefer a command-line approach, check out this [CLI training repository](https://github.com/certificationy/certificationy-cli). It's a fantastic way to test your knowledge and track your progress!
 
-## PHP and Web Security
+Want to train with our team of experts? Reach out to us at [https://www.itefficience.com/contact](https://www.itefficience.com/contact) and let’s get started!
+
+### 🔒 PHP and Web Security
 - [PHP API up to PHP 8.1 version](data/php_and_web_security/phpapi_up_to_php81_version.yaml)
 - [Object Oriented Programming](data/php_and_web_security/object_oriented_programming.yaml)
 - [Namespaces](data/php_and_web_security/namespaces.yaml)
@@ -23,7 +25,7 @@ To train with our team, contact us on [https://www.itefficience.com/contact](htt
 - [PHP extensions](data/php_and_web_security/php_extensions.yaml)
 - SPL
 
-## HTTP
+### 🌐 HTTP
 - [Client / Server interaction](data/http/client_server_interaction.yaml)
 - [Status codes](data/http/status_codes.yaml)
 - [HTTP request](data/http/http_request.yaml)
@@ -35,7 +37,7 @@ To train with our team, contact us on [https://www.itefficience.com/contact](htt
 - [Language detection](data/http/language_detection.yaml)
 - Symfony HttpClient component
 
-## Symfony Architecture
+### 🏛️ Symfony Architecture
 - [Symfony Flex](data/symfony_architecture/symfony_flex.yaml)
 - [License](data/symfony_architecture/license.yaml)
 - [Components](data/symfony_architecture/components.yaml)
@@ -53,7 +55,7 @@ To train with our team, contact us on [https://www.itefficience.com/contact](htt
 - [Framework interoperability and PSRs](data/symfony_architecture/framework_interoperability_and_ps_rs.yaml)
 - [Naming conventions](data/symfony_architecture/naming_conventions.yaml)
 
-## Controllers
+### 🎮 Controllers
 - Naming conventions
 - [The base AbstractController class](data/controllers/the_base_abstract_controller_class.yaml)
 - [The request](data/controllers/the_request.yaml)
@@ -67,7 +69,7 @@ To train with our team, contact us on [https://www.itefficience.com/contact](htt
 - File upload
 - [Built-in internal controllers](data/controllers/built_in_internal_controllers.yaml)
 
-## Routing
+### 🗺️ Routing
 - [Configuration (YAML, XML, PHP & attributes/annotations)](data/routing/configuration_yamlxmlphp_and_attributes_annotations.yaml)
 - Restrict URL parameters
 - [Set default values to URL parameters](data/routing/set_default_values_to_url_parameters.yaml)
@@ -80,7 +82,7 @@ To train with our team, contact us on [https://www.itefficience.com/contact](htt
 - [User's locale guessing](data/routing/user_s_locale_guessing.yaml)
 - [Router debugging](data/routing/router_debugging.yaml)
 
-## Templating with Twig
+### 🌟 Templating with Twig
 - [Twig syntax up to 3.3 version](data/templating_with_twig/twig_syntax_up_to33_version.yaml)
 - [Auto escaping](data/templating_with_twig/auto_escaping.yaml)
 - [Template inheritance](data/templating_with_twig/template_inheritance.yaml)
@@ -95,7 +97,7 @@ To train with our team, contact us on [https://www.itefficience.com/contact](htt
 - [Assets management](data/templating_with_twig/assets_management.yaml)
 - [Debugging variables](data/templating_with_twig/debugging_variables.yaml)
 
-## Forms
+### 📝 Forms
 - [Forms creation](data/forms/forms_creation.yaml)
 - [Forms handling](data/forms/forms_handling.yaml)
 - [Form types](data/forms/form_types.yaml)
@@ -108,7 +110,7 @@ To train with our team, contact us on [https://www.itefficience.com/contact](htt
 - [Form events](data/forms/form_events.yaml)
 - [Form type extensions](data/forms/form_type_extensions.yaml)
 
-## Data Validation
+### ✅ Data Validation
 - [PHP object validation](data/data_validation/php_object_validation.yaml)
 - [Built-in validation constraints](data/data_validation/built_in_validation_constraints.yaml)
 - [Validation scopes](data/data_validation/validation_scopes.yaml)
@@ -117,7 +119,7 @@ To train with our team, contact us on [https://www.itefficience.com/contact](htt
 - [Custom callback validators](data/data_validation/custom_callback_validators.yaml)
 - [Violations builder](data/data_validation/violations_builder.yaml)
 
-## Dependency Injection
+### 🧩 Dependency Injection
 - [Service container](data/dependency_injection/service_container.yaml)
 - Built-in services
 - [Configuration parameters](data/dependency_injection/configuration_parameters.yaml)
@@ -129,7 +131,7 @@ To train with our team, contact us on [https://www.itefficience.com/contact](htt
 - [Compiler passes](data/dependency_injection/compiler_passes.yaml)
 - Services autowiring
 
-## Security
+### 🔐 Security
 - [Authentication](data/security/authentication.yaml)
 - [Authorization](data/security/authorization.yaml)
 - [Configuration](data/security/configuration.yaml)
@@ -142,7 +144,7 @@ To train with our team, contact us on [https://www.itefficience.com/contact](htt
 - [Authenticators](data/security/authenticators.yaml)
 - [Voters and voting strategies](data/security/voters_and_voting_strategies.yaml)
 
-## HTTP Caching
+### 🗄️ HTTP Caching
 - [Cache types (browser, proxies and reverse-proxies)](data/http_caching/cache_types_browser_proxies_and_reverse_proxies.yaml)
 - [Expiration (Expires, Cache-Control)](data/http_caching/expiration_expires_cache_control.yaml)
 - [Validation (ETag, Last-Modified)](data/http_caching/validation_e_tag_last_modified.yaml)
@@ -150,7 +152,7 @@ To train with our team, contact us on [https://www.itefficience.com/contact](htt
 - [Server-side caching](data/http_caching/server_side_caching.yaml)
 - [Edge Side Includes](data/http_caching/edge_side_includes.yaml)
 
-## Console
+### 🖥️ Console
 - [Built-in commands](data/console/built_in_commands.yaml)
 - [Custom commands](data/console/custom_commands.yaml)
 - [Configuration](data/console/configuration.yaml)
@@ -160,7 +162,7 @@ To train with our team, contact us on [https://www.itefficience.com/contact](htt
 - [Console events](data/console/console_events.yaml)
 - [Verbosity levels](data/console/verbosity_levels.yaml)
 
-## Automated Tests
+### 🧪 Automated Tests
 - [Unit tests with PHPUnit](data/automated_tests/unit_tests_with_php_unit.yaml)
 - Functional tests with PHPUnit
 - [Client object](data/automated_tests/client_object.yaml)
@@ -172,7 +174,7 @@ To train with our team, contact us on [https://www.itefficience.com/contact](htt
 - [PHPUnit bridge](data/automated_tests/php_unit_bridge.yaml)
 - Handling legacy deprecated code
 
-## Miscellaneous
+### 🎨 Miscellaneous
 - [Configuration (including DotEnv and ExpressionLanguage components)](data/miscellaneous/configuration_including_dot_env_and_expression_language_components.yaml)
 - Error handling
 - [Code debugging](data/miscellaneous/code_debugging.yaml)
@@ -186,6 +188,10 @@ To train with our team, contact us on [https://www.itefficience.com/contact](htt
 - Internationalization and localization (and Intl component)
 - Runtime component
 
-And to register, buy a voucher on [https://certification.symfony.com/exams/symfony.html](https://certification.symfony.com/exams/symfony.html)
+## 📝 How to Register?
 
-To train with our team, contact us on  [https://www.itefficience.com/contact](https://www.itefficience.com/contact)
+Ready to get certified? [Buy a voucher and register here](https://certification.symfony.com/exams/symfony.html).
+
+For more information, read this [comprehensive article](https://www.itefficience.com/article/la-certification-twig-une-1ere-pour-le-chemin-de-la-certif-symfony).
+
+Interested in training with our team? [Contact us](https://www.itefficience.com/contact)!
