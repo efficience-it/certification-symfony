@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8b97-6354-999f-99d84c92580c
-    question: "Consider the following Twig code snippet: The {{ color }} car!What will be the result of evaluating this template without passing it a color variable when the strict_variables global setting is off?"
+    question: 'Consider the following Twig code snippet: The {{ color }} car! What will be the result of evaluating this template without passing it a color variable when the strict_variables global setting is off?'
     answers:
       - {value: 'Twig will raise a Twig_Error_Runtime exception preventing the template from being evaluated.', correct: false}
       - {value: 'The template will be succesfully evaluated and the string The car! will be displayed in the web browser.', correct: true}

@@ -31,8 +31,8 @@ questions:
     uuid: 1eebf878-8ba8-6c9e-a896-99d84c92580c
     question: 'In production servers, PHP files should never change, unless a new application version is deployed. However, by default OPcache checks if cached files have changed their contents since they were cached.    How it is done to uncheck some overhead that can be avoided ?'
     answers:
-      - {value: '; php.ini     opcache.validate_timestamps=0', correct: true}
-      - {value: '; php.ini     opcache.invalidate_timestamps=1', correct: false}
+      - {value: 'In php.ini: opcache.validate_timestamps=0', correct: true}
+      - {value: 'In php.ini: opcache.invalidate_timestamps=1', correct: false}
     help: 'https://symfony.com/doc/current/performance.html#don-t-check-php-files-timestamps'
   -
     uuid: 1eebf878-8ba8-6ce4-b30d-99d84c92580c
@@ -42,7 +42,6 @@ questions:
       - {value: 'using source control (e.g. Git or SVN)', correct: true}
       - {value: 'using http & https protocol with a POST method', correct: false}
       - {value: 'Using a Platform as a Service (PaaS) like platform.sh', correct: true}
-      - {value: 'built scripts like Capistrano ...', correct: true}
     help: 'https://symfony.com/doc/current/deployment.html#how-to-deploy-a-symfony-application-1'
   -
     uuid: 1eebf878-8baa-604e-b924-99d84c92580c

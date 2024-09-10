@@ -124,12 +124,12 @@ questions:
     uuid: 1eebf878-8ba2-6db2-9993-99d84c92580c
     question: 'What are valid output types defined in Process?'
     answers:
-      - {value: "'out'", correct: true}
-      - {value: "'err'", correct: true}
-      - {value: "'output'", correct: false}
-      - {value: "'in'", correct: false}
-      - {value: "'error'", correct: false}
-      - {value: "'input'", correct: false}
+      - {value: 'out', correct: true}
+      - {value: 'err', correct: true}
+      - {value: 'output', correct: false}
+      - {value: 'in', correct: false}
+      - {value: 'error', correct: false}
+      - {value: 'input', correct: false}
     help: 'https://symfony.com/doc/7.2/components/process.html#getting-real-time-process-output'
   -
     uuid: 1eebf878-8ba3-61e0-9460-99d84c92580c
@@ -160,7 +160,7 @@ questions:
       - {value: isProcessing(), correct: false}
       - {value: isAsync(), correct: false}
       - {value: isRunning(), correct: true}
-    help: 'https://symfony.com/doc/current/components/process.html#running-processes-asynchronously'
+    help: 'https://symfony.com/doc/7.2/components/process.html#running-processes-asynchronously'
   -
     uuid: 1eebf878-8ba4-6298-950b-99d84c92580c
     question: 'Could the parsed and/or serialized expressions be evaluated?'
@@ -182,7 +182,7 @@ questions:
     help: 'https://symfony.com/doc/current/reference/dic_tags.html#core-cache-warmers'
   -
     uuid: 1eebf878-8ba6-64d0-a4e1-99d84c92580c
-    question: 'What is the meaning of ESI ?'
+    question: 'What does ESI stand for?'
     answers:
       - {value: 'Export Side Import', correct: false}
       - {value: 'Edge Side Import', correct: false}
@@ -224,3 +224,10 @@ questions:
       - {value: 'public function reverse($propertyName);', correct: false}
       - {value: 'public function getName();', correct: false}
     help: 'https://symfony.com/doc/current/components/serializer.html#converting-property-names-when-serializing-and-deserializing'
+  -
+    uuid: 1ef65d96-524a-6546-b727-1f7b87b1af39
+    question: 'Is it possible to restrict the amount of time a process takes to achieve?'
+    answers:
+      - {value: 'Yes', correct: true}
+      - {value: 'No', correct: false}
+    help: 'https://symfony.com/doc/current/components/process.html#process-timeout'

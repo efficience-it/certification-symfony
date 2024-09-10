@@ -91,7 +91,7 @@ questions:
     help: 'https://twig.symfony.com/doc/3.x/tags/deprecated.html'
   -
     uuid: 1eebf878-8b9c-6cfa-be85-99d84c92580c
-    question: "Can we create a custom escaper for Twig ?"
+    question: 'Can we create a custom escaper for Twig ?'
     answers:
       - {value: 'Yes', correct: true}
       - {value: 'No', correct: false}
@@ -197,7 +197,7 @@ questions:
     answers:
       - {value: 'Twig will raise a Twig_Error_Runtime exception preventing the template from being evaluated.', correct: false}
       - {value: 'The template will be succesfully evaluated and the string The blue car! will be displayed in the web browser.', correct: true}
-    help: 'https://twig.symfony.com/doc/2.x/templates.html#variables'
+    help: 'https://twig.symfony.com/doc/3.x/templates.html#variables'
   -
     uuid: 1eebf878-8baa-6814-b035-99d84c92580c
     question: 'Given var and bar are existing variables, among the following, which expressions are escaped?'

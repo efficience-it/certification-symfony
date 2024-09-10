@@ -40,7 +40,7 @@ questions:
     help: 'https://symfony.com/doc/current/validation/custom_constraint.html'
   -
     uuid: 1eec0433-872c-6d02-9232-4b97d5043a34
-    question: 'In Case, You want to create a Custom Validator, you create the IpRangeConstraint what will be the name of the Validator ?'
+    question: 'If you create a custom validator by defining an IpRangeConstraint, what will be the name of the validator?'
     answers:
       - {value: IpRangeValidator, correct: false}
       - {value: ValidatorIpRange, correct: false}

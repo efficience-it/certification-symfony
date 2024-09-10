@@ -37,7 +37,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/validator.html#retrieving-a-validator-instance'
   -
     uuid: 1eebf878-8ba5-61b6-8363-99d84c92580c
-    question: "What is the type of the $result ? $result = $kernel->handle($request);"
+    question: 'What is the type of the $result ? $result = $kernel->handle($request);'
     answers:
       - {value: 'A Symfony\Component\HttpFoundation\Response instance.', correct: true}
       - {value: 'A string.', correct: false}

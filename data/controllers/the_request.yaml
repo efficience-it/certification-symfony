@@ -121,7 +121,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/http_foundation.html#accessing-request-data'
   -
     uuid: 1eebf878-8ba1-6f20-a406-99d84c92580c
-    question: 'What is the request structure ?'
+    question: 'What is the structure of an HTTP request?'
     answers:
       - {value: 'Request-Line Headers CRLF Body', correct: true}
       - {value: 'Request-Line Headers Body', correct: false}
@@ -145,7 +145,7 @@ questions:
       - {value: "$request = Request::create('GET','/hello-world');", correct: false}
       - {value: "$request = Request::create('/hello-world','GET');", correct: true}
       - {value: "$request = Request::create('/hello-world');", correct: true}
-    help: 'https://symfony.com/doc/current/components/http_foundation.html#simulating-a-request&nbsp;'
+    help: 'https://symfony.com/doc/current/components/http_foundation.html#simulating-a-request'
   -
     uuid: 1eebf878-8ba2-6c7c-b75b-99d84c92580c
     question: 'If you need to change request data before binding them to the form, which event should your code hook into?'

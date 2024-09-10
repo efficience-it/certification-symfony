@@ -74,7 +74,7 @@ questions:
     help: 'https://symfony.com/doc/current/security/login_link.html#invalidate-login-links'
   -
     uuid: 1eedadbf-3130-62fa-9ad6-73c005d2a996
-    question: "By default, generated links use the lifetime configured globally but you can change the lifetime per link. How ?"
+    question: 'By default, generated links use the lifetime configured globally but you can change the lifetime per link. How ?'
     answers:
       - {value: "setting the third argument of the createLoginLink() method ", correct: true}
       - {value: "setting the second argument of the createLoginLink() method ", correct: false}
@@ -137,11 +137,11 @@ questions:
     help: 'https://symfony.com/doc/current/security.html#authentication-events'
   -
     uuid: 1eedb106-f4c3-6628-906e-df03d1ec3db8
-    question: 'What is the difference between IS_AUTHENTICATED_REMEMBERED and IS_AUTHENTICATED_FULLY ?'
+    question: 'What is the difference between IS_AUTHENTICATED_REMEMBERED and IS_AUTHENTICATED_FULLY in Symfony?'
     answers:
-      - {value: 'login based on the cookie remember me, or forced to login again', correct: true}
-      - {value: "login based on the Symfony session remember me, or forced to login again", correct: false}
-      - {value: 'login based on the Http session remember me, or forced to login again', correct: false}
+      - {value: "Authentication based on the HTTP session's remember me functionality, or requiring a fresh login.", correct: true}
+      - {value: 'Authentication based on the remember me cookie, or requiring a fresh login.', correct: false}
+      - {value: "Authentication based on Symfony's session remember me functionality, or requiring a fresh login.", correct: false}
     help: 'https://symfony.com/doc/current/security/remember_me.html#forcing-the-user-to-re-authenticate-before-accessing-certain-resources'
   -
     uuid: 1eedb11a-5c7c-6360-b9fc-594690969204

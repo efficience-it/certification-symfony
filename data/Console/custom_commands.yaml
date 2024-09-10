@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8b96-6f94-8836-99d84c92580c
-    question: 'Could the cursor position be changed in a command?'
+    question: 'Could the cursor position be changed in a Symfony command?'
     answers:
       - {value: 'Yes', correct: true}
       - {value: 'No', correct: false}

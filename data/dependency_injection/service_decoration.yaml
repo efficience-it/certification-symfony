@@ -24,7 +24,7 @@ questions:
     help: 'https://symfony.com/doc/current/service_container/service_decoration.html'
   -
     uuid: 1ef568fb-d9d6-6d56-863d-af80c905008d
-    question: "How do you keep a reference to the original service when decorating it in Symfony?"
+    question: 'How do you keep a reference to the original service when decorating it in Symfony?'
     answers:
       - {value: 'By using the #[old] service reference', correct: false}
       - {value: 'By using the #[AutowireOriginal] attribute', correct: false}
@@ -33,7 +33,7 @@ questions:
     help: 'https://symfony.com/doc/current/service_container/service_decoration.html'
   -
     uuid: 1ef568ff-80aa-66fc-b706-d3849883f55e
-    question: "What does the decoration_inner_name option in the service configuration do?"
+    question: 'What does the decoration_inner_name option in the service configuration do?'
     answers:
       - {value: 'It changes the ID of the decorated service', correct: true}
       - {value: 'It changes the class name of the decorated service', correct: false}
@@ -87,7 +87,7 @@ questions:
     help: 'https://symfony.com/doc/current/service_container/service_decoration.html#control-the-behavior-when-the-decorated-service-does-not-exist'
   -
     uuid: 1ef5b0b6-5c02-622e-a929-910a987c2424
-    question: "Which of the following is a valid way to create a stack of decorators in Symfony?"
+    question: 'Which of the following is a valid way to create a stack of decorators in Symfony?'
     answers:
       - {value: 'Using the priority option in services.yaml', correct: false}
       - {value: 'Declaring multiple decorators in a stack configuration', correct: true}
@@ -96,7 +96,7 @@ questions:
     help: 'https://symfony.com/doc/current/service_container/service_decoration.html#stacking-decorators'
   -
     uuid: 1ef5b0b9-a1c3-62ba-bb58-f1271e433949
-    question: ' In a decorator stack, how can you reference a specific frame of the stack?'
+    question: 'In a decorator stack, how can you refer to a specific frame within the stack?'
     answers:
       - {value: 'By using the service ID with a .frame_key suffix', correct: true}
       - {value: 'By creating an alias for each frame', correct: false}
@@ -114,7 +114,7 @@ questions:
     help: 'https://symfony.com/doc/current/service_container/service_decoration.html#control-the-behavior-when-the-decorated-service-does-not-exist'
   -
     uuid: 1ef5b0c0-600f-6a60-a4ff-09f0c30bd181
-    question: "Why should a compiler pass that creates service definitions dynamically be registered with PassConfig::TYPE_BEFORE_OPTIMIZATION?"
+    question: 'Why should a compiler pass that creates service definitions dynamically be registered with PassConfig::TYPE_BEFORE_OPTIMIZATION ?'
     answers:
       - {value: 'To ensure the service is available during the decoration pass', correct: true}
       - {value: 'To prevent Symfony from optimizing away unused services', correct: false}
