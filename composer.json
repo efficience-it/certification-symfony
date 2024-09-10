@@ -1,5 +1,5 @@
 {
-  "name": "efficience_it/certificationy-symfony",
+  "name": "efficience_it/certification-symfony",
   "type": "library",
   "keywords": ["symfony", "certification", "test", "exam"],
   "description": "A series of questions to prepare for the certification Symfony5-6-7",
