@@ -11,7 +11,7 @@ questions:
     help: 'https://symfony.com/doc/current/routing.html#debugging-routes'
   -
     uuid: 1eebf878-8ba4-6716-8271-99d84c92580c
-    question: "What's the argument after this   php bin/console router:match  ?"
+    question: "What's the argument after this command php bin/console router:match ?"
     answers:
       - {value: "the route's name", correct: false}
       - {value: 'the path', correct: true}

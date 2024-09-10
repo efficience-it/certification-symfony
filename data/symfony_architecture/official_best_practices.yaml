@@ -121,7 +121,7 @@ questions:
     help: 'https://symfony.com/doc/current/best_practices.html#service-no-class-parameter'
   -
     uuid: 1ef5bb47-4340-610a-accc-f5fc6195c240
-    question: "Which format is recommended for defining services in a Symfony application?"
+    question: 'Which format is recommended for defining services in a Symfony application?'
     answers:
       - {value: "XML", correct: false}
       - {value: "JSON", correct: false}
@@ -130,7 +130,7 @@ questions:
     help: 'https://symfony.com/doc/current/best_practices.html#use-the-yaml-format-to-configure-your-own-services'
   -
     uuid: 1ef5bb4b-5936-6eba-9746-5946503a32b1
-    question: "What is the recommended way to handle sensitive information in Symfony?"
+    question: 'What is the recommended way to handle sensitive information in Symfony?'
     answers:
       - {value: "Store them in .env files", correct: false}
       - {value: "Hard-code them in the application", correct: false}
@@ -139,7 +139,7 @@ questions:
     help: 'https://symfony.com/doc/current/best_practices.html#use-secrets-for-sensitive-information'
   -
     uuid: 1ef5bb4d-3ad0-6410-8e3f-1f036f6a18e2
-    question: "Symfony recommends creating a bundle for every major feature in your application."
+    question: 'Symfony recommends creating a bundle for every major feature in your application.'
     answers:
       - {value: 'True', correct: false}
       - {value: 'False', correct: true}
@@ -153,7 +153,7 @@ questions:
     help: 'https://symfony.com/doc/current/best_practices.html#use-short-and-prefixed-parameter-names'
   -
     uuid: 1ef5bb54-bb8a-6c84-a335-ab9323a5c145
-    question: "Which of the following is recommended for organizing your application logic in Symfony?"
+    question: 'Which of the following is recommended for organizing your application logic in Symfony?'
     answers:
       - {value: "Creating multiple bundles for different features", correct: false}
       - {value: "Organizing code using PHP namespaces", correct: true}
@@ -162,7 +162,7 @@ questions:
     help: 'https://symfony.com/doc/current/best_practices.html#don-t-create-any-bundle-to-organize-your-application-logic'
   -
     uuid: 1ef5bb57-2a4b-65d6-9c68-ad0ee29d5778
-    question: "What is the recommended way to define configuration options that rarely change, like the number of items displayed in a list?"
+    question: 'What is the recommended way to define configuration options that rarely change, like the number of items displayed in a list?'
     answers:
       - {value: "Define them as parameters in services.yaml", correct: false}
       - {value: "Store them in the .env file", correct: false}

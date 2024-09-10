@@ -10,9 +10,9 @@ questions:
     uuid: 1eebf878-8b9c-6aa2-a4b0-99d84c92580c
     question: 'How to add a DataTransformer to the tags field?'
     answers:
-      - {value: "$builder->add('tags', TextType::class) ->addModelTransformer(...);", correct: false}
-      - {value: "$builder->add( $builder ->create('tags', TextType::class) ->addModelTransformer(...) );", correct: true}
-      - {value: "$builder->add('tags', TextType::class);$builder->get('tags') ->addModelTransformer(...);", correct: true}
+      - {value: "$builder->add('tags', TextType::class)->addModelTransformer(...);", correct: false}
+      - {value: "$builder->add($builder->create('tags',TextType::class)->addModelTransformer(...));", correct: true}
+      - {value: "$builder->add('tags', TextType::class); $builder->get('tags')->addModelTransformer(...);", correct: true}
     help: 'https://symfony.com/doc/current/form/data_transformers.html#simple-example-transforming-string-tags-from-user-input-to-an-array'
   -
     uuid: 1eebf878-8ba0-6116-964a-99d84c92580c
@@ -24,7 +24,7 @@ questions:
     help: 'https://symfony.com/doc/current/form/data_transformers.html'
   -
     uuid: 1eebf878-8ba4-6946-9ff1-99d84c92580c
-    question: 'Are Data Transformers applied on a form field which has the inherit_data option set ?'
+    question: 'Are data transformers applied to a form field that has the inherit_data option set?'
     answers:
       - {value: 'Yes', correct: false}
       - {value: 'No', correct: true}
@@ -38,7 +38,7 @@ questions:
     help: 'https://symfony.com/doc/current/form/data_transformers.html#using-the-transformer'
   -
     uuid: 1eebf878-8ba5-63c8-9923-99d84c92580c
-    question: "The first function in the CallBackTransformer is to transform, and the second to reverseTransform ?    $builder     ->get('tags')      ->addModelTransformer(     new CallbackTransformer(      function ($tagsAsArray): string {      return implode(', ', $tagsAsArray);      },      function ($tagsAsString): array {      return explode(', ', $tagsAsString);      }      )     ) ;"
+    question: 'In the CallbackTransformer, the first function is used to transform the data and the second function is used to reverse-transform it. Is that right ?'
     answers:
       - {value: 'No', correct: false}
       - {value: 'Yes', correct: true}

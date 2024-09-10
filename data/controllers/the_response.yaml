@@ -11,7 +11,7 @@ questions:
     help: 'https://www.php.net/manual/en/book.stream.php'
   -
     uuid: 1eebf878-8b97-6e62-982f-99d84c92580c
-    question: 'Is it possible to create a Symfony\Component\HttpFoundation\RedirectResponse with the 201 status code?'
+    question: 'Is it possible to create a RedirectResponse with the 201 status code?'
     answers:
       - {value: 'Yes', correct: true}
       - {value: 'No', correct: false}

@@ -10,7 +10,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/config/definition.html'
   -
     uuid: 1ef5b45d-ec1f-6c9e-9a31-dd564fbf1b8f
-    question: "Which method in the TreeBuilder class is used to define the root of the configuration tree?"
+    question: 'Which method in the TreeBuilder class is used to define the root of the configuration tree?'
     answers:
       - {value: getRootNode(), correct: true}
       - {value: buildTree(), correct: false}
@@ -28,7 +28,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/config/definition.html#enum-nodes'
   -
     uuid: 1ef5b46e-73a7-6f3a-a9c3-b1226b175b7c
-    question: "How can you ensure that a configuration array has at least one element and is required?"
+    question: 'How can you ensure that a configuration array has at least one element and is required?'
     answers:
       - {value: 'Use ->requiresAtLeastOneElement() only', correct: false}
       - {value: 'Use ->isRequired() only', correct: false}
@@ -55,7 +55,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/config/definition.html#merging-options'
   -
     uuid: 1ef5b47b-2609-69f6-8ed3-17869620ec02
-    question: "How can you deprecate a configuration option and provide a custom deprecation message?"
+    question: 'How can you deprecate a configuration option and provide a custom deprecation message?'
     answers:
       - {value: "Using ->setDeprecated('acme/package', '1.2', 'Custom message')", correct: true}
       - {value: "Using ->deprecateOption('Custom message')", correct: false}
@@ -64,7 +64,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/config/definition.html#deprecating-the-option'
   -
     uuid: 1ef5b47f-5cff-6434-b290-417db67a1656
-    question: "Which method is used to ensure that XML configuration elements are correctly transformed into arrays during normalization?"
+    question: 'Which method is used to ensure that XML configuration elements are correctly transformed into arrays during normalization?'
     answers:
       - {value: fixXmlConfig(), correct: true}
       - {value: normalizeXml(), correct: false}
@@ -73,7 +73,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/config/definition.html#normalization'
   -
     uuid: 1ef5b483-a403-6bf6-8499-c58871bae8bd
-    question: "When defining a prototyped array with keys that should be preserved (e.g., sf_connection, default), which method ensures that these keys are maintained?"
+    question: 'When defining a prototyped array with keys that should be preserved (e.g., sf_connection, default), which method ensures that these keys are maintained?'
     answers:
       - {value: "useAttributeAsKey('name')", correct: true}
       - {value: preserveKeys(), correct: false}
@@ -82,7 +82,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/config/definition.html#array-node-options'
   -
     uuid: 1ef5b486-27c2-6008-a852-2532f9c7e4c2
-    question: "Which method would you use to append a separate configuration section into the main configuration tree?"
+    question: 'Which method would you use to append a separate configuration section into the main configuration tree?'
     answers:
       - {value: ' append()', correct: true}
       - {value: addSection(), correct: false}

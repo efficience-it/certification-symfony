@@ -1,5 +1,14 @@
 questions:
   -
+    uuid: 1eebf878-8b97-62be-936c-99d84c92580c
+    question: 'When the checkbox field  foo  is checked and the form is submitted, what will $form[ foo ]->getData() return?'
+    answers:
+      - {value: 'true', correct: true}
+      - {value: bar, correct: false}
+      - {value: 'false', correct: false}
+      - {value: 'An exception is thrown', correct: false}
+    help: 'https://symfony.com/doc/current/reference/forms/types/checkbox.html'
+  -
     uuid: 1eebf878-8b97-63a4-84ee-99d84c92580c
     question: 'Which of the following are Symfony built-in field types?'
     answers:
@@ -226,7 +235,7 @@ questions:
     uuid: 1eebf878-8ba4-6e64-a14b-99d84c92580c
     question: 'What type of value can be set to the query_builder option of the EntityType form type ?'
     answers:
-      - {value: "A callable", correct: true}
+      - {value: 'A callable', correct: true}
       - {value: 'A string containing a where clause.', correct: false}
       - {value: 'An instance of Doctrine\ORM\QueryBuilder.', correct: true}
       - {value: 'A string containing a valid query.', correct: false}

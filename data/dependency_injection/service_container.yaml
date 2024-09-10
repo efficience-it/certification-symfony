@@ -310,7 +310,7 @@ questions:
     help: 'https://github.com/symfony/symfony/blob/c8418254edd0851181da5384bc2f94434ca0570d/src/Symfony/Component/DependencyInjection/Definition.php#L541'
   -
     uuid: 1ef5c09c-d7c9-6560-8979-85f7277877d1
-    question: "What is a Symfony Service Container?"
+    question: 'What is a Symfony Service Container?'
     answers:
       - {value: "A database management tool", correct: false}
       - {value: "A special object where services are stored", correct: true}
@@ -319,7 +319,7 @@ questions:
     help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1ef5c09e-fdaa-6034-8508-a35d6de03e76
-    question: "What is Dependency Injection (DI) in Symfony?"
+    question: 'What is Dependency Injection (DI) in Symfony?'
     answers:
       - {value: "A way to manually inject code into templates", correct: false}
       - {value: "A method to provide necessary objects to a class from external sources", correct: true}
@@ -328,7 +328,7 @@ questions:
     help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1ef5c0a1-66d6-6f60-9521-f194ab73eb2f
-    question: "How can you load all classes as services automatically inside a specific folder in Symfony?"
+    question: 'How can you load all classes as services automatically inside a specific folder in Symfony?'
     answers:
       - {value: "By using the autowire: false configuration", correct: false}
       - {value: "By adding all class names manually in services.yaml", correct: false}
@@ -337,7 +337,7 @@ questions:
     help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1ef5c0ac-c210-6358-aea3-8f65d65ecf88
-    question: "How can you make a service available only in the  dev  environment?"
+    question: 'How can you make a service available only in the  dev  environment?'
     answers:
       - {value: "By using the autowire: false option.", correct: false}
       - {value: "By adding the #[When(env: 'dev')] attribute to the service class.", correct: true}
@@ -346,7 +346,7 @@ questions:
     help: 'https://symfony.com/doc/current/service_container.html#limiting-services-to-a-specific-symfony-environment'
   -
     uuid: 1ef5c0af-d817-65b8-8456-919dad88c362
-    question: "Which of the following is NOT a benefit of using the service container?"
+    question: 'Which of the following is NOT a benefit of using the service container?'
     answers:
       - {value: "Centralizing object construction.", correct: false}
       - {value: "Improving application performance.", correct: false}
@@ -364,7 +364,7 @@ questions:
     help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1ef5c0b9-c808-679e-a4ff-cd4d8904a960
-    question: "What happens if a service is defined as public: false in Symfony?"
+    question: 'What happens if a service is defined as public: false in Symfony?'
     answers:
       - {value: "It cannot be injected into other services.", correct: false}
       - {value: "It can only be accessed within the class where it is defined.", correct: false}
@@ -373,7 +373,7 @@ questions:
     help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1ef5c0bd-3df5-61ca-b4e6-b73eeabedf7c
-    question: "What does the lazy option in a service definition do?"
+    question: 'What does the lazy option in a service definition do?'
     answers:
       - {value: "It defers the instantiation of the service until it is actually needed.", correct: true}
       - {value: "It prevents the service from being injected into other services.", correct: false}
@@ -382,7 +382,7 @@ questions:
     help: 'https://symfony.com/doc/current/service_container/lazy_services.html'
   -
     uuid: 1ef5c0c1-1ac7-64a6-9cbf-45ad2711c61f
-    question: "When would you use the private visibility for a service?"
+    question: 'When would you use the private visibility for a service?'
     answers:
       - {value: "When you want the service to be accessible from anywhere in the application.", correct: false}
       - {value: "When the service should be used only internally within other services.", correct: true}
@@ -391,7 +391,7 @@ questions:
     help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1ef5c0c3-627f-6c92-8785-2179a55e4fcd
-    question: "What is a service alias in Symfony used for?"
+    question: 'What is a service alias in Symfony used for?'
     answers:
       - {value: "To create a duplicate service with the same functionality.", correct: false}
       - {value: "To define an alternative name for an existing service.", correct: true}
@@ -409,7 +409,7 @@ questions:
     help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1ef5c0ce-a7eb-6956-9bc8-1baf552f428a
-    question: "What is a key benefit of the service in Symfony?"
+    question: 'What is a key benefit of the service in Symfony?'
     answers:
       - {value: "It is automatically created every time it is requested.", correct: false}
       - {value: "It creates a new instance each time it is called.", correct: false}
@@ -418,10 +418,10 @@ questions:
     help: 'https://symfony.com/doc/current/service_container.html#creating-configuring-services-in-the-container'
   -
     uuid: 1ef5c0dc-17f6-6b76-9bb6-93e4d8e83be3
-    question: 'In the YAML configuration, what keyword is used to define dependencies passed to a service?'
+    question: 'In YAML configuration, which keyword is used to define explicit arguments for a service?'
     answers:
-      - {value: "parameters", correct: false}
-      - {value: "options", correct: false}
-      - {value: "values", correct: false}
-      - {value: "arguments", correct: true}
+      - {value: parameters, correct: false}
+      - {value: options, correct: false}
+      - {value: values, correct: false}
+      - {value: arguments, correct: true}
     help: 'https://symfony.com/doc/current/service_container.html#manually-wiring-arguments'

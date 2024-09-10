@@ -11,7 +11,7 @@ questions:
     help: 'https://symfony.com/doc/current/messenger.html'
   -
     uuid: 1ef49b32-ed82-6f72-823e-b36d0cd66b14
-    question: "Which class needs to be implemented to define a message handler in Symfony Messenger?"
+    question: 'Which class needs to be implemented to define a message handler in Symfony Messenger?'
     answers:
       - {value: MessageHandlerInterface, correct: true}
       - {value: HandlerInterface, correct: false}
@@ -20,7 +20,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/messenger.html'
   -
     uuid: 1ef49b3d-c27f-6edc-af9a-b775eebcd083
-    question: "Which method must be implemented in a message handler class to process the message in Symfony Messenger?"
+    question: 'Which method must be implemented in a message handler class to process the message in Symfony Messenger?'
     answers:
       - {value: handle, correct: false}
       - {value: process, correct: false}
@@ -29,7 +29,7 @@ questions:
     help: 'https://symfony.com/doc/current/messenger.html#creating-a-message-handler'
   -
     uuid: 1ef49b43-add0-69a4-b8d9-4b7e2b04a9ae
-    question: "Which component of Symfony Messenger is used to send messages to different queues or transports?"
+    question: 'Which component of Symfony Messenger is used to send messages to different queues or transports?'
     answers:
       - {value: MessageBus, correct: false}
       - {value: TransportInterface, correct: true}
@@ -38,34 +38,34 @@ questions:
     help: 'https://symfony.com/doc/current/messenger/custom-transport.html#register-your-factory'
   -
     uuid: 1ef49b5a-8ebf-6472-82c5-f5810e093800
-    question: "How do you configure the DSN for a transport in Symfony Messenger to send messages to a RabbitMQ queue?"
+    question: 'How do you configure the DSN for a transport in Symfony Messenger to send messages to a RabbitMQ queue?'
     answers:
-      - {value: 'rabbitmq://localhost/%2f/messages', correct: true}
-      - {value: 'rabbitmq://localhost/messages', correct: false}
-      - {value: 'amqp://localhost/messages', correct: false}
-      - {value: 'rabbitmq://localhost/%2f', correct: false}
+      - {value: "rabbitmq://localhost/%2f/messages", correct: true}
+      - {value: "rabbitmq://localhost/messages", correct: false}
+      - {value: "amqp://localhost/messages", correct: false}
+      - {value: "rabbitmq://localhost/%2f", correct: false}
     help: 'https://symfony.com/doc/current/messenger.html#amqp-transport'
   -
     uuid: 1ef49b6a-03e9-60ae-9839-151e1bbfbae8
-    question: "Which Symfony component must be installed to use the redis transport with Messenger?"
+    question: 'Which Symfony component must be installed to use the redis transport with Messenger?'
     answers:
-      - {value: 'symfony/redis-messenger', correct: true}
-      - {value: 'symfony/redis', correct: false}
-      - {value: 'predis/predis', correct: false}
-      - {value: 'symfony/redis-transport', correct: false}
+      - {value: "symfony/redis-messenger", correct: true}
+      - {value: "symfony/redis", correct: false}
+      - {value: "predis/predis", correct: false}
+      - {value: "symfony/redis-transport", correct: false}
     help: 'https://symfony.com/doc/current/messenger.html#redis-transport'
   -
     uuid: 1ef49b71-c667-6ade-97e5-510b604738c4
     question: 'Which component should a class use to configure a custom retry strategy in messenger ?'
     answers:
       - {value: RetryStrategyInterface, correct: true}
-      - {value: 'RetryStrategyTrait', correct: false}
-      - {value: 'RetryStrategyController', correct: false}
-      - {value: 'RetryMiddleware', correct: false}
+      - {value: "RetryStrategyTrait", correct: false}
+      - {value: "RetryStrategyController", correct: false}
+      - {value: "RetryMiddleware", correct: false}
     help: 'https://github.com/symfony/messenger/blob/7.1/Retry/RetryStrategyInterface.php'
   -
     uuid: 1ef49b77-ad91-6d24-a5f3-c9434be6fb85
-    question: "Which attribute must be defined to mark a class which would be the handle of a message in Symfony Messenger?"
+    question: 'Which attribute must be defined to mark a class which would be the handle of a message in Symfony Messenger?'
     answers:
       - {value: MessageHandler, correct: false}
       - {value: AsMessageHandler, correct: true}
@@ -179,7 +179,7 @@ questions:
     help: 'https://symfony.com/doc/current/messenger.html#pinging-a-webservice'
   -
     uuid: 1ef49c01-1b3a-6c20-951d-cd6c0db5ee76
-    question: "A single handler class can handle multiple messages. For that, add the @AsMessageHandler attribute to all handling methods."
+    question: 'A single handler class can handle multiple messages. For that, add the @AsMessageHandler attribute to all handling methods.'
     answers:
       - {value: 'True', correct: true}
       - {value: 'False', correct: false}

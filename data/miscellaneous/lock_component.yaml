@@ -31,7 +31,7 @@ questions:
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Lock/LockInterface.php'
   -
     uuid: 1eeccba8-d4e9-6e7c-94fd-51d69966c85d
-    question: 'If a user want to acquire a lock, but it is not available. What will be returned'
+    question: 'What is returned if a user attempts to acquire a lock, but it is unavailable?'
     answers:
       - {value: LockException, correct: false}
       - {value: 'false', correct: true}
@@ -39,7 +39,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/lock.html'
   -
     uuid: 1eeccbb3-8aa6-6738-a1fb-09a923eb5036
-    question: 'if we wish to transmit the key to another task such as in a messenger, how can we ensure that the key will not be released ?'
+    question: 'If we wish to transmit the key to another task such as in a messenger, how can we ensure that the key will not be released ?'
     answers:
       - {value: "set $lock->noRelease() and then transmit $lock to the messenger. It will have to set $lock->release of it's task", correct: false}
       - {value: 'set autoRelease to false in the lock definition', correct: true}

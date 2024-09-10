@@ -7,15 +7,6 @@ questions:
       - {value: 'No', correct: true}
     help: 'https://www.php.net/manual/en/language.oop5.traits.php'
   -
-    uuid: 1eebf878-8ba9-602c-ba18-99d84c92580c
-    question: "What will the output of this function ?    class Base {   public function sayHello() {   echo 'Hello ';   }  }    trait SayWorld {   public function sayHello() {   echo 'World';   }  }    class MyHelloWorld extends Base {   use SayWorld;  }    $o = new MyHelloWorld();  $o->sayHello();"
-    answers:
-      - {value: Hello, correct: false}
-      - {value: World, correct: true}
-      - {value: 'Hello World', correct: false}
-      - {value: 'Fatal Error', correct: false}
-    help: 'https://www.php.net/manual/en/language.oop5.traits.php'
-  -
     uuid: 1eebf878-8ba9-6072-929e-99d84c92580c
     question: "What will the output of this function ?    trait HelloWorld {  public function sayHello() {  echo 'Hello World!'  }  }    class TheWorldIsNotEnough {  use HelloWorld  public function sayHello() {  echo 'Hello Universe!';  }  }  $o= new TheWorldIsNotEnough();  $o->sayHello();"
     answers:
@@ -93,8 +84,8 @@ questions:
     uuid: 1eebf878-8ba9-62fc-b8fd-99d84c92580c
     question: "Could a property defined in a Trait be overrided by an exhibiting class ?    trait PropertiesTrait {   public $notSame = false;  }    class PropertiesExample {   use PropertiesTrait;   public $notSame = true;  }"
     answers:
-      - {value: 'Yes PropertiesExample->notSame will output true ', correct: false}
-      - {value: 'No PropertiesExample->notSame will output false ', correct: false}
+      - {value: 'Yes PropertiesExample->notSame will output true', correct: false}
+      - {value: 'No PropertiesExample->notSame will output false', correct: false}
       - {value: 'Fatal Error', correct: true}
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.properties'
   -
