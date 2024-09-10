@@ -340,7 +340,7 @@ questions:
     help: 'https://www.php-fig.org/psr/psr-1/#1-overview'
   -
     uuid: 1eebf878-8ba0-6ea4-ae9e-99d84c92580c
-    question: "According to PSR-1, how should methods be declared?"
+    question: 'According to PSR-1, how should methods be declared?'
     answers:
       - {value: myMethod();, correct: true}
       - {value: MyMethod();, correct: false}
@@ -368,7 +368,7 @@ questions:
     help: 'https://www.php-fig.org/psr/#deprecated'
   -
     uuid: 1eebf878-8ba3-685c-af19-99d84c92580c
-    question: "What is the method to create a MicroKernel?"
+    question: 'What is the method to create a MicroKernel?'
     answers:
       - {value: 'Create an AppKernel and use the Symfony\Component\HttpKernel\MicroKernelTrait trait.', correct: false}
       - {value: 'Create an AppKernel and use the Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait trait.', correct: false}

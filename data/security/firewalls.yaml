@@ -43,7 +43,6 @@ questions:
       - {value: path, correct: false}
       - {value: pattern, correct: true}
       - {value: ip, correct: false}
-      - {value: host, correct: true}
       - {value: domain, correct: false}
       - {value: methods, correct: true}
       - {value: request_matcher, correct: false}

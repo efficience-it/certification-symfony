@@ -111,7 +111,7 @@ questions:
     help: 'https://symfony.com/doc/current/reference/requirements.html'
   -
     uuid: 1ef55613-d3b3-6cb2-ac12-39eab7e60328
-    question: "What is the purpose of the symfony.lock file ?"
+    question: 'What is the purpose of the symfony.lock file ?'
     answers:
       - {value: "It stores the state of installed bundles and recipes.", correct: true}
       - {value: "It contains user credentials for Symfony applications.", correct: false}
@@ -120,7 +120,7 @@ questions:
     help: 'https://afsy.fr/avent/2017/08-symfony-flex-la-nouvelle-facon-de-developper-avec-symfony'
   -
     uuid: 1ef55619-432c-695e-8f40-efd4a728a5fe
-    question: "What is Symfony Flex primarily used for?"
+    question: 'What is Symfony Flex primarily used for?'
     answers:
       - {value: "Managing Symfony bundles and their configurations.", correct: true}
       - {value: "Enhancing the security of Symfony applications.", correct: false}
@@ -136,12 +136,12 @@ questions:
     help: 'https://github.com/symfony/flex'
   -
     uuid: 1ef5562c-f16d-6f6e-9986-ff8af72c1e95
-    question: "Which of the following is a valid way to use an alias in Symfony Flex?"
+    question: 'Which of the following is a valid way to use an alias in Symfony Flex?'
     answers:
-      - {value: "composer require symfony/alias-name", correct: false}
-      - {value: "composer require alias-name", correct: true}
-      - {value: "composer install alias-name", correct: false}
-      - {value: "composer add symfony/alias-name", correct: false}
+      - {value: 'composer require symfony/alias-name', correct: false}
+      - {value: 'composer require alias-name', correct: true}
+      - {value: 'composer install alias-name', correct: false}
+      - {value: 'composer add symfony/alias-name', correct: false}
     help: 'https://symfony.com/doc/7.2/setup/flex.html'
   -
     uuid: 1ef55634-2b2a-67fa-9285-fbd574826ff3

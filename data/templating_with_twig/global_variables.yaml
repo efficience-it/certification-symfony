@@ -20,9 +20,9 @@ questions:
     question: "What's the correct way to declare the global variable uuid to get {{ uuid.generate }} in any twig files"
     answers:
       - {value: "# config/packages/twig.yaml     twig:     globals:     uuid: '@App\\Generator\\UuidGenerator'", correct: true}
-      - {value: "# config/packages/twig.yaml     twig:     globals:     uuid: 'App\\Generator\\UuidGenerator'", correct: false}
-      - {value: "# config/packages/twig.yaml     twig:     globals:     uuid: '#App\\Generator\\UuidGenerator'", correct: false}
-      - {value: "# config/packages/twig.yaml     twig:     uuid: 'App\\\\Generator\\\\UuidGenerator'", correct: false}
+      - {value: "# config/packages/twig.yaml    twig:     globals:     uuid: 'App\\Generator\\UuidGenerator'", correct: false}
+      - {value: "# config/packages/twig.yaml    twig:     globals:     uuid: '#App\\Generator\\UuidGenerator'", correct: false}
+      - {value: "# config/packages/twig.yaml  twig:   uuid: 'App\\\\Generator\\\\UuidGenerator'", correct: false}
     help: 'https://symfony.com/doc/current/templates.html#global-variables'
   -
     uuid: 1eebf878-8ba5-6ac6-b2a2-99d84c92580c

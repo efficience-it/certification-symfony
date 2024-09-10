@@ -10,7 +10,7 @@ questions:
     help: 'https://symfony.com/doc/current/contributing/community/releases.html'
   -
     uuid: 1eebf878-8ba5-658a-9bbb-99d84c92580c
-    question: 'Every how long does a minor version of symfony come out? (5.4, 6.0, 6.1))'
+    question: 'How often is a new minor version of Symfony released? (e.g., 5.4, 6.0, 6.1)'
     answers:
       - {value: '4 months', correct: false}
       - {value: '6 months', correct: true}

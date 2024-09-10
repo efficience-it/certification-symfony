@@ -253,7 +253,7 @@ questions:
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
   -
     uuid: 1eebf878-8ba3-69c4-a0e8-99d84c92580c
-    question: "Could new subscribers be added to an ImmutableEventDispatcher?"
+    question: 'Could new subscribers be added to an ImmutableEventDispatcher?'
     answers:
       - {value: 'No', correct: true}
       - {value: 'Yes', correct: false}

@@ -65,7 +65,7 @@ questions:
     help: 'https://symfony.com/doc/current/security/csrf.html#csrf-protection-in-symfony-forms'
   -
     uuid: 1eedad53-9a0c-6cc2-8bbd-43a19afa5a59
-    question: 'What is the csrf key to set when you add one in a login form ?'
+    question: 'What is the CSRF token ID used when adding CSRF protection to a login form in Symfony?'
     answers:
       - {value: login, correct: false}
       - {value: authenticate, correct: true}

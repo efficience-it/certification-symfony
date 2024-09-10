@@ -10,7 +10,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/http_foundation.html#request'
   -
     uuid: 1eebf878-8ba5-61fc-a856-99d84c92580c
-    question: "Which statement is true about FlashBag::add() and FlashBag::set()?"
+    question: 'Which statement is true about FlashBag::add() and FlashBag::set()?'
     answers:
       - {value: 'The FlashBag::add() method allow to add a single message while FlashBag::set() allow to add a set of message using a callback', correct: false}
       - {value: 'They behave the same way', correct: false}

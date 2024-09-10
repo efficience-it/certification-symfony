@@ -45,7 +45,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/yaml.html#reading-yaml-files'
   -
     uuid: 1ef65dbc-b1db-602a-b33b-05d4fde5fe6a
-    question: "Which format of configuration file can be used to set PHP constants as parameters?"
+    question: 'Which format of configuration file can be used to set PHP constants as parameters?'
     answers:
       - {value: "YAML", correct: true}
       - {value: XML, correct: true}
