@@ -4,7 +4,7 @@
 
 # 🎓 Certification Symfony: Your Path to Mastery!
 
-Looking to earn your `Symfony certification`? Preparing for it can be an exciting journey with the right tools and resources! Whether you prefer to train on your own, attend a SensioLabs course, or practice by taking mock exams, we’ve got you covered.
+Looking to earn your `Symfony Certification`? Preparing for it can be an exciting journey with the right tools and resources! Whether you prefer to train on your own, attend a SensioLabs course, or practice by taking mock exams, we’ve got you covered.
 ## 📚 What We Offer ?
 
 To help you prepare effectively, we've organized questions based on the key topics outlined on the official certification page. Each category and subcategory contains questions with one or more correct answers, ensuring you're ready to master every aspect of the Symfony documentation.
