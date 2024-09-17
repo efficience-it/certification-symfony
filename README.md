@@ -32,10 +32,10 @@ Want to train with our team of experts? Reach out to us at [https://www.iteffici
 - [HTTP response](data/http/http_response.yaml)
 - [HTTP methods](data/http/http_methods.yaml)
 - [Cookies](data/http/cookies.yaml)
-- Caching
+- [Caching](data/http/caching.yaml)
 - [Content negotiation](data/http/content_negotiation.yaml)
 - [Language detection](data/http/language_detection.yaml)
-- Symfony HttpClient component
+- [Symfony HttpClient component](data/http/symfony_http_client_component.yaml)
 
 ### 🏛️ Symfony Architecture
 - [Symfony Flex](data/symfony_architecture/symfony_flex.yaml)
@@ -66,7 +66,7 @@ Want to train with our team of experts? Reach out to us at [https://www.iteffici
 - [HTTP redirects](data/controllers/http_redirects.yaml)
 - [Internal redirects](data/controllers/internal_redirects.yaml)
 - [Generate 404 pages](data/controllers/generate404_pages.yaml)
-- File upload
+- [File upload](data/controllers/file_upload.yaml)
 - [Built-in internal controllers](data/controllers/built_in_internal_controllers.yaml)
 
 ### 🗺️ Routing
@@ -124,7 +124,7 @@ Want to train with our team of experts? Reach out to us at [https://www.iteffici
 - Built-in services
 - [Configuration parameters](data/dependency_injection/configuration_parameters.yaml)
 - [Services registration](data/dependency_injection/services_registration.yaml)
-- Service decoration
+- [Service decoration](data/dependency_injection/service_decoration.yaml)
 - [Tags](data/dependency_injection/tags.yaml)
 - [Semantic configuration](data/dependency_injection/semantic_configuration.yaml)
 - [Factories](data/dependency_injection/factories.yaml)
@@ -164,7 +164,7 @@ Want to train with our team of experts? Reach out to us at [https://www.iteffici
 
 ### 🧪 Automated Tests
 - [Unit tests with PHPUnit](data/automated_tests/unit_tests_with_php_unit.yaml)
-- Functional tests with PHPUnit
+- [Functional tests with PHPUnit](data/automated_tests/functional_tests_with_phpunit.yaml)
 - [Client object](data/automated_tests/client_object.yaml)
 - [Crawler object](data/automated_tests/crawler_object.yaml)
 - [Profiler object](data/automated_tests/profiler_object.yaml)
