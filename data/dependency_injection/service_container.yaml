@@ -196,15 +196,6 @@ questions:
       - {value: 'No', correct: false}
     help: 'https://github.com/symfony/dependency-injection/blob/8126f0be4ff984e4db0140e60917900a53facb49/Loader/Configurator/ContainerConfigurator.php#L68'
   -
-    uuid: 1eebf878-8b9f-628e-b95e-99d84c92580c
-    question: 'When setting up the container with configuratio XML files and Config component, how to inject my.custome.service ?'
-    answers:
-      - {value: '<argument id= my.custom.service  />', correct: false}
-      - {value: '<argument type= argument  id= my.custom.service  />', correct: false}
-      - {value: '<argument type= service  id= my.custom.service  />', correct: true}
-      - {value: '<service id= my.custom.service  />', correct: false}
-    help: 'https://symfony.com/doc/current/service_container.html#choose-a-specific-service'
-  -
     uuid: 1eebf878-8b9f-62de-9af3-99d84c92580c
     question: 'Which types of injection are available in the component?'
     answers:
@@ -312,109 +303,108 @@ questions:
     uuid: 1ef5c09c-d7c9-6560-8979-85f7277877d1
     question: 'What is a Symfony Service Container?'
     answers:
-      - {value: "A database management tool", correct: false}
-      - {value: "A special object where services are stored", correct: true}
-      - {value: "A logging system", correct: false}
-      - {value: "A caching mechanism", correct: false}
+      - {value: 'A database management tool', correct: false}
+      - {value: 'A special object where services are stored', correct: true}
+      - {value: 'A logging system', correct: false}
+      - {value: 'A caching mechanism', correct: false}
     help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1ef5c09e-fdaa-6034-8508-a35d6de03e76
     question: 'What is Dependency Injection (DI) in Symfony?'
     answers:
-      - {value: "A way to manually inject code into templates", correct: false}
-      - {value: "A method to provide necessary objects to a class from external sources", correct: true}
-      - {value: "A technique for optimizing database queries", correct: false}
-      - {value: "A way to encrypt user data", correct: false}
+      - {value: 'A way to manually inject code into templates', correct: false}
+      - {value: 'A method to provide necessary objects to a class from external sources', correct: true}
+      - {value: 'A technique for optimizing database queries', correct: false}
+      - {value: 'A way to encrypt user data', correct: false}
     help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1ef5c0a1-66d6-6f60-9521-f194ab73eb2f
     question: 'How can you load all classes as services automatically inside a specific folder in Symfony?'
     answers:
-      - {value: "By using the autowire: false configuration", correct: false}
-      - {value: "By adding all class names manually in services.yaml", correct: false}
-      - {value: "By setting autowire: true and defining a resource", correct: true}
-      - {value: "By using the configurator tag", correct: false}
+      - {value: 'By using the autowire: false configuration', correct: false}
+      - {value: 'By adding all class names manually in services.yaml', correct: false}
+      - {value: 'By setting autowire: true and defining a resource', correct: true}
+      - {value: 'By using the configurator tag', correct: false}
     help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1ef5c0ac-c210-6358-aea3-8f65d65ecf88
     question: 'How can you make a service available only in the  dev  environment?'
     answers:
-      - {value: "By using the autowire: false option.", correct: false}
+      - {value: 'By using the autowire: false option.', correct: false}
       - {value: "By adding the #[When(env: 'dev')] attribute to the service class.", correct: true}
-      - {value: "By defining it in the services_test.yaml file.", correct: false}
-      - {value: "By setting the service as public.", correct: false}
+      - {value: 'By defining it in the services_test.yaml file.', correct: false}
+      - {value: 'By setting the service as public.', correct: false}
     help: 'https://symfony.com/doc/current/service_container.html#limiting-services-to-a-specific-symfony-environment'
   -
     uuid: 1ef5c0af-d817-65b8-8456-919dad88c362
     question: 'Which of the following is NOT a benefit of using the service container?'
     answers:
-      - {value: "Centralizing object construction.", correct: false}
-      - {value: "Improving application performance.", correct: false}
-      - {value: "Allowing services to be shared and reused.", correct: false}
-      - {value: "Making all services public by default.", correct: true}
+      - {value: 'Centralizing object construction.', correct: false}
+      - {value: 'Improving application performance.', correct: false}
+      - {value: 'Allowing services to be shared and reused.', correct: false}
+      - {value: 'Making all services public by default.', correct: true}
     help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1ef5c0b2-fda9-6a80-9f5e-cd37e2e3aa3d
     question: "In the default services.yaml configuration, what does the resource: '../src/' option do?"
     answers:
-      - {value: "It excludes the src/ directory from being used as services.", correct: false}
-      - {value: "It imports all classes in the src/ directory as services.", correct: true}
-      - {value: "It prevents autowiring for all services.", correct: false}
-      - {value: "It makes the classes in the src/Entity directory available as services.", correct: false}
+      - {value: 'It excludes the src/ directory from being used as services.', correct: false}
+      - {value: 'It imports all classes in the src/ directory as services.', correct: true}
+      - {value: 'It prevents autowiring for all services.', correct: false}
+      - {value: 'It makes the classes in the src/Entity directory available as services.', correct: false}
     help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1ef5c0b9-c808-679e-a4ff-cd4d8904a960
     question: 'What happens if a service is defined as public: false in Symfony?'
     answers:
-      - {value: "It cannot be injected into other services.", correct: false}
-      - {value: "It can only be accessed within the class where it is defined.", correct: false}
-      - {value: "It cannot be accessed directly from the service container.", correct: true}
-      - {value: "It is automatically excluded from autowiring.", correct: false}
+      - {value: 'It cannot be injected into other services.', correct: false}
+      - {value: 'It can only be accessed within the class where it is defined.', correct: false}
+      - {value: 'It cannot be accessed directly from the service container.', correct: true}
+      - {value: 'It is automatically excluded from autowiring.', correct: false}
     help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1ef5c0bd-3df5-61ca-b4e6-b73eeabedf7c
     question: 'What does the lazy option in a service definition do?'
     answers:
-      - {value: "It defers the instantiation of the service until it is actually needed.", correct: true}
-      - {value: "It prevents the service from being injected into other services.", correct: false}
-      - {value: "It prevents the service from being injected into other services.", correct: false}
-      - {value: "It makes the service available only in the  prod  environment.", correct: false}
+      - {value: 'It defers the instantiation of the service until it is actually needed.', correct: true}
+      - {value: 'It prevents the service from being injected into other services.', correct: false}
+      - {value: 'It makes the service available only in the  prod  environment.', correct: false}
     help: 'https://symfony.com/doc/current/service_container/lazy_services.html'
   -
     uuid: 1ef5c0c1-1ac7-64a6-9cbf-45ad2711c61f
     question: 'When would you use the private visibility for a service?'
     answers:
-      - {value: "When you want the service to be accessible from anywhere in the application.", correct: false}
-      - {value: "When the service should be used only internally within other services.", correct: true}
-      - {value: "When the service should not be instantiated at all.", correct: false}
-      - {value: "When the service is no longer needed in the application.", correct: false}
+      - {value: 'When you want the service to be accessible from anywhere in the application.', correct: false}
+      - {value: 'When the service should be used only internally within other services.', correct: true}
+      - {value: 'When the service should not be instantiated at all.', correct: false}
+      - {value: 'When the service is no longer needed in the application.', correct: false}
     help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1ef5c0c3-627f-6c92-8785-2179a55e4fcd
     question: 'What is a service alias in Symfony used for?'
     answers:
-      - {value: "To create a duplicate service with the same functionality.", correct: false}
-      - {value: "To define an alternative name for an existing service.", correct: true}
-      - {value: "To make a service public.", correct: false}
-      - {value: "To remove a service from the service container.", correct: false}
+      - {value: 'To create a duplicate service with the same functionality.', correct: false}
+      - {value: 'To define an alternative name for an existing service.', correct: true}
+      - {value: 'To make a service public.', correct: false}
+      - {value: 'To remove a service from the service container.', correct: false}
     help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1ef5c0c5-7d09-6688-87f2-a3540221237e
     question: "Which command is used to view a specific service's configuration and dependencies in Symfony?"
     answers:
-      - {value: "php bin/console service:show [service_name]", correct: false}
-      - {value: "php bin/console debug:container [service_name]", correct: true}
-      - {value: "php bin/console container:inspect [service_name]", correct: false}
+      - {value: 'php bin/console service:show [service_name]', correct: false}
+      - {value: 'php bin/console debug:container [service_name]', correct: true}
+      - {value: 'php bin/console container:inspect [service_name]', correct: false}
       - {value: 'php bin/console debug:services [service_name]', correct: false}
     help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1ef5c0ce-a7eb-6956-9bc8-1baf552f428a
     question: 'What is a key benefit of the service in Symfony?'
     answers:
-      - {value: "It is automatically created every time it is requested.", correct: false}
-      - {value: "It creates a new instance each time it is called.", correct: false}
-      - {value: "The same instance is returned each time it is requested.", correct: true}
-      - {value: "It is automatically destroyed after each use.", correct: false}
+      - {value: 'It is automatically created every time it is requested.', correct: false}
+      - {value: 'It creates a new instance each time it is called.', correct: false}
+      - {value: 'The same instance is returned each time it is requested.', correct: true}
+      - {value: 'It is automatically destroyed after each use.', correct: false}
     help: 'https://symfony.com/doc/current/service_container.html#creating-configuring-services-in-the-container'
   -
     uuid: 1ef5c0dc-17f6-6b76-9bb6-93e4d8e83be3

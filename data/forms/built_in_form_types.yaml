@@ -12,7 +12,7 @@ questions:
     help: 'https://symfony.com/doc/current/reference/forms/types.html#text-fields'
   -
     uuid: 1eebf878-8b9f-6cde-93c9-99d84c92580c
-    question: 'Which date type exist?'
+    question: 'Which of the following are valid date types in Symfony?'
     answers:
       - {value: date, correct: true}
       - {value: datetime, correct: true}
@@ -21,7 +21,7 @@ questions:
     help: 'https://symfony.com/doc/current/reference/forms/types.html#date-and-time-fields'
   -
     uuid: 1eebf878-8ba0-6044-b236-99d84c92580c
-    question: 'How to Disable the Validation of Submitted Data'
+    question: 'What are the ways to disable validation of submitted data in Symfony forms?'
     answers:
       - {value: 'set the validation_groups option to false', correct: true}
       - {value: 'set the validation_enable option to false', correct: false}

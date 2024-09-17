@@ -44,8 +44,8 @@ questions:
     uuid: 1ef65daa-b527-60b0-bf86-d13f9c9bf750
     question: 'For a sensitive application with strict cookie usage policies, what cookie strategy is recommended?'
     answers:
-      - {value: "Cookie::SAMESITE_LAX", correct: false}
-      - {value: "Cookie::SAMESITE_SAME_ORIGIN", correct: false}
-      - {value: "Cookie::SAMESITE_NONE", correct: false}
-      - {value: "Cookie::SAMESITE_STRICT", correct: true}
+      - {value: 'Cookie::SAMESITE_LAX', correct: false}
+      - {value: 'Cookie::SAMESITE_SAME_ORIGIN', correct: false}
+      - {value: 'Cookie::SAMESITE_NONE', correct: false}
+      - {value: 'Cookie::SAMESITE_STRICT', correct: true}
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie'

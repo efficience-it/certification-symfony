@@ -30,8 +30,8 @@ questions:
     uuid: 1eebf878-8b9a-655e-818b-99d84c92580c
     question: 'Which of the following are valid ways to send some JSON content as the response of some action in a Symfony application?'
     answers:
-      - {value: 'use Symfony\Component\HttpFoundation\JsonResponse;// ...return JsonResponse(json_encode(array(''data'' => 123)));', correct: false}
-      - {value: "$response = new JsonResponse();$response->setData(array('data' => 123));return $response;", correct: true}
+      - {value: "return JsonResponse(json_encode(array('data' => 123)));", correct: false}
+      - {value: "$response = new JsonResponse(); $response->setData(array('data' => 123)); return $response;", correct: true}
       - {value: "$data = json_encode(array('data' => 123));$response = Response($data);return $response;", correct: false}
       - {value: "$data = json_encode(array('data' => 123));$response = JsonResponse::fromJsonString($data);return $response;", correct: true}
       - {value: 'use Symfony\Component\HttpFoundation\JsonResponse;$response = new JsonResponse(array(''data'' => 123));return $response;', correct: true}

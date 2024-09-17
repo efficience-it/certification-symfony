@@ -9,7 +9,7 @@ questions:
     help: 'https://www.w3.org/International/questions/qa-accept-lang-locales'
   -
     uuid: 1eeda399-81f7-63da-882e-c7a97213cca5
-    question: "Quelle est la valeur q de  da  dans Accept-Language: da, en-gb;q=0.8, en;q=0.7 ?"
+    question: 'Quelle est la valeur q de  da  dans Accept-Language: da, en-gb;q=0.8, en;q=0.7 ?'
     answers:
       - {value: '1', correct: true}
       - {value: '0.8', correct: false}
@@ -20,10 +20,10 @@ questions:
     uuid: 1eeda3b0-75d6-6efe-8f89-f105bb5b9b6c
     question: 'Which  Accept-Language  value is wrong ?'
     answers:
-      - {value: "Accept-Language: *", correct: true}
-      - {value: "Accept-Language: es;q=0", correct: false}
-      - {value: "Accept-Language: es-MX, es;q=0.9, en;q=0.8, *;q=0.5", correct: true}
-      - {value: "Accept-Language: es;q=0.5, en;q=0.8, *;q=0.9", correct: false}
+      - {value: 'Accept-Language: *', correct: true}
+      - {value: 'Accept-Language: es;q=0', correct: false}
+      - {value: 'Accept-Language: es-MX, es;q=0.9, en;q=0.8, *;q=0.5', correct: true}
+      - {value: 'Accept-Language: es;q=0.5, en;q=0.8, *;q=0.9', correct: false}
     help: 'https://symfony.com/blog/new-in-symfony-5-4-language-negotiation'
   -
     uuid: 1eeda3ba-e1e1-6608-9264-93d7601131fc

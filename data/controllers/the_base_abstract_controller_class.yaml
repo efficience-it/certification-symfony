@@ -15,13 +15,13 @@ questions:
       - {value: "$response->setVary(['Accept-Encoding', 'User-Agent']);", correct: true}
       - {value: "$response->headers->set('Vary', ['Accept-Encoding', 'User-Agent']);", correct: true}
       - {value: 'This is the default behavior', correct: false}
-      - {value: "$response->headers->set('Vary', 'Accept-Encoding');$response->headers->set('Vary', 'User-Agent', false);", correct: false}
+      - {value: "$response->headers->set('Vary', 'Accept-Encoding'); $response->headers->set('Vary', 'User-Agent', false);", correct: false}
       - {value: "$response->setVary('Accept-Encoding, User-Agent');", correct: false}
-      - {value: "$response->headers->set('Vary', 'Accept-Encoding');$response->headers->set('Vary', 'User-Agent');", correct: false}
-      - {value: "$response->setVary('Accept-Encoding');$response->setVary('User-Agent', false);", correct: false}
+      - {value: "$response->headers->set('Vary', 'Accept-Encoding'); $response->headers->set('Vary', 'User-Agent');", correct: false}
+      - {value: "$response->setVary('Accept-Encoding'); $response->setVary('User-Agent', false);", correct: false}
       - {value: "$response->headers->set('Vary', 'Accept-Encoding, User-Agent');", correct: false}
       - {value: 'This is not possible without calling a reverse proxy', correct: false}
-      - {value: "$response->setVary('Accept-Encoding');$response->setVary('User-Agent');", correct: true}
+      - {value: "$response->setVary('Accept-Encoding'); $response->setVary('User-Agent');", correct: true}
     help: 'https://symfony.com/doc/current/http_cache/cache_vary.html'
   -
     uuid: 1eebf878-8b9b-63fa-b82c-99d84c92580c
@@ -39,7 +39,7 @@ questions:
       - {value: 'null', correct: true}
       - {value: 'false', correct: false}
       - {value: 'QueryException will be thrown', correct: false}
-      - {value: "NotFoundException will be thrown", correct: false}
+      - {value: 'NotFoundException will be thrown', correct: false}
     help: 'https://symfony.com/doc/current/components/http_foundation.html'
   -
     uuid: 1eebf878-8b9f-60e0-becf-99d84c92580c

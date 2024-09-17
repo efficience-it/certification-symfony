@@ -17,7 +17,7 @@ questions:
     uuid: 1ef568f6-2e61-648a-a7b3-bff7ab4fac88
     question: 'What happens to the original service when you override an existing service definition in Symfony?'
     answers:
-      - {value: "The original service is preserved", correct: false}
+      - {value: 'The original service is preserved', correct: false}
       - {value: 'The original service is replaced, and the old definition is lost', correct: true}
       - {value: 'The original service and the new one are both available', correct: false}
       - {value: 'The original service is automatically decorated', correct: false}
