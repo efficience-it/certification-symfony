@@ -98,7 +98,7 @@ questions:
     help: 'https://twig.symfony.com/doc/3.x/filters/escape.html#custom-escapers'
   -
     uuid: 1eebf878-8ba3-60c8-bbfa-99d84c92580c
-    question: 'The compiler is used to transform a Node into a valid PHP class, but which class trigger this compilation?'
+    question: 'In the process of converting a Node into a valid PHP class, which class is responsible for initiating this transformation?'
     answers:
       - {value: 'The Lexer', correct: false}
       - {value: 'The Environment', correct: false}
@@ -186,10 +186,10 @@ questions:
     uuid: 1eebf878-8ba9-6964-bbd3-99d84c92580c
     question: 'In a Twig template, how can you test that a given constant is defined by PHP? (Example, how can you check if VERSION constant is defined by Symfony\Component\HttpKernel\Kernel class?)'
     answers:
-      - {value: '{% if constant(''Symfony\\Component\\HttpKernel\\Kernel::VERSION'') ?? %} ... {% endif %}', correct: false}
-      - {value: '{% if constant(''Symfony\\Component\\HttpKernel\\Kernel::VERSION'') is defined %} ... {% endif %}', correct: true}
-      - {value: '{% if constant(''VERSION'', ''Symfony\\Component\\HttpKernel\\Kernel'') %}...{% endif %}', correct: false}
-      - {value: "{% if defined('Symfony\\\\Component\\\\HttpKernel\\\\Kernel::VERSION') %}...{% endif %}", correct: false}
+      - {value: '{% if constant("Symfony\\Component\\HttpKernel\\Kernel::VERSION") ?? %} ... {% endif %}', correct: false}
+      - {value: '{% if constant("Symfony\\Component\\HttpKernel\\Kernel::VERSION") is defined %} ... {% endif %}', correct: true}
+      - {value: '{% if constant("VERSION", "Symfony\\Component\\HttpKernel\\Kernel") %}...{% endif %}', correct: false}
+      - {value: '{% if defined("Symfony\\Component\\HttpKernel\\Kernel::VERSION") %}...{% endif %}', correct: false}
     help: 'https://twig.symfony.com/doc/functions/constant.html'
   -
     uuid: 1eebf878-8ba9-6e82-aa99-99d84c92580c

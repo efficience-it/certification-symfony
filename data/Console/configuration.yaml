@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8b97-6084-981d-99d84c92580c
-    question: "Which of the following describes the correct lifecycle of a Command?"
+    question: 'Which of the following describes the correct lifecycle of a Command?'
     answers:
       - {value: 'initialize -> interact -> execute', correct: true}
       - {value: 'initialize -> execute -> interact', correct: false}
@@ -9,7 +9,7 @@ questions:
     help: 'https://symfony.com/doc/current/console.html#command-lifecycle'
   -
     uuid: 1eebf878-8b98-6af6-a179-99d84c92580c
-    question: "What will be the value stored in $width when using the following code outside of a command context?use Symfony\\Component\\Console\\Terminal;$width = (new Terminal())->getWidth();"
+    question: 'What will be the value stored in $width when using the following code outside of a command context? $width = (new Terminal())->getWidth();'
     answers:
       - {value: '80', correct: true}
       - {value: '120', correct: false}

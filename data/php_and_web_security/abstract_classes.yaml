@@ -24,7 +24,7 @@ questions:
     help: 'https://www.php.net/manual/en/language.oop5.abstract.php'
   -
     uuid: 1eee6cd6-f85e-6ac6-9026-d7a38b0e1aa0
-    question: "When you extends an abstract class which define a function. Does the child class can add optionnal aruguments in the same function definition ? prefixName($name, $separator =  . ) instead of prefixName($name)"
+    question: 'When you extends an abstract class which define a function. Does the child class can add optionnal aruguments in the same function definition ? prefixName($name, $separator =  . ) instead of prefixName($name)'
     answers:
       - {value: 'Yes', correct: true}
       - {value: 'No', correct: false}

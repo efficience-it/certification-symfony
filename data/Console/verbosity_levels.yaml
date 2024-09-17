@@ -16,13 +16,13 @@ questions:
     uuid: 1eebf878-8ba5-68c8-80d0-99d84c92580c
     question: 'In a console, what are the available methods to show messages only in a case of verbosity ?'
     answers:
-      - {value: '->isQuiet()', correct: true}
-      - {value: '->normal()', correct: false}
-      - {value: '->isVerbose()', correct: true}
-      - {value: '->isVeryVerbose()', correct: true}
-      - {value: '->isVeryVeryVerbose()', correct: false}
-      - {value: '->isDebug()', correct: true}
-      - {value: '->isVeryDebug()', correct: false}
+      - {value: 'isQuiet()', correct: true}
+      - {value: 'normal()', correct: false}
+      - {value: 'isVerbose()', correct: true}
+      - {value: 'isVeryVerbose()', correct: true}
+      - {value: 'isVeryVeryVerbose()', correct: false}
+      - {value: 'isDebug()', correct: true}
+      - {value: 'isVeryDebug()', correct: false}
     help: 'https://symfony.com/doc/current/console/verbosity.html'
   -
     uuid: 1eebf878-8ba5-690e-84ef-99d84c92580c

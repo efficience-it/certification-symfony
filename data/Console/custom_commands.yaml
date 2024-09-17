@@ -8,13 +8,13 @@ questions:
     help: 'https://symfony.com/doc/current/components/console/helpers/cursor.html'
   -
     uuid: 1eebf878-8b99-6bea-907b-99d84c92580c
-    question: 'Which of the following constants do not exist?'
+    question: 'Which of the following constants from Symfony\Component\Console\Input\InputArgument do not exist?'
     answers:
-      - {value: 'Symfony\Component\Console\Input\InputArgument::REQUIRED', correct: false}
-      - {value: 'Symfony\Component\Console\Input\InputArgument::NEGATABLE', correct: true}
-      - {value: 'Symfony\Component\Console\Input\InputArgument::IS_ARRAY', correct: false}
-      - {value: 'Symfony\Component\Console\Input\InputArgument::OPTIONAL', correct: false}
-      - {value: 'Symfony\Component\Console\Input\InputArgument::NONE', correct: true}
+      - {value: 'REQUIRED', correct: false}
+      - {value: 'NEGATABLE', correct: true}
+      - {value: 'IS_ARRAY', correct: false}
+      - {value: 'OPTIONAL', correct: false}
+      - {value: 'NONE', correct: true}
     help: 'https://github.com/symfony/console/blob/7.0/Input/InputArgument.php'
   -
     uuid: 1eebf878-8b9b-61b6-82fd-99d84c92580c

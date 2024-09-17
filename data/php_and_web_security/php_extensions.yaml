@@ -10,16 +10,6 @@ questions:
       - {value: 'Sending HTTP Headers', correct: true}
     help: 'https://www.php.net/manual/en/function.header.php'
   -
-    uuid: 1eebf878-8ba4-6a7c-8f9f-99d84c92580c
-    question: 'What is the main difference between the include and require language constructs?'
-    answers:
-      - {value: 'The include and include_once language constructs are processed at runtime whereas the require and require_once language constructs are processed at compile time.', correct: false}
-      - {value: "The require and require_once language constructs can't be used with absolute URLs.", correct: false}
-      - {value: "The include and include_once language constructs cause a fatal error if the file doesn't exist.", correct: false}
-      - {value: "The require and require_once language constructs cause a fatal error when the file can't be read.", correct: true}
-      - {value: 'There is no differences other than their names.', correct: false}
-    help: 'https://www.php.net/manual/en/function.include.php'
-  -
     uuid: 1eebf878-8ba5-624c-866b-99d84c92580c
     question: "What is the output ?$a =  0 ;echo strlen($a);echo empty($a) ? $a : 5;echo $a ?: 5;"
     answers:

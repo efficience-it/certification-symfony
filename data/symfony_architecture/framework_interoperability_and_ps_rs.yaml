@@ -47,20 +47,11 @@ questions:
     uuid: 1eebf878-8b98-6e02-89a2-99d84c92580c
     question: 'When was the Symfony BC promise introduced ?'
     answers:
-      - {value: '2.6', correct: false}
-      - {value: '3.0', correct: false}
       - {value: '3.2', correct: false}
-      - {value: '3.1', correct: false}
-      - {value: '2.5', correct: false}
       - {value: '2.3', correct: true}
-      - {value: '2.9', correct: false}
       - {value: '3.3', correct: false}
       - {value: '2.4', correct: false}
-      - {value: '2.1', correct: false}
       - {value: '2.2', correct: false}
-      - {value: '2.0', correct: false}
-      - {value: '2.7', correct: false}
-      - {value: '2.8', correct: false}
     help: 'https://symfony.com/doc/current/contributing/code/bc.html'
   -
     uuid: 1eebf878-8b99-6636-88fd-99d84c92580c
@@ -262,11 +253,11 @@ questions:
     uuid: 1eebf878-8ba0-6634-a1f8-99d84c92580c
     question: 'Using Symfony\Component\ErrorHandler\ErrorHandler static class, what is the only method available?'
     answers:
-      - {value: 'public static function enable(self $handler = null, bool $replace = true)', correct: false}
-      - {value: 'public static function create(self $handler = null, bool $replace = true)', correct: false}
-      - {value: 'public static function load(self $handler = null, bool $replace = true)', correct: false}
-      - {value: 'public static function start(self $handler = null, bool $replace = true)', correct: false}
-      - {value: 'public static function register(self $handler = null, bool $replace = true)', correct: true}
+      - {value: 'enable(self $handler = null, bool $replace = true)', correct: false}
+      - {value: 'create(self $handler = null, bool $replace = true)', correct: false}
+      - {value: 'load(self $handler = null, bool $replace = true)', correct: false}
+      - {value: 'start(self $handler = null, bool $replace = true)', correct: false}
+      - {value: 'register(self $handler = null, bool $replace = true)', correct: true}
     help: 'https://github.com/symfony/error-handler'
   -
     uuid: 1eebf878-8ba0-6684-8ff1-99d84c92580c

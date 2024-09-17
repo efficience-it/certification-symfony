@@ -17,7 +17,7 @@ questions:
     help: 'https://tutorialsclass.com/faq/is-php-a-case-sensitive-language/'
   -
     uuid: 1eebf878-8ba7-6e0c-acb8-99d84c92580c
-    question: 'Which of the following are valid Symfony top level namespaces?'
+    question: 'Which of the following are valid top-level namespaces in Symfony?'
     answers:
       - {value: Symfony\Bridge, correct: true}
       - {value: Symfony\Bundle, correct: true}

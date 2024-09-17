@@ -9,7 +9,7 @@ questions:
     help: 'https://symfony.com/doc/current/routing.html#redirecting-to-urls-and-routes-directly-from-a-route'
   -
     uuid: 1eebf878-8ba8-61fe-9ece-99d84c92580c
-    question: "What's the possible word in XXX to set a redirection in the routing.yaml ?"
+    question: 'In routing.yaml, what keyword is used to define a redirection in the defaults section?'
     answers:
       - {value: path, correct: true}
       - {value: custom_path, correct: false}

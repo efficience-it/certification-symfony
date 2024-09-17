@@ -3,7 +3,7 @@ questions:
     uuid: 1eebf878-8b99-6f1e-b4c2-99d84c92580c
     question: 'Which of these are Symfony built-in security providers configuration name?'
     answers:
-      - {value: "OAuth2 User Provider (Loads users from third party server)", correct: false}
+      - {value: 'OAuth2 User Provider (Loads users from third party server)', correct: false}
       - {value: 'Entity User Provider (Loads users from a database using Doctrine)', correct: true}
       - {value: 'Chain User Provider ( Merges two or more user providers into a new user provider)', correct: true}
       - {value: 'Memory User Provider (Loads users from a configuration file)', correct: true}

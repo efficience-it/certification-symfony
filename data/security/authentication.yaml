@@ -76,16 +76,16 @@ questions:
     uuid: 1eedadbf-3130-62fa-9ad6-73c005d2a996
     question: 'By default, generated links use the lifetime configured globally but you can change the lifetime per link. How ?'
     answers:
-      - {value: "setting the third argument of the createLoginLink() method ", correct: true}
-      - {value: "setting the second argument of the createLoginLink() method ", correct: false}
-      - {value: "giving an array to the second argument of the createLoginLink() method, whith the life_time value", correct: false}
+      - {value: 'setting the third argument of the createLoginLink() method', correct: true}
+      - {value: 'setting the second argument of the createLoginLink() method', correct: false}
+      - {value: 'giving an array to the second argument of the createLoginLink() method, whith the life_time value', correct: false}
     help: 'https://symfony.com/doc/current/security/login_link.html#customizing-the-login-link'
   -
     uuid: 1eedadda-5e3c-6404-b06c-cfa953ff7afa
     question: 'Where should be set the access_token in an access token authentication ?'
     answers:
       - {value: 'in the header, usually Authorization: Bearer XXXX', correct: true}
-      - {value: "in the request query string, usually access_token", correct: false}
+      - {value: 'in the request query string, usually access_token', correct: false}
       - {value: ' in the request body during a POST request, usually access_token', correct: false}
     help: 'https://symfony.com/doc/current/security/access_token.html#2-configure-the-token-extractor-optional'
   -
@@ -109,8 +109,8 @@ questions:
     question: 'How could you know if a User can switch to another account ?'
     answers:
       - {value: $this->getUser()->canSwitchUser(), correct: false}
-      - {value: "$this->getUser()->hasRole(' ROLE_ALLOWED_TO_SWITCH ')", correct: false}
-      - {value: "$this->isGranted(' ROLE_ALLOWED_TO_SWITCH ')", correct: true}
+      - {value: '$this->getUser()->hasRole( ROLE_ALLOWED_TO_SWITCH )', correct: false}
+      - {value: '$this->isGranted( ROLE_ALLOWED_TO_SWITCH )', correct: true}
       - {value: "twig: is_granted('IS_IMPERSONATOR')", correct: true}
     help: 'https://symfony.com/doc/current/security/impersonating_user.html#knowing-when-impersonation-is-active'
   -

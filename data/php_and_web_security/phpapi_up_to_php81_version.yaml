@@ -7,7 +7,7 @@ questions:
       - {value: XML, correct: true}
       - {value: Annotation, correct: false}
       - {value: INI, correct: false}
-      - {value: YAML, correct: false}
+      - {value: YAML, correct: true}
     help: 'https://symfony.com/doc/current/configuration.html#constants-as-parameters'
   -
     uuid: 1eebf878-8b98-6740-a71f-99d84c92580c
@@ -28,6 +28,16 @@ questions:
       - {value: myClass, correct: true}
       - {value: _MyClass, correct: true}
     help: 'https://www.php.net/manual/en/language.oop5.basic.php'
+  -
+    uuid: 1eebf878-8b99-655a-9f19-99d84c92580c
+    question: "Consider the following code snippet: function redirect($url) { $header = sprintf('Location: %s', $url); } Make sure the Location header hasn't already been sent yet if ( ??? ) { header($header); exit; }"
+    answers:
+      - {value: '!in_array($header, headers_list())', correct: true}
+      - {value: "!header_exists('Location', $url)", correct: false}
+      - {value: '!headers_sent()', correct: true}
+      - {value: "$_SERVER['HTTP_LOCATION'] != $url", correct: false}
+      - {value: '!http_redirect_to($url)', correct: false}
+    help: 'https://php.net/manual/en/ref.network.php'
   -
     uuid: 1eebf878-8b9a-6054-a6cb-99d84c92580c
     question: '$a = (object) [ a  =>  b ]; $b = (object) [ a  =>  c ]; echo $a <=> $b;'
@@ -170,7 +180,7 @@ questions:
     help: 'https://www.php.net/manual/en/language.references.return.php'
   -
     uuid: 1eebf878-8ba0-69e0-80a7-99d84c92580c
-    question: 'The ______ keyword is used to indicate an incomplete class or method, which must be further extended and/or implemented in order to be used.'
+    question: 'Which keyword is used to indicate that a class or method is incomplete and must be extended or implemented to be used?'
     answers:
       - {value: abstract, correct: true}
       - {value: final, correct: false}
@@ -243,6 +253,16 @@ questions:
       - {value: 'Yes', correct: false}
     help: 'https://symfony.com/doc/current/components/property_access/introduction.html#magic-call-method'
   -
+    uuid: 1eebf878-8ba3-653c-8129-99d84c92580c
+    question: "Consider the following code snippet: trigger_error('This method is deprecated.'); Which of the following is valid way to catch and process errors that were triggered with the trigger_error() function?"
+    answers:
+      - {value: "try { trigger_error('This method is deprecated.'); } catch (\\Error $e) {// do something }", correct: true}
+      - {value: 'set_error_handler(function ($level, $message, $file, $line, array $vars = []) { error_log($message); }))', correct: false}
+      - {value: '$errors = get_triggered_errors();', correct: false}
+      - {value: "try { trigger_error('This method is deprecated.'); } catch (\\Error $e) { // do something }", correct: false}
+      - {value: "try { trigger_error('This method is deprecated.'); } catch (\\Exception $e) { // do something ... }", correct: false}
+    help: 'https://php.net/manual/en/function.error-log.php'
+  -
     uuid: 1eebf878-8ba3-673a-a520-99d84c92580c
     question: "Given the following code, what will be displayed?$a = (object) ['a' => 'a'];$b = (object) ['a' => 'a'];echo $b <=> $a;"
     answers:
@@ -258,7 +278,7 @@ questions:
       - {value: '$n = array_count_values($a);', correct: true}
       - {value: '$n = count($a);', correct: false}
       - {value: '$n = array_total_values($a);', correct: false}
-      - {value: "$ = array_unique($a);$k = array_fill(0,count($k), 0);$n = array_combine($k, $v);foreach( $a as $i){++$n[$i];}", correct: false}
+      - {value: '$ = array_unique($a);$k = array_fill(0,count($k), 0);$n = array_combine($k, $v);foreach( $a as $i){ ++$n[$i];}', correct: false}
     help: 'https://php.net/manual/en/function.array-count-values.php'
   -
     uuid: 1eebf878-8ba3-6e56-af20-99d84c92580c
@@ -319,17 +339,17 @@ questions:
     question: 'What is the purpose of the Chain User Provider ?'
     answers:
       - {value: 'It combines two or more providers to create a new user provider. sorted they are looked one after the other until user is found', correct: true}
-      - {value: "This user provider stores all user information in a configuration file, including their passwords.", correct: false}
-      - {value: "User Access are stored in a Chain software like Stackifor.", correct: false}
+      - {value: 'This user provider stores all user information in a configuration file, including their passwords.', correct: false}
+      - {value: 'User Access are stored in a Chain software like Stackifor.', correct: false}
     help: 'https://symfony.com/doc/current/security/user_providers.html#chain-user-provider'
   -
     uuid: 1eedb041-7713-6f86-9b4d-9d3b2d641bb6
-    question: 'What is the reason, we could add false in $security->logout(false) in Security ?'
+    question: 'Why might you pass false to $security->logout(false) in the Security component?'
     answers:
-      - {value: 'disable CSRF', correct: true}
-      - {value: 'disable default redirection', correct: false}
-      - {value: 'disable firewall', correct: false}
-      - {value: 'to limit login attempts, the user will not be able to login for 5 minutes', correct: false}
+      - {value: 'To disable CSRF protection', correct: true}
+      - {value: 'To disable the default redirection', correct: false}
+      - {value: 'To disable the firewall', correct: false}
+      - {value: 'To limit login attempts, preventing the user from logging in for 5 minutes', correct: false}
     help: 'https://symfony.com/doc/current/security.html#logout-programmatically'
   -
     uuid: 1eee6d98-7a23-6338-9026-cd57d9ba16db
