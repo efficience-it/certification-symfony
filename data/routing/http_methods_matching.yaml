@@ -32,7 +32,7 @@ questions:
     answers:
       - {value: 'by adding: <input type= hidden  name= _method  value= PUT >', correct: true}
       - {value: 'with <form method= PUT ></form>', correct: false}
-      - {value: "framework.http_method_override option is true and$form = $this->createFormBuilder($task)->setMethod('PUT')", correct: true}
+      - {value: "framework.http_method_override option is true and $form = $this->createFormBuilder($task)->setMethod('PUT')", correct: true}
       - {value: "framework.http_method_override option is true and{{ form_start(form, {'method': 'PUT'}) }}", correct: true}
       - {value: "framework.http_method_override option is true and$form = $this->createForm(TotoType::class, $toto, ['method' => 'PUT', ]);", correct: true}
     help: 'https://symfony.com/doc/6.4/routing.html#matching-http-methods'

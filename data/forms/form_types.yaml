@@ -67,12 +67,12 @@ questions:
     help: 'https://symfony.com/doc/current/components/form/form_events.html'
   -
     uuid: 1eebf878-8b99-6000-9467-99d84c92580c
-    question: 'How one can detect that a given Symfony\Component\Form\Extension\Core\Type\SubmitType form type has been clicked ?'
+    question: 'How can you detect if a SubmitType button has been clicked?'
     answers:
-      - {value: 'Using the isClicked method of the parent form.', correct: false}
-      - {value: 'Using the clicked method of the given parent form.', correct: false}
-      - {value: 'Using the isClicked method of the given submit button.', correct: true}
-      - {value: 'Using the clicked method of the given submit button.', correct: false}
+      - {value: 'By using the isClicked method on the parent form.', correct: false}
+      - {value: 'By using the clicked method on the parent form.', correct: false}
+      - {value: 'By using the isClicked method on the submit button.', correct: true}
+      - {value: 'By using the clicked method on the submit button.', correct: false}
     help: 'https://symfony.com/doc/current/reference/forms/types/submit.html'
   -
     uuid: 1eebf878-8b99-6046-8fb8-99d84c92580c
@@ -92,7 +92,7 @@ questions:
     help: 'https://symfony.com/doc/current/reference/forms/types/money.html'
   -
     uuid: 1eebf878-8b99-6c30-8ce8-99d84c92580c
-    question: 'What option should you use in order to have a DateType form type rendered as an HTML5 input type= date  ?'
+    question: 'Which option should you use to render a DateType form type as an HTML5 ?'
     answers:
       - {value: no_javascript, correct: false}
       - {value: type_date, correct: false}
@@ -120,7 +120,7 @@ questions:
     answers:
       - {value: 'Yes', correct: false}
       - {value: 'No', correct: true}
-    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Form/Button.php#L110'
+    help: '&nbsp;https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Form/Button.php#L110'
   -
     uuid: 1eebf878-8b9a-6cf2-b2df-99d84c92580c
     question: "Given the following configuration:$form = $this ->createFormBuilder(['myfield' => 'foo'])       ->add('myfield', TextType::class, ['data' => 'bar', 'empty_data' => 'none'])       ->getForm();What will be displayed in the myfield field ?"
@@ -247,7 +247,7 @@ questions:
     answers:
       - {value: Symfony\Component\Form\Extension\Core\Type\DateTimeType, correct: false}
       - {value: Symfony\Component\Form\Extension\Core\Type\DateType, correct: true}
-      - {value: "Symfony\\Component\\Form\\Extension\\Core\\Type\\TimeType", correct: false}
+      - {value: Symfony\Component\Form\Extension\Core\Type\TimeType, correct: false}
     help: 'https://symfony.com/doc/current/reference/forms/types/birthday.html'
   -
     uuid: 1eed57b7-0955-6612-b73b-9d916356f596

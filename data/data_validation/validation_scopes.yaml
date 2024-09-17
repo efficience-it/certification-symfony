@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eec0485-af89-6924-89bd-af67db890733
-    question: 'Which part does a CallBack validate in a Validator ?'
+    question: 'In the Symfony Validator, which part does a CallBack validator validate?'
     answers:
       - {value: 'an attribute', correct: false}
       - {value: 'a method', correct: false}

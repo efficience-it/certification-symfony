@@ -30,7 +30,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/form.html#setting-default-values'
   -
     uuid: 1eebf878-8b9f-6df6-80c3-99d84c92580c
-    question: 'Your Form class must extends ____'
+    question: 'Your Form class must extend which of the following?'
     answers:
       - {value: Symfony\Component\Form\FormType, correct: false}
       - {value: Symfony\Component\Form\AbstractType, correct: true}

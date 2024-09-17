@@ -74,7 +74,7 @@ questions:
     help: 'https://tools.ietf.org/html/rfc2616#section-6.1.1'
   -
     uuid: 1eebf878-8b9c-60c0-962a-99d84c92580c
-    question: 'Which headers can trigger a 406 response status code if the server cannot produce a valid response?'
+    question: 'Which headers can trigger a 406 status code if the server cannot produce an acceptable response?'
     answers:
       - {value: If-Range, correct: false}
       - {value: If-None-Match, correct: false}
@@ -124,7 +124,7 @@ questions:
       - {value: "They don't exist.", correct: false}
       - {value: 'Server Error', correct: false}
       - {value: Informational, correct: true}
-    help: 'https://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html#sec6.1.1<br>'
+    help: 'https://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html#sec6.1.1'
   -
     uuid: 1eebf878-8ba1-6c50-934c-99d84c92580c
     question: 'Which of the following are valid status code to create a Symfony\Component\HttpFoundation\RedirectResponse?'

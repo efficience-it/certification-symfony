@@ -54,7 +54,7 @@ questions:
     help: 'https://datatracker.ietf.org/doc/html/rfc5861#section-4'
   -
     uuid: 1eebf878-8b9d-695c-81e1-99d84c92580c
-    question: "When the server can't return an acceptable response according to an If-Match header, it should return:"
+    question: 'If the server cannot return a response that matches the conditions of an If-Match header, which status code should it return?'
     answers:
       - {value: 'a 418', correct: false}
       - {value: 'a 412', correct: true}

@@ -99,16 +99,6 @@ questions:
       - {value: persistDeferred(), correct: false}
     help: 'https://symfony.com/doc/current/components/cache/cache_pools.html#saving-cache-items'
   -
-    uuid: 1eebf878-8ba7-6d3a-90f4-99d84c92580c
-    question: 'What are the correct arguments of the Symfony\Component\Routing\Route constructor ?'
-    answers:
-      - {value: 'string $path The path pattern to matcharray $defaults An array of default parameter valuesarray<string|\Stringable> $requirements An array of requirements for parameters (regexes)array $options An array of options', correct: true}
-      - {value: 'array<string|\Stringable> $requirements An array of requirements for parameters (regexes)string $path The path pattern to matcharray $defaults An array of default parameter valuesarray $options An array of options', correct: false}
-      - {value: 'string $path The path pattern to matcharray<string|\Stringable> $requirements An array of requirements for parameters (regexes)array $options An array of optionsarray $defaults An array of default parameter values', correct: false}
-      - {value: 'array $defaults An array of default parameter valuesstring $path The path pattern to matcharray<string|\Stringable> $requirements An array of requirements for parameters (regexes)array $options An array of options', correct: false}
-      - {value: 'array $options An array of optionsstring $path The path pattern to matcharray $defaults An array of default parameter valuesarray<string|\Stringable> $requirements An array of requirements for parameters (regexes)', correct: false}
-    help: 'https://github.com/symfony/symfony/blob/master/src/Symfony/Component/Routing/Route.php#L36'
-  -
     uuid: 1eebf878-8ba9-6662-bd4b-99d84c92580c
     question: 'Which types are not valid Node Types ?'
     answers:
@@ -127,8 +117,8 @@ questions:
     answers:
       - {value: 'It always applies a custom function to an XML element', correct: false}
       - {value: 'It ensures that single XML elements are turned into an array', correct: true}
-      - {value: "It normalizes XML element name (e.g. pluralizing the key used in XML)", correct: false}
-      - {value: "It applies a custom function to an XML element if an error occurs", correct: false}
+      - {value: 'It normalizes XML element name (e.g. pluralizing the key used in XML)', correct: false}
+      - {value: 'It applies a custom function to an XML element if an error occurs', correct: false}
     help: 'https://symfony.com/doc/current/components/config/definition.html#normalization'
   -
     uuid: 1eebf878-8ba9-6748-82fb-99d84c92580c

@@ -51,10 +51,8 @@ questions:
     question: 'What is the command line to validate the doctrine mapping files ?'
     answers:
       - {value: 'php bin/console doctrine:schema:validate', correct: true}
-      - {value: 'php bin/console doctrine:schema:validation', correct: false}
       - {value: 'php bin/console doctrine:schema:update --dump-sql', correct: false}
       - {value: 'php bin/console doctrine:schema:update --force', correct: false}
-      - {value: 'php bin/console doctrine:mapping:convert', correct: false}
       - {value: 'php bin/console doctrine:mapping:import', correct: false}
     help: 'https://symfony.com/doc/current/doctrine.html#add-mapping-information'
   -

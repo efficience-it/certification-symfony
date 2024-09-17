@@ -98,3 +98,12 @@ questions:
       - {value: 'PHP is a strongly-typed, functionnal language.', correct: false}
       - {value: 'PHP is a loosely-typed functionnal language.', correct: false}
     help: 'https://en.wikipedia.org/wiki/Programming_paradigm'
+  -
+    uuid: 1ef54fc7-3ffd-6b96-9593-233ee6a4489d
+    question: 'Using PHPUnit, which method names are used to share test setup code?'
+    answers:
+      - {value: setUp(), correct: true}
+      - {value: __construct(), correct: false}
+      - {value: shutdown(), correct: false}
+      - {value: tearDown(), correct: true}
+    help: 'https://docs.phpunit.de/en/10.5/writing-tests-for-phpunit.html'

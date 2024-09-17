@@ -108,7 +108,7 @@ questions:
     question: 'Which property of abstract class are true ?'
     answers:
       - {value: "Methods defined as abstract simply declare the method's signature", correct: true}
-      - {value: "they cannot define the implementation ", correct: true}
+      - {value: 'they cannot define the implementation', correct: true}
       - {value: 'can be instantiated', correct: false}
       - {value: 'can be final', correct: false}
     help: 'https://www.php.net/manual/en/language.oop5.abstract.php'
@@ -132,16 +132,16 @@ questions:
     answers:
       - {value: '$x = new stdClass;', correct: true}
       - {value: "(object) array('property1' => 1, 'property2' => 'b');", correct: true}
-      - {value: "(object) null; // same as above", correct: true}
+      - {value: '(object) null; // same as above', correct: true}
       - {value: "(object) 'a';", correct: true}
     help: 'https://www.php.net/manual/en/language.oop5.basic.php'
   -
     uuid: 1eee6d8c-bb3e-6298-9026-3709308913cb
     question: 'Which assertion is true if Child extends Test, and the Test class contains static public function getNew() { return new static;}.'
     answers:
-      - {value: "Test::getNew() instanceof Test", correct: true}
-      - {value: "Child::getNew() instanceof Child", correct: true}
-      - {value: "new Test() !== new (new Test())", correct: true}
+      - {value: 'Test::getNew() instanceof Test', correct: true}
+      - {value: 'Child::getNew() instanceof Child', correct: true}
+      - {value: 'new Test() !== new (new Test())', correct: true}
     help: 'https://www.php.net/manual/en/language.oop5.basic.php'
   -
     uuid: 1eee6d9e-e2fa-6b08-9026-f34ae7ce27f7

@@ -57,7 +57,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/filesystem.html#mirror'
   -
     uuid: 1eebf878-8b9c-6386-8337-99d84c92580c
-    question: "Which exception is thrown when the origin file does not exist when you use theSymfony\\Component\\Filesystem\\Filesystem::copy method ?"
+    question: 'Which exception is thrown when the origin file does not exist when you use the Filesystem::copy method ?'
     answers:
       - {value: FileException, correct: false}
       - {value: FileNotExistException, correct: false}
@@ -131,16 +131,6 @@ questions:
       - {value: 'It is a logical repository of cache items.', correct: false}
     help: 'https://symfony.com/doc/current/components/cache.html#generic-caching-psr-6'
   -
-    uuid: 1eebf878-8ba3-66a4-9a98-99d84c92580c
-    question: 'Which exception is thrown when the origin file does not exist when you use the Symfony\Component\Filesystem\Filesystem::copy method ?'
-    answers:
-      - {value: FileException, correct: false}
-      - {value: FilesystemException, correct: false}
-      - {value: FileNotExistException, correct: false}
-      - {value: FileErrorException, correct: false}
-      - {value: FileNotFoundException, correct: true}
-    help: 'https://symfony.com/doc/current/components/filesystem.html#copy'
-  -
     uuid: 1eebf878-8ba4-6374-985a-99d84c92580c
     question: 'With the Finder, which method is correct to exclude a logs directory from matching ?'
     answers:
@@ -152,6 +142,13 @@ questions:
       - {value: "$finder->in(__DIR__)->excludeDir('logs');", correct: false}
       - {value: "$finder->in(__DIR__)->ignore('logs');", correct: false}
     help: 'https://symfony.com/doc/current/components/finder.html#location'
+  -
+    uuid: 1eebf878-8ba4-6fe0-bbbb-99d84c92580c
+    question: "Will the following code trigger an error if the /tmp/photos directory already exists ? $fs = new Filesystem(); $fs->mkdir('/tmp/photos', 0700);"
+    answers:
+      - {value: 'Yes', correct: false}
+      - {value: 'No', correct: true}
+    help: 'https://symfony.com/doc/current/components/filesystem.html#mkdir'
   -
     uuid: 1eebf878-8ba6-6e62-8ca9-99d84c92580c
     question: 'By default, the Finder ignores popular VCS files, what is the method to use them ?'
