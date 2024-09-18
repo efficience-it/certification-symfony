@@ -9,3 +9,8 @@ rules:
     spaces: 2
   truthy:
     allowed-values: ['true', 'false']
+  braces:
+    max-spaces-inside: 1
+    min-spaces-inside: 1
+  key-duplicates: disable
+  trailing-spaces: disable
