@@ -3,117 +3,117 @@ questions:
     uuid: 1eebf878-8ba4-6a2c-81ae-99d84c92580c
     question: 'Which of the following operations must occur prior to any output being sent to the client (assuming output buffering is disabled) ?'
     answers:
-      - {value: 'Modifying session data', correct: false}
-      - {value: 'Manipulating Cookie data', correct: false}
-      - {value: 'Starting a session', correct: false}
-      - {value: 'Processing GET and POST data', correct: false}
-      - {value: 'Sending HTTP Headers', correct: true}
+      - { value: 'Modifying session data', correct: false }
+      - { value: 'Manipulating Cookie data', correct: false }
+      - { value: 'Starting a session', correct: false }
+      - { value: 'Processing GET and POST data', correct: false }
+      - { value: 'Sending HTTP Headers', correct: true }
     help: 'https://www.php.net/manual/en/function.header.php'
   -
     uuid: 1eebf878-8ba5-624c-866b-99d84c92580c
     question: "What is the output ?$a =  0 ;echo strlen($a);echo empty($a) ? $a : 5;echo $a ?: 5;"
     answers:
-      - {value: '100', correct: false}
-      - {value: '005', correct: false}
-      - {value: '150', correct: false}
-      - {value: '050', correct: false}
-      - {value: '105', correct: true}
+      - { value: '100', correct: false }
+      - { value: '005', correct: false }
+      - { value: '150', correct: false }
+      - { value: '050', correct: false }
+      - { value: '105', correct: true }
     help: 'https://php.net/operators'
   -
     uuid: 1eebf878-8ba7-63c6-8206-99d84c92580c
     question: "What values in $user or $pass will modify the SQL semantics and lead to SQL injection in the code below ?$query =  UPDATE users SET password='$pass' WHERE user='$user' ;"
     answers:
-      - {value: '$pass =  \ foobar\  WHERE ;$user =  \ admin\  ;', correct: false}
-      - {value: "$user =  foobar\\' WHERE user='admin' ;", correct: false}
-      - {value: "$pass =  foobar' WHERE user='admin' -- ;", correct: true}
-      - {value: "$user =  foobar\\' WHERE user='admin' ;", correct: false}
-      - {value: None, correct: false}
+      - { value: '$pass =  \ foobar\  WHERE ;$user =  \ admin\  ;', correct: false }
+      - { value: "$user =  foobar\\' WHERE user='admin' ;", correct: false }
+      - { value: "$pass =  foobar' WHERE user='admin' -- ;", correct: true }
+      - { value: "$user =  foobar\\' WHERE user='admin' ;", correct: false }
+      - { value: None, correct: false }
     help: 'https://php.net/manual/fr/security.database.sql-injection.php'
   -
     uuid: 1eebf878-8ba7-65f6-a5b1-99d84c92580c
     question: 'Which syntax is not a valid callable syntax ?'
     answers:
-      - {value: ' foo ', correct: false}
-      - {value: ' foo->bar ', correct: true}
-      - {value: "['foo', 'bar']", correct: false}
-      - {value: 'function () { }', correct: false}
-      - {value: ' Foo::bar ', correct: false}
+      - { value: ' foo ', correct: false }
+      - { value: ' foo->bar ', correct: true }
+      - { value: "['foo', 'bar']", correct: false }
+      - { value: 'function () { }', correct: false }
+      - { value: ' Foo::bar ', correct: false }
     help: 'https://php.net/manual/en/language.types.callable.php'
   -
     uuid: 1eebf878-8ba9-6d4c-a1b5-99d84c92580c
     question: 'What is the best measure one can take to prevent a cross-site request forgery ?'
     answers:
-      - {value: 'Turn off allow_url_fopen in php.ini', correct: false}
-      - {value: 'Disallow requests from outside hosts', correct: false}
-      - {value: 'Add a secret token to all form submissions', correct: true}
-      - {value: 'Filter all output', correct: false}
-      - {value: 'Filter all input', correct: false}
+      - { value: 'Turn off allow_url_fopen in php.ini', correct: false }
+      - { value: 'Disallow requests from outside hosts', correct: false }
+      - { value: 'Add a secret token to all form submissions', correct: true }
+      - { value: 'Filter all output', correct: false }
+      - { value: 'Filter all input', correct: false }
     help: 'https://www.owasp.org/index.php/PHP_Security_Cheat_Sheet'
   -
     uuid: 1eebf878-8ba9-6d9c-bdc3-99d84c92580c
     question: 'As of PHP 5.6, which data structures types are allowed in a user defined PHP constant?'
     answers:
-      - {value: string, correct: true}
-      - {value: object, correct: false}
-      - {value: float, correct: true}
-      - {value: resource, correct: false}
-      - {value: boolean, correct: true}
-      - {value: array, correct: true}
+      - { value: string, correct: true }
+      - { value: object, correct: false }
+      - { value: float, correct: true }
+      - { value: resource, correct: false }
+      - { value: boolean, correct: true }
+      - { value: array, correct: true }
     help: 'https://php.net/manual/en/language.constants.syntax.php'
   -
     uuid: 1eebf878-8baa-6346-ac4f-99d84c92580c
     question: 'Is it possible to type hint variable in function definition?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://php.net/manual/en/functions.arguments.php#functions.arguments.type-declaration'
   -
     uuid: 1eebf878-8baa-651c-af2c-99d84c92580c
     question: 'All array sorting functions take the array to sort as reference and modify it instead of returning the sorted array'
     answers:
-      - {value: 'True', correct: true}
-      - {value: 'False', correct: false}
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://www.php.net/manual/en/array.sorting.php'
   -
     uuid: 1eed57a4-1813-65a4-976d-0565a2850c77
     question: 'Could existing variables be overwritten when using  extract ?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://www.php.net/manual/en/function.extract.php'
   -
     uuid: 1eed57bd-b35c-6862-8439-f15d4b8654c5
     question: 'Is it allowed to make an interface use traits?'
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://php.net/manual/fr/language.oop5.interfaces.php'
   -
     uuid: 1eee76b4-2113-617e-9026-a5599c87345e
     question: 'How to show privates services with CLI with a default Symfony Standard Edition installation?'
     answers:
-      - {value: "It's not possible.", correct: false}
-      - {value: 'app/console debug:container --show-private', correct: false}
-      - {value: 'bin/console debug:container --show-private', correct: true}
-      - {value: 'bin/console debug:container', correct: false}
-      - {value: 'app/console debug:container', correct: false}
+      - { value: "It's not possible.", correct: false }
+      - { value: 'app/console debug:container --show-private', correct: false }
+      - { value: 'bin/console debug:container --show-private', correct: true }
+      - { value: 'bin/console debug:container', correct: false }
+      - { value: 'app/console debug:container', correct: false }
     help: 'https://symfony.com/doc/current/service_container/debug.html'
   -
     uuid: 1eee76ce-b5a5-6e44-9026-0f27ac991b1e
     question: 'Which of the following functions can you use to secure the input of a script?'
     answers:
-      - {value: htmlspecialchars, correct: true}
-      - {value: htmlentities, correct: true}
-      - {value: quotemeta, correct: false}
-      - {value: html_entity_decode, correct: false}
-      - {value: strip_tags, correct: true}
+      - { value: htmlspecialchars, correct: true }
+      - { value: htmlentities, correct: true }
+      - { value: quotemeta, correct: false }
+      - { value: html_entity_decode, correct: false }
+      - { value: strip_tags, correct: true }
     help: 'https://php.net/manual/en/function.strip-tags.php'
   -
     uuid: 1ef65dae-a399-6d26-aeef-a5ef638f9c65
     question: 'What is the default expiration time for a PHP session cookie?'
     answers:
-      - {value: '10 minutes', correct: false}
-      - {value: 'Until the browser is closed', correct: true}
-      - {value: 'Depends on the web server', correct: false}
-      - {value: '20 minutes', correct: false}
+      - { value: '10 minutes', correct: false }
+      - { value: 'Until the browser is closed', correct: true }
+      - { value: 'Depends on the web server', correct: false }
+      - { value: '20 minutes', correct: false }
     help: 'https://www.php.net/manual/en/session.configuration.php#ini.session.cookie-lifetime'

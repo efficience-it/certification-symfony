@@ -3,183 +3,183 @@ questions:
     uuid: 1eebf878-8b97-6264-acf8-99d84c92580c
     question: 'Which of the following is a valid way to create an instance of Symfony\Component\HttpFoundation\Request?'
     answers:
-      - {value: '$request = Request::createFromGlobals(/* ... */);', correct: true}
-      - {value: '$request = new Request(/* ... */);', correct: true}
-      - {value: '$request = Request::create(/* ... */);', correct: false}
+      - { value: '$request = Request::createFromGlobals(/* ... */);', correct: true }
+      - { value: '$request = new Request(/* ... */);', correct: true }
+      - { value: '$request = Request::create(/* ... */);', correct: false }
     help: 'https://symfony.com/doc/current/components/http_foundation.html'
   -
     uuid: 1eebf878-8b99-6ece-9c42-99d84c92580c
     question: 'What is the tag to use to register a value resolver for controller arguments such as Request?'
     answers:
-      - {value: argument_resolver, correct: false}
-      - {value: controller.argument_value_resolver, correct: true}
-      - {value: controller.argument_resolver, correct: false}
-      - {value: controller.value_resolver, correct: false}
+      - { value: argument_resolver, correct: false }
+      - { value: controller.argument_value_resolver, correct: true }
+      - { value: controller.argument_resolver, correct: false }
+      - { value: controller.value_resolver, correct: false }
     help: 'https://symfony.com/doc/current/reference/dic_tags.html#controller-argument-value-resolver'
   -
     uuid: 1eebf878-8b9a-6478-8c1b-99d84c92580c
     question: 'Which exception is thrown if Request::getClientIps() detect that ips are not consistent?'
     answers:
-      - {value: LogicException, correct: false}
-      - {value: RuntimeException, correct: false}
-      - {value: InvalidArgumentException, correct: false}
-      - {value: ConflictingHeadersException, correct: true}
-      - {value: InconsistentIpsException, correct: false}
+      - { value: LogicException, correct: false }
+      - { value: RuntimeException, correct: false }
+      - { value: InvalidArgumentException, correct: false }
+      - { value: ConflictingHeadersException, correct: true }
+      - { value: InconsistentIpsException, correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/Request.php#L2061C19-L2061C46'
   -
     uuid: 1eebf878-8b9a-655e-818b-99d84c92580c
     question: 'Which of the following are valid ways to send some JSON content as the response of some action in a Symfony application?'
     answers:
-      - {value: "return JsonResponse(json_encode(array('data' => 123)));", correct: false}
-      - {value: "$response = new JsonResponse(); $response->setData(array('data' => 123)); return $response;", correct: true}
-      - {value: "$data = json_encode(array('data' => 123));$response = Response($data);return $response;", correct: false}
-      - {value: "$data = json_encode(array('data' => 123));$response = JsonResponse::fromJsonString($data);return $response;", correct: true}
-      - {value: 'use Symfony\Component\HttpFoundation\JsonResponse;$response = new JsonResponse(array(''data'' => 123));return $response;', correct: true}
+      - { value: "return JsonResponse(json_encode(array('data' => 123)));", correct: false }
+      - { value: "$response = new JsonResponse(); $response->setData(array('data' => 123)); return $response;", correct: true }
+      - { value: "$data = json_encode(array('data' => 123));$response = Response($data);return $response;", correct: false }
+      - { value: "$data = json_encode(array('data' => 123));$response = JsonResponse::fromJsonString($data);return $response;", correct: true }
+      - { value: 'use Symfony\Component\HttpFoundation\JsonResponse;$response = new JsonResponse(array(''data'' => 123));return $response;', correct: true }
     help: 'https://symfony.com/doc/current/components/http_foundation.html#creating-a-json-response'
   -
     uuid: 1eebf878-8b9a-678e-b85e-99d84c92580c
     question: 'What is the default status code of a Symfony\Component\HttpFoundation\Response object?'
     answers:
-      - {value: '200', correct: true}
-      - {value: '204', correct: false}
-      - {value: '202', correct: false}
-      - {value: '400', correct: false}
-      - {value: '201', correct: false}
+      - { value: '200', correct: true }
+      - { value: '204', correct: false }
+      - { value: '202', correct: false }
+      - { value: '400', correct: false }
+      - { value: '201', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/HttpFoundation/Response.php#L220'
   -
     uuid: 1eebf878-8b9d-690c-a417-99d84c92580c
     question: 'Could the controller arguments be set from within ControllerArgumentsEvent?'
     answers:
-      - {value: 'No', correct: false}
-      - {value: 'Yes', correct: true}
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/VarDumper/Dumper/HtmlDumper.php#L98'
   -
     uuid: 1eebf878-8ba0-6238-b1a8-99d84c92580c
     question: 'How to access the `foo` GET parameter from Request object $request ?'
     answers:
-      - {value: "$request->query->get('foo');", correct: true}
-      - {value: "$request->request->get('foo');", correct: false}
-      - {value: "$request->query->all()['foo'];", correct: true}
-      - {value: "$request->get('foo');", correct: true}
+      - { value: "$request->query->get('foo');", correct: true }
+      - { value: "$request->request->get('foo');", correct: false }
+      - { value: "$request->query->all()['foo'];", correct: true }
+      - { value: "$request->get('foo');", correct: true }
     help: 'https://symfony.com/doc/current/components/http_foundation.html#accessing-request-data'
   -
     uuid: 1eebf878-8ba0-6288-acf3-99d84c92580c
     question: 'How to access the `bar` POST parameter from Request object $request ?'
     answers:
-      - {value: "$request->query->get('bar');", correct: false}
-      - {value: "$request->request->get('bar');", correct: true}
-      - {value: "{$request->query->all()}['baz'];", correct: false}
-      - {value: "$request->post('bar');", correct: false}
+      - { value: "$request->query->get('bar');", correct: false }
+      - { value: "$request->request->get('bar');", correct: true }
+      - { value: "{$request->query->all()}['baz'];", correct: false }
+      - { value: "$request->post('bar');", correct: false }
     help: 'https://symfony.com/doc/current/components/http_foundation.html#accessing-request-data'
   -
     uuid: 1eebf878-8ba0-62ce-b737-99d84c92580c
     question: 'The method getLanguages() from Request object:'
     answers:
-      - {value: 'return the value of the metadata lang', correct: false}
-      - {value: 'return an array of languages available in translations', correct: false}
-      - {value: 'return an array of languages the client accepts', correct: true}
-      - {value: 'does not exists', correct: false}
+      - { value: 'return the value of the metadata lang', correct: false }
+      - { value: 'return an array of languages available in translations', correct: false }
+      - { value: 'return an array of languages the client accepts', correct: true }
+      - { value: 'does not exists', correct: false }
     help: 'https://github.com/symfony/symfony/blob/master/src/Symfony/Component/HttpFoundation/Request.php#L1653'
   -
     uuid: 1eebf878-8ba0-6314-a2da-99d84c92580c
     question: 'How to get the Content Type from Request at Symfony 6.2 ?'
     answers:
-      - {value: "$request->headers->get('CONTENT_TYPE');", correct: true}
-      - {value: "$request->headers->get('content-type');", correct: false}
-      - {value: "$request->headers->get('Content-Type');", correct: false}
-      - {value: $request->getContentTypeFormat();, correct: true}
+      - { value: "$request->headers->get('CONTENT_TYPE');", correct: true }
+      - { value: "$request->headers->get('content-type');", correct: false }
+      - { value: "$request->headers->get('Content-Type');", correct: false }
+      - { value: $request->getContentTypeFormat();, correct: true }
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/Request.php'
   -
     uuid: 1eebf878-8ba0-6364-83f9-99d84c92580c
     question: 'How to check if a request has been sent using AJAX ?'
     answers:
-      - {value: $request->isXmlHttpRequest();, correct: true}
-      - {value: $request->isAJAX();, correct: false}
-      - {value: "$this->headers->get('X-Requested-With') === 'XMLHttpRequest';", correct: true}
+      - { value: $request->isXmlHttpRequest();, correct: true }
+      - { value: $request->isAJAX();, correct: false }
+      - { value: "$this->headers->get('X-Requested-With') === 'XMLHttpRequest';", correct: true }
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/Request.php'
   -
     uuid: 1eebf878-8ba0-6440-bdcd-99d84c92580c
     question: 'Which method exist in Symfony\Component\HttpFoundation\Request ?'
     answers:
-      - {value: getPathInfo, correct: true}
-      - {value: getMethod, correct: true}
-      - {value: getLanguages, correct: true}
-      - {value: getHeaders, correct: false}
-      - {value: getHttpHost, correct: true}
-      - {value: getUrl, correct: false}
-      - {value: getUri, correct: true}
+      - { value: getPathInfo, correct: true }
+      - { value: getMethod, correct: true }
+      - { value: getLanguages, correct: true }
+      - { value: getHeaders, correct: false }
+      - { value: getHttpHost, correct: true }
+      - { value: getUrl, correct: false }
+      - { value: getUri, correct: true }
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/Request.php'
   -
     uuid: 1eebf878-8ba1-6bba-8c7a-99d84c92580c
     question: 'How to access $_FILES data when using a Symfony\Component\HttpFoundation\Request $request object?'
     answers:
-      - {value: request->getFiles(), correct: false}
-      - {value: $request->getFileData(), correct: false}
-      - {value: $request->getFilesData(), correct: false}
-      - {value: $request->file, correct: false}
-      - {value: $request->files, correct: true}
+      - { value: request->getFiles(), correct: false }
+      - { value: $request->getFileData(), correct: false }
+      - { value: $request->getFilesData(), correct: false }
+      - { value: $request->file, correct: false }
+      - { value: $request->files, correct: true }
     help: 'https://symfony.com/doc/current/components/http_foundation.html#accessing-request-data'
   -
     uuid: 1eebf878-8ba1-6f20-a406-99d84c92580c
     question: 'What is the structure of an HTTP request?'
     answers:
-      - {value: 'Request-Line Headers CRLF Body', correct: true}
-      - {value: 'Request-Line Headers Body', correct: false}
-      - {value: 'Request-Line CRLF Headers CRLF CRLF Body', correct: false}
-      - {value: 'Request-Line Headers CRLF CRLF Body', correct: false}
+      - { value: 'Request-Line Headers CRLF Body', correct: true }
+      - { value: 'Request-Line Headers Body', correct: false }
+      - { value: 'Request-Line CRLF Headers CRLF CRLF Body', correct: false }
+      - { value: 'Request-Line Headers CRLF CRLF Body', correct: false }
     help: 'https://www.w3.org/Protocols/rfc2616/rfc2616-sec5.html'
   -
     uuid: 1eebf878-8ba2-643e-9ec0-99d84c92580c
     question: 'What is the method to get the request body?'
     answers:
-      - {value: getRequestBody(), correct: false}
-      - {value: getBody(), correct: false}
-      - {value: getRequestContent(), correct: false}
-      - {value: getContent(), correct: true}
+      - { value: getRequestBody(), correct: false }
+      - { value: getBody(), correct: false }
+      - { value: getRequestContent(), correct: false }
+      - { value: getContent(), correct: true }
     help: 'https://symfony.com/doc/current/components/http_foundation.html#accessing-request-data'
   -
     uuid: 1eebf878-8ba2-6894-8044-99d84c92580c
     question: 'How could you simulate a GET request to /hello-world ?'
     answers:
-      - {value: "$request = Request::create(null,'/hello-world');", correct: false}
-      - {value: "$request = Request::create('GET','/hello-world');", correct: false}
-      - {value: "$request = Request::create('/hello-world','GET');", correct: true}
-      - {value: "$request = Request::create('/hello-world');", correct: true}
+      - { value: "$request = Request::create(null,'/hello-world');", correct: false }
+      - { value: "$request = Request::create('GET','/hello-world');", correct: false }
+      - { value: "$request = Request::create('/hello-world','GET');", correct: true }
+      - { value: "$request = Request::create('/hello-world');", correct: true }
     help: 'https://symfony.com/doc/current/components/http_foundation.html#simulating-a-request'
   -
     uuid: 1eebf878-8ba2-6c7c-b75b-99d84c92580c
     question: 'If you need to change request data before binding them to the form, which event should your code hook into?'
     answers:
-      - {value: 'FormEvents::PRE_SUBMIT', correct: true}
-      - {value: 'FormEvents::POST_SUBMIT', correct: false}
-      - {value: 'FormEvents::SUBMIT', correct: false}
-      - {value: 'FormEvents::POST_SET_DATA', correct: false}
-      - {value: 'FormEvents::PRE_SET_DATA', correct: false}
+      - { value: 'FormEvents::PRE_SUBMIT', correct: true }
+      - { value: 'FormEvents::POST_SUBMIT', correct: false }
+      - { value: 'FormEvents::SUBMIT', correct: false }
+      - { value: 'FormEvents::POST_SET_DATA', correct: false }
+      - { value: 'FormEvents::PRE_SET_DATA', correct: false }
     help: 'https://symfony.com/doc/current/components/form/form_events.html#a-the-formevents-pre-submit-event'
   -
     uuid: 1eebf878-8ba2-6ccc-a0c9-99d84c92580c
     question: 'Could arguments be resolved in a controller not tagged with the controller.service_arguments tag?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.2/src/Symfony/Component/HttpKernel/Controller/ArgumentResolver/NotTaggedControllerValueResolver.php'
   -
     uuid: 1eebf878-8ba2-6fe2-9a7d-99d84c92580c
     question: 'Could the constraints of a class be listed?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/current/validation.html#debugging-the-constraints'
   -
     uuid: 1eebf878-8ba8-6a5a-8490-99d84c92580c
     question: 'What methods are available in the Request $request object ?'
     answers:
-      - {value: $request->isXmlHttpRequest();, correct: true}
-      - {value: $request->getClientIps();, correct: true}
-      - {value: "$request->getPreferredLanguage(['en', 'fr']);", correct: true}
-      - {value: "$request->server->get('HTTP_HOST');", correct: true}
-      - {value: "$request->files->get('foo');", correct: true}
-      - {value: "$request->request->get('page');", correct: true}
-      - {value: "$request->query->get('page');", correct: true}
-      - {value: "$request->headers->get('content-type');", correct: true}
+      - { value: $request->isXmlHttpRequest();, correct: true }
+      - { value: $request->getClientIps();, correct: true }
+      - { value: "$request->getPreferredLanguage(['en', 'fr']);", correct: true }
+      - { value: "$request->server->get('HTTP_HOST');", correct: true }
+      - { value: "$request->files->get('foo');", correct: true }
+      - { value: "$request->request->get('page');", correct: true }
+      - { value: "$request->query->get('page');", correct: true }
+      - { value: "$request->headers->get('content-type');", correct: true }
     help: 'https://symfony.com/doc/current/controller.html#the-request-and-response-object'

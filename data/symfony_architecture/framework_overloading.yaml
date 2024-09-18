@@ -4,5 +4,5 @@ questions:
     question: 'Could the container be preloaded using Opcache preloading?'
     answers:
       - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false}
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/6.4/performance.html#use-the-opcache-class-preloading'

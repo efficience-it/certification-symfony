@@ -3,43 +3,43 @@ questions:
     uuid: 1eebf878-8b9f-6a9a-b6c7-99d84c92580c
     question: 'Using Form component, which option will allow you to specify groups used for validation?'
     answers:
-      - {value: validation_groups, correct: true}
-      - {value: groups_validation, correct: false}
-      - {value: validator_groups, correct: false}
-      - {value: groups_validator, correct: false}
+      - { value: validation_groups, correct: true }
+      - { value: groups_validation, correct: false }
+      - { value: validator_groups, correct: false }
+      - { value: groups_validator, correct: false }
     help: 'https://symfony.com/doc/current/form/validation_groups.html#validation-groups'
   -
     uuid: 1eebf878-8ba1-6610-8b84-99d84c92580c
     question: 'In order to use validation group, which interface will you implement on your object?'
     answers:
-      - {value: Symfony\Component\Validator\GroupValidationInterface, correct: false}
-      - {value: Symfony\Component\Validator\GroupValidationProviderInterface, correct: false}
-      - {value: Symfony\Component\Validator\GroupProviderInterface, correct: false}
-      - {value: Symfony\Component\Validator\GroupSequenceProviderInterface, correct: true}
+      - { value: Symfony\Component\Validator\GroupValidationInterface, correct: false }
+      - { value: Symfony\Component\Validator\GroupValidationProviderInterface, correct: false }
+      - { value: Symfony\Component\Validator\GroupProviderInterface, correct: false }
+      - { value: Symfony\Component\Validator\GroupSequenceProviderInterface, correct: true }
     help: 'https://symfony.com/doc/current/validation/sequence_provider.html#group-sequence-providers'
   -
     uuid: 1eebf878-8ba1-67b4-bb9e-99d84c92580c
     question: 'All entities have at least 2 validation groups.'
     answers:
-      - {value: 'True', correct: true}
-      - {value: 'False', correct: false}
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/current/validation/groups.html'
   -
     uuid: 1eebf878-8ba1-696c-b5ee-99d84c92580c
     question: 'How to tell the validator to use a specific group ?'
     answers:
-      - {value: 'pass one or more group names as the third argument of $validator->validate()', correct: true}
-      - {value: 'pass one or more group names as the second argument of $validator->validate()', correct: false}
-      - {value: 'use $validator->setValidationGroups(array)', correct: false}
+      - { value: 'pass one or more group names as the third argument of $validator->validate()', correct: true }
+      - { value: 'pass one or more group names as the second argument of $validator->validate()', correct: false }
+      - { value: 'use $validator->setValidationGroups(array)', correct: false }
     help: 'https://symfony.com/doc/current/validation/groups.html'
   -
     uuid: 1eebf878-8ba7-6506-930e-99d84c92580c
-    question: 'Given the following class and constraints:    class User    {    /** @Assert\Email(groups={ registration })*/     private $email;    /**     * @Assert\NotBlank(groups={ registration })     * @Assert\Length(min=7, groups={ registration })     */     private $password;    /** @Assert\Length(min=2) */     private $city;    }    How many validation groups does this class contain?'
+    question: 'Given the following class and constraints:  class User  {  /** @Assert\Email(groups={ registration })*/   private $email;  /**   * @Assert\NotBlank(groups={ registration })   * @Assert\Length(min=7, groups={ registration })   */   private $password;  /** @Assert\Length(min=2) */   private $city;  }  How many validation groups does this class contain?'
     answers:
-      - {value: '1', correct: false}
-      - {value: '4', correct: false}
-      - {value: '0', correct: false}
-      - {value: '2', correct: false}
-      - {value: '5', correct: false}
-      - {value: '3', correct: true}
+      - { value: '1', correct: false }
+      - { value: '4', correct: false }
+      - { value: '0', correct: false }
+      - { value: '2', correct: false }
+      - { value: '5', correct: false }
+      - { value: '3', correct: true }
     help: 'https://symfony.com/doc/current/validation/groups.html'

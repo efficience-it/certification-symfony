@@ -3,48 +3,48 @@ questions:
     uuid: 1eebf878-8b9f-64d2-bff3-99d84c92580c
     question: 'Using a compiler pass, how do you check the existence of service ?'
     answers:
-      - {value: "$container->hasDefinition('my.service')", correct: true}
-      - {value: "$container->has('my.service')", correct: true}
-      - {value: "$container->contains('my.service')", correct: false}
-      - {value: "$container->getService('my.service')", correct: false}
+      - { value: "$container->hasDefinition('my.service')", correct: true }
+      - { value: "$container->has('my.service')", correct: true }
+      - { value: "$container->contains('my.service')", correct: false }
+      - { value: "$container->getService('my.service')", correct: false }
     help: 'https://symfony.com/doc/current/service_container/definitions.html#getting-and-setting-service-definitions'
   -
     uuid: 1eebf878-8b9f-6518-9048-99d84c92580c
     question: 'Using a compiler pass, how do you retrieve a definition of service ?'
     answers:
-      - {value: "$container->getDefinition('my.service')", correct: true}
-      - {value: "$container->findDefinition('my.service')", correct: true}
-      - {value: "$container->retrieveDefinition('my.service')", correct: false}
-      - {value: "$container->getService('my.service')", correct: false}
+      - { value: "$container->getDefinition('my.service')", correct: true }
+      - { value: "$container->findDefinition('my.service')", correct: true }
+      - { value: "$container->retrieveDefinition('my.service')", correct: false }
+      - { value: "$container->getService('my.service')", correct: false }
     help: 'https://symfony.com/doc/current/service_container/definitions.html#getting-and-setting-service-definitions'
   -
     uuid: 1eebf878-8b9f-6568-8325-99d84c92580c
     question: 'What constants are used to determine if your compiler pass is executed ?'
     answers:
-      - {value: 'PassConfig::TYPE_BEFORE_OPTIMIZATION', correct: true}
-      - {value: 'PassConfig::TYPE_OPTIMIZE', correct: true}
-      - {value: 'PassConfig::TYPE_AFTER_OPTIMIZATION', correct: false}
-      - {value: 'PassConfig::TYPE_BEFORE_REMOVING', correct: true}
-      - {value: 'PassConfig::TYPE_REMOVE', correct: true}
-      - {value: 'PassConfig::TYPE_AFTER_REMOVING', correct: true}
-      - {value: 'PassConfig::TYPE_AFTER_COMPILING', correct: false}
-      - {value: 'PassConfig::TYPE_COMPILE', correct: false}
-      - {value: 'PassConfig::TYPE_BEFORE_COMPILING', correct: false}
+      - { value: 'PassConfig::TYPE_BEFORE_OPTIMIZATION', correct: true }
+      - { value: 'PassConfig::TYPE_OPTIMIZE', correct: true }
+      - { value: 'PassConfig::TYPE_AFTER_OPTIMIZATION', correct: false }
+      - { value: 'PassConfig::TYPE_BEFORE_REMOVING', correct: true }
+      - { value: 'PassConfig::TYPE_REMOVE', correct: true }
+      - { value: 'PassConfig::TYPE_AFTER_REMOVING', correct: true }
+      - { value: 'PassConfig::TYPE_AFTER_COMPILING', correct: false }
+      - { value: 'PassConfig::TYPE_COMPILE', correct: false }
+      - { value: 'PassConfig::TYPE_BEFORE_COMPILING', correct: false }
     help: 'https://symfony.com/doc/current/components/dependency_injection/compilation.html#controlling-the-pass-ordering'
   -
     uuid: 1eebf878-8ba2-613c-93bd-99d84c92580c
     question: 'Could a priority be set when adding a new compiler pass?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/current/components/dependency_injection/compilation.html#controlling-the-pass-ordering'
   -
     uuid: 1ef4935f-f7df-6ebe-bb60-7bba21e8d9fb
     question: 'What is a  compiler pass  in Symfony?'
     answers:
-      - {value: 'A tool to manage database migrations', correct: false}
-      - {value: 'A mechanism to modify the service container before it is compiled', correct: true}
-      - {value: 'A component for forms management', correct: false}
+      - { value: 'A tool to manage database migrations', correct: false }
+      - { value: 'A mechanism to modify the service container before it is compiled', correct: true }
+      - { value: 'A component for forms management', correct: false }
     help: 'https://symfony.com/doc/current/service_container/compiler_passes.html'
   -
     uuid: 1ef49363-d37f-69d0-9063-c36a242f9461
@@ -58,31 +58,31 @@ questions:
     uuid: 1ef49369-5acb-6f42-8894-eb7574faa390
     question: 'Where are  compiler passes  typically saved?'
     answers:
-      - {value: 'In config/packages', correct: false}
-      - {value: 'In src/DependencyInjection/Compiler', correct: true}
-      - {value: 'In src/EventListener', correct: false}
+      - { value: 'In config/packages', correct: false }
+      - { value: 'In src/DependencyInjection/Compiler', correct: true }
+      - { value: 'In src/EventListener', correct: false }
     help: 'https://symfony.com/doc/current/service_container/compiler_passes.html'
   -
     uuid: 1ef4936c-ce1d-65c4-b100-e7c0f56ef5bd
     question: 'Which service should be used to add a  compiler pass  in the build method?'
     answers:
-      - {value: $container, correct: false}
-      - {value: $this->containerBuilder, correct: false}
-      - {value: $this->addCompilerPass(), correct: true}
+      - { value: $container, correct: false }
+      - { value: $this->containerBuilder, correct: false }
+      - { value: $this->addCompilerPass(), correct: true }
     help: 'https://symfony.com/doc/current/service_container/compiler_passes.html'
   -
     uuid: 1ef4936f-6ee6-651c-abec-9db2348bdd73
     question: 'What is the main object used in a  compiler pass  to access the services?'
     answers:
-      - {value: ContainerBuilder, correct: true}
-      - {value: ServiceContainer, correct: false}
-      - {value: ServiceLocator, correct: false}
+      - { value: ContainerBuilder, correct: true }
+      - { value: ServiceContainer, correct: false }
+      - { value: ServiceLocator, correct: false }
     help: 'https://symfony.com/doc/current/service_container/compiler_passes.html'
   -
     uuid: 1ef49374-0ec2-6aa0-aa38-5d3c6b70d164
     question: 'Which interface should a compiler pass implement?'
     answers:
-      - {value: CompilerPassInterface, correct: true}
-      - {value: ServicePassInterface, correct: false}
-      - {value: ContainerPassInterface, correct: false}
+      - { value: CompilerPassInterface, correct: true }
+      - { value: ServicePassInterface, correct: false }
+      - { value: ContainerPassInterface, correct: false }
     help: 'https://symfony.com/doc/current/service_container/compiler_passes.html'

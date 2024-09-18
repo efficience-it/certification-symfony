@@ -3,48 +3,48 @@ questions:
     uuid: 1eebf878-8b97-6214-a197-99d84c92580c
     question: 'Does the required option perform a server-side validation of the submitted data?'
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/current/forms#the-required-option'
   -
     uuid: 1eebf878-8b98-62fe-ad30-99d84c92580c
     question: 'How can you disable the validation in a form?'
     answers:
-      - {value: 'With the no_validation option set to true', correct: false}
-      - {value: 'With the validation_groups option set to false', correct: true}
-      - {value: 'By not calling isValid()', correct: false}
-      - {value: 'By calling isValid(false)', correct: false}
+      - { value: 'With the no_validation option set to true', correct: false }
+      - { value: 'With the validation_groups option set to false', correct: true }
+      - { value: 'By not calling isValid()', correct: false }
+      - { value: 'By calling isValid(false)', correct: false }
     help: 'https://symfony.com/doc/current/form/disabling_validation.html'
   -
     uuid: 1eebf878-8b9c-6070-89dd-99d84c92580c
     question: 'In form, the error_bubbling default value is'
     answers:
-      - {value: 'is false', correct: true}
-      - {value: 'depends on the compound option value', correct: true}
-      - {value: 'is true', correct: false}
+      - { value: 'is false', correct: true }
+      - { value: 'depends on the compound option value', correct: true }
+      - { value: 'is true', correct: false }
     help: 'https://symfony.com/doc/6.3/reference/forms/types/form.html#error-bubbling'
   -
     uuid: 1eebf878-8b9c-6e8a-ba7f-99d84c92580c
     question: 'How can you disable the validation in a form?'
     answers:
-      - {value: 'With the validation_groups option set to false', correct: true}
-      - {value: 'With the no_validation option set to true', correct: false}
-      - {value: 'By calling isValid(false)', correct: false}
-      - {value: 'By not calling isValid()', correct: false}
+      - { value: 'With the validation_groups option set to false', correct: true }
+      - { value: 'With the no_validation option set to true', correct: false }
+      - { value: 'By calling isValid(false)', correct: false }
+      - { value: 'By not calling isValid()', correct: false }
     help: 'https://symfony.com/doc/current/form/disabling_validation.html'
   -
     uuid: 1eebf878-8b9f-68ba-b02a-99d84c92580c
     question: 'Which method allows you to handle the request on a form instance?'
     answers:
-      - {value: $form->bindRequest($request), correct: false}
-      - {value: $form->handleRequest($request), correct: true}
-      - {value: $form->handle($request), correct: false}
-      - {value: $form->request($request), correct: false}
+      - { value: $form->bindRequest($request), correct: false }
+      - { value: $form->handleRequest($request), correct: true }
+      - { value: $form->handle($request), correct: false }
+      - { value: $form->request($request), correct: false }
     help: 'https://symfony.com/doc/current/forms.html#processing-forms'
   -
     uuid: 1eebf878-8b9f-6d6a-8927-99d84c92580c
     question: 'Using form component, option  error_bubbling  will include error in current field.'
     answers:
-      - {value: 'True', correct: false}
-      - {value: 'False', correct: true}
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://symfony.com/doc/current/reference/forms/types/text.html#error-bubbling'

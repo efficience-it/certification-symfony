@@ -1,17 +1,17 @@
 questions:
   -
     uuid: 1eebf878-8ba8-6dca-82af-99d84c92580c
-    question: '{% set numA = 2 %} {%set numB = 3 %}    What will render {{  #{numA + numB}  }} ?'
+    question: '{% set numA = 2 %} {%set numB = 3 %}  What will render {{  #{numA + numB}  }} ?'
     answers:
-      - {value: '2 + 3', correct: false}
-      - {value: '5', correct: true}
-      - {value: ' 2 + 3 ', correct: false}
+      - { value: '2 + 3', correct: false }
+      - { value: '5', correct: true }
+      - { value: ' 2 + 3 ', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/templates.html#templates-string-interpolation'
   -
     uuid: 1eebf878-8ba8-6ea6-a497-99d84c92580c
     question: "What will render {{ '1 + 2 = ' ~ (1 + 2) }}"
     answers:
-      - {value: '1 + 2=3', correct: true}
-      - {value: '3', correct: false}
-      - {value: ' 1 + 2=3 ', correct: false}
+      - { value: '1 + 2=3', correct: true }
+      - { value: '3', correct: false }
+      - { value: ' 1 + 2=3 ', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/templates.html#string-interpolation'

@@ -3,39 +3,39 @@ questions:
     uuid: 1eebf878-8ba6-65c0-a662-99d84c92580c
     question: 'Could a check be performed against the status code to verify that the response is a redirected one?'
     answers:
-      - {value: 'No', correct: false}
-      - {value: 'Yes', correct: true}
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Response.php#L1246'
   -
     uuid: 1eebf878-8ba9-65cc-9f30-99d84c92580c
     question: "Which methods' Response check status code or specific reasons ?"
     answers:
-      - {value: isRedirect(), correct: true}
-      - {value: isTemporaryRedirect, correct: false}
-      - {value: isPermanentRedirect, correct: false}
-      - {value: isCreated, correct: false}
-      - {value: isForbidden, correct: true}
-      - {value: isSuccessful, correct: true}
-      - {value: isOk, correct: true}
-      - {value: isRedirection, correct: true}
+      - { value: isRedirect(), correct: true }
+      - { value: isTemporaryRedirect, correct: false }
+      - { value: isPermanentRedirect, correct: false }
+      - { value: isCreated, correct: false }
+      - { value: isForbidden, correct: true }
+      - { value: isSuccessful, correct: true }
+      - { value: isOk, correct: true }
+      - { value: isRedirection, correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/Response.php#L1262C21-L1262C28'
   -
     uuid: 1eed5765-cfb5-6e44-a6f1-7f811d5e120b
     question: 'Which HTTP status codes are used to indicate an information?'
     answers:
-      - {value: 1xx, correct: true}
-      - {value: 2xx, correct: false}
-      - {value: 3xx, correct: false}
-      - {value: 4xx, correct: false}
-      - {value: '4xx or 5xx, depending on the type of information', correct: false}
+      - { value: 1xx, correct: true }
+      - { value: 2xx, correct: false }
+      - { value: 3xx, correct: false }
+      - { value: 4xx, correct: false }
+      - { value: '4xx or 5xx, depending on the type of information', correct: false }
     help: 'https://tools.ietf.org/html/rfc7231#section-6.2'
   -
     uuid: 1eedba99-136b-6058-87fa-dfe6316dc896
     question: 'Which Response does exist in Symfony ?'
     answers:
-      - {value: BinaryFileResponse, correct: true}
-      - {value: JsonResponse, correct: true}
-      - {value: StreamedJsonResponse, correct: true}
-      - {value: StreamedResponse, correct: true}
-      - {value: RedirectResponse, correct: true}
+      - { value: BinaryFileResponse, correct: true }
+      - { value: JsonResponse, correct: true }
+      - { value: StreamedJsonResponse, correct: true }
+      - { value: StreamedResponse, correct: true }
+      - { value: RedirectResponse, correct: true }
     help: 'https://github.com/symfony/symfony/tree/7.0/src/Symfony/Component/HttpFoundation'

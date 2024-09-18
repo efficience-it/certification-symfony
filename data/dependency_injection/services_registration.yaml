@@ -3,53 +3,53 @@ questions:
     uuid: 1eebf878-8b96-6dc8-a0f5-99d84c92580c
     question: 'What is the tag to register a custom service that loads translations?'
     answers:
-      - {value: translation_loader, correct: false}
-      - {value: translation.loader, correct: true}
-      - {value: translator.loader, correct: false}
-      - {value: translator_loader, correct: false}
+      - { value: translation_loader, correct: false }
+      - { value: translation.loader, correct: true }
+      - { value: translator.loader, correct: false }
+      - { value: translator_loader, correct: false }
     help: 'https://symfony.com/doc/current/reference/dic_tags.html#translation-loader'
   -
     uuid: 1eebf878-8b9f-663a-9d4f-99d84c92580c
     question: 'What is the correct syntax to inject a service app.mailer ?'
     answers:
-      - {value: 'arguments: [ @app.mailer ]', correct: true}
-      - {value: 'arguments: [ %app.mailer% ]', correct: false}
-      - {value: 'arguments: [ app.mailer ]', correct: false}
+      - { value: 'arguments: [ @app.mailer ]', correct: true }
+      - { value: 'arguments: [ %app.mailer% ]', correct: false }
+      - { value: 'arguments: [ app.mailer ]', correct: false }
     help: 'https://symfony.com/doc/current/service_container.html#service-parameters'
   -
     uuid: 1eebf878-8b9f-6680-a3eb-99d84c92580c
     question: 'What is the correct syntax to inject a parameter mailer.transport ?'
     answers:
-      - {value: 'arguments: [ @mailer.transport ]', correct: false}
-      - {value: 'arguments: [ %mailer.transport% ]', correct: true}
-      - {value: 'arguments: [ mailer.transport ]', correct: false}
+      - { value: 'arguments: [ @mailer.transport ]', correct: false }
+      - { value: 'arguments: [ %mailer.transport% ]', correct: true }
+      - { value: 'arguments: [ mailer.transport ]', correct: false }
     help: 'https://symfony.com/doc/current/configuration.html#configuration-parameters'
   -
     uuid: 1eebf878-8b9f-66c6-922d-99d84c92580c
     question: 'How to define a service as private ?'
     answers:
-      - {value: 'type: private', correct: false}
-      - {value: 'scope: private', correct: false}
-      - {value: 'public: false', correct: true}
-      - {value: 'private: true', correct: false}
+      - { value: 'type: private', correct: false }
+      - { value: 'scope: private', correct: false }
+      - { value: 'public: false', correct: true }
+      - { value: 'private: true', correct: false }
     help: 'https://symfony.com/doc/current/service_container.html#public-versus-private-services'
   -
     uuid: 1eebf878-8ba2-60f6-9047-99d84c92580c
     question: 'What is the tag to register a custom service that loads routes?'
     answers:
-      - {value: router.route_loader, correct: false}
-      - {value: routing_loader, correct: false}
-      - {value: router_loader, correct: false}
-      - {value: router.loader, correct: false}
-      - {value: routing.loader, correct: true}
-      - {value: routing.route_loader, correct: false}
+      - { value: router.route_loader, correct: false }
+      - { value: routing_loader, correct: false }
+      - { value: router_loader, correct: false }
+      - { value: router.loader, correct: false }
+      - { value: routing.loader, correct: true }
+      - { value: routing.route_loader, correct: false }
     help: 'https://symfony.com/doc/current/reference/dic_tags.html#routing-loader'
   -
     uuid: 1eebf878-8ba4-6b62-86fe-99d84c92580c
     question: 'Which loader is recommended for translations ?'
     answers:
-      - {value: xlf, correct: true}
-      - {value: yml, correct: false}
-      - {value: php, correct: false}
-      - {value: ini, correct: false}
+      - { value: xlf, correct: true }
+      - { value: yml, correct: false }
+      - { value: php, correct: false }
+      - { value: ini, correct: false }
     help: 'https://symfony.com/doc/current/translation.html#translation-resource-file-names-and-locations'

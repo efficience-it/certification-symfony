@@ -3,107 +3,107 @@ questions:
     uuid: 1eebf878-8ba8-6fe6-bdab-99d84c92580c
     question: 'Is it possible to instantiate a Trait on its own ?'
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php'
   -
     uuid: 1eebf878-8ba9-6072-929e-99d84c92580c
-    question: "What will the output of this function ?    trait HelloWorld {  public function sayHello() {  echo 'Hello World!'  }  }    class TheWorldIsNotEnough {  use HelloWorld  public function sayHello() {  echo 'Hello Universe!';  }  }  $o= new TheWorldIsNotEnough();  $o->sayHello();"
+    question: "What will the output of this function ?  trait HelloWorld { public function sayHello() { echo 'Hello World!' } }  class TheWorldIsNotEnough { use HelloWorld public function sayHello() { echo 'Hello Universe!'; } } $o= new TheWorldIsNotEnough(); $o->sayHello();"
     answers:
-      - {value: 'Hello World!', correct: false}
-      - {value: 'Hello Universe!', correct: true}
-      - {value: 'Fatal Error', correct: false}
+      - { value: 'Hello World!', correct: false }
+      - { value: 'Hello Universe!', correct: true }
+      - { value: 'Fatal Error', correct: false }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php'
   -
     uuid: 1eebf878-8ba9-60b8-b5a4-99d84c92580c
-    question: "What will be the output of this function ?    trait Hello {   public function saySomething() {    echo 'Hello ';   }  }    trait World {   public function saySomething() {    echo 'World';   }  }    class MyHelloWorld {   use Hello, World;   public function sayExclamationMark() {    echo '!';   }  }    $o = new MyHelloWorld();  $o->sayHello();  $o->sayWorld();  $o->sayExclamationMark();  ?>"
+    question: "What will be the output of this function ?  trait Hello {  public function saySomething() {   echo 'Hello ';  } }  trait World {  public function saySomething() {   echo 'World';  } }  class MyHelloWorld {  use Hello, World;  public function sayExclamationMark() {   echo '!';  } }  $o = new MyHelloWorld(); $o->sayHello(); $o->sayWorld(); $o->sayExclamationMark(); ?>"
     answers:
-      - {value: Hello, correct: false}
-      - {value: World, correct: false}
-      - {value: 'Hello World', correct: false}
-      - {value: 'Fatal Error', correct: true}
+      - { value: Hello, correct: false }
+      - { value: World, correct: false }
+      - { value: 'Hello World', correct: false }
+      - { value: 'Fatal Error', correct: true }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php'
   -
     uuid: 1eebf878-8ba9-6108-8a3b-99d84c92580c
     question: "To resolve naming conflicts between Traits used in the same class, what's the operator needed to be used to choose exactly one of the conflicting methods ?"
     answers:
-      - {value: as, correct: false}
-      - {value: for, correct: false}
-      - {value: insteadof, correct: true}
-      - {value: asAlias, correct: false}
+      - { value: as, correct: false }
+      - { value: for, correct: false }
+      - { value: insteadof, correct: true }
+      - { value: asAlias, correct: false }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.conflict'
   -
     uuid: 1eebf878-8ba9-614e-adf2-99d84c92580c
-    question: "What will be the output of this function ?    trait Hello {   public function sayHello() {    echo 'Hello ';   }  }    trait World {   public function sayWorld() {    echo 'World';   }  }    trait HelloWorld {   use Hello, World;  }    class MyHelloWorld {   use HelloWorld;  }    $o = new MyHelloWorld();  $o->sayHello();  $o->sayWorld();"
+    question: "What will be the output of this function ?  trait Hello {  public function sayHello() {   echo 'Hello ';  } }  trait World {  public function sayWorld() {   echo 'World';  } }  trait HelloWorld {  use Hello, World; }  class MyHelloWorld {  use HelloWorld; }  $o = new MyHelloWorld(); $o->sayHello(); $o->sayWorld();"
     answers:
-      - {value: Hello, correct: false}
-      - {value: World, correct: false}
-      - {value: 'Hello World', correct: true}
-      - {value: 'Fatal Error', correct: false}
+      - { value: Hello, correct: false }
+      - { value: World, correct: false }
+      - { value: 'Hello World', correct: true }
+      - { value: 'Fatal Error', correct: false }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.composition'
   -
     uuid: 1eebf878-8ba9-6194-80af-99d84c92580c
     question: 'What syntax could you use to adjust the visibility of a method in a Trait ?'
     answers:
-      - {value: insteadof, correct: false}
-      - {value: 'visible as', correct: false}
-      - {value: overridedby, correct: false}
-      - {value: as, correct: true}
+      - { value: insteadof, correct: false }
+      - { value: 'visible as', correct: false }
+      - { value: overridedby, correct: false }
+      - { value: as, correct: true }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.visibility'
   -
     uuid: 1eebf878-8ba9-61da-91cd-99d84c92580c
     question: 'Which method are supported as abstract function in a Trait before PHP 8.0.0 ?'
     answers:
-      - {value: public, correct: true}
-      - {value: private, correct: false}
-      - {value: protected, correct: true}
-      - {value: deffered, correct: false}
+      - { value: public, correct: true }
+      - { value: private, correct: false }
+      - { value: protected, correct: true }
+      - { value: deffered, correct: false }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.abstract'
   -
     uuid: 1eebf878-8ba9-6220-a6f6-99d84c92580c
     question: 'Does Traits support the use of abstract methods inside their definition ?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.abstract'
   -
     uuid: 1eebf878-8ba9-6270-9168-99d84c92580c
     question: 'Traits does no supports static methods or static properties inside their definition, right ?'
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.static'
   -
     uuid: 1eebf878-8ba9-62b6-bbb9-99d84c92580c
-    question: "Does traits can define properties like this ?    trait PropertiesTrait {   public $x = 1;  }    class PropertiesExample {   use PropertiesTrait;  }    $example = new PropertiesExample;  $example->x;"
+    question: "Does traits can define properties like this ?  trait PropertiesTrait {  public $x = 1; }  class PropertiesExample {  use PropertiesTrait; }  $example = new PropertiesExample; $example->x;"
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.properties'
   -
     uuid: 1eebf878-8ba9-62fc-b8fd-99d84c92580c
-    question: "Could a property defined in a Trait be overrided by an exhibiting class ?    trait PropertiesTrait {   public $notSame = false;  }    class PropertiesExample {   use PropertiesTrait;   public $notSame = true;  }"
+    question: "Could a property defined in a Trait be overrided by an exhibiting class ?  trait PropertiesTrait {  public $notSame = false; }  class PropertiesExample {  use PropertiesTrait;  public $notSame = true; }"
     answers:
-      - {value: 'Yes PropertiesExample->notSame will output true', correct: false}
-      - {value: 'No PropertiesExample->notSame will output false', correct: false}
-      - {value: 'Fatal Error', correct: true}
+      - { value: 'Yes PropertiesExample->notSame will output true', correct: false }
+      - { value: 'No PropertiesExample->notSame will output false', correct: false }
+      - { value: 'Fatal Error', correct: true }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.properties'
   -
     uuid: 1eebf878-8ba9-634c-83eb-99d84c92580c
     question: 'From which version a Constant can be defined in a Trait ?'
     answers:
-      - {value: '7.4', correct: false}
-      - {value: '7.7', correct: false}
-      - {value: '7.9', correct: false}
-      - {value: '8.0', correct: false}
-      - {value: '8.1', correct: false}
-      - {value: '8.2', correct: true}
+      - { value: '7.4', correct: false }
+      - { value: '7.7', correct: false }
+      - { value: '7.9', correct: false }
+      - { value: '8.0', correct: false }
+      - { value: '8.1', correct: false }
+      - { value: '8.2', correct: true }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.constants'
   -
     uuid: 1eebf878-8ba9-6392-a88a-99d84c92580c
-    question: "Could a Constant defined in a Trait be overrided by an exhibiting class ?    trait PropertiesTrait {   public const FLAG = 2;  }    class PropertiesExample {   use PropertiesTrait;   public const FLAG = 3;  }"
+    question: "Could a Constant defined in a Trait be overrided by an exhibiting class ?  trait PropertiesTrait {  public const FLAG = 2; }  class PropertiesExample {  use PropertiesTrait;  public const FLAG = 3; }"
     answers:
-      - {value: 'Yes PropertiesExample::FLAG will output 3', correct: false}
-      - {value: 'No PropertiesExample::FLAG will output 2', correct: false}
-      - {value: 'No it will render a Fatal Error', correct: true}
+      - { value: 'Yes PropertiesExample::FLAG will output 3', correct: false }
+      - { value: 'No PropertiesExample::FLAG will output 2', correct: false }
+      - { value: 'No it will render a Fatal Error', correct: true }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.constants'

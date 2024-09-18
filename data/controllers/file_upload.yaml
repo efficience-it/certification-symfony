@@ -3,7 +3,7 @@ questions:
     uuid: 1eebf878-8ba8-69c4-88eb-99d84c92580c
     question: 'How to access to an UploadedFile after a form in a controller ?'
     answers:
-      - { value: "/** @var UploadedFile $brochureFile */$brochureFile = $request->uploadFile('brochure')->getData();", correct: false }
-      - { value: "/** @var UploadedFile $brochureFile */$brochureFile = $request->getFile('brochure');", correct: false }
+      - { value: "/** @var UploadedFile $brochureFile */ $brochureFile = $request->uploadFile('brochure')->getData();", correct: false }
+      - { value: "/** @var UploadedFile $brochureFile */ $brochureFile = $request->getFile('brochure');", correct: false }
       - { value: "/** @var UploadedFile $brochureFile */ $brochureFile = $form->get('brochure')->getData();", correct: true }
     help: 'https://symfony.com/doc/current/controller/upload_file.html'

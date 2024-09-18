@@ -3,24 +3,24 @@ questions:
     uuid: 1eebf878-8b99-6e7e-8428-99d84c92580c
     question: 'What is the attribute in the definition of a route setting the locale of a user?'
     answers:
-      - {value: _language, correct: false}
-      - {value: _i18N, correct: false}
-      - {value: _locale, correct: true}
-      - {value: _controller, correct: false}
+      - { value: _language, correct: false }
+      - { value: _i18N, correct: false }
+      - { value: _locale, correct: true }
+      - { value: _controller, correct: false }
     help: 'https://symfony.com/doc/current/routing.html'
   -
     uuid: 1eebf878-8b9a-6180-90b7-99d84c92580c
     question: 'Assuming there is locale: en in translation.yaml and given the following route path: /%%locale%%, what URLs will be matched?'
     answers:
-      - {value: /%en%, correct: true}
-      - {value: /locale, correct: false}
-      - {value: /en, correct: false}
-      - {value: /%locale%, correct: false}
+      - { value: /%en%, correct: true }
+      - { value: /locale, correct: false }
+      - { value: /en, correct: false }
+      - { value: /%locale%, correct: false }
     help: 'https://symfony.com/doc/current/routing/service_container_parameters.html'
   -
     uuid: 1eebf878-8ba8-6604-918b-99d84c92580c
     question: 'When using the special _locale parameter in a route, the matched locale is automatically set on the Request and can be retrieved via the getLocale() method. Is it true ?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/current/translation.html#the-locale-and-the-url'

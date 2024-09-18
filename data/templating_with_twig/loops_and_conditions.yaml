@@ -3,29 +3,29 @@ questions:
     uuid: 1eebf878-8b98-63da-9dbf-99d84c92580c
     question: 'In Twig, which of the following operators has the highest precedence?'
     answers:
-      - {value: and, correct: false}
-      - {value: or, correct: false}
-      - {value: in, correct: false}
-      - {value: '<=>', correct: false}
-      - {value: '==', correct: false}
-      - {value: '| (filters)', correct: true}
+      - { value: and, correct: false }
+      - { value: or, correct: false }
+      - { value: in, correct: false }
+      - { value: '<=>', correct: false }
+      - { value: '==', correct: false }
+      - { value: '| (filters)', correct: true }
     help: 'https://twig.symfony.com/doc/3.x/templates.html#expressions'
   -
     uuid: 1eebf878-8b98-6b6e-8d01-99d84c92580c
     question: 'What is true about twig delimiters ?'
     answers:
-      - {value: '{% ... %} is used to execute statements such as for-loops', correct: true}
-      - {value: '{{ ... }} used to execute statements such as for-loops', correct: false}
-      - {value: '{% ... %} is used to output the result of an expression', correct: false}
-      - {value: '{{ ... }} is used to output the result of an expression', correct: true}
+      - { value: '{% ... %} is used to execute statements such as for-loops', correct: true }
+      - { value: '{{ ... }} used to execute statements such as for-loops', correct: false }
+      - { value: '{% ... %} is used to output the result of an expression', correct: false }
+      - { value: '{{ ... }} is used to output the result of an expression', correct: true }
     help: 'https://twig.symfony.com/doc/3.x/templates.html#synopsis'
   -
     uuid: 1eebf878-8b9b-6166-9404-99d84c92580c
     question: 'In Twig, which of the following operators has the lowest precedence?'
     answers:
-      - {value: '?: (ternary operator)', correct: true}
-      - {value: or, correct: false}
-      - {value: '| (filters)', correct: false}
-      - {value: and, correct: false}
-      - {value: '==', correct: false}
+      - { value: '?: (ternary operator)', correct: true }
+      - { value: or, correct: false }
+      - { value: '| (filters)', correct: false }
+      - { value: and, correct: false }
+      - { value: '==', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/templates.html#expressions'

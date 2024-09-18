@@ -3,66 +3,66 @@ questions:
     uuid: 1eebf878-8b9d-6600-b63e-99d84c92580c
     question: 'Could values be mapped to fields using callbacks?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/current/form/data_mappers.html#mapping-form-fields-using-callbacks'
   -
     uuid: 1eebf878-8ba1-67fa-9c70-99d84c92580c
     question: 'We can also apply constraints on class getters with ``addPropertyConstraint()``'
     answers:
-      - {value: 'True', correct: false}
-      - {value: 'False', correct: true}
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://symfony.com/doc/current/components/validator/metadata.html#getters'
   -
     uuid: 1eebf878-8ba1-6840-b9ce-99d84c92580c
     question: 'We can also apply constraints on class getters with ``addGetterConstraint()``'
     answers:
-      - {value: 'True', correct: true}
-      - {value: 'False', correct: false}
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/current/components/validator/metadata.html'
   -
     uuid: 1eebf878-8ba1-6926-8c9e-99d84c92580c
     question: 'Which annotation are valid ?'
     answers:
-      - {value: "@Assert\\Choice({'male', 'female', 'other'})", correct: true}
-      - {value: "@Assert\\Choice(choices = {'male', 'female', 'other'})", correct: true}
-      - {value: "@Assert\\Choices({'male', 'female', 'other'})", correct: false}
-      - {value: "@Assert\\Choices(choices = {'male', 'female', 'other'})", correct: false}
+      - { value: "@Assert\\Choice({'male', 'female', 'other'})", correct: true }
+      - { value: "@Assert\\Choice(choices = {'male', 'female', 'other'})", correct: true }
+      - { value: "@Assert\\Choices({'male', 'female', 'other'})", correct: false }
+      - { value: "@Assert\\Choices(choices = {'male', 'female', 'other'})", correct: false }
     help: 'https://symfony.com/doc/current/reference/constraints/Choice.html#basic-usage'
   -
     uuid: 1eec042a-90a0-6478-8a7c-83bfaecaab6e
     question: 'Which class would have to extend to create a FormValidator ?'
     answers:
-      - {value: src/Symfony/Component/Validator/FormConstraint.php, correct: false}
-      - {value: src/Symfony/Component/Validator/Validator.php, correct: false}
-      - {value: src/Symfony/Component/Validator/Constraint.php, correct: true}
-      - {value: src/Symfony/Component/Validator/FormValidator.php, correct: false}
+      - { value: src/Symfony/Component/Validator/FormConstraint.php, correct: false }
+      - { value: src/Symfony/Component/Validator/Validator.php, correct: false }
+      - { value: src/Symfony/Component/Validator/Constraint.php, correct: true }
+      - { value: src/Symfony/Component/Validator/FormValidator.php, correct: false }
     help: 'https://symfony.com/doc/current/validation/custom_constraint.html'
   -
     uuid: 1eec0433-872c-6d02-9232-4b97d5043a34
     question: 'If you create a custom validator by defining an IpRangeConstraint, what will be the name of the validator?'
     answers:
-      - {value: IpRangeValidator, correct: false}
-      - {value: ValidatorIpRange, correct: false}
-      - {value: IpRangeValidatorConstraint, correct: false}
-      - {value: IpRangeConstraintValidator, correct: true}
+      - { value: IpRangeValidator, correct: false }
+      - { value: ValidatorIpRange, correct: false }
+      - { value: IpRangeValidatorConstraint, correct: false }
+      - { value: IpRangeConstraintValidator, correct: true }
     help: 'https://symfony.com/doc/current/validation/custom_constraint.html#creating-the-validator-itself'
   -
     uuid: 1eec0460-a9d0-6b7e-8d3d-4ba78cd90662
     question: "What's the return type of the method validate in a Validator Class ?"
     answers:
-      - {value: 'true, false', correct: true}
-      - {value: ConstraintViolationBuilderInterface, correct: true}
-      - {value: ConstraintViolationException, correct: false}
-      - {value: UnexpectedValueException, correct: true}
+      - { value: 'true, false', correct: true }
+      - { value: ConstraintViolationBuilderInterface, correct: true }
+      - { value: ConstraintViolationException, correct: false }
+      - { value: UnexpectedValueException, correct: true }
     help: 'https://symfony.com/doc/current/validation/custom_constraint.html#creating-the-validator-itself'
   -
     uuid: 1eec047f-f3ee-68f4-ab1a-5dc9bda3f71a
     question: 'What is the class to extend to test Constraint Validator ?'
     answers:
-      - {value: ConstraintValidatorTestCase, correct: true}
-      - {value: ConstraintValidatorTest, correct: false}
-      - {value: ConstraintTestCase, correct: false}
-      - {value: ValidatorTestCase, correct: false}
-      - {value: ValidatorTest, correct: false}
+      - { value: ConstraintValidatorTestCase, correct: true }
+      - { value: ConstraintValidatorTest, correct: false }
+      - { value: ConstraintTestCase, correct: false }
+      - { value: ValidatorTestCase, correct: false }
+      - { value: ValidatorTest, correct: false }
     help: 'https://symfony.com/doc/current/validation/custom_constraint.html#testing-custom-constraints'

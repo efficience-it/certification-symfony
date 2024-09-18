@@ -3,60 +3,60 @@ questions:
     uuid: 1eebf878-8b98-6f24-b420-99d84c92580c
     question: 'What is the aim of the security switch_user option?'
     answers:
-      - {value: 'To let some user be able to switch from one to another.', correct: true}
-      - {value: 'To be able to have several accounts and switch easily.', correct: false}
-      - {value: 'To change the roles of the user easily.', correct: false}
+      - { value: 'To let some user be able to switch from one to another.', correct: true }
+      - { value: 'To be able to have several accounts and switch easily.', correct: false }
+      - { value: 'To change the roles of the user easily.', correct: false }
     help: 'https://symfony.com/doc/current/cookbook/security/impersonating_user.html'
   -
     uuid: 1eebf878-8b9b-6940-83e9-99d84c92580c
     question: 'I am correctly logged in, but I am not fully authenticated, what is the main cause?'
     answers:
-      - {value: "I'm connected with an API Token", correct: false}
-      - {value: "We're always fully autenticated", correct: false}
-      - {value: 'My User have no roles', correct: true}
-      - {value: "I didn't tick the  Remember me  checkbox", correct: false}
+      - { value: "I'm connected with an API Token", correct: false }
+      - { value: "We're always fully autenticated", correct: false }
+      - { value: 'My User have no roles', correct: true }
+      - { value: "I didn't tick the  Remember me  checkbox", correct: false }
     help: 'https://symfony.com/doc/current/security.html#roles'
   -
     uuid: 1eebf878-8ba1-6458-b8ae-99d84c92580c
     question: 'Which annotation is valid to check role ?'
     answers:
-      - {value: '@Security( is_granted( ROLE_ADMIN ) )', correct: true}
-      - {value: '@IsGranted( ROLE_ADMIN )', correct: true}
-      - {value: '@Security( restrict_for( ROLE_ADMIN ) )', correct: false}
-      - {value: '@Security( role( ROLE_ADMIN ) )', correct: false}
+      - { value: '@Security( is_granted( ROLE_ADMIN ) )', correct: true }
+      - { value: '@IsGranted( ROLE_ADMIN )', correct: true }
+      - { value: '@Security( restrict_for( ROLE_ADMIN ) )', correct: false }
+      - { value: '@Security( role( ROLE_ADMIN ) )', correct: false }
     help: 'https://symfony.com/bundles/SensioFrameworkExtraBundle/current/annotations/security.html'
   -
     uuid: 1eebf878-8ba1-64a8-a6c8-99d84c92580c
     question: 'Which default role exist ?'
     answers:
-      - {value: IS_AUTHENTICATED_REMEMBERED, correct: true}
-      - {value: IS_AUTHENTICATED_FULLY, correct: true}
-      - {value: IS_AUTHENTICATED_ANONYMOUSLY, correct: true}
-      - {value: IS_NOT_AUTHENTICATED, correct: false}
+      - { value: IS_AUTHENTICATED_REMEMBERED, correct: true }
+      - { value: IS_AUTHENTICATED_FULLY, correct: true }
+      - { value: IS_AUTHENTICATED_ANONYMOUSLY, correct: true }
+      - { value: IS_NOT_AUTHENTICATED, correct: false }
     help: 'https://symfony.com/doc/current/components/security/authorization.html#authenticatedvoter'
   -
     uuid: 1eeda40a-e748-6f4c-8fa8-4f4fb85fbade
     question: 'Does a role have to start with ROLE_?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
-      - {value: "if it's an API no", correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+      - { value: "if it's an API no", correct: false }
     help: 'https://symfony.com/doc/current/security.html#roles'
   -
     uuid: 1eeda40e-4dde-6c40-abde-df1e3c85d67f
     question: 'Which roles are possibles for users ?'
     answers:
-      - {value: ROLE_USER, correct: true}
-      - {value: ROLES_USER_ADMIN, correct: false}
-      - {value: USER_ADMIN_HR, correct: false}
-      - {value: 'ROLE_*', correct: true}
+      - { value: ROLE_USER, correct: true }
+      - { value: ROLES_USER_ADMIN, correct: false }
+      - { value: USER_ADMIN_HR, correct: false }
+      - { value: 'ROLE_*', correct: true }
     help: 'https://symfony.com/doc/current/security.html#roles'
   -
     uuid: 1eeda42e-4d71-6b0c-ba58-836c08d99b83
     question: 'Which way is good to check grant access hierarchy ?'
     answers:
-      - {value: "$this->isGranted('ROLE_ADMIN');", correct: true}
-      - {value: "$this->denyAccessUnlessGranted('ROLE_ADMIN');", correct: true}
-      - {value: "in_array('ROLE_ADMIN', $user->getRoles());", correct: false}
-      - {value: "$user->hasRole('ROLE_ADMIN');", correct: false}
+      - { value: "$this->isGranted('ROLE_ADMIN');", correct: true }
+      - { value: "$this->denyAccessUnlessGranted('ROLE_ADMIN');", correct: true }
+      - { value: "in_array('ROLE_ADMIN', $user->getRoles());", correct: false }
+      - { value: "$user->hasRole('ROLE_ADMIN');", correct: false }
     help: 'https://symfony.com/doc/current/security.html#hierarchical-roles'

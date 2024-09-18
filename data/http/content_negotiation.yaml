@@ -3,54 +3,54 @@ questions:
     uuid: 1eedbac6-720f-6b90-9551-f15fd36e0d10
     question: 'Which http response codes are used as fallback mecanisms in Http Content Negociation ?'
     answers:
-      - {value: '300', correct: true}
-      - {value: '406', correct: true}
-      - {value: '415', correct: true}
-      - {value: '311', correct: false}
-      - {value: '434', correct: false}
+      - { value: '300', correct: true }
+      - { value: '406', correct: true }
+      - { value: '415', correct: true }
+      - { value: '311', correct: false }
+      - { value: '434', correct: false }
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation#principles_of_content_negotiation'
   -
     uuid: 1eedc739-cf4e-69a8-9026-cd578b48f48f
     question: 'What does mean q in a Header ?'
     answers:
-      - {value: 'quality factor', correct: true}
-      - {value: 'query factor', correct: false}
-      - {value: qualification, correct: false}
+      - { value: 'quality factor', correct: true }
+      - { value: 'query factor', correct: false }
+      - { value: qualification, correct: false }
     help: 'https://restfulapi.net/content-negotiation/'
   -
     uuid: 1eedc73d-be96-6922-9026-f906a8ae5a51
     question: 'What are the possibles values for q the priority factor in a Header ?'
     answers:
-      - {value: '0', correct: true}
-      - {value: '1', correct: true}
-      - {value: '2,5', correct: false}
-      - {value: '9.9', correct: false}
-      - {value: '49', correct: false}
+      - { value: '0', correct: true }
+      - { value: '1', correct: true }
+      - { value: '2,5', correct: false }
+      - { value: '9.9', correct: false }
+      - { value: '49', correct: false }
     help: 'https://restfulapi.net/content-negotiation/'
   -
     uuid: 1eedc741-0ba8-6744-9026-276d96c47df4
     question: 'What is the default value for q in a header ?'
     answers:
-      - {value: '0', correct: false}
-      - {value: '1', correct: true}
-      - {value: '0,5', correct: false}
+      - { value: '0', correct: false }
+      - { value: '1', correct: true }
+      - { value: '0,5', correct: false }
     help: 'https://restfulapi.net/content-negotiation/'
   -
     uuid: 1eedc75e-c312-637c-9026-c3acc863dd84
     question: 'Which header are used for the server content negociation ?'
     answers:
-      - {value: Accept, correct: true}
-      - {value: Accept-Language, correct: true}
-      - {value: Accept-Encoding, correct: true}
-      - {value: Version, correct: false}
-      - {value: Accept-method, correct: false}
-      - {value: User-Agent, correct: false}
+      - { value: Accept, correct: true }
+      - { value: Accept-Language, correct: true }
+      - { value: Accept-Encoding, correct: true }
+      - { value: Version, correct: false }
+      - { value: Accept-method, correct: false }
+      - { value: User-Agent, correct: false }
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation#principles_of_content_negotiation'
   -
     uuid: 1eedc762-5f32-6970-9026-218653829838
     question: 'Is Vary the header that server use to indicate which headers is used for content negociation ?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
-      - {value: 'Depends on cache', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
+      - { value: 'Depends on cache', correct: false }
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation#principles_of_content_negotiation'

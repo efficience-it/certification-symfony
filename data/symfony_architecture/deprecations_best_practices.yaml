@@ -3,44 +3,44 @@ questions:
     uuid: 1eebf878-8ba8-6b22-8f84-99d84c92580c
     question: 'Can a new class (or interface, or trait) be introduced as deprecated, or contain deprecated methods ?'
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/current/contributing/code/conventions.html#deprecating-code'
   -
     uuid: 1eebf878-8ba8-6b68-be58-99d84c92580c
     question: 'Can a new method be introduced as deprecated ?'
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
-      - {value: 'Depending on the component', correct: false}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
+      - { value: 'Depending on the component', correct: false }
     help: 'https://symfony.com/doc/current/contributing/code/conventions.html#deprecating-code'
   -
     uuid: 1eebf878-8ba8-6bb8-ae94-99d84c92580c
     question: 'On which version deprecations must be introduced on ?'
     answers:
-      - {value: 'the next minor version of the impacted component (or bundle, or bridge, or contract)', correct: true}
-      - {value: 'the next patch version of the impacted component (or bundle, or bridge, or contract)', correct: false}
-      - {value: 'the next major version of the impacted component (or bundle, or bridge, or contract)', correct: false}
-      - {value: 'could be exceptionally introduced on previous supported versions if they are critical.', correct: true}
+      - { value: 'the next minor version of the impacted component (or bundle, or bridge, or contract)', correct: true }
+      - { value: 'the next patch version of the impacted component (or bundle, or bridge, or contract)', correct: false }
+      - { value: 'the next major version of the impacted component (or bundle, or bridge, or contract)', correct: false }
+      - { value: 'could be exceptionally introduced on previous supported versions if they are critical.', correct: true }
     help: 'https://symfony.com/doc/current/contributing/code/conventions.html#deprecating-code'
   -
     uuid: 1eebf878-8ba8-6bfe-8b8f-99d84c92580c
     question: 'What must you do when you deprecate a relevant class, method, property ?'
     answers:
-      - {value: 'add a @deprecated PHPDoc', correct: true}
-      - {value: 'the version in which the feature was deprecated', correct: true}
-      - {value: 'the version in which the feature was corrected', correct: false}
-      - {value: "whenever possible, the class, function that's replace it.", correct: true}
-      - {value: 'add a trigger_deprecation() function', correct: true}
-      - {value: 'add a line in the CHANGELOG.md file of the impacted component', correct: true}
-      - {value: 'add line in the UPGRADE.md file of the targeted version', correct: true}
-      - {value: 'add line in the README.md file', correct: false}
+      - { value: 'add a @deprecated PHPDoc', correct: true }
+      - { value: 'the version in which the feature was deprecated', correct: true }
+      - { value: 'the version in which the feature was corrected', correct: false }
+      - { value: "whenever possible, the class, function that's replace it.", correct: true }
+      - { value: 'add a trigger_deprecation() function', correct: true }
+      - { value: 'add a line in the CHANGELOG.md file of the impacted component', correct: true }
+      - { value: 'add line in the UPGRADE.md file of the targeted version', correct: true }
+      - { value: 'add line in the README.md file', correct: false }
     help: 'https://symfony.com/doc/current/contributing/code/conventions.html#deprecating-code'
   -
     uuid: 1eebf878-8ba8-6c4e-8dd0-99d84c92580c
     question: 'When do Symfony remove deprecated code on the impacted component ?'
     answers:
-      - {value: 'On the Patch Version', correct: false}
-      - {value: 'On the Minor Version', correct: false}
-      - {value: 'On the Major Version', correct: true}
+      - { value: 'On the Patch Version', correct: false }
+      - { value: 'On the Minor Version', correct: false }
+      - { value: 'On the Major Version', correct: true }
     help: 'https://symfony.com/doc/current/contributing/code/conventions.html#removing-deprecated-code'

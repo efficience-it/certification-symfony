@@ -3,16 +3,16 @@ questions:
     uuid: 1eebf878-8b99-6d98-856c-99d84c92580c
     question: "Consider the following Twig code snippet: {% extends 'layout.html.twig' %} {% block title 'Hello World!' %} My name is Amanda. Twig What will be the result of evaluating this Twig template?"
     answers:
-      - {value: 'Twig will raise a Twig_Error_Syntax exception preventing the template from being evaluated.', correct: true}
-      - {value: 'The template is successfully evaluated and the string My name is Amanda will be displayed in the web browser.', correct: false}
+      - { value: 'Twig will raise a Twig_Error_Syntax exception preventing the template from being evaluated.', correct: true }
+      - { value: 'The template is successfully evaluated and the string My name is Amanda will be displayed in the web browser.', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/tags/extends.html'
   -
     uuid: 1eebf878-8b9d-6240-9f21-99d84c92580c
     question: 'In a Twig template that extends other templates, how can you check if any of the parent templates define some block called sidebar?'
     answers:
-      - {value: "You can't check if a Twig block exists.", correct: false}
-      - {value: "{% if block('sidebar') ?? block('') %} ... {% endif %}", correct: false}
-      - {value: "{% if defined(block('sidebar')) %} ... {% endif %}", correct: false}
-      - {value: "{% if block('sidebar') is defined %} ... {% endif %}", correct: true}
-      - {value: "{% if block('sidebar')|defined %} ... {% endif %}", correct: false}
+      - { value: "You can't check if a Twig block exists.", correct: false }
+      - { value: "{% if block('sidebar') ?? block('') %} ... {% endif %}", correct: false }
+      - { value: "{% if defined(block('sidebar')) %} ... {% endif %}", correct: false }
+      - { value: "{% if block('sidebar') is defined %} ... {% endif %}", correct: true }
+      - { value: "{% if block('sidebar')|defined %} ... {% endif %}", correct: false }
     help: 'https://twig.symfony.com/doc/functions/block.html'

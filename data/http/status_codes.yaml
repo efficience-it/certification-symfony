@@ -3,179 +3,179 @@ questions:
     uuid: 1eebf878-8b96-6878-9445-99d84c92580c
     question: 'Does the 308 status code allow to change the request method?'
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://tools.ietf.org/html/rfc7538#section-3'
   -
     uuid: 1eebf878-8b97-6b88-88e6-99d84c92580c
     question: 'Should a response using the 511 status code contains a link to a resource that allows the client to authenticate itself?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/511'
   -
     uuid: 1eebf878-8b98-638a-bcb4-99d84c92580c
     question: 'What is the HTTP status codes for Internal Server Error?'
     answers:
-      - {value: '504', correct: false}
-      - {value: '503', correct: false}
-      - {value: '500', correct: true}
-      - {value: '505', correct: false}
-      - {value: '501', correct: false}
-      - {value: '502', correct: false}
+      - { value: '504', correct: false }
+      - { value: '503', correct: false }
+      - { value: '500', correct: true }
+      - { value: '505', correct: false }
+      - { value: '501', correct: false }
+      - { value: '502', correct: false }
     help: 'https://tools.ietf.org/html/rfc2616#section-6.1.1'
   -
     uuid: 1eebf878-8b98-693e-893f-99d84c92580c
     question: 'What does the 308 HTTP status code stand for?'
     answers:
-      - {value: 'Permanent redirect', correct: true}
-      - {value: 'Found (moved temporarily)', correct: false}
-      - {value: 'Temporary redirect', correct: false}
-      - {value: 'Moved permanently', correct: false}
+      - { value: 'Permanent redirect', correct: true }
+      - { value: 'Found (moved temporarily)', correct: false }
+      - { value: 'Temporary redirect', correct: false }
+      - { value: 'Moved permanently', correct: false }
     help: 'https://datatracker.ietf.org/doc/html/rfc7538'
   -
     uuid: 1eebf878-8b99-6168-b869-99d84c92580c
     question: 'What is the status code for Too Many Requests?'
     answers:
-      - {value: '429', correct: true}
-      - {value: '502', correct: false}
-      - {value: '420', correct: false}
-      - {value: '503', correct: false}
-      - {value: '431', correct: false}
+      - { value: '429', correct: true }
+      - { value: '502', correct: false }
+      - { value: '420', correct: false }
+      - { value: '503', correct: false }
+      - { value: '431', correct: false }
     help: 'https://tools.ietf.org/html/rfc6585#section-4'
   -
     uuid: 1eebf878-8b99-6b5e-8df3-99d84c92580c
     question: 'What are the HTTP status codes involved by the caching models?'
     answers:
-      - {value: '200', correct: true}
-      - {value: '204', correct: false}
-      - {value: '300', correct: false}
-      - {value: '304', correct: true}
+      - { value: '200', correct: true }
+      - { value: '204', correct: false }
+      - { value: '300', correct: false }
+      - { value: '304', correct: true }
     help: 'https://tools.ietf.org/html/rfc2616#section-10.3.5'
   -
     uuid: 1eebf878-8b9a-6ef0-b697-99d84c92580c
     question: 'What is the status code for Gone?'
     answers:
-      - {value: '409', correct: false}
-      - {value: '410', correct: true}
-      - {value: '404', correct: false}
-      - {value: '403', correct: false}
-      - {value: '411', correct: false}
+      - { value: '409', correct: false }
+      - { value: '410', correct: true }
+      - { value: '404', correct: false }
+      - { value: '403', correct: false }
+      - { value: '411', correct: false }
     help: 'https://tools.ietf.org/html/rfc2616#section-10.4.11'
   -
     uuid: 1eebf878-8b9a-6f40-b0e4-99d84c92580c
     question: 'What are the HTTP status codes for Server Error?'
     answers:
-      - {value: 3xx, correct: false}
-      - {value: 1xx, correct: false}
-      - {value: 5xx, correct: true}
-      - {value: 4xx, correct: false}
-      - {value: 2xx, correct: false}
+      - { value: 3xx, correct: false }
+      - { value: 1xx, correct: false }
+      - { value: 5xx, correct: true }
+      - { value: 4xx, correct: false }
+      - { value: 2xx, correct: false }
     help: 'https://tools.ietf.org/html/rfc2616#section-6.1.1'
   -
     uuid: 1eebf878-8b9c-60c0-962a-99d84c92580c
     question: 'Which headers can trigger a 406 status code if the server cannot produce an acceptable response?'
     answers:
-      - {value: If-Range, correct: false}
-      - {value: If-None-Match, correct: false}
-      - {value: Accept-Language, correct: true}
-      - {value: Accept, correct: true}
-      - {value: Accept-Encoding, correct: true}
-      - {value: If-Match, correct: false}
+      - { value: If-Range, correct: false }
+      - { value: If-None-Match, correct: false }
+      - { value: Accept-Language, correct: true }
+      - { value: Accept, correct: true }
+      - { value: Accept-Encoding, correct: true }
+      - { value: If-Match, correct: false }
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/406'
   -
     uuid: 1eebf878-8b9c-6c0a-8a9f-99d84c92580c
     question: 'Can a response with 308 status code be cached?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://tools.ietf.org/html/rfc7538#section-3'
   -
     uuid: 1eebf878-8b9d-67d6-ae59-99d84c92580c
     question: 'What is the HTTP status codes for Service Unavailable?'
     answers:
-      - {value: '505', correct: false}
-      - {value: '503', correct: true}
-      - {value: '504', correct: false}
-      - {value: '501', correct: false}
-      - {value: '500', correct: false}
+      - { value: '505', correct: false }
+      - { value: '503', correct: true }
+      - { value: '504', correct: false }
+      - { value: '501', correct: false }
+      - { value: '500', correct: false }
     help: 'https://datatracker.ietf.org/doc/html/rfc2616#section-10.5.4'
   -
     uuid: 1eebf878-8ba0-63aa-a842-99d84c92580c
     question: 'Which HTTP status code should be used for a resource that moved temporarily ?'
     answers:
-      - {value: '301', correct: false}
-      - {value: '302', correct: true}
-      - {value: '201', correct: false}
-      - {value: '204', correct: false}
+      - { value: '301', correct: false }
+      - { value: '302', correct: true }
+      - { value: '201', correct: false }
+      - { value: '204', correct: false }
     help: 'https://github.com/for-GET/know-your-http-well/blob/master/status-codes.md'
   -
     uuid: 1eebf878-8ba0-63f0-be89-99d84c92580c
     question: 'Server returns a specific status code when you are not allowed to access a resource'
     answers:
-      - {value: 'True', correct: true}
-      - {value: 'False', correct: false}
+      - { value: 'True', correct: true }
+      - { value: 'False', correct: false }
     help: 'https://github.com/for-GET/know-your-http-well/blob/master/status-codes.md'
   -
     uuid: 1eebf878-8ba1-6a48-bb99-99d84c92580c
     question: 'What do 1xx codes stand for ?'
     answers:
-      - {value: 'Client Error', correct: false}
-      - {value: "They don't exist.", correct: false}
-      - {value: 'Server Error', correct: false}
-      - {value: Informational, correct: true}
+      - { value: 'Client Error', correct: false }
+      - { value: "They don't exist.", correct: false }
+      - { value: 'Server Error', correct: false }
+      - { value: Informational, correct: true }
     help: 'https://www.w3.org/Protocols/rfc2616/rfc2616-sec6.html#sec6.1.1'
   -
     uuid: 1eebf878-8ba1-6c50-934c-99d84c92580c
     question: 'Which of the following are valid status code to create a Symfony\Component\HttpFoundation\RedirectResponse?'
     answers:
-      - {value: '302', correct: true}
-      - {value: '308', correct: true}
-      - {value: '307', correct: true}
-      - {value: '301', correct: true}
-      - {value: '201', correct: true}
-      - {value: '303', correct: true}
-      - {value: '304', correct: false}
+      - { value: '302', correct: true }
+      - { value: '308', correct: true }
+      - { value: '307', correct: true }
+      - { value: '301', correct: true }
+      - { value: '201', correct: true }
+      - { value: '303', correct: true }
+      - { value: '304', correct: false }
     help: 'https://tools.ietf.org/html/rfc7538'
   -
     uuid: 1eebf878-8ba2-67fe-8571-99d84c92580c
     question: 'What is the HTTP status codes for Gateway Timeout?'
     answers:
-      - {value: '500', correct: false}
-      - {value: '501', correct: false}
-      - {value: '502', correct: false}
-      - {value: '503', correct: false}
-      - {value: '504', correct: true}
-      - {value: '505', correct: false}
+      - { value: '500', correct: false }
+      - { value: '501', correct: false }
+      - { value: '502', correct: false }
+      - { value: '503', correct: false }
+      - { value: '504', correct: true }
+      - { value: '505', correct: false }
     help: 'https://datatracker.ietf.org/doc/html/rfc2616#section-10.5.5'
   -
     uuid: 1eebf878-8ba3-6582-ae49-99d84c92580c
     question: 'What are the HTTP status codes for client errors?'
     answers:
-      - {value: 4xx, correct: true}
-      - {value: 1xx, correct: false}
-      - {value: 3xx, correct: false}
-      - {value: 2xx, correct: false}
-      - {value: 5xx, correct: false}
+      - { value: 4xx, correct: true }
+      - { value: 1xx, correct: false }
+      - { value: 3xx, correct: false }
+      - { value: 2xx, correct: false }
+      - { value: 5xx, correct: false }
     help: 'https://datatracker.ietf.org/doc/html/rfc2616#section-6.1.1'
   -
     uuid: 1eebf878-8ba4-6446-a261-99d84c92580c
     question: 'Which status code must be used to respond if a resource is unavailable due to legal reasons?'
     answers:
-      - {value: '425', correct: false}
-      - {value: '403', correct: false}
-      - {value: '404', correct: false}
-      - {value: '418', correct: false}
-      - {value: '401', correct: false}
-      - {value: '451', correct: true}
+      - { value: '425', correct: false }
+      - { value: '403', correct: false }
+      - { value: '404', correct: false }
+      - { value: '418', correct: false }
+      - { value: '401', correct: false }
+      - { value: '451', correct: true }
     help: 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/451'
   -
     uuid: 1eebf878-8ba7-6c9a-bb45-99d84c92580c
     question: 'What is the status code for Created ?'
     answers:
-      - {value: '204', correct: false}
-      - {value: '301', correct: false}
-      - {value: '201', correct: true}
-      - {value: '200', correct: false}
-      - {value: '302', correct: false}
+      - { value: '204', correct: false }
+      - { value: '301', correct: false }
+      - { value: '201', correct: true }
+      - { value: '200', correct: false }
+      - { value: '302', correct: false }
     help: 'https://developer.mozilla.org/fr/docs/Web/HTTP/Status/201'

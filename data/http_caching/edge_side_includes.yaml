@@ -3,49 +3,49 @@ questions:
     uuid: 1eebf878-8b97-6cf0-9b26-99d84c92580c
     question: "Given the following esi call: render_esi(url('myroute')), which sentences are true ?"
     answers:
-      - {value: 'framework.esi must be enabled', correct: true}
-      - {value: 'myroute must exist', correct: true}
-      - {value: 'a path must be specified in the framework.fragments option', correct: false}
-      - {value: " url twig function can't be used with render_esi ", correct: false}
+      - { value: 'framework.esi must be enabled', correct: true }
+      - { value: 'myroute must exist', correct: true }
+      - { value: 'a path must be specified in the framework.fragments option', correct: false }
+      - { value: "url twig function can't be used with render_esi", correct: false }
     help: 'https://symfony.com/doc/current/http_cache/esi.html'
   -
     uuid: 1eebf878-8b9d-6290-9df2-99d84c92580c
     question: 'Does the render_esi Twig function throw an exception when the request is not coming from a gateway cache?'
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/current/http_cache/esi.html'
   -
     uuid: 1eebf878-8b9e-6578-8aaa-99d84c92580c
     question: 'What is the Twig function to render an ESI?'
     answers:
-      - {value: cache_esi(), correct: false}
-      - {value: esi_cache(), correct: false}
-      - {value: esi_render(), correct: false}
-      - {value: render_esi(), correct: true}
+      - { value: cache_esi(), correct: false }
+      - { value: esi_cache(), correct: false }
+      - { value: esi_render(), correct: false }
+      - { value: render_esi(), correct: true }
     help: 'https://symfony.com/doc/current/http_cache/esi.html'
   -
     uuid: 1eebf878-8ba3-6ee2-b463-99d84c92580c
     question: 'If I use the render_esi Twig function with a controller reference: {{ render_esi(controller(''App\\Controller\\NewsController::latest'')) }} Will the function throw an exception if there is no Route declared for this action?'
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/current/http_cache/esi.html'
   -
     uuid: 1eebf878-8ba4-6400-9833-99d84c92580c
     question: "What happens if an esi is tried to be rendered but there is no Reverse Proxy Cache in the stack?"
     answers:
-      - {value: 'The block is rendered.', correct: true}
-      - {value: 'The block is not rendered.', correct: false}
-      - {value: 'The block render a 404 HTTP code status.', correct: false}
-      - {value: 'An exception is thrown by Symfony.', correct: false}
+      - { value: 'The block is rendered.', correct: true }
+      - { value: 'The block is not rendered.', correct: false }
+      - { value: 'The block render a 404 HTTP code status.', correct: false }
+      - { value: 'An exception is thrown by Symfony.', correct: false }
     help: 'https://symfony.com/doc/current/http_cache/esi.html'
   -
     uuid: 1eebf878-8ba6-6480-8218-99d84c92580c
     question: 'Which of these way to render_esi is valid ?'
     answers:
-      - {value: 'render_esi(controller(''App\\Controller\\NewsController::latest''))', correct: true}
-      - {value: "render_esi(url('latest_news'))", correct: true}
-      - {value: "render_esi(path('latest_news'))", correct: false}
-      - {value: "render_esi(controller('App//Controller//NewsController::latest'))", correct: false}
+      - { value: 'render_esi(controller(''App\\Controller\\NewsController::latest''))', correct: true }
+      - { value: "render_esi(url('latest_news'))", correct: true }
+      - { value: "render_esi(path('latest_news'))", correct: false }
+      - { value: "render_esi(controller('App//Controller//NewsController::latest'))", correct: false }
     help: 'https://symfony.com/doc/current/http_cache/esi.html#using-esi-in-symfony'

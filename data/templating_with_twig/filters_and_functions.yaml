@@ -3,50 +3,50 @@ questions:
     uuid: 1eebf878-8b98-62ae-b9f7-99d84c92580c
     question: "What's the aim of the apply tag?"
     answers:
-      - {value: 'Apply a camelCase transformation to a text', correct: false}
-      - {value: 'Apply one and only one filter on a block', correct: false}
-      - {value: 'Apply one or multiple filters on a block', correct: true}
-      - {value: 'Define a new tag', correct: false}
+      - { value: 'Apply a camelCase transformation to a text', correct: false }
+      - { value: 'Apply one and only one filter on a block', correct: false }
+      - { value: 'Apply one or multiple filters on a block', correct: true }
+      - { value: 'Define a new tag', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/tags/apply.html'
   -
     uuid: 1eebf878-8b98-6d6c-bbfe-99d84c92580c
     question: 'Is it possible to display the value of a constant of a PHP class in a Twig template ?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://twig.symfony.com/doc/functions/constant.html'
   -
     uuid: 1eebf878-8b9a-6b76-8340-99d84c92580c
     question: 'Could an Expression be created from within a template?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/current/reference/twig_reference.html#functions'
   -
     uuid: 1eebf878-8b9c-6fca-9ad6-99d84c92580c
     question: 'Which of the following is not a function?'
     answers:
-      - {value: set, correct: true}
-      - {value: template_from_string, correct: false}
-      - {value: parent, correct: false}
-      - {value: range, correct: false}
-      - {value: source, correct: false}
+      - { value: set, correct: true }
+      - { value: template_from_string, correct: false }
+      - { value: parent, correct: false }
+      - { value: range, correct: false }
+      - { value: source, correct: false }
     help: 'https://twig.symfony.com/doc/3.x/functions/template_from_string.html'
   -
     uuid: 1eebf878-8ba1-6f70-8240-99d84c92580c
     question: 'Which filter replace underscores by spaces, lowercase a whole string and put an uppercase for the first letter of the first word?'
     answers:
-      - {value: '{{ var|title }}', correct: false}
-      - {value: '{{ var|humanize }}', correct: true}
-      - {value: '{{ var|upper }}', correct: false}
-      - {value: '{{ var|capitalize }}', correct: false}
+      - { value: '{{ var|title }}', correct: false }
+      - { value: '{{ var|humanize }}', correct: true }
+      - { value: '{{ var|upper }}', correct: false }
+      - { value: '{{ var|capitalize }}', correct: false }
     help: 'https://symfony.com/doc/current/reference/twig_reference.html#humanize'
   -
     uuid: 1eebf878-8ba7-6ac4-b297-99d84c92580c
     question: 'How do you add the value 10 to an array called $myArray?'
     answers:
-      - {value: 'array_shift($myArray, 10);', correct: false}
-      - {value: '$myArray = array_merge($myArray, [10]);', correct: true}
-      - {value: '$myArray = array_merge($myArray, 10);', correct: false}
-      - {value: 'array_unshift($myArray, 10);', correct: true}
+      - { value: 'array_shift($myArray, 10);', correct: false }
+      - { value: '$myArray = array_merge($myArray, [10]);', correct: true }
+      - { value: '$myArray = array_merge($myArray, 10);', correct: false }
+      - { value: 'array_unshift($myArray, 10);', correct: true }
     help: 'https://www.php.net/manual/en/function.array-merge'

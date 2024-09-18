@@ -3,47 +3,47 @@ questions:
     uuid: 1eebf878-8b98-6862-a729-99d84c92580c
     question: 'When twig is used as a standalone library, which global variables are always available in templates?'
     answers:
-      - {value: _context, correct: true}
-      - {value: app, correct: false}
-      - {value: _self, correct: true}
-      - {value: _charset, correct: true}
+      - { value: _context, correct: true }
+      - { value: app, correct: false }
+      - { value: _self, correct: true }
+      - { value: _charset, correct: true }
     help: 'https://twig.symfony.com/doc/3.x/templates.html#global-variables'
   -
     uuid: 1eebf878-8ba5-6a30-ac9b-99d84c92580c
-    question: "Will this code permit to get the {{ ga_tracking }} in every twig files ?    # config/packages/twig.yaml     twig:     globals:      ga_tracking: 'UA-xxxxx-x'"
+    question: "Will this code permit to get the {{ ga_tracking }} in every twig files ?  # config/packages/twig.yaml   twig:   globals:    ga_tracking: 'UA-xxxxx-x'"
     answers:
-      - {value: 'No', correct: false}
-      - {value: 'Yes', correct: true}
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
     help: 'https://symfony.com/doc/current/templates.html#global-variables'
   -
     uuid: 1eebf878-8ba5-6a76-b902-99d84c92580c
     question: "What's the correct way to declare the global variable uuid to get {{ uuid.generate }} in any twig files"
     answers:
-      - {value: 'twig.globals.uuid:  @App\Generator\UuidGenerator ', correct: true}
-      - {value: 'twig.globals.uuid:  App\Generator\UuidGenerator ', correct: false}
-      - {value: 'twig.globals.uuid:  #App\Generator\UuidGenerator ', correct: false}
-      - {value: 'twig.uuid:  App\\Generator\\UuidGenerator ', correct: false}
+      - { value: 'twig.globals.uuid:  @App\Generator\UuidGenerator ', correct: true }
+      - { value: 'twig.globals.uuid:  App\Generator\UuidGenerator ', correct: false }
+      - { value: 'twig.globals.uuid:  #App\Generator\UuidGenerator ', correct: false }
+      - { value: 'twig.uuid:  App\\Generator\\UuidGenerator ', correct: false }
     help: 'https://symfony.com/doc/current/templates.html#global-variables'
   -
     uuid: 1eebf878-8ba5-6ac6-b2a2-99d84c92580c
     question: 'What are the methods available on the global variable app in twig ?'
     answers:
-      - {value: app.token, correct: true}
-      - {value: app.current_route_parameters, correct: true}
-      - {value: app.locale, correct: true}
-      - {value: app.enabled_locales, correct: true}
-      - {value: app.current_route, correct: true}
-      - {value: app.debug, correct: true}
-      - {value: app.environment, correct: true}
-      - {value: app.flashes, correct: true}
-      - {value: app.session, correct: true}
-      - {value: app.request, correct: true}
-      - {value: app.user, correct: true}
+      - { value: app.token, correct: true }
+      - { value: app.current_route_parameters, correct: true }
+      - { value: app.locale, correct: true }
+      - { value: app.enabled_locales, correct: true }
+      - { value: app.current_route, correct: true }
+      - { value: app.debug, correct: true }
+      - { value: app.environment, correct: true }
+      - { value: app.flashes, correct: true }
+      - { value: app.session, correct: true }
+      - { value: app.request, correct: true }
+      - { value: app.user, correct: true }
     help: 'https://symfony.com/doc/current/templates.html#the-app-global-variable'
   -
     uuid: 1eebf878-8ba5-6b0c-88ef-99d84c92580c
     question: 'What is default value of app.debug in a twig file ?'
     answers:
-      - {value: 'true if in debug mode', correct: true}
-      - {value: 'false', correct: false}
+      - { value: 'true if in debug mode', correct: true }
+      - { value: 'false', correct: false }
     help: 'https://symfony.com/doc/current/templates.html#the-app-global-variable'

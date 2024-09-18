@@ -3,72 +3,72 @@ questions:
     uuid: 1eebf878-8b97-6e1c-8db5-99d84c92580c
     question: 'By default, what is the form field containing the CSRF token?'
     answers:
-      - {value: _token, correct: true}
-      - {value: _csrf, correct: false}
-      - {value: ThisTokenIsNotSoSecretChangeIt, correct: false}
-      - {value: _secret, correct: false}
+      - { value: _token, correct: true }
+      - { value: _csrf, correct: false }
+      - { value: ThisTokenIsNotSoSecretChangeIt, correct: false }
+      - { value: _secret, correct: false }
     help: 'https://symfony.com/doc/current/security/csrf.html#csrf-protection-in-symfony-forms'
   -
     uuid: 1eebf878-8b98-6fba-ac9a-99d84c92580c
     question: 'Is the Form component required to generate a csrf token in templates?'
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/current/security/csrf.html#generating-and-checking-csrf-tokens-manually'
   -
     uuid: 1eebf878-8b9f-69be-9e3c-99d84c92580c
     question: 'Using Form factory, how to define a CSRF provider?'
     answers:
-      - {value: '$formFactory->addExtension(new CsrfExtension($csrfManager));', correct: true}
-      - {value: '$formFactory->setExtension(new CsrfExtension($csrfManager));', correct: false}
-      - {value: '$formFactory->addCsrfExtension(new CsrfExtension($csrfManager));', correct: false}
-      - {value: '$formFactory->addExtension(new Csrf($csrfManager));', correct: false}
+      - { value: '$formFactory->addExtension(new CsrfExtension($csrfManager));', correct: true }
+      - { value: '$formFactory->setExtension(new CsrfExtension($csrfManager));', correct: false }
+      - { value: '$formFactory->addCsrfExtension(new CsrfExtension($csrfManager));', correct: false }
+      - { value: '$formFactory->addExtension(new Csrf($csrfManager));', correct: false }
     help: 'https://symfony.com/doc/current/components/form.html#csrf-protection'
   -
     uuid: 1eebf878-8b9f-6a0e-aed4-99d84c92580c
     question: 'Using Form component, which option can you use into configureOptions() method to enable CSRF protection?'
     answers:
-      - {value: ' csrf_protection  => true', correct: true}
-      - {value: ' csrf_field  => true', correct: false}
-      - {value: ' csrf  =>  enabled ', correct: false}
-      - {value: ' csrf  => true', correct: false}
+      - { value: ' csrf_protection  => true', correct: true }
+      - { value: ' csrf_field  => true', correct: false }
+      - { value: ' csrf  =>  enabled ', correct: false }
+      - { value: ' csrf  => true', correct: false }
     help: 'https://symfony.com/doc/current/security/csrf.html#csrf-protection-in-symfony-forms'
   -
     uuid: 1eebf878-8b9f-6a54-a024-99d84c92580c
     question: 'Using Form component, option csrf_error_message can be used in configureOptions() to define a custom CSRF error message?'
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/current/security/csrf.html#csrf-protection-in-symfony-forms'
   -
     uuid: 1eebf878-8ba2-6ac4-adf1-99d84c92580c
     question: 'When using the form_login authentication provider, you just have to add a _csrf_token named input field to allow csrf validation to work'
     answers:
-      - {value: 'True', correct: false}
-      - {value: 'False', correct: true}
+      - { value: 'True', correct: false }
+      - { value: 'False', correct: true }
     help: 'https://symfony.com/doc/current/security.html#form-login'
   -
     uuid: 1eebf878-8ba5-680a-a545-99d84c92580c
     question: 'how to override the field name of the the csrf token in a form ?'
     answers:
-      - {value: 'by renaming the  name  value in the html input, before using crsf_token() in twig to generate it', correct: true}
-      - {value: "by adding a CsrfTokenType and setting a  name  value in it's option", correct: false}
-      - {value: "by overriding the 'csrf_field_name' in the function $resolver->setDefault in configureOptions of the targeted form.", correct: true}
-      - {value: 'by setting it in the config.yaml file framework.csrf_token.default_field', correct: false}
+      - { value: 'by renaming the  name  value in the html input, before using crsf_token() in twig to generate it', correct: true }
+      - { value: "by adding a CsrfTokenType and setting a  name  value in it's option", correct: false }
+      - { value: "by overriding the 'csrf_field_name' in the function $resolver->setDefault in configureOptions of the targeted form.", correct: true }
+      - { value: 'by setting it in the config.yaml file framework.csrf_token.default_field', correct: false }
     help: 'https://symfony.com/doc/current/security/csrf.html'
   -
     uuid: 1eebf878-8ba5-6878-8ebd-99d84c92580c
     question: "Is this way is a correct way to disable csrf in a form ?public function configureOptions(OptionsResolver $resolver): void {  $resolver->setDefaults([     'csrf_protection' => false,  ]}"
     answers:
-      - {value: 'No', correct: false}
-      - {value: 'Yes', correct: true}
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
     help: 'https://symfony.com/doc/current/security/csrf.html#csrf-protection-in-symfony-forms'
   -
     uuid: 1eedad53-9a0c-6cc2-8bbd-43a19afa5a59
     question: 'What is the CSRF token ID used when adding CSRF protection to a login form in Symfony?'
     answers:
-      - {value: login, correct: false}
-      - {value: authenticate, correct: true}
-      - {value: security, correct: false}
-      - {value: csrf_login, correct: false}
+      - { value: login, correct: false }
+      - { value: authenticate, correct: true }
+      - { value: security, correct: false }
+      - { value: csrf_login, correct: false }
     help: 'https://symfony.com/doc/current/security.html#csrf-protection-in-login-forms'

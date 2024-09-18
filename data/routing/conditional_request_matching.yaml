@@ -1,49 +1,49 @@
 questions:
   -
     uuid: 1eebf878-8ba4-6644-9118-99d84c92580c
-    question: "contact:   path: /contact   controller: 'App\\Controller\\DefaultController::contact'   # condition:  request.headers.get('User-Agent') XXXXXX '%app.allowed_browsers%'     What does replace XXXXX ?"
+    question: "contact:  path: /contact  controller: 'App\\Controller\\DefaultController::contact'  # condition:  request.headers.get('User-Agent') XXXXXX '%app.allowed_browsers%'   What does replace XXXXX ?"
     answers:
-      - {value: sameas, correct: false}
-      - {value: matches, correct: true}
-      - {value: in_values, correct: false}
-      - {value: equivalent_to, correct: false}
+      - { value: sameas, correct: false }
+      - { value: matches, correct: true }
+      - { value: in_values, correct: false }
+      - { value: equivalent_to, correct: false }
     help: 'https://symfony.com/doc/current/routing.html#matching-expressions'
   -
     uuid: 1eebf878-8ba4-668a-ba5b-99d84c92580c
     question: 'What are the available variable given by symfony to conditionnate a route matching ?'
     answers:
-      - {value: request, correct: true}
-      - {value: context, correct: true}
-      - {value: session, correct: false}
-      - {value: params, correct: true}
-      - {value: 'all of them', correct: false}
-      - {value: 'none of them', correct: false}
+      - { value: request, correct: true }
+      - { value: context, correct: true }
+      - { value: session, correct: false }
+      - { value: params, correct: true }
+      - { value: 'all of them', correct: false }
+      - { value: 'none of them', correct: false }
     help: 'https://symfony.com/doc/current/routing.html#matching-expressions'
   -
     uuid: 1eebf878-8ba8-6438-9c57-99d84c92580c
     question: "What are the accessible variables you can call to restrict a route ?"
     answers:
-      - {value: context, correct: true}
-      - {value: request, correct: true}
-      - {value: content-type, correct: false}
-      - {value: params, correct: true}
-      - {value: 'env(string $name)', correct: true}
-      - {value: 'service(string $alias)', correct: true}
-      - {value: user-agent, correct: false}
-      - {value: device, correct: false}
+      - { value: context, correct: true }
+      - { value: request, correct: true }
+      - { value: content-type, correct: false }
+      - { value: params, correct: true }
+      - { value: 'env(string $name)', correct: true }
+      - { value: 'service(string $alias)', correct: true }
+      - { value: user-agent, correct: false }
+      - { value: device, correct: false }
     help: 'https://symfony.com/doc/current/routing.html#matching-expressions'
   -
     uuid: 1eebf878-8ba8-6488-b768-99d84c92580c
     question: 'Can a route can contain  /  ?'
     answers:
       - {value: "Yes by setting a permissive way #[Route('/{token}', requirements: ['token' => '.+'])]", correct: true}
-      - {value: 'No', correct: false}
-      - {value: 'Yes in all way', correct: false}
+      - { value: 'No', correct: false }
+      - { value: 'Yes in all way', correct: false }
     help: 'https://symfony.com/doc/6.4/routing.html#slash-characters-in-route-parameters'
   -
     uuid: 1eebf878-8ba8-64ce-bd3b-99d84c92580c
     question: "Is it possible to have multiple parameter in the same path like ?#[Route('/share/{token}/{token}')]"
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/6.4/routing.html'

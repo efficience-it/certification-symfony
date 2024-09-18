@@ -3,304 +3,304 @@ questions:
     uuid: 1eebf878-8b96-6eea-8d09-99d84c92580c
     question: 'In which order does Symfony trigger the following events?'
     answers:
-      - {value: kernel.requestkernel.controllerkernel.controller_argumentskernel.viewkernel.responsekernel.finish_requestkernel.terminate, correct: true}
-      - {value: kernel.requestkernel.controllerkernel.controller_argumentskernel.viewkernel.responsekernel.terminatekernel.finish_request, correct: false}
-      - {value: kernel.requestkernel.controllerkernel.controller_argumentskernel.responsekernel.viewkernel.terminatekernel.finish_request, correct: false}
-      - {value: kernel.requestkernel.controllerkernel.controller_argumentskernel.responsekernel.viewkernel.finish_requestkernel.terminate, correct: false}
+      - { value: kernel.requestkernel.controllerkernel.controller_argumentskernel.viewkernel.responsekernel.finish_requestkernel.terminate, correct: true }
+      - { value: kernel.requestkernel.controllerkernel.controller_argumentskernel.viewkernel.responsekernel.terminatekernel.finish_request, correct: false }
+      - { value: kernel.requestkernel.controllerkernel.controller_argumentskernel.responsekernel.viewkernel.terminatekernel.finish_request, correct: false }
+      - { value: kernel.requestkernel.controllerkernel.controller_argumentskernel.responsekernel.viewkernel.finish_requestkernel.terminate, correct: false }
     help: 'https://symfony.com/doc/current/components/http_kernel.html#creating-an-event-listener'
   -
     uuid: 1eebf878-8b97-658e-8993-99d84c92580c
     question: 'What is the argument passed to listeners of kernel.finish_request?'
     answers:
-      - {value: RequestEvent, correct: false}
-      - {value: GetResponseEvent, correct: false}
-      - {value: ResponseEvent, correct: false}
-      - {value: FinishRequestEvent, correct: true}
-      - {value: PostResponseEvent, correct: false}
+      - { value: RequestEvent, correct: false }
+      - { value: GetResponseEvent, correct: false }
+      - { value: ResponseEvent, correct: false }
+      - { value: FinishRequestEvent, correct: true }
+      - { value: PostResponseEvent, correct: false }
     help: 'https://symfony.com/doc/current/components/http_kernel.html#creating-an-event-listener'
   -
     uuid: 1eebf878-8b98-66fa-a25e-99d84c92580c
     question: 'Could an event be dispatched without creating a custom event class?'
     answers:
-      - {value: 'No', correct: false}
-      - {value: 'Yes', correct: true}
+      - { value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
     help: 'https://symfony.com/doc/current/components/event_dispatcher/generic_event.html'
   -
     uuid: 1eebf878-8b98-67cc-b162-99d84c92580c
     question: 'Which method is to be implemented from a ServiceSubscriberInterface?'
     answers:
-      - {value: 'public static function addSubscribedService()', correct: false}
-      - {value: 'public static function setSubscribedServices()', correct: false}
-      - {value: 'public static function getSubscribedServices()', correct: true}
-      - {value: 'public function setSubscribedServices()', correct: false}
+      - { value: 'public static function addSubscribedService()', correct: false }
+      - { value: 'public static function setSubscribedServices()', correct: false }
+      - { value: 'public static function getSubscribedServices()', correct: true }
+      - { value: 'public function setSubscribedServices()', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Contracts/Service/ServiceSubscriberInterface.php'
   -
     uuid: 1eebf878-8b98-68f8-b15f-99d84c92580c
     question: 'Which exception is throw when trying to add a subscriber into an ImmutableEventDispatcher?'
     answers:
-      - {value: LogicException, correct: false}
-      - {value: InvalidArgumentException, correct: false}
-      - {value: BadMethodCallException, correct: true}
-      - {value: RuntimeException, correct: false}
-      - {value: FrozenEventDispatcherException, correct: false}
+      - { value: LogicException, correct: false }
+      - { value: InvalidArgumentException, correct: false }
+      - { value: BadMethodCallException, correct: true }
+      - { value: RuntimeException, correct: false }
+      - { value: FrozenEventDispatcherException, correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
   -
     uuid: 1eebf878-8b99-66cc-8a0a-99d84c92580c
     question: 'What is the aim of the Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse() listener on kernel.response event?'
     answers:
-      - {value: 'Checks if the Response has a body.', correct: false}
-      - {value: 'Checks if the Response headers match the HTTP RFC requirements.', correct: false}
-      - {value: 'Sets the Response headers based on the Request.', correct: true}
+      - { value: 'Checks if the Response has a body.', correct: false }
+      - { value: 'Checks if the Response headers match the HTTP RFC requirements.', correct: false }
+      - { value: 'Sets the Response headers based on the Request.', correct: true }
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpKernel/EventListener/ResponseListener.php'
   -
     uuid: 1eebf878-8b99-6762-af2d-99d84c92580c
     question: 'Which design pattern does the EventDispatcher component implement?'
     answers:
-      - {value: Strategy, correct: false}
-      - {value: 'Factory Method', correct: false}
-      - {value: Mediator, correct: true}
-      - {value: Adapter, correct: false}
+      - { value: Strategy, correct: false }
+      - { value: 'Factory Method', correct: false }
+      - { value: Mediator, correct: true }
+      - { value: Adapter, correct: false }
     help: 'https://symfony.com/doc/current/components/event_dispatcher/introduction.html#introduction'
   -
     uuid: 1eebf878-8b99-69ec-a934-99d84c92580c
     question: 'What is the aim of the FragmentListener::onKernelRequest() listener on kernel.request event?'
     answers:
-      - {value: 'Handle as content all files to let user download them.', correct: false}
-      - {value: 'Handle as content all image, css, javascript that not require security.', correct: false}
-      - {value: 'Handle as content all image, css, javascript that require security.', correct: false}
-      - {value: 'Handle as content fragments by this listener all URL paths starting with /_fragment.', correct: true}
+      - { value: 'Handle as content all files to let user download them.', correct: false }
+      - { value: 'Handle as content all image, css, javascript that not require security.', correct: false }
+      - { value: 'Handle as content all image, css, javascript that require security.', correct: false }
+      - { value: 'Handle as content fragments by this listener all URL paths starting with /_fragment.', correct: true }
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpKernel/EventListener/FragmentListener.php'
   -
     uuid: 1eebf878-8b9a-6388-aaa8-99d84c92580c
     question: 'Could subscribers be removed from an ImmutableEventDispatcher?'
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
   -
     uuid: 1eebf878-8b9a-6bc6-aaa0-99d84c92580c
     question: 'What is the tag to use to listen to different events/hooks in Symfony?'
     answers:
-      - {value: dispatcher.event_listener, correct: false}
-      - {value: kernel.listener, correct: false}
-      - {value: event_dispatcher.event_listener, correct: false}
-      - {value: event_listener, correct: false}
-      - {value: dispatcher.listener, correct: false}
-      - {value: kernel.event_listener, correct: true}
+      - { value: dispatcher.event_listener, correct: false }
+      - { value: kernel.listener, correct: false }
+      - { value: event_dispatcher.event_listener, correct: false }
+      - { value: event_listener, correct: false }
+      - { value: dispatcher.listener, correct: false }
+      - { value: kernel.event_listener, correct: true }
     help: 'https://symfony.com/doc/current/reference/dic_tags.html#kernel-event-listener'
   -
     uuid: 1eebf878-8b9b-6ab2-ba48-99d84c92580c
     question: 'Could the event listeners related to an event be retrieved from the ImmutableEventDispatcher?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
   -
     uuid: 1eebf878-8b9c-65b6-a29a-99d84c92580c
     question: 'Could listeners be removed from an ImmutableEventDispatcher?'
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
   -
     uuid: 1eebf878-8b9c-67dc-894b-99d84c92580c
     question: 'Could new listeners be added to an ImmutableEventDispatcher?'
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
   -
     uuid: 1eebf878-8b9d-6380-81e4-99d84c92580c
     question: 'Is the following code valid?php bin/console debug:event-dispatcher kernel'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/current/event_dispatcher.html#debugging-event-listeners'
   -
     uuid: 1eebf878-8b9d-6876-a57d-99d84c92580c
     question: 'What is the argument passed to listeners of kernel.exception?'
     answers:
-      - {value: ResponseEvent, correct: false}
-      - {value: PostExceptionEvent, correct: false}
-      - {value: ExceptionEvent, correct: true}
-      - {value: PostResponseEvent, correct: false}
-      - {value: GetResponseExceptionEvent, correct: false}
-      - {value: FilterExceptionEvent, correct: false}
+      - { value: ResponseEvent, correct: false }
+      - { value: PostExceptionEvent, correct: false }
+      - { value: ExceptionEvent, correct: true }
+      - { value: PostResponseEvent, correct: false }
+      - { value: GetResponseExceptionEvent, correct: false }
+      - { value: FilterExceptionEvent, correct: false }
     help: 'https://symfony.com/doc/current/components/http_kernel.html#creating-an-event-listener'
   -
     uuid: 1eebf878-8b9d-6a9c-aea4-99d84c92580c
     question: 'Which design pattern implements the EventDispatcher component?'
     answers:
-      - {value: Adapter, correct: false}
-      - {value: Decorator, correct: false}
-      - {value: Observer, correct: true}
-      - {value: Mediator, correct: true}
+      - { value: Adapter, correct: false }
+      - { value: Decorator, correct: false }
+      - { value: Observer, correct: true }
+      - { value: Mediator, correct: true }
     help: 'https://symfony.com/doc/current/components/event_dispatcher.html#introduction'
   -
     uuid: 1eebf878-8b9d-6b32-ad5b-99d84c92580c
     question: 'Which method from EventSubscriberInterface return array of events that subscriber wants to listen to?'
     answers:
-      - {value: getEvents(), correct: false}
-      - {value: getSubscribedEvents(), correct: true}
-      - {value: getSubscribed(), correct: false}
-      - {value: getSubscribedEventsList(), correct: false}
+      - { value: getEvents(), correct: false }
+      - { value: getSubscribedEvents(), correct: true }
+      - { value: getSubscribed(), correct: false }
+      - { value: getSubscribedEventsList(), correct: false }
     help: 'https://symfony.com/doc/current/event_dispatcher.html#creating-an-event-subscriber'
   -
     uuid: 1eebf878-8b9d-6b82-8ebf-99d84c92580c
     question: 'Which method from Symfony\Contracts\EventDispatcher\EventDispatcherInterface forwarding an event to all registered listeners?'
     answers:
-      - {value: 'dispatch(object $event, string $eventName = null): object', correct: true}
-      - {value: 'send(object $event, string $eventName = null): object', correct: false}
-      - {value: 'fire(object $event, string $eventName = null): object', correct: false}
-      - {value: 'sendOff(object $event, string $eventName = null): object', correct: false}
+      - { value: 'dispatch(object $event, string $eventName = null): object', correct: true }
+      - { value: 'send(object $event, string $eventName = null): object', correct: false }
+      - { value: 'fire(object $event, string $eventName = null): object', correct: false }
+      - { value: 'sendOff(object $event, string $eventName = null): object', correct: false }
     help: 'https://symfony.com/doc/current/components/event_dispatcher.html#dispatch-the-event'
   -
     uuid: 1eebf878-8b9d-6bd2-98fc-99d84c92580c
     question: 'Which method of the Symfony\Component\EventDispatcher\EventDispatcherInterface belongs to its parent Symfony\Contracts\EventDispatcher\EventDispatcherInterface'
     answers:
-      - {value: 'dispatch(object $event, string $eventName = null): object', correct: true}
-      - {value: 'addListener(string $eventName, $listener, int $priority = 0)', correct: false}
-      - {value: 'hasListeners(string $eventName = null)', correct: false}
-      - {value: 'removeListener(string $eventName, $listener)', correct: false}
+      - { value: 'dispatch(object $event, string $eventName = null): object', correct: true }
+      - { value: 'addListener(string $eventName, $listener, int $priority = 0)', correct: false }
+      - { value: 'hasListeners(string $eventName = null)', correct: false }
+      - { value: 'removeListener(string $eventName, $listener)', correct: false }
     help: 'https://github.com/symfony/event-dispatcher-contracts/blob/main/EventDispatcherInterface.php'
   -
     uuid: 1eebf878-8b9d-6c22-975b-99d84c92580c
     question: 'Which method allows to prevent any other Event listeners from being called?'
     answers:
-      - {value: stopPropagation(), correct: true}
-      - {value: preventDefault(), correct: false}
-      - {value: stop(), correct: false}
-      - {value: off(), correct: false}
+      - { value: stopPropagation(), correct: true }
+      - { value: preventDefault(), correct: false }
+      - { value: stop(), correct: false }
+      - { value: off(), correct: false }
     help: 'https://symfony.com/doc/current/components/event_dispatcher.html#stopping-event-flow-propagation'
   -
     uuid: 1eebf878-8b9d-6c72-9bfc-99d84c92580c
     question: 'Is it possible to detect if an Event was stopped during runtime?'
     answers:
-      - {value: 'no', correct: false}
-      - {value: 'yes', correct: true}
-      - {value: 'yes, but not always', correct: false}
-      - {value: 'yes, but only once', correct: false}
+      - { value: 'no', correct: false }
+      - { value: 'yes', correct: true }
+      - { value: 'yes, but not always', correct: false }
+      - { value: 'yes, but only once', correct: false }
     help: 'https://symfony.com/doc/current/components/event_dispatcher.html#stopping-event-flow-propagation'
   -
     uuid: 1eebf878-8b9d-6d62-a4f1-99d84c92580c
     question: 'Instantiating a new Kernel, what is the correct arguments order?'
     answers:
-      - {value: 'public function __construct(string $environment, bool $debug)', correct: true}
-      - {value: 'public function __construct(bool $debug, string $environment)', correct: false}
-      - {value: 'public function __construct(string $name, string $environment, bool $debug)', correct: false}
-      - {value: 'public function __construct(string $environment, bool $debug, string $name = null)', correct: false}
+      - { value: 'public function __construct(string $environment, bool $debug)', correct: true }
+      - { value: 'public function __construct(bool $debug, string $environment)', correct: false }
+      - { value: 'public function __construct(string $name, string $environment, bool $debug)', correct: false }
+      - { value: 'public function __construct(string $environment, bool $debug, string $name = null)', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpKernel/Kernel.php'
   -
     uuid: 1eebf878-8b9d-6ee8-af09-99d84c92580c
     question: 'Which kernel event exist ?'
     answers:
-      - {value: kernel.request, correct: true}
-      - {value: kernel.controller, correct: true}
-      - {value: kernel.template, correct: false}
-      - {value: kernel.view, correct: true}
-      - {value: kernel.response, correct: true}
-      - {value: kernel.answer, correct: false}
-      - {value: kernel.finish_request, correct: true}
-      - {value: kernel.start_request, correct: false}
-      - {value: kernel.terminate, correct: true}
-      - {value: kernel.start, correct: false}
-      - {value: kernel.exception, correct: true}
+      - { value: kernel.request, correct: true }
+      - { value: kernel.controller, correct: true }
+      - { value: kernel.template, correct: false }
+      - { value: kernel.view, correct: true }
+      - { value: kernel.response, correct: true }
+      - { value: kernel.answer, correct: false }
+      - { value: kernel.finish_request, correct: true }
+      - { value: kernel.start_request, correct: false }
+      - { value: kernel.terminate, correct: true }
+      - { value: kernel.start, correct: false }
+      - { value: kernel.exception, correct: true }
     help: 'https://symfony.com/doc/current/components/http_kernel.html#creating-an-event-listener'
   -
     uuid: 1eebf878-8ba1-6e08-b1a3-99d84c92580c
     question: 'Could a button receive an event listener?'
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://github.com/symfony/symfony/blob/2.3/src/Symfony/Component/Form/ButtonBuilder.php#L176'
   -
     uuid: 1eebf878-8ba2-63ee-a965-99d84c92580c
     question: 'What is the third arguments of the handle method off HttpKernelInterface?'
     answers:
-      - {value: 'The name of the environment', correct: false}
-      - {value: 'A Request instance', correct: false}
-      - {value: 'Whether to activate the debug or not', correct: false}
-      - {value: 'Whether to catch exceptions or not.', correct: true}
-      - {value: 'The type of the request', correct: false}
+      - { value: 'The name of the environment', correct: false }
+      - { value: 'A Request instance', correct: false }
+      - { value: 'Whether to activate the debug or not', correct: false }
+      - { value: 'Whether to catch exceptions or not.', correct: true }
+      - { value: 'The type of the request', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpKernel/HttpKernel.php#L69'
   -
     uuid: 1eebf878-8ba2-66be-8489-99d84c92580c
     question: 'What is the argument passed to listeners of kernel.exception?'
     answers:
-      - {value: FilterExceptionEvent, correct: false}
-      - {value: PostExceptionEvent, correct: false}
-      - {value: GetResponseExceptionEvent, correct: false}
-      - {value: ExceptionEvent, correct: true}
-      - {value: ResponseEvent, correct: false}
-      - {value: PostResponseEvent, correct: false}
+      - { value: FilterExceptionEvent, correct: false }
+      - { value: PostExceptionEvent, correct: false }
+      - { value: GetResponseExceptionEvent, correct: false }
+      - { value: ExceptionEvent, correct: true }
+      - { value: ResponseEvent, correct: false }
+      - { value: PostResponseEvent, correct: false }
     help: 'https://symfony.com/doc/current/components/http_kernel.html#creating-an-event-listener'
   -
     uuid: 1eebf878-8ba2-67ae-9387-99d84c92580c
     question: 'From an Event instance, is it possible to get the EventDispatcher instance that dispatched this event?'
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/current/components/event_dispatcher.html#event-name-introspection'
   -
     uuid: 1eebf878-8ba3-6032-bdaf-99d84c92580c
     question: 'Which exception is throw when trying to remove a listener from an ImmutableEventDispatcher?'
     answers:
-      - {value: RuntimeException, correct: false}
-      - {value: LogicException, correct: false}
-      - {value: InvalidArgumentException, correct: false}
-      - {value: BadMethodCallException, correct: true}
-      - {value: FrozenEventDispatcherException, correct: false}
+      - { value: RuntimeException, correct: false }
+      - { value: LogicException, correct: false }
+      - { value: InvalidArgumentException, correct: false }
+      - { value: BadMethodCallException, correct: true }
+      - { value: FrozenEventDispatcherException, correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
   -
     uuid: 1eebf878-8ba3-69c4-a0e8-99d84c92580c
     question: 'Could new subscribers be added to an ImmutableEventDispatcher?'
     answers:
-      - {value: 'No', correct: true}
-      - {value: 'Yes', correct: false}
+      - { value: 'No', correct: true }
+      - { value: 'Yes', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.2/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
   -
     uuid: 1eebf878-8ba4-604a-9e4b-99d84c92580c
     question: 'What is the tag to use to subscribe to a set of different events/hooks in Symfony?'
     answers:
-      - {value: dispatcher.subscriber, correct: false}
-      - {value: event_subscriber, correct: false}
-      - {value: kernel.subscriber, correct: false}
-      - {value: event_dispatcher.event_subscriber, correct: false}
-      - {value: dispatcher.event_subscriber, correct: false}
-      - {value: kernel.event_subscriber, correct: true}
+      - { value: dispatcher.subscriber, correct: false }
+      - { value: event_subscriber, correct: false }
+      - { value: kernel.subscriber, correct: false }
+      - { value: event_dispatcher.event_subscriber, correct: false }
+      - { value: dispatcher.event_subscriber, correct: false }
+      - { value: kernel.event_subscriber, correct: true }
     help: 'https://symfony.com/doc/current/reference/dic_tags.html#kernel-event-subscriber'
   -
     uuid: 1eebf878-8ba4-6b12-9f65-99d84c92580c
     question: 'Could the non-called listeners be retrieved per event when using the TraceableEventDispatcher?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.1/components/event_dispatcher/traceable_dispatcher.html'
   -
     uuid: 1eebf878-8ba4-6bf8-a2d4-99d84c92580c
     question: 'Could the called listeners be retrieved per event when using the TraceableEventDispatcher?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/current/components/event_dispatcher/traceable_dispatcher.html'
   -
     uuid: 1eebf878-8ba7-6330-b557-99d84c92580c
     question: 'Is it possible to set a priority when there are several EventListener on an event?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/current/components/event_dispatcher/introduction.html#connecting-listeners'
   -
     uuid: 1eed573c-948f-6bd6-816f-b14ed863ed41
     question: 'Could the event dispatcher be transformed into a read-only proxy?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/2.1/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'
   -
     uuid: 1eee76b6-6968-64a4-9026-a9f053a22e31
     question: 'Could the existence of an event listener be checked from within the ImmutableEventDispatcher?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/EventDispatcher/ImmutableEventDispatcher.php'

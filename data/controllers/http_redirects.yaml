@@ -3,40 +3,40 @@ questions:
     uuid: 1eebf878-8b98-6e8e-8463-99d84c92580c
     question: 'Given a response using the 308 status code and containing a Location header, must the client use the header URI for automatic redirection?'
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://tools.ietf.org/html/rfc7538#section-3'
   -
     uuid: 1eebf878-8b9c-6bba-8b13-99d84c92580c
     question: 'What should do an intermediary if the Max-Forwards header is equal to 0?'
     answers:
-      - {value: 'It should not forward the request', correct: true}
-      - {value: 'It should forward the request no matter the header value', correct: false}
-      - {value: "This header doesn't exist", correct: false}
-      - {value: Nothing, correct: false}
+      - { value: 'It should not forward the request', correct: true }
+      - { value: 'It should forward the request no matter the header value', correct: false }
+      - { value: "This header doesn't exist", correct: false }
+      - { value: Nothing, correct: false }
     help: 'https://tools.ietf.org/html/rfc7231#section-5.1.2'
   -
     uuid: 1eebf878-8b9e-6ffa-a320-99d84c92580c
     question: 'How to perform a redirection on example.org in a controller?'
     answers:
-      - {value: 'return $this->redirect($this->generateUrl( https://www.example.org ))', correct: false}
-      - {value: 'return $this->redirectUrl( https://www.example.org )', correct: false}
-      - {value: 'return $this->redirect( https://www.example.org )', correct: true}
-      - {value: 'return $this->generateUrl( https://www.example.org )', correct: false}
+      - { value: 'return $this->redirect($this->generateUrl( https://www.example.org ))', correct: false }
+      - { value: 'return $this->redirectUrl( https://www.example.org )', correct: false }
+      - { value: 'return $this->redirect( https://www.example.org )', correct: true }
+      - { value: 'return $this->generateUrl( https://www.example.org )', correct: false }
     help: 'https://symfony.com/doc/current/controller.html#redirecting'
   -
     uuid: 1eebf878-8ba8-692e-8bef-99d84c92580c
     question: "What kind of argument is sent to $this->redirect('XXX') ?"
     answers:
-      - {value: 'a route name', correct: false}
-      - {value: 'a path', correct: false}
-      - {value: 'an url', correct: true}
+      - { value: 'a route name', correct: false }
+      - { value: 'a path', correct: false }
+      - { value: 'an url', correct: true }
     help: 'https://symfony.com/doc/current/routing.html'
   -
     uuid: 1eebf878-8ba8-6974-ac4a-99d84c92580c
     question: 'Whats the Reponse in a redirectToRoute or a redirect method in a controller ?'
     answers:
-      - {value: RedirectedResponse, correct: false}
-      - {value: RedirectResponse, correct: true}
-      - {value: ForwardResponse, correct: false}
+      - { value: RedirectedResponse, correct: false }
+      - { value: RedirectResponse, correct: true }
+      - { value: ForwardResponse, correct: false }
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/RedirectResponse.php'

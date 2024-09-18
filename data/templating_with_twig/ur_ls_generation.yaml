@@ -3,32 +3,32 @@ questions:
     uuid: 1eebf878-8ba7-6f2e-b02a-99d84c92580c
     question: 'Which Twig function is used to embed controllers in templates?'
     answers:
-      - {value: render_esi, correct: false}
-      - {value: controller, correct: false}
-      - {value: render, correct: true}
+      - { value: render_esi, correct: false }
+      - { value: controller, correct: false }
+      - { value: render, correct: true }
     help: 'https://symfony.com/doc/current/reference/twig_reference.html'
   -
     uuid: 1eebf878-8ba7-6fba-97d9-99d84c92580c
     question: 'How is the url Twig function different from the path Twig function?'
     answers:
-      - {value: 'url returns an absolute URL, while path returns a relative URL.', correct: true}
-      - {value: 'path returns an absolute URL, while url returns a relative URL.', correct: false}
-      - {value: 'They are used interchangeably and have the same functionality.', correct: false}
+      - { value: 'url returns an absolute URL, while path returns a relative URL.', correct: true }
+      - { value: 'path returns an absolute URL, while url returns a relative URL.', correct: false }
+      - { value: 'They are used interchangeably and have the same functionality.', correct: false }
     help: 'https://symfony.com/doc/current/reference/twig_reference.html'
   -
     uuid: 1eebf878-8ba8-6046-a749-99d84c92580c
     question: 'What does the absolute_url filter do in Twig when applied to a path?'
     answers:
-      - {value: 'Converts the path to a fully qualified URL', correct: true}
-      - {value: 'Adds a relative path to the current URL', correct: false}
-      - {value: 'Removes the query parameters from the URL', correct: false}
-      - {value: 'Appends a hash fragment to the URL', correct: false}
+      - { value: 'Converts the path to a fully qualified URL', correct: true }
+      - { value: 'Adds a relative path to the current URL', correct: false }
+      - { value: 'Removes the query parameters from the URL', correct: false }
+      - { value: 'Appends a hash fragment to the URL', correct: false }
     help: 'https://symfony.com/doc/current/reference/twig_reference.html#absolute-url'
   -
     uuid: 1eebf878-8ba8-60dc-9063-99d84c92580c
     question: 'Which of the following functions/filters can be used to generate a URL for a route in Twig'
     answers:
-      - {value: "{{ path('route_name') }}", correct: true}
-      - {value: "{{ url('route_name') }}", correct: true}
-      - {value: "{{ link('route_name') }}", correct: false}
+      - { value: "{{ path('route_name') }}", correct: true }
+      - { value: "{{ url('route_name') }}", correct: true }
+      - { value: "{{ link('route_name') }}", correct: false }
     help: 'https://symfony.com/doc/current/reference/twig_reference.html#path'

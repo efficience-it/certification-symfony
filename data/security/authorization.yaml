@@ -3,43 +3,43 @@ questions:
     uuid: 1eebf878-8b9a-60ea-b72d-99d84c92580c
     question: 'When using the new Authenticator-based Security, does isGranted() will work on anonymous users ?'
     answers:
-      - {value: 'Yes, It will always return true', correct: false}
-      - {value: 'No, It will throw an exception', correct: false}
-      - {value: 'Yes, It will always return false', correct: true}
+      - { value: 'Yes, It will always return true', correct: false }
+      - { value: 'No, It will throw an exception', correct: false }
+      - { value: 'Yes, It will always return false', correct: true }
     help: 'https://symfony.com/doc/current/security.html#adding-support-for-unsecured-access-i-e-anonymous-users'
   -
     uuid: 1eebf878-8b9a-6cac-9a99-99d84c92580c
     question: 'Could the authorization to access a resource be checked from within Symfony\Component\Security\Core\Security?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/current/security.html#securing-other-services'
   -
     uuid: 1eebf878-8ba1-6c00-a261-99d84c92580c
     question: 'What is the name of the service that check authorization?'
     answers:
-      - {value: security.authorization_checker, correct: true}
-      - {value: security.authorization_manager, correct: false}
-      - {value: security.checker, correct: false}
-      - {value: security.decision_checker, correct: false}
+      - { value: security.authorization_checker, correct: true }
+      - { value: security.authorization_manager, correct: false }
+      - { value: security.checker, correct: false }
+      - { value: security.decision_checker, correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Security/Core/Authorization/AuthorizationChecker.php'
   -
     uuid: 1eebf878-8ba2-64de-a54b-99d84c92580c
     question: 'What is the type of the top-level service that checks authorization?'
     answers:
-      - {value: Symfony\Component\Security\Core\Authorization\CheckerInterface, correct: false}
-      - {value: Symfony\Component\Security\Core\Authorization\VoterInterface, correct: false}
-      - {value: Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface, correct: false}
-      - {value: Symfony\Component\Security\Core\Authorization\Voter\VoterInterface, correct: false}
-      - {value: Symfony\Component\Security\Core\Security, correct: true}
+      - { value: Symfony\Component\Security\Core\Authorization\CheckerInterface, correct: false }
+      - { value: Symfony\Component\Security\Core\Authorization\VoterInterface, correct: false }
+      - { value: Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface, correct: false }
+      - { value: Symfony\Component\Security\Core\Authorization\Voter\VoterInterface, correct: false }
+      - { value: Symfony\Component\Security\Core\Security, correct: true }
     help: 'https://symfony.com/doc/current/security.html#securing-other-services'
   -
     uuid: 1eedb101-2d08-6c3c-bfe5-f9db4bc17b6f
     question: 'What is the default lifetime value for the  Remember me  Cookie ?'
     answers:
-      - {value: '1 year', correct: true}
-      - {value: '1 week', correct: false}
-      - {value: '2 months', correct: false}
-      - {value: '6 months', correct: false}
-      - {value: '1 day', correct: false}
+      - { value: '1 year', correct: true }
+      - { value: '1 week', correct: false }
+      - { value: '2 months', correct: false }
+      - { value: '6 months', correct: false }
+      - { value: '1 day', correct: false }
     help: 'https://symfony.com/doc/current/security/remember_me.html#customizing-the-remember-me-cookie'
