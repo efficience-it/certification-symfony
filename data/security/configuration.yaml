@@ -3,18 +3,18 @@ questions:
     uuid: 1eebf878-8ba1-6138-94b7-99d84c92580c
     question: 'After a login success, what is the parameter name to redirect on referer URL?'
     answers:
-      - {value: security.firewalls.<name>.form_login.use_referer, correct: true}
-      - {value: security.firewalls.<name>.form_login.after_login_referer, correct: false}
-      - {value: security.firewalls.<name>.form_login.referer, correct: false}
-      - {value: security.firewalls.<name>.form_login.success_referer, correct: false}
+      - { value: security.firewalls.<name>.form_login.use_referer, correct: true }
+      - { value: security.firewalls.<name>.form_login.after_login_referer, correct: false }
+      - { value: security.firewalls.<name>.form_login.referer, correct: false }
+      - { value: security.firewalls.<name>.form_login.success_referer, correct: false }
     help: 'https://symfony.com/doc/current/security/form_login.html#using-the-referring-url'
   -
     uuid: 1eebf878-8baa-6562-8278-99d84c92580c
     question: 'Where are located the logs in a default configuration of Symfony?'
     answers:
-      - {value: var/log, correct: true}
-      - {value: var/logs, correct: false}
-      - {value: logs, correct: false}
-      - {value: app/logs, correct: false}
-      - {value: app/log, correct: false}
+      - { value: var/log, correct: true }
+      - { value: var/logs, correct: false }
+      - { value: logs, correct: false }
+      - { value: app/logs, correct: false }
+      - { value: app/log, correct: false }
     help: 'https://symfony.com/doc/current/logging.html#where-logs-are-stored'

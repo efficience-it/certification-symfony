@@ -3,53 +3,53 @@ questions:
     uuid: 1ef5b452-cbfe-63f8-912b-e9e1d943aac0
     question: 'Which of the following classes is responsible for defining the structure of the configuration options in a Symfony application?'
     answers:
-      - {value: AppExtension, correct: false}
-      - {value: ConfigurationInterface, correct: true}
-      - {value: TreeBuilder, correct: false}
-      - {value: Kernel, correct: false}
+      - { value: AppExtension, correct: false }
+      - { value: ConfigurationInterface, correct: true }
+      - { value: TreeBuilder, correct: false}
+      - { value: Kernel, correct: false}
     help: 'https://symfony.com/doc/current/components/config/definition.html'
   -
     uuid: 1ef5b45d-ec1f-6c9e-9a31-dd564fbf1b8f
     question: 'Which method in the TreeBuilder class is used to define the root of the configuration tree?'
     answers:
-      - {value: getRootNode(), correct: true}
-      - {value: buildTree(), correct: false}
-      - {value: setPathSeparator(), correct: false}
-      - {value: createTree(), correct: false}
+      - { value: getRootNode(), correct: true }
+      - { value: buildTree(), correct: false}
+      - { value: setPathSeparator(), correct: false}
+      - { value: createTree(), correct: false}
     help: 'https://symfony.com/doc/current/components/config/definition.html#defining-a-hierarchy-of-configuration-values-using-the-treebuilder'
   -
     uuid: 1ef5b468-b4f5-65ec-8bd3-e519a8187e8c
     question: "Which node type in Symfony's Config Component allows you to define a finite set of acceptable values?"
     answers:
-      - {value: 'scalarNode', correct: false}
-      - {value: 'enumNode', correct: true}
-      - {value: 'arrayNode', correct: false}
-      - {value: 'variableNode', correct: false}
+      - { value: 'scalarNode', correct: false}
+      - { value: 'enumNode', correct: true }
+      - { value: 'arrayNode', correct: false}
+      - { value: 'variableNode', correct: false}
     help: 'https://symfony.com/doc/current/components/config/definition.html#enum-nodes'
   -
     uuid: 1ef5b46e-73a7-6f3a-a9c3-b1226b175b7c
     question: 'How can you ensure that a configuration array has at least one element and is required?'
     answers:
-      - {value: 'Use ->requiresAtLeastOneElement() only', correct: false}
-      - {value: 'Use ->isRequired() only', correct: false}
-      - {value: 'Use both ->isRequired() and ->requiresAtLeastOneElement()', correct: true}
-      - {value: 'Use ->cannotBeEmpty() only', correct: false}
+      - { value: 'Use ->requiresAtLeastOneElement() only', correct: false}
+      - { value: 'Use ->isRequired() only', correct: false}
+      - { value: 'Use both ->isRequired() and ->requiresAtLeastOneElement()', correct: true }
+      - { value: 'Use ->cannotBeEmpty() only', correct: false}
     help: 'https://symfony.com/doc/current/components/config/definition.html#array-node-options'
   -
     uuid: 1ef5b472-ff03-6058-a154-cfd77af8c360
     question: 'Which method allows you to transform a single scalar value into an array for easier configuration handling?'
     answers:
-      - {value: castToArray(), correct: true}
-      - {value: treatScalarAsArray(), correct: false}
-      - {value: normalizeToArray(), correct: false}
-      - {value: forceArray(), correct: false}
+      - { value: castToArray(), correct: true }
+      - { value: treatScalarAsArray(), correct: false}
+      - { value: normalizeToArray(), correct: false}
+      - { value: forceArray(), correct: false}
     help: 'https://symfony.com/doc/current/components/config/definition.html#array-nodes'
   -
     uuid: 1ef5b477-f048-62f2-bc41-674e115757f4
     question: 'If you want to prevent a configuration node from being overwritten by subsequent configurations, which method would you use?'
     answers:
-      - {value: cannotBeOverwritten(), correct: true}
-      - {value: isRequired(), correct: false}
+      - { value: cannotBeOverwritten(), correct: true }
+      - { value: isRequired(), correct: false}
       - {value: cannotBeEmpty(), correct: false}
       - {value: lockNode(), correct: false}
     help: 'https://symfony.com/doc/current/components/config/definition.html#merging-options'
@@ -57,7 +57,7 @@ questions:
     uuid: 1ef5b47b-2609-69f6-8ed3-17869620ec02
     question: 'How can you deprecate a configuration option and provide a custom deprecation message?'
     answers:
-      - {value: "Using ->setDeprecated('acme/package', '1.2', 'Custom message')", correct: true}
+      - {value: "Using ->setDeprecated('acme/package', '1.2', 'Custom message')", correct: true }
       - {value: "Using ->deprecateOption('Custom message')", correct: false}
       - {value: "Using ->markDeprecated('Custom message')", correct: false}
       - {value: "Using ->deprecated('acme/package', '1.2')", correct: false}
@@ -66,7 +66,7 @@ questions:
     uuid: 1ef5b47f-5cff-6434-b290-417db67a1656
     question: 'Which method is used to ensure that XML configuration elements are correctly transformed into arrays during normalization?'
     answers:
-      - {value: fixXmlConfig(), correct: true}
+      - {value: fixXmlConfig(), correct: true }
       - {value: normalizeXml(), correct: false}
       - {value: xmlToArray(), correct: false}
       - {value: transformXml(), correct: false}
@@ -75,7 +75,7 @@ questions:
     uuid: 1ef5b483-a403-6bf6-8499-c58871bae8bd
     question: 'When defining a prototyped array with keys that should be preserved (e.g., sf_connection, default), which method ensures that these keys are maintained?'
     answers:
-      - {value: "useAttributeAsKey('name')", correct: true}
+      - {value: "useAttributeAsKey('name')", correct: true }
       - {value: preserveKeys(), correct: false}
       - {value: keepKeys(), correct: false}
       - {value: "maintainKeys('name')", correct: false}
@@ -84,7 +84,7 @@ questions:
     uuid: 1ef5b486-27c2-6008-a852-2532f9c7e4c2
     question: 'Which method would you use to append a separate configuration section into the main configuration tree?'
     answers:
-      - {value: ' append()', correct: true}
+      - {value: ' append()', correct: true }
       - {value: addSection(), correct: false}
       - {value: merge(), correct: false}
       - {value: includeNode(), correct: false}
@@ -93,7 +93,7 @@ questions:
     uuid: 1ef5b48f-9683-613c-bc2f-1df21452ea82
     question: "In the validation process, which method would you use to invalidate a configuration value if it's not within a specific array of acceptable values?"
     answers:
-      - {value: ifNotInArray(), correct: true}
+      - {value: ifNotInArray(), correct: true }
       - {value: ifNotInValues(), correct: false}
       - {value: ifValueNotAllowed(), correct: false}
       - {value: ifNotInList(), correct: false}

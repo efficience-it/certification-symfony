@@ -3,11 +3,11 @@ questions:
     uuid: 1eebf878-8b9b-6580-a9bd-99d84c92580c
     question: 'What is the tag to register a custom validation constraint validator?'
     answers:
-      - {value: constraint_validator, correct: false}
-      - {value: validator.constraint_validator, correct: true}
-      - {value: validation.validator, correct: false}
-      - {value: validation.constraint, correct: false}
-      - {value: validator_constraint, correct: false}
-      - {value: validation.constraint_validator, correct: false}
-      - {value: validator.constraint, correct: false}
+      - { value: constraint_validator, correct: false }
+      - { value: validator.constraint_validator, correct: true }
+      - { value: validation.validator, correct: false }
+      - { value: validation.constraint, correct: false }
+      - { value: validator_constraint, correct: false }
+      - { value: validation.constraint_validator, correct: false }
+      - { value: validator.constraint, correct: false }
     help: 'https://symfony.com/doc/current/reference/dic_tags.html#validator-constraint-validator'
