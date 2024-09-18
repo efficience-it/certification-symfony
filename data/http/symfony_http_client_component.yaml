@@ -3,17 +3,17 @@ questions:
     uuid: 1eebf878-8b9a-673e-9593-99d84c92580c
     question: 'Which of the following is not a valid way to create an instance of Symfony\Component\HttpFoundation\Request?'
     answers:
-      - {value: '$request = Request::createRequestFromFactory(/* ... */);', correct: true}
-      - {value: '$request = new Request(/* ... */);', correct: false}
-      - {value: '$request = Request::createFromGlobals(/* ... */);', correct: false}
-      - {value: '$request = Request::create(/* ... */);', correct: false}
+      - { value: '$request = Request::createRequestFromFactory(/* ... */);', correct: true }
+      - { value: '$request = new Request(/* ... */);', correct: false }
+      - { value: '$request = Request::createFromGlobals(/* ... */);', correct: false }
+      - {value: '$request = Request::create(/* ... */);', correct: false }
     help: 'https://symfony.com/doc/current/components/http_foundation.html#request'
   -
     uuid: 1eebf878-8ba5-61fc-a856-99d84c92580c
     question: 'Which statement is true about FlashBag::add() and FlashBag::set()?'
     answers:
-      - {value: 'The FlashBag::add() method allow to add a single message while FlashBag::set() allow to add a set of message using a callback', correct: false}
-      - {value: 'They behave the same way', correct: false}
-      - {value: 'The FlashBag::add() method allow to add a single message while FlashBag::set() allow to add a set of messages', correct: true}
-      - {value: 'The FlashBag::add() method allow to add a set of messages while FlashBag::set() allow to add a single message', correct: false}
+      - {value: 'The FlashBag::add() method allow to add a single message while FlashBag::set() allow to add a set of message using a callback', correct: false }
+      - {value: 'They behave the same way', correct: false }
+      - {value: 'The FlashBag::add() method allow to add a single message while FlashBag::set() allow to add a set of messages', correct: true }
+      - {value: 'The FlashBag::add() method allow to add a set of messages while FlashBag::set() allow to add a single message', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php'

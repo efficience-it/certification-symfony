@@ -3,42 +3,42 @@ questions:
     uuid: 1eebf878-8b99-6cc6-9928-99d84c92580c
     question: 'Which of the following are valid status code to create a Symfony\Component\HttpFoundation\RedirectResponse?'
     answers:
-      - {value: '201', correct: true}
-      - {value: '301', correct: true}
-      - {value: '302', correct: true}
-      - {value: '303', correct: true}
-      - {value: '304', correct: false}
-      - {value: '307', correct: true}
-      - {value: '308', correct: true}
+      - { value: '201', correct: true }
+      - { value: '301', correct: true }
+      - { value: '302', correct: true }
+      - { value: '303', correct: true }
+      - { value: '304', correct: false }
+      - { value: '307', correct: true }
+      - { value: '308', correct: true }
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/RedirectResponse.php'
   -
     uuid: 1eebf878-8ba4-6004-b91d-99d84c92580c
     question: 'What is the default status code of a Symfony\Component\HttpFoundation\RedirectResponse object?'
     answers:
-      - {value: '304', correct: false}
-      - {value: '300', correct: false}
-      - {value: '302', correct: true}
-      - {value: '301', correct: false}
+      - { value: '304', correct: false }
+      - { value: '300', correct: false }
+      - { value: '302', correct: true }
+      - { value: '301', correct: false }
     help: 'https://tools.ietf.org/html/rfc2616#section-10.3.3'
   -
     uuid: 1eebf878-8ba8-6816-a78a-99d84c92580c
     question: 'In a forward request, does the browser is redirected to another route ?'
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/current/controller/forwarding.html'
   -
     uuid: 1eebf878-8ba8-688e-a1e9-99d84c92580c
     question: 'How do you call the fancy method in a forward from a controller?'
     answers:
-      - {value: "return $this->forward('App\\Controller\\OtherController::fancy', ['name' => $name ]);", correct: true}
-      - {value: 'return $this->forward(''App\\Controller\\OtherController::fancy'', [''name'' => $name ]);', correct: false}
-      - {value: "return $this->forward('OtherController::class', ['method' => 'fancy'],['options' => ['name' => $name ]]);", correct: false}
+      - { value: "return $this->forward('App\\Controller\\OtherController::fancy', ['name' => $name ]);", correct: true }
+      - { value: 'return $this->forward(''App\\Controller\\OtherController::fancy'', [''name'' => $name ]);', correct: false }
+      - { value: "return $this->forward('OtherController::class', ['method' => 'fancy'],['options' => ['name' => $name ]]);", correct: false }
     help: 'https://symfony.com/doc/current/controller/forwarding.html'
   -
     uuid: 1eebf878-8ba8-68de-a3ca-99d84c92580c
     question: 'Is it possible to forward a request to another controller, with keeping the method and the $request->request... values ?'
     answers:
-      - {value: 'Yes', correct: false}
-      - {value: 'No', correct: true}
+      - { value: 'Yes', correct: false }
+      - { value: 'No', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php#L113C27-L113C27'

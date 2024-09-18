@@ -3,16 +3,16 @@ questions:
     uuid: 1eebf878-8b9c-6caa-b8d2-99d84c92580c
     question: 'Could the expression language AST be dumped?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - {value: 'Yes', correct: true }
+      - {value: 'No', correct: false }
     help: 'https://symfony.com/doc/current/components/expression_language.html#expression-language-ast'
   -
     uuid: 1eebf878-8b9d-61aa-9351-99d84c92580c
     question: 'Which of these ExpressionLanguage methods allow to cache the parsed expression ?'
     answers:
-      - {value: evaluate, correct: true}
+      - {value: evaluate, correct: true }
       - {value: compile, correct: false}
-      - {value: parse, correct: true}
+      - {value: parse, correct: true }
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/ExpressionLanguage/ExpressionLanguage.php'
   -
     uuid: 1eebf878-8ba2-618c-b1fd-99d84c92580c
@@ -20,7 +20,7 @@ questions:
     answers:
       - {value: 'By calling the createFunction() method.', correct: false}
       - {value: 'By calling the setFunctions() method.', correct: false}
-      - {value: 'By calling the registerProvider() method.', correct: true}
+      - {value: 'By calling the registerProvider() method.', correct: true }
       - {value: 'By calling the register() method.', correct: true}
       - {value: 'By calling the addFunction() method.', correct: false}
     help: 'https://symfony.com/doc/current/components/expression_language.html#expression-language-extending'

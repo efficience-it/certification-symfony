@@ -3,6 +3,6 @@ questions:
     uuid: 1eebf878-8ba3-6230-ab3d-99d84c92580c
     question: 'Could the container be preloaded using Opcache preloading?'
     answers:
-      - {value: 'Yes', correct: true}
-      - {value: 'No', correct: false}
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false}
     help: 'https://symfony.com/doc/6.4/performance.html#use-the-opcache-class-preloading'

@@ -3,8 +3,8 @@ questions:
     uuid: 1ef54fcd-e26a-61a8-802c-192b09512836
     question: 'Where live functional tests in Symfony ?'
     answers:
-      - {value: Tests/, correct: false}
-      - {value: Tests/Controller/, correct: true}
-      - {value: Tests/Controllers/, correct: false}
-      - {value: Controller/, correct: false}
+      - { value: Tests/, correct: false}
+      - { value: Tests/Controller/, correct: true }
+      - { value: Tests/Controllers/, correct: false}
+      - { value: Controller/, correct: false}
     help: 'https://symfony.com/doc/current/testing.html#write-your-first-application-test'

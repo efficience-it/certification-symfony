@@ -3,7 +3,7 @@ questions:
     uuid: 1eebf878-8ba9-6ffe-8f37-99d84c92580c
     question: 'What is the default fetching strategy used for associations?'
     answers:
-      - {value: 'Extra LazyClassMetadataInfo::FETCH_EXTRA_LAZY', correct: false}
-      - {value: 'LazyClassMetadataInfo::FETCH_LAZY', correct: true}
+      - { value: 'Extra LazyClassMetadataInfo::FETCH_EXTRA_LAZY', correct: false}
+      - {value: 'LazyClassMetadataInfo::FETCH_LAZY', correct: true }
       - {value: 'EagerClassMetadataInfo::FETCH_EAGER', correct: false}
     help: 'https://github.com/doctrine/doctrine2/blob/2.5/lib/Doctrine/ORM/Mapping/ClassMetadataInfo.php#L1510'
