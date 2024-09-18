@@ -3,26 +3,26 @@ questions:
     uuid: 1ef49385-74c4-6e6e-b737-4b08f544bc6d
     question: 'What method is executed when a message handler must perform an action?'
     answers:
-      - {value: __invoke(), correct: true }
-      - {value: __construct(), correct: false }
-      - {value: execute(), correct: false }
-      - {value: index(), correct: false }
-      - {value: executeMessage(), correct: false }
+      - { value: __invoke(), correct: true }
+      - { value: __construct(), correct: false }
+      - { value: execute(), correct: false }
+      - { value: index(), correct: false }
+      - { value: executeMessage(), correct: false }
     help: 'https://symfony.com/doc/current/messenger.html'
   -
     uuid: 1ef49b32-ed82-6f72-823e-b36d0cd66b14
     question: 'Which class needs to be implemented to define a message handler in Symfony Messenger?'
     answers:
-      - {value: MessageHandlerInterface, correct: true }
-      - {value: HandlerInterface, correct: false }
-      - {value: MessageBusInterface, correct: false }
-      - {value: CommandHandlerInterface, correct: false}
+      - { value: MessageHandlerInterface, correct: true }
+      - { value: HandlerInterface, correct: false }
+      - { value: MessageBusInterface, correct: false }
+      - { value: CommandHandlerInterface, correct: false}
     help: 'https://symfony.com/doc/current/components/messenger.html'
   -
     uuid: 1ef49b3d-c27f-6edc-af9a-b775eebcd083
     question: 'Which method must be implemented in a message handler class to process the message in Symfony Messenger?'
     answers:
-      - {value: handle, correct: false}
+      - { value: handle, correct: false}
       - {value: process, correct: false}
       - {value: execute, correct: false}
       - {value: __invoke, correct: true }

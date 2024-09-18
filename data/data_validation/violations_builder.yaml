@@ -5,9 +5,9 @@ questions:
     answers:
       - { value: constraint_validator, correct: false }
       - { value: validator.constraint_validator, correct: true }
-      - {value: validation.validator, correct: false }
-      - {value: validation.constraint, correct: false }
-      - {value: validator_constraint, correct: false }
-      - {value: validation.constraint_validator, correct: false }
-      - {value: validator.constraint, correct: false }
+      - { value: validation.validator, correct: false }
+      - { value: validation.constraint, correct: false }
+      - { value: validator_constraint, correct: false }
+      - { value: validation.constraint_validator, correct: false }
+      - { value: validator.constraint, correct: false }
     help: 'https://symfony.com/doc/current/reference/dic_tags.html#validator-constraint-validator'

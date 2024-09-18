@@ -6,31 +6,31 @@ questions:
       - { value: 'Twig will raise a Twig_Error_Runtime exception preventing the template from being evaluated.', correct: false }
       - { value: 'The template will be succesfully evaluated and the string The car! will be displayed in the web browser.', correct: true }
       - { value: 'The template will be partially evaluated and the string The will be displayed in the web browser.', correct: false }
-      - {value: 'The template will be succesfully evaluated and the string The empty car! will be displayed in the web browser.', correct: false }
+      - { value: 'The template will be succesfully evaluated and the string The empty car! will be displayed in the web browser.', correct: false }
     help: 'https://twig.symfony.com/doc/2.x/templates.html#variables'
   -
     uuid: 1eebf878-8b98-6bbe-a34e-99d84c92580c
     question: "Is the following code valid? {% cache '_foo_template' ttl(45) %} Cached {% endcache %}"
     answers:
-      - {value: 'Yes', correct: true }
-      - {value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/tags/cache.html'
   -
     uuid: 1eebf878-8b9b-680a-ad15-99d84c92580c
     question: 'Could multiple use be used in a single template?'
     answers:
-      - {value: 'Yes', correct: true }
-      - {value: 'No', correct: false }
+      - { value: 'Yes', correct: true }
+      - { value: 'No', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/tags/use.html'
   -
     uuid: 1eebf878-8ba2-60a6-aa90-99d84c92580c
     question: 'Which of the following are valid Twig blocks?'
     answers:
-      - {value: '{% block content %} content {% finishblock content %}', correct: false }
-      - {value: "{% block content 'content' %}", correct: true }
-      - {value: '{% block content %} content {% endblock content %}', correct: true }
-      - {value: "{% block content 'content' block %}", correct: false }
-      - {value: '{% block content %} content {% endblock %}', correct: true }
-      - {value: '{% startblock content %} content {% endblock content %}', correct: false }
-      - {value: '{% startblock content %} content {% finishblock content %}', correct: false }
+      - { value: '{% block content %} content {% finishblock content %}', correct: false }
+      - { value: "{% block content 'content' %}", correct: true }
+      - { value: '{% block content %} content {% endblock content %}', correct: true }
+      - { value: "{% block content 'content' block %}", correct: false }
+      - { value: '{% block content %} content {% endblock %}', correct: true }
+      - { value: '{% startblock content %} content {% endblock content %}', correct: false }
+      - { value: '{% startblock content %} content {% finishblock content %}', correct: false }
     help: 'https://twig.symfony.com/doc/3.x/functions/block.html'

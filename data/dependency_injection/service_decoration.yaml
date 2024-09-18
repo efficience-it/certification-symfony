@@ -3,7 +3,7 @@ questions:
     uuid: 1eebf878-8b98-654c-b75e-99d84c92580c
     question: 'Could the priority of a decorating service be defined?'
     answers:
-      - {value: 'Yes', correct: true }
+      - { value: 'Yes', correct: true }
       - {value: 'No', correct: false}
     help: 'https://symfony.com/doc/current/service_container/service_decoration.html#decoration-priority'
   -
