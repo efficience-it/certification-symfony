@@ -237,13 +237,13 @@ questions:
     question: 'Which variables can be used in the ExpressionLanguage expression when using the condition option on a Route?'
     answers:
       - { value: this, correct: false }
-      - { value: object, correct: true }
+      - { value: params, correct: true }
       - { value: container, correct: false }
       - { value: context, correct: true }
       - { value: service, correct: false }
       - { value: user, correct: false }
       - { value: request, correct: true }
-    help: 'https://symfony.com/doc/7.2/routing.html'
+    help: 'https://symfony.com/doc/7.0/routing.html'
   -
     uuid: 1eed5768-e3b6-667a-8f78-21c4c4321b85
     question: 'What is the main purpose of the eraseCredentials() method from the UserInterface?'
