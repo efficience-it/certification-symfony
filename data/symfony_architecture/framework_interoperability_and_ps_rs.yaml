@@ -362,8 +362,8 @@ questions:
     question: 'What is the method to create a MicroKernel?'
     answers:
       - { value: 'Create an AppKernel and use the Symfony\Component\HttpKernel\MicroKernelTrait trait.', correct: false }
-      - { value: 'Create an AppKernel and use the Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait trait.', correct: false }
-      - { value: 'Create an AppKernel and extends the Symfony\Bundle\FrameworkBundle\Kernel\MicroKernel class.', correct: true }
+      - { value: 'Create an AppKernel and use the Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait trait.', correct: true }
+      - { value: 'Create an AppKernel and extends the Symfony\Bundle\FrameworkBundle\Kernel\MicroKernel class.', correct: false }
       - { value: 'Create an AppKernel and extends the Symfony\Component\HttpKernel\MicroKernel class.', correct: false }
     help: 'https://symfony.com/doc/current/configuration/micro_kernel_trait.html'
   -
