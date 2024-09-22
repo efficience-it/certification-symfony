@@ -55,7 +55,7 @@ questions:
       - { value: 'composer create-project symfony/skeleton my_project_name', correct: true }
       - { value: 'composer new-project symfony/skeleton my_project_name', correct: false }
       - { value: 'php bin/console new-project my_project_name', correct: false }
-      - { value: 'symfony new my_project_name --full', correct: true }
+      - { value: 'symfony new my_project_name --webapp', correct: true }
     help: 'https://symfony.com/doc/current/setup.html#creating-symfony-applications"'
   -
     uuid: 1eebf878-8b9e-6050-bd8d-99d84c92580c
@@ -107,7 +107,7 @@ questions:
       - { value: 'ctype needs to be enabled', correct: true }
       - { value: 'php.ini needs to have the date.timezone setting', correct: false }
       - { value: 'You need to have the PHP-XML module installed', correct: false }
-      - { value: 'PHP needs to be a minimum version of PHP 5.5.9', correct: true }
+      - { value: 'PHP needs to be a minimum version of PHP 8.2', correct: true }
     help: 'https://symfony.com/doc/current/reference/requirements.html'
   -
     uuid: 1ef55613-d3b3-6cb2-ac12-39eab7e60328
