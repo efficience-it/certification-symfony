@@ -237,7 +237,7 @@ questions:
     question: 'Which variables can be used in the ExpressionLanguage expression when using the condition option on a Route?'
     answers:
       - { value: this, correct: false }
-      - { value: object, correct: true }
+      - { value: params, correct: true }
       - { value: container, correct: false }
       - { value: context, correct: true }
       - { value: service, correct: false }
