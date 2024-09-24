@@ -1,16 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8b98-63da-9dbf-99d84c92580c
-    question: 'In Twig, which of the following operators has the highest precedence?'
-    answers:
-      - { value: and, correct: false }
-      - { value: or, correct: false }
-      - { value: in, correct: false }
-      - { value: '<=>', correct: false }
-      - { value: '==', correct: false }
-      - { value: '| (filters)', correct: true }
-    help: 'https://twig.symfony.com/doc/3.x/templates.html#expressions'
-  -
     uuid: 1eebf878-8b98-6b6e-8d01-99d84c92580c
     question: 'What is true about twig delimiters ?'
     answers:
