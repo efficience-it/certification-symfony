@@ -247,11 +247,11 @@ questions:
     help: 'https://symfony.com/doc/current/service_container/definitions.html'
   -
     uuid: 1eebf878-8b9f-65f4-aca1-99d84c92580c
-    question: 'Parameters can also contain array values ?'
+    question: 'Can configuration parameters in Symfony contain array values, such as in the parameters section of config/services.yaml?'
     answers:
       - { value: 'true', correct: true }
       - { value: 'false', correct: false }
-    help: '<https://symfony.com/doc/current/configuration.html#configuration-parameters'
+    help: 'https://symfony.com/doc/current/configuration.html#configuration-parameters'
   -
     uuid: 1eebf878-8b9f-670c-beb7-99d84c92580c
     question: "With default configuration each time you retrieve the service, you'll get the same instance ?"

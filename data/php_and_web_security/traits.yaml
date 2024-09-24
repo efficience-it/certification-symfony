@@ -8,7 +8,7 @@ questions:
     help: 'https://www.php.net/manual/en/language.oop5.traits.php'
   -
     uuid: 1eebf878-8ba9-6072-929e-99d84c92580c
-    question: "What will the output of this function ?  trait HelloWorld { public function sayHello() { echo 'Hello World!' } }  class TheWorldIsNotEnough { use HelloWorld public function sayHello() { echo 'Hello Universe!'; } } $o= new TheWorldIsNotEnough(); $o->sayHello();"
+    question: "What will the output of this function ?    trait HelloWorld {  public function sayHello() {  echo 'Hello World!'  }  }    class TheWorldIsNotEnough {  use HelloWorld  public function sayHello() {  echo 'Hello Universe!';  }  }  $o= new TheWorldIsNotEnough();  $o->sayHello();"
     answers:
       - { value: 'Hello World!', correct: false }
       - { value: 'Hello Universe!', correct: true }
@@ -16,7 +16,7 @@ questions:
     help: 'https://www.php.net/manual/en/language.oop5.traits.php'
   -
     uuid: 1eebf878-8ba9-60b8-b5a4-99d84c92580c
-    question: "What will be the output of this function ?  trait Hello {  public function saySomething() {   echo 'Hello ';  } }  trait World {  public function saySomething() {   echo 'World';  } }  class MyHelloWorld {  use Hello, World;  public function sayExclamationMark() {   echo '!';  } }  $o = new MyHelloWorld(); $o->sayHello(); $o->sayWorld(); $o->sayExclamationMark(); ?>"
+    question: "What will be the output of this function ?    trait Hello {   public function saySomething() {  \_\_\_ \_\_\_ echo 'Hello ';  \_\_\_ }  }    trait World {  \_\_\_ public function saySomething() {  \_\_\_ \_\_\_ echo 'World';  \_\_\_ }  }    class MyHelloWorld {  \_\_\_ use Hello, World;  \_\_\_ public function sayExclamationMark() {  \_\_\_ \_\_\_ echo '!';  \_\_\_ }  }    $o = new MyHelloWorld();  $o->sayHello();  $o->sayWorld();  $o->sayExclamationMark();  ?>"
     answers:
       - { value: Hello, correct: false }
       - { value: World, correct: false }
@@ -68,7 +68,7 @@ questions:
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.abstract'
   -
     uuid: 1eebf878-8ba9-6270-9168-99d84c92580c
-    question: 'Traits does no supports static methods or static properties inside their definition, right ?'
+    question: 'Traits do not support the definition of static methods or static properties, correct?'
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
@@ -101,9 +101,9 @@ questions:
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.constants'
   -
     uuid: 1eebf878-8ba9-6392-a88a-99d84c92580c
-    question: "Could a Constant defined in a Trait be overrided by an exhibiting class ?  trait PropertiesTrait {  public const FLAG = 2; }  class PropertiesExample {  use PropertiesTrait;  public const FLAG = 3; }"
+    question: 'Can a constant defined in a trait be overridden by a class that uses that trait?'
     answers:
-      - { value: 'Yes PropertiesExample::FLAG will output 3', correct: false }
-      - { value: 'No PropertiesExample::FLAG will output 2', correct: false }
+      - { value: 'No, the class will inherit the constant value from the trait.', correct: false }
+      - { value: "Yes, the class can define its own constant that overrides the trait's constant.", correct: false }
       - { value: 'No it will render a Fatal Error', correct: true }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.constants'
