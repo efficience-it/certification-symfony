@@ -11,9 +11,9 @@ questions:
     uuid: 1eebf878-8ba8-6d7a-a809-99d84c92580c
     question: 'What is the best solution to create expiring locks, which are released automatically after some amount of time has passed ?'
     answers:
-      - {value: '$factory->createLock("pdf-creation", expires: 30);', correct: false}
-      - {value: '$factory->createLock("pdf-creation", ttl: 30);', correct: true}
-      - {value: '$factory->createLock("pdf-creation", limit: 30);', correct: false}
+      - { value: "$factory->createLock('pdf-creation', expires: 30);", correct: false }
+      - { value: "$factory->createLock('pdf-creation', ttl: 30);", correct: true }
+      - { value: "$factory->createLock('pdf-creation', limit: 30);", correct: false }
     help: 'https://symfony.com/doc/current/components/lock.html#expiring-locks'
   -
     uuid: 1eeccba5-7669-608a-9e2a-070a767f65f9

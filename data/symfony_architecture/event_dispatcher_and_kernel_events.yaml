@@ -215,12 +215,12 @@ questions:
     help: 'https://github.com/symfony/symfony/blob/2.3/src/Symfony/Component/Form/ButtonBuilder.php#L176'
   -
     uuid: 1eebf878-8ba2-63ee-a965-99d84c92580c
-    question: 'What is the third arguments of the handle method off HttpKernelInterface?'
+    question: 'What is the third argument of the handle method in the HttpKernelInterface?'
     answers:
       - { value: 'The name of the environment', correct: false }
       - { value: 'A Request instance', correct: false }
       - { value: 'Whether to activate the debug or not', correct: false }
-      - { value: 'Whether to catch exceptions or not.', correct: true }
+      - { value: 'Whether to catch exceptions or not', correct: true }
       - { value: 'The type of the request', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpKernel/HttpKernel.php#L69'
   -

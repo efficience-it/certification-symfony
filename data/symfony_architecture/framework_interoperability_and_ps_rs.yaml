@@ -116,10 +116,10 @@ questions:
     uuid: 1eebf878-8b9a-6d42-ac99-99d84c92580c
     question: 'What is PSR-12?'
     answers:
-      - { value: 'A common logger interface.', correct: false }
-      - { value: 'A utility to convert non-namespaced PHP classes into namespaced ones.', correct: false }
-      - { value: 'A standard way to convert fully qualified names into file paths.', correct: false }
-      - { value: 'A coding style guide.', correct: true }
+      - { value: 'A common logger interface', correct: false }
+      - { value: 'A utility to convert non-namespaced PHP classes into namespaced ones', correct: false }
+      - { value: 'A standard way to convert fully qualified names into file paths', correct: false }
+      - { value: 'A coding style guide', correct: true }
     help: 'https://www.php-fig.org/psr/psr-12/'
   -
     uuid: 1eebf878-8b9b-63a0-bf34-99d84c92580c
@@ -192,7 +192,7 @@ questions:
       - { value: '$object is an instance of Doctrine\ORM\Proxy\Proxy.', correct: true }
       - { value: '$object is an instance of AppBundle\Entity\User.', correct: true }
       - { value: '$object is an instance of Doctrine\ORM\Reference.', correct: false }
-      - { value: '$object is an instance of Proxies_CG__\AppBundle\Entity\User', correct: true }
+      - { value: '$object is an instance of Proxies\__CG__\AppBundle\Entity\User', correct: true }
     help: 'https://www.doctrine-project.org/projects/orm.html'
   -
     uuid: 1eebf878-8b9c-6d4a-b7ce-99d84c92580c
@@ -290,7 +290,7 @@ questions:
     answers:
       - { value: debug, correct: false }
       - { value: alert, correct: false }
-      - { value: severe, correct: true }
+      - { value: urgent, correct: true }
       - { value: warning, correct: false }
     help: 'https://www.php-fig.org/psr/psr-3/#5-psrlogloglevel'
   -
@@ -362,8 +362,8 @@ questions:
     question: 'What is the method to create a MicroKernel?'
     answers:
       - { value: 'Create an AppKernel and use the Symfony\Component\HttpKernel\MicroKernelTrait trait.', correct: false }
-      - { value: 'Create an AppKernel and use the Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait trait.', correct: false }
-      - { value: 'Create an AppKernel and extends the Symfony\Bundle\FrameworkBundle\Kernel\MicroKernel class.', correct: true }
+      - { value: 'Create an AppKernel and use the Symfony\Bundle\FrameworkBundle\Kernel\MicroKernelTrait trait.', correct: true }
+      - { value: 'Create an AppKernel and extends the Symfony\Bundle\FrameworkBundle\Kernel\MicroKernel class.', correct: false }
       - { value: 'Create an AppKernel and extends the Symfony\Component\HttpKernel\MicroKernel class.', correct: false }
     help: 'https://symfony.com/doc/current/configuration/micro_kernel_trait.html'
   -
