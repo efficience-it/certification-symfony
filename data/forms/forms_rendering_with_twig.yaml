@@ -58,7 +58,7 @@ questions:
     question: 'How can you render a form named form in a Twig template?'
     answers:
       - { value: '{{ form_start(form) }}{{ form_widget(form) }}{{ form_end(form) }}', correct: true }
-      - { value: '{{ form(form) }}', correct: false }
+      - { value: '{{ form(form) }}', correct: true }
       - { value: '{% form(form) %}', correct: false }
       - { value: '{{ render_form(form) }}', correct: false }
     help: 'https://symfony.com/doc/current/book/forms.html'
