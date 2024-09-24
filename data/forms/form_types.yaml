@@ -120,7 +120,7 @@ questions:
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
-    help: '&nbsp;https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Form/Button.php#L110'
+    help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Form/Button.php#L110'
   -
     uuid: 1eebf878-8b9a-6cf2-b2df-99d84c92580c
     question: "Given the following configuration:$form = $this ->createFormBuilder(['myfield' => 'foo'])       ->add('myfield', TextType::class, ['data' => 'bar', 'empty_data' => 'none'])       ->getForm();What will be displayed in the myfield field ?"
