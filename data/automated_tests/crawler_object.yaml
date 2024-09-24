@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8b9e-6528-8747-99d84c92580c
-    question: 'Using the Crawler client, how to follow a redirection ?'
+    question: 'How can you follow a redirection when using the Symfony Crawler client?'
     answers:
       - { value: $client->redirect(), correct: false }
       - { value: $client->followRedirect(), correct: true }

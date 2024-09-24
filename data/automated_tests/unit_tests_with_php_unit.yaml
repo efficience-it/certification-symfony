@@ -24,7 +24,6 @@ questions:
       - { value: 'protected static function setUpBeforeClass()', correct: false }
       - { value: 'protected function setUpBeforeClass()', correct: false }
       - { value: 'protected static function setUp()', correct: false }
-      - { value: https, correct: false }
     help: 'https://phpunit.de/manual/current/en/fixtures.html#fixtures.more-setup-than-teardown'
   -
     uuid: 1eebf878-8b9a-6b26-87f0-99d84c92580c
