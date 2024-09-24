@@ -30,7 +30,7 @@ questions:
     help: 'https://www.php.net/manual/en/language.oop5.basic.php'
   -
     uuid: 1eebf878-8b99-655a-9f19-99d84c92580c
-    question: "Consider the following code snippet: function redirect($url) { $header = sprintf('Location: %s', $url); } Make sure the Location header hasn't already been sent yet if ( ??? ) { header($header); exit; }"
+    question: "In the following code snippet, what condition should you use to ensure the Location header hasn't already been sent? function redirect($url) { $header = sprintf('Location: %s', $url); if ( ??? ) { header($header); exit; } }"
     answers:
       - { value: '!in_array($header, headers_list())', correct: true }
       - { value: "!header_exists('Location', $url)", correct: false }
@@ -92,9 +92,9 @@ questions:
     question: "Which function would best parse the following string by the tab (\\t) and newline (\\n) characters ?$string =  John\\tMark\\nTed\\tLarry ;"
     answers:
       - { value: 'explode($string,  \t\n );', correct: false }
-      - {value: 'strtok($string,  \t\n );', correct: true}
-      - {value: 'str_split($string,  \t\n );', correct: false}
-      - {value: 'strstr($string,  \t\n );', correct: false}
+      - { value: strtok($string);, correct: true }
+      - { value: str_split($string);, correct: false }
+      - { value: strstr($string);, correct: false }
     help: 'https://www.php.net/manual/en/function.strtok.php'
   -
     uuid: 1eebf878-8b9c-6a02-9efa-99d84c92580c
