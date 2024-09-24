@@ -3,7 +3,7 @@ questions:
     uuid: 1eebf878-8b9b-6af8-a1b1-99d84c92580c
     question: 'What are the methods of Symfony\Component\Form\FormTypeInterface?'
     answers:
-      - { value: 'public function buildView(FormInterface $form, array $options);', correct: true }
+      - { value: 'public function buildView(FormInterface $form, array $options);', correct: false }
       - { value: 'public function getDefaultOptions(OptionsResolverInterface $resolver);', correct: false }
       - { value: 'public function finishView(FormView $view, FormInterface $form, array $options);', correct: true }
       - { value: 'public function configureOptions(OptionsResolverInterface $resolver);', correct: false }

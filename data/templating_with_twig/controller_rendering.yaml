@@ -4,9 +4,9 @@ questions:
     question: "What is the value of $render with the following code?$data = [ 'first' => 0, 'first-page' => 1 ];$render = $twig->render('XXXX', ['page' => 5, 'data' => $data]);{# XXXX twig file #}{{ data.first-page }}"
     answers:
       - { value: 'null', correct: false }
-      - { value: '-5', correct: false }
+      - { value: '-5', correct: true }
       - { value: '0', correct: false }
-      - { value: '1', correct: true }
+      - { value: '1', correct: false }
     help: 'https://twig.symfony.com/doc/2.x/templates.html#math'
   -
     uuid: 1eebf878-8ba2-6844-8478-99d84c92580c
