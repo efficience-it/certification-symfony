@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8ba8-6dca-82af-99d84c92580c
-    question: '{% set numA = 2 %} {%set numB = 3 %}  What will render {{ " #{numA + numB} " }} ?'
+    question: '{% set numA = 2 %} {% set numB = 3 %}  What will render {{ " #{numA + numB} " }} ?'
     answers:
       - { value: '2 + 3', correct: false }
       - { value: '5', correct: true }
