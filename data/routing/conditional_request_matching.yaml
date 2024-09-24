@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8ba4-6644-9118-99d84c92580c
-    question: "contact:  path: /contact  controller: 'App\\Controller\\DefaultController::contact'  # condition:  request.headers.get('User-Agent') XXXXXX '%app.allowed_browsers%'   What does replace XXXXX ?"
+    question: "contact:   path: /contact   controller: 'App\\Controller\\DefaultController::contact'   # condition:  request.headers.get('User-Agent') XXXXXX '%app.allowed_browsers%'     What does replace XXXXX ?"
     answers:
       - { value: sameas, correct: false }
       - { value: matches, correct: true }
@@ -34,9 +34,9 @@ questions:
     help: 'https://symfony.com/doc/current/routing.html#matching-expressions'
   -
     uuid: 1eebf878-8ba8-6488-b768-99d84c92580c
-    question: 'Can a route can contain  /  ?'
+    question: 'Is it possible for a route parameter in Symfony to include a / character?'
     answers:
-      - {value: "Yes by setting a permissive way #[Route('/{token}', requirements: ['token' => '.+'])]", correct: true}
+      - { value: "Yes by setting a permissive way #[Route('/{token}', requirements: ['token' => '.+'])]", correct: true }
       - { value: 'No', correct: false }
       - { value: 'Yes in all way', correct: false }
     help: 'https://symfony.com/doc/6.4/routing.html#slash-characters-in-route-parameters'
