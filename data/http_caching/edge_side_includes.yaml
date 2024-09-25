@@ -33,7 +33,7 @@ questions:
     help: 'https://symfony.com/doc/current/http_cache/esi.html'
   -
     uuid: 1eebf878-8ba4-6400-9833-99d84c92580c
-    question: "What happens if an esi is tried to be rendered but there is no Reverse Proxy Cache in the stack?"
+    question: 'What happens if an esi is tried to be rendered but there is no Reverse Proxy Cache in the stack?'
     answers:
       - { value: 'The block is rendered.', correct: true }
       - { value: 'The block is not rendered.', correct: false }

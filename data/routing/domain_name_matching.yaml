@@ -17,7 +17,7 @@ questions:
     help: 'https://symfony.com/doc/current/routing.html#sub-domain-routing'
   -
     uuid: 1eebf878-8ba8-6244-a390-99d84c92580c
-    question: "Is it required to add a HTTP Headers Host in your functionnal tests to set a sub-domain ?$crawler = $client->request('GET', '/',  [], [], ['HTTP_HOST' => 'm.example.com']);"
+    question: "Is it required to add a HTTP Headers Host in your functionnal tests to set a sub-domain ? $crawler = $client->request('GET', '/', [], [], ['HTTP_HOST' => 'm.example.com']);"
     answers:
       - { value: 'No', correct: false }
       - { value: 'Yes', correct: true }

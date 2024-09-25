@@ -1,14 +1,5 @@
 questions:
   -
-    uuid: 1eebf878-8ba4-6644-9118-99d84c92580c
-    question: "contact:   path: /contact   controller: 'App\\Controller\\DefaultController::contact'   # condition:  request.headers.get('User-Agent') XXXXXX '%app.allowed_browsers%'     What does replace XXXXX ?"
-    answers:
-      - { value: sameas, correct: false }
-      - { value: matches, correct: true }
-      - { value: in_values, correct: false }
-      - { value: equivalent_to, correct: false }
-    help: 'https://symfony.com/doc/current/routing.html#matching-expressions'
-  -
     uuid: 1eebf878-8ba4-668a-ba5b-99d84c92580c
     question: 'What are the available variable given by symfony to conditionnate a route matching ?'
     answers:

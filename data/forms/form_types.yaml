@@ -123,7 +123,7 @@ questions:
     help: 'https://github.com/symfony/symfony/blob/6.3/src/Symfony/Component/Form/Button.php#L110'
   -
     uuid: 1eebf878-8b9a-6cf2-b2df-99d84c92580c
-    question: "Given the following configuration:$form = $this ->createFormBuilder(['myfield' => 'foo'])       ->add('myfield', TextType::class, ['data' => 'bar', 'empty_data' => 'none'])       ->getForm();What will be displayed in the myfield field ?"
+    question: "Given the following configuration:$form = $this->createFormBuilder(['myfield' => 'foo'])->add('myfield', TextType::class, ['data' => 'bar', 'empty_data' => 'none'])->getForm(); What will be displayed in the myfield field ?"
     answers:
       - { value: none, correct: false }
       - { value: foo, correct: false }
@@ -150,7 +150,7 @@ questions:
     help: 'https://symfony.com/doc/current/reference/forms/types/form.html#inherit-data'
   -
     uuid: 1eebf878-8b9b-6f30-8a92-99d84c92580c
-    question: "What is the option you can pass to a Symfony\\Component\\Form\\Extension\\Core\\Type\\NumberType form type to change the number of decimals allowed until the field rounds."
+    question: 'What is the option you can pass to a Symfony\Component\Form\Extension\Core\Type\NumberType form type to change the number of decimals allowed until the field rounds.'
     answers:
       - { value: scale, correct: true }
       - { value: decimals, correct: false }
@@ -243,7 +243,7 @@ questions:
     help: 'https://symfony.com/doc/current/reference/forms/types/entity.html'
   -
     uuid: 1eebf878-8ba6-6520-bd74-99d84c92580c
-    question: "Which of the following form types is the parent of the Symfony\\Component\\Form\\Extension\\Core\\Type\\BirthdayType form type ?"
+    question: 'Which of the following form types is the parent of the Symfony\Component\Form\Extension\Core\Type\BirthdayType form type ?'
     answers:
       - { value: Symfony\Component\Form\Extension\Core\Type\DateTimeType, correct: false }
       - { value: Symfony\Component\Form\Extension\Core\Type\DateType, correct: true }

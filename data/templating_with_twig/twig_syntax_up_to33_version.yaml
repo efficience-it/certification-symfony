@@ -216,7 +216,7 @@ questions:
     help: 'https://twig.symfony.com/doc/3.x/internals.html'
   -
     uuid: 1eee76e3-3511-6002-9026-0376da4929df
-    question: "Consider the following code snippet: {% set foo, bar = 'FOO' %}  Foo is {{ foo }} and Bar is {{ bar }}. What will be the outcome of evaluating this Twig code?"
+    question: "Consider the following code snippet: {% set foo, bar = 'FOO' %} Foo is {{ foo }} and Bar is {{ bar }}. What will be the outcome of evaluating this Twig code?"
     answers:
       - { value: 'The output will display the string  Foo is and Bar is . .', correct: false }
       - { value: 'Twig will raise a  Twig_Error_Syntax  exception.', correct: true }

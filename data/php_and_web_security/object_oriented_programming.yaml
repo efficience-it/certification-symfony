@@ -36,7 +36,7 @@ questions:
     help: 'https://php.net/manual/en/language.oop5.static.php'
   -
     uuid: 1eebf878-8ba2-6934-ad03-99d84c92580c
-    question: "What will be the output of the following code?class Foo {  const BAR = 4+1;}echo Foo::BAR;"
+    question: "What will be the output of the following code? class Foo { const BAR = 4+1 } echo Foo::BAR;"
     answers:
       - { value: 'An error', correct: false }
       - { value: '1', correct: false }
@@ -62,7 +62,7 @@ questions:
     help: 'https://www.php.net/instanceof'
   -
     uuid: 1eebf878-8ba4-6496-8b71-99d84c92580c
-    question: "What is wrong with this repository method ?public function filterBooks(array $filters){return $this->createQueryBuild('b')->where('b.year = :year');->setParameters(['year' => $filters['year']]);->andWhere('b.gender = :gender');->setParameters(['gender' => $filters['gender']])->getResults();}"
+    question: "What is wrong with this repository method ? public function filterBooks(array $filters) { return $this->createQueryBuild('b')->where('b.year = :year')->setParameters(['year' => $filters['year']])->andWhere('b.gender = :gender')->setParameters(['gender' => $filters['gender']])->getResults(); }"
     answers:
       - { value: "The method createQueryBuild does not exist, it's createQueryBuilder", correct: true }
       - { value: 'The method getResults does not exists. You should use getResult().', correct: true }
@@ -81,7 +81,7 @@ questions:
     help: 'https://php.net/manual/fr/book.reflection.php'
   -
     uuid: 1eebf878-8ba5-6116-88ba-99d84c92580c
-    question: "Is it possible make $tags directly indexed with a specified field ?/** @Entity */class Content{/** @OneToMany(targetEntity= Tag ) */private Tag $tags;}"
+    question: 'Is it possible make $tags directly indexed with a specified field ?/** @Entity */ class Content { /** @OneToMany(targetEntity="Tag") */ private Tag $tags; }'
     answers:
       - { value: 'Yes, by adding the attribute indexBy to the OneToMany annotation', correct: true }
       - { value: 'No', correct: false }

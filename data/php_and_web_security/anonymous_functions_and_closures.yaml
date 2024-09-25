@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8ba9-646e-93a2-99d84c92580c
-    question: "What will be the output of this ?  $message = '';  $example = function ($arg) use ($message) { var_dump($arg . ' ' . $message); }; $example( hello );"
+    question: "What will be the output of this ?    $message = '';    $example = function ($arg) use ($message) {  var_dump($arg . ' ' . $message);  };  $example( hello );"
     answers:
       - { value: hello, correct: true }
       - { value: 'Fatal Error', correct: false }
@@ -9,7 +9,7 @@ questions:
     help: 'https://www.php.net/manual/en/functions.anonymous.php'
   -
     uuid: 1eebf878-8ba9-6536-8861-99d84c92580c
-    question: 'What will be the output of this ?  $result = 0;  $one = function() { var_dump($result); };'
+    question: 'What will be the output of this ? $result = 0; echo function() { var_dump($result); };'
     answers:
       - { value: '0', correct: false }
       - { value: 'Null', correct: true }

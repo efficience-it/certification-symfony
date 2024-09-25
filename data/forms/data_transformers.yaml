@@ -31,7 +31,7 @@ questions:
     help: 'https://symfony.com/doc/current/form/data_transformers.html'
   -
     uuid: 1eebf878-8ba5-6382-a6c5-99d84c92580c
-    question: "Is this a valid way to add a DataTransformer ?  $builder   ->add('issue', TextType::class)   ->addModelTransformer($transformer);"
+    question: "Is this a valid way to add a DataTransformer ? $builder->add('issue', TextType::class)->addModelTransformer($transformer);"
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }

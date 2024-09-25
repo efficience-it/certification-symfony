@@ -15,15 +15,6 @@ questions:
       - { value: 'Fatal Error', correct: false }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php'
   -
-    uuid: 1eebf878-8ba9-60b8-b5a4-99d84c92580c
-    question: "What will be the output of this function ?    trait Hello {   public function saySomething() {  \_\_\_ \_\_\_ echo 'Hello ';  \_\_\_ }  }    trait World {  \_\_\_ public function saySomething() {  \_\_\_ \_\_\_ echo 'World';  \_\_\_ }  }    class MyHelloWorld {  \_\_\_ use Hello, World;  \_\_\_ public function sayExclamationMark() {  \_\_\_ \_\_\_ echo '!';  \_\_\_ }  }    $o = new MyHelloWorld();  $o->sayHello();  $o->sayWorld();  $o->sayExclamationMark();  ?>"
-    answers:
-      - { value: Hello, correct: false }
-      - { value: World, correct: false }
-      - { value: 'Hello World', correct: false }
-      - { value: 'Fatal Error', correct: true }
-    help: 'https://www.php.net/manual/en/language.oop5.traits.php'
-  -
     uuid: 1eebf878-8ba9-6108-8a3b-99d84c92580c
     question: "To resolve naming conflicts between Traits used in the same class, what's the operator needed to be used to choose exactly one of the conflicting methods ?"
     answers:
@@ -32,15 +23,6 @@ questions:
       - { value: insteadof, correct: true }
       - { value: asAlias, correct: false }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.conflict'
-  -
-    uuid: 1eebf878-8ba9-614e-adf2-99d84c92580c
-    question: "What will be the output of this function ?  trait Hello {  public function sayHello() {   echo 'Hello ';  } }  trait World {  public function sayWorld() {   echo 'World';  } }  trait HelloWorld {  use Hello, World; }  class MyHelloWorld {  use HelloWorld; }  $o = new MyHelloWorld(); $o->sayHello(); $o->sayWorld();"
-    answers:
-      - { value: Hello, correct: false }
-      - { value: World, correct: false }
-      - { value: 'Hello World', correct: true }
-      - { value: 'Fatal Error', correct: false }
-    help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.composition'
   -
     uuid: 1eebf878-8ba9-6194-80af-99d84c92580c
     question: 'What syntax could you use to adjust the visibility of a method in a Trait ?'
@@ -73,21 +55,6 @@ questions:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.static'
-  -
-    uuid: 1eebf878-8ba9-62b6-bbb9-99d84c92580c
-    question: "Does traits can define properties like this ?  trait PropertiesTrait {  public $x = 1; }  class PropertiesExample {  use PropertiesTrait; }  $example = new PropertiesExample; $example->x;"
-    answers:
-      - { value: 'Yes', correct: true }
-      - { value: 'No', correct: false }
-    help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.properties'
-  -
-    uuid: 1eebf878-8ba9-62fc-b8fd-99d84c92580c
-    question: "Could a property defined in a Trait be overrided by an exhibiting class ?  trait PropertiesTrait {  public $notSame = false; }  class PropertiesExample {  use PropertiesTrait;  public $notSame = true; }"
-    answers:
-      - { value: 'Yes PropertiesExample->notSame will output true', correct: false }
-      - { value: 'No PropertiesExample->notSame will output false', correct: false }
-      - { value: 'Fatal Error', correct: true }
-    help: 'https://www.php.net/manual/en/language.oop5.traits.php#language.oop5.traits.properties'
   -
     uuid: 1eebf878-8ba9-634c-83eb-99d84c92580c
     question: 'From which version a Constant can be defined in a Trait ?'

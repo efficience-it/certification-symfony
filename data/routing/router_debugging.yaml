@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8ba4-66d0-9c83-99d84c92580c
-    question: "php bin/console debug:router XXXXXX  What's the argument after this command in XXXXXX ?"
+    question: "php bin/console debug:router XXXXXX    What's the argument after this command in XXXXXX ?"
     answers:
       - { value: 'No arguments', correct: true }
       - { value: 'a specific path', correct: false }

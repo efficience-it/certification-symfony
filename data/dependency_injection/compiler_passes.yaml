@@ -50,9 +50,9 @@ questions:
     uuid: 1ef49363-d37f-69d0-9063-c36a242f9461
     question: 'In which file is the build method often implemented to add a  compiler pass ?'
     answers:
-      - {value: 'config.yml', correct: false}
-      - {value: 'Kernel.php', correct: true}
-      - {value: 'services.yaml', correct: false}
+      - { value: config.yml, correct: false }
+      - { value: Kernel.php, correct: true }
+      - { value: services.yaml, correct: false }
     help: 'https://symfony.com/doc/current/service_container/compiler_passes.html'
   -
     uuid: 1ef49369-5acb-6f42-8894-eb7574faa390

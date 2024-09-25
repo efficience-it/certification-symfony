@@ -20,7 +20,7 @@ questions:
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/Process/Process.php#L264'
   -
     uuid: 1eebf878-8b9a-696e-886e-99d84c92580c
-    question: "What is the method to access the pid of the running process of the following code :$process = new Process('/usr/bin/php worker.php');$process->start();"
+    question: "What is the method to access the pid of the running process of the following code :$process = new Process('/usr/bin/php worker.php'); $process->start();"
     answers:
       - { value: '$pid = $process->getData()->getProcessId();', correct: false }
       - { value: '$pid = $process->getPid();', correct: true }
@@ -68,12 +68,12 @@ questions:
     uuid: 1eebf878-8b9d-601a-8dff-99d84c92580c
     question: 'What are valid output types defined in Process ?'
     answers:
-      - {value: 'input', correct: false}
-      - {value: 'error', correct: false}
-      - {value: 'in', correct: false}
-      - {value: 'out', correct: true}
-      - {value: 'output', correct: false}
-      - {value: 'err', correct: true}
+      - { value: input, correct: false }
+      - { value: error, correct: false }
+      - { value: in, correct: false }
+      - { value: out, correct: true }
+      - { value: output, correct: false }
+      - { value: err, correct: true }
     help: 'https://symfony.com/doc/current/components/process.html#getting-real-time-process-output'
   -
     uuid: 1eebf878-8b9d-60ba-9a06-99d84c92580c
@@ -124,10 +124,10 @@ questions:
     uuid: 1eebf878-8ba3-61e0-9460-99d84c92580c
     question: 'How to specify the date format for a date attribute in a serialization context ?'
     answers:
-      - {value: '#[Serializer\Context([DateTimeNormalizer::FORMAT_KEY => "Y-m-d"])] public \DateTime $date;', correct: true}
+      - { value: "#[Serializer\Context([DateTimeNormalizer::FORMAT_KEY => 'Y-m-d'])] public \DateTime $date;", correct: true }
       - { value: "It's not possible", correct: false }
-      - {value: '/** @Serializer\Context({ DateTimeNormalizer::FORMAT_KEY = "Y-m-d" }) */ public \DateTime $date;', correct: true}
-      - {value: '/** @Serializer\DateFormat("Y-m-d" ) */ public \DateTime $date;', correct: false}
+      - { value: "/** @Serializer\Context({ DateTimeNormalizer::FORMAT_KEY = 'Y-m-d' }) */ public \DateTime $date;", correct: true }
+      - { value: "/** @Serializer\DateFormat('Y-m-d' ) */ public \DateTime $date;", correct: false }
     help: 'https://symfony.com/doc/current/serializer.html#serializer-context'
   -
     uuid: 1eebf878-8ba3-68f2-a0ce-99d84c92580c
@@ -190,7 +190,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/process.html#streaming-to-the-standard-input-of-a-process'
   -
     uuid: 1eebf878-8ba9-68ce-9102-99d84c92580c
-    question: "Given $process is a Process object that runs a command asynchronously; calling $process->stop(3) will immediately send a SIGKILL signal to the running command."
+    question: "Given $process is a Process object that runs a command asynchronously; calling\_ $process->stop(3) will immediately send a SIGKILL signal to the running command."
     answers:
       - { value: 'False', correct: true }
       - { value: 'True', correct: false }

@@ -26,7 +26,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/expression_language.html#expression-language-extending'
   -
     uuid: 1eebf878-8ba7-6556-b59b-99d84c92580c
-    question: "$language = new ExpressionLanguage();var_dump($language->evaluate('1 + 2'));"
+    question: "$language = new ExpressionLanguage(); var_dump($language->evaluate('1 + 2'));"
     answers:
       - { value: '3', correct: true }
       - { value: integer, correct: false }
