@@ -10,14 +10,14 @@ questions:
     help: 'https://twig.symfony.com/doc/3.x/templates.html#global-variables'
   -
     uuid: 1eebf878-8ba5-6a30-ac9b-99d84c92580c
-    question: 'Will this code permit to get the {{ ga_tracking }} in every twig files ? twig.globals.ga_tracking: "UA-xxxxx-x"'
+    question: 'Will this code permit to get the {{ ga_tracking }} in every twig files ? twig.globals.ga_tracking:  "UA-xxxxx-x"'
     answers:
       - { value: 'No', correct: false }
       - { value: 'Yes', correct: true }
     help: 'https://symfony.com/doc/current/templates.html#global-variables'
   -
     uuid: 1eebf878-8ba5-6a76-b902-99d84c92580c
-    question: "What's the correct way to declare the global variable uuid to get {{ uuid.generate }} in any twig files"
+    question: "What's the correct way to declare the global variable uuid to get {{ uuid.generate }} in any twig files ?"
     answers:
       - { value: 'twig.globals.uuid:  @App\Generator\UuidGenerator ', correct: true }
       - { value: 'twig.globals.uuid:  App\Generator\UuidGenerator ', correct: false }

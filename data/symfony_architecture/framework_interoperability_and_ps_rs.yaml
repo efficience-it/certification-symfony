@@ -187,7 +187,7 @@ questions:
     help: 'https://github.com/symfony/routing/blob/6.3/RequestContext.php#L292'
   -
     uuid: 1eebf878-8b9c-669c-9b9d-99d84c92580c
-    question: "Considering the following code, which assertions are true? $object = $this->entityManager->getReference('AppBundle\\Entity\\User', 1);"
+    question: 'Considering the following code, which assertions are true? $object = $this->entityManager->getReference("AppBundle\Entity\User", 1);'
     answers:
       - { value: '$object is an instance of Doctrine\ORM\Proxy\Proxy.', correct: true }
       - { value: '$object is an instance of AppBundle\Entity\User.', correct: true }

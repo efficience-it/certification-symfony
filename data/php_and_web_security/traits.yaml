@@ -7,14 +7,6 @@ questions:
       - { value: 'No', correct: true }
     help: 'https://www.php.net/manual/en/language.oop5.traits.php'
   -
-    uuid: 1eebf878-8ba9-6072-929e-99d84c92580c
-    question: "What will the output of this function ?    trait HelloWorld {  public function sayHello() {  echo 'Hello World!'  }  }    class TheWorldIsNotEnough {  use HelloWorld  public function sayHello() {  echo 'Hello Universe!';  }  }  $o= new TheWorldIsNotEnough();  $o->sayHello();"
-    answers:
-      - { value: 'Hello World!', correct: false }
-      - { value: 'Hello Universe!', correct: true }
-      - { value: 'Fatal Error', correct: false }
-    help: 'https://www.php.net/manual/en/language.oop5.traits.php'
-  -
     uuid: 1eebf878-8ba9-6108-8a3b-99d84c92580c
     question: "To resolve naming conflicts between Traits used in the same class, what's the operator needed to be used to choose exactly one of the conflicting methods ?"
     answers:

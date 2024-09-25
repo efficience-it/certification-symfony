@@ -89,7 +89,7 @@ questions:
     help: 'https://www.php.net/manual/en/function.extract.php'
   -
     uuid: 1eebf878-8b9c-6656-8085-99d84c92580c
-    question: "Which function would best parse the following string by the tab (\\t) and newline (\\n) characters ?$string =  John\\tMark\\nTed\\tLarry ;"
+    question: 'Which function would best parse the following string by the tab (\t) and newline (\n) characters ? $string =  John\tMark\nTed\tLarry ;'
     answers:
       - { value: 'explode($string,  \t\n );', correct: false }
       - { value: strtok($string);, correct: true }
@@ -272,7 +272,7 @@ questions:
     help: 'https://www.php.net/manual/en/language.operators.comparison.php'
   -
     uuid: 1eebf878-8ba3-6dc0-bb50-99d84c92580c
-    question: "What is the most recommended way to count the number of occurences of each unique value in the following array?\_$a=[1,1,2,3,4,4,5,6,6,6,3,2,2,2];"
+    question: "What is the most recommended way to count the number of occurences of each unique value in the following array? $a=[1,1,2,3,4,4,5,6,6,6,3,2,2,2];"
     answers:
       - { value: '$ = array_unique($a);$k = array_fill(0,count($k), 0);$n = array_combine($k, $v);reset($a);for($i =0; $i < count($a); $i++){++$n[current($a)];', correct: false }
       - { value: '$n = array_count_values($a);', correct: true }

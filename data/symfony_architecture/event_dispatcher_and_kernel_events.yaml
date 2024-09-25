@@ -3,10 +3,10 @@ questions:
     uuid: 1eebf878-8b96-6eea-8d09-99d84c92580c
     question: 'In which order does Symfony trigger the following events?'
     answers:
-      - { value: kernel.requestkernel.controllerkernel.controller_argumentskernel.viewkernel.responsekernel.finish_requestkernel.terminate, correct: true }
-      - { value: kernel.requestkernel.controllerkernel.controller_argumentskernel.viewkernel.responsekernel.terminatekernel.finish_request, correct: false }
-      - { value: kernel.requestkernel.controllerkernel.controller_argumentskernel.responsekernel.viewkernel.terminatekernel.finish_request, correct: false }
-      - { value: kernel.requestkernel.controllerkernel.controller_argumentskernel.responsekernel.viewkernel.finish_requestkernel.terminate, correct: false }
+      - { value: 'kernel.request, kernel.controller, kernel.controller_arguments, kernel.view, kernel.response, kernel.finish_request, kernel.terminate', correct: true }
+      - { value: 'kernel.request, kernel.controller, kernel.controller_arguments, kernel.view, kernel.response, kernel.terminate, kernel.finish_request', correct: false }
+      - { value: 'kernel.request, kernel.controller, kernel.controller_arguments, kernel.response, kernel.view, kernel.terminate, kernel.finish_request', correct: false }
+      - { value: 'kernel.request, kernel.controller, kernel.controller_arguments, kernel.response, kernel.view, kernel.finish_request, kernel.terminate', correct: false }
     help: 'https://symfony.com/doc/current/components/http_kernel.html#creating-an-event-listener'
   -
     uuid: 1eebf878-8b97-658e-8993-99d84c92580c
