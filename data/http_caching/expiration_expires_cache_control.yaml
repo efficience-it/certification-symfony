@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8b99-65a0-956f-99d84c92580c
-    question: 'Given the following header, will the resource be considered as fresh?    Expires: 0'
+    question: 'Given the following header, will the resource be considered as fresh?  Expires: 0 '
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }

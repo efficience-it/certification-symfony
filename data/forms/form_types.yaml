@@ -92,7 +92,7 @@ questions:
     help: 'https://symfony.com/doc/current/reference/forms/types/money.html'
   -
     uuid: 1eebf878-8b99-6c30-8ce8-99d84c92580c
-    question: 'Which option should you use to render a DateType form type as an HTML5 ?'
+    question: 'Which option should you use to render a DateType form type as an HTML5 <input type= date >?'
     answers:
       - { value: no_javascript, correct: false }
       - { value: type_date, correct: false }

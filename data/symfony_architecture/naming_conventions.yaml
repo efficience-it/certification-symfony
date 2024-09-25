@@ -60,7 +60,7 @@ questions:
     help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eeda2ca-d3e4-6b68-a248-eb5bab40e010
-    question: '<p>We use upper camel case for ?</p>'
+    question: 'We use upper camel case for ?'
     answers:
       - { value: class, correct: false }
       - { value: constants, correct: false }

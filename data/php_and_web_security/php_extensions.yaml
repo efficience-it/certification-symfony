@@ -11,7 +11,7 @@ questions:
     help: 'https://www.php.net/manual/en/function.header.php'
   -
     uuid: 1eebf878-8ba5-624c-866b-99d84c92580c
-    question: 'What is the output ? $a = "0"; echo strlen($a); echo empty($a) ? $a : 5; echo $a ?: 5;'
+    question: "What is the output ? $a =  '0' ; echo strlen($a); echo empty($a) ? $a : 5; echo $a ?: 5;"
     answers:
       - { value: '100', correct: false }
       - { value: '005', correct: false }

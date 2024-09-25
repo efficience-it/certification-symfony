@@ -28,7 +28,7 @@ questions:
     answers:
       - { value: $cursor->moveRight(3);, correct: true }
       - { value: $cursor->moveRight()->moveRight()->moveRight();, correct: true }
-      - { value: '$cursor->moveToPosition(  $cursor->getCurrentPosition()[0],  $cursor->getCurrentPosition()[1] + 3  );', correct: true }
+      - { value: '$cursor->moveToPosition(    $cursor->getCurrentPosition()[0],    $cursor->getCurrentPosition()[1] + 3    );', correct: true }
     help: 'https://symfony.com/doc/current/components/console/helpers/cursor.html#moving-the-cursor'
   -
     uuid: 1eebf878-8ba5-6be8-a74b-99d84c92580c
@@ -51,7 +51,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/console/helpers/formatterhelper.html'
   -
     uuid: 1eebf878-8ba5-6c74-a208-99d84c92580c
-    question: 'What is the correct way to truncate a message in a console with the formater helper ?  $message =  This is a very long message, which should be truncated ;  to $message =  This is a very long message, which should be!! ;'
+    question: 'What is the correct way to truncate a message in a console with the formater helper ?    $message =  This is a very long message, which should be truncated ;    to $message =  This is a very long message, which should be!! ;'
     answers:
       - { value: "$formatter->truncate($message, 44, '!!');", correct: true }
       - { value: "$formatter->truncateMessage($message, -10, '!!');", correct: false }
@@ -85,7 +85,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/console/helpers/table.html#modifying-rendered-tables'
   -
     uuid: 1eebf878-8ba5-6e2c-93d3-99d84c92580c
-    question: 'What is the parameter option to give to  $table = new Table(XXX); in a console ?'
+    question: 'What is the parameter option to give to $table = new Table(XXX); in a console ?'
     answers:
       - { value: 'int $length, the number of lines for the table', correct: false }
       - { value: OutputInterface, correct: true }
@@ -94,7 +94,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/console/helpers/table.html'
   -
     uuid: 1eebf878-8ba5-6e7c-b3dd-99d84c92580c
-    question: 'In a console, what kind of Question could you have as a third argument in this question ?  $helper->ask($input, $output, $question);'
+    question: 'In a console, what kind of Question could you have as a third argument in this question ? $helper->ask($input, $output, $question);'
     answers:
       - { value: Symfony\Component\Console\Question\ChoiceQuestion, correct: true }
       - { value: Symfony\Component\Console\Question\ConfirmationQuestion, correct: true }
@@ -119,7 +119,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/console/helpers/questionhelper.html#validating-the-answer'
   -
     uuid: 1eebf878-8ba5-6f62-b189-99d84c92580c
-    question: 'What is the method to set the given value in the QuestionHelper for a test in the given tester:  $commandTester = new CommandTester($command);'
+    question: 'What is the method to set the given value in the QuestionHelper for a test in the given tester: $commandTester = new CommandTester($command);'
     answers:
       - { value: '$commandTester->setAnswer([ Test ]);', correct: false }
       - { value: '$commandTester->setGivenValue([ Test ]);', correct: false }
@@ -127,7 +127,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/console/helpers/questionhelper.html#testing-a-command-that-expects-input'
   -
     uuid: 1eebf878-8ba5-6ff8-80bd-99d84c92580c
-    question: "In a question in your command, what is the way to set a list of valid values autocompletable that the user can answer to this question ?  $question = new Question('Please enter the name of a bundle', 'FooBundle');  $bundles = ['AcmeDemoBundle', 'AcmeBlogBundle', 'AcmeStoreBundle'];"
+    question: "In a question in your command, what is the way to set a list of valid values autocompletable that the user can answer to this question ?    $question = new Question('Please enter the name of a bundle', 'FooBundle');    $bundles = ['AcmeDemoBundle', 'AcmeBlogBundle', 'AcmeStoreBundle'];"
     answers:
       - { value: $question->setPossibleAnswers($bundles);, correct: false }
       - { value: $question->setAutocomplete($bundles);, correct: false }
@@ -154,7 +154,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/console/helpers/progressbar.html#customizing-the-progress-bar'
   -
     uuid: 1eebf878-8ba6-60de-91d5-99d84c92580c
-    question: 'For performance reasons, symfony redraws the screen once every XXXXms. If this is too fast or too slow for your application, use the methods minSecondsBetweenRedraws() and maxSecondsBetweenRedraws():  How much is XXX ?'
+    question: 'For performance reasons, symfony redraws the screen once every XXXXms. If this is too fast or too slow for your application, use the methods minSecondsBetweenRedraws() and maxSecondsBetweenRedraws():    How much is XXX ?'
     answers:
       - { value: '50 ms', correct: false }
       - { value: '80 ms', correct: false }
@@ -169,13 +169,13 @@ questions:
     answers:
       - { value: "$helper->run($output, 'figlet Symfony');", correct: true }
       - { value: "$helper->run($output, ['figlet', 'Symfony']);", correct: true }
-      - { value: "$process = new Process(['figlet', 'Symfony']);   $helper->run($output, $process);", correct: true }
+      - { value: "$process = new Process(['figlet', 'Symfony']);     $helper->run($output, $process);", correct: true }
     help: 'https://symfony.com/doc/current/components/console/helpers/processhelper.html'
   -
     uuid: 1eebf878-8ba6-6174-a67f-99d84c92580c
     question: "How can you customize the error message when using the Process Helper's run() method, such as in $helper->run($output, 'ls')?"
     answers:
-      - { value: "by adding ->setInvalidMesage($errorMessage) on run method like  $helper->run($output, $process')->setInvalidMessage('Failed);", correct: false }
+      - { value: "by adding ->setInvalidMesage($errorMessage) on run method like    $helper->run($output, $process')->setInvalidMessage('Failed);", correct: false }
       - { value: 'by adding a third argument $helper->run($output, $process,  Failed );', correct: true }
       - { value: 'By overring the message of the ProcessHelperException', correct: false }
     help: 'https://symfony.com/doc/current/components/console/helpers/processhelper.html#customized-display'

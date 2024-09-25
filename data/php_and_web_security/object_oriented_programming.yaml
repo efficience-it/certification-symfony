@@ -36,7 +36,7 @@ questions:
     help: 'https://php.net/manual/en/language.oop5.static.php'
   -
     uuid: 1eebf878-8ba2-6934-ad03-99d84c92580c
-    question: "What will be the output of the following code? class Foo { const BAR = 4+1 } echo Foo::BAR;"
+    question: 'What will be the output of the following code? class Foo { const BAR = 4+1 } echo Foo::BAR;'
     answers:
       - { value: 'An error', correct: false }
       - { value: '1', correct: false }
