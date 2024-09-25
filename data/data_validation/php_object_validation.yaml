@@ -22,9 +22,9 @@ questions:
     uuid: 1eebf878-8b9b-60d0-8fee-99d84c92580c
     question: 'Which of the following are valid types to use in setAllowedTypes method of Symfony\Component\OptionsResolver\OptionsResolver to validate a float value?'
     answers:
-      - { value: 'double', correct: true }
+      - { value: double, correct: true }
       - { value: 'OptionsResolver::DOUBLE', correct: false }
-      - { value: 'float', correct: true }
+      - { value: float, correct: true }
       - { value: 'OptionsResolver::FLOAT', correct: false }
     help: 'https://symfony.com/doc/current/components/options_resolver.html#type-validation'
   -

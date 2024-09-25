@@ -123,10 +123,10 @@ questions:
     uuid: 1ef5bb47-4340-610a-accc-f5fc6195c240
     question: 'Which format is recommended for defining services in a Symfony application?'
     answers:
-      - {value: 'XML', correct: false}
-      - {value: 'JSON', correct: false}
-      - {value: 'YAML', correct: true}
-      - {value: 'PHP', correct: false}
+      - { value: XML, correct: false }
+      - { value: JSON, correct: false }
+      - { value: YAML, correct: true }
+      - { value: PHP, correct: false }
     help: 'https://symfony.com/doc/current/best_practices.html#use-the-yaml-format-to-configure-your-own-services'
   -
     uuid: 1ef5bb4b-5936-6eba-9746-5946503a32b1

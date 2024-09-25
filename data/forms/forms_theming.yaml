@@ -1,9 +1,0 @@
-questions:
-  -
-    uuid: 1eec1ae3-587b-66fe-9064-2b0b8e387e66
-    question: "Which theme will be applied to the form ?// config/packages/twig.yaml twig: form_themes: ['bootstrap_5_layout.html.twig'] // index.html.twig  {% form_theme form 'foundation_5_layout.html.twig' %} {{ form(form) }} "
-    answers:
-      - {value: bootstrap_5_layout.html.twig, correct: false}
-      - {value: foundation_5_layout.html.twig, correct: true}
-      - {value: 'Neither, because the  form_them  line in the index.html.twig file is missing  with .', correct: false}
-    help: 'https://symfony.com/doc/5.x/form/form_themes.html#applying-themes-to-single-forms'

@@ -21,10 +21,10 @@ questions:
     uuid: 1ef5b468-b4f5-65ec-8bd3-e519a8187e8c
     question: "Which node type in Symfony's Config Component allows you to define a finite set of acceptable values?"
     answers:
-      - { value: 'scalarNode', correct: false}
-      - { value: 'enumNode', correct: true }
-      - { value: 'arrayNode', correct: false}
-      - { value: 'variableNode', correct: false}
+      - { value: scalarNode, correct: false }
+      - { value: enumNode, correct: true }
+      - { value: arrayNode, correct: false }
+      - { value: variableNode, correct: false }
     help: 'https://symfony.com/doc/current/components/config/definition.html#enum-nodes'
   -
     uuid: 1ef5b46e-73a7-6f3a-a9c3-b1226b175b7c

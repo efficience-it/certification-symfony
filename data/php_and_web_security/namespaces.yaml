@@ -27,7 +27,7 @@ questions:
     help: 'https://github.com/symfony/symfony/tree/master/src/Symfony'
   -
     uuid: 1eebf878-8ba9-63d8-874d-99d84c92580c
-    question: 'Where is the Test Class ?  namespace Foo\Bar; use Foo\Test;'
+    question: 'Where is the Test Class ?    namespace Foo\Bar;  use Foo\Test;'
     answers:
       - { value: 'in Foo\Test', correct: true }
       - { value: 'in Foo\Bar', correct: false }
@@ -35,7 +35,7 @@ questions:
     help: 'https://www.php.net/manual/en/language.oop5.traits.php#113047'
   -
     uuid: 1eebf878-8ba9-641e-8f50-99d84c92580c
-    question: "Where is the Test Class ?  namespace Foo\\Bar; class SomeClass {  use Foo\\Test; }"
+    question: "Where is the Test Class ? namespace Foo\Bar; class SomeClass { use Foo\Test; }"
     answers:
       - { value: Foo\Bar, correct: false }
       - { value: Foo\Bar\Foo\Test, correct: true }

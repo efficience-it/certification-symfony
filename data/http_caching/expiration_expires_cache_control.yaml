@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8b99-65a0-956f-99d84c92580c
-    question: 'Given the following header, will the resource be considered as fresh?  Expires: 0'
+    question: 'Given the following header, will the resource be considered as fresh?    Expires: 0'
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
@@ -71,9 +71,9 @@ questions:
     uuid: 1eebf878-8ba6-6ac0-b4bc-99d84c92580c
     question: 'Which headers/directives will be ignored by a proxy if Expires, s-maxage and max-age are all present in a response ?'
     answers:
-      - {value: 'Expires', correct: true}
-      - {value: 'max-age', correct: true}
-      - {value: 's-maxage', correct: false}
+      - { value: Expires, correct: true }
+      - { value: max-age, correct: true }
+      - { value: s-maxage, correct: false }
     help: 'https://tools.ietf.org/html/rfc7234#section-5.2.2.8'
   -
     uuid: 1eebf878-8ba7-6268-bc81-99d84c92580c

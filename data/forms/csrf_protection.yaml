@@ -58,7 +58,7 @@ questions:
     help: 'https://symfony.com/doc/current/security/csrf.html'
   -
     uuid: 1eebf878-8ba5-6878-8ebd-99d84c92580c
-    question: "Is this way is a correct way to disable csrf in a form ?public function configureOptions(OptionsResolver $resolver): void {  $resolver->setDefaults([     'csrf_protection' => false,  ]}"
+    question: "Is csrf_protection set to false in configureOptions' method, a correct way to disable csrf in a form ?"
     answers:
       - { value: 'No', correct: false }
       - { value: 'Yes', correct: true }

@@ -32,14 +32,3 @@ questions:
       - { value: 'pass one or more group names as the second argument of $validator->validate()', correct: false }
       - { value: 'use $validator->setValidationGroups(array)', correct: false }
     help: 'https://symfony.com/doc/current/validation/groups.html'
-  -
-    uuid: 1eebf878-8ba7-6506-930e-99d84c92580c
-    question: 'Given the following class and constraints:  class User  {  /** @Assert\Email(groups={ registration })*/   private $email;  /**   * @Assert\NotBlank(groups={ registration })   * @Assert\Length(min=7, groups={ registration })   */   private $password;  /** @Assert\Length(min=2) */   private $city;  }  How many validation groups does this class contain?'
-    answers:
-      - { value: '1', correct: false }
-      - { value: '4', correct: false }
-      - { value: '0', correct: false }
-      - { value: '2', correct: false }
-      - { value: '5', correct: false }
-      - { value: '3', correct: true }
-    help: 'https://symfony.com/doc/current/validation/groups.html'

@@ -131,37 +131,37 @@ questions:
     uuid: 1ef5688e-e5f8-6e30-b003-89b7cdb1df56
     question: 'Which method is used to retrieve all services tagged with a specific tag within a compiler pass?'
     answers:
-      - {value: 'getTaggedServices()', correct: false}
-      - {value: 'findTaggedServiceIds()', correct: true}
-      - {value: 'collectServicesByTag()', correct: false}
-      - {value: 'getServicesByTag()', correct: false}
+      - { value: getTaggedServices(), correct: false }
+      - { value: findTaggedServiceIds(), correct: true }
+      - { value: collectServicesByTag(), correct: false }
+      - { value: getServicesByTag(), correct: false }
     help: 'https://symfony.com/doc/current/service_container/tags.html#create-a-compiler-pass'
   -
     uuid: 1ef56899-7f4c-655a-9d8a-6b169618089b
     question: 'Which option allows you to exclude certain services from being injected via a tagged iterator?'
     answers:
-      - {value: 'exclude_option', correct: false}
-      - {value: 'exclude_service', correct: false}
-      - {value: 'exclude_self', correct: true}
-      - {value: 'exclude_tag', correct: false}
+      - { value: exclude_option, correct: false }
+      - { value: exclude_service, correct: false }
+      - { value: exclude_self, correct: true }
+      - { value: exclude_tag, correct: false }
     help: 'https://symfony.com/doc/current/service_container/tags.html#reference-tagged-services'
   -
     uuid: 1ef568cb-c085-6e0e-a47e-11ec7915fe68
     question: 'When creating a custom tag, which Symfony component is typically used to process services with that tag?'
     answers:
-      - {value: 'EventDispatcher', correct: false}
-      - {value: 'KernelEvents', correct: false}
-      - {value: 'CompilerPassInterface', correct: true}
-      - {value: 'LoggerInterface', correct: false}
+      - { value: EventDispatcher, correct: false }
+      - { value: KernelEvents, correct: false }
+      - { value: CompilerPassInterface, correct: true }
+      - { value: LoggerInterface, correct: false }
     help: 'https://symfony.com/doc/current/service_container/tags.html#reference-tagged-services'
   -
     uuid: 1ef65d9b-8263-67dc-8360-55648c706b2e
     question: 'What tag is used to introduce a new HTTP content rendering strategy?'
     answers:
-      - {value: 'kernel.fragment_renderer', correct: true}
-      - {value: 'kernel.renderer', correct: false}
-      - {value: 'fragment_renderer', correct: false}
-      - {value: 'kernel.content_renderer', correct: false}
-      - {value: 'content_renderer', correct: false}
-      - {value: 'renderer', correct: false}
+      - { value: kernel.fragment_renderer, correct: true }
+      - { value: kernel.renderer, correct: false }
+      - { value: fragment_renderer, correct: false }
+      - { value: kernel.content_renderer, correct: false }
+      - { value: content_renderer, correct: false }
+      - { value: renderer, correct: false }
     help: 'https://symfony.com/doc/current/reference/dic_tags.html#kernel-fragment-renderer'

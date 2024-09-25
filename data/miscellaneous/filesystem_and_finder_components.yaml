@@ -42,7 +42,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/filesystem.html#dumpfile'
   -
     uuid: 1eebf878-8b9a-67de-9c30-99d84c92580c
-    question: "Is the following code valid?   $fs = (new Filesystem())->mirror('/srv/app', '/srv/bar', null, ['delete' => true]);"
+    question: "Is the following code valid?     $fs = (new Filesystem())->mirror('/srv/app', '/srv/bar', null, ['delete' => true]);"
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
