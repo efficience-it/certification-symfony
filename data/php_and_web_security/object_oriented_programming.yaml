@@ -81,7 +81,7 @@ questions:
     help: 'https://php.net/manual/fr/book.reflection.php'
   -
     uuid: 1eebf878-8ba5-6116-88ba-99d84c92580c
-    question: 'Is it possible make $tags directly indexed with a specified field ?/** @Entity */ class Content { /** @OneToMany(targetEntity= Tag ) */ private Tag $tags; }'
+    question: 'Is it possible make $tags directly indexed with a specified field ?/** @Entity */ class Content { /** @OneToMany(targetEntity="Tag") */ private Tag $tags; }'
     answers:
       - { value: 'Yes, by adding the attribute indexBy to the OneToMany annotation', correct: true }
       - { value: 'No', correct: false }
