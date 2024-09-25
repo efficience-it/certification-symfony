@@ -137,7 +137,7 @@ questions:
     help: 'https://www.php.net/manual/en/language.oop5.basic.php'
   -
     uuid: 1eee6d8c-bb3e-6298-9026-3709308913cb
-    question: 'Which assertion is true if Child extends Test, and the Test class contains static public function getNew() { return new static;}.<br><br><br><br>'
+    question: 'Which assertion is true if Child extends Test, and the Test class contains static public function getNew() { return new static;}.'
     answers:
       - { value: 'Test::getNew() instanceof Test', correct: true }
       - { value: 'Child::getNew() instanceof Child', correct: true }

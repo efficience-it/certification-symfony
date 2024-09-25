@@ -10,11 +10,11 @@ questions:
     uuid: 1eebf878-8b99-6bea-907b-99d84c92580c
     question: 'Which of the following constants from Symfony\Component\Console\Input\InputArgument do not exist?'
     answers:
-      - {value: 'REQUIRED', correct: false}
-      - {value: 'NEGATABLE', correct: true}
-      - {value: 'IS_ARRAY', correct: false}
-      - {value: 'OPTIONAL', correct: false}
-      - {value: 'NONE', correct: true}
+      - { value: REQUIRED, correct: false }
+      - { value: NEGATABLE, correct: true }
+      - { value: IS_ARRAY, correct: false }
+      - { value: OPTIONAL, correct: false }
+      - { value: NONE, correct: true }
     help: 'https://github.com/symfony/console/blob/7.0/Input/InputArgument.php'
   -
     uuid: 1eebf878-8b9b-61b6-82fd-99d84c92580c
@@ -44,7 +44,7 @@ questions:
     help: 'https://symfony.com/doc/current/console.html#creating-a-command'
   -
     uuid: 1eebf878-8ba3-6b36-baf6-99d84c92580c
-    question: "What needs to be done to register a custom command so it can be executed and listed when you execute php bin/console list ?"
+    question: 'What needs to be done to register a custom command so it can be executed and listed when you execute php bin/console list ?'
     answers:
       - { value: 'Add it to the registerCommands() method in the AppKernel class', correct: false }
       - { value: 'Define the command as a service and tag it with kernel.command.', correct: false }
