@@ -55,7 +55,7 @@ questions:
     help: 'https://symfony.com/doc/current/reference/dic_tags.html#form-type'
   -
     uuid: 1eebf878-8ba9-6a4a-8062-99d84c92580c
-    question: 'Consider the following HTML generated from a Symfony form: <form method="POST" action="/" > <input type="hidden" name="_method" value="PUT" /> </form> Which HTTP method will be present in the Symfony Request object assuming HTTP methods overriding setting is turned on?'
+    question: 'Consider the following HTML generated from a Symfony form: <form method="POST" action="/"> <input type="hidden" name="_method" value="PUT" /> </form> Which HTTP method will be present in the Symfony Request object assuming HTTP methods overriding setting is turned on?'
     answers:
       - { value: PATCH, correct: false }
       - { value: PUT, correct: true }

@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8b97-62be-936c-99d84c92580c
-    question: 'When the checkbox field  foo  is checked and the form is submitted, what will $form[ foo ]->getData() return?'
+    question: 'When the checkbox field "foo" is checked and the form is submitted, what will $form["foo"]->getData() return?'
     answers:
       - { value: 'true', correct: true }
       - { value: bar, correct: false }
@@ -43,7 +43,7 @@ questions:
     question: 'What is the main difference between the Symfony\Component\Form\Extension\Core\Type\BirthdayType form type and its parent Symfony\Component\Form\Extension\Core\Type\DateType ?'
     answers:
       - { value: 'Those form types does not inherit from each other.', correct: false }
-      - { value: 'It adds a little  bithday cake  icon right before the widget.', correct: false }
+      - { value: 'It adds a little "bithday cake" icon right before the widget.', correct: false }
       - { value: 'It defaults the years option to 120 years ago to the current year.', correct: true }
       - { value: 'This is only semantical, there is no real difference between them.', correct: false }
     help: 'https://symfony.com/doc/current/reference/forms/types/birthday.html'
@@ -92,7 +92,7 @@ questions:
     help: 'https://symfony.com/doc/current/reference/forms/types/money.html'
   -
     uuid: 1eebf878-8b99-6c30-8ce8-99d84c92580c
-    question: 'Which option should you use to render a DateType form type as an HTML5 <input type= date >?'
+    question: 'Which option should you use to render a DateType form type as an HTML5 <input type="date">?'
     answers:
       - { value: no_javascript, correct: false }
       - { value: type_date, correct: false }
@@ -189,10 +189,10 @@ questions:
     uuid: 1eebf878-8b9f-6874-968c-99d84c92580c
     question: 'Inside a form type, how to render a DateType field in an text input field?'
     answers:
-      - { value: 'Add an option  render  =>  input ', correct: false }
-      - { value: 'Add an option  widget  =>  text ', correct: false }
-      - { value: 'Add an option  widget  =>  single_text ', correct: true }
-      - { value: 'Add an option  widget  =>  input ', correct: false }
+      - { value: 'Add an option "render" => "input"', correct: false }
+      - { value: 'Add an option "widget" => "text"', correct: false }
+      - { value: 'Add an option "widget" => "single_text"', correct: true }
+      - { value: 'Add an option "widget" => "input"', correct: false }
     help: 'https://symfony.com/doc/current/reference/forms/types/date.html#widget'
   -
     uuid: 1eebf878-8b9f-6ff4-9937-99d84c92580c

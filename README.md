@@ -195,3 +195,4 @@ Ready to get certified? [Buy a voucher and register here](https://certification.
 For more information, read this [comprehensive article](https://www.itefficience.com/article/la-certification-twig-une-1ere-pour-le-chemin-de-la-certif-symfony).
 
 Interested in training with our team? [Contact us](https://www.itefficience.com/contact)!
+

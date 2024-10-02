@@ -3,9 +3,9 @@ questions:
     uuid: 1eebf878-8b98-64b6-97b1-99d84c92580c
     question: 'What is the format of the Media-Type value inside Content-Type and Accept headers?'
     answers:
-      - { value: 'type  /  subtype *( OWS  ;  OWS parameter )', correct: true }
-      - { value: 'type ** subtype *( OWS  ;  OWS parameter )', correct: false }
-      - { value: 'type + subtype *( OWS  ;  OWS parameter )', correct: false }
+      - { value: 'type "/" subtype *( OWS ";" OWS parameter )', correct: true }
+      - { value: 'type ** subtype *( OWS ";" OWS parameter )', correct: false }
+      - { value: 'type + subtype *( OWS ";" OWS parameter )', correct: false }
     help: 'https://tools.ietf.org/html/rfc7231#section-3.1.1.1'
   -
     uuid: 1eebf878-8b98-6812-9467-99d84c92580c

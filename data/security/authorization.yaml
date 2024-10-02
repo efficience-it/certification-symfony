@@ -35,7 +35,7 @@ questions:
     help: 'https://symfony.com/doc/current/security.html#securing-other-services'
   -
     uuid: 1eedb101-2d08-6c3c-bfe5-f9db4bc17b6f
-    question: 'What is the default lifetime value for the  Remember me  Cookie ?'
+    question: 'What is the default lifetime value for the "Remember me" Cookie ?'
     answers:
       - { value: '1 year', correct: true }
       - { value: '1 week', correct: false }

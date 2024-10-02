@@ -43,7 +43,7 @@ questions:
     help: 'https://symfony.com/doc/current/forms.html#processing-forms'
   -
     uuid: 1eebf878-8b9f-6d6a-8927-99d84c92580c
-    question: 'Using form component, option  error_bubbling  will include error in current field.'
+    question: 'Using form component, option "error_bubbling" will include error in current field.'
     answers:
       - { value: 'True', correct: false }
       - { value: 'False', correct: true }

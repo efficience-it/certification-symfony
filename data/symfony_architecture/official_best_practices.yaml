@@ -106,11 +106,11 @@ questions:
     uuid: 1eee7676-c5ec-6a8a-9026-1776563d9f7e
     question: 'According to the official Symfony Best Practices Guide, where do you need to store the translation files?'
     answers:
-      - {value: 'in the  Resources/translations/<language>  directory of each bundle', correct: false}
-      - { value: 'in the  app/Resources/translations/<language>  directory', correct: false }
-      - { value: 'in the  app/Resources/translations/  directory', correct: false }
-      - { value: 'in the  Resources/translations/  directory of each bundle', correct: false }
-      - { value: 'in the  translations/  directory', correct: true }
+      - { value: 'in the "Resources/translations/language" directory of each bundle', correct: false }
+      - { value: 'in the "app/Resources/translations/<language>" directory', correct: false }
+      - { value: 'in the "app/Resources/translations/" directory', correct: false }
+      - { value: 'in the "Resources/translations/" directory of each bundle', correct: false }
+      - { value: 'in the "translations/" directory', correct: true }
     help: 'https://symfony.com/doc/current/best_practices.html#use-the-default-directory-structure'
   -
     uuid: 1eee768b-076d-6ab8-9026-f7fba49cfdf8

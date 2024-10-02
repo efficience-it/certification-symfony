@@ -30,7 +30,7 @@ questions:
     help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php'
   -
     uuid: 1eed57ff-6525-62ba-9d10-15125f5105d0
-    question: 'Is this mapping correct ?/** @Column(name= number , type= integer ) */ private $number;'
+    question: 'Is this mapping correct ? /** @Column(name="number", type="integer") */ private $number;'
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }

@@ -1,7 +1,7 @@
 questions:
   -
     uuid: 1eebf878-8ba8-664a-9334-99d84c92580c
-    question: 'Is suffix  Trait  mandatory for traits ?'
+    question: 'Is suffix "Trait" mandatory for traits ?'
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
@@ -78,7 +78,7 @@ questions:
     help: 'https://symfony.com/doc/current/contributing/code/standards.html#naming-conventions'
   -
     uuid: 1eeda2d4-2696-6a56-a432-913a625d7cea
-    question: "Isn't suffix  Exception  mandatory for exceptions ?"
+    question: 'Isn"t suffix "Exception" mandatory for exceptions ?'
     answers:
       - { value: 'No', correct: true }
       - { value: 'Yes', correct: false }

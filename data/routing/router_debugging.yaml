@@ -29,7 +29,7 @@ questions:
     help: 'https://symfony.com/doc/current/routing.html#debugging-routes'
   -
     uuid: 1eebf878-8ba8-63a2-b6e6-99d84c92580c
-    question: "Does the option --show-aliases on the debug:router show you available aliases for a given route ?"
+    question: 'Does the option --show-aliases on the debug:router show you available aliases for a given route ?'
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }

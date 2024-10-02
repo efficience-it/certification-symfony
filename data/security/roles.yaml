@@ -20,10 +20,10 @@ questions:
     uuid: 1eebf878-8ba1-6458-b8ae-99d84c92580c
     question: 'Which annotation is valid to check role ?'
     answers:
-      - { value: '@Security( is_granted( ROLE_ADMIN ) )', correct: true }
-      - { value: '@IsGranted( ROLE_ADMIN )', correct: true }
-      - { value: '@Security( restrict_for( ROLE_ADMIN ) )', correct: false }
-      - { value: '@Security( role( ROLE_ADMIN ) )', correct: false }
+      - { value: '@Security("is_granted("ROLE_ADMIN")")', correct: true }
+      - { value: '@IsGranted("ROLE_ADMIN")', correct: true }
+      - { value: '@Security("restrict_for("ROLE_ADMIN")")', correct: false }
+      - { value: '@Security("role("ROLE_ADMIN")")', correct: false }
     help: 'https://symfony.com/bundles/SensioFrameworkExtraBundle/current/annotations/security.html'
   -
     uuid: 1eebf878-8ba1-64a8-a6c8-99d84c92580c

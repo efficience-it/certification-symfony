@@ -53,10 +53,10 @@ questions:
     uuid: 1eebf878-8b9e-61c2-bcfc-99d84c92580c
     question: 'How to disable constructor when mocking an object?'
     answers:
-      - { value: '$this->getMock( My\Class )->disableOriginalConstructor()->getMock()', correct: false }
-      - { value: '$this->disableOriginalConstructor( My\Class'')', correct: false }
-      - { value: '$this->getMockBuilder( My\Class )->disableOriginalConstructor()->getMock()', correct: true }
-      - { value: '$this->getMockBuilder( My\Class )->getMock()->disableConstructor()', correct: false }
+      - { value: '$this->getMock("My\Class")->disableOriginalConstructor()->getMock()', correct: false }
+      - { value: '$this->disableOriginalConstructor("My\Class")', correct: false }
+      - { value: '$this->getMockBuilder("My\Class")->disableOriginalConstructor()->getMock()', correct: true }
+      - { value: '$this->getMockBuilder("My\Class")->getMock()->disableConstructor()', correct: false }
     help: 'https://phpunit.de/manual/6.5/en/test-doubles.html#test-doubles.stubs.examples.StubTest2.php'
   -
     uuid: 1eebf878-8b9e-6320-adc3-99d84c92580c

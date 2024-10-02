@@ -33,17 +33,6 @@ questions:
       - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/current/templates.html#rendering-a-template-in-controllers'
   -
-    uuid: 1eebf878-8ba8-6f3c-bff0-99d84c92580c
-    question: 'Which method is valid to render a Response ?'
-    answers:
-      - { value: 'return $this->render( product/index.html.twig );', correct: true }
-      - { value: '$contents = $this->renderView( product/index.html.twig );   return new Response($contents);', correct: true }
-      - { value: '$contents = $this->render( product/index.html.twig );    return new Response($contents);', correct: false }
-      - { value: '#[Template( product/index.html.twig )]     public function index(): array {  return [ ];  }', correct: true }
-      - { value: 'return $this->renderBlock( product/index.html.twig ,  price_block );', correct: true }
-      - { value: '$contents = $this->renderBlockView( product/index.html.twig ,  price_block );  return new Response($contents);', correct: true }
-    help: 'https://symfony.com/doc/current/templates.html#rendering-a-template-in-controllers'
-  -
     uuid: 1eebf878-8ba8-6f96-ac3b-99d84c92580c
     question: 'What are the correct way to render a controller from twig ?'
     answers:

@@ -32,7 +32,7 @@ questions:
     question: 'How can you deny access to user in your controller ?'
     answers:
       - { value: "$this->denyAccessUnlessGranted('ROLE_ADMIN')", correct: true }
-      - { value: '@Security( is_granted( ROLE_ADMIN ) )', correct: true }
+      - { value: '@Security("is_granted("ROLE_ADMIN")")', correct: true }
       - { value: "$this->user->denyAccessUnlessGranted('ROLE_ADMIN')", correct: false }
     help: 'https://symfony.com/doc/current/security.html'
   -

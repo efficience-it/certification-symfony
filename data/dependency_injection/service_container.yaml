@@ -18,7 +18,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/dependency_injection/compilation.html#controlling-the-pass-ordering'
   -
     uuid: 1eebf878-8b98-6344-9f43-99d84c92580c
-    question: "Let's assume, we have a private service my_private_service. Will this work ?$container->get('my_private_service');"
+    question: "Let's assume, we have a private service my_private_service. Will this work ? $container->get('my_private_service');"
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
@@ -129,7 +129,7 @@ questions:
     help: 'https://symfony.com/doc/current/service_container/injection_types.html'
   -
     uuid: 1eebf878-8b9a-6c0c-89ff-99d84c92580c
-    question: 'What is a  Service Configurator  in Symfony?'
+    question: 'What is a "Service Configurator" in Symfony?'
     answers:
       - { value: "It's a Symfony built-in service that can be obtained as $container->get('configurator')", correct: false }
       - { value: "There's no such a thing in Symfony's Dependency Injection component.", correct: false }
@@ -328,7 +328,7 @@ questions:
     help: 'https://symfony.com/doc/current/service_container.html'
   -
     uuid: 1ef5c0ac-c210-6358-aea3-8f65d65ecf88
-    question: 'How can you make a service available only in the  dev  environment?'
+    question: 'How can you make a service available only in the "dev" environment?'
     answers:
       - { value: 'By using the autowire: false option.', correct: false }
       - { value: "By adding the #[When(env: 'dev')] attribute to the service class.", correct: true }
@@ -368,7 +368,7 @@ questions:
     answers:
       - { value: 'It defers the instantiation of the service until it is actually needed.', correct: true }
       - { value: 'It prevents the service from being injected into other services.', correct: false }
-      - { value: 'It makes the service available only in the  prod  environment.', correct: false }
+      - { value: 'It makes the service available only in the "prod" environment.', correct: false }
     help: 'https://symfony.com/doc/current/service_container/lazy_services.html'
   -
     uuid: 1ef5c0c1-1ac7-64a6-9cbf-45ad2711c61f
