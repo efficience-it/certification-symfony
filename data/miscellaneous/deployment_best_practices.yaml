@@ -29,7 +29,7 @@ questions:
     help: 'https://symfony.com/doc/current/performance.html#configure-opcache-for-maximum-performance'
   -
     uuid: 1eebf878-8ba8-6c9e-a896-99d84c92580c
-    question: 'In production servers, PHP files should never change, unless a new application version is deployed. However, by default OPcache checks if cached files have changed their contents since they were cached.    How it is done to uncheck some overhead that can be avoided ?'
+    question: "In production servers, PHP files should never change, unless a new application version is deployed. However, by default OPcache checks if cached files have changed their contents since they were cached. How it is done to uncheck some overhead that can be avoided ?"
     answers:
       - { value: 'In php.ini: opcache.validate_timestamps=0', correct: true }
       - { value: 'In php.ini: opcache.invalidate_timestamps=1', correct: false }

@@ -109,8 +109,8 @@ questions:
     question: 'How could you know if a User can switch to another account ?'
     answers:
       - { value: $this->getUser()->canSwitchUser(), correct: false }
-      - { value: '$this->getUser()->hasRole( ROLE_ALLOWED_TO_SWITCH )', correct: false }
-      - { value: '$this->isGranted( ROLE_ALLOWED_TO_SWITCH )', correct: true }
+      - { value: '$this->getUser()->hasRole("ROLE_ALLOWED_TO_SWITCH")', correct: false }
+      - { value: '$this->isGranted("ROLE_ALLOWED_TO_SWITCH")', correct: true }
       - { value: "twig: is_granted('IS_IMPERSONATOR')", correct: true }
     help: 'https://symfony.com/doc/current/security/impersonating_user.html#knowing-when-impersonation-is-active'
   -

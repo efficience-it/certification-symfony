@@ -19,10 +19,10 @@ questions:
     uuid: 1eebf878-8b9e-6ffa-a320-99d84c92580c
     question: 'How to perform a redirection on example.org in a controller?'
     answers:
-      - { value: 'return $this->redirect($this->generateUrl( https://www.example.org ))', correct: false }
-      - { value: 'return $this->redirectUrl( https://www.example.org )', correct: false }
-      - { value: 'return $this->redirect( https://www.example.org )', correct: true }
-      - { value: 'return $this->generateUrl( https://www.example.org )', correct: false }
+      - { value: 'return $this->redirect($this->generateUrl("https://www.example.org"))', correct: false }
+      - { value: 'return $this->redirectUrl("https://www.example.org")', correct: false }
+      - { value: 'return $this->redirect("https://www.example.org")', correct: true }
+      - { value: 'return $this->generateUrl("https://www.example.org")', correct: false }
     help: 'https://symfony.com/doc/current/controller.html#redirecting'
   -
     uuid: 1eebf878-8ba8-692e-8bef-99d84c92580c

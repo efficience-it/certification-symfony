@@ -17,7 +17,7 @@ questions:
     help: 'https://twig.symfony.com/doc/3.x/tags/autoescape.html'
   -
     uuid: 1eebf878-8ba7-6a74-9215-99d84c92580c
-    question: 'What does the raw filter do in Twig?    {% autoescape %} {{ safe_value|raw }} {% endautoescape %}'
+    question: 'What does the raw filter do in Twig? {% autoescape %} {{ safe_value|raw }} {% endautoescape %}'
     answers:
       - { value: 'It escapes the content of a variable.', correct: false }
       - { value: 'It marks a value as safe, preventing it from being escaped.', correct: true }

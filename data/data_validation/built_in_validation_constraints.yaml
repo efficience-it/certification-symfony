@@ -41,7 +41,7 @@ questions:
     uuid: 1eebf878-8b9f-6d24-94f5-99d84c92580c
     question: 'How do you bind a constraint to a form field?'
     answers:
-      - { value: 'Using option  constraints  in $formBuilder->add()', correct: true }
+      - { value: 'Using option "constraints" in $formBuilder->add()', correct: true }
       - { value: 'Passing constraint instance in $this->createFormBuilder()', correct: false }
       - { value: 'Invoke $formBuilder->setConstraints() method', correct: false }
       - { value: 'Add an annotation in model', correct: true }
@@ -71,7 +71,7 @@ questions:
       - { value: 'null', correct: true }
       - { value: '2020-01-15', correct: true }
       - { value: 15/01/2020, correct: false }
-      - { value: 'new \DateTime( 2020-01-15 )', correct: false }
+      - { value: 'new \DateTime("2020-01-15")', correct: false }
       - { value: '2020-13-15', correct: false }
       - { value: 15/13/2020, correct: false }
     help: 'https://symfony.com/doc/current/reference/constraints/Date.html'

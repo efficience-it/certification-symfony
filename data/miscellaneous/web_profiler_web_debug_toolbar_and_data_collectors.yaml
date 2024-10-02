@@ -32,7 +32,7 @@ questions:
     answers:
       - { value: 'Yes with a profiler link given in the response header', correct: true }
       - { value: 'No profiler is only available for html response', correct: false }
-      - { value: 'Yes the json response give a key  _profiler  with the debug informations', correct: false }
+      - { value: 'Yes the json response give a key "_profiler" with the debug informations', correct: false }
     help: 'https://symfony.com/doc/current/profiler.html#installation'
   -
     uuid: 1eee69ac-3275-6b5c-9026-4566c29ff6d6

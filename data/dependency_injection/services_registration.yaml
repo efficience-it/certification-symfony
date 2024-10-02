@@ -12,17 +12,17 @@ questions:
     uuid: 1eebf878-8b9f-663a-9d4f-99d84c92580c
     question: 'What is the correct syntax to inject a service app.mailer ?'
     answers:
-      - { value: 'arguments: [ @app.mailer ]', correct: true }
-      - { value: 'arguments: [ %app.mailer% ]', correct: false }
-      - { value: 'arguments: [ app.mailer ]', correct: false }
+      - { value: 'arguments: ["@app.mailer"]', correct: true }
+      - { value: 'arguments: ["%app.mailer%"]', correct: false }
+      - { value: 'arguments: ["app.mailer"]', correct: false }
     help: 'https://symfony.com/doc/current/service_container.html#service-parameters'
   -
     uuid: 1eebf878-8b9f-6680-a3eb-99d84c92580c
     question: 'What is the correct syntax to inject a parameter mailer.transport ?'
     answers:
-      - { value: 'arguments: [ @mailer.transport ]', correct: false }
-      - { value: 'arguments: [ %mailer.transport% ]', correct: true }
-      - { value: 'arguments: [ mailer.transport ]', correct: false }
+      - { value: 'arguments: ["@mailer.transport"]', correct: false }
+      - { value: 'arguments: ["%mailer.transport%"]', correct: true }
+      - { value: 'arguments: ["mailer.transport"]', correct: false }
     help: 'https://symfony.com/doc/current/configuration.html#configuration-parameters'
   -
     uuid: 1eebf878-8b9f-66c6-922d-99d84c92580c

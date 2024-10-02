@@ -65,7 +65,7 @@ questions:
       - { value: "A GET request's response is cachable", correct: true }
       - { value: 'A GET request is safe', correct: true }
       - { value: 'A GET request requires a body', correct: false }
-      - { value: 'A GET request needs an  User-Agent  header', correct: false }
+      - { value: 'A GET request needs an "User-Agent" header', correct: false }
       - { value: 'This method is defined by RFC5789', correct: false }
     help: 'https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Summary_table'
   -
@@ -80,5 +80,5 @@ questions:
       - { value: 'The server must support it', correct: true }
       - { value: 'A HEAD request contains a body', correct: false }
       - { value: "A HEAD request's response contains a body", correct: false }
-      - { value: 'A HEAD request needs an  Http-Version  header', correct: false }
+      - { value: 'A HEAD request needs an "Http-Version" header', correct: false }
     help: 'https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol#Summary_table'

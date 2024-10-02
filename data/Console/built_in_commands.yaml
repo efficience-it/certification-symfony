@@ -103,7 +103,7 @@ questions:
     help: 'https://symfony.com/doc/current/service_container.html#linting-service-definitions'
   -
     uuid: 1eebf878-8ba7-6466-8627-99d84c92580c
-    question: 'Which  Tester  class should you use to test a console event?'
+    question: 'Which "Tester" class should you use to test a console event?'
     answers:
       - { value: Symfony\Component\Console\Tester\CommandTester, correct: false }
       - { value: Symfony\Component\Console\Tester\CommandCompletionTester, correct: false }

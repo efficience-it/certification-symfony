@@ -13,9 +13,9 @@ questions:
     uuid: 1eebf878-8ba3-6e9c-9225-99d84c92580c
     question: 'Which of these are correct ways to create a redirection response in a controller that extends Symfony\Bundle\FrameworkBundle\Controller\AbstractController?'
     answers:
-      - { value: '$response = $this->redirect($this->generate( homepage ))', correct: true }
-      - { value: '$response = $this->redirect( https://myapp.com/ )', correct: true }
-      - { value: '$response = new RedirectionResponse( / )', correct: false }
-      - { value: '$response = new RedirectResponse( https://myapp.com/ )', correct: false }
-      - { value: '$response = $this->redirectToRoute( homepage )', correct: true }
+      - { value: '$response = $this->redirect($this->generate("homepage"))', correct: true }
+      - { value: '$response = $this->redirect("https://myapp.com/")', correct: true }
+      - { value: '$response = new RedirectionResponse("/")', correct: false }
+      - { value: '$response = new RedirectResponse("https://myapp.com/")', correct: false }
+      - { value: '$response = $this->redirectToRoute("homepage")', correct: true }
     help: 'https://symfony.com/doc/current/controller.html#redirecting'

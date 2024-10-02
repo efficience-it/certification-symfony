@@ -48,7 +48,7 @@ questions:
     help: 'https://symfony.com/doc/current/reference/forms/types.html'
   -
     uuid: 1eebf878-8ba2-6f74-bd21-99d84c92580c
-    question: 'Which option should you use to have a DateType form rendered in HTML5 input type= date ?'
+    question: 'Which option should you use to have a DateType form rendered in HTML5 input type="date"?'
     answers:
       - { value: datepicker, correct: false }
       - { value: html5, correct: true }
@@ -68,7 +68,7 @@ questions:
     uuid: 1eec045b-a03a-6704-a20d-5305a622e54a
     question: 'What are the valid way to Assert Choices in a Validator ?'
     answers:
-      - { value: "#[Assert\\Choice( choices: ['fiction', 'non-fiction'])]    private string $genre;", correct: true }
-      - { value: "#[Assert\\Choices(['fiction', 'non-fiction'])]    private string $genre;", correct: false }
-      - { value: "#[Assert\\Choice(['fiction', 'non-fiction'])]    private string $genre;", correct: true }
+      - { value: "#[Assert\\Choice( choices: ['fiction', 'non-fiction'])]\r\n\r\nprivate string $genre;", correct: true }
+      - { value: "#[Assert\\Choices(['fiction', 'non-fiction'])]\r\n\r\nprivate string $genre;", correct: false }
+      - { value: "#[Assert\\Choice(['fiction', 'non-fiction'])]\r\n\r\nprivate string $genre;", correct: true }
     help: 'https://symfony.com/doc/current/validation.html#constraint-configuration'

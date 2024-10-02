@@ -152,14 +152,14 @@ questions:
     help: 'https://symfony.com/doc/current/setup/flex.html#customizing-flex-paths'
   -
     uuid: 1ef562a5-90da-6c8a-8a47-9f1995dbf2d9
-    question: 'Some structure folders in symfony can be moved by specifying in the composer.json an  extra  section and adding src-dir for the src for example.'
+    question: 'Some structure folders in symfony can be moved by specifying in the composer.json an "extra" section and adding src-dir for the src for example.'
     answers:
       - { value: 'True', correct: true }
       - { value: 'False', correct: false }
     help: 'https://symfony.com/doc/current/setup/flex.html#customizing-flex-paths'
   -
     uuid: 1ef562a7-a056-6676-8e1f-11075f5e94f6
-    question: 'Some structure folders in symfony can be moved by specifying in the composer.json an  extra  section and adding dir-public for the public folder for example.'
+    question: 'Some structure folders in symfony can be moved by specifying in the composer.json an "extra" section and adding dir-public for the public folder for example.'
     answers:
       - { value: 'True', correct: false }
       - { value: 'False', correct: true }

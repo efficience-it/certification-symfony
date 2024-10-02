@@ -12,7 +12,7 @@ questions:
     help: 'https://symfony.com/doc/current/routing.html#matching-expressions'
   -
     uuid: 1eebf878-8ba8-6438-9c57-99d84c92580c
-    question: "What are the accessible variables you can call to restrict a route ?"
+    question: 'What are the accessible variables you can call to restrict a route ?'
     answers:
       - { value: context, correct: true }
       - { value: request, correct: true }

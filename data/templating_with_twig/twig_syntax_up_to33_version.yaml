@@ -124,7 +124,7 @@ questions:
     answers:
       - { value: '{{ Namespace\\Classname::CONSTANT_NAME }}', correct: false }
       - { value: '{{ Namespace\Classname::CONSTANT_NAME }}', correct: false }
-      - { value: "{{ constant('Namespace\\Classname::CONSTANT_NAME') }}", correct: true }
+      - { value: '{{ constant("Namespace\\Classname::CONSTANT_NAME") }}', correct: true }
     help: 'https://twig.symfony.com/doc/functions/constant.html'
   -
     uuid: 1eebf878-8ba4-62de-8eca-99d84c92580c
@@ -185,10 +185,10 @@ questions:
     uuid: 1eebf878-8ba9-6964-bbd3-99d84c92580c
     question: 'In a Twig template, how can you test that a given constant is defined by PHP? (Example, how can you check if VERSION constant is defined by Symfony\Component\HttpKernel\Kernel class?)'
     answers:
-      - {value: '{% if constant("Symfony\\Component\\HttpKernel\\Kernel::VERSION") ?? %} ... {% endif %}', correct: false}
-      - {value: '{% if constant("Symfony\\Component\\HttpKernel\\Kernel::VERSION") is defined %} ... {% endif %}', correct: true}
-      - {value: '{% if constant("VERSION", "Symfony\\Component\\HttpKernel\\Kernel") %}...{% endif %}', correct: false}
-      - {value: '{% if defined("Symfony\\Component\\HttpKernel\\Kernel::VERSION") %}...{% endif %}', correct: false}
+      - { value: '{% if constant("Symfony\\Component\\HttpKernel\\Kernel::VERSION") ?? %} ... {% endif %}', correct: false }
+      - { value: '{% if constant("Symfony\\Component\\HttpKernel\\Kernel::VERSION") is defined %} ... {% endif %}', correct: true }
+      - { value: '{% if constant("VERSION", "Symfony\\Component\\HttpKernel\\Kernel") %}...{% endif %}', correct: false }
+      - { value: '{% if defined("Symfony\\Component\\HttpKernel\\Kernel::VERSION") %}...{% endif %}', correct: false }
     help: 'https://twig.symfony.com/doc/functions/constant.html'
   -
     uuid: 1eebf878-8ba9-6e82-aa99-99d84c92580c
@@ -218,8 +218,8 @@ questions:
     uuid: 1eee76e3-3511-6002-9026-0376da4929df
     question: "Consider the following code snippet: {% set foo, bar = 'FOO' %} Foo is {{ foo }} and Bar is {{ bar }}. What will be the outcome of evaluating this Twig code?"
     answers:
-      - { value: 'The output will display the string  Foo is and Bar is . .', correct: false }
-      - { value: 'Twig will raise a  Twig_Error_Syntax  exception.', correct: true }
-      - { value: 'The output will display the string  Foo is FOO and Bar is . .', correct: false }
-      - { value: 'The output will display the string Foo is  FOO and Bar is FOO. .', correct: false }
+      - { value: 'The output will display the string "Foo is and Bar is .".', correct: false }
+      - { value: 'Twig will raise a "Twig_Error_Syntax" exception.', correct: true }
+      - { value: 'The output will display the string "Foo is FOO and Bar is .".', correct: false }
+      - { value: 'The output will display the string Foo is "FOO and Bar is FOO.".', correct: false }
     help: 'https://twig.symfony.com/doc/tags/set.html'

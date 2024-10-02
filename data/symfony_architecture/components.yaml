@@ -55,7 +55,7 @@ questions:
     help: 'https://github.com/symfony/dependency-injection/blob/3.4/Loader/Configurator/ContainerConfigurator.php#L125'
   -
     uuid: 1eebf878-8ba6-6908-890e-99d84c92580c
-    question: 'Is the following code valid? $parsed = Yaml::parse( !custom_tag { foo: bar } , Yaml::PARSE_CUSTOM_TAGS);'
+    question: 'Is the following code valid? $parsed = Yaml::parse("!custom_tag { foo: bar }", Yaml::PARSE_CUSTOM_TAGS);'
     answers:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
@@ -91,7 +91,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/serializer.html#installation'
   -
     uuid: 1eebf878-8ba7-6b64-abc4-99d84c92580c
-    question: 'Sometimes you may prefer to not save the objects immediately in order to increase the application performance. Which method would you call to mark cache items as  ready to be persisted  and then call to commit() method when you are ready to persist them all?'
+    question: 'Sometimes you may prefer to not save the objects immediately in order to increase the application performance. Which method would you call to mark cache items as ready to be persisted and then call to commit() method when you are ready to persist them all?'
     answers:
       - { value: save(), correct: false }
       - { value: defer(), correct: false }

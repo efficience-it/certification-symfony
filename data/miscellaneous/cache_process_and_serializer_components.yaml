@@ -190,7 +190,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/process.html#streaming-to-the-standard-input-of-a-process'
   -
     uuid: 1eebf878-8ba9-68ce-9102-99d84c92580c
-    question: "Given $process is a Process object that runs a command asynchronously; calling\_ $process->stop(3) will immediately send a SIGKILL signal to the running command."
+    question: 'Given $process is a Process object that runs a command asynchronously; calling $process->stop(3) will immediately send a SIGKILL signal to the running command.'
     answers:
       - { value: 'False', correct: true }
       - { value: 'True', correct: false }
