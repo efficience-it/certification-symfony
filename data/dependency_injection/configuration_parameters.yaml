@@ -227,7 +227,7 @@ questions:
     uuid: 1ef800d7-2fdf-6c5a-9de8-af45c8f65cf4
     question: 'If a parameter value includes the % character, how should it be written to escape it?'
     answers:
-      - { value: '%%', correct: false }
+      - { value: '%%', correct: true }
       - { value: '%%%', correct: false }
       - { value: '%', correct: false }
       - { value: '$%', correct: false }
