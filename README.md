@@ -172,7 +172,7 @@ Want to train with our team of experts? Reach out to us at [https://www.iteffici
 - [Client configuration](data/automated_tests/client_configuration.yaml)
 - Request and response objects introspection
 - [PHPUnit bridge](data/automated_tests/php_unit_bridge.yaml)
-- Handling legacy deprecated code
+- [Handling legacy deprecated code](data/automated_tests/handling_legacy_deprecated_code.yaml)
 
 ### 🎨 Miscellaneous
 - [Configuration (including DotEnv and ExpressionLanguage components)](data/miscellaneous/configuration_including_dot_env_and_expression_language_components.yaml)
@@ -185,7 +185,7 @@ Want to train with our team of experts? Reach out to us at [https://www.iteffici
 - [Filesystem and Finder components](data/miscellaneous/filesystem_and_finder_components.yaml)
 - [Lock component](data/miscellaneous/lock_component.yaml)
 - [Web Profiler, Web Debug Toolbar and Data collectors](data/miscellaneous/web_profiler_web_debug_toolbar_and_data_collectors.yaml)
-- Internationalization and localization (and Intl component)
+- [Internationalization and localization (and Intl component)](data/miscellaneous/internationalization_and_localization_and_intl_component.yaml)
 - Runtime component
 
 ## 📝 How to Register?
