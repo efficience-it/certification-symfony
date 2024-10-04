@@ -1,0 +1,55 @@
+questions:
+  -
+    uuid: 1ef81875-9c4f-65e2-b5d6-43c4a5df5335
+    question: 'What is a recommended practice when using keys for translations in Symfony?'
+    answers:
+      - { value: 'Always use the content string as the key', correct: false }
+      - { value: 'Use descriptive keys that represent the purpose, not the location.', correct: true }
+      - { value: 'Keys should be tied to the template or controller they are used in.', correct: false }
+      - { value: "Changing original content in templates doesn't affect the translation files when using keys.", correct: true }
+    help: 'https://symfony.com/doc/7.0/best_practices.html#use-keys-for-translations-instead-of-content-strings'
+  -
+    uuid: 1ef818d5-6e0e-6bc8-b929-295d4b61fad6
+    question: "In the Intl Component,\_ what will Languages::getAlpha3Name('fra') return?"
+    answers:
+      - { value: 'fr', correct: false }
+      - { value: 'French', correct: true }
+      - { value: 'France', correct: false }
+      - { value: 'fra', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/intl.html#language-and-script-names'
+  -
+    uuid: 1ef818dc-5ae6-61a2-bb1a-f17863ab1472
+    question: 'In the Intl Component, which method allows you to check if a given alpha-2 language code is valid?'
+    answers:
+      - { value: 'Languages::exists()', correct: true }
+      - { value: 'Languages::isValid()', correct: false }
+      - { value: 'Languages::check()', correct: false }
+      - { value: 'Languages::verify()', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/intl.html#language-and-script-names'
+  -
+    uuid: 1ef81920-20cc-6cc0-9ec1-89dd4ec708db
+    question: 'In the Intl Component, how can you get the name of a country using an alpha-3 code?'
+    answers:
+      - { value: "Countries::getAlpha3Name('NOR')", correct: true }
+      - { value: "Countries::getName('NOR')", correct: false }
+      - { value: "Countries::getAlpha2Name('NOR')", correct: false }
+      - { value: "Countries::getName('GB')", correct: false }
+    help: 'https://symfony.com/doc/7.0/components/intl.html#country-names'
+  -
+    uuid: 1ef81924-4632-6a9c-be72-1577ea4e3845
+    question: 'In the Intl Component, which method would you use to get the numeric code for one country ?'
+    answers:
+      - { value: 'Countries::getAlpha3Code()', correct: false }
+      - { value: 'Countries::getAlpha2Code()', correct: false }
+      - { value: 'Countries::getNumericCode()', correct: true }
+      - { value: 'Countries::getNumericCodes()', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/intl.html#numeric-country-codes'
+  -
+    uuid: 1ef8192c-5563-6234-acd6-bbcfb40752da
+    question: 'Which of the following is true about timezones in Symfony?'
+    answers:
+      - { value: 'Timezones can only be fetched in English.', correct: false }
+      - { value: 'You can get timezones specific to a country using Timezones::forCountryCode()', correct: true }
+      - { value: 'Timezones cannot be translated into other languages', correct: false }
+      - { value: 'Timezones only use GMT offsets', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/intl.html#timezones'

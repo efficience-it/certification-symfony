@@ -1,0 +1,59 @@
+questions:
+  -
+    uuid: 1ef816dd-16b3-62ce-951b-c92452510e23
+    question: 'What is the purpose of setting the SYMFONY_DEPRECATIONS_HELPER environment variable to a regular expression enclosed with slashes?'
+    answers:
+      - { value: 'To log deprecations to a file', correct: false }
+      - { value: 'To disable deprecation warnings', correct: false }
+      - { value: 'To inspect the stack trace of a specific deprecation triggered by your unit tests', correct: true }
+    help: 'https://symfony.com/doc/7.0/components/phpunit_bridge.html#configuration'
+  -
+    uuid: 1ef816ea-1979-692e-92ef-75964c3c7ae9
+    question: 'What happens if SYMFONY_DEPRECATIONS_HELPER is set to max[total]=0?'
+    answers:
+      - { value: 'Deprecations will be ignored', correct: false }
+      - { value: 'Tests will fail as soon as any deprecation is triggered', correct: true }
+      - { value: 'Direct deprecations will be ignored', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/phpunit_bridge.html#configuration'
+  -
+    uuid: 1ef816fc-8ec1-68aa-ab58-e70140761704
+    question: 'Which of the following will mark a test as legacy?'
+    answers:
+      - { value: 'Using @group legacy on the method', correct: true }
+      - { value: 'Prefixing the method name with testLegacy*()', correct: true }
+      - { value: 'Naming the class with the Legacy prefix', correct: true }
+      - { value: 'Silencing deprecations in the data provider with provideLegacy', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/phpunit_bridge.html#mark-tests-as-legacy'
+  -
+    uuid: 1ef81703-5204-600a-8d3d-17c10e239ac5
+    question: 'What is the recommended way to mark a test as legacy?'
+    answers:
+      - { value: 'Prefix the method name with testLegacy*()', correct: false }
+      - { value: 'Add the @group legacy annotation', correct: true }
+      - { value: 'Rename the test class to start with Legacy', correct: false }
+      - { value: 'Add an attribute #[Legacy()] on the method', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/phpunit_bridge.html#mark-tests-as-legacy'
+  -
+    uuid: 1ef81719-a217-60cc-8eb6-332e6b5c8468
+    question: 'What command displays deprecations generated during the container compilation process?'
+    answers:
+      - { value: 'php bin/console debug:container --deprecations', correct: true }
+      - { value: "SYMFONY_DEPRECATIONS_HELPER='logFile=/path/deprecations.log'", correct: false }
+      - { value: './vendor/bin/simple-phpunit --deprecations', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/phpunit_bridge.html#compile-time-deprecations'
+  -
+    uuid: 1ef8171d-5e1a-6424-ace0-93b0a9050e8f
+    question: 'What does SYMFONY_DEPRECATIONS_HELPER=max[self]=0 do?'
+    answers:
+      - { value: 'It ignores deprecations triggered in the vendor directory', correct: true }
+      - { value: 'It makes all deprecations in your code fail the tests', correct: false }
+      - { value: 'It stops deprecations coming from your dependencies', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/phpunit_bridge.html#internal-deprecations'
+  -
+    uuid: 1ef81725-9175-6e74-8b6d-e7befc4820ce
+    question: 'Which command is used to apply the deprecation ignore file in your tests?'
+    answers:
+      - { value: "SYMFONY_DEPRECATIONS_HELPER='ignoreFile=./tests/baseline-ignore' ./vendor/bin/simple-phpunit", correct: true }
+      - { value: 'php bin/console debug:container --ignore-deprecations', correct: false }
+      - { value: 'phpunit --ignore-deprecations=./tests/baseline-ignore', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/phpunit_bridge.html#ignoring-deprecations'
