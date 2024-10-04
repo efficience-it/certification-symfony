@@ -146,6 +146,132 @@ questions:
     uuid: 1ef80083-fdc1-6582-9335-8bef89e3c7cf
     question: 'Where should you store environment variables that are specific to the local machine?'
     answers:
+      - { value: .env, correct: false }
+      - { value: .env.local, correct: true }
+      - { value: .env.test, correct: false }
+      - { value: services.yaml, correct: false }
+    help: 'https://symfony.com/doc/7.0/configuration.html'
+  -
+    uuid: 1ef800ab-a2bc-6128-be2b-511459a79806
+    question: 'Which command improves performance in production by generating a .env.local.php file for environment variables?'
+    answers:
+      - { value: 'composer dump-env prod', correct: true }
+      - { value: 'php bin/console env:dump', correct: false }
+      - { value: 'php bin/console cache:clear', correct: false }
+      - { value: 'php bin/console debug:dotenv', correct: false }
+    help: 'https://symfony.com/doc/7.0/configuration.html#configuring-environment-variables-in-production'
+  -
+    uuid: 1ef800b1-26f6-6af6-9606-5f6d32804220
+    question: 'How do you define a boolean parameter in Symfony?'
+    answers:
+      - { value: "app.enable_feature: 'true'", correct: false }
+      - { value: 'app.enable_feature: true', correct: true }
+      - { value: "app.enable_feature: '1'", correct: false }
+      - { value: 'app.enable_feature: 1', correct: false }
+    help: 'https://symfony.com/doc/7.0/configuration.html#configuration-parameters'
+  -
+    uuid: 1ef800b3-83c5-66cc-9f57-0dd23eb3ffa6
+    question: 'Which of the following is a correct way to define an array parameter?'
+    answers:
+      - { value: "app.supported_locales: 'en, es, fr'", correct: false }
+      - { value: "app.supported_locales: ['en', 'es', 'fr']", correct: true }
+      - { value: 'app.supported_locales: en, es, fr', correct: false }
+      - { value: 'app.supported_locales: {en, es, fr}', correct: false }
+    help: 'https://symfony.com/doc/7.0/configuration.html#configuration-parameters'
+  -
+    uuid: 1ef800b7-4d9d-6e06-8aa3-e1c5a7eff6e4
+    question: 'How do you define a binary content parameter in Symfony?'
+    answers:
+      - { value: "app.binary_data: 'VGhpcyBpcyBhIEJlbGwgY2hhciAH'", correct: false }
+      - { value: 'app.binary_data: !!binary VGhpcyBpcyBhIEJlbGwgY2hhciAH', correct: false }
+      - { value: 'app.binary_data: !binary VGhpcyBpcyBhIEJlbGwgY2hhciAH', correct: true }
+      - { value: 'app.binary_data: binary:VGhpcyBpcyBhIEJlbGwgY2hhciAH', correct: false }
+    help: 'https://symfony.com/doc/7.0/configuration.html#configuration-parameters'
+  -
+    uuid: 1ef800ba-c8df-6d82-a0bb-353743b6c517
+    question: 'What syntax is used to reference a parameter in configuration files?'
+    answers:
+      - { value: '${app.admin_email}', correct: false }
+      - { value: app.admin_email, correct: false }
+      - { value: '%app.admin_email%', correct: true }
+      - { value: '@app.admin_email@', correct: false }
+    help: 'https://symfony.com/doc/7.0/configuration.html#configuration-parameters'
+  -
+    uuid: 1ef800be-d38d-6744-9d0d-7339978c8ff1
+    question: 'Which of the following is true about parameters starting with a dot (.)?'
+    answers:
+      - { value: 'They are available at runtime', correct: false }
+      - { value: 'They are available only during container compilation', correct: true }
+      - { value: 'They are ignored by Symfony', correct: false }
+      - { value: 'They are used for database connections', correct: false }
+    help: 'https://symfony.com/doc/7.0/configuration.html#configuration-parameters'
+  -
+    uuid: 1ef800c4-0054-6f66-bfd3-779efb0c4390
+    question: 'Which symbol indicates that a parameter is a PHP constant in symfony parameters ?'
+    answers:
+      - { value: '!php/const', correct: true }
+      - { value: php/const, correct: false }
+      - { value: '@php/const', correct: false }
+      - { value: '#php/const', correct: false }
+    help: 'https://symfony.com/doc/7.0/configuration.html#configuration-parameters'
+  -
+    uuid: 1ef800c6-fad9-6264-a183-47b81c8e8cc0
+    question: 'How can you access configuration parameters in Symfony controllers?'
+    answers:
+      - { value: 'By using the ParameterBagInterface', correct: true }
+      - { value: 'By using the Configurator class', correct: false }
+      - { value: 'By importing the parameters directly', correct: false }
+      - { value: 'By using the Service Locator pattern', correct: false }
+    help: 'https://symfony.com/blog/new-in-symfony-4-1-getting-container-parameters-as-a-service'
+  -
+    uuid: 1ef800d7-2fdf-6c5a-9de8-af45c8f65cf4
+    question: 'If a parameter value includes the % character, how should it be written to escape it?'
+    answers:
+      - { value: '%%', correct: true }
+      - { value: '%%%', correct: false }
+      - { value: '%', correct: false }
+      - { value: $%, correct: false }
+    help: 'https://symfony.com/doc/7.0/configuration.html#configuration-parameters'
+  -
+    uuid: 1ef80078-f45b-64da-8d99-253d4466d548
+    question: 'In which file is the APP_ENV variable defined to choose the active environment for the application in Symfony?'
+    answers:
+      - { value: config/packages/framework.yaml, correct: false }
+      - { value: .env, correct: true }
+      - { value: services.yaml, correct: false }
+      - { value: composer.json, correct: false }
+    help: 'https://symfony.com/doc/7.0/configuration.html'
+  -
+    uuid: 1ef8007c-6a77-6666-acda-f97fd898b2ef
+    question: 'What is the command to run a Symfony task in a specific environment without modifying the .env file?'
+    answers:
+      - { value: 'php bin/console --env=prod <command>', correct: false }
+      - { value: 'APP_ENV=prod php bin/console <command>', correct: true }
+      - { value: 'php bin/console env:prod <command>', correct: false }
+      - { value: 'php bin/console set-env prod', correct: false }
+    help: 'https://symfony.com/doc/7.0/configuration.html'
+  -
+    uuid: 1ef8007f-1f7a-6606-9139-fd4c956a4883
+    question: 'What syntax is used to reference an environment variable in a YAML configuration file?'
+    answers:
+      - { value: '%env(VAR_NAME)%', correct: true }
+      - { value: '${VAR_NAME}', correct: false }
+      - { value: '{{ env(VAR_NAME) }}', correct: false }
+      - { value: '#env(VAR_NAME)#', correct: false }
+    help: 'https://symfony.com/doc/7.0/configuration.html'
+  -
+    uuid: 1ef80081-4f13-63a2-98e6-8390f97f5219
+    question: 'If an environment variable is not defined, how can you specify a default value in a YAML file?'
+    answers:
+      - { value: 'Use env_default(VAR_NAME)', correct: true }
+      - { value: 'Add a comment in the YAML file', correct: false }
+      - { value: "Use the syntax env(VAR_NAME): 'default_value", correct: false }
+      - { value: "it's impossible", correct: false }
+    help: 'https://symfony.com/doc/7.0/configuration.html'
+  -
+    uuid: 1ef80083-fdc1-6582-9335-8bef89e3c7cf
+    question: 'Where should you store environment variables that are specific to the local machine?'
+    answers:
       - { value: '.env', correct: false }
       - { value: '.env.local', correct: true }
       - { value: '.env.test', correct: false }

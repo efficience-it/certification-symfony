@@ -154,7 +154,7 @@ questions:
     help: 'https://symfony.com/doc/current/components/console/helpers/progressbar.html#customizing-the-progress-bar'
   -
     uuid: 1eebf878-8ba6-60de-91d5-99d84c92580c
-    question: "For performance reasons, symfony redraws the screen once every XXXXms. If this is too fast or too slow for your application, use the methods minSecondsBetweenRedraws() and maxSecondsBetweenRedraws():\r\n\r\nHow much is XXX ?"
+    question: 'For performance reasons, symfony redraws the screen once every XXXXms. If this is too fast or too slow for your application, use the methods minSecondsBetweenRedraws() and maxSecondsBetweenRedraws(): How much is XXX ?'
     answers:
       - { value: '50 ms', correct: false }
       - { value: '80 ms', correct: false }
@@ -175,7 +175,7 @@ questions:
     uuid: 1eebf878-8ba6-6174-a67f-99d84c92580c
     question: "How can you customize the error message when using the Process Helper's run() method, such as in $helper->run($output, 'ls')?"
     answers:
-      - { value: "by adding ->setInvalidMesage($errorMessage) on run method like $helper->run($output, $process')->setInvalidMessage('Failed);", correct: false }
+      - { value: 'by adding ->setInvalidMesage($errorMessage) on run method like $helper->run($output, $process)->setInvalidMessage("Failed");', correct: false }
       - { value: 'by adding a third argument $helper->run($output, $process, "Failed");', correct: true }
       - { value: 'By overring the message of the ProcessHelperException', correct: false }
     help: 'https://symfony.com/doc/current/components/console/helpers/processhelper.html#customized-display'

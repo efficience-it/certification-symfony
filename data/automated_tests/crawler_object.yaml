@@ -39,6 +39,42 @@ questions:
     uuid: 1ef80036-5b78-6dcc-80fa-f77948a3eeee
     question: 'Which method should be used to get the parent nodes of a selected node in Symfony DomCrawler?'
     answers:
+      - { value: children(), correct: false }
+      - { value: parents(), correct: true }
+      - { value: siblings(), correct: false }
+      - { value: nextAll(), correct: false }
+    help: 'https://symfony.com/doc/7.0/testing/dom_crawler.html'
+  -
+    uuid: 1ef80038-a364-6652-9e7e-85533c357fff
+    question: "What does the extract() method return when passed an array like ['_text', 'href']?"
+    answers:
+      - { value: 'It returns a string of all node values concatenated.', correct: false }
+      - { value: 'It extracts an array of attributes (text and href) for each node in the Crawler', correct: true }
+      - { value: "It returns the first node's text value only.", correct: false }
+      - { value: "It removes all nodes that don't have an href attribute.", correct: false }
+    help: 'https://symfony.com/doc/7.0/testing/dom_crawler.html'
+  -
+    uuid: 1ef80030-6e1b-6534-8970-7d5c3695d3e1
+    question: 'Which of the following methods is used to select nodes that match a CSS selector in Symfony DomCrawler?'
+    answers:
+      - { value: filterXpath(), correct: false }
+      - { value: filter(), correct: true }
+      - { value: eq(), correct: false }
+      - { value: first(), correct: false }
+    help: 'https://symfony.com/doc/7.0/testing/dom_crawler.html'
+  -
+    uuid: 1ef80033-e021-68a6-bdfe-d91142d7210b
+    question: 'What does the reduce() method in DomCrawler do?'
+    answers:
+      - { value: 'It reduces the number of nodes by selecting only the first node', correct: false }
+      - { value: 'It applies a callable to filter nodes, returning nodes for which the callable does not return false', correct: true }
+      - { value: 'It counts the number of nodes in the Crawler instance', correct: false }
+      - { value: 'It removes sibling nodes', correct: false }
+    help: 'https://symfony.com/doc/7.0/testing/dom_crawler.html'
+  -
+    uuid: 1ef80036-5b78-6dcc-80fa-f77948a3eeee
+    question: 'Which method should be used to get the parent nodes of a selected node in Symfony DomCrawler?'
+    answers:
       - { value: 'children()', correct: false }
       - { value: 'parents()', correct: true }
       - { value: 'siblings()', correct: false }

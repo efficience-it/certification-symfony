@@ -52,7 +52,7 @@ questions:
     help: 'https://symfony.com/doc/current/reference/formats/message_format.html#message-placeholders'
   -
     uuid: 1eedba3b-7225-6566-816b-edd52650fa57
-    question: "Is this form of pluralization is valid :  ]-Inf,0]Oops! I'm down ]0,1000] I still have money ]1000,Inf] I have lots of money  ?"
+    question: 'Is this form of pluralization is valid : "]-Inf,0]Oops! I''m down ]0,1000] I still have money ]1000,Inf] I have lots of money" ?'
     answers:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }

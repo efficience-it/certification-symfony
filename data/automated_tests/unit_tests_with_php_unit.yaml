@@ -106,3 +106,11 @@ questions:
       - { value: shutdown(), correct: false }
       - { value: tearDown(), correct: true }
     help: 'https://docs.phpunit.de/en/10.5/writing-tests-for-phpunit.html'
+  -
+    uuid: 1ef81710-a76e-69ac-971a-b11b5f8fed4a
+    question: 'Which method is provided by the PHPUnit Bridge to assert that a specific deprecation is triggered in your tests?'
+    answers:
+      - { value: 'assertDeprecation()', correct: false }
+      - { value: 'expectDeprecation()', correct: true }
+      - { value: 'triggerDeprecation()', correct: false }
+    help: 'https://symfony.com/doc/7.0/components/phpunit_bridge.html#write-assertions-about-deprecations'
