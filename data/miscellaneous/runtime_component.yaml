@@ -1,0 +1,52 @@
+questions:
+  -
+    uuid: 1ef84dab-3d9c-6412-8772-07def644982a
+    question: 'What does the Runtime component abstract in Symfony?'
+    answers:
+      - { value: 'Application logic', correct: false }
+      - { value: 'Front-controller logic', correct: false }
+      - { value: 'Bootstrapping logic', correct: true }
+    help: 'https://symfony.com/doc/current/components/runtime.html'
+  -
+    uuid: 1ef84db6-76c9-6482-9660-b1caabd73d42
+    question: 'What is the default runtime provided by Symfony?'
+    answers:
+      - { value: GenericRuntime, correct: false }
+      - { value: GeneralRuntime, correct: false }
+      - { value: SymfonyRuntime, correct: true }
+      - { value: PhpRuntime, correct: false }
+    help: 'https://symfony.com/doc/current/components/runtime.html#selecting-runtimes'
+  -
+    uuid: 1ef84db9-7482-627a-b339-4565703872b1
+    question: 'Which environment variable is used to change the runtime class?'
+    answers:
+      - { value: APP_ENV, correct: false }
+      - { value: APP_RUNTIME, correct: true }
+      - { value: SYMFONY_RUNTIME, correct: false }
+      - { value: PHP_RUNTIME, correct: false }
+    help: 'https://symfony.com/doc/current/components/runtime.html#using-options'
+  -
+    uuid: 1ef84dbd-3785-60c6-8f43-2d3aa18c047b
+    question: 'What arguments are supported by both SymfonyRuntime and GenericRuntime?'
+    answers:
+      - { value: 'array $context, array $argv, Request', correct: true }
+      - { value: 'InputInterface, OutputInterface, Command', correct: false }
+      - { value: 'array $context, array $request, Application', correct: false }
+    help: 'https://symfony.com/doc/current/components/runtime.html#resolvable-arguments'
+  -
+    uuid: 1ef84dc3-9dc5-6b6e-bc52-7f49d6122234
+    question: 'What is required to use the GenericRuntime for running an application?'
+    answers:
+      - { value: 'PHP superglobals such as $_SERVER and $_POST', correct: true }
+      - { value: 'A Symfony Kernel', correct: false }
+      - { value: 'A symfony runner', correct: false }
+    help: 'https://symfony.com/doc/current/components/runtime.html#selecting-runtimes'
+  -
+    uuid: 1ef84dcd-ac8c-6512-9b49-13e2b93a13ef
+    question: 'Which command should be run after modifying runtime settings in composer.json to regenerate autoload_runtime.php?'
+    answers:
+      - { value: 'composer install', correct: false }
+      - { value: 'composer dump-autoload', correct: true }
+      - { value: 'composer update', correct: false }
+      - { value: 'composer clear-cache', correct: false }
+    help: 'https://symfony.com/doc/current/components/runtime.html#using-options'

@@ -186,7 +186,7 @@ Want to train with our team of experts? Reach out to us at [https://www.iteffici
 - [Lock component](data/miscellaneous/lock_component.yaml)
 - [Web Profiler, Web Debug Toolbar and Data collectors](data/miscellaneous/web_profiler_web_debug_toolbar_and_data_collectors.yaml)
 - [Internationalization and localization (and Intl component)](data/miscellaneous/internationalization_and_localization_and_intl_component.yaml)
-- Runtime component
+- [Runtime component](data/miscellaneous/runtime_component.yaml)
 
 ## 📝 How to Register?
 
