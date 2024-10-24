@@ -38,3 +38,15 @@ questions:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/6.4/routing.html'
+  -
+    uuid: 1ef91f04-dcbb-64dc-9928-7b259c35a967
+    question: "Which variables can be utilized in the ExpressionLanguage expression when using the condition option on a Route?"
+    answers:
+      - { value: 'context', correct: true }
+      - { value: 'request', correct: true }
+      - { value: 'container', correct: false }
+      - { value: 'service', correct: false }
+      - { value: 'this', correct: false }
+      - { value: 'user', correct: false }
+      - { value: 'object', correct: false }
+    help: 'https://symfony.com/doc/current/routing.html#matching-expressions'

@@ -401,3 +401,12 @@ questions:
       - { value: PSR-2, correct: false }
       - { value: PSR-1, correct: true }
     help: 'https://www.php-fig.org/psr/'
+  -
+    uuid: 1ef91eee-8fd2-6e2e-8a85-47821d44640e
+    question: " What is PSR-3?"
+    answers:
+      - { value: ' A common logger interface', correct: true }
+      - { value: ' A coding style guide', correct: false }
+      - { value: 'A utility to convert non-namespaced PHP classes into namespaced ones', correct: false }
+      - { value: 'A standard way to convert fully qualified names into file paths.', correct: false }
+    help: 'https://www.php-fig.org/psr/psr-3/'

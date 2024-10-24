@@ -359,3 +359,12 @@ questions:
       - { value: 'in a setter method', correct: false }
       - { value: 'at the attribute declaration', correct: false }
     help: 'https://www.php.net/manual/en/language.oop5.properties.php'
+  -
+    uuid: 1ef91ee9-2c61-6638-a132-0bd629c34f6d
+    question: "Which native function should be used to generate a cryptographically secure random integer?"
+    answers:
+      - { value: "random_int()", correct: true }
+      - { value: "mt_rand()", correct: false }
+      - { value: "rand()", correct: false }
+      - { value: "lcg_value()", correct: false }
+    help: 'https://www.php.net/manual/en/ref.random.php'

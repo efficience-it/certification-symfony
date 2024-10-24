@@ -57,3 +57,13 @@ questions:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/current/reference/formats/message_format.html#message-placeholders'
+  -
+    uuid: 1ef91f0a-3e86-6d7e-9fa4-dfd500bef952
+    question: "Which method must be implemented by a TranslationLoader that implements the Symfony\\Component\\Translation\\Loader\\LoaderInterface?"
+    answers:
+      - { value: "public function load($resource, $locale = 'en', $domain = 'messages');", correct: false }
+      - { value: "public function load($locale, $domain);", correct: false }
+      - { value: "public function load($resource, $locale, $domain = 'messages');", correct: true }
+      - { value: "public function load($locale = 'en', $domain = 'messages');", correct: false }
+      - { value: "public function load($resource, $locale, $domain);", correct: false }
+    help: 'https://github.com/symfony/translation/blob/7.0/Loader/LoaderInterface.php'
