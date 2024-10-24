@@ -14,7 +14,7 @@ questions:
       - { value: "I'm connected with an API Token", correct: false }
       - { value: "We're always fully autenticated", correct: false }
       - { value: 'My User have no roles', correct: true }
-      - { value: "I didn't tick the  Remember me  checkbox", correct: false }
+      - { value: 'I didn''t tick the "Remember me" checkbox', correct: false }
     help: 'https://symfony.com/doc/current/security.html#roles'
   -
     uuid: 1eebf878-8ba1-6458-b8ae-99d84c92580c

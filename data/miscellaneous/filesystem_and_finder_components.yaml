@@ -402,3 +402,10 @@ questions:
       - { value: 'Yes', correct: true }
       - { value: 'No', correct: false }
     help: 'https://symfony.com/doc/7.2/components/finder.html#sorting-results'
+  -
+    uuid: 1ef91eff-7bd1-6608-a1bf-2ba11eeedc3d
+    question: "Is the Filesystem component implemented in a lazy or eager manner?"
+    answers:
+      - { value: 'Lazy', correct: false }
+      - { value: 'Eager', correct: true }
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Component/Filesystem/Filesystem.php'

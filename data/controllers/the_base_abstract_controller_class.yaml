@@ -58,3 +58,13 @@ questions:
       - { value: 'ResponseHeaderBag::DISPOSITION_ATTACHMENT', correct: true }
       - { value: 'ResponseHeaderBag::DISPOSITION_INLINE', correct: true }
     help: 'https://github.com/symfony/symfony/blob/7.1/src/Symfony/Component/HttpFoundation/ResponseHeaderBag.php#L24C18-L24C41'
+  -
+    uuid: 1ef91ef8-c7d6-66b8-b37b-a3c6345adc12
+    question: "Which of the following are valid methods of the Symfony base controller class?"
+    answers:
+      - { value: 'redirectToRoute()', correct: true }
+      - { value: 'generatePath()', correct: false }
+      - { value: 'isCsrfTokenValid()', correct: true }
+      - { value: 'denyAccessUnlessGranted()', correct: true }
+      - { value: 'createXmlResponse()', correct: false }
+    help: 'https://github.com/symfony/symfony/blob/7.0/src/Symfony/Bundle/FrameworkBundle/Controller/AbstractController.php'

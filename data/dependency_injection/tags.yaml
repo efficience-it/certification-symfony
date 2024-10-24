@@ -165,3 +165,12 @@ questions:
       - { value: content_renderer, correct: false }
       - { value: renderer, correct: false }
     help: 'https://symfony.com/doc/current/reference/dic_tags.html#kernel-fragment-renderer'
+  -
+    uuid: 1ef91efc-3581-6b38-997b-b56004d90186
+    question: "What mechanism allows services to be aggregated by domain in the service container?"
+    answers:
+      - { value: 'Listener', correct: false }
+      - { value: 'Tag', correct: true }
+      - { value: 'Abstraction', correct: false }
+      - { value: 'Scope', correct: false }
+    help: 'https://symfony.com/doc/current/reference/dic_tags.html'

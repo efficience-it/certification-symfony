@@ -17,3 +17,13 @@ questions:
       - { value: 'The FlashBag::add() method allow to add a single message while FlashBag::set() allow to add a set of messages', correct: true }
       - { value: 'The FlashBag::add() method allow to add a set of messages while FlashBag::set() allow to add a single message', correct: false }
     help: 'https://github.com/symfony/symfony/blob/6.4/src/Symfony/Component/HttpFoundation/Session/Flash/FlashBag.php'
+  -
+    uuid: 1ef91ee4-daf6-6de2-815d-598df0174ec8
+    question: "What is the result of calling the isXmlHttpRequest() method on a Symfony\\Component\\HttpFoundation\\Request object?"
+    answers:
+      - { value: "Returns true if the request contains XML content.", correct: false }
+      - { value: "Returns true if the request is intended to generate an XML response.", correct: false }
+      - { value: "Returns true if the request has the X-Requested-With header set to XMLHttpRequest.", correct: true }
+      - { value: "Returns true if the request contains XML content.", correct: false }
+      - { value: "Returns true if the request has the Content-Type header set to application/xml.", correct: false }
+    help: 'https://github.com/symfony/http-foundation/blob/7.0/Request.php'

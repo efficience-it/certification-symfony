@@ -91,3 +91,12 @@ questions:
       - { value: 'Yes', correct: false }
       - { value: 'No', correct: true }
     help: 'https://symfony.com/doc/6.0/http_cache/expiration.html#expiration-with-the-expires-header'
+  -
+    uuid: 1ef91f16-c49a-6f08-9238-357e4050a907
+    question: "What occurs for an HTTP response when both the Expires and Cache-Control headers are set?"
+    answers:
+      - { value: 'Caching systems will use the Expires header field if the response is generated if the current day number is odd, otherwise they will use the Cache-Control header field.', correct: false }
+      - { value: 'Caching systems will favor the Expires header field over the Cache-Control field to cache the response.', correct: false }
+      - { value: ' Caching systems will favor the Cache-Control header field over the Expires field to cache the response.', correct: true }
+      - { value: "The response won't be cachable and caching systems will simply ignore it.", correct: false }
+    help: 'https://datatracker.ietf.org/doc/html/rfc2616#page-79'
